@@ -1,0 +1,33 @@
+<!--
+  Custom metadata hooks for k-reel.github.io
+  Author: Kirill Boychenko
+  Sets light mode default and favicon cache busting
+-->
+<script>
+  (function() {
+    const modeKey = 'mode';
+    const lightMode = 'light';
+
+    try {
+      // Only set default if user has no preference stored
+      if (!localStorage.getItem(modeKey)) {
+        localStorage.setItem(modeKey, lightMode);
+        document.documentElement.setAttribute('data-mode', lightMode);
+      }
+    } catch (e) {
+      // If storage is unavailable, fall back to light via attribute only
+      document.documentElement.setAttribute('data-mode', lightMode);
+    }
+  })();
+</script>
+
+<link rel="icon" href="{{ '/assets/img/favicons/favicon.ico' | relative_url }}?v={{ site.kb_build_id }}">
+<link rel="icon" type="image/png" sizes="32x32" href="{{ '/assets/img/favicons/favicon-32x32.png' | relative_url }}?v={{ site.kb_build_id }}">
+<link rel="icon" type="image/png" sizes="16x16" href="{{ '/assets/img/favicons/favicon-16x16.png' | relative_url }}?v={{ site.kb_build_id }}">
+<link rel="apple-touch-icon" href="{{ '/assets/img/favicons/apple-touch-icon.png' | relative_url }}?v={{ site.kb_build_id }}">
+
+{% if page.url == '/about/' %}
+<style>
+  article .content p { font-size: 1.1rem; }
+</style>
+{% endif %}

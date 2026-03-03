@@ -1,0 +1,23 @@
+<!--
+  Custom Topics panel for k-reel.github.io
+  Author: Kirill Boychenko
+  Displays trending tags from published posts
+-->
+{% assign MAX = 30 %}
+<section class="panel-wrapper">
+  <div class="panel-heading">Topics</div>
+  <div class="panel-body">
+    {% if site.tags.size > 0 %}
+      <div class="d-flex flex-wrap mt-1 mb-1">
+        {% assign sorted_tags = site.tags | sort %}
+        {% for tag in sorted_tags limit: MAX %}
+          {% assign name = tag[0] %}
+          {% assign slug = name | slugify %}
+          <a class="post-tag" href="{{ '/tags/' | append: slug | append: '/' | relative_url }}">{{ name }}</a>
+        {% endfor %}
+      </div>
+    {% else %}
+      <p class="text-muted mb-0">Topics will appear once posts are published.</p>
+    {% endif %}
+  </div>
+</section>

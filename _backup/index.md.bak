@@ -1,0 +1,29 @@
+---
+layout: default
+title: Home
+---
+
+<div class="home-header">
+  <img src="{{ '/assets/artifactor-logo.jpg' | relative_url }}" alt="Kirill's Logo" class="profile-logo">
+  <h1>Kirill's Writing</h1>
+  <p class="tagline">Building tools for clarity and reproducibility</p>
+</div>
+
+## Projects
+
+### [Artifactor](https://github.com/K-reel/artifactor)
+
+A Python CLI tool for generating Jekyll HTML posts from structured article data. Treats writing like an artifact pipeline with deterministic, reproducible output.
+
+- **Offline-first testing** with fixtures
+- **Adapter pattern** for multiple content sources
+- **Deterministic output** (same input → same bytes)
+- **CI/CD ready** with GitHub Actions
+
+**[View Repository →](https://github.com/K-reel/artifactor)** | **[Live Demo →](https://k-reel.github.io/artifactor/)**
+
+---
+
+<div class="footer-note">
+  <p>More projects and writing coming soon.</p>
+</div>

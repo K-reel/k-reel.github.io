@@ -1,0 +1,23 @@
+#  Social sharing configuration for k-reel.github.io
+#  Author: Kirill Boychenko
+#  Icons from <https://fontawesome.com/>
+
+platforms:
+  - type: Twitter
+    icon: "fa-brands fa-square-x-twitter"
+    link: "https://twitter.com/intent/tweet?text=TITLE&url=URL"
+
+  - type: Mastodon
+    icon: "fa-brands fa-mastodon"
+    # See: https://github.com/justinribeiro/share-to-mastodon#properties
+    instances:
+      - label: mastodon.social
+        link: "https://mastodon.social/"
+      - label: mastodon.online
+        link: "https://mastodon.online/"
+      - label: fosstodon.org
+        link: "https://fosstodon.org/"
+
+  - type: Bluesky
+    icon: "fa-brands fa-bluesky"
+    link: "https://bsky.app/intent/compose?text=TITLE%20URL"
