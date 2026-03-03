@@ -85,11 +85,5 @@ hide_title: true
 
 <details>
 <summary>🕵️ <strong>Cybercrime, Underground Economy &amp; Influence Research</strong></summary>
-<ul class="content ps-0">
-  <li class="d-flex justify-content-between px-md-3">
-    <a href="/malicious-chrome-extension-steals-meta-business-manager-exports-and-totp-2fa-seeds/">Malicious Chrome Extension Steals Meta Business Manager Exports and TOTP 2FA Seeds</a>
-    <span class="dash flex-grow-1"></span>
-    <span class="text-muted small text-nowrap">Feb 13, 2026</span>
-  </li>
-</ul>
+<br>
 </details>
