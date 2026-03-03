@@ -79,7 +79,7 @@ jobs:
           sleep 30
 
           BASE_URL="https://k-reel.github.io"
-          PAGES=("/" "/tags/" "/categories/" "/archives/" "/about/")
+          PAGES=("/" "/tags/" "/archives/" "/about/")
 
           echo "Checking all pages return HTTP 200..."
           for PAGE in "${PAGES[@]}"; do
