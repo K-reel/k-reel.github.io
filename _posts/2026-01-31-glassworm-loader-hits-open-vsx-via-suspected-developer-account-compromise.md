@@ -3,7 +3,7 @@ title: "GlassWorm Loader Hits Open VSX via Developer Account Compromise"
 short_title: "GlassWorm Loader Hits Open VSX via Account Compromise"
 date: 2026-01-31 12:00:00 +0000
 categories: [Malware, Browser Extensions]
-tags: [VS Code, Open VSX, Threat Intelligence, Supply Chain Security, Malware, Credential Theft, macOS]
+tags: [VS Code, Open VSX, Threat Intelligence, Supply Chain Security, Malware, Credential Theft, Developer Compromise, GlassWorm, Russian Link, Extensions]
 canonical_url: https://socket.dev/blog/glassworm-loader-hits-open-vsx-via-suspected-developer-account-compromise
 source: Socket
 image:
