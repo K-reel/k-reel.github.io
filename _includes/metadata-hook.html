@@ -28,8 +28,11 @@
 
 <style>
   a[href^="/categories/"] { pointer-events: none; cursor: default; color: inherit !important; text-decoration: none !important; }
-  /* Hide folder icon + category labels on home page cards and individual post pages */
-  .post-meta div:has(i[class*="fa-folder"]) { display: none; }
+  /* Hide folder icon + category labels on home page cards, post pages, and search results */
+  .post-meta i.far.fa-folder-open,
+  .post-meta .categories,
+  .post-meta .me-sm-4:has(i.fa-folder) { display: none; }
+  .post-tail-wrapper .post-meta:has(i.fa-folder-open) { display: none; }
 </style>
 
 {% if page.url == '/about/' %}
