@@ -12,8 +12,11 @@
         {% assign sorted_tags = site.tags | sort %}
         {% for tag in sorted_tags limit: MAX %}
           {% assign name = tag[0] %}
+          {% assign prefix = name | slice: 0, 2 %}
+          {% unless prefix == 'T1' %}
           {% assign slug = name | slugify %}
           <a class="post-tag" href="{{ '/tags/' | append: slug | append: '/' | relative_url }}">{{ name }}</a>
+          {% endunless %}
         {% endfor %}
       </div>
     {% else %}
