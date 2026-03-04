@@ -75,6 +75,11 @@ hide_title: true
     <span class="dash flex-grow-1"></span>
     <span class="text-muted small text-nowrap">Feb 13, 2026</span>
   </li>
+  <li class="d-flex justify-content-between px-md-3">
+    <a href="/glassworm-loader-hits-open-vsx-via-suspected-developer-account-compromise/">GlassWorm Loader Hits Open VSX via Developer Account Compromise</a>
+    <span class="dash flex-grow-1"></span>
+    <span class="text-muted small text-nowrap">Jan 31, 2026</span>
+  </li>
 </ul>
 </details>
 
