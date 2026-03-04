@@ -2,7 +2,7 @@
 title: "SANDWORM_MODE: Shai-Hulud-Style npm Worm Hijacks CI Workflows and Poisons AI Toolchains"
 date: 2026-02-20 12:00:00 +0000
 categories: [Malware, Supply Chain]
-tags: [npm, Supply Chain Security, Threat Intelligence, Open Source, Worm, AI Security, CI/CD]
+tags: [npm, Supply Chain Security, Threat Intelligence, Open Source, Worm, AI Security, CI/CD, SANDWORM_MODE, Shai-Hulud, Typosquatting, GitHub Actions, OpenClaw, Cloudflare, Obfuscation]
 description: An emerging npm supply chain attack that infects repos, steals CI secrets, and targets
   developer AI toolchains for further compromise.
 toc: true
