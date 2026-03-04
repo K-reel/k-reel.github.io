@@ -33,6 +33,9 @@
   .post-meta .categories,
   .post-meta .me-sm-4:has(i.fa-folder) { display: none; }
   .post-tail-wrapper .post-meta:has(i.fa-folder-open) { display: none; }
+  /* Remove divider lines and footer copyright/theme text */
+  .post-tail-wrapper { border-bottom: none !important; }
+  footer[aria-label="Site Info"] { display: none; }
 </style>
 
 {% if page.url == '/about/' %}
