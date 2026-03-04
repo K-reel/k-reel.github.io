@@ -28,6 +28,8 @@
 
 <style>
   a[href^="/categories/"] { pointer-events: none; cursor: default; color: inherit !important; text-decoration: none !important; }
+  /* Hide folder icon + category labels on home page cards and individual post pages */
+  .post-meta div:has(i[class*="fa-folder"]) { display: none; }
 </style>
 
 {% if page.url == '/about/' %}
