@@ -33,9 +33,9 @@
   .post-meta .categories,
   .post-meta .me-sm-4:has(i.fa-folder) { display: none; }
   .post-tail-wrapper .post-meta:has(i.fa-folder-open) { display: none; }
-  /* Remove divider lines, footer copyright/theme text, and reduce post-tail gap */
+  /* Remove post-tail double border and reduce gap; hide Chirpy attribution line */
   .post-tail-wrapper { border-bottom: none !important; margin-top: 2rem !important; }
-  #tail-wrapper { display: none !important; }
+  #tail-wrapper footer p:last-child { display: none !important; }
 </style>
 
 {% if page.url == '/about/' %}
