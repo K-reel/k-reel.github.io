@@ -3,7 +3,7 @@ title: "Malicious Chrome Extension Steals Meta Business Manager Exports and TOTP
 short_title: "Malicious Chrome Extension Steals Meta 2FA Seeds"
 date: 2026-02-13 12:00:00 +0000
 categories: [Malware, Browser Extensions]
-tags: [Chrome Extension, 2FA, Meta, Threat Intelligence, Supply Chain Security, Credential Theft]
+tags: [Chrome Extension, 2FA, Meta, Threat Intelligence, Supply Chain Security, Credential Theft, T1195.002, T1176.001, T1204, T1059.007, T1005, T1119, T1590.005, T1589.002, T1591.002, T1556.006, T1071.001, T1567]
 canonical_url: https://socket.dev/blog/malicious-chrome-extension-steals-meta-business-manager-exports-and-totp-2fa-seeds
 source: Socket
 image:
