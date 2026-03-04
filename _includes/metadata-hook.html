@@ -26,6 +26,10 @@
 <link rel="icon" type="image/png" sizes="16x16" href="{{ '/assets/img/favicons/favicon-16x16.png' | relative_url }}?v={{ site.kb_build_id }}">
 <link rel="apple-touch-icon" href="{{ '/assets/img/favicons/apple-touch-icon.png' | relative_url }}?v={{ site.kb_build_id }}">
 
+<style>
+  a[href^="/categories/"] { pointer-events: none; cursor: default; color: inherit !important; text-decoration: none !important; }
+</style>
+
 {% if page.url == '/about/' %}
 <style>
   article .content p { font-size: 1.1rem; }
