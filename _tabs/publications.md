@@ -86,6 +86,11 @@ hide_title: true
     <span class="dash flex-grow-1"></span>
     <span class="text-muted small text-nowrap">Jan 31, 2026</span>
   </li>
+  <li class="d-flex justify-content-between px-md-3">
+    <a href="/malicious-chrome-extension-steals-mexc-api-keys/">Malicious Chrome Extension Steals MEXC API Keys for Account Takeover</a>
+    <span class="dash flex-grow-1"></span>
+    <span class="text-muted small text-nowrap">Jan 12, 2026</span>
+  </li>
 </ul>
 </details>
 
