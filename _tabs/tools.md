@@ -22,8 +22,3 @@ A Python CLI tool for generating Jekyll HTML posts from structured article data.
 [View Repository →](https://github.com/K-reel/artifactor){: .btn .btn-primary}
 [Live Demo →](https://k-reel.github.io/artifactor/){: .btn .btn-outline}
 
----
-
-<div class="footer-note">
-  <p><em>More projects coming soon. Check back for updates on security tools, threat intelligence research, and open source contributions.</em></p>
-</div>
