@@ -71,7 +71,13 @@ hide_title: true
 
 <details>
 <summary>⚙️ <strong>NuGet / .NET</strong></summary>
-<br>
+<ul class="content ps-0">
+  <li class="d-flex justify-content-between px-md-3">
+    <a href="/malicious-nuget-package-typosquats-popular-net-tracing-library/">Malicious NuGet Package Typosquats Popular .NET Tracing Library to Steal Wallet Passwords</a>
+    <span class="dash flex-grow-1"></span>
+    <span class="text-muted small text-nowrap">Dec 15, 2025</span>
+  </li>
+</ul>
 </details>
 
 <details>
