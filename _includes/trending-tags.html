@@ -3,14 +3,13 @@
   Author: Kirill Boychenko
   Displays trending tags from published posts
 -->
-{% assign MAX = 30 %}
 <section class="panel-wrapper">
   <div class="panel-heading">Topics</div>
   <div class="panel-body">
     {% if site.tags.size > 0 %}
       <div class="d-flex flex-wrap mt-1 mb-1">
         {% assign sorted_tags = site.tags | sort %}
-        {% for tag in sorted_tags limit: MAX %}
+        {% for tag in sorted_tags %}
           {% assign name = tag[0] %}
           {% assign prefix = name | slice: 0, 2 %}
           {% unless prefix == 'T1' %}
