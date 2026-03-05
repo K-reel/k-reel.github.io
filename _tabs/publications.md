@@ -61,6 +61,11 @@ hide_title: true
     <span class="dash flex-grow-1"></span>
     <span class="text-muted small text-nowrap">Feb 26, 2026</span>
   </li>
+  <li class="d-flex justify-content-between px-md-3">
+    <a href="/malicious-go-packages-impersonate-googles-uuid-library-and-exfiltrate-data/">Malicious Go Packages Impersonate Google's UUID Library and Exfiltrate Data</a>
+    <span class="dash flex-grow-1"></span>
+    <span class="text-muted small text-nowrap">Dec 5, 2025</span>
+  </li>
 </ul>
 </details>
 
