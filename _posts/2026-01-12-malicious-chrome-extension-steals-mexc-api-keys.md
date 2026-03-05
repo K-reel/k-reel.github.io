@@ -3,7 +3,7 @@ title: "Malicious Chrome Extension Steals MEXC API Keys for Account Takeover"
 short_title: "Malicious Chrome Extension Steals MEXC API Keys"
 date: 2026-01-12 12:00:00 +0000
 categories: [Malware, Browser Extensions]
-tags: [Chrome, MEXC, API Key Theft, Credential Theft, Telegram, Cryptocurrency, Supply Chain Security, Malware, SwapSushi, Browser Extensions, T1195.002, T1176.001, T1204, T1059.007, T1552.004, T1071.001, T1657]
+tags: [Chrome, MEXC, API Key Theft, Credential Theft, Telegram, Cryptocurrency, Supply Chain Security, Malware, Browser Extensions, T1195.002, T1176.001, T1204, T1059.007, T1552.004, T1071.001, T1657]
 canonical_url: https://socket.dev/blog/malicious-chrome-extension-steals-mexc-api-keys
 source: Socket
 image:
