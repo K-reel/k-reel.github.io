@@ -1,9 +1,10 @@
 ---
+title: Tools
 icon: fas fa-folder-open
 order: 3
 ---
 
-## Featured Projects
+## Featured Tools
 
 ### [Artifactor](https://github.com/K-reel/artifactor)
 
