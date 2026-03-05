@@ -5,7 +5,7 @@ order: 3
 hide_title: true
 ---
 
-### [Artifactor](https://github.com/K-reel/artifactor)
+<h3><a href="https://github.com/K-reel/artifactor">Artifactor</a></h3>
 
 A Python CLI tool for generating Jekyll HTML posts from structured article data. Treats writing like an artifact pipeline with deterministic, reproducible output.
 
