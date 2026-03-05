@@ -38,7 +38,13 @@ hide_title: true
 
 <details>
 <summary>🐍 <strong>PyPI / Python</strong></summary>
-<br>
+<ul class="content ps-0">
+  <li class="d-flex justify-content-between px-md-3">
+    <a href="/pypi-package-impersonates-sympy-to-deliver-cryptomining-malware/">PyPI Package Impersonates SymPy to Deliver Cryptomining Malware</a>
+    <span class="dash flex-grow-1"></span>
+    <span class="text-muted small text-nowrap">Jan 21, 2026</span>
+  </li>
+</ul>
 </details>
 
 <details>
