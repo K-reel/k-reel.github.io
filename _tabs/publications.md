@@ -33,7 +33,13 @@ hide_title: true
 
 <details>
 <summary>📦 <strong>npm / JavaScript / TypeScript</strong></summary>
-<br>
+<ul class="content ps-0">
+  <li class="d-flex justify-content-between px-md-3">
+    <a href="/spearphishing-campaign-abuses-npm-registry/">Spearphishing Campaign Abuses npm Registry to Target U.S. and Allied Manufacturing and Healthcare Organizations</a>
+    <span class="dash flex-grow-1"></span>
+    <span class="text-muted small text-nowrap">Dec 23, 2025</span>
+  </li>
+</ul>
 </details>
 
 <details>
