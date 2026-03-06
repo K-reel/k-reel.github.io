@@ -2,7 +2,7 @@
 title: "Shai Hulud Strikes Again (v2)"
 date: 2025-11-24 12:00:00 +0000
 categories: [Supply Chain, npm]
-tags: [Shai-Hulud, Supply Chain, npm, Account Takeover, Credential Theft, GitHub Actions, Worm, CI/CD, Bun, TruffleHog, PostHog, Zapier, AsyncAPI, Obfuscation, Infostealer]
+tags: [Shai-Hulud, Supply Chain, npm, Account Takeover, Credential Theft, GitHub Actions, Worm, CI/CD, TruffleHog, Zapier, Obfuscation, Infostealer]
 author: socket_research_team
 description: "Another wave of Shai-Hulud campaign has hit npm with more than 500 packages and 700+ versions affected."
 toc: true
