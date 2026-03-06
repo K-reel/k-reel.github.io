@@ -124,6 +124,16 @@ footer {
   margin-top: 40px;
 }
 
+/* Hide heading anchor links added by Chirpy */
+h1 > a[href^="#"],
+h2 > a[href^="#"],
+h3 > a[href^="#"],
+h4 > a[href^="#"],
+h5 > a[href^="#"],
+h6 > a[href^="#"] {
+  display: none;
+}
+
 /* Responsive */
 @media (max-width: 600px) {
   h1 {
