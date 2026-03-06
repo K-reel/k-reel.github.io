@@ -3,7 +3,7 @@ title: "Malicious Chrome Extension Exfiltrates Seed Phrases, Enabling Wallet Tak
 short_title: "Malicious Chrome Extension Exfiltrates Seed Phrases"
 date: 2026-03-02 12:00:00 +0000
 categories: [Malware, Browser Extensions]
-tags: [Chrome, Credential Theft, Extensions, Threat Intelligence, Blockchain, T1195.002, T1176.001, T1204, T1059.007, T1552.004, T1567, T1657]
+tags: [Chrome, Extensions, Blockchain, T1195.002, T1176.001, T1204, T1059.007, T1552.004, T1567, T1657]
 description: "A malicious Chrome extension posing as an Ethereum wallet steals seed phrases by encoding them into Sui transactions, enabling full wallet takeover."
 toc: true
 canonical_url: https://socket.dev/blog/malicious-chrome-extension-exfiltrates-seed-phrases

@@ -2,7 +2,7 @@
 title: Malicious Go "crypto" Module Steals Passwords and Deploys Rekoobe Backdoor
 date: 2026-02-26 12:00:00 +0000
 categories: [Malware, Supply Chain]
-tags: [Go, Go Modules, Threat Intelligence, Backdoor, Open Source, Supply Chain Security, T1195.002, T1204.005, T1036, T1036.008, T1656, T1056, T1071.001, T1102.001, T1105, T1059.004, T1098.004, T1562.004, T1070.004]
+tags: [Go, Go Modules, Backdoor, T1195.002, T1204.005, T1036, T1036.008, T1656, T1056, T1071.001, T1102.001, T1105, T1059.004, T1098.004, T1562.004, T1070.004]
 description: An impersonated golang.org/x/crypto clone exfiltrates passwords, executes
   a remote shell stager, and delivers a Rekoobe backdoor on Linux.
 toc: true

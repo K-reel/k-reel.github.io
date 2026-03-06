@@ -3,7 +3,7 @@ title: "Malicious NuGet Package Typosquats Popular .NET Tracing Library to Steal
 short_title: "Malicious NuGet Typosquats .NET Tracing Library"
 date: 2025-12-15 12:00:00 +0000
 categories: [Malware, NuGet]
-tags: [Typosquatting, NuGet, .NET, Homoglyphs, Wallet Theft, Supply Chain Security, Russian Link, T1585, T1587.001, T1608.001, T1195.002, T1204.005, T1036, T1656, T1552, T1005, T1041, T1657]
+tags: [Typosquatting, NuGet, .NET, Homoglyphs, Russian Link, T1585, T1587.001, T1608.001, T1195.002, T1204.005, T1036, T1656, T1552, T1005, T1041, T1657]
 canonical_url: https://socket.dev/blog/malicious-nuget-package-typosquats-popular-net-tracing-library
 source: Socket
 image:

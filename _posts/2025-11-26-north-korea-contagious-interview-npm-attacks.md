@@ -3,7 +3,7 @@ title: "Inside the GitHub Infrastructure Powering North Korea's Contagious Inter
 short_title: "Inside North Korea's Contagious Interview npm Attacks"
 date: 2025-11-26 12:00:00 +0000
 categories: [Malware, North Korea]
-tags: [North Korea, Contagious Interview, OtterCookie, BeaverTail, npm, Supply Chain Security, Typosquatting, Infostealer, Keylogger, GitHub, Vercel, Web3, Threat Intelligence, T1583.001, T1583.006, T1585, T1587, T1587.001, T1608.001, T1195.002, T1059.007, T1204.002, T1204.005, T1547.001, T1546.016, T1036, T1497, T1656, T1056.001, T1539, T1555.001, T1555.003, T1082, T1083, T1217, T1005, T1113, T1115, T1119, T1105, T1571, T1041, T1657]
+tags: [North Korea, Contagious Interview, OtterCookie, BeaverTail, npm, Typosquatting, Infostealer, Keylogger, T1583.001, T1583.006, T1585, T1587, T1587.001, T1608.001, T1195.002, T1059.007, T1204.002, T1204.005, T1547.001, T1546.016, T1036, T1497, T1656, T1056.001, T1539, T1555.001, T1555.003, T1082, T1083, T1217, T1005, T1113, T1115, T1119, T1105, T1571, T1041, T1657]
 description: "Socket Threat Research Team maps a rare inside look at OtterCookie's npm-Vercel-GitHub chain, adding 197 malicious packages and evidence of North Korea's Contagious Interview operation."
 toc: true
 canonical_url: https://socket.dev/blog/north-korea-contagious-interview-npm-attacks

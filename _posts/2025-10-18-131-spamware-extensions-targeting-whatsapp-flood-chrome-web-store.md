@@ -3,7 +3,7 @@ title: "131 Spamware Extensions Targeting WhatsApp Flood Chrome Web Store"
 short_title: "131 Spamware Extensions Targeting WhatsApp"
 date: 2025-10-18 12:00:00 +0000
 categories: [Threat Intelligence, Browser Extensions]
-tags: [Chrome, WhatsApp, Spamware, Extensions, Spam, Policy Abuse, Brazil, Threat Intelligence, T1176.001, T1204, T1059.007, T1217, T1005]
+tags: [Chrome, Extensions, Spam, Brazil, T1176.001, T1204, T1059.007, T1217, T1005]
 description: "The Socket Threat Research Team uncovered a coordinated campaign that floods the Chrome Web Store with 131 rebranded clones of a WhatsApp Web automation extension to spam Brazilian users."
 toc: true
 canonical_url: https://socket.dev/blog/131-spamware-extensions-targeting-whatsapp-flood-chrome-web-store

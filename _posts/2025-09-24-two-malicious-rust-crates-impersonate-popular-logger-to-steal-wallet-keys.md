@@ -2,7 +2,7 @@
 title: "Two Malicious Rust Crates Impersonate Popular Logger to Steal Wallet Keys"
 date: 2025-09-24 12:00:00 +0000
 categories: [Malware, Rust]
-tags: [Rust, Typosquatting, Credential Theft, Infostealer, Solana, Supply Chain Security, Threat Intelligence, T1195.002, T1036.005, T1552.004, T1005, T1071.001, T1657]
+tags: [Rust, Typosquatting, Infostealer, crates.io, T1195.002, T1036.005, T1552.004, T1005, T1071.001, T1657]
 description: "Socket uncovers malicious Rust crates impersonating fast_log to steal Solana and Ethereum wallet keys from source code."
 toc: true
 canonical_url: https://socket.dev/blog/two-malicious-rust-crates-impersonate-popular-logger-to-steal-wallet-keys
@@ -24,7 +24,7 @@ _Socket AI Scanner flags faster_log as known malware. The crate typosquats the l
 Below is the threat actor’s [code](https://socket.dev/cargo/package/faster-log/files/1.7.8/faster_log-1.7.8/src/packer.rs) with C2 defanged. Comments tagged [Threat Actor] are from the original `faster_log` crate. Comments tagged [Analysis] are ours and call out the malicious functionality and intent. The companion crate async_println [implements](https://socket.dev/cargo/package/async-println/files/1.0.1/async_println-1.0.1/src/packer.rs) the same exfiltration workflow, posts to the same C2 endpoint, and targets the same families of wallet-key patterns, with only minor differences in helper names, length gates, and result batching across versions.
 
 
-```
+```rust
 use regex::Regex;
 use reqwest::Client;
 use serde::{Deserialize, Serialize};
