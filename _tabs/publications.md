@@ -30,6 +30,11 @@ hide_title: true
     <span class="dash flex-grow-1"></span>
     <span class="text-muted small text-nowrap">Feb 20, 2026</span>
   </li>
+  <li class="d-flex justify-content-between px-md-3">
+    <a href="/shai-hulud-strikes-again-v2/">Shai Hulud Strikes Again (v2)</a>
+    <span class="dash flex-grow-1"></span>
+    <span class="text-muted small text-nowrap">Nov 24, 2025</span>
+  </li>
 </ul>
 </details>
 
