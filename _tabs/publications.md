@@ -19,6 +19,11 @@ hide_title: true
     <span class="dash flex-grow-1"></span>
     <span class="text-muted small text-nowrap">Nov 26, 2025</span>
   </li>
+  <li class="d-flex justify-content-between px-md-3">
+    <a href="/north-korea-contagious-interview-campaign-338-malicious-npm-packages/">North Korea's Contagious Interview Campaign Escalates: 338 Malicious npm Packages, 50,000 Downloads</a>
+    <span class="dash flex-grow-1"></span>
+    <span class="text-muted small text-nowrap">Oct 10, 2025</span>
+  </li>
 </ul>
 </details>
 
