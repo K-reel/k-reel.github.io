@@ -135,6 +135,11 @@ hide_title: true
     <span class="dash flex-grow-1"></span>
     <span class="text-muted small text-nowrap">Jan 12, 2026</span>
   </li>
+  <li class="d-flex justify-content-between px-md-3">
+    <a href="/131-spamware-extensions-targeting-whatsapp-flood-chrome-web-store/">131 Spamware Extensions Targeting WhatsApp Flood Chrome Web Store</a>
+    <span class="dash flex-grow-1"></span>
+    <span class="text-muted small text-nowrap">Oct 18, 2025</span>
+  </li>
 </ul>
 </details>
 
