@@ -8,6 +8,7 @@ hide_title: true
 
 <style>
   .content details summary { font-size: 1.2rem; }
+  .content details ul { margin-top: 0.25rem; }
 </style>
 
 <details>
