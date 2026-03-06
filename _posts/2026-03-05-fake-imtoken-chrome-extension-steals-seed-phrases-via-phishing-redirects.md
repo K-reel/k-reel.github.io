@@ -7,7 +7,6 @@ tags: [Chrome, imToken, Phishing, Homoglyphs, Seed Phrase, Cryptocurrency, Walle
 description: "Mixed-script homoglyphs and a lookalike domain mimic imToken's import flow to capture mnemonics and private keys."
 toc: true
 canonical_url: https://socket.dev/blog/fake-imtoken-chrome-extension-steals-seed-phrases-via-phishing-redirects
-author: kush_pandya
 source: Socket
 image:
   path: https://cdn.sanity.io/images/cgdhsj6q/production/e287bd2970e97281c6ff1f4549daf475cf3470f8-1024x1024.png?w=1600&q=95&fit=max&auto=format
