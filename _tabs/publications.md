@@ -94,6 +94,11 @@ hide_title: true
     <span class="dash flex-grow-1"></span>
     <span class="text-muted small text-nowrap">Dec 15, 2025</span>
   </li>
+  <li class="d-flex justify-content-between px-md-3">
+    <a href="/malicious-nuget-packages-typosquat-nethereum-to-exfiltrate-wallet-keys/">Malicious NuGet Packages Typosquat Nethereum to Exfiltrate Wallet Keys</a>
+    <span class="dash flex-grow-1"></span>
+    <span class="text-muted small text-nowrap">Oct 22, 2025</span>
+  </li>
 </ul>
 </details>
 
