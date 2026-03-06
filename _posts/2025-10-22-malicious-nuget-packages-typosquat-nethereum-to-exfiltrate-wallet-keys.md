@@ -3,7 +3,7 @@ title: "Malicious NuGet Packages Typosquat Nethereum to Exfiltrate Wallet Keys"
 short_title: "Malicious NuGet Packages Typosquat Nethereum"
 date: 2025-10-22 12:00:00 +0000
 categories: [Malware, NuGet]
-tags: [NuGet, Nethereum, Typosquatting, Homoglyphs, Credential Theft, Cryptocurrency, Wallet, Obfuscation, .NET, Ethereum, Threat Intelligence, C2, T1195.001, T1036, T1027, T1041, T1204]
+tags: [NuGet, Typosquatting, Homoglyphs, Credential Theft, Obfuscation, .NET, Threat Intelligence, T1195.001, T1036, T1027, T1041, T1204]
 description: "The Socket Threat Research Team uncovered malicious NuGet packages typosquatting the popular Nethereum project to steal wallet keys."
 toc: true
 canonical_url: https://socket.dev/blog/malicious-nuget-packages-typosquat-nethereum-to-exfiltrate-wallet-keys

@@ -3,7 +3,7 @@ title: "Fake imToken Chrome Extension Steals Seed Phrases via Phishing Redirects
 short_title: "Fake imToken Extension Steals Seed Phrases"
 date: 2026-03-05 12:00:00 +0000
 categories: [Malware, Browser Extensions]
-tags: [Chrome, imToken, Phishing, Homoglyphs, Cryptocurrency, Wallet, Credential Theft, Browser Extension, Threat Intelligence, T1195.002, T1176.001, T1059.007, T1204, T1036, T1656, T1566, T1583.001, T1583.006, T1056.003]
+tags: [Chrome, imToken, Phishing, Homoglyphs, Credential Theft, Extensions, Threat Intelligence, T1195.002, T1176.001, T1059.007, T1204, T1036, T1656, T1566, T1583.001, T1583.006, T1056.003]
 description: "Mixed-script homoglyphs and a lookalike domain mimic imToken's import flow to capture mnemonics and private keys."
 toc: true
 canonical_url: https://socket.dev/blog/fake-imtoken-chrome-extension-steals-seed-phrases-via-phishing-redirects

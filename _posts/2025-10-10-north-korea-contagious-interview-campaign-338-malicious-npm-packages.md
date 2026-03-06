@@ -3,7 +3,7 @@ title: "North Korea's Contagious Interview Campaign Escalates: 338 Malicious npm
 short_title: "North Korea: 338 Malicious npm Packages, 50,000 Downloads"
 date: 2025-10-10 12:00:00 +0000
 categories: [Malware, North Korea]
-tags: [Contagious Interview, North Korea, BeaverTail, InvisibleFerret, HexEval, XORIndex, npm, Typosquatting, Credential Theft, Cryptocurrency, Supply Chain, LinkedIn, Social Engineering, Threat Intelligence, T1195.002, T1608.001, T1204.002, T1059.007, T1027.013, T1546.016, T1005, T1082, T1083, T1217, T1555.003, T1555.001, T1041, T1105, T1119, T1657]
+tags: [Contagious Interview, North Korea, BeaverTail, InvisibleFerret, HexEval, XORIndex, npm, Typosquatting, Credential Theft, Supply Chain, LinkedIn, Social Engineering, Threat Intelligence, T1195.002, T1608.001, T1204.002, T1059.007, T1027.013, T1546.016, T1005, T1082, T1083, T1217, T1555.003, T1555.001, T1041, T1105, T1119, T1657]
 description: "The Socket Threat Research Team is tracking weekly intrusions into the npm registry that follow a repeatable adversarial playbook used by North Korean state-sponsored actors."
 toc: true
 canonical_url: https://socket.dev/blog/north-korea-contagious-interview-campaign-338-malicious-npm-packages

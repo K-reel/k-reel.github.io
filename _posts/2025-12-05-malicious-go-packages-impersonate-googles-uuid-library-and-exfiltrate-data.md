@@ -3,7 +3,7 @@ title: "Malicious Go Packages Impersonate Google's UUID Library and Exfiltrate D
 short_title: "Malicious Go Packages Impersonate Google's UUID Library"
 date: 2025-12-05 12:00:00 +0000
 categories: [Go, Supply Chain]
-tags: [Go, Typosquatting, Data Exfiltration, Supply Chain Security, T1195.002, T1204.005, T1036, T1656, T1567.003, T1027.013]
+tags: [Go, Typosquatting, Supply Chain Security, T1195.002, T1204.005, T1036, T1656, T1567.003, T1027.013]
 description: "A pair of typosquatted Go packages posing as Google's UUID library quietly turn helper functions into encrypted exfiltration channels to a paste site, putting developer and CI data at risk."
 toc: true
 canonical_url: https://socket.dev/blog/malicious-go-packages-impersonate-googles-uuid-library-and-exfiltrate-data

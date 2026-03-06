@@ -3,7 +3,7 @@ title: "Spearphishing Campaign Abuses npm Registry to Target U.S. and Allied Man
 short_title: "npm-Hosted Spearphishing Targets U.S. Manufacturing"
 date: 2025-12-23 12:00:00 +0000
 categories: [Malware, npm]
-tags: [npm, Spearphishing, Phishing, Credential Theft, Microsoft, Supply Chain Security, AiTM, Manufacturing, Healthcare, Critical Infrastructure, Obfuscation, NATO, United States, Industrial Automation, Evilginx, T1195.002, T1608.001, T1589.002, T1589.003, T1591.004, T1059.007, T1036, T1656, T1566.002, T1583.006, T1027, T1557, T1562, T1480, T1497, T1078, T1539]
+tags: [npm, Spearphishing, Phishing, Credential Theft, Microsoft, Supply Chain Security, Manufacturing, Healthcare, Critical Infrastructure, Obfuscation, NATO, United States, Industrial Automation, Evilginx, T1195.002, T1608.001, T1589.002, T1589.003, T1591.004, T1059.007, T1036, T1656, T1566.002, T1583.006, T1027, T1557, T1562, T1480, T1497, T1078, T1539]
 author: kirill_and_nicholas
 canonical_url: https://socket.dev/blog/spearphishing-campaign-abuses-npm-registry
 source: Socket
