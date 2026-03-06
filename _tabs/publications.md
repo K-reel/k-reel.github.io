@@ -12,7 +12,13 @@ hide_title: true
 
 <details>
 <summary>🇰🇵 <strong>North Korea — Contagious Interview</strong></summary>
-<br>
+<ul class="content ps-0">
+  <li class="d-flex justify-content-between px-md-3">
+    <a href="/north-korea-contagious-interview-npm-attacks/">Inside the GitHub Infrastructure Powering North Korea's Contagious Interview npm Attacks</a>
+    <span class="dash flex-grow-1"></span>
+    <span class="text-muted small text-nowrap">Nov 26, 2025</span>
+  </li>
+</ul>
 </details>
 
 <details>
