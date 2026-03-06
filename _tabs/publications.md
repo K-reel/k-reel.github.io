@@ -109,7 +109,13 @@ hide_title: true
 
 <details>
 <summary>🦀 <strong>Rust / Crates</strong></summary>
-<br>
+<ul class="content ps-0">
+  <li class="d-flex justify-content-between px-md-3">
+    <a href="/two-malicious-rust-crates-impersonate-popular-logger-to-steal-wallet-keys/">Two Malicious Rust Crates Impersonate Popular Logger to Steal Wallet Keys</a>
+    <span class="dash flex-grow-1"></span>
+    <span class="text-muted small text-nowrap">Sep 24, 2025</span>
+  </li>
+</ul>
 </details>
 
 <details>
