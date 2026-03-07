@@ -2,7 +2,7 @@
 title: "60 Malicious Ruby Gems Used in Targeted Credential Theft Campaign"
 date: 2025-08-07 12:00:00 +0000
 categories: [RubyGems]
-tags: [RubyGems, Infostealer, South Korea, Spam, Grey-Hat, Stock Manipulation, T1195.002, T1608.001, T1204.002, T1056.002, T1016, T1041]
+tags: [RubyGems, Ruby, Infostealer, South Korea, Spam, T1195.002, T1608.001, T1204.002, T1056.002, T1016, T1041]
 canonical_url: https://socket.dev/blog/60-malicious-ruby-gems-used-in-targeted-credential-theft-campaign
 source: Socket
 image:
