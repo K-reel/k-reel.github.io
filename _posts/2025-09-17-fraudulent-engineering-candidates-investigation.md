@@ -8,7 +8,7 @@ author: kirill_and_lauren
 canonical_url: https://socket.dev/blog/fraudulent-engineering-candidates-investigation
 source: Socket
 image:
-  path: https://cdn.sanity.io/images/cgdhsax9/production/69bec0d1acf1c104f5412cc0e8dc3d674f04104c-1024x1024.png
+  path: https://cdn.sanity.io/images/cgdhsj6q/production/69bec0d1acf1c104f5412cc0e8dc3d674f04104c-1024x1024.png
   alt: "Identifying and Preventing Fraudulent Engineering Candidates"
 description: "Socket identified 80 fake candidates targeting engineering roles, including suspected North Korean operators, exposing the new reality of hiring as a security function."
 ---
@@ -79,14 +79,14 @@ Most shared the same structural tells. Many included neither a LinkedIn link nor
 
 We also ran back-channel verification with trusted industry contacts. In multiple cases, claimed employment did not hold up, including no record of the candidate at the named company and identity overlap with real employees whose start dates differed by years from the resume. These checks reinforce our assessment of synthetic personas and impersonation tactics.
 
-![Fraudulent candidate LinkedIn 404](https://cdn.sanity.io/images/cgdhsax9/production/d01d5d8072b244dd32693790e0f50695e08fd6f7-2048x1013.png)
+![Fraudulent candidate LinkedIn 404](https://cdn.sanity.io/images/cgdhsj6q/production/d01d5d8072b244dd32693790e0f50695e08fd6f7-2048x1013.png)
 _Fraudulent candidate's cited LinkedIn profile resolves to "This page doesn't exist", confirming a nonfunctional link and a strong screening red flag._
 
 ## Scraped Vacancies and AI-Assisted Resume Generation
 
 Many resumes reused phrasing from our vacancy notices and from unrelated professionals' public profiles. The text reads smoothly, but it breaks under verification. Dates, titles, locations, and stack details drift, and identical sentences recur across submissions. Claimed projects do not map to public code, commits, issues, talks, or publications you would expect from a senior engineer.
 
-![Enhancv resume builder homepage](https://cdn.sanity.io/images/cgdhsax9/production/589badc141b407b2564cbc8b4a65df30c713f391-2048x1037.png)
+![Enhancv resume builder homepage](https://cdn.sanity.io/images/cgdhsj6q/production/589badc141b407b2564cbc8b4a65df30c713f391-2048x1037.png)
 _Enhancv resume builder homepage; PDFs exported from this platform list Enhancv in metadata fields, a fingerprint we observed across multiple fraudulent resumes._
 
 ## Case Snapshots (Anonymized)
@@ -95,7 +95,7 @@ _Enhancv resume builder homepage; PDFs exported from this platform list Enhancv 
 
 - **Candidate B**: Claimed Principal Engineer with ten years across Facebook, Apple, Amazon, Netflix, and Google. The LinkedIn URL was malformed and no GitHub link was provided. The candidate claimed Kubernetes and Terraform leadership, yet we found no corroborating repositories, talks, issues, or public project history.
 
-![Mock resume with screening red flags](https://cdn.sanity.io/images/cgdhsax9/production/54479b346675d34e9b398e937789a28bcb46c4fe-2038x2012.png)
+![Mock resume with screening red flags](https://cdn.sanity.io/images/cgdhsj6q/production/54479b346675d34e9b398e937789a28bcb46c4fe-2038x2012.png)
 _Mock resume demonstrating combined screening red flags: name-to-email mismatch with impersonation-style handles, malformed LinkedIn and GitHub links, marquee-brand stacking, unverifiable "high-impact" claims, a resume-builder fingerprint in PDF metadata, a languages section with an English-proficiency line atypical for long-claimed U.S. tenure, "Berkeley" misspelled, and no verifiable code. Taken together, these individually minor indicators create a strong triage case._
 
 ## Identity Signals
@@ -106,7 +106,7 @@ We also saw impersonation and fabrication. In several cases an applicant reused 
 
 In one case we identified a suspected sock puppet GitHub profile. At the time of writing, it contained no substantive projects, only two repositories with README text asserting employment as an engineer. The profile's outbound links returned 404s, and the supposed blog work samples either led nowhere or redirected to unrelated pages. Taken together, these signals indicate a fabricated profile created to support a fraudulent job application.
 
-![Suspected sock puppet GitHub profile](https://cdn.sanity.io/images/cgdhsax9/production/1f3fd2af8d38f2880ae1201c9e4e9d74db69cd6d-2048x1198.png)
+![Suspected sock puppet GitHub profile](https://cdn.sanity.io/images/cgdhsj6q/production/1f3fd2af8d38f2880ae1201c9e4e9d74db69cd6d-2048x1198.png)
 _Suspected sock puppet GitHub profile with insubstantial repositories, and external links that lead nowhere._
 
 The [Department of Justice](https://www.justice.gov/opa/pr/justice-department-announces-coordinated-nationwide-actions-combat-north-korean-remote) and the [Treasury](https://home.treasury.gov/news/press-releases/jy2790) describe a similar pattern: North Korean IT workers reuse stock material, fabricate biographies, and rely on facilitators to pass hiring gates. [Unit 42](https://unit42.paloaltonetworks.com/north-korean-synthetic-identity-creation/) and [KnowBe4](https://blog.knowbe4.com/how-a-north-korean-fake-it-worker-tried-to-infiltrate-us) have documented synthetic personas, newly created LinkedIn accounts, and real-time deepfakes used to secure roles.
