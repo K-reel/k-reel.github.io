@@ -3,7 +3,7 @@ title: "Malicious Go Module Disguised as SSH Brute Forcer Exfiltrates Credential
 short_title: "Malicious Go Module Exfiltrates Credentials via Telegram"
 date: 2025-08-21 12:00:00 +0000
 categories: [Go]
-tags: [Go, SSH, Infostealer, Brute Force, IoT, Russian Threat Actor, T1195.002, T1608.001, T1204.002, T1046, T1110.001, T1021.004, T1071.001, T1567]
+tags: [Go, Russian Link, Infostealer, T1195.002, T1608.001, T1204.002, T1046, T1110.001, T1021.004, T1071.001, T1567]
 canonical_url: https://socket.dev/blog/malicious-go-module-disguised-as-ssh-brute-forcer-exfiltrates-credentials
 source: Socket
 image:
