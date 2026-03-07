@@ -167,11 +167,6 @@ hide_title: true
     <span class="text-muted small text-nowrap">Mar 5, 2026</span>
   </li>
   <li class="d-flex justify-content-between px-md-3">
-    <a href="/malicious-chrome-extension-exfiltrates-seed-phrases/">Malicious Chrome Extension Exfiltrates Seed Phrases, Enabling Wallet Takeover</a>
-    <span class="dash flex-grow-1"></span>
-    <span class="text-muted small text-nowrap">Mar 2, 2026</span>
-  </li>
-  <li class="d-flex justify-content-between px-md-3">
     <a href="/malicious-chrome-extension-steals-meta-business-manager-exports-and-totp-2fa-seeds/">Malicious Chrome Extension Steals Meta Business Manager Exports and TOTP 2FA Seeds</a>
     <span class="dash flex-grow-1"></span>
     <span class="text-muted small text-nowrap">Feb 13, 2026</span>
@@ -185,6 +180,11 @@ hide_title: true
     <a href="/malicious-chrome-extension-steals-mexc-api-keys/">Malicious Chrome Extension Steals MEXC API Keys for Account Takeover</a>
     <span class="dash flex-grow-1"></span>
     <span class="text-muted small text-nowrap">Jan 12, 2026</span>
+  </li>
+  <li class="d-flex justify-content-between px-md-3">
+    <a href="/malicious-chrome-extension-exfiltrates-seed-phrases/">Malicious Chrome Extension Exfiltrates Seed Phrases, Enabling Wallet Takeover</a>
+    <span class="dash flex-grow-1"></span>
+    <span class="text-muted small text-nowrap">Nov 12, 2025</span>
   </li>
   <li class="d-flex justify-content-between px-md-3">
     <a href="/131-spamware-extensions-targeting-whatsapp-flood-chrome-web-store/">131 Spamware Extensions Targeting WhatsApp Flood Chrome Web Store</a>
