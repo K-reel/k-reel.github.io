@@ -21,9 +21,9 @@
     }
 
     // Reveal page once web fonts are loaded (default is hidden via CSS)
-    document.fonts.ready.then(function() {
-      document.documentElement.classList.add('fonts-ready');
-    });
+    var reveal = function() { document.documentElement.classList.add('fonts-ready'); };
+    document.fonts.ready.then(reveal);
+    setTimeout(reveal, 1500);
   })();
 </script>
 
