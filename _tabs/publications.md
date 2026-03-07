@@ -63,6 +63,11 @@ hide_title: true
     <span class="dash flex-grow-1"></span>
     <span class="text-muted small text-nowrap">Sep 15, 2025</span>
   </li>
+  <li class="d-flex justify-content-between px-md-3">
+    <a href="/npm-is-package-hijacked-in-expanding-supply-chain-attack/">npm 'is' Package Hijacked in Expanding Supply Chain Attack</a>
+    <span class="dash flex-grow-1"></span>
+    <span class="text-muted small text-nowrap">Jul 22, 2025</span>
+  </li>
 </ul>
 </details>
 
