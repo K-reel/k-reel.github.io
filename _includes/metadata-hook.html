@@ -3,7 +3,6 @@
   Author: Kirill Boychenko
   Sets light mode default and favicon cache busting
 -->
-<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Source+Sans+Pro:wght@400;600;700;900&display=swap">
 <script>
   (function() {
     const modeKey = 'mode';
@@ -19,11 +18,6 @@
       // If storage is unavailable, fall back to light via attribute only
       document.documentElement.setAttribute('data-mode', lightMode);
     }
-
-    // Reveal page once web fonts are loaded (default is hidden via CSS)
-    var reveal = function() { document.documentElement.classList.add('fonts-ready'); };
-    document.fonts.ready.then(reveal);
-    setTimeout(reveal, 1500);
   })();
 </script>
 
@@ -44,11 +38,6 @@
   #tail-wrapper footer p:last-child { display: none !important; }
   #sidebar #avatar img { width: 100%; height: 100%; transform: translateY(6px) !important; }
   #sidebar #avatar img:hover { transform: translateY(6px) scale(1.2) !important; }
-  /* Hide page until web fonts load, then fade in — prevents FOUT */
-  #sidebar,
-  #main-wrapper { opacity: 0; transition: opacity 0.15s ease; }
-  .fonts-ready #sidebar,
-  .fonts-ready #main-wrapper { opacity: 1; }
   /* Mobile topbar: hide site title */
   @media (max-width: 849px) {
     #topbar-title { display: none; }
