@@ -7,6 +7,9 @@ hide_title: true
 ![Publications Banner](/assets/img/banner.jpg)
 
 <style>
+  /* Make banner image fill the full content width */
+  .content > p:first-child { margin-left: calc(-1 * var(--bs-gutter-x, 1.5rem)); margin-right: calc(-1 * var(--bs-gutter-x, 1.5rem)); }
+  .content > p:first-child img { width: 100%; display: block; }
   .content details summary { font-size: 1.2rem; }
   .content details ul { margin-top: 0.25rem; }
 </style>
