@@ -40,6 +40,11 @@ hide_title: true
     <span class="dash flex-grow-1"></span>
     <span class="text-muted small text-nowrap">Nov 24, 2025</span>
   </li>
+  <li class="d-flex justify-content-between px-md-3">
+    <a href="/tinycolor-supply-chain-attack-affects-40-packages/">Popular Tinycolor npm Package Compromised in Supply Chain Attack Affecting 40+ Packages</a>
+    <span class="dash flex-grow-1"></span>
+    <span class="text-muted small text-nowrap">Sep 15, 2025</span>
+  </li>
 </ul>
 </details>
 
