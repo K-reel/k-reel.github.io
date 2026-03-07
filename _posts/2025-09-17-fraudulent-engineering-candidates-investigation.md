@@ -3,7 +3,7 @@ title: "Identifying and Preventing Fraudulent Engineering Candidates: An Investi
 short_title: "Identifying and Preventing Fraudulent Engineering Candidates"
 date: 2025-09-17 12:00:00 +0000
 categories: [Threat Reports]
-tags: [North Korea, Fraudulent Candidates, Synthetic Identity, Deepfake, Hiring Security, Impersonation, OSINT, Resume Fraud, Enhancv, FlowCV, T1585.001, T1585.002]
+tags: [North Korea, Wagemole, LinkedIn, Impersonation, Resume Fraud, T1585.001, T1585.002]
 author: kirill_and_lauren
 canonical_url: https://socket.dev/blog/fraudulent-engineering-candidates-investigation
 source: Socket
