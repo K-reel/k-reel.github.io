@@ -121,7 +121,7 @@ hide_title: true
 </details>
 
 <details>
-<summary>💎 <strong>RubyGems / Ruby</strong></summary>
+<summary>♦️ <strong>RubyGems / Ruby</strong></summary>
 <br>
 </details>
 
