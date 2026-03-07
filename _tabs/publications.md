@@ -20,7 +20,7 @@ hide_title: true
   @media (min-width: 1200px) {
     .content > p:first-child img {
       /* On xl: stretch from left edge of content to the panel divider */
-      width: calc(100% + 3.5rem);
+      width: calc(100% + 5rem);
       left: -1.75rem;
       transform: none;
     }
