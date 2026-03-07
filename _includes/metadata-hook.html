@@ -20,10 +20,9 @@
       document.documentElement.setAttribute('data-mode', lightMode);
     }
 
-    // Hide sidebar text until web fonts are loaded to prevent FOUT
-    document.documentElement.classList.add('fonts-loading');
+    // Reveal page once web fonts are loaded (default is hidden via CSS)
     document.fonts.ready.then(function() {
-      document.documentElement.classList.remove('fonts-loading');
+      document.documentElement.classList.add('fonts-ready');
     });
   })();
 </script>
@@ -45,11 +44,11 @@
   #tail-wrapper footer p:last-child { display: none !important; }
   #sidebar #avatar img { width: 100%; height: 100%; transform: translateY(6px) !important; }
   #sidebar #avatar img:hover { transform: translateY(6px) scale(1.2) !important; }
-  /* Hide all text until web fonts load to prevent FOUT */
-  .fonts-loading #sidebar,
-  .fonts-loading #main-wrapper { opacity: 0; }
+  /* Hide page until web fonts load, then fade in — prevents FOUT */
   #sidebar,
-  #main-wrapper { transition: opacity 0.15s ease; }
+  #main-wrapper { opacity: 0; transition: opacity 0.15s ease; }
+  .fonts-ready #sidebar,
+  .fonts-ready #main-wrapper { opacity: 1; }
   /* Mobile topbar: hide site title */
   @media (max-width: 849px) {
     #topbar-title { display: none; }
