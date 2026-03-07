@@ -100,7 +100,7 @@ hide_title: true
 </details>
 
 <details>
-<summary>🦊 <strong>Go Modules / Golang</strong></summary>
+<summary>🐹 <strong>Go Modules / Golang</strong></summary>
 <ul class="content ps-0">
   <li class="d-flex justify-content-between px-md-3">
     <a href="/malicious-go-crypto-module-steals-passwords/">Malicious Go "crypto" Module Steals Passwords and Deploys Rekoobe Backdoor</a>
