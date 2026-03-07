@@ -3,7 +3,7 @@ title: "Popular Tinycolor npm Package Compromised in Supply Chain Attack Affecti
 short_title: "Tinycolor npm Supply Chain Attack Affects 40+ Packages"
 date: 2025-09-15 12:00:00 +0000
 categories: [Supply Chain]
-tags: [npm, Tinycolor, TruffleHog, Shai-Hulud, Developer Compromise, Infostealer, GitHub Actions, NativeScript]
+tags: [npm, TruffleHog, Shai-Hulud, Developer Compromise, Infostealer, GitHub Actions]
 author: socket_research_team
 canonical_url: https://socket.dev/blog/tinycolor-supply-chain-attack-affects-40-packages
 source: Socket
