@@ -45,7 +45,13 @@ hide_title: true
 
 <details>
 <summary>📊 <strong>Landscape &amp; Threat Reports</strong></summary>
-<br>
+<ul class="content ps-0">
+  <li class="d-flex justify-content-between px-md-3">
+    <a href="/fraudulent-engineering-candidates-investigation/">Identifying and Preventing Fraudulent Engineering Candidates: An Investigation into 80 Confirmed Cases</a>
+    <span class="dash flex-grow-1"></span>
+    <span class="text-muted small text-nowrap">Sep 17, 2025</span>
+  </li>
+</ul>
 </details>
 
 <details>
