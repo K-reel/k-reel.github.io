@@ -122,7 +122,13 @@ hide_title: true
 
 <details>
 <summary>♦️ <strong>RubyGems / Ruby</strong></summary>
-<br>
+<ul class="content ps-0">
+  <li class="d-flex justify-content-between px-md-3">
+    <a href="/60-malicious-ruby-gems-used-in-targeted-credential-theft-campaign/">60 Malicious Ruby Gems Used in Targeted Credential Theft Campaign</a>
+    <span class="dash flex-grow-1"></span>
+    <span class="text-muted small text-nowrap">Aug 7, 2025</span>
+  </li>
+</ul>
 </details>
 
 <details>
