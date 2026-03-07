@@ -7,8 +7,19 @@ hide_title: true
 ![Publications Banner](/assets/img/banner.jpg)
 
 <style>
-  /* Make banner image fill the full content width */
-  .content > p:first-child { margin-left: calc(-1 * var(--bs-gutter-x, 1.5rem)); margin-right: calc(-1 * var(--bs-gutter-x, 1.5rem)); }
+  /* Make banner image fill to the right-side panel divider */
+  .content > p:first-child {
+    width: calc(100% + 2rem);
+    margin-left: -0.25rem;
+    margin-right: -1.75rem;
+  }
+  @media (min-width: 768px) {
+    .content > p:first-child {
+      width: calc(100% + 3.5rem);
+      margin-left: -1.5rem;
+      margin-right: -2rem;
+    }
+  }
   .content > p:first-child img { width: 100%; display: block; }
   .content details summary { font-size: 1.2rem; }
   .content details ul { margin-top: 0.25rem; }
