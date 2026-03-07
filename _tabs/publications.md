@@ -85,6 +85,11 @@ hide_title: true
     <span class="dash flex-grow-1"></span>
     <span class="text-muted small text-nowrap">Dec 23, 2025</span>
   </li>
+  <li class="d-flex justify-content-between px-md-3">
+    <a href="/wallet-draining-npm-package-impersonates-nodemailer/">Wallet-Draining npm Package Impersonates Nodemailer to Hijack Crypto Transactions</a>
+    <span class="dash flex-grow-1"></span>
+    <span class="text-muted small text-nowrap">Aug 29, 2025</span>
+  </li>
 </ul>
 </details>
 
