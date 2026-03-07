@@ -94,6 +94,11 @@ hide_title: true
     <span class="dash flex-grow-1"></span>
     <span class="text-muted small text-nowrap">Dec 5, 2025</span>
   </li>
+  <li class="d-flex justify-content-between px-md-3">
+    <a href="/malicious-go-module-disguised-as-ssh-brute-forcer-exfiltrates-credentials/">Malicious Go Module Disguised as SSH Brute Forcer Exfiltrates Credentials via Telegram</a>
+    <span class="dash flex-grow-1"></span>
+    <span class="text-muted small text-nowrap">Aug 21, 2025</span>
+  </li>
 </ul>
 </details>
 
