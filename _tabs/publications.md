@@ -7,20 +7,24 @@ hide_title: true
 ![Publications Banner](/assets/img/banner.jpg)
 
 <style>
-  /* Make banner image fill to the right-side panel divider */
-  .content > p:first-child {
-    width: calc(100% + 2rem);
-    margin-left: -0.25rem;
-    margin-right: -1.75rem;
+  /* Make banner stretch to the panel divider */
+  .content > p:first-child a { display: block; }
+  .content > p:first-child img {
+    width: 100vw;
+    max-width: none;
+    display: block;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
   }
-  @media (min-width: 768px) {
-    .content > p:first-child {
+  @media (min-width: 1200px) {
+    .content > p:first-child img {
+      /* On xl: stretch from left edge of content to the panel divider */
       width: calc(100% + 3.5rem);
-      margin-left: -1.5rem;
-      margin-right: -2rem;
+      left: -1.75rem;
+      transform: none;
     }
   }
-  .content > p:first-child img { width: 100%; display: block; }
   .content details summary { font-size: 1.2rem; }
   .content details ul { margin-top: 0.25rem; }
 </style>
