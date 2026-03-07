@@ -70,6 +70,11 @@ hide_title: true
 <summary>📊 <strong>Landscape &amp; Threat Reports</strong></summary>
 <ul class="content ps-0">
   <li class="d-flex justify-content-between px-md-3">
+    <a href="/surveillance-malware-hidden-in-npm-and-pypi-packages/">Surveillance Malware Hidden in npm and PyPI Packages Targets Developers with Keyloggers, Webcam Capture, and Credential Theft</a>
+    <span class="dash flex-grow-1"></span>
+    <span class="text-muted small text-nowrap">Jul 23, 2025</span>
+  </li>
+  <li class="d-flex justify-content-between px-md-3">
     <a href="/fraudulent-engineering-candidates-investigation/">Identifying and Preventing Fraudulent Engineering Candidates: An Investigation into 80 Confirmed Cases</a>
     <span class="dash flex-grow-1"></span>
     <span class="text-muted small text-nowrap">Sep 17, 2025</span>
