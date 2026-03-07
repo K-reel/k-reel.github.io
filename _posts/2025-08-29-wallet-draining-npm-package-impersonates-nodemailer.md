@@ -3,7 +3,7 @@ title: "Wallet-Draining npm Package Impersonates Nodemailer to Hijack Crypto Tra
 short_title: "Wallet-Draining npm Package Impersonates Nodemailer"
 date: 2025-08-29 12:00:00 +0000
 categories: [npm]
-tags: [npm, Typosquatting, Atomic Wallet, Electron, Nodemailer, T1195.002, T1036.005, T1059.007, T1608.001, T1204.002, T1657]
+tags: [npm, Typosquatting, T1195.002, T1036.005, T1059.007, T1608.001, T1204.002, T1657]
 canonical_url: https://socket.dev/blog/wallet-draining-npm-package-impersonates-nodemailer
 source: Socket
 image:
