@@ -70,6 +70,9 @@ hide_title: true
   <li class="px-md-3">
     <a href="/lazarus-expands-malicious-npm-campaign-11-new-packages-add-malware-loaders-and-bitbucket/">Lazarus Expands Malicious npm Campaign: 11 New Packages Add Malware Loaders and Bitbucket Payloads</a>
   </li>
+  <li class="px-md-3">
+    <a href="/lazarus-strikes-npm-again-with-a-new-wave-of-malicious-packages/">Lazarus Strikes npm Again with New Wave of Malicious Packages</a>
+  </li>
 </ul>
 </details>
 
