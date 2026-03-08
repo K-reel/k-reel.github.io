@@ -98,6 +98,9 @@ hide_title: true
   <li class="px-md-3">
     <a href="/malicious-koishi-chatbot-plugin/">Malicious Koishi Chatbot Plugin Exfiltrates Messages Triggered by 8-Character Hex Strings</a>
   </li>
+  <li class="px-md-3">
+    <a href="/malicious-npm-packages-hijack-cursor-editor-on-macos/">Backdooring the IDE: Malicious npm Packages Hijack Cursor Editor on macOS</a>
+  </li>
 </ul>
 </details>
 
