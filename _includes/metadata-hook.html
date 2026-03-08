@@ -153,6 +153,19 @@
   }
 </style>
 
+{% if page.url == '/publications/' %}
+<style>
+  /* Show bullet markers on publications list items */
+  .content.ps-0 {
+    list-style: disc;
+    padding-left: 1.25rem !important;
+  }
+  .content.ps-0 li::marker {
+    color: var(--text-muted-color, #868e96);
+  }
+</style>
+{% endif %}
+
 {% if page.url == '/about/' %}
 <style>
   article .content p { font-size: 1.1rem; }
