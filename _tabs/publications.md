@@ -94,6 +94,11 @@ hide_title: true
     <span class="dash flex-grow-1"></span>
     <span class="text-muted small text-nowrap">Sep 17, 2025</span>
   </li>
+  <li class="d-flex justify-content-between px-md-3">
+    <a href="/2025-blockchain-and-cryptocurrency-threat-report/">2025 Blockchain and Cryptocurrency Threat Report: Malware in the Open Source Supply Chain</a>
+    <span class="dash flex-grow-1"></span>
+    <span class="text-muted small text-nowrap">Jun 12, 2025</span>
+  </li>
 </ul>
 </details>
 
