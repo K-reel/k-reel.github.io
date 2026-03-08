@@ -29,8 +29,8 @@ hide_title: true
   .content details ul { margin-top: 0.25rem; }
   #toggle-all {
     border: none;
-    background: var(--link-color, #d2603a);
-    color: #fff;
+    background: #fff;
+    color: #000;
     padding: 0.45rem 1.1rem;
     border-radius: 0.5rem;
     cursor: pointer;
