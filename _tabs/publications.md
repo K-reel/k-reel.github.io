@@ -113,6 +113,9 @@ hide_title: true
   <li class="px-md-3">
     <a href="/monkey-patched-pypi-packages-steal-solana-private-keys/">Monkey-Patched PyPI Packages Use Transitive Dependencies to Steal Solana Private Keys</a>
   </li>
+  <li class="px-md-3">
+    <a href="/malicious-npm-and-pypi-packages-steal-wallet-credentials/">The Bad Seeds: Malicious npm and PyPI Packages Pose as Developer Tools to Steal Wallet Credentials</a>
+  </li>
 </ul>
 </details>
 
