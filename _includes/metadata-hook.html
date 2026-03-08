@@ -149,6 +149,14 @@
 
 {% if page.layout == 'post' %}
 <style>
+  /* Post hero banner: less aggressive crop */
+  .preview-img {
+    aspect-ratio: 21 / 9;
+  }
+  .preview-img img {
+    object-fit: cover;
+    object-position: center center;
+  }
   .prose figure { text-align: center; }
   /* Hide heading anchor links */
   h1 > a[href^="#"], h2 > a[href^="#"], h3 > a[href^="#"],
