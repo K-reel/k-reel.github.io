@@ -3,7 +3,7 @@ title: "Backdooring the IDE: Malicious npm Packages Hijack Cursor Editor on macO
 short_title: "Malicious npm Packages Hijack Cursor Editor on macOS"
 date: 2025-05-07 12:00:00 +0000
 categories: [Malware, npm]
-tags: [npm, JavaScript, Cursor, macOS, Backdoor, T1195.002, T1059.007, T1608.001, T1204.002, T1027.013, T1574, T1071.001, T1041]
+tags: [npm, JavaScript, Cursor, Backdoor, T1195.002, T1059.007, T1608.001, T1204.002, T1027.013, T1574, T1071.001, T1041]
 canonical_url: https://socket.dev/blog/malicious-npm-packages-hijack-cursor-editor-on-macos
 source: Socket
 image:
