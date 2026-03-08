@@ -27,7 +27,28 @@ hide_title: true
   }
   .content details summary { font-size: 1.2rem; }
   .content details ul { margin-top: 0.25rem; }
+  #toggle-all {
+    border: 1px solid var(--btn-border-color, #868e96);
+    background: transparent;
+    color: var(--text-color, inherit);
+    padding: 0.3rem 0.75rem;
+    border-radius: 0.375rem;
+    cursor: pointer;
+    font-size: 0.85rem;
+    margin-bottom: 0.75rem;
+  }
+  #toggle-all:hover {
+    background: var(--btn-border-color, #868e96);
+    color: var(--btn-active-text, #fff);
+  }
 </style>
+
+<button id="toggle-all" onclick="(function(){
+  var details = document.querySelectorAll('.content details');
+  var anyOpen = Array.from(details).some(function(d){ return d.open; });
+  details.forEach(function(d){ d.open = !anyOpen; });
+  document.getElementById('toggle-all').textContent = anyOpen ? 'Expand All' : 'Collapse All';
+})()">Expand All</button>
 
 <details>
 <summary>🇰🇵 <strong>North Korea — Contagious Interview</strong></summary>
