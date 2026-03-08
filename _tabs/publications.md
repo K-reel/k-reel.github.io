@@ -127,6 +127,9 @@ hide_title: true
   <li class="px-md-3">
     <a href="/malicious-npm-packages-hijack-cursor-editor-on-macos/">Backdooring the IDE: Malicious npm Packages Hijack Cursor Editor on macOS</a>
   </li>
+  <li class="px-md-3">
+    <a href="/black-basta-dependency-confusion-ambitions-and-ransomware-in-open-source-ecosystems/">Black Basta's Dependency Confusion Ambitions and Ransomware in Open Source Ecosystems</a>
+  </li>
 </ul>
 </details>
 
