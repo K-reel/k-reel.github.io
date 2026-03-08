@@ -148,6 +148,9 @@ hide_title: true
   <li class="px-md-3">
     <a href="/malicious-npm-and-pypi-packages-steal-wallet-credentials/">The Bad Seeds: Malicious npm and PyPI Packages Pose as Developer Tools to Steal Wallet Credentials</a>
   </li>
+  <li class="px-md-3">
+    <a href="/malicious-pypi-package-exploits-deezer-api-for-coordinated-music-piracy/">Malicious PyPI Package Exploits Deezer API for Coordinated Music Piracy</a>
+  </li>
 </ul>
 </details>
 
