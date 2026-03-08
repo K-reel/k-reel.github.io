@@ -157,8 +157,14 @@
 <style>
   /* Show bullet markers on publications list items */
   .content.ps-0 {
-    list-style: disc;
     padding-left: 1.25rem !important;
+  }
+  .content.ps-0 li {
+    display: list-item !important;
+    list-style: disc;
+  }
+  .content.ps-0 li > * {
+    display: inline;
   }
   .content.ps-0 li::marker {
     color: var(--text-muted-color, #868e96);
