@@ -3,7 +3,7 @@ title: "Malicious Koishi Chatbot Plugin Exfiltrates Messages Triggered by 8-Char
 short_title: "Malicious Koishi Chatbot Plugin Exfiltrates Messages"
 date: 2025-05-19 12:00:00 +0000
 categories: [Malware, npm]
-tags: [npm, JavaScript, Koishi, Chatbot, QQ, T1195.002, T1059.007, T1078, T1567]
+tags: [npm, JavaScript, T1195.002, T1059.007, T1078, T1567]
 canonical_url: https://socket.dev/blog/malicious-koishi-chatbot-plugin
 source: Socket
 image:
