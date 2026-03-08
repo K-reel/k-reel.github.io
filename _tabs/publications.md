@@ -115,6 +115,11 @@ hide_title: true
     <span class="dash flex-grow-1"></span>
     <span class="text-muted small text-nowrap">Aug 29, 2025</span>
   </li>
+  <li class="d-flex justify-content-between px-md-3">
+    <a href="/60-malicious-npm-packages-leak-network-and-host-data/">60 Malicious npm Packages Leak Network and Host Data in Active Malware Campaign</a>
+    <span class="dash flex-grow-1"></span>
+    <span class="text-muted small text-nowrap">May 23, 2025</span>
+  </li>
 </ul>
 </details>
 
