@@ -131,6 +131,14 @@
   @media (max-width: 849px) {
     #topbar-title { display: none; }
   }
+  /* Show more of post preview images (less aggressive crop) */
+  #post-list .preview-img {
+    aspect-ratio: 40 / 21;
+  }
+  #post-list .preview-img img {
+    object-fit: contain;
+    background: var(--img-bg);
+  }
 </style>
 
 {% if page.url == '/about/' %}
