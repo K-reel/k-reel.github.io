@@ -120,6 +120,11 @@ hide_title: true
     <span class="dash flex-grow-1"></span>
     <span class="text-muted small text-nowrap">May 23, 2025</span>
   </li>
+  <li class="d-flex justify-content-between px-md-3">
+    <a href="/malicious-koishi-chatbot-plugin/">Malicious Koishi Chatbot Plugin Exfiltrates Messages Triggered by 8-Character Hex Strings</a>
+    <span class="dash flex-grow-1"></span>
+    <span class="text-muted small text-nowrap">May 19, 2025</span>
+  </li>
 </ul>
 </details>
 
