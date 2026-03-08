@@ -155,19 +155,28 @@
 
 {% if page.url == '/publications/' %}
 <style>
-  /* Show bullet markers on publications list items */
+  /* Publications list: ▸ marker + dotted leader to right-aligned date */
   .content.ps-0 {
     padding-left: 1.25rem !important;
+    list-style: none;
+  }
+  .content.ps-0 li::before {
+    content: "▸";
+    color: var(--text-muted-color, #868e96);
+    position: absolute;
+    left: 0;
   }
   .content.ps-0 li {
-    display: list-item !important;
-    list-style-type: "▸ ";
+    position: relative;
+    padding-left: 0;
   }
-  .content.ps-0 li > * {
-    display: inline;
-  }
-  .content.ps-0 li::marker {
-    color: var(--text-muted-color, #868e96);
+  .content.ps-0 li > .dash {
+    flex-grow: 1;
+    border-bottom: 1px dotted var(--text-muted-color, #868e96);
+    margin: 0 0.5rem;
+    align-self: flex-end;
+    min-width: 1rem;
+    height: 0.65em;
   }
 </style>
 {% endif %}
