@@ -131,13 +131,13 @@
   @media (max-width: 849px) {
     #topbar-title { display: none; }
   }
-  /* Show more of post preview images (less aggressive crop) */
+  /* Post preview images: less crop than default, flush right */
   #post-list .preview-img {
-    aspect-ratio: 40 / 21;
+    aspect-ratio: 1 / 1;
   }
   #post-list .preview-img img {
-    object-fit: contain;
-    background: var(--img-bg);
+    object-fit: cover;
+    object-position: right center;
   }
 </style>
 
