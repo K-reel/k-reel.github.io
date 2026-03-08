@@ -99,6 +99,11 @@ hide_title: true
     <span class="dash flex-grow-1"></span>
     <span class="text-muted small text-nowrap">Jun 12, 2025</span>
   </li>
+  <li class="d-flex justify-content-between px-md-3">
+    <a href="/malicious-open-source-packages-2025-mid-year-threat-report/">The Landscape of Malicious Open Source Packages: 2025 Mid‑Year Threat Report</a>
+    <span class="dash flex-grow-1"></span>
+    <span class="text-muted small text-nowrap">May 14, 2025</span>
+  </li>
 </ul>
 </details>
 
