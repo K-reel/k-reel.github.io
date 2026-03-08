@@ -158,6 +158,11 @@ hide_title: true
     <span class="dash flex-grow-1"></span>
     <span class="text-muted small text-nowrap">Aug 7, 2025</span>
   </li>
+  <li class="d-flex justify-content-between px-md-3">
+    <a href="/malicious-ruby-gems-exfiltrate-telegram-tokens-and-messages-following-vietnam-ban/">Malicious Ruby Gems Exfiltrate Telegram Tokens and Messages Following Vietnam Ban</a>
+    <span class="dash flex-grow-1"></span>
+    <span class="text-muted small text-nowrap">Jun 3, 2025</span>
+  </li>
 </ul>
 </details>
 
