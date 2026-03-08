@@ -3,7 +3,7 @@ title: "The Bad Seeds: Malicious npm and PyPI Packages Pose as Developer Tools t
 short_title: "Malicious npm and PyPI Packages Steal Wallet Credentials"
 date: 2025-04-22 12:00:00 +0000
 categories: [Malware, PyPI]
-tags: [npm, JavaScript, Python, PyPI, Infostealer, Google Analytics, T1195.002, T1059.006, T1059.007, T1566.003, T1608.001, T1204.002, T1552.004, T1071.001, T1041]
+tags: [npm, JavaScript, Python, PyPI, Infostealer, T1195.002, T1059.006, T1059.007, T1566.003, T1608.001, T1204.002, T1552.004, T1071.001, T1041]
 canonical_url: https://socket.dev/blog/malicious-npm-and-pypi-packages-steal-wallet-credentials
 source: Socket
 image:
