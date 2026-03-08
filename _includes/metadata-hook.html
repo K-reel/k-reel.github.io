@@ -141,10 +141,14 @@
   }
   /* Allow full title and description wrap on home page cards */
   #post-list .card-title,
-  #post-list .card-text.content {
+  #post-list .card-text,
+  #post-list .card-text.content,
+  #post-list p.card-text {
     -webkit-line-clamp: unset !important;
+    -webkit-box-orient: unset !important;
     overflow: visible !important;
     display: block !important;
+    text-overflow: unset !important;
   }
 </style>
 
