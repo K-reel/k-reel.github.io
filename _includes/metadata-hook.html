@@ -160,12 +160,13 @@
 
 {% if page.layout == 'post' %}
 <style>
-  /* Post hero banner: wide banner showing most of image */
+  /* Post hero banner: 2:1 banner with image scaled down to show more */
   .preview-img {
-    aspect-ratio: 16 / 9;
+    aspect-ratio: 2 / 1;
+    background: var(--img-bg);
   }
   .preview-img img {
-    object-fit: cover;
+    object-fit: contain;
     object-position: center center;
   }
   .prose figure { text-align: center; }
