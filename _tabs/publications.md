@@ -67,6 +67,9 @@ hide_title: true
   <li class="px-md-3">
     <a href="/north-korean-contagious-interview-campaign-drops-35-new-malicious-npm-packages/">Another Wave: North Korean Contagious Interview Campaign Drops 35 New Malicious npm Packages</a>
   </li>
+  <li class="px-md-3">
+    <a href="/lazarus-expands-malicious-npm-campaign-11-new-packages-add-malware-loaders-and-bitbucket/">Lazarus Expands Malicious npm Campaign: 11 New Packages Add Malware Loaders and Bitbucket Payloads</a>
+  </li>
 </ul>
 </details>
 
