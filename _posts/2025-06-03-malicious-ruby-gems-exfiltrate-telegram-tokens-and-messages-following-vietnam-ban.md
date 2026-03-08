@@ -2,7 +2,7 @@
 title: "Malicious Ruby Gems Exfiltrate Telegram Tokens and Messages Following Vietnam Ban"
 date: 2025-06-03 12:00:00 +0000
 categories: [Malware, RubyGems]
-tags: [Typosquatting, Fastlane, Ruby, Vietnam, Cloudflare Workers, T1195.002, T1036.005, T1041, T1078]
+tags: [Typosquatting, RubyGems, Ruby, Vietnam, T1195.002, T1036.005, T1041, T1078]
 canonical_url: https://socket.dev/blog/malicious-ruby-gems-exfiltrate-telegram-tokens-and-messages-following-vietnam-ban
 source: Socket
 image:
