@@ -28,18 +28,20 @@ hide_title: true
   .content details summary { font-size: 1.2rem; }
   .content details ul { margin-top: 0.25rem; }
   #toggle-all {
-    border: 1px solid var(--btn-border-color, #868e96);
-    background: transparent;
-    color: var(--text-color, inherit);
-    padding: 0.3rem 0.75rem;
-    border-radius: 0.375rem;
+    border: none;
+    background: var(--link-color, #d2603a);
+    color: #fff;
+    padding: 0.45rem 1.1rem;
+    border-radius: 0.5rem;
     cursor: pointer;
-    font-size: 0.85rem;
+    font-size: 0.9rem;
+    font-weight: 600;
     margin-bottom: 0.75rem;
+    letter-spacing: 0.02em;
+    transition: opacity 0.2s;
   }
   #toggle-all:hover {
-    background: var(--btn-border-color, #868e96);
-    color: var(--btn-active-text, #fff);
+    opacity: 0.85;
   }
 </style>
 
