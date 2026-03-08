@@ -3,7 +3,7 @@ title: "2025 Blockchain and Cryptocurrency Threat Report: Malware in the Open So
 short_title: "2025 Blockchain and Cryptocurrency Threat Report"
 date: 2025-06-12 12:00:00 +0000
 categories: [Threat Reports]
-tags: [Infostealer, Crypto Drainer, Cryptojacker, Clipboard Hijacker, npm, PyPI, Contagious Interview, BeaverTail, InvisibleFerret, Typosquatting]
+tags: [Infostealer, Crypto Drainer, Cryptojacker, Clipper, Cryptocurrency, npm, PyPI, Python, Contagious Interview, BeaverTail, InvisibleFerret, Typosquatting]
 canonical_url: https://socket.dev/blog/2025-blockchain-and-cryptocurrency-threat-report
 source: Socket
 image:
