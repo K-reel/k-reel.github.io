@@ -3,7 +3,7 @@ title: "60 Malicious npm Packages Leak Network and Host Data in Active Malware C
 short_title: "60 Malicious npm Packages Leak Network and Host Data"
 date: 2025-05-23 12:00:00 +0000
 categories: [Malware, npm]
-tags: [Reconnaissance, Discord, Sandbox Evasion, npm, T1195.002, T1059.007, T1567.004, T1590, T1590.002, T1590.005, T1497]
+tags: [npm, JavaScript, T1195.002, T1059.007, T1567.004, T1590, T1590.002, T1590.005, T1497]
 canonical_url: https://socket.dev/blog/60-malicious-npm-packages-leak-network-and-host-data
 source: Socket
 image:
