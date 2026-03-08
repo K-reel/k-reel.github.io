@@ -163,6 +163,9 @@ hide_title: true
   <li class="px-md-3">
     <a href="/malicious-go-module-disguised-as-ssh-brute-forcer-exfiltrates-credentials/">Malicious Go Module Disguised as SSH Brute Forcer Exfiltrates Credentials via Telegram</a>
   </li>
+  <li class="px-md-3">
+    <a href="/typosquatted-go-packages-deliver-malware-loader/">Typosquatted Go Packages Deliver Malware Loader Targeting Linux and macOS Systems</a>
+  </li>
 </ul>
 </details>
 
