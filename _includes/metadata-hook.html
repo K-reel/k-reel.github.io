@@ -156,13 +156,14 @@
 
 {% if page.layout == 'post' %}
 <style>
-  /* Post hero banner: less aggressive crop */
+  /* Post hero banner: show full image */
   .preview-img {
-    aspect-ratio: 21 / 9;
+    aspect-ratio: unset;
   }
   .preview-img img {
-    object-fit: cover;
-    object-position: center center;
+    object-fit: contain;
+    width: 100%;
+    height: auto;
   }
   .prose figure { text-align: center; }
   /* Hide heading anchor links */
