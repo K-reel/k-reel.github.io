@@ -3,7 +3,7 @@ title: "Monkey-Patched PyPI Packages Use Transitive Dependencies to Steal Solana
 short_title: "Monkey-Patched PyPI Packages Steal Solana Private Keys"
 date: 2025-05-29 12:00:00 +0000
 categories: [Malware, PyPI]
-tags: [Typosquatting, Python, Monkey Patching, Infostealer, T1195.002, T1036.005, T1573.002, T1059.006, T1608.001, T1119, T1657]
+tags: [Typosquatting, Python, PyPI, Monkey Patching, Infostealer, T1195.002, T1036.005, T1573.002, T1059.006, T1608.001, T1119, T1657]
 canonical_url: https://socket.dev/blog/monkey-patched-pypi-packages-steal-solana-private-keys
 source: Socket
 image:
