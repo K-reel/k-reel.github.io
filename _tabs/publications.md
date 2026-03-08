@@ -32,25 +32,17 @@ hide_title: true
 <details>
 <summary>🇰🇵 <strong>North Korea — Contagious Interview</strong></summary>
 <ul class="content ps-0">
-  <li class="d-flex justify-content-between px-md-3">
+  <li class="px-md-3">
     <a href="/north-korea-contagious-interview-npm-attacks/">Inside the GitHub Infrastructure Powering North Korea's Contagious Interview npm Attacks</a>
-    <span class="dash flex-grow-1"></span>
-    <span class="text-muted small text-nowrap">Nov 26, 2025</span>
   </li>
-  <li class="d-flex justify-content-between px-md-3">
+  <li class="px-md-3">
     <a href="/north-korea-contagious-interview-campaign-338-malicious-npm-packages/">North Korea's Contagious Interview Campaign Escalates: 338 Malicious npm Packages, 50,000 Downloads</a>
-    <span class="dash flex-grow-1"></span>
-    <span class="text-muted small text-nowrap">Oct 10, 2025</span>
   </li>
-  <li class="d-flex justify-content-between px-md-3">
+  <li class="px-md-3">
     <a href="/contagious-interview-campaign-escalates-67-malicious-npm-packages/">Contagious Interview Campaign Escalates With 67 Malicious npm Packages and New Malware Loader</a>
-    <span class="dash flex-grow-1"></span>
-    <span class="text-muted small text-nowrap">Jul 14, 2025</span>
   </li>
-  <li class="d-flex justify-content-between px-md-3">
+  <li class="px-md-3">
     <a href="/north-korean-contagious-interview-campaign-drops-35-new-malicious-npm-packages/">Another Wave: North Korean Contagious Interview Campaign Drops 35 New Malicious npm Packages</a>
-    <span class="dash flex-grow-1"></span>
-    <span class="text-muted small text-nowrap">Jun 25, 2025</span>
   </li>
 </ul>
 </details>
@@ -58,25 +50,17 @@ hide_title: true
 <details>
 <summary>🧯 <strong>Supply Chain Incidents</strong></summary>
 <ul class="content ps-0">
-  <li class="d-flex justify-content-between px-md-3">
+  <li class="px-md-3">
     <a href="/sandworm-mode-npm-worm-ai-toolchain-poisoning/">SANDWORM_MODE: Shai-Hulud-Style npm Worm Hijacks CI Workflows and Poisons AI Toolchains</a>
-    <span class="dash flex-grow-1"></span>
-    <span class="text-muted small text-nowrap">Feb 20, 2026</span>
   </li>
-  <li class="d-flex justify-content-between px-md-3">
+  <li class="px-md-3">
     <a href="/shai-hulud-strikes-again-v2/">Shai Hulud Strikes Again (v2)</a>
-    <span class="dash flex-grow-1"></span>
-    <span class="text-muted small text-nowrap">Nov 24, 2025</span>
   </li>
-  <li class="d-flex justify-content-between px-md-3">
+  <li class="px-md-3">
     <a href="/tinycolor-supply-chain-attack-affects-40-packages/">Popular Tinycolor npm Package Compromised in Supply Chain Attack Affecting 40+ Packages</a>
-    <span class="dash flex-grow-1"></span>
-    <span class="text-muted small text-nowrap">Sep 15, 2025</span>
   </li>
-  <li class="d-flex justify-content-between px-md-3">
+  <li class="px-md-3">
     <a href="/npm-is-package-hijacked-in-expanding-supply-chain-attack/">npm 'is' Package Hijacked in Expanding Supply Chain Attack</a>
-    <span class="dash flex-grow-1"></span>
-    <span class="text-muted small text-nowrap">Jul 22, 2025</span>
   </li>
 </ul>
 </details>
@@ -84,25 +68,17 @@ hide_title: true
 <details>
 <summary>📊 <strong>Landscape &amp; Threat Reports</strong></summary>
 <ul class="content ps-0">
-  <li class="d-flex justify-content-between px-md-3">
+  <li class="px-md-3">
     <a href="/surveillance-malware-hidden-in-npm-and-pypi-packages/">Surveillance Malware Hidden in npm and PyPI Packages Targets Developers with Keyloggers, Webcam Capture, and Credential Theft</a>
-    <span class="dash flex-grow-1"></span>
-    <span class="text-muted small text-nowrap">Jul 23, 2025</span>
   </li>
-  <li class="d-flex justify-content-between px-md-3">
+  <li class="px-md-3">
     <a href="/fraudulent-engineering-candidates-investigation/">Identifying and Preventing Fraudulent Engineering Candidates: An Investigation into 80 Confirmed Cases</a>
-    <span class="dash flex-grow-1"></span>
-    <span class="text-muted small text-nowrap">Sep 17, 2025</span>
   </li>
-  <li class="d-flex justify-content-between px-md-3">
+  <li class="px-md-3">
     <a href="/2025-blockchain-and-cryptocurrency-threat-report/">2025 Blockchain and Cryptocurrency Threat Report: Malware in the Open Source Supply Chain</a>
-    <span class="dash flex-grow-1"></span>
-    <span class="text-muted small text-nowrap">Jun 12, 2025</span>
   </li>
-  <li class="d-flex justify-content-between px-md-3">
+  <li class="px-md-3">
     <a href="/malicious-open-source-packages-2025-mid-year-threat-report/">The Landscape of Malicious Open Source Packages: 2025 Mid‑Year Threat Report</a>
-    <span class="dash flex-grow-1"></span>
-    <span class="text-muted small text-nowrap">May 14, 2025</span>
   </li>
 </ul>
 </details>
@@ -110,25 +86,17 @@ hide_title: true
 <details>
 <summary>📦 <strong>npm / JavaScript / TypeScript</strong></summary>
 <ul class="content ps-0">
-  <li class="d-flex justify-content-between px-md-3">
+  <li class="px-md-3">
     <a href="/spearphishing-campaign-abuses-npm-registry/">Spearphishing Campaign Abuses npm Registry to Target U.S. and Allied Manufacturing and Healthcare Organizations</a>
-    <span class="dash flex-grow-1"></span>
-    <span class="text-muted small text-nowrap">Dec 23, 2025</span>
   </li>
-  <li class="d-flex justify-content-between px-md-3">
+  <li class="px-md-3">
     <a href="/wallet-draining-npm-package-impersonates-nodemailer/">Wallet-Draining npm Package Impersonates Nodemailer to Hijack Crypto Transactions</a>
-    <span class="dash flex-grow-1"></span>
-    <span class="text-muted small text-nowrap">Aug 29, 2025</span>
   </li>
-  <li class="d-flex justify-content-between px-md-3">
+  <li class="px-md-3">
     <a href="/60-malicious-npm-packages-leak-network-and-host-data/">60 Malicious npm Packages Leak Network and Host Data in Active Malware Campaign</a>
-    <span class="dash flex-grow-1"></span>
-    <span class="text-muted small text-nowrap">May 23, 2025</span>
   </li>
-  <li class="d-flex justify-content-between px-md-3">
+  <li class="px-md-3">
     <a href="/malicious-koishi-chatbot-plugin/">Malicious Koishi Chatbot Plugin Exfiltrates Messages Triggered by 8-Character Hex Strings</a>
-    <span class="dash flex-grow-1"></span>
-    <span class="text-muted small text-nowrap">May 19, 2025</span>
   </li>
 </ul>
 </details>
@@ -136,15 +104,11 @@ hide_title: true
 <details>
 <summary>🐍 <strong>PyPI / Python</strong></summary>
 <ul class="content ps-0">
-  <li class="d-flex justify-content-between px-md-3">
+  <li class="px-md-3">
     <a href="/pypi-package-impersonates-sympy-to-deliver-cryptomining-malware/">PyPI Package Impersonates SymPy to Deliver Cryptomining Malware</a>
-    <span class="dash flex-grow-1"></span>
-    <span class="text-muted small text-nowrap">Jan 21, 2026</span>
   </li>
-  <li class="d-flex justify-content-between px-md-3">
+  <li class="px-md-3">
     <a href="/monkey-patched-pypi-packages-steal-solana-private-keys/">Monkey-Patched PyPI Packages Use Transitive Dependencies to Steal Solana Private Keys</a>
-    <span class="dash flex-grow-1"></span>
-    <span class="text-muted small text-nowrap">May 29, 2025</span>
   </li>
 </ul>
 </details>
@@ -152,20 +116,14 @@ hide_title: true
 <details>
 <summary>🐹 <strong>Go Modules / Golang</strong></summary>
 <ul class="content ps-0">
-  <li class="d-flex justify-content-between px-md-3">
+  <li class="px-md-3">
     <a href="/malicious-go-crypto-module-steals-passwords/">Malicious Go "crypto" Module Steals Passwords and Deploys Rekoobe Backdoor</a>
-    <span class="dash flex-grow-1"></span>
-    <span class="text-muted small text-nowrap">Feb 26, 2026</span>
   </li>
-  <li class="d-flex justify-content-between px-md-3">
+  <li class="px-md-3">
     <a href="/malicious-go-packages-impersonate-googles-uuid-library-and-exfiltrate-data/">Malicious Go Packages Impersonate Google's UUID Library and Exfiltrate Data</a>
-    <span class="dash flex-grow-1"></span>
-    <span class="text-muted small text-nowrap">Dec 5, 2025</span>
   </li>
-  <li class="d-flex justify-content-between px-md-3">
+  <li class="px-md-3">
     <a href="/malicious-go-module-disguised-as-ssh-brute-forcer-exfiltrates-credentials/">Malicious Go Module Disguised as SSH Brute Forcer Exfiltrates Credentials via Telegram</a>
-    <span class="dash flex-grow-1"></span>
-    <span class="text-muted small text-nowrap">Aug 21, 2025</span>
   </li>
 </ul>
 </details>
@@ -173,15 +131,11 @@ hide_title: true
 <details>
 <summary>♦️ <strong>RubyGems / Ruby</strong></summary>
 <ul class="content ps-0">
-  <li class="d-flex justify-content-between px-md-3">
+  <li class="px-md-3">
     <a href="/60-malicious-ruby-gems-used-in-targeted-credential-theft-campaign/">60 Malicious Ruby Gems Used in Targeted Credential Theft Campaign</a>
-    <span class="dash flex-grow-1"></span>
-    <span class="text-muted small text-nowrap">Aug 7, 2025</span>
   </li>
-  <li class="d-flex justify-content-between px-md-3">
+  <li class="px-md-3">
     <a href="/malicious-ruby-gems-exfiltrate-telegram-tokens-and-messages-following-vietnam-ban/">Malicious Ruby Gems Exfiltrate Telegram Tokens and Messages Following Vietnam Ban</a>
-    <span class="dash flex-grow-1"></span>
-    <span class="text-muted small text-nowrap">Jun 3, 2025</span>
   </li>
 </ul>
 </details>
@@ -189,15 +143,11 @@ hide_title: true
 <details>
 <summary>⚙️ <strong>NuGet / .NET</strong></summary>
 <ul class="content ps-0">
-  <li class="d-flex justify-content-between px-md-3">
+  <li class="px-md-3">
     <a href="/malicious-nuget-package-typosquats-popular-net-tracing-library/">Malicious NuGet Package Typosquats Popular .NET Tracing Library to Steal Wallet Passwords</a>
-    <span class="dash flex-grow-1"></span>
-    <span class="text-muted small text-nowrap">Dec 15, 2025</span>
   </li>
-  <li class="d-flex justify-content-between px-md-3">
+  <li class="px-md-3">
     <a href="/malicious-nuget-packages-typosquat-nethereum-to-exfiltrate-wallet-keys/">Malicious NuGet Packages Typosquat Nethereum to Exfiltrate Wallet Keys</a>
-    <span class="dash flex-grow-1"></span>
-    <span class="text-muted small text-nowrap">Oct 22, 2025</span>
   </li>
 </ul>
 </details>
@@ -205,10 +155,8 @@ hide_title: true
 <details>
 <summary>🦀 <strong>Rust / Crates</strong></summary>
 <ul class="content ps-0">
-  <li class="d-flex justify-content-between px-md-3">
+  <li class="px-md-3">
     <a href="/two-malicious-rust-crates-impersonate-popular-logger-to-steal-wallet-keys/">Two Malicious Rust Crates Impersonate Popular Logger to Steal Wallet Keys</a>
-    <span class="dash flex-grow-1"></span>
-    <span class="text-muted small text-nowrap">Sep 24, 2025</span>
   </li>
 </ul>
 </details>
@@ -216,35 +164,23 @@ hide_title: true
 <details>
 <summary>🧩 <strong>Extensions / Chrome / VS Code / OpenVSX</strong></summary>
 <ul class="content ps-0">
-  <li class="d-flex justify-content-between px-md-3">
+  <li class="px-md-3">
     <a href="/fake-imtoken-chrome-extension-steals-seed-phrases-via-phishing-redirects/">Fake imToken Chrome Extension Steals Seed Phrases via Phishing Redirects</a>
-    <span class="dash flex-grow-1"></span>
-    <span class="text-muted small text-nowrap">Mar 5, 2026</span>
   </li>
-  <li class="d-flex justify-content-between px-md-3">
+  <li class="px-md-3">
     <a href="/malicious-chrome-extension-steals-meta-business-manager-exports-and-totp-2fa-seeds/">Malicious Chrome Extension Steals Meta Business Manager Exports and TOTP 2FA Seeds</a>
-    <span class="dash flex-grow-1"></span>
-    <span class="text-muted small text-nowrap">Feb 13, 2026</span>
   </li>
-  <li class="d-flex justify-content-between px-md-3">
+  <li class="px-md-3">
     <a href="/glassworm-loader-hits-open-vsx-via-suspected-developer-account-compromise/">GlassWorm Loader Hits Open VSX via Developer Account Compromise</a>
-    <span class="dash flex-grow-1"></span>
-    <span class="text-muted small text-nowrap">Jan 31, 2026</span>
   </li>
-  <li class="d-flex justify-content-between px-md-3">
+  <li class="px-md-3">
     <a href="/malicious-chrome-extension-steals-mexc-api-keys/">Malicious Chrome Extension Steals MEXC API Keys for Account Takeover</a>
-    <span class="dash flex-grow-1"></span>
-    <span class="text-muted small text-nowrap">Jan 12, 2026</span>
   </li>
-  <li class="d-flex justify-content-between px-md-3">
+  <li class="px-md-3">
     <a href="/malicious-chrome-extension-exfiltrates-seed-phrases/">Malicious Chrome Extension Exfiltrates Seed Phrases, Enabling Wallet Takeover</a>
-    <span class="dash flex-grow-1"></span>
-    <span class="text-muted small text-nowrap">Nov 12, 2025</span>
   </li>
-  <li class="d-flex justify-content-between px-md-3">
+  <li class="px-md-3">
     <a href="/131-spamware-extensions-targeting-whatsapp-flood-chrome-web-store/">131 Spamware Extensions Targeting WhatsApp Flood Chrome Web Store</a>
-    <span class="dash flex-grow-1"></span>
-    <span class="text-muted small text-nowrap">Oct 18, 2025</span>
   </li>
 </ul>
 </details>

@@ -155,10 +155,14 @@
 
 {% if page.url == '/publications/' %}
 <style>
-  /* Publications list: ▸ marker + dotted leader to right-aligned date */
+  /* Publications list: ▸ markers, no underlines */
   .content.ps-0 {
     padding-left: 1.25rem !important;
     list-style: none;
+  }
+  .content.ps-0 li {
+    position: relative;
+    padding-left: 0;
   }
   .content.ps-0 li::before {
     content: "▸";
@@ -166,16 +170,8 @@
     position: absolute;
     left: 0;
   }
-  .content.ps-0 li {
-    position: relative;
-    padding-left: 0;
-  }
   .content.ps-0 li a {
     border-bottom: none !important;
-  }
-  .content.ps-0 li > .dash {
-    flex-grow: 1;
-    border: none;
   }
 </style>
 {% endif %}
