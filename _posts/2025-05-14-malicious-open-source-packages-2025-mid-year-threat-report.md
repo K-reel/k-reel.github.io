@@ -3,7 +3,7 @@ title: "The Landscape of Malicious Open Source Packages: 2025 Mid‑Year Threat 
 short_title: "Malicious Open Source Packages: 2025 Mid‑Year Threat Report"
 date: 2025-05-14 12:00:00 +0000
 categories: [Threat Reports]
-tags: [Typosquatting, Obfuscation, Infostealer, Slopsquatting]
+tags: [Typosquatting, Obfuscation, Infostealer, Slopsquatting, npm, JavaScript, Python, PyPI, Go, Go Modules, Maven Central, Java, Ruby, RubyGems, NuGet, .NET]
 author: kirill_and_philipp
 canonical_url: https://socket.dev/blog/malicious-open-source-packages-2025-mid-year-threat-report
 source: Socket
