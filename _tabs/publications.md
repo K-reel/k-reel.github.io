@@ -126,6 +126,11 @@ hide_title: true
     <span class="dash flex-grow-1"></span>
     <span class="text-muted small text-nowrap">Jan 21, 2026</span>
   </li>
+  <li class="d-flex justify-content-between px-md-3">
+    <a href="/monkey-patched-pypi-packages-steal-solana-private-keys/">Monkey-Patched PyPI Packages Use Transitive Dependencies to Steal Solana Private Keys</a>
+    <span class="dash flex-grow-1"></span>
+    <span class="text-muted small text-nowrap">May 29, 2025</span>
+  </li>
 </ul>
 </details>
 
