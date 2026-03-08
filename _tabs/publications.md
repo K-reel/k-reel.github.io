@@ -42,6 +42,11 @@ hide_title: true
     <span class="dash flex-grow-1"></span>
     <span class="text-muted small text-nowrap">Oct 10, 2025</span>
   </li>
+  <li class="d-flex justify-content-between px-md-3">
+    <a href="/contagious-interview-campaign-escalates-67-malicious-npm-packages/">Contagious Interview Campaign Escalates With 67 Malicious npm Packages and New Malware Loader</a>
+    <span class="dash flex-grow-1"></span>
+    <span class="text-muted small text-nowrap">Jul 14, 2025</span>
+  </li>
 </ul>
 </details>
 
