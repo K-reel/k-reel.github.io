@@ -160,15 +160,13 @@
 
 {% if page.layout == 'post' %}
 <style>
-  /* Post hero banner: 2:1 with slight zoom-out via scale */
+  /* Post hero banner: taller banner to show more of the image */
   .preview-img {
-    aspect-ratio: 2 / 1;
-    overflow: hidden;
+    aspect-ratio: 5 / 3;
   }
   .preview-img img {
     object-fit: cover;
     object-position: center center;
-    transform: scale(0.85);
   }
   .prose figure { text-align: center; }
   /* Hide heading anchor links */
