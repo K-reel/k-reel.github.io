@@ -139,6 +139,13 @@
     object-fit: cover;
     object-position: right center;
   }
+  /* Allow full title and description wrap on home page cards */
+  #post-list .card-title,
+  #post-list .card-text.content {
+    -webkit-line-clamp: unset !important;
+    overflow: visible !important;
+    display: block !important;
+  }
 </style>
 
 {% if page.url == '/about/' %}
