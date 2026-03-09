@@ -142,6 +142,9 @@ hide_title: true
   <li class="px-md-3">
     <a href="/gmail-for-exfiltration-malicious-npm-packages-target-solana-private-keys-and-drain-victim-s/">Gmail For Exfiltration: Malicious npm Packages Target Solana Private Keys and Drain Victims' Wallets</a>
   </li>
+  <li class="px-md-3">
+    <a href="/quasar-rat-disguised-as-an-npm-package/">Quasar RAT Disguised as an npm Package for Detecting Vulnerabilities in Ethereum Smart Contracts</a>
+  </li>
 </ul>
 </details>
 
