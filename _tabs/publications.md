@@ -73,6 +73,9 @@ hide_title: true
   <li class="px-md-3">
     <a href="/lazarus-strikes-npm-again-with-a-new-wave-of-malicious-packages/">Lazarus Strikes npm Again with New Wave of Malicious Packages</a>
   </li>
+  <li class="px-md-3">
+    <a href="/north-korean-apt-lazarus-targets-developers-with-malicious-npm-package/">North Korean APT Lazarus Targets Developers with Malicious npm Package</a>
+  </li>
 </ul>
 </details>
 
