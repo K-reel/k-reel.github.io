@@ -185,6 +185,11 @@ hide_title: true
 </details>
 
 <details>
+<summary>☕ <strong>Maven Central / Java</strong></summary>
+<br>
+</details>
+
+<details>
 <summary>♦️ <strong>RubyGems / Ruby</strong></summary>
 <ul class="content ps-0">
   <li class="px-md-3">
