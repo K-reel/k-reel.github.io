@@ -3,7 +3,7 @@ title: "Gmail For Exfiltration: Malicious npm Packages Target Solana Private Key
 short_title: "Malicious npm Packages Target Solana Keys via Gmail"
 date: 2025-01-08 12:00:00 +0000
 categories: [Malware, npm]
-tags: [npm, JavaScript, Typosquatting, Infostealer, Cryptocurrency, T1195.002, T1059.007, T1036.005, T1027.013, T1546.016, T1048, T1583.006, T1005]
+tags: [npm, JavaScript, Typosquatting, Infostealer, Gmail, Crypto Drainer, T1195.002, T1059.007, T1036.005, T1027.013, T1546.016, T1048, T1583.006, T1005]
 canonical_url: https://socket.dev/blog/gmail-for-exfiltration-malicious-npm-packages-target-solana-private-keys-and-drain-victim-s
 source: Socket
 image:
