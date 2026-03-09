@@ -112,6 +112,9 @@ hide_title: true
   <li class="px-md-3">
     <a href="/malicious-open-source-packages-2025-mid-year-threat-report/">The Landscape of Malicious Open Source Packages: 2025 Mid‑Year Threat Report</a>
   </li>
+  <li class="px-md-3">
+    <a href="/weaponizing-oast-how-malicious-packages-exploit-npm-pypi-and-rubygems/">Weaponizing OAST: How Malicious Packages Exploit npm, PyPI, and RubyGems for Data Exfiltration and Recon</a>
+  </li>
 </ul>
 </details>
 
