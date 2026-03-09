@@ -136,6 +136,9 @@ hide_title: true
   <li class="px-md-3">
     <a href="/black-basta-dependency-confusion-ambitions-and-ransomware-in-open-source-ecosystems/">Black Basta's Dependency Confusion Ambitions and Ransomware in Open Source Ecosystems</a>
   </li>
+  <li class="px-md-3">
+    <a href="/gmail-for-exfiltration-malicious-npm-packages-target-solana-private-keys-and-drain-victim-s/">Gmail For Exfiltration: Malicious npm Packages Target Solana Private Keys and Drain Victims' Wallets</a>
+  </li>
 </ul>
 </details>
 
