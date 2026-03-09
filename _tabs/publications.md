@@ -169,6 +169,9 @@ hide_title: true
   <li class="px-md-3">
     <a href="/typosquatted-go-packages-deliver-malware-loader/">Typosquatted Go Packages Deliver Malware Loader Targeting Linux and macOS Systems</a>
   </li>
+  <li class="px-md-3">
+    <a href="/malicious-package-exploits-go-module-proxy-caching-for-persistence/">Go Supply Chain Attack: Malicious Package Exploits Go Module Proxy Caching for Persistence</a>
+  </li>
 </ul>
 </details>
 
