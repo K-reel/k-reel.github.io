@@ -98,7 +98,7 @@ hide_title: true
 </details>
 
 <details>
-<summary>📊 <strong>Landscape &amp; Threat Reports</strong></summary>
+<summary>📊 <strong>Threat Landscape &amp; Cross-Ecosystem Research</strong></summary>
 <ul class="content ps-0">
   <li class="px-md-3">
     <a href="/surveillance-malware-hidden-in-npm-and-pypi-packages/">Surveillance Malware Hidden in npm and PyPI Packages Targets Developers with Keyloggers, Webcam Capture, and Credential Theft</a>
