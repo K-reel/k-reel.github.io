@@ -247,11 +247,6 @@ hide_title: true
 </details>
 
 <details>
-<summary>🔍 <strong>Other Supply Chain / Ecosystem Research</strong></summary>
-<br>
-</details>
-
-<details>
 <summary>🕵️ <strong>Cybercrime, Underground Economy &amp; Influence Research</strong></summary>
 <br>
 </details>
