@@ -264,5 +264,11 @@ hide_title: true
 
 <details>
 <summary>🕵️ <strong>Cybercrime, Underground Economy &amp; Influence Research</strong></summary>
-<br>
+<ul class="content ps-0">
+  <li class="d-flex justify-content-between px-md-3">
+    <a href="/exploiting-npm-to-build-a-blockchain-powered-botnet/">Threat Actor Exposes Playbook for Exploiting npm to Build Blockchain-Powered Botnets</a>
+    <span class="dash flex-grow-1"></span>
+    <span class="text-muted small text-nowrap">Nov 19, 2024</span>
+  </li>
+</ul>
 </details>
