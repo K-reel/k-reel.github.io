@@ -3,7 +3,7 @@ title: "Noxia: Emerging Dark Web Hosting Provider Targets Python, Node.js, Go, a
 short_title: "Noxia: Dark Web Hosting Targets Open Source Ecosystems"
 date: 2024-10-23 12:00:00 +0000
 categories: [Threat Intelligence]
-tags: [Bulletproof Hosting, Dark Web, Python, PyPI, JavaScript, npm, Go, Go Modules, Rust, T1195.002, T1583.003, T1587.001, T1059.006, T1059.007]
+tags: [Bulletproof Hosting, Dark Web, Python, PyPI, JavaScript, npm, Go, Go Modules, Rust, crates.io, T1195.002, T1583.003, T1587.001, T1059.006, T1059.007]
 canonical_url: https://socket.dev/blog/noxia-emerging-dark-web-bulletproof-hosting-provider
 source: Socket
 image:
