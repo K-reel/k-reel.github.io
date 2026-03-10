@@ -160,6 +160,9 @@ hide_title: true
   <li class="px-md-3">
     <a href="/roblox-developers-targeted-with-npm-packages-infected-with-infostealers/">Roblox Developers Targeted with npm Packages Infected with Skuld Infostealer and Blank Grabber</a>
   </li>
+  <li class="px-md-3">
+    <a href="/author-typosquatting-on-npm/">Author Typosquatting on npm: Attackers Impersonate Sindre Sorhus with Malicious 'chalk-node' Package</a>
+  </li>
 </ul>
 </details>
 
