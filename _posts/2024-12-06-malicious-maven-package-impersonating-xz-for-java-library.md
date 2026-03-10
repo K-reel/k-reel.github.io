@@ -3,7 +3,7 @@ title: "Malicious Maven Package Impersonating 'XZ for Java' Library Introduces B
 short_title: "Malicious Maven Package Impersonating 'XZ for Java' Library"
 date: 2024-12-06 12:00:00 +0000
 categories: [Malware, Supply Chain]
-tags: [XZ for Java, Backdoor, Maven Central, Java, Typosquatting, AI-Generated Code, T1195.002, T1036.005, T1105, T1027]
+tags: [Backdoor, Maven Central, Java, Typosquatting, T1195.002, T1036.005, T1105, T1027]
 canonical_url: https://socket.dev/blog/malicious-maven-package-impersonating-xz-for-java-library
 source: Socket
 image:
