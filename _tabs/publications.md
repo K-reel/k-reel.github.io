@@ -154,6 +154,11 @@ hide_title: true
   <li class="px-md-3">
     <a href="/skuld-infostealer-returns-to-npm/">Skuld Infostealer Returns to npm with Fake Windows Utilities and Malicious Solara Development Packages</a>
   </li>
+  <li class="d-flex justify-content-between px-md-3">
+    <a href="/roblox-developers-targeted-with-npm-packages-infected-with-infostealers/">Roblox Developers Targeted with npm Packages Infected with Skuld Infostealer and Blank Grabber</a>
+    <span class="dash flex-grow-1"></span>
+    <span class="text-muted small text-nowrap">Nov 08, 2024</span>
+  </li>
 </ul>
 </details>
 
