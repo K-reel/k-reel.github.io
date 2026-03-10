@@ -149,6 +149,9 @@ hide_title: true
     <a href="/malicious-npm-packages-threaten-crypto-developers/">Typosquatting Cryptographic Libraries: Malicious npm Packages Threaten Crypto Developers with Keylogging and Wallet Theft</a>
   </li>
   <li class="px-md-3">
+    <a href="/malicious-npm-packages-inject-ssh-backdoors-via-typosquatted-libraries/">Malicious npm Packages Inject SSH Backdoors via Typosquatted Libraries</a>
+  </li>
+  <li class="px-md-3">
     <a href="/skuld-infostealer-returns-to-npm/">Skuld Infostealer Returns to npm with Fake Windows Utilities and Malicious Solara Development Packages</a>
   </li>
 </ul>
