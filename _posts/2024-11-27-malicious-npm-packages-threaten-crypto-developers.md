@@ -3,7 +3,7 @@ title: "Typosquatting Cryptographic Libraries: Malicious npm Packages Threaten C
 short_title: "Typosquatting Cryptographic Libraries: Malicious npm Packages Threaten Crypto Developers"
 date: 2024-11-27 12:00:00 +0000
 categories: [npm]
-tags: [npm, JavaScript, Typosquatting, Infostealer, Keylogging, MetaMask, Exodus, T1195.002, T1036.005, T1059.007, T1583.006, T1005, T1217, T1555.003, T1539, T1056.001, T1115, T1041, T1071.001, T1547.001]
+tags: [npm, JavaScript, Typosquatting, Infostealer, Keylogging, T1195.002, T1036.005, T1059.007, T1583.006, T1005, T1217, T1555.003, T1539, T1056.001, T1115, T1041, T1071.001, T1547.001]
 canonical_url: https://socket.dev/blog/malicious-npm-packages-threaten-crypto-developers
 source: Socket
 image:
