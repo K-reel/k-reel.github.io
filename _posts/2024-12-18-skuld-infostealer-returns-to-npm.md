@@ -7,7 +7,7 @@ tags: [Skuld, Infostealer, Typosquatting, Obfuscation, npm, JavaScript, Roblox, 
 canonical_url: https://socket.dev/blog/skuld-infostealer-returns-to-npm
 source: Socket
 image:
-  path: https://cdn.sanity.io/images/cgmfvxkv/production/1d4a636a3c33fd49764d5771e17d4eef5fccc59e-1024x1024.webp
+  path: https://cdn.sanity.io/images/cgdhsj6q/production/1d4a636a3c33fd49764d5771e17d4eef5fccc59e-1024x1024.webp
   alt: "Skuld Infostealer Returns to npm"
 description: "Socket researchers discovered a malware campaign on npm delivering the Skuld infostealer via typosquatted packages, exposing sensitive data."
 ---
@@ -24,7 +24,7 @@ This latest malicious campaign delivering the Skuld infostealer marks the second
 
 The return of the Skuld infostealer to npm highlights a recurring pattern: attackers gain a foothold, achieve brief success, and swiftly adapt by reintroducing the threat with new packaging and distribution strategies. The December 2024 campaign exhibits the same familiar hallmarks: obfuscation, typosquatting, deceptive tactics, reliance on commodity malware, and common deployment methods.
 
-![Screenshot showcasing Skuld's ability to steal passwords, cookies, sensitive files, and browsing history from Chromium and Gecko-based browsers.](https://cdn.sanity.io/images/cgmfvxkv/production/cc9e9aab8e72f0c90b22765baba85ea9ca46a316-538x792.png)
+![Screenshot showcasing Skuld's ability to steal passwords, cookies, sensitive files, and browsing history from Chromium and Gecko-based browsers.](https://cdn.sanity.io/images/cgdhsj6q/production/cc9e9aab8e72f0c90b22765baba85ea9ca46a316-538x792.png)
 _Screenshot showcasing Skuld's ability to steal passwords, cookies, sensitive files, and browsing history from Chromium and Gecko-based browsers._
 
 ## Malicious Code
@@ -69,7 +69,7 @@ runExecutable();
 
 The threat actor employed [Obfuscator.io](http://Obfuscator.io), a widely used open source tool, to obfuscate the package code and evade initial detection. The Skuld infostealer payload was hosted on URLs designed to appear legitimate, including a domain impersonating Cloudflare. Upon installation, the malicious package silently fetched and executed the malware under the filename `download.exe` (SHA256: `27b86c1a24a1c97952397943f7b7ef21ee6859145556fe1b197e89074672bd07`).
 
-![Socket AI Scanner's analysis, including contextual details about the malicious package.](https://cdn.sanity.io/images/cgmfvxkv/production/f1e8f16335926847e7d2c3e9d3e4af1df8ac6978-625x618.png)
+![Socket AI Scanner's analysis, including contextual details about the malicious package.](https://cdn.sanity.io/images/cgdhsj6q/production/f1e8f16335926847e7d2c3e9d3e4af1df8ac6978-625x618.png)
 _Socket AI Scanner's analysis, including contextual details about the malicious package._
 
 ## Threat Actor's Strategy
@@ -78,7 +78,7 @@ The threat actor k303903 employed typosquatting by uploading npm packages that m
 
 For data exfiltration, the threat actor used a Discord webhook (`hxxps://discord[.]com/api/webhooks/1316651715591667752/GNxf9DlNvCZmJ27gRfOlHCEVgvOG-kYbj6d2h5zaX48DpP41elqDEdBvoK1y4F1gpbbw`), enabling data transfers and establishing command and control (C2) operations. The use of widely available, open source tools and services kept operational costs low while maximizing the campaign's reach. To further deceive developers, the threat actor used legitimate-looking commands and paths to fetch the executable payload from a seemingly trustworthy source and from a legitimate service `replit.dev`. Although trivial to set up, Discord webhooks are a very common method for data exfiltration, allowing threat actors to blend into legitimate developer communication channels and testing environments.
 
-![The threat actor posing their malicious package as a legitimate library to deceive users.](https://cdn.sanity.io/images/cgmfvxkv/production/4597a59a5d30e53396fe2a6e94740cdfb4cfdb94-839x582.png)
+![The threat actor posing their malicious package as a legitimate library to deceive users.](https://cdn.sanity.io/images/cgdhsj6q/production/4597a59a5d30e53396fe2a6e94740cdfb4cfdb94-839x582.png)
 _The threat actor posing their malicious package as a legitimate library to deceive users._
 
 ## Impact Assessment
