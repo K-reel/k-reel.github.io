@@ -94,10 +94,8 @@ hide_title: true
   <li class="px-md-3">
     <a href="/npm-is-package-hijacked-in-expanding-supply-chain-attack/">npm 'is' Package Hijacked in Expanding Supply Chain Attack</a>
   </li>
-  <li class="d-flex justify-content-between px-md-3">
+  <li class="px-md-3">
     <a href="/massive-npm-malware-campaign-leverages-ethereum-smart-contracts/">Massive npm Malware Campaign Leverages Ethereum Smart Contracts To Evade Detection and Maintain Control</a>
-    <span class="dash flex-grow-1"></span>
-    <span class="text-muted small text-nowrap">Oct 31, 2024</span>
   </li>
 </ul>
 </details>
