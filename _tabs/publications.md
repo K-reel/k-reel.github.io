@@ -146,6 +146,9 @@ hide_title: true
     <a href="/quasar-rat-disguised-as-an-npm-package/">Quasar RAT Disguised as an npm Package for Detecting Vulnerabilities in Ethereum Smart Contracts</a>
   </li>
   <li class="px-md-3">
+    <a href="/malicious-npm-packages-threaten-crypto-developers/">Typosquatting Cryptographic Libraries: Malicious npm Packages Threaten Crypto Developers with Keylogging and Wallet Theft</a>
+  </li>
+  <li class="px-md-3">
     <a href="/skuld-infostealer-returns-to-npm/">Skuld Infostealer Returns to npm with Fake Windows Utilities and Malicious Solara Development Packages</a>
   </li>
 </ul>
