@@ -7,7 +7,7 @@ tags: [Dark Web, Cybercrime, Ransomware, Hacktivism, Turkey, Initial Access Brok
 canonical_url: https://www.recordedfuture.com/research/current-trends-in-the-turkish-language-dark-web
 source: Recorded Future
 image:
-  path: /assets/img/posts/turkish-dark-web/cover.png
+  path: /assets/img/posts/turkish-dark-web/cover.webp
   alt: "Recorded Future Insikt Group report cover"
 description: "An analysis of advertisements, posts, and interactions within Turkish-language hacking and cybercrime forums, exploring the capabilities, culture, and organization of these communities."
 ---
@@ -41,7 +41,7 @@ Increased political and financial instability in Turkey are likely contributing 
 
 Some Turkish-language underground forums focus on patriotic, vigilante hacking activity such as defacement operations against foreign entities at times of international political disputes. While individual patriotic hacktivism exists, multiple forums host hacking collectives commonly referred to as "tim" (in English, "team"), including Anka Red Team on Turk Hack Team Forum, and Ayyıldız Tim on Ayyıldız Forum. These forums have sections dedicated to sharing news and evidence of operations. Patriotic hacking activities include defacing websites with ideological messages or imagery, rendering websites or services unavailable by distributed denial-of-service (DDoS) attacks, and compromising internal data. Forum members provide evidence of websites they defaced by providing links to the mirrors of defaced websites via defacement archives such as Zone H.
 
-![Ayyıldız Forum homepage](/assets/img/posts/turkish-dark-web/fig1-ayyildiz-forum.png)
+![Ayyıldız Forum homepage](/assets/img/posts/turkish-dark-web/fig1-ayyildiz-forum.webp)
 
 _**Figure 1**: Ayyıldız Forum's homepage proclaiming Ayyıldız Team to be "Turk's Cyber Army", with subheading "Beyond this it's either freedom or death" (Source: Ayyıldız Forum)_
 
@@ -53,13 +53,13 @@ We observed an increase in the number of Russian websites targeted by patriotic 
 
 ### Anka Red Team
 
-![Anka Red Team coat of arms](/assets/img/posts/turkish-dark-web/fig2-anka-red-team.png)
+![Anka Red Team coat of arms](/assets/img/posts/turkish-dark-web/fig2-anka-red-team.webp)
 
 _**Figure 2**: "Cyber coat of arms" for Anka Red Team (Source: Turk Hack Team Forum)_
 
 Anka Red Team, sometimes referred to as Turk Hack Team (THT), is a patriotic hacking threat group operating primarily out of the Turk Hack Team Forum. Similar to other Turkish-language patriotic hacking groups, Anka Red Team uses nationalistic imagery and rhetoric. Their hacktivist activity primarily includes defacement operations and occasional leaks of compromised data. Anka Red Team records their defacement operations on [Zone H](http://www.zone-h.org/archive/notifier=ZoRRoKiN/page=1) under the username "ZoRRoKiN", and other defacement archives under the username "TurkHackTeam". Anka Red Team uses the forum's "Gövde Gösterisi" ("Show of Force") section to announce new victims. Active members of Anka Red Team include "P4$A", "OBT is HeRYerDe", and "Safak-Bey".
 
-![Turk Hack Team stopping announcement](/assets/img/posts/turkish-dark-web/fig3-tht-stopping-announcement.png)
+![Turk Hack Team stopping announcement](/assets/img/posts/turkish-dark-web/fig3-tht-stopping-announcement.webp)
 
 _**Figure 3**: Turk Hack Team announces that they are stopping hacking and defacement activities (Source: Turk Hack Team Forum)_
 
@@ -67,13 +67,13 @@ On June 2, 2022, "Hydrathalles", a member of Turk Hack Team Forum, announced tha
 
 The period immediately before and after Hydrathalles's statement that Anka Red Team would stop hacktivist operations was marked with a decrease in defacement activity by Anka Red Team (see Figure 4). Coinciding with Bermuda's announcement, we observed a sharp spike in the number of defacement victims posted by Anka Red Team on Zone H, primarily relying on SQL injection attacks.
 
-![Defacement victims chart](/assets/img/posts/turkish-dark-web/fig4-defacement-victims-chart.png)
+![Defacement victims chart](/assets/img/posts/turkish-dark-web/fig4-defacement-victims-chart.webp)
 
 _**Figure 4**: Overview of Anka Red Team's defacement victims between January and October 2022 (Source: Zone H)_
 
 ### Ayyıldız Team
 
-![Ayyıldız Team coat of arms](/assets/img/posts/turkish-dark-web/fig5-ayyildiz-team.png)
+![Ayyıldız Team coat of arms](/assets/img/posts/turkish-dark-web/fig5-ayyildiz-team.webp)
 
 _**Figure 5**: "Cyber coat of arms" for Ayyıldız Team (Source: Ayyıldız Forum)_
 
@@ -91,7 +91,7 @@ Most initial-access method advertisements do not mention the victim company or o
 
 According to our research, threat actors found to be selling initial access to entities in Turkey include the following 3 monikers on Exploit Forum: "zirochka", "shear", and "SubComandanteVPN". These threat actors are prolific initial access sellers and target organizations across multiple geographies and industries. Appendix A of this report includes a detailed table (Table 2) of initial access sales from organizations in Turkey that we have observed in the last 6 months.
 
-![zirochka initial access advertisement](/assets/img/posts/turkish-dark-web/fig6-zirochka-initial-access.png)
+![zirochka initial access advertisement](/assets/img/posts/turkish-dark-web/fig6-zirochka-initial-access.webp)
 
 _**Figure 6**: Threat actor zirochka advertising initial access to organizations in 13 countries, including an organization in Turkey (Source: Exploit Forum)_
 
@@ -103,7 +103,7 @@ We found that threat actors targeting Turkish organizations did not advertise st
 
 Opportunistic threat actors that frequently target Turkish entities include those who are active on the Telegram channel "數據洩露 \| Leak Data \| Data Leak Breach" and the associated Telegram user "MooT" (@MooTnew). Since June 2022, there have been approximately 20 listings shared in this Telegram group advertising compromised data from Turkish companies. While this is a significant number of victims from Turkey, the Telegram group shares dozens of other listings every week and members do not appear to be targeting particular geographies. As such, we do not believe the threat actor or group running the Telegram account is targeting Turkey in particular. However, we suggest monitoring the "Messaging Platforms — Cyber" source type for mentions of brands of interest in order to be notified of any victims shared on Telegram channels such as this one.
 
-![Telegram data leak breach advertisements](/assets/img/posts/turkish-dark-web/fig7-telegram-data-leaks.png)
+![Telegram data leak breach advertisements](/assets/img/posts/turkish-dark-web/fig7-telegram-data-leaks.webp)
 
 _**Figure 7**: Compromised data from Turkish companies being advertised on the Telegram channel "data_leak_breach" (Source: 數據洩露 \| Leak Data \| Data Leak Breach)_
 
@@ -127,7 +127,7 @@ According to open-source intelligence and Recorded Future's ransomware victim da
 
 Recorded Future data shows that as of October 2022, 9 organizations from Turkey had their names published and/or data leaked on ransomware extortion websites in 2022 (Figure 8). LockBit Gang was the primary threat group responsible for attacks against Turkish organizations; however, ransomware attacks are opportunistic in nature and ransomware groups target victims primarily based on profitability. Therefore, we do not believe that any of these groups, including LockBit Gang, were targeting Turkish organizations in particular.
 
-![Ransomware victims chart](/assets/img/posts/turkish-dark-web/fig8-ransomware-victims-chart.png)
+![Ransomware victims chart](/assets/img/posts/turkish-dark-web/fig8-ransomware-victims-chart.webp)
 
 _**Figure 8**: Overview of Turkish organizations whose data was leaked on ransomware extortion websites in 2022 (Source: Recorded Future)_
 
@@ -145,7 +145,7 @@ SifreCikis is another ransomware that targets Turkish-language victims. First [o
 
 As reported by [MalwareHunterTeam](https://www.pcrisk.com/removal-guides/24217-deadlocker-ransomware) on April 21, 2022, DeadLocker is a ransomware that encrypts victims' files by appending the file extension type to ".deadlocked". The malware prompts the victim device to display a pop-up that contains the ransom note, written in Turkish, which instructs the victim to contact a Discord account (ParadoX#8495) to obtain payment details (Figure 9). The requested ransom amount varies from $300 to $650 in [Discord Nitro](https://discord.com/nitro), which is the credit system used in the Discord application to purchase a premium membership or other add-ons. It is important to note that "BattleLocker" ransom notes with the same visual style and formatting have also been discovered. This indicates that DeadLocker and BattleLocker are different names given to the same off-the-shelf ransomware strain used by less technically proficient actors. Additionally, the fact that the primary method of communication is a Discord account and the payment is requested in Discord currency indicates that the threat actors operating the malware are likely less sophisticated and young individuals focused on improving their financial status within the Discord application.
 
-![DeadLocker ransom note](/assets/img/posts/turkish-dark-web/fig9-deadlocker-ransom-note.png)
+![DeadLocker ransom note](/assets/img/posts/turkish-dark-web/fig9-deadlocker-ransom-note.webp)
 
 _**Figure 9**: A ransom note written in Turkish from "DeadLocker" ransomware (Source: MalwareHunterTeam)_
 
@@ -157,7 +157,7 @@ In addition to the ransomware strains mentioned above, we discovered a victim pa
 
 _**Table 1**: Turkish ransom note left on victim's device after it was infected by an unidentified encrypter malware (Source: Recorded Future)_
 
-![Unnamed ransomware payment dashboard](/assets/img/posts/turkish-dark-web/fig10-unnamed-ransomware-dashboard.png)
+![Unnamed ransomware payment dashboard](/assets/img/posts/turkish-dark-web/fig10-unnamed-ransomware-dashboard.webp)
 
 _**Figure 10**: The victim dashboard from an unidentified Turkish-language encrypter malware or ransomware (Source: Recorded Future)_
 
