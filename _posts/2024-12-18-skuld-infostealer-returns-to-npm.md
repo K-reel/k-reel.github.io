@@ -3,7 +3,7 @@ title: "Skuld Infostealer Returns to npm with Fake Windows Utilities and Malicio
 short_title: "Skuld Infostealer Returns to npm"
 date: 2024-12-18 12:00:00 +0000
 categories: [Malware, npm]
-tags: [Skuld, Infostealer, Typosquatting, Obfuscation, npm, JavaScript, Roblox, Solara, T1195.002, T1059.007, T1036.005, T1027.013, T1546.016, T1555.003, T1552.001, T1567.004]
+tags: [Skuld, Infostealer, Typosquatting, Obfuscation, npm, JavaScript, T1195.002, T1059.007, T1036.005, T1027.013, T1546.016, T1555.003, T1552.001, T1567.004]
 canonical_url: https://socket.dev/blog/skuld-infostealer-returns-to-npm
 source: Socket
 image:
