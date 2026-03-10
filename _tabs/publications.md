@@ -181,6 +181,9 @@ hide_title: true
   <li class="px-md-3">
     <a href="/malicious-pypi-package-exploits-deezer-api-for-coordinated-music-piracy/">Malicious PyPI Package Exploits Deezer API for Coordinated Music Piracy</a>
   </li>
+  <li class="px-md-3">
+    <a href="/typosquatting-on-pypi-malicious-package-mimics-popular-browser-cookie-library/">Typosquatting on PyPI: Malicious Package Mimics Popular 'browser-cookie3' Library to Steal Sensitive Data</a>
+  </li>
 </ul>
 </details>
 
