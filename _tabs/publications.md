@@ -192,7 +192,11 @@ hide_title: true
 
 <details>
 <summary>☕ <strong>Maven Central / Java</strong></summary>
-<br>
+<ul class="content ps-0">
+  <li class="px-md-3">
+    <a href="/malicious-maven-package-impersonating-xz-for-java-library/">Malicious Maven Package Impersonating 'XZ for Java' Library Introduces Backdoor Allowing Remote Code Execution</a>
+  </li>
+</ul>
 </details>
 
 <details>
