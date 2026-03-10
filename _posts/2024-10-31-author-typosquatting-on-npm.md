@@ -3,7 +3,7 @@ title: "Author Typosquatting on npm: Attackers Impersonate Sindre Sorhus with Ma
 short_title: "Author Typosquatting on npm: Impersonating Sindre Sorhus"
 date: 2024-10-31 12:00:00 +0000
 categories: [npm]
-tags: [Typosquatting, Obfuscation, Backdoor, Sentry, JavaScript, npm]
+tags: [Typosquatting, Obfuscation, Backdoor, JavaScript, npm]
 canonical_url: https://socket.dev/blog/author-typosquatting-on-npm
 source: Socket
 image:
