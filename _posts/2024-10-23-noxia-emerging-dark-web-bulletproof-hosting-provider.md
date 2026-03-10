@@ -7,7 +7,7 @@ tags: [Bulletproof Hosting, Dark Web, Noxia, Python, PyPI, JavaScript, npm, Go, 
 canonical_url: https://socket.dev/blog/noxia-emerging-dark-web-bulletproof-hosting-provider
 source: Socket
 image:
-  path: https://cdn.sanity.io/images/cgdhsj6q/production/d69e2dceda853fb20dcccb49598abd3f35b8bf41-1698x651.png
+  path: https://cdn.sanity.io/images/cgdhsj6q/production/0faa917baac40dc71419103945832f2ef1041ae7-1024x1024.webp
   alt: "Noxia dark web bulletproof hosting provider advertisement on BreachForums"
 description: "Noxia, a new dark web bulletproof host, offers dirt cheap servers for Python, Node.js, Go, and Rust, enabling cybercriminals to distribute malware and conduct supply chain attacks."
 ---
