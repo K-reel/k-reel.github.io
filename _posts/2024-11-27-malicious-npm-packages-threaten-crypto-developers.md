@@ -136,4 +136,4 @@ To protect against supply chain attacks, Socket offers free tools that detect an
 
 - npm username: topnotchdeveloper12
 - GitHub username: cryptoleadgen
-- GitHub repository: [https://github.com/cryptoleadgen](https://github.com/cryptoleadgen)
+- GitHub repository: https://github[.]com/cryptoleadgen
