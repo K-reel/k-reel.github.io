@@ -278,6 +278,9 @@ hide_title: true
 <summary>🕵️ <strong>Cybercrime, Underground Economy &amp; Influence Research</strong></summary>
 <ul class="content ps-0">
   <li class="px-md-3">
+    <a href="/current-trends-in-the-turkish-language-dark-web/">Current Trends in the Turkish-Language Dark Web</a>
+  </li>
+  <li class="px-md-3">
     <a href="/exploiting-npm-to-build-a-blockchain-powered-botnet/">Threat Actor Exposes Playbook for Exploiting npm to Build Blockchain-Powered Botnets</a>
   </li>
   <li class="px-md-3">
