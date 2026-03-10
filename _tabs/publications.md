@@ -277,5 +277,8 @@ hide_title: true
   <li class="px-md-3">
     <a href="/exploiting-npm-to-build-a-blockchain-powered-botnet/">Threat Actor Exposes Playbook for Exploiting npm to Build Blockchain-Powered Botnets</a>
   </li>
+  <li class="px-md-3">
+    <a href="/noxia-emerging-dark-web-bulletproof-hosting-provider/">Noxia: Emerging Dark Web Hosting Provider Targets Python, Node.js, Go, and Rust Ecosystems</a>
+  </li>
 </ul>
 </details>
