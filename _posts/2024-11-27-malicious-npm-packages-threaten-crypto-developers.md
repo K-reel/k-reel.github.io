@@ -1,6 +1,6 @@
 ---
 title: "Typosquatting Cryptographic Libraries: Malicious npm Packages Threaten Crypto Developers with Keylogging and Wallet Theft"
-short_title: "Typosquatting Cryptographic Libraries: Malicious npm Packages Threaten Crypto Developers"
+short_title: "Typosquatting Cryptographic Libraries: Keylogging and Wallet Theft"
 date: 2024-11-27 12:00:00 +0000
 categories: [npm]
 tags: [npm, JavaScript, Typosquatting, Infostealer, Keylogging, T1195.002, T1036.005, T1059.007, T1583.006, T1005, T1217, T1555.003, T1539, T1056.001, T1115, T1041, T1071.001, T1547.001]
