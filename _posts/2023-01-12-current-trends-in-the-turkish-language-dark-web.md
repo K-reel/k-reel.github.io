@@ -216,3 +216,10 @@ This post originally appeared on [Recorded Future blog](https://www.recordedfutu
 
 > This report is also available as a [PDF](https://assets.recordedfuture.com/insikt-report-pdfs/2023/cta-2023-0112.pdf).
 {: .prompt-info }
+
+<script>
+document.querySelectorAll('.content a[href^="http"]').forEach(function(a) {
+  a.setAttribute('target', '_blank');
+  a.setAttribute('rel', 'noopener noreferrer');
+});
+</script>
