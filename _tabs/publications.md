@@ -245,6 +245,9 @@ hide_title: true
 <summary>🦀 <strong>Rust / Crates</strong></summary>
 <ul class="content ps-0">
   <li class="px-md-3">
+    <a href="/5-malicious-rust-crates-posed-as-time-utilities-to-exfiltrate-env-files/">5 Malicious Rust Crates Posed as Time Utilities to Exfiltrate .env Files</a>
+  </li>
+  <li class="px-md-3">
     <a href="/two-malicious-rust-crates-impersonate-popular-logger-to-steal-wallet-keys/">Two Malicious Rust Crates Impersonate Popular Logger to Steal Wallet Keys</a>
   </li>
 </ul>
