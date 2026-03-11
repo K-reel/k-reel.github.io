@@ -119,7 +119,7 @@ Using this methodology, the ATII identified hundreds of thousands of potential l
 > *Law enforcement personnel assess each potential case and weigh multiple "indicators" when deciding if a case warrants further investigation, but ultimately, pursuing an investigation is subjective. Certainly, any one or even two indicators present can sometimes be explained by, or attributed to, other factors that are not criminal. However, when there are multiple indicators present, it becomes more and more plausible (or even likely) that a person is being trafficked against their will.*
 
 ![Keyword Table created by the ATII](/assets/img/posts/human-trafficking-prosecution/fig8-keyword-table.png)
-_**Figure 8**: Table created by the ATII depicting keywords their researchers used to identify potential sex trafficking activity (Source: [Anti-Human Trafficking Intelligence Initiative](https://www.intelli-hub.com/news/onlyfans-amp-human-trafficking))_
+_**Figure 8**: Table created by the ATII depicting keywords their researchers used to identify potential sex trafficking activity (Source: Anti-Human Trafficking Intelligence Initiative)_
 
 Within our dataset of over 66,000 posts collected from Backpage-like websites, we identified mentions of the keywords used in ATII's research: "onlyfans" with 487 references, "no limits" with 280 references, "bdsm" with 608 references, "little" with 10,194 references, and "lolita" or "loli" with 7 references. We reported all identified sources covered in this report to law enforcement and the National Center for Missing and Exploited Children (NCMEC) [CyberTip](https://www.missingkids.org/gethelpnow/cybertipline) line.
 
