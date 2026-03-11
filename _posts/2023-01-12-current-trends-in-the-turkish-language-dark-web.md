@@ -150,7 +150,12 @@ _**Figure 9**: A ransom note written in Turkish from "DeadLocker" ransomware (So
 
 In addition to the ransomware strains mentioned above, we discovered a victim page from an unnamed ransomware group with a ransom note (Table 1) written in Turkish. The ransom note instructs the victim to log on to a victim payment dashboard (Figure 10) using a custom identification number. The payment dashboard contains payment details including the recipient's Bitcoin (BTC) address and guidance on how to obtain cryptocurrency in Turkey. The ransom price is $250 USD. The language proficiency and Turkey-specific URLs embedded in both the ransom note and the payment dashboard indicate that the operators of the ransomware are native Turkish speakers.
 
-<table>
+<style>
+.ransom-table { table-layout: fixed; width: 100%; word-wrap: break-word; overflow-wrap: break-word; }
+.ransom-table td, .ransom-table th { width: 50%; vertical-align: top; word-wrap: break-word; overflow-wrap: break-word; }
+.ransom-table hr { border: none; border-top: 1px dashed #999; margin: 0.4em 0; }
+</style>
+<table class="ransom-table">
 <thead>
 <tr><th>Ransom Note in Turkish</th><th>Translation</th></tr>
 </thead>
@@ -158,38 +163,38 @@ In addition to the ransomware strains mentioned above, we discovered a victim pa
 <tr>
 <td>
 DOSYALARINIZ SIFRELENDI..!<br>
-250 $ KARSILIGINDA DOSYALARINIZIN SIFRESINI COZECEK DCRYPTER YAZILIMINI ALABILIRSINIZ.<br>
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~<br>
+250 $ KARSILIGINDA DOSYALARINIZIN SIFRESINI COZECEK DCRYPTER YAZILIMINI ALABILIRSINIZ.
+<hr>
 PC ID : [REDACTED] 'NIZ ILE SITEMIZDEN BIZE ULASABILIRSINIZ...<br>
-SITEMIZ : [REDACTED]<br>
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~<br>
+SITEMIZ : [REDACTED]
+<hr>
 SITEMIZ SADECE TOR BROWSER ILE ACILMAKTADIR.<br>
 TOR BROWSER INDIRME ADRESI :<br>
-https://www.torproject.org/tr/download<br>
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~<br>
+https://www.torproject.org/tr/download
+<hr>
 DATA KURTARMA SERVISLERI YADA PROGRAMLARI KULLANMAK ISTERSENIZ LUTFEN DOSYALARINIZIN YEDEGINI ALINIZ..<br>
 ALDIGINIZ BU YEDEKLER UZERINDE ISLEM YAPINIZ VEYA YAPTIRINIZ..<br>
 DOSYALARINIZI SILMEYINIZ VE ISIMLERINI DEGISTIRMEYINIZ.<br>
 ASIL DOSYALARINIZIN BOZULMASI..<br>
-VERILERINIZIN KURTARILAMAYACAK SEKILDE ZARAR GORMESINE NEDEN OLACAKDIR.<br>
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~<br>
+VERILERINIZIN KURTARILAMAYACAK SEKILDE ZARAR GORMESINE NEDEN OLACAKDIR.
+<hr>
 SITEMIZE ERISEMEMENIZ DURUMUNDA LUTFEN BELIRLI ARALIKLARLA TEKRAR TEKRAR KONTROL EDIN.
 </td>
 <td>
 Your files have been encrypted..!<br>
-You can buy the dcrypter software that will unlock your files for $250.<br>
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~<br>
+You can buy the dcrypter software that will unlock your files for $250.
+<hr>
 PC ID: You can contact us using your id [REDACTED] on our site.<br>
-Our Site: [REDACTED]<br>
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~<br>
+Our Site: [REDACTED]
+<hr>
 Our website is only accessible via Tor browser.<br>
 You can download Tor at this address:<br>
-https://www.torproject.org/tr/download<br>
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~<br>
+https://www.torproject.org/tr/download
+<hr>
 If you want to use data recovery services or programs please make a backup of your files. Use data recovery on these backups.<br>
 Do not delete or change the names of your files.<br>
-This will cause your original files to be corrupted and your data to be harmed in an unsalvageable way.<br>
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~<br>
+This will cause your original files to be corrupted and your data to be harmed in an unsalvageable way.
+<hr>
 If you can't access our website please keep checking in intervals.
 </td>
 </tr>
