@@ -4,7 +4,7 @@ short_title: "Combating Human Trafficking — Prosecution"
 date: 2022-08-30 12:00:00 +0000
 author: kirill_hande_krysta
 categories: [Threat Intelligence]
-tags: [Human Trafficking, OSINT, Backpage, Law Enforcement, Prosecution, Classified Ads, ATII, OnlyFans]
+tags: [Human Trafficking, Classified Ads]
 canonical_url: https://assets.recordedfuture.com/insikt-report-pdfs/2022/cta-2022-0830.pdf
 source: Recorded Future
 image:
