@@ -151,7 +151,15 @@ _**Figure 9**: A ransom note written in Turkish from "DeadLocker" ransomware (So
 In addition to the ransomware strains mentioned above, we discovered a victim page from an unnamed ransomware group with a ransom note (Table 1) written in Turkish. The ransom note instructs the victim to log on to a victim payment dashboard (Figure 10) using a custom identification number. The payment dashboard contains payment details including the recipient's Bitcoin (BTC) address and guidance on how to obtain cryptocurrency in Turkey. The ransom price is $250 USD. The language proficiency and Turkey-specific URLs embedded in both the ransom note and the payment dashboard indicate that the operators of the ransomware are native Turkish speakers.
 
 <style>
-.ransom-table { width: 100%; border-collapse: collapse; }
+.ransom-table, .appendix-table {
+  width: 100vw; max-width: none; position: relative; left: 50%; transform: translateX(-50%);
+  border-collapse: collapse;
+}
+@media (min-width: 1200px) {
+  .ransom-table, .appendix-table {
+    width: calc(100% + 10rem); left: -5rem; transform: none;
+  }
+}
 .ransom-table td, .ransom-table th { width: 50%; vertical-align: top; padding: 0.5em 0.75em; overflow-wrap: break-word; word-wrap: break-word; }
 .ransom-table hr { border: none; border-top: 1px dashed #999; margin: 0.4em 0; }
 </style>
@@ -218,7 +226,6 @@ Sources for this report include the Recorded Future Platform and open-web and da
 ## Appendix A: Initial Access Sales
 
 <style>
-.appendix-table { width: 100%; border-collapse: collapse; }
 .appendix-table th:first-child, .appendix-table td:first-child { width: 20%; white-space: nowrap; }
 .appendix-table td, .appendix-table th { vertical-align: top; padding: 0.5em 0.75em; overflow-wrap: break-word; word-wrap: break-word; }
 </style>
