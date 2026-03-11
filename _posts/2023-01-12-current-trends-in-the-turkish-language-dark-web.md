@@ -151,8 +151,8 @@ _**Figure 9**: A ransom note written in Turkish from "DeadLocker" ransomware (So
 In addition to the ransomware strains mentioned above, we discovered a victim page from an unnamed ransomware group with a ransom note (Table 1) written in Turkish. The ransom note instructs the victim to log on to a victim payment dashboard (Figure 10) using a custom identification number. The payment dashboard contains payment details including the recipient's Bitcoin (BTC) address and guidance on how to obtain cryptocurrency in Turkey. The ransom price is $250 USD. The language proficiency and Turkey-specific URLs embedded in both the ransom note and the payment dashboard indicate that the operators of the ransomware are native Turkish speakers.
 
 <style>
-.ransom-table { table-layout: fixed; width: 100%; word-wrap: break-word; overflow-wrap: break-word; }
-.ransom-table td, .ransom-table th { width: 50%; vertical-align: top; word-wrap: break-word; overflow-wrap: break-word; }
+.ransom-table { table-layout: fixed; width: 100%; border-collapse: collapse; }
+.ransom-table td, .ransom-table th { width: 50%; vertical-align: top; padding: 0.5em 0.75em; word-break: break-word; overflow-wrap: break-word; hyphens: auto; }
 .ransom-table hr { border: none; border-top: 1px dashed #999; margin: 0.4em 0; }
 </style>
 <table class="ransom-table">
