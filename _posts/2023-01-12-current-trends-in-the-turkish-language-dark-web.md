@@ -244,7 +244,7 @@ _**Table 3**: An overview of threat actors selling compromised databases from or
 
 ---
 
-This research originally appeared on [Recorded Future website](https://www.recordedfuture.com/research/current-trends-in-the-turkish-language-dark-web).
+This post was originally published on the [Recorded Future blog](https://www.recordedfuture.com/research/current-trends-in-the-turkish-language-dark-web).
 
 > This report is also available as a [PDF](https://assets.recordedfuture.com/insikt-report-pdfs/2023/cta-2023-0112.pdf).
 {: .prompt-info }
