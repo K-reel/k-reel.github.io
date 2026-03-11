@@ -3,7 +3,7 @@ title: "Quasar RAT Disguised as an npm Package for Detecting Vulnerabilities in 
 short_title: "Quasar RAT Disguised as an npm Package"
 date: 2024-12-20 12:00:00 +0000
 categories: [Malware, npm]
-tags: [Quasar RAT, Obfuscation, npm, JavaScript, Ethereum, RAT, T1195.002, T1059.007, T1036.005, T1027, T1059.001, T1546.016, T1105, T1547.001, T1056.001, T1113, T1005, T1071.001, T1041]
+tags: [RAT, Obfuscation, npm, JavaScript, T1195.002, T1059.007, T1036.005, T1027, T1059.001, T1546.016, T1105, T1547.001, T1056.001, T1113, T1005, T1071.001, T1041]
 canonical_url: https://socket.dev/blog/quasar-rat-disguised-as-an-npm-package
 source: Socket
 image:

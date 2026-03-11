@@ -3,7 +3,7 @@ title: "Roblox Developers Targeted with npm Packages Infected with Skuld Infoste
 short_title: "Roblox Developers Targeted with Infected npm Packages"
 date: 2024-11-08 12:00:00 +0000
 categories: [npm]
-tags: [Skuld, Blank Grabber, Typosquatting, Infostealer, JavaScript, npm, Obfuscation, T1195.002, T1036.005, T1546.016, T1555.003, T1552.001, T1567.004]
+tags: [Blank Grabber, Typosquatting, Infostealer, JavaScript, npm, Obfuscation, T1195.002, T1036.005, T1546.016, T1555.003, T1552.001, T1567.004]
 canonical_url: https://socket.dev/blog/roblox-developers-targeted-with-npm-packages-infected-with-infostealers
 source: Socket
 image:

@@ -2,7 +2,7 @@
 title: "npm 'is' Package Hijacked in Expanding Supply Chain Attack"
 date: 2025-07-22 12:00:00 +0000
 categories: [Supply Chain]
-tags: [Phishing, Infostealer, npm, Scavenger, Developer Compromise, Obfuscation, T1195.002]
+tags: [Phishing, Infostealer, npm, Developer Compromise, Obfuscation, T1195.002]
 author: kirill_and_sarah
 canonical_url: https://socket.dev/blog/npm-is-package-hijacked-in-expanding-supply-chain-attack
 source: Socket

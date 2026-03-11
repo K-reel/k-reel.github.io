@@ -3,7 +3,7 @@ title: "Malicious npm Packages Inject SSH Backdoors via Typosquatted Libraries"
 short_title: "Malicious npm Packages Inject SSH Backdoors via Typosquats"
 date: 2024-11-22 12:00:00 +0000
 categories: [npm]
-tags: [npm, JavaScript, Typosquatting, SSH Backdoor, T1195.002, T1036.005, T1059.007, T1021.004, T1190, T1005, T1567.004]
+tags: [npm, JavaScript, Typosquatting, Backdoor, T1195.002, T1036.005, T1059.007, T1021.004, T1190, T1005, T1567.004]
 canonical_url: https://socket.dev/blog/malicious-npm-packages-inject-ssh-backdoors-via-typosquatted-libraries
 source: Socket
 image:

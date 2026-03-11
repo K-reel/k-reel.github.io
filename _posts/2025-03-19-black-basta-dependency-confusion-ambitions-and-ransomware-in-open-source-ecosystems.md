@@ -3,7 +3,7 @@ title: "Black Basta's Dependency Confusion Ambitions and Ransomware in Open Sour
 short_title: "Black Basta's Dependency Confusion and Ransomware in OSS"
 date: 2025-03-19 12:00:00 +0000
 categories: [Malware, npm]
-tags: [Black Basta, Ransomware, Dependency Confusion, npm, JavaScript, PyPI, Python, Typosquatting, Extortionware, T1195.002, T1608.001, T1204.002, T1059.007, T1546.016, T1595, T1005, T1082, T1041, T1571, T1105, T1119, T1486, T1657]
+tags: [Ransomware, Dependency Confusion, npm, JavaScript, PyPI, Python, Typosquatting, Extortionware, T1195.002, T1608.001, T1204.002, T1059.007, T1546.016, T1595, T1005, T1082, T1041, T1571, T1105, T1119, T1486, T1657]
 canonical_url: https://socket.dev/blog/black-basta-dependency-confusion-ambitions-and-ransomware-in-open-source-ecosystems
 source: Socket
 image:
