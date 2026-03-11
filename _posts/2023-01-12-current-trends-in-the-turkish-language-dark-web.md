@@ -90,6 +90,8 @@ According to our research, threat actors found to be selling initial access to e
 
 ![zirochka initial access advertisement](/assets/img/posts/turkish-dark-web/fig6-zirochka-initial-access.png)
 
+![zirochka Turkey detail](/assets/img/posts/turkish-dark-web/fig6b-zirochka-turkey-detail.png)
+
 _**Figure 6**: Threat actor zirochka advertising initial access to organizations in 13 countries, including an organization in Turkey (Source: Exploit Forum)_
 
 ### Compromised Data Sales
