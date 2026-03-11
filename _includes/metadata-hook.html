@@ -215,5 +215,17 @@
 </style>
 {% endif %}
 
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var host = location.hostname;
+    document.querySelectorAll('article a[href]').forEach(function(a) {
+      if (a.hostname && a.hostname !== host) {
+        a.setAttribute('target', '_blank');
+        a.setAttribute('rel', 'noopener');
+      }
+    });
+  });
+</script>
+
 <!-- Cloudflare Web Analytics -->
 <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "256e9b04e8164388bcfa95be9f85f6d4"}'></script>
