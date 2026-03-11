@@ -37,7 +37,7 @@ Email addresses can prove to be fruitful leads when coupled with various open-so
 
 ## Background
 
-Human trafficking is a complex issue requiring a multifaceted approach, like the one set forth in the United Nations's [Palermo Protocol](https://www.ohchr.org/en/instruments-mechanisms/instruments/protocol-prevent-suppress-and-punish-trafficking-persons). The Palermo Protocol serves as the foundation of the 4P paradigm which is composed of prevention, protection, prosecution, and partnership measures. In this framework, "prosecution" [refers](https://www.state.gov/policy-issues/the-4ps/) to both investigating and prosecuting human trafficking offenses.
+Human trafficking is a complex issue requiring a multifaceted approach, like the one set forth in the United Nations's [Palermo Protocol](https://www.ohchr.org/en/instruments-mechanisms/instruments/protocol-prevent-suppress-and-punish-trafficking-persons). The Palermo Protocol serves as the foundation of the 4P paradigm which is composed of prevention, protection, prosecution, and partnership measures. In this framework, "prosecution" refers to both investigating and prosecuting human trafficking offenses.
 
 Threat intelligence can aid law enforcement agencies' investigative efforts by gathering and identifying, or "surfacing", warning signs and potential indicators of human trafficking. Knowing where to look for leads on human trafficking and employing threat intelligence solutions that help collect, aggregate, and analyze sources and data can provide additional visibility, ways to identify the crime, and enable data analysis for additional insights.
 
