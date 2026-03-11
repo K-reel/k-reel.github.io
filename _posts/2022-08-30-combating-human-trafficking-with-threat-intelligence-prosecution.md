@@ -62,7 +62,7 @@ We found that some of the same phone numbers appeared across multiple sources an
 
 Human traffickers are known for giving the impression that sexual exploitation is a voluntary, consensual choice of those engaged in providing adult services. According to the [United Nations Convention Against Transnational Organized Crime](https://www.unodc.org/unodc/en/organized-crime/intro/UNTOC.html), the consent of a trafficking victim is irrelevant. Human trafficking can take place even if the victim initially consented to provide exploitative services. Traffickers are notorious for advertising exploitative services as independent and unorganized. However, the volume of some of the posts with potential warning signs and human trafficking indicators, where the same phone number or email address appears hundreds of times, suggests that these advertisements are organized and managed. In some listings, we found warning signs and potential human trafficking indicators in the form of commodifying and derogatory language that is rarely, if ever, used by self-organized individuals. When querying the datasets by the English keyword "management", we identified the organized nature of some of the advertised services.
 
-![Examples of query results for the keyword "management"](/assets/img/posts/human-trafficking-prosecution/fig2-management-keywords.jpeg)
+![Examples of query results for the keyword "management"](/assets/img/posts/human-trafficking-prosecution/fig2-management-keywords.png)
 _**Figure 2**: Examples of query results for the keyword "management" (Source: Recorded Future)_
 
 In other listings, we identified more instances of commodifying language in which people were described as objects, such as items that can be bought and sold.
