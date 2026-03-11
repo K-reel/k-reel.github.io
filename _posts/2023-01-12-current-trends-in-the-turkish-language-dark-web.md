@@ -12,9 +12,6 @@ image:
 description: "An analysis of advertisements, posts, and interactions within Turkish-language hacking and cybercrime forums, exploring the capabilities, culture, and organization of these communities."
 ---
 
-> This report is also available as a [PDF](https://assets.recordedfuture.com/insikt-report-pdfs/2023/cta-2023-0112.pdf).
-{: .prompt-info }
-
 We analyzed advertisements, posts, and interactions within Turkish-language hacking and cybercrime forums to explore the capabilities, culture, and organization of these communities. This report is a follow-up to our previous reporting on the state of the Turkish-language dark web as part of a series analyzing cybercriminal communities in [Brazil](https://www.recordedfuture.com/brazilian-hacking-communities/), [Russia and China](https://www.recordedfuture.com/russian-chinese-hacking-communities/), [Japan](https://www.recordedfuture.com/japanese-underground-communities/), and [Iran](https://www.recordedfuture.com/ashiyane-forum-history/). It will be of greatest interest to organizations and geopolitical analysts seeking to understand the cybercriminal underground in order to better monitor security-related threats, as well as to those researching the Turkish-language underground.
 
 ## Executive Summary
@@ -210,3 +207,10 @@ _**Table 2**: An overview of initial access brokers' advertisements targeting or
 | "xssisownz" | On March 10, 2022, xssisownz, a member of the top-tier forum XSS, was selling a 15 GB, 120 million-record database related to Sinoz Kozmetik (sinoz[.]com[.]tr) for $500. Of the 120 million records, 260,644 contain PII and plaintext passwords. The credibility of xssisownz is low. |
 
 _**Table 3**: An overview of threat actors selling compromised databases from organizations in Turkey in the last 6 months (Source: Recorded Future)_
+
+---
+
+This post originally appeared on [Recorded Future blog](https://www.recordedfuture.com/research/current-trends-in-the-turkish-language-dark-web).
+
+> This report is also available as a [PDF](https://assets.recordedfuture.com/insikt-report-pdfs/2023/cta-2023-0112.pdf).
+{: .prompt-info }
