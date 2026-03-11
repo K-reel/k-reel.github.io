@@ -152,22 +152,9 @@ In addition to the ransomware strains mentioned above, we discovered a victim pa
 
 <style>
 .table-scroll-wrapper {
-  position: relative;
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
   margin-bottom: 0.5rem;
-}
-.table-scroll-wrapper::after {
-  content: '';
-  position: sticky;
-  right: 0;
-  top: 0;
-  display: block;
-  width: 2rem;
-  height: 100%;
-  pointer-events: none;
-  position: absolute;
-  background: linear-gradient(to right, transparent, var(--body-bg, #fff) 90%);
 }
 .table-scroll-hint {
   text-align: right;
@@ -177,6 +164,8 @@ In addition to the ransomware strains mentioned above, we discovered a victim pa
   font-style: italic;
 }
 .appendix-table { border-collapse: collapse; min-width: 700px; width: 100%; }
+.appendix-table th:first-child, .appendix-table td:first-child { width: 20%; white-space: nowrap; }
+.appendix-table td, .appendix-table th { vertical-align: top; padding: 0.5em 0.75em; overflow-wrap: break-word; word-wrap: break-word; }
 </style>
 
 ![Table 1: Turkish ransom note](/assets/img/posts/turkish-dark-web/table1-ransom-note.png)
@@ -196,11 +185,6 @@ Ransomware-as-a-service (RaaS) models decrease the barriers for entry to the luc
 Sources for this report include the Recorded Future Platform and open-web and dark web research.
 
 ## Appendix A: Initial Access Sales
-
-<style>
-.appendix-table th:first-child, .appendix-table td:first-child { width: 20%; white-space: nowrap; }
-.appendix-table td, .appendix-table th { vertical-align: top; padding: 0.5em 0.75em; overflow-wrap: break-word; word-wrap: break-word; }
-</style>
 
 <div class="table-scroll-hint">Scroll &rarr;</div>
 <div class="table-scroll-wrapper">
