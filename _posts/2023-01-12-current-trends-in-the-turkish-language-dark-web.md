@@ -218,10 +218,9 @@ Sources for this report include the Recorded Future Platform and open-web and da
 ## Appendix A: Initial Access Sales
 
 <style>
-.appendix-table { table-layout: fixed; width: 100%; word-wrap: break-word; overflow-wrap: break-word; }
-.appendix-table th:first-child, .appendix-table td:first-child { width: 20%; }
-.appendix-table th:last-child, .appendix-table td:last-child { width: 80%; }
-.appendix-table td { vertical-align: top; word-wrap: break-word; overflow-wrap: break-word; }
+.appendix-table { width: 100%; border-collapse: collapse; }
+.appendix-table th:first-child, .appendix-table td:first-child { width: 20%; white-space: nowrap; }
+.appendix-table td, .appendix-table th { vertical-align: top; padding: 0.5em 0.75em; overflow-wrap: break-word; word-wrap: break-word; }
 </style>
 
 <table class="appendix-table">
