@@ -67,16 +67,19 @@ _**Figure 2**: Examples of query results for the keyword "management" (Source: R
 
 In other listings, we identified more instances of commodifying language in which people were described as objects, such as items that can be bought and sold.
 
+![Examples of query results for the keywords "arrived" or "arrival" and "buy"](/assets/img/posts/human-trafficking-prosecution/fig3-arrived-buy-keywords.png)
 _**Figure 3**: Examples of query results for the keywords "arrived" or "arrival" and "buy" (Source: Recorded Future)_
 
 We found numerous other examples of commodifying language, often [used](https://www.dhs.gov/blue-campaign/indicators-human-trafficking) by traffickers and pimps, but chose not to include them as illustrations to this report due to their derogatory and explicit nature. In essence, the terms used (similar to the ones we illustrated above) reduce people to objects, commodifying and objectifying individuals as items for sale on a marketplace.
 
 We queried harvested data against the list of human trafficking keywords in the English language provided in our first report and found references to some of the keywords, including "brothel", "buyer", "whore", "vic", and "purchase".
 
+![Example of a query result when searching for the keyword "brothel"](/assets/img/posts/human-trafficking-prosecution/fig4-brothel-keyword.png)
 _**Figure 4**: Example of a query result when searching for the keyword "brothel" (Source: Recorded Future)_
 
 Another potential human trafficking indicator is classified ads that list multiple locations as potential meet-up places (Figure 5), which are likely part of a [circuit](https://www.streethopetn.org/wp-content/uploads/2019/03/Glossary-of-Terms.pdf). For example, the West Coast trafficking circuit, which includes San Diego, Las Vegas, Portland, and the cities between these locations, is a popular route used by traffickers.
 
+![Example of a listing referring to multiple cities](/assets/img/posts/human-trafficking-prosecution/fig5-multi-city-listing.png)
 _**Figure 5**: Example of a listing referring to multiple cities, posted by a potential suspect of a trafficking circuit (Source: Recorded Future)_
 
 Other than phone numbers, within our dataset of over 66,000 posts collected from Backpage-like websites, we identified 21,687 total email addresses, of which 3,357 were unique. Approximately 97% of email addresses used the gmail.com domain. The remaining 3% of email addresses were detected with the following domains: yahoo.com, mail.com, mail.aol.com, protonmail.com, and a small number of disposable temporary email domains (such as mojzur.com and wgraj.com).
