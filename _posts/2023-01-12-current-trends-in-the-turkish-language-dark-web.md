@@ -152,7 +152,7 @@ In addition to the ransomware strains mentioned above, we discovered a victim pa
 
 <style>
 .ransom-table { table-layout: fixed; width: 100%; border-collapse: collapse; }
-.ransom-table td, .ransom-table th { width: 50%; vertical-align: top; padding: 0.5em 0.75em; word-break: break-word; overflow-wrap: break-word; hyphens: auto; }
+.ransom-table td, .ransom-table th { width: 50%; vertical-align: top; padding: 0.5em 0.75em; word-break: break-all; overflow-wrap: anywhere; overflow: hidden; }
 .ransom-table hr { border: none; border-top: 1px dashed #999; margin: 0.4em 0; }
 </style>
 <table class="ransom-table">
