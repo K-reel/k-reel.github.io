@@ -3,7 +3,7 @@ title: "Another Wave: North Korean Contagious Interview Campaign Drops 35 New Ma
 short_title: "North Korean Contagious Interview Drops 35 Malicious npm Packages"
 date: 2025-06-25 12:00:00 +0000
 categories: [Malware, North Korea]
-tags: [Contagious Interview, HexEval, BeaverTail, InvisibleFerret, npm, Typosquatting, Keylogger, LinkedIn, Bitbucket, T1195.002, T1608.001, T1204.002, T1059.007, T1027.013, T1546.016, T1005, T1082, T1083, T1217, T1555.003, T1555.001, T1056.001, T1041, T1105, T1119, T1657]
+tags: [Contagious Interview, HexEval, BeaverTail, InvisibleFerret, npm, Typosquatting, Keylogger, LinkedIn, T1195.002, T1608.001, T1204.002, T1059.007, T1027.013, T1546.016, T1005, T1082, T1083, T1217, T1555.003, T1555.001, T1056.001, T1041, T1105, T1119, T1657]
 canonical_url: https://socket.dev/blog/north-korean-contagious-interview-campaign-drops-35-new-malicious-npm-packages
 source: Socket
 image:
