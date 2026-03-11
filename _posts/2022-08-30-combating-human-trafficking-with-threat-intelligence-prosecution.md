@@ -116,17 +116,7 @@ Using this methodology, the ATII identified hundreds of thousands of potential l
 
 > *Law enforcement personnel assess each potential case and weigh multiple "indicators" when deciding if a case warrants further investigation, but ultimately, pursuing an investigation is subjective. Certainly, any one or even two indicators present can sometimes be explained by, or attributed to, other factors that are not criminal. However, when there are multiple indicators present, it becomes more and more plausible (or even likely) that a person is being trafficked against their will.*
 
-| Keyword | Definition | Search Query | Results |
-|---|---|---|---|
-| Skipthegames.com | Escort Site | Site:skipthegames.com "onlyfans" OR "only fans" | 385,000 |
-| Site:onebackpage.com "onlyfans" OR "only fans" | Escort Site | Site:onebackpage.com "onlyfans" OR "only fans" | 21,700 |
-| Backpagegals.com | Escort Site | Site:Backpagegals.com "onlyfans" OR "only fans" | 24,500 |
-| DDLG | Daddy Dom Little Girl | Site:onlyfans.com "ddlg" | 2,200 |
-| No Limits | Well known CSAM Term for extreme sex acts with minors | site:onlyfans.com "no limits" | 693 |
-| "BDSM" AND "Little" | BDSM: Bondage Domination Sado Masochism / Little: Popular CSAM term for submissive child | site:onlyfans.com "bdsm" AND "little" | 2,080 |
-| Lolita | Well known CSAM term for sexualized female child | site:onlyfans.com "lolita" | 219 |
-| Loli | Well known CSAM term for sexualized female child | site:onlyfans.com "loli" | 374 |
-
+![Keyword Table created by the ATII](/assets/img/posts/human-trafficking-prosecution/fig8-keyword-table.png)
 _**Figure 8**: Table created by the ATII depicting keywords their researchers used to identify potential sex trafficking activity (Source: [Anti-Human Trafficking Intelligence Initiative](https://www.intelli-hub.com/news/onlyfans-amp-human-trafficking))_
 
 Within our dataset of over 66,000 posts collected from Backpage-like websites, we identified mentions of the keywords used in ATII's research: "onlyfans" with 487 references, "no limits" with 280 references, "bdsm" with 608 references, "little" with 10,194 references, and "lolita" or "loli" with 7 references. We reported all identified sources covered in this report to law enforcement and the National Center for Missing and Exploited Children (NCMEC) [CyberTip](https://www.missingkids.org/gethelpnow/cybertipline) line.
