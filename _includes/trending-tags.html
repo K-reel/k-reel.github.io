@@ -8,14 +8,22 @@
   <div class="panel-body">
     {% if site.tags.size > 0 %}
       <div class="d-flex flex-wrap mt-1 mb-1">
-        {% assign sorted_tags = site.tags | sort %}
-        {% for tag in sorted_tags %}
+        {% assign tag_names = "" %}
+        {% for tag in site.tags %}
           {% assign name = tag[0] %}
           {% assign prefix = name | slice: 0, 2 %}
           {% unless prefix == 'T1' %}
+            {% if tag_names == "" %}
+              {% assign tag_names = name %}
+            {% else %}
+              {% assign tag_names = tag_names | append: "|" | append: name %}
+            {% endif %}
+          {% endunless %}
+        {% endfor %}
+        {% assign tag_list = tag_names | split: "|" | sort_natural %}
+        {% for name in tag_list %}
           {% assign slug = name | slugify %}
           <a class="post-tag" href="{{ '/tags/' | append: slug | append: '/' | relative_url }}">{{ name }}</a>
-          {% endunless %}
         {% endfor %}
       </div>
     {% else %}
