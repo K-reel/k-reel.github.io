@@ -12,7 +12,7 @@ image:
 description: "An analysis of advertisements, posts, and interactions within Turkish-language hacking and cybercrime forums, exploring the capabilities, culture, and organization of these communities."
 ---
 
-We analyzed advertisements, posts, and interactions within Turkish-language hacking and cybercrime forums to explore the capabilities, culture, and organization of these communities. This report is a follow-up to our previous reporting on the state of the Turkish-language dark web as part of a series analyzing cybercriminal communities in [Brazil](https://www.recordedfuture.com/brazilian-hacking-communities/), [Russia and China](https://www.recordedfuture.com/russian-chinese-hacking-communities/), [Japan](https://www.recordedfuture.com/japanese-underground-communities/), and [Iran](https://www.recordedfuture.com/ashiyane-forum-history/). It will be of greatest interest to organizations and geopolitical analysts seeking to understand the cybercriminal underground in order to better monitor security-related threats, as well as to those researching the Turkish-language underground.
+We analyzed advertisements, posts, and interactions within Turkish-language hacking and cybercrime forums to explore the capabilities, culture, and organization of these communities. This report is a follow-up to our previous reporting on the state of the Turkish-language dark web as part of a series analyzing cybercriminal communities in [Brazil](https://www.recordedfuture.com/research/brazilian-hacking-communities), [Russia and China](https://www.recordedfuture.com/blog/russian-chinese-hacking-communities), [Japan](https://www.recordedfuture.com/blog/japanese-underground-communities), and [Iran](https://www.recordedfuture.com/research/ashiyane-forum-history). It will be of greatest interest to organizations and geopolitical analysts seeking to understand the cybercriminal underground in order to better monitor security-related threats, as well as to those researching the Turkish-language underground.
 
 ## Executive Summary
 
@@ -138,7 +138,7 @@ TurkStatik ransomware was first referenced on November 22, 2019, when a security
 
 #### SifreCikis Ransomware
 
-SifreCikis is another ransomware that targets Turkish-language victims. First [observed](https://www.bleepingcomputer.com/forums/t/734937/sifrecikis-ransomware-random-pc-id-12-support-topic/) on November 10, 2020, it encrypts victim data by appending files with a random pattern extension. The Turkish-language ransom note instructs victims to contact the SifreCikis operators via the email nitas811@protonmail[.]com to pay a $500 ransom, and also references the currently defunct TOR website address sifrecikx7s62cjv[.]onion. SifreCikis ransomware was [reportedly](https://howtofix.guide/sifrecikis-virus/) spread via spam campaigns and malware infections.
+SifreCikis is another ransomware that targets Turkish-language victims. First observed on November 10, 2020, it encrypts victim data by appending files with a random pattern extension. The Turkish-language ransom note instructs victims to contact the SifreCikis operators via the email nitas811@protonmail[.]com to pay a $500 ransom, and also references the currently defunct TOR website address sifrecikx7s62cjv[.]onion. SifreCikis ransomware was [reportedly](https://howtofix.guide/sifrecikis-virus/) spread via spam campaigns and malware infections.
 
 #### DeadLocker Ransomware
 
