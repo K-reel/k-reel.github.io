@@ -151,15 +151,32 @@ _**Figure 9**: A ransom note written in Turkish from "DeadLocker" ransomware (So
 In addition to the ransomware strains mentioned above, we discovered a victim page from an unnamed ransomware group with a ransom note (Table 1) written in Turkish. The ransom note instructs the victim to log on to a victim payment dashboard (Figure 10) using a custom identification number. The payment dashboard contains payment details including the recipient's Bitcoin (BTC) address and guidance on how to obtain cryptocurrency in Turkey. The ransom price is $250 USD. The language proficiency and Turkey-specific URLs embedded in both the ransom note and the payment dashboard indicate that the operators of the ransomware are native Turkish speakers.
 
 <style>
-.appendix-table {
-  width: 100vw; max-width: none; position: relative; left: 50%; transform: translateX(-50%);
-  border-collapse: collapse;
+.table-scroll-wrapper {
+  position: relative;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin-bottom: 0.5rem;
 }
-@media (min-width: 1200px) {
-  .appendix-table {
-    width: calc(100% + 10rem); left: -5rem; transform: none;
-  }
+.table-scroll-wrapper::after {
+  content: '';
+  position: sticky;
+  right: 0;
+  top: 0;
+  display: block;
+  width: 2rem;
+  height: 100%;
+  pointer-events: none;
+  position: absolute;
+  background: linear-gradient(to right, transparent, var(--body-bg, #fff) 90%);
 }
+.table-scroll-hint {
+  text-align: right;
+  font-size: 0.8rem;
+  color: #888;
+  margin-bottom: 0.25rem;
+  font-style: italic;
+}
+.appendix-table { border-collapse: collapse; min-width: 700px; width: 100%; }
 </style>
 
 ![Table 1: Turkish ransom note](/assets/img/posts/turkish-dark-web/table1-ransom-note.png)
@@ -185,6 +202,8 @@ Sources for this report include the Recorded Future Platform and open-web and da
 .appendix-table td, .appendix-table th { vertical-align: top; padding: 0.5em 0.75em; overflow-wrap: break-word; word-wrap: break-word; }
 </style>
 
+<div class="table-scroll-hint">Scroll &rarr;</div>
+<div class="table-scroll-wrapper">
 <table class="appendix-table">
 <thead>
 <tr><th>Threat Actor</th><th>Intelligence</th></tr>
@@ -206,11 +225,14 @@ Sources for this report include the Recorded Future Platform and open-web and da
 <tr><td>"shear"</td><td>On March 8, 2022, shear, a member of the top-tier forum Exploit, was auctioning domain access to the website of a highly-rated Turkish mobile application that allows users to send and receive money. The starting price is $100. As of this writing, there has been at least 1 bid on the auction, raising the price to $150.</td></tr>
 </tbody>
 </table>
+</div>
 
 _**Table 2**: An overview of initial access brokers' advertisements targeting organizations in Turkey in the last 6 months (Source: Recorded Future)_
 
 ## Appendix B: Compromised Data Sales
 
+<div class="table-scroll-hint">Scroll &rarr;</div>
+<div class="table-scroll-wrapper">
 <table class="appendix-table">
 <thead>
 <tr><th>Threat Actor</th><th>Intelligence</th></tr>
@@ -232,6 +254,7 @@ _**Table 2**: An overview of initial access brokers' advertisements targeting or
 <tr><td>"xssisownz"</td><td>On March 10, 2022, xssisownz, a member of the top-tier forum XSS, was selling a 15 GB, 120 million-record database related to Sinoz Kozmetik (sinoz[.]com[.]tr) for $500. Of the 120 million records, 260,644 contain PII and plaintext passwords. The credibility of xssisownz is low.</td></tr>
 </tbody>
 </table>
+</div>
 
 _**Table 3**: An overview of threat actors selling compromised databases from organizations in Turkey in the last 6 months (Source: Recorded Future)_
 
