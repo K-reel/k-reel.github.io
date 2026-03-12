@@ -13,9 +13,6 @@ image:
 description: "We analyzed current data from the Recorded Future Platform, as well as both closed and open sources, to identify threat intelligence solutions to aid prosecution efforts in combating and mitigating human trafficking."
 ---
 
-> This report is also available as a [PDF](https://assets.recordedfuture.com/insikt-report-pdfs/2022/cta-2022-0830.pdf).
-{: .prompt-info }
-
 *We analyzed current data from the Recorded Future Platform, as well as both closed and open sources, to identify threat intelligence solutions to aid prosecution efforts in combating and mitigating human trafficking. This report is the second in a 4-part series; the first report focused on prevention and in subsequent months, we will publish 2 additional reports that cover protection and partnership efforts, offer threat intelligence solutions, where applicable, and provide mitigation and threat recommendations.*
 
 ## Executive Summary
@@ -137,3 +134,6 @@ Threat intelligence can offer proactive research, monitoring, and analysis of su
 Some of the prosecution challenges stem from the lack of appropriate training for law enforcement and within the criminal justice system. First responders, including police officers, should receive training on how to identify victims of human trafficking, including which warning signs and suspicious behaviors to look for and where to look for them. Human trafficking is no longer a hidden crime when first responders are trained to see it. Training examples for law enforcement can be found on the Department of Homeland Security (DHS) website ([Blue Campaign](https://www.dhs.gov/blue-campaign/law-enforcement)), the Office for Victims of Crimes (OVC) [website](https://ovc.ojp.gov/program/human-trafficking/faces-of-human-trafficking), the United Nations Office on Drugs and Crime (UNODC) [website](https://www.unodc.org/unodc/en/human-trafficking/2009/anti-human-trafficking-manual.html), the Organization for Security and Co-operation in Europe (OSCE) [website](https://www.osce.org/cthb).
 
 We recommend monitoring websites of interest, including adult classified service providers, to identify potential human trafficking indicators. Creating watchlists and alerting rules on the Recorded Future Platform can aid in monitoring underground, special-access, messaging platforms, and dark web sources that advertise and discuss human trafficking.
+
+> This report is also available as a [PDF](https://assets.recordedfuture.com/insikt-report-pdfs/2022/cta-2022-0830.pdf).
+{: .prompt-info }
