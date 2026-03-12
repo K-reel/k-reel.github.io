@@ -13,6 +13,9 @@ image:
 description: "We analyzed current data from the Recorded Future Platform, as well as both closed and open sources, to identify threat intelligence solutions to aid prosecution efforts in combating and mitigating human trafficking."
 ---
 
+> This report is also available as a [PDF](https://assets.recordedfuture.com/insikt-report-pdfs/2022/cta-2022-0830.pdf).
+{: .prompt-info }
+
 *We analyzed current data from the Recorded Future Platform, as well as both closed and open sources, to identify threat intelligence solutions to aid prosecution efforts in combating and mitigating human trafficking. This report is the second in a 4-part series; the first report focused on prevention and in subsequent months, we will publish 2 additional reports that cover protection and partnership efforts, offer threat intelligence solutions, where applicable, and provide mitigation and threat recommendations.*
 
 ## Executive Summary
