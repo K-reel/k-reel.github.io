@@ -54,7 +54,7 @@ We observed an increase in the number of Russian websites targeted by patriotic 
 
 _**Figure 2**: "Cyber coat of arms" for Anka Red Team (Source: Turk Hack Team Forum)_
 
-Anka Red Team, sometimes referred to as Turk Hack Team (THT), is a patriotic hacking threat group operating primarily out of the Turk Hack Team Forum. Similar to other Turkish-language patriotic hacking groups, Anka Red Team uses nationalistic imagery and rhetoric. Their hacktivist activity primarily includes defacement operations and occasional leaks of compromised data. Anka Red Team records their defacement operations on [Zone H](http://www.zone-h.org/archive/notifier=ZoRRoKiN/page=1) under the username "ZoRRoKiN", and other defacement archives under the username "TurkHackTeam". Anka Red Team uses the forum's "Gövde Gösterisi" ("Show of Force") section to announce new victims. Active members of Anka Red Team include "P4$A", "OBT is HeRYerDe", and "Safak-Bey".
+Anka Red Team, sometimes referred to as Turk Hack Team (THT), is a patriotic hacking threat group operating primarily out of the Turk Hack Team Forum. Similar to other Turkish-language patriotic hacking groups, Anka Red Team uses nationalistic imagery and rhetoric. Their hacktivist activity primarily includes defacement operations and occasional leaks of compromised data. Anka Red Team records their defacement operations on Zone H under the username "ZoRRoKiN", and other defacement archives under the username "TurkHackTeam". Anka Red Team uses the forum's "Gövde Gösterisi" ("Show of Force") section to announce new victims. Active members of Anka Red Team include "P4$A", "OBT is HeRYerDe", and "Safak-Bey".
 
 ![Turk Hack Team stopping announcement](/assets/img/posts/turkish-dark-web/fig3-tht-stopping-announcement.png)
 
