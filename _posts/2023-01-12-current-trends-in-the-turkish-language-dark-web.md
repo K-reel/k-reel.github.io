@@ -3,7 +3,7 @@ title: "Current Trends in the Turkish-Language Dark Web"
 date: 2023-01-12 12:00:00 +0000
 author: kirill_and_hande
 categories: [Threat Intelligence]
-tags: [Dark Web, Cybercrime, Ransomware, Hacktivism, Turkey, Initial Access Brokers, Fraud]
+tags: [Dark Web, Cybercrime, Ransomware, Hacktivism, Türkiye, Initial Access Brokers, Fraud]
 canonical_url: https://www.recordedfuture.com/research/current-trends-in-the-turkish-language-dark-web
 source: Recorded Future
 image:

@@ -3,7 +3,7 @@ title: "The Business of Fraud: An Overview of How Cybercrime Gets Monetized"
 date: 2021-02-25 12:00:00 +0000
 author: insikt_group
 categories: [Threat Intelligence]
-tags: [Dark Web, Cybercrime, Fraud, Carding, SIM Swapping, Money Laundering, Botnets, Identity Theft]
+tags: [Dark Web, Cybercrime, Fraud, Money Laundering, Botnet]
 canonical_url: https://www.recordedfuture.com/research/how-cybercrime-gets-monetized
 source: Recorded Future
 image:
