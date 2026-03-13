@@ -397,7 +397,8 @@ We recommend that organizations conduct the following general measures to defend
 
 This research originally appeared on [Recorded Future website](https://www.recordedfuture.com/research/how-cybercrime-gets-monetized).
 
-[This report is also available as a PDF.](https://assets.recordedfuture.com/insikt-report-pdfs/2021/cta-2021-0224.pdf)
+> This report is also available as a [PDF](https://assets.recordedfuture.com/insikt-report-pdfs/2021/cta-2021-0224.pdf).
+{: .prompt-info }
 
 <script>
 document.querySelectorAll('.content a[href^="http"]').forEach(function(a) {
