@@ -292,5 +292,8 @@ hide_title: true
   <li class="px-md-3">
     <a href="/combating-human-trafficking-with-threat-intelligence-prosecution/">Combating Human Trafficking With Threat Intelligence — Prosecution</a>
   </li>
+  <li class="px-md-3">
+    <a href="/the-business-of-fraud-how-cybercrime-gets-monetized/">The Business of Fraud: An Overview of How Cybercrime Gets Monetized</a>
+  </li>
 </ul>
 </details>
