@@ -4,6 +4,7 @@ short_title: "72 Malicious Open VSX Extensions Linked to GlassWorm"
 date: 2026-03-13 12:00:00 +0000
 categories: [Malware, Browser Extensions]
 tags: [GlassWorm, Open VSX, VS Code, Extensions, Obfuscation, Typosquatting, Developer Compromise, Russian Link, T1195.001, T1204, T1480, T1059.007, T1027.013, T1102.001]
+author: socket_research_team
 canonical_url: https://socket.dev/blog/open-vsx-transitive-glassworm-campaign
 source: Socket
 image:
