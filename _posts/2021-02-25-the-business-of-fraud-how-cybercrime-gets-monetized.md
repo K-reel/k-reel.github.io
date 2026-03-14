@@ -102,9 +102,9 @@ Threat actors have been known to create fake companies or use hacked accounts of
 - December 2020: A Turkish threat actor on Darbeturk Forum posted an advertisement looking for someone to drop stolen cargo and remove the shipping label off of a package.
 - October 2020: A threat actor on Boveda Forum advertised looking for drop services in Argentina, leaving their Telegram information for those interested in doing business.
 
-![Shipping drops banner 1](/assets/img/posts/business-of-fraud/fig5-shipping-drops-banner-1.png)
-
 ![Shipping drops banner 2](/assets/img/posts/business-of-fraud/fig6-shipping-drops-banner-2.png)
+
+![Shipping drops banner 1](/assets/img/posts/business-of-fraud/fig5-shipping-drops-banner-1.png)
 
 _**Figures 5, 6**: Shipping drops banner ads (Source: WWH Club Forum)_
 
