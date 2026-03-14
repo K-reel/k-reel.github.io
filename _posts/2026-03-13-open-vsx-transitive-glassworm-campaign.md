@@ -73,7 +73,7 @@ The [**Socket GitHub App**](https://socket.dev/features/github) helps catch susp
 
 ## Indicators of Compromise (IOCs)
 
-### Malicious Open VSX Extensions (Since Our January 31, 2026 [Report](https://socket.dev/blog/glassworm-loader-hits-open-vsx-via-suspected-developer-account-compromise))
+### Malicious Open VSX Extensions (Since Our January 31, 2026 [Report](/glassworm-loader-hits-open-vsx-via-suspected-developer-account-compromise/))
 
 1. [`aadarkcode.one-dark-material`](https://socket.dev/openvsx/package/aadarkcode.one-dark-material)
 1. [`aligntool.extension-align-professional-tool`](https://socket.dev/openvsx/package/aligntool.extension-align-professional-tool)
