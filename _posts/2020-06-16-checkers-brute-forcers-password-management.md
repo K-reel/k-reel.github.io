@@ -127,7 +127,5 @@ Cybercriminals will continue to use checkers and brute forcers because of the su
 
 ---
 
-This research originally appeared on [Recorded Future website](https://www.recordedfuture.com/research/checkers-brute-forcers).
-
 > [This report is also available as a PDF.](https://assets.recordedfuture.com/insikt-report-pdfs/2020/cta-2020-0616.pdf)
 {: .prompt-info }
