@@ -298,5 +298,8 @@ hide_title: true
   <li class="px-md-3">
     <a href="/the-business-of-fraud-how-cybercrime-gets-monetized/">The Business of Fraud: An Overview of How Cybercrime Gets Monetized</a>
   </li>
+  <li class="px-md-3">
+    <a href="/checkers-brute-forcers-password-management/">Checkers and Brute Forcers Highlight Dangers of Poor Password Management</a>
+  </li>
 </ul>
 </details>
