@@ -257,6 +257,9 @@ hide_title: true
 <summary>🧩 <strong>Extensions / Chrome / VS Code / OpenVSX</strong></summary>
 <ul class="content ps-0">
   <li class="px-md-3">
+    <a href="/open-vsx-transitive-glassworm-campaign/">72 Malicious Open VSX Extensions Linked to GlassWorm Campaign Now Using Transitive Dependencies</a>
+  </li>
+  <li class="px-md-3">
     <a href="/fake-imtoken-chrome-extension-steals-seed-phrases-via-phishing-redirects/">Fake imToken Chrome Extension Steals Seed Phrases via Phishing Redirects</a>
   </li>
   <li class="px-md-3">
