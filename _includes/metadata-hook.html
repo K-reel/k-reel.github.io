@@ -222,6 +222,8 @@
       if (a.hostname && a.hostname !== host) {
         a.setAttribute('target', '_blank');
         a.setAttribute('rel', 'noopener');
+      } else if (a.getAttribute('href') && !a.getAttribute('href').startsWith('#')) {
+        a.setAttribute('target', '_blank');
       }
     });
   });
