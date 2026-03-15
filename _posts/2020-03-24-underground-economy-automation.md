@@ -17,140 +17,139 @@ Automation has become an essential part of nearly every industry, and nowhere is
 
 Research by Recorded Future's Insikt Group explored the tools and services used by threat actors to automate tasks associated with malicious campaigns and the mitigation strategies available through SOAR and threat intelligence solutions.
 
-## 1. Compromised Credentials and Data Breaches
+## 1. Compromised Credentials
 
 ![Breaches and Sale of Databases](/assets/img/posts/underground-economy-automation/section-1.gif)
 
-Compromised credentials are obtained through unauthorized network access and sold on underground forums. Attackers use these credentials for privilege escalation and ransomware attacks.
+Cyberattacks frequently start with a compromised network or a database of credentials as a result of threat actors obtaining unauthorized access to a network, who then sell credentials on underground forums.
 
 **Mitigations:**
 
-- Keep software updated
-- Deploy email filtering
-- Maintain offline backups
-- Compartmentalize data
-- Enforce role-based access controls
-- Encrypt sensitive data
+- Keeping all software and applications up to date
+- Filtering emails for spam and scrutinizing links and attachments
+- Making regular backups of systems, and storing them offline
+- Compartmentalizing company-sensitive data
+- Instituting role-based access
+- Applying data encryption standards
 
 ## 2. Checkers and Brute Forcers
 
 ![Checkers and Brute Forcers](/assets/img/posts/underground-economy-automation/section-2.gif)
 
-Attackers with credentials obtained from data breaches then leverage checkers and brute forcers to direct large-scale automated login requests against websites to determine the validity of victim accounts and gain unauthorized access.
+Attackers with credentials obtained by data breaches then leverage checkers and brute-forcers to direct large-scale automated login requests to determine the validity of victims or gain unauthorized access through a credential stuffing attack for thousands of accounts.
 
 **Mitigations:**
 
-- Use unique passwords with password managers
-- Implement CAPTCHAs
-- Enforce multi-factor authentication (MFA)
-- Deploy web application firewalls
-- Apply rate limiting
-- Remove unused logins
-- Baseline traffic patterns
+- Using unique passwords for accounts, in addition to a password manager
+- Requiring additional details for login (e.g., CAPTCHA) or require multi-factor authentication (MFA)
+- Establishing customized web application firewalls
+- Slowing date or rate limit login traffic
+- Removing unused public-facing logins
+- Baselining traffic and network requests to monitor for unexpected traffic
 
 ## 3. Loaders and Crypters
 
 ![Loaders and Crypters](/assets/img/posts/underground-economy-automation/section-3.gif)
 
-Loaders and crypters are used to elude endpoint security and execute malicious payloads on victim systems.
+Threat actors will also apply loaders and crypters to elude detection by endpoint security products, such as antivirus, and then download and execute one or more malicious payloads, such as malware.
 
 **Mitigations:**
 
-- Regularly update antivirus solutions
-- Deploy additional detection controls
-- Conduct phishing awareness training
+- Updating antivirus software regularly
+- Implementing additional response and detection controls beyond antivirus to detect malicious payloads
+- Training and educating individuals on phishing and associated risks
 
 ## 4. Stealers and Keyloggers
 
 ![Stealers and Keyloggers](/assets/img/posts/underground-economy-automation/section-4.gif)
 
-Stealers and keyloggers exfiltrate credentials, personally identifiable information (PII), and payment card information. They also install secondary payloads.
+Stealers and keyloggers are used to exfiltrate sensitive information from victims, including credentials, PII, and payment card information, and install secondary payloads onto victims' systems.
 
 **Mitigations:**
 
-- Implement patch posture reporting solutions
-- Deploy network defense alerting mechanisms
-- Monitor for suspicious file and registry changes
+- Investing in solutions offering patch posture reporting
+- Configuring network defense mechanisms to alert of malicious activity on devices
+- Monitoring for suspicious changes to file drives and registries
 
 ## 5. Banking Injects
 
 ![Banking Injects](/assets/img/posts/underground-economy-automation/section-5.gif)
 
-Fake overlays or modules are used with banking trojans to inject HTML or JavaScript code to collect sensitive information from victims.
+Automating the process by not having to write their own script, threat actors can easily obtain banking injects, which are widely published, popular, and powerful tools for performing fraud. Fake overlays or modules are used with banking trojans to inject HTML or JavaScript code to collect sensitive information before redirecting to a legitimate website.
 
 **Mitigations:**
 
-- Keep software updated
-- Deploy antivirus solutions
-- Enforce MFA via SMS or authenticator apps
-- Use HTTPS-only connections
-- Conduct employee training
-- Deploy spam and web filters
-- Require encryption
-- Convert HTML emails to plain text
+- Keeping software and applications up to date
+- Installing antivirus solutions, scheduling updates, and monitoring the antivirus status on all equipment
+- Enabling MFA via SMS authenticator applications
+- Solely using HTTPS connection
+- Educating employees and conducting training sessions
+- Deploying spam and web filters
+- Encrypting all sensitive company information
+- Disabling HTML or converting HTML email into text-only email
 
 ## 6. Exploit Kits
 
 ![Exploit Kits](/assets/img/posts/underground-economy-automation/section-6.gif)
 
-Exploit kits are used to automate the exploitation of web browser vulnerabilities to maximize the delivery of successful infections, including trojans and ransomware.
+Used to automate the exploitation of web browser vulnerabilities to maximize the delivery of successful infections, exploit kits deliver malicious payloads such as trojans, loaders, ransomware, and other malicious software.
 
 **Mitigations:**
 
-- Prioritize patching Microsoft products
-- Disable Adobe Flash
-- Conduct phishing awareness training
+- Prioritizing the patching of Microsoft products and older vulnerabilities in the technology stack
+- Ensuring that Adobe Flash Player is automatically disabled in browser settings
+- Conducting and maintaining phishing security awareness
 
 ## 7. Spamming and Phishing Services
 
 ![Spamming and Phishing Services](/assets/img/posts/underground-economy-automation/section-7.gif)
 
-Email campaigns reach hundreds of thousands of targets for credential theft and malware deployment.
+Threat actors leverage spamming and phishing services to conduct email campaigns that give them access to hundreds of thousands of victims to deploy malware or gain further access into a network.
 
 **Mitigations:**
 
-- Avoid publishing email addresses publicly
-- Deploy spam filtering tools
-- Avoid using personal or business emails for website registration
-- Enforce password security policies
-- Require encryption
-- Conduct employee training
+- Refraining from publishing your email address online or replying to spam messages
+- Downloading additional spam filtering tools and antivirus software
+- Avoiding using personal or business email addresses when registering online
+- Developing a password security policy
+- Requiring encryption for all employees
+- Educating employees and conduct training sessions
 
-## 8. Proxy and Bulletproof Hosting Services
+## 8. Bulletproof Hosting Services
 
-![Proxy and Bulletproof Hosting Services](/assets/img/posts/underground-economy-automation/section-8.gif)
+![Bulletproof Hosting Services](/assets/img/posts/underground-economy-automation/section-8.gif)
 
-Proxy and bulletproof hosting services (BPHS) obfuscate criminal activities and provide anonymity, making it difficult for law enforcement and security researchers to trace malicious operations.
+To extend the longevity of their criminal actions, threat actors leverage proxy and bulletproof hosting services (BPHS) to obfuscate their activities. BPHS provide secure hosting for malicious content and activity, and anonymity by relying on a model that promises not to comply with legal requests.
 
 **Mitigations:**
 
-- Leverage threat intelligence platforms
-- Blacklist known-malicious servers
+- Leveraging threat intelligence platforms, like Recorded Future, to assist in the monitoring of malicious service providers
+- Blacklisting servers affiliated with known-malicious BPHS's
 
 ## 9. Sniffers
 
 ![Sniffers](/assets/img/posts/underground-economy-automation/section-9.gif)
 
-Sniffers are a type of malware written in JavaScript that are designed to infiltrate and steal card-not-present (CNP) data from the checkout pages of e-commerce websites.
+In the underground economy, sniffers refer to a type of malware written in JavaScript that are designed to infiltrate and steal card-not-present (CNP) data from the checkout pages of e-commerce websites.
 
 **Mitigations:**
 
-- Conduct regular website audits for suspicious scripts
-- Prevent external script loading on checkout pages
-- Evaluate third-party plugins for security
+- Performing regular audits of a website to identify suspicious scripts or network behavior
+- Preventing non-essential, externally loaded scripts from loading on checkout pages
+- Evaluating third-party plugins on an e-commerce website and monitoring for changes in their code or behavior
 
-## 10. Underground Marketplaces
+## 10. Data Monetization Shops
 
-![Underground Marketplaces](/assets/img/posts/underground-economy-automation/section-10.gif)
+![Data Monetization Shops](/assets/img/posts/underground-economy-automation/section-10.gif)
 
-Underground marketplaces are where stolen data is monetized through the sale of compromised credentials, payment card data, and account access.
+In order to monetize the content that threat actors have acquired, they sell stolen data in online credit card shops, account shops, and marketplaces. Money is made through the buying and selling of credentials for bank accounts, cell phone accounts, online store accounts, dating accounts, and even digital fingerprints.
 
 **Mitigations:**
 
-- Monitor underground shops for enterprise accounts
-- Track spikes in account availability
-- Monitor non-public domain credentials
-- Enable MFA across all accounts
+- Monitoring shops and marketplaces for accounts relevant to your enterprise
+- Acting on spikes in the number of accounts available in shops
+- Paying attention to credentials for non-public facing domains
+- Enabling MFA via SMS authenticator applications
 
 ---
 
