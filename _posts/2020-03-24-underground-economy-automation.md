@@ -7,7 +7,7 @@ tags: [Dark Web, Cybercrime, Underground Economy, SOAR, Credential Stuffing, Bru
 canonical_url: https://www.recordedfuture.com/research/underground-economy-automation
 source: Recorded Future
 image:
-  path: /assets/img/posts/underground-economy-automation/cover.png
+  path: /assets/img/posts/underground-economy-automation/cover.jpg
   alt: "Combating the Underground Economy's Automation Revolution"
 description: "Recent Insikt Group research explores the tools and services used by threat actors to automate tasks associated with malicious campaigns."
 toc: true
