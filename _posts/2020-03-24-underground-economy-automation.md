@@ -153,7 +153,7 @@ In order to monetize the content that threat actors have acquired, they sell sto
 
 ---
 
-For more information on the 10 types of tools and services currently used by threat actors to automate tasks, and suggested mitigations for defenders to implement, check out the full report by Recorded Future's Insikt Group, "Automation and Commoditization in the Underground Economy."
+For more information on the 10 types of tools and services currently used by threat actors to automate tasks, and suggested mitigations for defenders to implement, check out the [full report](https://docslib.org/doc/11895972/automation-and-commoditization-in-the-underground-economy-by-insikt-group%C2%AE) by Recorded Future's Insikt Group, "Automation and Commoditization in the Underground Economy."
 
 <script>
 document.querySelectorAll('.content a[href^="http"]').forEach(function(a) {
