@@ -8,7 +8,7 @@ hide_title: true
 ![About banner](/assets/img/about/banner.jpg){: .rounded-3 .shadow .mb-4 w="2400" }
 
 > I investigate software supply chain attacks and how threat actors abuse open source ecosystems — from malicious packages and extensions to developer compromise and campaign infrastructure — then turn those findings into practical detections, threat intelligence, and defensive action.
-{: .lead-quote }
+{: .prompt-info }
 
 ---
 
@@ -42,4 +42,4 @@ I regularly publish research and speak about adversary tradecraft, cybercrime, m
 
 ---
 
-*For anyone wondering, and many understandably do, Kirill is pronounced "key-reel" (two words put together: key + reel).*
+<i class="fas fa-volume-up"></i> For anyone wondering, and many understandably do, Kirill is pronounced "key-reel" (two words put together: key + reel).
