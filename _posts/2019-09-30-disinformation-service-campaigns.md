@@ -175,9 +175,6 @@ Today, the Tyrell Corporation lives on in social media and search engine results
 
 > This report is also available as a [PDF](https://web.archive.org/web/20230506213053/https://go.recordedfuture.com/hubfs/reports/cta-2019-0930.pdf).
 {: .prompt-info }
-
-This post was originally published on the Recorded Future blog.
-
 <script>
 document.querySelectorAll('.content a[href^="http"]').forEach(function(a) {
   a.setAttribute('target', '_blank');
