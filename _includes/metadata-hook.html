@@ -179,6 +179,22 @@
 {% if page.url == '/about/' %}
 <style>
   article .content p { font-size: 1.1rem; }
+  article .content > p:first-child img {
+    width: 100vw;
+    max-width: none;
+    display: block;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 0 !important;
+  }
+  @media (min-width: 1200px) {
+    article .content > p:first-child img {
+      width: calc(100% + 5rem);
+      left: -1.75rem;
+      transform: none;
+    }
+  }
   article .content blockquote.lead-quote {
     border-left: 4px solid var(--text-muted-color, #868e96);
     padding: 1rem 1.25rem;
