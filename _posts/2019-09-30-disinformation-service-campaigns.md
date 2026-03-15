@@ -74,6 +74,8 @@ The next step was publishing articles in the media. Raskolnikov informed us that
 
 Raskolnikov provided the following price list for publications where articles could allegedly be published for a U.K.-based disinformation promotion campaign:
 
+<div style="display:flex;justify-content:center">
+
 | # | Source | Price |
 |---|--------|-------|
 | 1 | cheapautoinsuranceee\[.\]com | $180.00 |
@@ -121,6 +123,8 @@ Raskolnikov provided the following price list for publications where articles co
 | 43 | accessaa\[.\]co\[.\]uk | $1,260.00 |
 | 44 | ft\[.\]com | $49,440.00 |
 | 45 | buzzfeed\[.\]com | Unspecified |
+
+</div>
 
 <p style="text-align:center"><em><strong>Table 1</strong>: Raskolnikov's price list for U.K.-based media publications.</em></p>
 
