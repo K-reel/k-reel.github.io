@@ -17,7 +17,7 @@ Automation has become an essential part of nearly every industry, and nowhere is
 
 Research by Recorded Future's Insikt Group explored the tools and services used by threat actors to automate tasks associated with malicious campaigns and the mitigation strategies available through SOAR and threat intelligence solutions.
 
-## 1. Compromised Credentials
+## 1. Compromised Credentials and Data Breaches
 
 ![Breaches and Sale of Databases](/assets/img/posts/underground-economy-automation/section-1.gif)
 
@@ -138,9 +138,9 @@ In the underground economy, sniffers refer to a type of malware written in JavaS
 - Preventing non-essential, externally loaded scripts from loading on checkout pages
 - Evaluating third-party plugins on an e-commerce website and monitoring for changes in their code or behavior
 
-## 10. Data Monetization Shops
+## 10. Underground Marketplaces
 
-![Data Monetization Shops](/assets/img/posts/underground-economy-automation/section-10.gif)
+![Underground Marketplaces](/assets/img/posts/underground-economy-automation/section-10.gif)
 
 In order to monetize the content that threat actors have acquired, they sell stolen data in online credit card shops, account shops, and marketplaces. Money is made through the buying and selling of credentials for bank accounts, cell phone accounts, online store accounts, dating accounts, and even digital fingerprints.
 
