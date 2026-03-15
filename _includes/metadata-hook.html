@@ -223,8 +223,9 @@
     var host = location.hostname;
     var isPublications = location.pathname.indexOf('/publications') === 0;
     var isHome = location.pathname === '/' || location.pathname === '/index.html' || /^\/page\d+\/?$/.test(location.pathname);
+    var isArchives = location.pathname.indexOf('/archives') === 0;
     document.querySelectorAll('article a[href]').forEach(function(a) {
-      if (isPublications || isHome) return;
+      if (isPublications || isHome || isArchives) return;
       if (a.hostname && a.hostname !== host) {
         a.setAttribute('target', '_blank');
         a.setAttribute('rel', 'noopener');
