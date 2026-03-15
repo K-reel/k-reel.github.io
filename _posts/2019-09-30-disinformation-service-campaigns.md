@@ -167,18 +167,16 @@ They are willing to go to extreme lengths to accomplish their tasks, including f
 
 Today, the Tyrell Corporation lives on in social media and search engine results. Googling the domain name will present the unfavorable content created by Doctor Zhivago, though searching the company name directly will produce the positive articles and social media accounts created by Raskolnikov. If our experience is any indication, we predict that disinformation as a service will spread from a nation-state tool to one increasingly used by private individuals and entities, given how easy it is to implement.
 
+<sup>1</sup> Ion Mihai Pacepa and Ronald J. Rychlak (2013), *Disinformation: Former Spy Chief Reveals Secret Strategies for Undermining Freedom, Attacking Religion, and Promoting Terrorism*.
+
+<sup>2</sup> United States Department of State (1987), *Soviet Influence Activities: A Report on Active Measures and Propaganda, 1986–87*, Washington D.C.: Bureau of Public Affairs, pp. 34–35, 39, 42.
+
 ---
 
 > This report is also available as a [PDF](https://web.archive.org/web/20230506213053/https://go.recordedfuture.com/hubfs/reports/cta-2019-0930.pdf).
 {: .prompt-info }
 
 This post was originally published on the Recorded Future blog.
-
----
-
-<sup>1</sup> Ion Mihai Pacepa and Ronald J. Rychlak (2013), *Disinformation: Former Spy Chief Reveals Secret Strategies for Undermining Freedom, Attacking Religion, and Promoting Terrorism*.
-
-<sup>2</sup> United States Department of State (1987), *Soviet Influence Activities: A Report on Active Measures and Propaganda, 1986–87*, Washington D.C.: Bureau of Public Affairs, pp. 34–35, 39, 42.
 
 <script>
 document.querySelectorAll('.content a[href^="http"]').forEach(function(a) {
