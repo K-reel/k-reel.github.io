@@ -304,5 +304,8 @@ hide_title: true
   <li class="px-md-3">
     <a href="/underground-economy-automation/">Combating the Underground Economy's Automation Revolution</a>
   </li>
+  <li class="px-md-3">
+    <a href="/disinformation-service-campaigns/">The Price of Influence: Disinformation in the Private Sector</a>
+  </li>
 </ul>
 </details>
