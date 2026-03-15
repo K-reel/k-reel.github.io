@@ -219,8 +219,9 @@
   document.addEventListener('DOMContentLoaded', function() {
     var host = location.hostname;
     var isPublications = location.pathname.indexOf('/publications') === 0;
+    var isHome = location.pathname === '/' || location.pathname === '/index.html';
     document.querySelectorAll('article a[href]').forEach(function(a) {
-      if (isPublications) return;
+      if (isPublications || isHome) return;
       if (a.hostname && a.hostname !== host) {
         a.setAttribute('target', '_blank');
         a.setAttribute('rel', 'noopener');
