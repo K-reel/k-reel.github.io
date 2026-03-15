@@ -165,6 +165,13 @@ Today, the Tyrell Corporation lives on in social media and search engine results
 
 ---
 
+> This report is also available as a [PDF](https://go.recordedfuture.com/hubfs/reports/cta-2019-0930.pdf).
+{: .prompt-info }
+
+This post was originally published on the Recorded Future blog.
+
+---
+
 <sup>1</sup> Ion Mihai Pacepa and Ronald J. Rychlak (2013), *Disinformation: Former Spy Chief Reveals Secret Strategies for Undermining Freedom, Attacking Religion, and Promoting Terrorism*.
 
 <sup>2</sup> United States Department of State (1987), *Soviet Influence Activities: A Report on Active Measures and Propaganda, 1986–87*, Washington D.C.: Bureau of Public Affairs, pp. 34–35, 39, 42.
