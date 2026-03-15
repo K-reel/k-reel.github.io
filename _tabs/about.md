@@ -7,7 +7,7 @@ hide_title: true
 
 ![About banner](/assets/img/about/banner.jpg){: .rounded-3 .shadow .mb-4 w="2400" }
 
-> I investigate software supply chain attacks and how threat actors abuse open source ecosystems — from malicious packages and extensions to developer compromise and campaign infrastructure — then turn those findings into practical detections, threat intelligence, and defensive action.
+> I investigate software supply chain attacks and how threat actors abuse open source ecosystems, from malicious packages and extensions to developer compromise and campaign infrastructure, then turn those findings into practical detections, threat intelligence, and defensive action.
 {: .prompt-info }
 
 ---
