@@ -31,6 +31,12 @@ One threat actor created propaganda in the form of positive PR to make our compa
 - Disinformation service providers have the ability to publish articles in media sources ranging from dubious websites to more reputable news outlets.
 - Disinformation service providers have the ability to create and maintain social media accounts in bulk and use a combination of both established and new accounts to propagate content without triggering content moderation controls.
 
+<div style="margin:0;padding:0;line-height:0">
+<img src="/assets/img/posts/disinformation-service-campaigns/infographic-1.png" alt="Our Experience — Tyrell Corporation disinformation campaign overview" style="display:block;width:100%;margin:0">
+<img src="/assets/img/posts/disinformation-service-campaigns/infographic-2.png" alt="Their Methods — Social media and media article tactics" style="display:block;width:100%;margin:0">
+<img src="/assets/img/posts/disinformation-service-campaigns/infographic-3.png" alt="The process was alarmingly simple" style="display:block;width:100%;margin:0">
+</div>
+
 ## Threat Analysis
 
 Disinformation has been a tactic used in information warfare commonly associated with the statecraft of the Soviet Union throughout the Cold War. Disinformation, or "_dezinformatsiya_," is defined by the Great Soviet Encyclopedia as false information with the intention to deceive public opinion. The term was coined by Joseph Stalin, and even the word itself was a form of disinformation; according to Soviet defector Ion Mihai Pacepa, Stalin deliberately gave it a French-sounding name in order to claim that both the term and the tactic originated in Western Europe and was a tool used by the "Capitalist Imperialists" to destroy Communism and the workers' paradise.
@@ -146,8 +152,6 @@ Doctor Zhivago's list of media resources available for a U.K.-based disinformati
 | internet-directory-web\[.\]com — $400 | | |
 
 _**Table 2**: Doctor Zhivago's media resources for U.K.-based disinformation campaigns._
-
-![The Price of Influence infographic](/assets/img/posts/disinformation-service-campaigns/figure.png)
 
 ## Outlook
 
