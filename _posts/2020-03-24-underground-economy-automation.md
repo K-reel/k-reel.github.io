@@ -156,10 +156,6 @@ Underground marketplaces are where stolen data is monetized through the sale of 
 
 For more information on the 10 types of tools and services currently used by threat actors to automate tasks, and suggested mitigations for defenders to implement, check out the full report by Recorded Future's Insikt Group, "Automation and Commoditization in the Underground Economy."
 
----
-
-This research originally appeared on [Recorded Future website](https://www.recordedfuture.com/research/underground-economy-automation).
-
 <script>
 document.querySelectorAll('.content a[href^="http"]').forEach(function(a) {
   a.setAttribute('target', '_blank');
