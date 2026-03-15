@@ -2,7 +2,7 @@
 title: "The Price of Influence: Disinformation in the Private Sector"
 date: 2019-09-30 12:00:00 +0000
 categories: [Threat Intelligence]
-tags: [Disinformation, Dark Web, Underground Economy, Cybercrime, Social Engineering, Influence Operations]
+tags: [Disinformation, Dark Web, Underground Economy, Cybercrime, Social Engineering, Influence Operations, Russian Link]
 canonical_url: https://www.recordedfuture.com/research/disinformation-service-campaigns
 source: Recorded Future
 image:
