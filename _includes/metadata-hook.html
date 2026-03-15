@@ -179,6 +179,9 @@
 {% if page.url == '/about/' %}
 <style>
   article .content p { font-size: 1.1rem; }
+  h1 > a[href^="#"], h2 > a[href^="#"], h3 > a[href^="#"],
+  h4 > a[href^="#"], h5 > a[href^="#"], h6 > a[href^="#"],
+  .anchor-link { display: none !important; }
   article .content > p:first-child img {
     width: 100vw;
     max-width: none;
