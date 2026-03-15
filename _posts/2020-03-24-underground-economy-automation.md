@@ -3,7 +3,7 @@ title: "Combating the Underground Economy's Automation Revolution"
 date: 2020-03-24 12:00:00 +0000
 author: insikt_group
 categories: [Threat Intelligence]
-tags: [Dark Web, Cybercrime, Underground Economy, SOAR, Credential Stuffing, Brute Force, Exploit Kit, Phishing, Keylogger, Botnet, Infostealer, E-Commerce]
+tags: [Dark Web, Cybercrime, Underground Economy, Brute Force, Exploit Kit, Phishing, Keylogger, Botnet, Infostealer]
 canonical_url: https://www.recordedfuture.com/research/underground-economy-automation
 source: Recorded Future
 image:
