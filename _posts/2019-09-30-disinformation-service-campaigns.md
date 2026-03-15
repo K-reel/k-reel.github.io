@@ -31,10 +31,10 @@ One threat actor created propaganda in the form of positive PR to make our compa
 - Disinformation service providers have the ability to publish articles in media sources ranging from dubious websites to more reputable news outlets.
 - Disinformation service providers have the ability to create and maintain social media accounts in bulk and use a combination of both established and new accounts to propagate content without triggering content moderation controls.
 
-<div style="margin:0;padding:0;line-height:0">
-<img src="/assets/img/posts/disinformation-service-campaigns/infographic-1.png" alt="Our Experience — Tyrell Corporation disinformation campaign overview" style="display:block;width:100%;margin:0">
-<img src="/assets/img/posts/disinformation-service-campaigns/infographic-2.png" alt="Their Methods — Social media and media article tactics" style="display:block;width:100%;margin:0">
-<img src="/assets/img/posts/disinformation-service-campaigns/infographic-3.png" alt="The process was alarmingly simple" style="display:block;width:100%;margin:0">
+<div style="margin:0 auto;padding:0;line-height:0;max-width:600px;text-align:center;font-size:0">
+<img src="/assets/img/posts/disinformation-service-campaigns/infographic-1.png" alt="Our Experience — Tyrell Corporation disinformation campaign overview" style="display:block;width:100%;margin:0;padding:0;border:0">
+<img src="/assets/img/posts/disinformation-service-campaigns/infographic-2.png" alt="Their Methods — Social media and media article tactics" style="display:block;width:100%;margin:0;padding:0;border:0">
+<img src="/assets/img/posts/disinformation-service-campaigns/infographic-3.png" alt="The process was alarmingly simple" style="display:block;width:100%;margin:0;padding:0;border:0">
 </div>
 
 ## Threat Analysis
