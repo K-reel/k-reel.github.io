@@ -122,6 +122,8 @@ Raskolnikov provided the following price list for publications where articles co
 | 44 | ft\[.\]com | $49,440.00 |
 | 45 | buzzfeed\[.\]com | Unspecified |
 
+<style>.content table { margin-left: auto; margin-right: auto; }</style>
+
 <p style="text-align:center"><em><strong>Table 1</strong>: Raskolnikov's price list for U.K.-based media publications.</em></p>
 
 In two weeks, the Tyrell Corporation was in the "news" — one of the media sources was a less established media outlet, though the other was a very reputable source that had published a newspaper for nearly a century. While creating and publishing disinformation content with Raskolnikov was bumpy, in the end, the actor delivered, confirming the claim of being able to operate disinformation campaigns in Western countries.
