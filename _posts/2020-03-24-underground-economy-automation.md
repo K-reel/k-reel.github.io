@@ -19,7 +19,7 @@ Research by Recorded Future's Insikt Group explored the tools and services used 
 
 ## 1. Compromised Credentials and Data Breaches
 
-![Breaches and Sale of Databases](/assets/img/posts/underground-economy-automation/section-1.png)
+![Breaches and Sale of Databases](/assets/img/posts/underground-economy-automation/section-1.gif)
 
 Compromised credentials are obtained through unauthorized network access and sold on underground forums. Attackers use these credentials for privilege escalation and ransomware attacks.
 
@@ -34,7 +34,7 @@ Compromised credentials are obtained through unauthorized network access and sol
 
 ## 2. Checkers and Brute Forcers
 
-![Checkers and Brute Forcers](/assets/img/posts/underground-economy-automation/section-2.png)
+![Checkers and Brute Forcers](/assets/img/posts/underground-economy-automation/section-2.gif)
 
 Attackers with credentials obtained from data breaches then leverage checkers and brute forcers to direct large-scale automated login requests against websites to determine the validity of victim accounts and gain unauthorized access.
 
@@ -50,7 +50,7 @@ Attackers with credentials obtained from data breaches then leverage checkers an
 
 ## 3. Loaders and Crypters
 
-![Loaders and Crypters](/assets/img/posts/underground-economy-automation/section-3.png)
+![Loaders and Crypters](/assets/img/posts/underground-economy-automation/section-3.gif)
 
 Loaders and crypters are used to elude endpoint security and execute malicious payloads on victim systems.
 
@@ -62,7 +62,7 @@ Loaders and crypters are used to elude endpoint security and execute malicious p
 
 ## 4. Stealers and Keyloggers
 
-![Stealers and Keyloggers](/assets/img/posts/underground-economy-automation/section-4.png)
+![Stealers and Keyloggers](/assets/img/posts/underground-economy-automation/section-4.gif)
 
 Stealers and keyloggers exfiltrate credentials, personally identifiable information (PII), and payment card information. They also install secondary payloads.
 
@@ -74,7 +74,7 @@ Stealers and keyloggers exfiltrate credentials, personally identifiable informat
 
 ## 5. Banking Injects
 
-![Banking Injects](/assets/img/posts/underground-economy-automation/section-5.png)
+![Banking Injects](/assets/img/posts/underground-economy-automation/section-5.gif)
 
 Fake overlays or modules are used with banking trojans to inject HTML or JavaScript code to collect sensitive information from victims.
 
@@ -91,7 +91,7 @@ Fake overlays or modules are used with banking trojans to inject HTML or JavaScr
 
 ## 6. Exploit Kits
 
-![Exploit Kits](/assets/img/posts/underground-economy-automation/section-6.png)
+![Exploit Kits](/assets/img/posts/underground-economy-automation/section-6.gif)
 
 Exploit kits are used to automate the exploitation of web browser vulnerabilities to maximize the delivery of successful infections, including trojans and ransomware.
 
@@ -103,7 +103,7 @@ Exploit kits are used to automate the exploitation of web browser vulnerabilitie
 
 ## 7. Spamming and Phishing Services
 
-![Spamming and Phishing Services](/assets/img/posts/underground-economy-automation/section-7.png)
+![Spamming and Phishing Services](/assets/img/posts/underground-economy-automation/section-7.gif)
 
 Email campaigns reach hundreds of thousands of targets for credential theft and malware deployment.
 
@@ -118,7 +118,7 @@ Email campaigns reach hundreds of thousands of targets for credential theft and 
 
 ## 8. Proxy and Bulletproof Hosting Services
 
-![Proxy and Bulletproof Hosting Services](/assets/img/posts/underground-economy-automation/section-8.png)
+![Proxy and Bulletproof Hosting Services](/assets/img/posts/underground-economy-automation/section-8.gif)
 
 Proxy and bulletproof hosting services (BPHS) obfuscate criminal activities and provide anonymity, making it difficult for law enforcement and security researchers to trace malicious operations.
 
@@ -129,7 +129,7 @@ Proxy and bulletproof hosting services (BPHS) obfuscate criminal activities and 
 
 ## 9. Sniffers
 
-![Sniffers](/assets/img/posts/underground-economy-automation/section-9.png)
+![Sniffers](/assets/img/posts/underground-economy-automation/section-9.gif)
 
 Sniffers are a type of malware written in JavaScript that are designed to infiltrate and steal card-not-present (CNP) data from the checkout pages of e-commerce websites.
 
@@ -141,7 +141,7 @@ Sniffers are a type of malware written in JavaScript that are designed to infilt
 
 ## 10. Underground Marketplaces
 
-![Underground Marketplaces](/assets/img/posts/underground-economy-automation/section-10.png)
+![Underground Marketplaces](/assets/img/posts/underground-economy-automation/section-10.gif)
 
 Underground marketplaces are where stolen data is monetized through the sale of compromised credentials, payment card data, and account access.
 
