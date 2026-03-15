@@ -21,7 +21,7 @@ Research by Recorded Future's Insikt Group explored the tools and services used 
 
 ![Breaches and Sale of Databases](/assets/img/posts/underground-economy-automation/section-1.gif)
 
-Cyberattacks frequently start with a compromised network or a database of credentials as a result of threat actors obtaining unauthorized access to a network, who then sell credentials on underground forums.
+Cyberattacks frequently start with a compromised network or a database of credentials as a result of threat actors obtaining unauthorized access to a network, who then sell credentials on underground forums. This access can be used for privilege escalation within the network, business email compromise, ransomware, and other types of attacks.
 
 **Mitigations:**
 
