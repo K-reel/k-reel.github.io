@@ -301,5 +301,8 @@ hide_title: true
   <li class="px-md-3">
     <a href="/checkers-brute-forcers-password-management/">Checkers and Brute Forcers Highlight Dangers of Poor Password Management</a>
   </li>
+  <li class="px-md-3">
+    <a href="/underground-economy-automation/">Combating the Underground Economy's Automation Revolution</a>
+  </li>
 </ul>
 </details>
