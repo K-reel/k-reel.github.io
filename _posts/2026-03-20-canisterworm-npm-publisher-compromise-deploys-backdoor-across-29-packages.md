@@ -3,7 +3,7 @@ title: "CanisterWorm: npm Publisher Compromise Deploys Backdoor Across 29+ Packa
 short_title: "CanisterWorm: npm Publisher Compromise Deploys Backdoor"
 date: 2026-03-20 12:00:00 +0000
 categories: [Supply Chain]
-tags: [CanisterWorm, npm, JavaScript, Backdoor, Developer Compromise, ICP, Persistence, Python, Worm]
+tags: [npm, JavaScript, Backdoor, Developer Compromise, Python, Worm]
 author: socket_research_team
 canonical_url: https://socket.dev/blog/canisterworm-npm-publisher-compromise-deploys-backdoor-across-29-packages
 source: Socket
