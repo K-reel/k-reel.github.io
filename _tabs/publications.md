@@ -83,6 +83,9 @@ hide_title: true
 <summary>🧯 <strong>Supply Chain Incidents</strong></summary>
 <ul class="content ps-0">
   <li class="px-md-3">
+    <a href="/canisterworm-npm-publisher-compromise-deploys-backdoor-across-29-packages/">CanisterWorm: npm Publisher Compromise Deploys Backdoor Across 29+ Packages</a>
+  </li>
+  <li class="px-md-3">
     <a href="/sandworm-mode-npm-worm-ai-toolchain-poisoning/">SANDWORM_MODE: Shai-Hulud-Style npm Worm Hijacks CI Workflows and Poisons AI Toolchains</a>
   </li>
   <li class="px-md-3">
