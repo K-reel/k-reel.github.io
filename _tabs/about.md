@@ -18,14 +18,14 @@ I investigate complex threats across the software supply chain, malware, and adv
 
 ## What I Work On
 
-- 📦&nbsp;&nbsp;&nbsp; **Software supply chain threats** — Malicious packages, typosquatting, extension abuse, developer compromise, supply chain intrusions, and adversary infrastructure
-- 🔬&nbsp;&nbsp;&nbsp; **Malware and code analysis** — Reverse engineering suspicious code, tracing payload behavior, and understanding how campaigns operate at scale
-- 🛡️&nbsp;&nbsp;&nbsp; **Detection and operationalization** — Turning investigations into hunting logic, detections, mitigations, and practical defensive guidance
-- 🧪&nbsp;&nbsp;&nbsp; **Emerging abuse patterns** — Tracking how threat actors exploit automation, CI/CD workflows, and AI-adjacent environments
+- <span style="font-size: 1.75rem; vertical-align: middle;">📦</span>&nbsp;&nbsp;&nbsp; **Software supply chain threats** — Malicious packages, typosquatting, extension abuse, developer compromise, supply chain intrusions, and adversary infrastructure
+- <span style="font-size: 1.75rem; vertical-align: middle;">🔬</span>&nbsp;&nbsp;&nbsp; **Malware and code analysis** — Reverse engineering suspicious code, tracing payload behavior, and understanding how campaigns operate at scale
+- <span style="font-size: 1.75rem; vertical-align: middle;">🛡️</span>&nbsp;&nbsp;&nbsp; **Detection and operationalization** — Turning investigations into hunting logic, detections, mitigations, and practical defensive guidance
+- <span style="font-size: 1.75rem; vertical-align: middle;">🧪</span>&nbsp;&nbsp;&nbsp; **Emerging abuse patterns** — Tracking how threat actors exploit automation, CI/CD workflows, and AI-adjacent environments
 
 ## Journey
 
-- 🛠️&nbsp;&nbsp;&nbsp; Cybersecurity, threat intelligence, malware analysis, detection engineering (YARA/Sigma/Snort), threat hunting, infrastructure tracking, vulnerability analysis, incident handling, and automation/tooling.
+- <span style="font-size: 1.75rem; vertical-align: middle;">🛠️</span>&nbsp;&nbsp;&nbsp; Cybersecurity, threat intelligence, malware analysis, detection engineering (YARA/Sigma/Snort), threat hunting, infrastructure tracking, vulnerability analysis, incident handling, and automation/tooling.
 - <img src="/assets/img/about/logos/socket_logo.png" width="28" height="28" style="vertical-align: middle;" />&nbsp;&nbsp;&nbsp; Senior Threat Intelligence Analyst at Socket — software supply chain security.
 - <img src="/assets/img/about/logos/recorded_future_logo.jpeg" width="28" height="28" style="vertical-align: middle;" />&nbsp;&nbsp;&nbsp; Previously at Recorded Future (a Mastercard <img src="/assets/img/about/logos/mastercard_logo.png" width="28" height="28" style="vertical-align: middle;" /> company) — 5 years across the ARMOR (Advanced Reversing, Malware, Operations & Reconnaissance) and ACE (Advanced Cybercrime & Engagements) teams.
 - <img src="/assets/img/about/logos/sti_logo.jpeg" width="28" height="28" style="vertical-align: middle;" />&nbsp;&nbsp;&nbsp; SANS Technology Institute alum — Applied Cybersecurity (ACS), 2020–2022 (certified GCIA, GCIH, GSEC, GFACT).
@@ -38,5 +38,5 @@ I regularly publish research and speak about adversary tradecraft, cybercrime, m
 
 ---
 
-> 🗣️&nbsp;&nbsp;&nbsp; For anyone wondering, and many understandably do, Kirill is pronounced "key-reel" (two words put together: key + reel).
+> <span style="font-size: 1.75rem; vertical-align: middle;">🗣️</span>&nbsp;&nbsp;&nbsp; For anyone wondering, and many understandably do, Kirill is pronounced "key-reel" (two words put together: key + reel).
 {: .prompt-tip }
