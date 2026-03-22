@@ -29,7 +29,7 @@ Before focusing on software supply chain security, I worked in malware analysis 
 
 Earlier in my career, I worked on investigations and programs aimed at mitigating human trafficking, corruption, and labor abuses at the United Nations, the American Bar Association, and the International Labor Rights Forum. That path wasn't linear, but it shaped how I work: investigator first, evidence-driven always, and focused on turning complex problems into something useful for defenders.
 
-## My journey
+## Journey
 
 - 🛠️ Cybersecurity, threat intelligence, malware analysis, detection engineering (YARA/Sigma/Snort), threat hunting, infrastructure tracking, vulnerability analysis, incident handling, and automation/tooling (Python, JavaScript/TypeScript, Ruby; data/AI/ML).
 - 🔬 Reverse-engineer malicious open source packages and extensions across npm, PyPI, Go Modules, RubyGems, Maven, NuGet, Rust (crates.io), Chrome extensions, VS Code, Open VSX, and Hugging Face models.
