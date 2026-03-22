@@ -18,17 +18,10 @@ I investigate complex threats across the software supply chain, malware, and adv
 
 ## What I work on
 
-📦 **Software supply chain threats**
-: Malicious packages, typosquatting, extension abuse, developer compromise, supply chain intrusions, and adversary infrastructure
-
-🔬 **Malware and code analysis**
-: Reverse engineering suspicious code, tracing payload behavior, and understanding how campaigns operate at scale
-
-🛡️ **Detection and operationalization**
-: Turning investigations into hunting logic, detections, mitigations, and practical defensive guidance
-
-🧪 **Emerging abuse patterns**
-: Tracking how threat actors exploit automation, CI/CD workflows, and AI-adjacent environments
+- 📦 **Software supply chain threats** — Malicious packages, typosquatting, extension abuse, developer compromise, supply chain intrusions, and adversary infrastructure
+- 🔬 **Malware and code analysis** — Reverse engineering suspicious code, tracing payload behavior, and understanding how campaigns operate at scale
+- 🛡️ **Detection and operationalization** — Turning investigations into hunting logic, detections, mitigations, and practical defensive guidance
+- 🧪 **Emerging abuse patterns** — Tracking how threat actors exploit automation, CI/CD workflows, and AI-adjacent environments
 
 ## Background
 
