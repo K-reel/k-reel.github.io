@@ -25,7 +25,7 @@ I investigate complex threats across the software supply chain, malware, and adv
 
 ## Journey
 
-- 🛠️&nbsp;&nbsp;&nbsp; Cybersecurity, threat intelligence, malware analysis, detection engineering (YARA/Sigma/Snort), threat hunting, infrastructure tracking, vulnerability analysis, incident handling, and automation/tooling (Python, JavaScript/TypeScript, Ruby; data/AI/ML).
+- 🛠️&nbsp;&nbsp;&nbsp; Cybersecurity, threat intelligence, malware analysis, detection engineering (YARA/Sigma/Snort), threat hunting, infrastructure tracking, vulnerability analysis, incident handling, and automation/tooling.
 - <img src="/assets/img/about/logos/att&ck_logo.png" width="20" height="20" style="vertical-align: middle;" />&nbsp;&nbsp;&nbsp; Contributed to MITRE ATT&CK — [Contagious Interview](https://attack.mitre.org/groups/G1052/){:target="_blank"}
 - <img src="/assets/img/about/logos/socket_logo.png" width="20" height="20" style="vertical-align: middle;" />&nbsp;&nbsp;&nbsp; Senior Threat Intelligence Analyst at Socket — software supply chain security.
 - <img src="/assets/img/about/logos/recorded_future_logo.jpeg" width="20" height="20" style="vertical-align: middle;" />&nbsp;&nbsp;&nbsp; Previously at Recorded Future (a Mastercard <img src="/assets/img/about/logos/mastercard_logo.png" width="20" height="20" style="vertical-align: middle;" /> company) — 5 years across the ARMOR (Advanced Reversing, Malware, Operations & Reconnaissance) and ACE (Advanced Cybercrime & Engagements) teams.
