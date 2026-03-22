@@ -21,7 +21,7 @@ I investigate complex threats across the software supply chain, malware, and adv
 ## Journey
 
 - <span style="font-size: 1.75rem; vertical-align: middle;">🛠️</span>&nbsp;&nbsp;&nbsp; Cybersecurity, threat intelligence, malware analysis, detection engineering (YARA/Sigma/Snort), threat hunting, infrastructure tracking, vulnerability analysis, incident handling, and automation/tooling
-- <img src="/assets/img/about/logos/socket_logo.png" width="28" height="28" style="vertical-align: middle;" />&nbsp;&nbsp;&nbsp; Senior Threat Intelligence Analyst at Socket — software supply chain security
+- <img src="/assets/img/about/logos/socket_logo.png" width="28" height="28" style="vertical-align: middle;" />&nbsp;&nbsp;&nbsp; Senior Threat Intelligence Analyst at Socket
 - <img src="/assets/img/about/logos/recorded_future_logo.jpeg" width="28" height="28" style="vertical-align: middle;" />&nbsp;&nbsp;&nbsp; Previously at Recorded Future (a Mastercard <img src="/assets/img/about/logos/mastercard_logo.png" width="28" height="28" style="vertical-align: middle;" /> company) — 5 years across the ARMOR (Advanced Reversing, Malware, Operations & Reconnaissance) and ACE (Advanced Cybercrime & Engagements) teams
 - <img src="/assets/img/about/logos/sti_logo.jpeg" width="28" height="28" style="vertical-align: middle;" />&nbsp;&nbsp;&nbsp; SANS Technology Institute alum — Applied Cybersecurity (ACS) Program (certified GCIA, GCIH, GSEC, GFACT)
 - <img src="/assets/img/about/logos/infragard_logo.png" width="28" height="28" style="vertical-align: middle;" />&nbsp;&nbsp;&nbsp; Member of InfraGard, a public-private partnership with the FBI; participating in information-sharing and chapter activities focused on U.S. critical infrastructure security
