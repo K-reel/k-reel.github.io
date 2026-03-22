@@ -46,5 +46,5 @@ I regularly publish research and speak about adversary tradecraft, cybercrime, m
 
 ---
 
-> <i class="fas fa-volume-up"></i> For anyone wondering, and many understandably do, Kirill is pronounced "key-reel" (two words put together: key + reel).
+> 🗣️ For anyone wondering, and many understandably do, Kirill is pronounced "key-reel" (two words put together: key + reel).
 {: .prompt-tip }
