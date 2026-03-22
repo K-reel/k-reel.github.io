@@ -23,12 +23,6 @@ I investigate complex threats across the software supply chain, malware, and adv
 - 🛡️&nbsp;&nbsp;&nbsp; **Detection and operationalization** — Turning investigations into hunting logic, detections, mitigations, and practical defensive guidance
 - 🧪&nbsp;&nbsp;&nbsp; **Emerging abuse patterns** — Tracking how threat actors exploit automation, CI/CD workflows, and AI-adjacent environments
 
-## Background
-
-Before focusing on software supply chain security, I worked in malware analysis and cybersecurity threat intelligence at Recorded Future's Insikt Group, where I analyzed adversary tradecraft and authored detection content including YARA, Sigma, and Snort. My background maps directly to cyber operations work across malware, intrusion tradecraft, social engineering, and influence activity.
-
-Earlier in my career, I worked on investigations and programs aimed at mitigating human trafficking, corruption, and labor abuses at the United Nations, the American Bar Association, and the International Labor Rights Forum. That path wasn't linear, but it shaped how I work: investigator first, evidence-driven always, and focused on turning complex problems into something useful for defenders.
-
 ## Journey
 
 - 🛠️ Cybersecurity, threat intelligence, malware analysis, detection engineering (YARA/Sigma/Snort), threat hunting, infrastructure tracking, vulnerability analysis, incident handling, and automation/tooling (Python, JavaScript/TypeScript, Ruby; data/AI/ML).
