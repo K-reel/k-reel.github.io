@@ -7,11 +7,6 @@ hide_title: true
 
 ![About banner](/assets/img/about/banner.jpg){: .rounded-3 .shadow .mb-4 w="2400" }
 
-> I investigate software supply chain attacks and how threat actors abuse open source ecosystems, from malicious packages and extensions to developer compromise and campaign infrastructure, then turn those findings into practical detections, threat intelligence, and defensive action.
-{: .prompt-info }
-
----
-
 I'm a cybersecurity and threat intelligence analyst focused on the intersection of malware analysis, reverse engineering, adversary tradecraft, and open source security. My work spans cybercrime and APT activity, with a focus on translating technical findings into high-signal detections and actionable intelligence.
 
 I investigate complex threats across the software supply chain, malware, and adversary infrastructure, including malicious packages, browser and developer extensions, and supply chain intrusions across ecosystems like npm, PyPI, Go Modules, RubyGems, Maven, Crates, NuGet, Chrome, VS Code, and Open VSX. I also track infrastructure and campaign shifts, develop detection logic for threat hunting, and turn technical investigations into research, detections, and tooling that defenders can actually use.
