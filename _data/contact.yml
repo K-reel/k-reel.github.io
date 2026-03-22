@@ -1,8 +1,8 @@
 #  Contact options configuration for k-reel.github.io
 #  Author: Kirill Boychenko
 
-- type: github
-  icon: "fab fa-github"
+# - type: github
+#   icon: "fab fa-github"
 
 - type: twitter
   icon: "fa-brands fa-x-twitter"
