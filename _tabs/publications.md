@@ -59,6 +59,9 @@ hide_title: true
     <a href="/canisterworm-npm-publisher-compromise-deploys-backdoor-across-29-packages/">CanisterWorm: npm Publisher Compromise Deploys Backdoor Across 29+ Packages</a>
   </li>
   <li class="px-md-3">
+    <a href="/glassworm-loader-hits-open-vsx-via-suspected-developer-account-compromise/">GlassWorm Loader Hits Open VSX via Developer Account Compromise</a>
+  </li>
+  <li class="px-md-3">
     <a href="/sandworm-mode-npm-worm-ai-toolchain-poisoning/">SANDWORM_MODE: Shai-Hulud-Style npm Worm Hijacks CI Workflows and Poisons AI Toolchains</a>
   </li>
   <li class="px-md-3">
@@ -267,9 +270,6 @@ hide_title: true
   </li>
   <li class="px-md-3">
     <a href="/malicious-chrome-extension-steals-meta-business-manager-exports-and-totp-2fa-seeds/">Malicious Chrome Extension Steals Meta Business Manager Exports and TOTP 2FA Seeds</a>
-  </li>
-  <li class="px-md-3">
-    <a href="/glassworm-loader-hits-open-vsx-via-suspected-developer-account-compromise/">GlassWorm Loader Hits Open VSX via Developer Account Compromise</a>
   </li>
   <li class="px-md-3">
     <a href="/malicious-chrome-extension-steals-mexc-api-keys/">Malicious Chrome Extension Steals MEXC API Keys for Account Takeover</a>
