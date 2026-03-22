@@ -16,7 +16,7 @@ I'm a cybersecurity and threat intelligence analyst focused on the intersection 
 
 I investigate complex threats across the software supply chain, malware, and adversary infrastructure, including malicious packages, browser and developer extensions, and supply chain intrusions across ecosystems like npm, PyPI, Go Modules, RubyGems, Maven, Crates, NuGet, Chrome, VS Code, and Open VSX. I also track infrastructure and campaign shifts, develop detection logic for threat hunting, and turn technical investigations into research, detections, and tooling that defenders can actually use.
 
-## What I work on
+## What I Work On
 
 - 📦&nbsp; **Software supply chain threats** — Malicious packages, typosquatting, extension abuse, developer compromise, supply chain intrusions, and adversary infrastructure
 - 🔬&nbsp; **Malware and code analysis** — Reverse engineering suspicious code, tracing payload behavior, and understanding how campaigns operate at scale
@@ -40,7 +40,7 @@ Earlier in my career, I worked on investigations and programs aimed at mitigatin
 - <img src="/assets/img/about/logos/infragard_logo.png" width="20" height="20" style="vertical-align: middle;" /> InfraGard member since 2024 — InfraGard is a partnership between the Federal Bureau of Investigation (FBI) and members of the private sector for the protection of the U.S. Critical Infrastructure.
 - <img src="/assets/img/about/logos/un_logo.png" width="20" height="20" style="vertical-align: middle;" /> <img src="/assets/img/about/logos/aba_logo.png" width="20" height="20" style="vertical-align: middle;" /> <img src="/assets/img/about/logos/ilrf_logo.jpg" width="20" height="20" style="vertical-align: middle;" /> Life before cybersecurity: United Nations, American Bar Association, and International Labor Rights Forum — programs mitigating human trafficking, corruption, and labor abuses.
 
-## Research, writing, and speaking
+## Research, Writing, and Speaking
 
 I regularly publish research and speak about adversary tradecraft, cybercrime, malware, software supply chain attacks, and malicious packages. My work ranges from deep technical analysis to practical defensive guidance for security teams, developers, and the broader security community. Research I contributed to has been cited in MITRE ATT&CK entries including [Contagious Interview (G1052)](https://attack.mitre.org/groups/G1052/) and [BeaverTail (S1246)](https://attack.mitre.org/software/S1246/). Selected work is available in my [Publications](/publications/) and [Presentations](/presentations/) sections.
 
