@@ -53,6 +53,30 @@ hide_title: true
 })()">Expand All</button>
 
 <details>
+<summary>🧯 <strong>Supply Chain Incidents</strong></summary>
+<ul class="content ps-0">
+  <li class="px-md-3">
+    <a href="/canisterworm-npm-publisher-compromise-deploys-backdoor-across-29-packages/">CanisterWorm: npm Publisher Compromise Deploys Backdoor Across 29+ Packages</a>
+  </li>
+  <li class="px-md-3">
+    <a href="/sandworm-mode-npm-worm-ai-toolchain-poisoning/">SANDWORM_MODE: Shai-Hulud-Style npm Worm Hijacks CI Workflows and Poisons AI Toolchains</a>
+  </li>
+  <li class="px-md-3">
+    <a href="/shai-hulud-strikes-again-v2/">Shai Hulud Strikes Again (v2)</a>
+  </li>
+  <li class="px-md-3">
+    <a href="/tinycolor-supply-chain-attack-affects-40-packages/">Popular Tinycolor npm Package Compromised in Supply Chain Attack Affecting 40+ Packages</a>
+  </li>
+  <li class="px-md-3">
+    <a href="/npm-is-package-hijacked-in-expanding-supply-chain-attack/">npm 'is' Package Hijacked in Expanding Supply Chain Attack</a>
+  </li>
+  <li class="px-md-3">
+    <a href="/massive-npm-malware-campaign-leverages-ethereum-smart-contracts/">Massive npm Malware Campaign Leverages Ethereum Smart Contracts To Evade Detection and Maintain Control</a>
+  </li>
+</ul>
+</details>
+
+<details>
 <summary>🇰🇵 <strong>North Korea — Contagious Interview</strong></summary>
 <ul class="content ps-0">
   <li class="px-md-3">
@@ -75,30 +99,6 @@ hide_title: true
   </li>
   <li class="px-md-3">
     <a href="/north-korean-apt-lazarus-targets-developers-with-malicious-npm-package/">North Korean APT Lazarus Targets Developers with Malicious npm Package</a>
-  </li>
-</ul>
-</details>
-
-<details>
-<summary>🧯 <strong>Supply Chain Incidents</strong></summary>
-<ul class="content ps-0">
-  <li class="px-md-3">
-    <a href="/canisterworm-npm-publisher-compromise-deploys-backdoor-across-29-packages/">CanisterWorm: npm Publisher Compromise Deploys Backdoor Across 29+ Packages</a>
-  </li>
-  <li class="px-md-3">
-    <a href="/sandworm-mode-npm-worm-ai-toolchain-poisoning/">SANDWORM_MODE: Shai-Hulud-Style npm Worm Hijacks CI Workflows and Poisons AI Toolchains</a>
-  </li>
-  <li class="px-md-3">
-    <a href="/shai-hulud-strikes-again-v2/">Shai Hulud Strikes Again (v2)</a>
-  </li>
-  <li class="px-md-3">
-    <a href="/tinycolor-supply-chain-attack-affects-40-packages/">Popular Tinycolor npm Package Compromised in Supply Chain Attack Affecting 40+ Packages</a>
-  </li>
-  <li class="px-md-3">
-    <a href="/npm-is-package-hijacked-in-expanding-supply-chain-attack/">npm 'is' Package Hijacked in Expanding Supply Chain Attack</a>
-  </li>
-  <li class="px-md-3">
-    <a href="/massive-npm-malware-campaign-leverages-ethereum-smart-contracts/">Massive npm Malware Campaign Leverages Ethereum Smart Contracts To Evade Detection and Maintain Control</a>
   </li>
 </ul>
 </details>
