@@ -13,6 +13,13 @@ image:
 description: "The worm-enabled campaign hit @emilgroup and @teale.io, then used an ICP canister to deliver follow-on payloads."
 ---
 
+> *As of March 21, 2026, the CanisterWorm supply chain attack has expanded to 135 malicious package artifacts spanning more than 64 unique packages. We are tracking the incident on Socket's dedicated CanisterWorm supply chain attack page: [https://socket.dev/supply-chain-attacks/canisterworm](https://socket.dev/supply-chain-attacks/canisterworm){:target="_blank"}.*
+>
+> *According to the Wiz investigation [report](https://www.wiz.io/blog/trivy-compromised-teampcp-supply-chain-attack){:target="_blank"} released on March 20, 2026, the attack is attributed to "TeamPCP", a threat actor behind the earlier Aqua Security's Trivy attacks [[1](https://socket.dev/blog/unauthorized-ai-agent-execution-code-published-to-openvsx-in-aqua-trivy-vs-code-extension){:target="_blank"} and [2](https://socket.dev/blog/trivy-under-attack-again-github-actions-compromise){:target="_blank"}].*
+>
+> *We continue to monitor the incident closely. As of this update, the pace of newly affected packages appears to have slowed, likely due to intervention by the npm registry security team.*
+{: .prompt-info }
+
 Socket's Threat Research Team independently identified a worm-enabled npm supply chain attack affecting legitimate publisher namespaces, including a broad cluster of compromised packages under `@emilgroup` and the package `@teale.io/eslint-config`. In the observed activity, the threat actor appears to have obtained one or more npm publishing tokens, or equivalent CI/CD publishing access, and used that access to replace legitimate package contents with malicious code, then republish the payload across additional packages reachable by the compromised credentials.
 
 For naming consistency with overlapping public reporting, we refer to this campaign as CanisterWorm. The name fits a distinctive technical trait of the malware: in its weaponized form, the implanted Python backdoor polls an Internet Computer Protocol (ICP) canister that acts as a dead-drop command and control (C2) channel, retrieves a URL for a follow-on binary, downloads that binary to `/tmp/pglog`, and tracks prior downloads in `/tmp/.pg_state`. That design lets the threat actor rotate second-stage payloads without modifying the implant already persisted on infected systems.
