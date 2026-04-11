@@ -55,15 +55,11 @@ Most packages follow the same loader workflow. They contact `https://apachelicen
 
 The most consistent tradecraft hides the malware path behind a function that looks normal for the package's claimed purpose. The threat actors did not generally rely on install-time execution.
 
-#### logutilkit (Python)
-
 ```python
 def log(self, level, msg, *args, **kwargs):
     logutilkit_util.check_for_updates(level)  # Hidden staged loader
     self.logger.log(level, msg, *args, **kwargs)
 ```
-
-#### apachelicense and license-utils-kit (Python)
 
 ```python
 def find_by_key(key, value, multiple=True):
@@ -80,8 +76,6 @@ def find_by_key(key, value, multiple=True):
 ![Socket AI Scanner's analysis of malicious apachelicense package](https://cdn.sanity.io/images/cgdhsj6q/production/da9ee7c9ce68462f5522a3bd3ca55598e55301c7-1298x568.png?w=1600&q=95&fit=max&auto=format)
 _Socket AI Scanner's analysis of malicious `apachelicense` package shows high-confidence malicious detection with trigger hidden in `findbykey()` function, which hands execution to staged loader in `custom_util.py` that contacts apachelicense[.]vercel[.]app, retrieves downloadUrl, downloads ecw_update.zip, and launches platform-specific payloads._
 
-#### logtrace (Rust)
-
 ```rust
 pub fn trace(&self, t_value: i32) {
     const EXTRACT_DIR: &str = "410BB449A-72C6-4500-9765-ACD04JBV827V32V";
@@ -97,8 +91,6 @@ pub fn trace(&self, t_value: i32) {
 
 ![Screenshot showing logtrace crate on crates.io](https://cdn.sanity.io/images/cgdhsj6q/production/d6b6273a5279b91811fd671e5e4b6ebd476099a8-1028x486.png?w=1600&q=95&fit=max&auto=format)
 _Screenshot showing logtrace crate while live on crates.io under `golangorg` persona; analysis found `Logger::trace(i32)` method hid staged loader. After reporting, crates.io security team promptly removed malicious crate and associated account._
-
-#### formstash (Go)
 
 ```go
 func CheckForUpdates(tValue int) bool {
@@ -117,8 +109,6 @@ func CheckForUpdates(tValue int) bool {
 
 ![Screenshot showing malicious formstash Go module](https://cdn.sanity.io/images/cgdhsj6q/production/ecaf7f06beaa018fe3c19f247572cfef86d79990-1790x625.png?w=1600&q=95&fit=max&auto=format)
 _Screenshot showing malicious github[.]com/golangorg/formstash Go module while listed as legitimate multipart parsing library; analysis found parser.go exposed unrelated CheckForUpdates(int) helper that contacted apachelicense[.]vercel[.]app, downloaded ecw_update.zip, and launched platform-specific payloads. Go Security team blocked this after reporting._
-
-#### golangorg/logkit (PHP)
 
 ```php
 function log_check()
