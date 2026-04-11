@@ -25,10 +25,6 @@ hide_title: true
       transform: none;
     }
   }
-  .content details summary {
-    font-size: 1.2rem;
-    padding-left: 0.4em;
-  }
   .content details ul { margin-top: 0.25rem; }
   #toggle-all {
     border: none;
@@ -56,7 +52,7 @@ hide_title: true
 })()">Expand All</button>
 
 <details>
-<summary>🧯 <strong>Supply Chain Incidents</strong></summary>
+<summary style="font-size:1.2rem"><span style="display:inline-block;vertical-align:top;max-width:calc(100% - 2em)">🧯 <strong>Supply Chain Incidents</strong></span></summary>
 <ul class="content ps-0">
   <li class="px-md-3">
     <a href="/canisterworm-npm-publisher-compromise-deploys-backdoor-across-29-packages/">CanisterWorm: npm Publisher Compromise Deploys Backdoor Across 29+ Packages</a>
@@ -83,7 +79,7 @@ hide_title: true
 </details>
 
 <details>
-<summary>🇰🇵 <strong>North Korea — Contagious Interview</strong></summary>
+<summary style="font-size:1.2rem"><span style="display:inline-block;vertical-align:top;max-width:calc(100% - 2em)">🇰🇵 <strong>North Korea — Contagious Interview</strong></span></summary>
 <ul class="content ps-0">
   <li class="px-md-3">
     <a href="/contagious-interview-campaign-spreads-across-5-ecosystems/">North Korea's Contagious Interview Campaign Spreads Across 5 Ecosystems, Delivering Staged RAT Payloads</a>
@@ -113,7 +109,7 @@ hide_title: true
 </details>
 
 <details>
-<summary>📊 <strong>Threat Landscape &amp; Cross-Ecosystem Research</strong></summary>
+<summary style="font-size:1.2rem"><span style="display:inline-block;vertical-align:top;max-width:calc(100% - 2em)">📊 <strong>Threat Landscape &amp; Cross-Ecosystem Research</strong></span></summary>
 <ul class="content ps-0">
   <li class="px-md-3">
     <a href="/surveillance-malware-hidden-in-npm-and-pypi-packages/">Surveillance Malware Hidden in npm and PyPI Packages Targets Developers with Keyloggers, Webcam Capture, and Credential Theft</a>
@@ -134,7 +130,7 @@ hide_title: true
 </details>
 
 <details>
-<summary>📦 <strong>npm / JavaScript / TypeScript</strong></summary>
+<summary style="font-size:1.2rem"><span style="display:inline-block;vertical-align:top;max-width:calc(100% - 2em)">📦 <strong>npm / JavaScript / TypeScript</strong></span></summary>
 <ul class="content ps-0">
   <li class="px-md-3">
     <a href="/spearphishing-campaign-abuses-npm-registry/">Spearphishing Campaign Abuses npm Registry to Target U.S. and Allied Manufacturing and Healthcare Organizations</a>
@@ -179,7 +175,7 @@ hide_title: true
 </details>
 
 <details>
-<summary>🐍 <strong>PyPI / Python</strong></summary>
+<summary style="font-size:1.2rem"><span style="display:inline-block;vertical-align:top;max-width:calc(100% - 2em)">🐍 <strong>PyPI / Python</strong></span></summary>
 <ul class="content ps-0">
   <li class="px-md-3">
     <a href="/pypi-package-impersonates-sympy-to-deliver-cryptomining-malware/">PyPI Package Impersonates SymPy to Deliver Cryptomining Malware</a>
@@ -200,7 +196,7 @@ hide_title: true
 </details>
 
 <details>
-<summary>🐹 <strong>Go Modules / Golang</strong></summary>
+<summary style="font-size:1.2rem"><span style="display:inline-block;vertical-align:top;max-width:calc(100% - 2em)">🐹 <strong>Go Modules / Golang</strong></span></summary>
 <ul class="content ps-0">
   <li class="px-md-3">
     <a href="/malicious-go-crypto-module-steals-passwords/">Malicious Go "crypto" Module Steals Passwords and Deploys Rekoobe Backdoor</a>
@@ -221,7 +217,7 @@ hide_title: true
 </details>
 
 <details>
-<summary>☕ <strong>Maven Central / Java</strong></summary>
+<summary style="font-size:1.2rem"><span style="display:inline-block;vertical-align:top;max-width:calc(100% - 2em)">☕ <strong>Maven Central / Java</strong></span></summary>
 <ul class="content ps-0">
   <li class="px-md-3">
     <a href="/malicious-maven-package-impersonating-xz-for-java-library/">Malicious Maven Package Impersonating 'XZ for Java' Library Introduces Backdoor Allowing Remote Code Execution</a>
@@ -230,7 +226,7 @@ hide_title: true
 </details>
 
 <details>
-<summary>♦️ <strong>RubyGems / Ruby</strong></summary>
+<summary style="font-size:1.2rem"><span style="display:inline-block;vertical-align:top;max-width:calc(100% - 2em)">♦️ <strong>RubyGems / Ruby</strong></span></summary>
 <ul class="content ps-0">
   <li class="px-md-3">
     <a href="/60-malicious-ruby-gems-used-in-targeted-credential-theft-campaign/">60 Malicious Ruby Gems Used in Targeted Credential Theft Campaign</a>
@@ -242,7 +238,7 @@ hide_title: true
 </details>
 
 <details>
-<summary>⚙️ <strong>NuGet / .NET</strong></summary>
+<summary style="font-size:1.2rem"><span style="display:inline-block;vertical-align:top;max-width:calc(100% - 2em)">⚙️ <strong>NuGet / .NET</strong></span></summary>
 <ul class="content ps-0">
   <li class="px-md-3">
     <a href="/malicious-nuget-package-typosquats-popular-net-tracing-library/">Malicious NuGet Package Typosquats Popular .NET Tracing Library to Steal Wallet Passwords</a>
@@ -254,7 +250,7 @@ hide_title: true
 </details>
 
 <details>
-<summary>🦀 <strong>Rust / Crates</strong></summary>
+<summary style="font-size:1.2rem"><span style="display:inline-block;vertical-align:top;max-width:calc(100% - 2em)">🦀 <strong>Rust / Crates</strong></span></summary>
 <ul class="content ps-0">
   <li class="px-md-3">
     <a href="/5-malicious-rust-crates-posed-as-time-utilities-to-exfiltrate-env-files/">5 Malicious Rust Crates Posed as Time Utilities to Exfiltrate .env Files</a>
@@ -266,7 +262,7 @@ hide_title: true
 </details>
 
 <details>
-<summary>🧩 <strong>Extensions / Chrome / VS Code / OpenVSX</strong></summary>
+<summary style="font-size:1.2rem"><span style="display:inline-block;vertical-align:top;max-width:calc(100% - 2em)">🧩 <strong>Extensions / Chrome / VS Code / OpenVSX</strong></span></summary>
 <ul class="content ps-0">
   <li class="px-md-3">
     <a href="/open-vsx-transitive-glassworm-campaign/">72 Malicious Open VSX Extensions Linked to GlassWorm Campaign Now Using Transitive Dependencies</a>
@@ -290,7 +286,7 @@ hide_title: true
 </details>
 
 <details>
-<summary>🕵️ <strong>Cybercrime, Underground Economy &amp; Influence Research</strong></summary>
+<summary style="font-size:1.2rem"><span style="display:inline-block;vertical-align:top;max-width:calc(100% - 2em)">🕵️ <strong>Cybercrime, Underground Economy &amp; Influence Research</strong></span></summary>
 <ul class="content ps-0">
   <li class="px-md-3">
     <a href="/exploiting-npm-to-build-a-blockchain-powered-botnet/">Threat Actor Exposes Playbook for Exploiting npm to Build Blockchain-Powered Botnets</a>
