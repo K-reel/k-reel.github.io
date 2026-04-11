@@ -7,7 +7,7 @@ hide_title: true
 
 ![About banner](/assets/img/about/banner.jpg){: .rounded-3 .shadow .mb-4 w="2400" }
 
-I'm a cybersecurity and threat intelligence analyst focused on the intersection of malware analysis, reverse engineering, adversary tradecraft, and open source security. My work spans cybercrime, APT activity, software supply chain threats, and adversary infrastructure, including malicious packages, browser and developer extensions, and supply chain intrusions across ecosystems such as npm, PyPI, Go Modules, RubyGems, Maven, Crates, NuGet, Chrome, VS Code, and Open VSX. I track infrastructure and campaign shifts, develop detection logic for threat hunting, and turn technical investigations into high-signal detections, actionable intelligence, research, and tooling that defenders can actually use.
+I'm a cybersecurity and threat intelligence analyst focused on the intersection of malware analysis, reverse engineering, adversary tradecraft, and open source security. My work spans cybercrime, APT activity, software supply chain threats, and adversary infrastructure, including malicious packages, browser and developer extensions, and supply chain intrusions across ecosystems such as npm, PyPI, Go Modules, RubyGems, Maven, Crates, NuGet, Packagist, Chrome, VS Code, and Open VSX. I track infrastructure and campaign shifts, develop detection logic for threat hunting, and turn technical investigations into high-signal detections, actionable intelligence, research, and tooling that defenders can actually use.
 
 ## What I Work On
 
