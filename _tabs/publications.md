@@ -25,7 +25,11 @@ hide_title: true
       transform: none;
     }
   }
-  .content details summary { font-size: 1.2rem; }
+  .content details summary {
+    font-size: 1.2rem;
+    list-style-position: outside;
+    margin-left: 1em;
+  }
   .content details ul { margin-top: 0.25rem; }
   #toggle-all {
     border: none;
