@@ -27,10 +27,11 @@ hide_title: true
   }
   .content details summary {
     font-size: 1.2rem;
-    list-style: none;
+    list-style-type: none !important;
     padding-left: 1.4em;
     position: relative;
   }
+  .content details summary::marker { content: none; }
   .content details summary::-webkit-details-marker { display: none; }
   .content details summary::before {
     content: '▶';
