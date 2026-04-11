@@ -3,7 +3,7 @@ title: "North Korea's Contagious Interview Campaign Spreads Across 5 Ecosystems,
 short_title: "Contagious Interview Campaign Spreads Across 5 Ecosystems"
 date: 2026-04-07 12:00:00 +0000
 categories: [North Korea]
-tags: [Contagious Interview, RAT, Infostealer, Keylogger, Obfuscation, AnyDesk, npm, JavaScript, PyPI, Python, Go, Go Modules, Rust, crates.io, Packagist, PHP, Google Drive, T1195.001, T1608.001, T1036.005, T1059.007, T1059.006, T1027.013, T1140, T1105, T1071.001, T1005, T1082, T1083, T1217, T1555.003, T1555.005, T1119, T1041, T1657]
+tags: [Contagious Interview, RAT, Infostealer, Keylogger, Obfuscation, npm, JavaScript, PyPI, Python, Go, Go Modules, Rust, crates.io, Packagist, PHP, Google Drive, T1195.001, T1608.001, T1036.005, T1059.007, T1059.006, T1027.013, T1140, T1105, T1071.001, T1005, T1082, T1083, T1217, T1555.003, T1555.005, T1119, T1041, T1657]
 canonical_url: https://socket.dev/blog/contagious-interview-campaign-spreads-across-5-ecosystems
 source: Socket
 image:
