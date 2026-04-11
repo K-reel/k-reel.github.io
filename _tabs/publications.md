@@ -27,22 +27,7 @@ hide_title: true
   }
   .content details summary {
     font-size: 1.2rem;
-    list-style-type: none !important;
-    padding-left: 1.4em;
-    position: relative;
-  }
-  .content details summary::marker { content: none; }
-  .content details summary::-webkit-details-marker { display: none; }
-  .content details summary::before {
-    content: '▶';
-    position: absolute;
-    left: 0;
-    font-size: 0.75em;
-    top: 0.3em;
-    transition: transform 0.2s;
-  }
-  .content details[open] summary::before {
-    transform: rotate(90deg);
+    padding-left: 0.4em;
   }
   .content details ul { margin-top: 0.25rem; }
   #toggle-all {
