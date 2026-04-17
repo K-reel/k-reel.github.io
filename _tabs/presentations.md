@@ -5,6 +5,17 @@ hide_title: true
 toc: false
 ---
 
+<h2>Hunting North Korea's State-Sponsored "Contagious Interview" Operation</h2>
+
+This presentation examines how North Korean state-sponsored threat actors behind the "Contagious Interview" operation blend social engineering with malicious open source packages to compromise developers and tech job seekers. We walk through hundreds of malicious npm packages delivering multi-stage loaders and infostealers — including BeaverTail and InvisibleFerret — and reveal how operators pose as recruiters on LinkedIn, deliver "coding assignments" via GitHub and other platforms, and pressure targets to execute code locally.
+
+> **Conference:** [SANS CTI Summit](https://www.sans.org/presentations/hunting-north-koreas-state-sponsored-contagious-interview-operation-attacks-on-developers-via-the-software-supply-chain) · [2026](https://youtu.be/BJveyxO_t_c?si=gxo4KsOcTfk9RHWg)
+{: .prompt-info }
+
+<iframe width="100%" height="415" src="https://www.youtube.com/embed/BJveyxO_t_c" title="Hunting North Korea's State-Sponsored Contagious Interview Operation" frameborder="0" allowfullscreen></iframe>
+
+<div style="border-top: 3px solid var(--border-color, #555); margin: 2.5rem 0;"></div>
+
 <h2>A Security Professional's Guide to Malicious Packages</h2>
 
 This presentation is designed for software developers, engineers, and DevOps/build teams managing dependencies and CI/CD; security professionals focused on AppSec and supply chain risk; technology managers and team leads; and threat analysts seeking practical ways to understand and mitigate risks in open source ecosystems and software supply chains.
