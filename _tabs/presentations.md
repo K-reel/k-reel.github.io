@@ -7,7 +7,7 @@ toc: false
 
 <h2>Hunting North Korea's State-Sponsored "Contagious Interview" Operation</h2>
 
-This presentation examines how North Korean state-sponsored threat actors behind the "Contagious Interview" operation blend social engineering with malicious open source packages to compromise developers and tech job seekers. We walk through hundreds of malicious npm packages delivering multi-stage loaders and infostealers — including BeaverTail and InvisibleFerret — and reveal how operators pose as recruiters on LinkedIn, deliver "coding assignments" via GitHub and other platforms, and pressure targets to execute code locally.
+This presentation examines how North Korean state-sponsored threat actors behind the "Contagious Interview" operation combine social engineering with malicious open source packages to compromise developers and tech job seekers. It analyzes hundreds of malicious npm packages that deliver multi-stage loaders and infostealers, including BeaverTail, InvisibleFerret, and OtterCookie, and shows how threat actors impersonate recruiters on LinkedIn, deliver "coding assignments" through GitHub and other platforms, and pressure targets to execute code locally.
 
 > **Conference:** [SANS CTI Summit](https://www.sans.org/presentations/hunting-north-koreas-state-sponsored-contagious-interview-operation-attacks-on-developers-via-the-software-supply-chain) · [2026](https://youtu.be/BJveyxO_t_c?si=gxo4KsOcTfk9RHWg)
 {: .prompt-info }
