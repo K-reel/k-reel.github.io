@@ -4,6 +4,7 @@ short_title: "Namastex.ai npm Packages Hit with CanisterWorm"
 date: 2026-04-22 12:00:00 +0000
 categories: [Supply Chain, npm]
 tags: [CanisterWorm, CanisterSprawl, TeamPCP, npm, JavaScript, Infostealer, Worm, Developer Compromise, PyPI, Python]
+author: socket_research_team
 canonical_url: https://socket.dev/blog/namastex-npm-packages-compromised-canisterworm
 source: Socket
 image:
