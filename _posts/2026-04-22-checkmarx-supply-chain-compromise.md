@@ -3,7 +3,7 @@ title: "Malicious Checkmarx Artifacts Found in Official KICS Docker Repository a
 short_title: "Malicious Checkmarx Artifacts in KICS Docker Repo & Extensions"
 date: 2026-04-22 12:00:00 +0000
 categories: [Supply Chain, Threat Intelligence]
-tags: [Checkmarx, KICS, Docker, VS Code, Open VSX, Extensions, TeamPCP, Infostealer, npm, JavaScript, Obfuscation, Developer Compromise, Bun]
+tags: [Docker, VS Code, Open VSX, Extensions, TeamPCP, Infostealer, npm, JavaScript, Obfuscation, Developer Compromise]
 author: socket_research_team
 canonical_url: https://socket.dev/blog/checkmarx-supply-chain-compromise
 source: Socket
