@@ -55,6 +55,9 @@ hide_title: true
 <summary style="font-size:1.2rem"><span style="display:inline-block;vertical-align:top;max-width:calc(100% - 2em)">🧯 <strong>Supply Chain Incidents</strong></span></summary>
 <ul class="content ps-0">
   <li class="px-md-3">
+    <a href="/checkmarx-supply-chain-compromise/">Malicious Checkmarx Artifacts Found in Official KICS Docker Repository and Code Extensions</a>
+  </li>
+  <li class="px-md-3">
     <a href="/namastex-npm-packages-compromised-canisterworm/">Namastex.ai npm Packages Hit with TeamPCP-Style CanisterWorm Malware</a>
   </li>
   <li class="px-md-3">
