@@ -1,7 +1,7 @@
 ---
 title: "73 Open VSX Sleeper Extensions Linked to GlassWorm Show New Malware Activations"
 short_title: "73 Open VSX Sleeper Extensions Linked to GlassWorm"
-date: 2026-04-25 12:00:00 +0000
+date: 2026-04-24 12:00:00 +0000
 categories: [Malware, Browser Extensions]
 tags: [GlassWorm, Open VSX, Extensions, VS Code, Sleeper Extensions, Impersonation, Obfuscation, VSIX, Loader, Transitive Delivery]
 author: socket_research_team
