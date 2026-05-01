@@ -21,6 +21,8 @@ On the Go side, the campaign is more diverse. Some modules modify `GITHUB_ENV`, 
 We reported all identified malicious gems and modules to the affected registries and submitted a takedown request for the associated GitHub account. Following our report, the Go Security team blocked the malicious Go modules we identified, and we thank them for their swift action. As of this writing, the identified Ruby gems and the GitHub account remain live.
 
 ![](https://cdn.sanity.io/images/cgdhsj6q/production/9959cebbbbb4bb8ac8ceb34a08a23eb14fc561dd-1200x897.png?w=1600&q=95&fit=max&auto=format)
+_`BufferZoneCorp` GitHub account hosting a rapidly assembled mix of Ruby and Go repositories._
+
 ## From GitHub Repositories to Published Packages
 
 The `BufferZoneCorp` GitHub account (`https://github[.]com/BufferZoneCorp`) hosted repositories that mapped directly to published Ruby gems and Go modules.
@@ -36,6 +38,8 @@ On the Ruby side, the repositories mapped to the following gems:
 1. [`knot-simple-formatter`](https://socket.dev/rubygems/package/knot-simple-formatter) (sleeper gem; not yet weaponized)
 
 ![](https://cdn.sanity.io/images/cgdhsj6q/production/e553883129b2261959da01c9f2250c553853732e-2048x1858.png?w=1600&q=95&fit=max&auto=format)
+_RubyGems profile `knot-theory` tied to the campaign, showing seven published gems and measurable download activity. The published gem names add a `knot-` prefix to repository names modeled on legitimate Ruby and Rails utilities, preserving close visual and semantic similarity to trusted developer tooling._
+
 On the Go side, the repositories mapped to modules including:
 
 1. [`github[.]com/BufferZoneCorp/go-metrics-sdk`](https://socket.dev/go/package/github.com/BufferZoneCorp/go-metrics-sdk)
@@ -56,6 +60,8 @@ The `BufferZoneCorp` campaign began with sleeper packages: the Ruby gems and Go 
 - The Go side is even more explicit, with names similar to established modules such as HashiCorp’s [`go-retryablehttp`](https://socket.dev/go/package/github.com/hashicorp/go-retryablehttp) and Kelsey Hightower’s [`envconfig`](https://socket.dev/go/package/github.com/kelseyhightower/envconfig), along with generic infrastructure-flavored names like [`grpc-client`](https://socket.dev/go/package/github.com/statistico/statistico-odds-compiler-go-grpc-client), [`config-loader`](https://socket.dev/go/package/github.com/icesparrow0/env-config-loader), and [`go-stdlib-ext`](https://socket.dev/go/package/github.com/jefffaer/go-stdlib-ext) that blend easily into normal dependency graphs.
 
 ![](https://cdn.sanity.io/images/cgdhsj6q/production/f0b11217f9a81edcbf4dfea88a3909127459a156-1887x925.png?w=1600&q=95&fit=max&auto=format)
+_Public Go module page for the malicious [`github[.]com/BufferZoneCorp/go-metrics-sdk`](https://socket.dev/go/package/github.com/BufferZoneCorp/go-metrics-sdk), presented as a routine instrumentation library with clean documentation, valid module metadata, and a plausible [`logrus`](https://socket.dev/go/package/github.com/sirupsen/logrus) dependency._
+
 ## Ruby: Install Time Credential Theft
 
 One of the Ruby samples in the cluster ([`knot-activesupport-logger`](https://socket.dev/rubygems/package/knot-activesupport-logger)), claims to be a helper for Rails or ActiveSupport logging, but its real value to the threat actor is secret collection.
@@ -136,6 +142,8 @@ create_makefile('activesupport_logger_ext')
 In a controlled lab test, we redirected [`PKG_ANALYTICS_URL`](https://socket.dev/rubygems/package/knot-activesupport-logger/files/7.1.6/ext/extconf.rb?platform=ruby#L13) to a local collector and confirmed that installation triggered an outbound JSON POST containing host metadata and test secrets we intentionally placed in the environment. The gem also includes a runtime exfiltration path. On the first log write, it spawns a background thread that collects secret-bearing environment variables and sends them to the same endpoint.
 
 ![](https://cdn.sanity.io/images/cgdhsj6q/production/bcf8fa76ef0e6f51c61511fa3db4a749568d6ed4-563x591.png?w=1600&q=95&fit=max&auto=format)
+_Socket AI Scanner’s analysis of the malicious `knot-activesupport-logger` gem highlights install-time credential theft implemented in `ext/extconf.rb`, where the gem harvests secret-bearing environment variables, reads developer credential files from the user’s home directory, and exfiltrates the collected data to an external HTTPS endpoint while suppressing errors to reduce detection and avoid breaking installation._
+
 ## Go: One Cluster, Several Distinct Payloads
 
 The Go modules tied to `BufferZoneCorp` are related, but they do not all have the same payload. Instead, they follow a common pattern: automatic execution through `init()`, targeting of GitHub Actions or other CI environments, behavior inconsistent with the module’s claimed purpose, and shared infrastructure or control mechanisms.
