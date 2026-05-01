@@ -235,6 +235,9 @@ hide_title: true
 <summary style="font-size:1.2rem"><span style="display:inline-block;vertical-align:top;max-width:calc(100% - 2em)">♦️ <strong>RubyGems / Ruby</strong></span></summary>
 <ul class="content ps-0">
   <li class="px-md-3">
+    <a href="/malicious-ruby-gems-and-go-modules-steal-secrets-poison-ci/">Malicious Ruby Gems and Go Modules Impersonate Developer Tools to Steal Secrets and Poison CI</a>
+  </li>
+  <li class="px-md-3">
     <a href="/60-malicious-ruby-gems-used-in-targeted-credential-theft-campaign/">60 Malicious Ruby Gems Used in Targeted Credential Theft Campaign</a>
   </li>
   <li class="px-md-3">
