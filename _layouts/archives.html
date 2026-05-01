@@ -48,8 +48,7 @@ layout: page
         <span class="date month small text-muted ms-1" data-ts="{{ ts }}" data-df="{{ df_dayjs_m }}">
           {{ item.date | date: df_strftime_m }}
         </span>
-        <span class="talk-badge">Talk</span>
-        <a href="{{ item.url }}" target="_blank" rel="noopener">{{ item.title }}</a>
+        <a href="{{ item.url }}" target="_blank" rel="noopener"><span class="talk-badge">Talk</span>{{ item.title }}</a>
       </li>
     {% else %}
       <li>
