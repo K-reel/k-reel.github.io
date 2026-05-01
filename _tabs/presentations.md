@@ -8,7 +8,9 @@ toc: false
 <h2 id="trust-compromise-keeps-me-up-at-night"><a href="#trust-compromise-keeps-me-up-at-night" class="presentation-link">Finding Malware in Open Source Every Day, but Trust Compromise Keeps Me Up at Night</a></h2>
 <p class="text-muted fst-italic" style="margin-top:-0.75rem;">From SANS.edu to the Front Lines of Cyber Threat Intelligence</p>
 
-This SANS Technology Institute talk traces a journey from SANS.edu into cyber threat intelligence, malware analysis, and software supply chain defense. Drawing on real-world examples, it examines how open source attacks are shifting from malicious packages to the compromise of trusted developers and the automation that ships code to production, and outlines what defenders need to understand to keep pace.
+In this talk, I discuss my work in cyber threat intelligence, malware analysis, and software supply chain defense, and how my education through SANS Technology Institute helped deepen and strengthen that work as I advanced in the field.
+
+Drawing on real-world examples from open source ecosystems, I examine how software supply chain attacks are shifting from standalone malicious packages to the compromise of trusted developers, maintainer accounts, and the automation that ships code to production. I also outline what defenders need to understand to keep pace with threat actors increasingly targeting trust relationships and release infrastructure.
 
 > **Conference:** [SANS Technology Institute](https://www.sans.edu/) · [2026](https://youtu.be/xzjCpVbr2yo)
 {: .prompt-info }
