@@ -131,6 +131,21 @@
   @media (max-width: 849px) {
     #topbar-title { display: none; }
   }
+  /* Give main content more horizontal room at xl+ by shrinking the right Topics panel */
+  @media (min-width: 1200px) {
+    main.col-xl-9 {
+      flex: 0 0 83.333333% !important;
+      max-width: 83.333333% !important;
+    }
+    #panel-wrapper.col-xl-3 {
+      flex: 0 0 16.666667% !important;
+      max-width: 16.666667% !important;
+    }
+    #tail-wrapper.col-xl-9 {
+      flex: 0 0 83.333333% !important;
+      max-width: 83.333333% !important;
+    }
+  }
   /* Post preview images: slightly taller than default, flush right */
   #post-list .preview-img {
     aspect-ratio: 4 / 3;
