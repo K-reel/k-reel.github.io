@@ -26,6 +26,15 @@ layout: page
     color: #e67e22;
     vertical-align: middle;
   }
+  /* Allow long archive titles to wrap instead of getting truncated */
+  #archives li a {
+    white-space: normal !important;
+    overflow: visible !important;
+    text-overflow: clip !important;
+    display: inline !important;
+    word-break: break-word;
+    overflow-wrap: anywhere;
+  }
 </style>
 
 <div id="archives" class="pl-xl-3">
