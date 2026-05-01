@@ -8,7 +8,7 @@ author: socket_research_team
 canonical_url: https://socket.dev/blog/mini-shai-hulud-packagist-malicious-intercom-php-package-compromise
 source: Socket
 image:
-  path: https://cdn.sanity.io/images/cgdhsj6q/production/3265e374ba72a71ad04fb201a1d2881427be6ea8-972x771.png?w=1000&q=95&fit=max&auto=format
+  path: https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi7hiQfVCFzoPBzfr5xqJ06qMjzv-zw_qiUcDTgyEM8RbEVk3PDztg9U5Vlkgvz6j7nX8ODtXwnTCC2wB78lupEmRjcxJTz74GJGSslsMQM-e5b8vG0W2gLFnbEzYAPKw05ZelkaNfy50VyLJeb-3EhwiGKfIP9qHNRpNG4MnFUnTBBOJ95vRJb-RbcFVxX/s1700-e365/python.png
   alt: "Mini Shai-Hulud Spreads to Packagist: Malicious Intercom PHP Package Follows npm Compromise"
 description: "Socket found a malicious Intercom PHP package on Packagist using Composer plugin execution to steal credentials and spread across ecosystems."
 ---
