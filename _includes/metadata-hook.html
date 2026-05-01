@@ -131,20 +131,25 @@
   @media (max-width: 849px) {
     #topbar-title { display: none; }
   }
-  /* Give main content more horizontal room at xl+ by shrinking the right Topics panel
-     (kept wide enough to fit at least 3 tag pills per row in the Topics list) */
+  /* Give main content more horizontal room at xl+ by shrinking the right Topics panel,
+     and tighten the Topics tag pills so at least 3 fit per row at this width. */
   @media (min-width: 1200px) {
     main.col-xl-9 {
-      flex: 0 0 80% !important;
-      max-width: 80% !important;
+      flex: 0 0 78% !important;
+      max-width: 78% !important;
     }
     #panel-wrapper.col-xl-3 {
-      flex: 0 0 20% !important;
-      max-width: 20% !important;
+      flex: 0 0 22% !important;
+      max-width: 22% !important;
     }
     #tail-wrapper.col-xl-9 {
-      flex: 0 0 80% !important;
-      max-width: 80% !important;
+      flex: 0 0 78% !important;
+      max-width: 78% !important;
+    }
+    #panel-wrapper .post-tag {
+      font-size: 0.72rem !important;
+      padding: 0.15rem 0.5rem !important;
+      margin: 0 0.25rem 0.4rem 0 !important;
     }
   }
   /* Post preview images: slightly taller than default, flush right */
