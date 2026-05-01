@@ -11,22 +11,19 @@ layout: page
 {% assign all_items = site.posts | concat: site.data.presentations | sort: 'date' | reverse %}
 
 <style>
-  #archives li.archive-talk a { color: var(--link-color, inherit); }
-  #archives li.archive-talk .talk-icon {
-    color: #c4302b;
-    margin-right: 0.35rem;
-  }
+  #archives li.archive-talk a { color: #e67e22; }
+  #archives li.archive-talk a:hover { color: #c2691c; }
   #archives li.archive-talk .talk-badge {
     display: inline-block;
-    margin-left: 0.45rem;
+    margin-right: 0.45rem;
     padding: 0.05rem 0.5rem;
     font-size: 0.7rem;
     font-weight: 600;
     letter-spacing: 0.04em;
     text-transform: uppercase;
     border-radius: 999px;
-    background: rgba(196, 48, 43, 0.12);
-    color: #c4302b;
+    background: rgba(230, 126, 34, 0.15);
+    color: #e67e22;
     vertical-align: middle;
   }
 </style>
@@ -51,9 +48,8 @@ layout: page
         <span class="date month small text-muted ms-1" data-ts="{{ ts }}" data-df="{{ df_dayjs_m }}">
           {{ item.date | date: df_strftime_m }}
         </span>
-        <i class="fas fa-play-circle talk-icon" aria-hidden="true"></i>
-        <a href="{{ item.url }}" target="_blank" rel="noopener">{{ item.title }}</a>
         <span class="talk-badge">Talk</span>
+        <a href="{{ item.url }}" target="_blank" rel="noopener">{{ item.title }}</a>
       </li>
     {% else %}
       <li>
