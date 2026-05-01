@@ -1,7 +1,7 @@
 ---
 title: "Malicious Ruby Gems and Go Modules Impersonate Developer Tools to Steal Secrets and Poison CI"
 short_title: "Malicious Ruby Gems and Go Modules Steal Secrets and Poison CI"
-date: 2026-05-01 12:00:00 +0000
+date: 2026-04-30 12:00:00 +0000
 categories: [RubyGems, Go]
 tags: [BufferZoneCorp, Ruby, RubyGems, Go, Go Modules, Sleeper Packages, Typosquatting, GitHub Actions, Backdoor, Infostealer, Webhook, HashiCorp, T1195.001, T1204.005, T1036.005, T1059.004, T1552.001, T1552.004, T1552.005, T1098.004, T1574.007, T1567.004, T1082, T1083, T1526, T1613]
 canonical_url: https://socket.dev/blog/malicious-ruby-gems-and-go-modules-steal-secrets-poison-ci
