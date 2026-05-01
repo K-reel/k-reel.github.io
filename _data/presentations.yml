@@ -1,17 +1,17 @@
 - title: "Hunting North Korea's State-Sponsored \"Contagious Interview\" Operation"
   date: 2026-01-26
-  url: https://youtu.be/BJveyxO_t_c?si=gxo4KsOcTfk9RHWg
+  slug: contagious-interview-hunting
   conference: SANS CTI Summit
   type: presentation
 
 - title: "A Security Professional's Guide to Malicious Packages"
   date: 2025-04-27
-  url: https://youtu.be/jlhy2yC96-4?si=UvldgK1Gpu0ZYeIN
+  slug: malicious-packages-guide
   conference: BSidesSF
   type: presentation
 
 - title: "Turning the Backpage: Combating Human Trafficking with Threat Intelligence"
   date: 2023-04-27
-  url: https://youtu.be/Y8VAQErGWAs?si=egrr6SzZHfJFRXBk
+  slug: combating-human-trafficking
   conference: RSA Conference
   type: presentation

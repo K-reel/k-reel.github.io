@@ -5,7 +5,7 @@ hide_title: true
 toc: false
 ---
 
-<h2>Hunting North Korea's State-Sponsored "Contagious Interview" Operation</h2>
+<h2 id="contagious-interview-hunting"><a href="#contagious-interview-hunting" class="presentation-link">Hunting North Korea's State-Sponsored "Contagious Interview" Operation</a></h2>
 
 This presentation examines how North Korean state-sponsored threat actors behind the "Contagious Interview" operation combine social engineering with malicious open source packages to compromise developers and tech job seekers. It analyzes hundreds of malicious npm packages that deliver multi-stage loaders and infostealers, including BeaverTail, InvisibleFerret, and OtterCookie, and shows how threat actors impersonate recruiters on LinkedIn, deliver "coding assignments" through GitHub and other platforms, and pressure targets to execute code locally.
 
@@ -16,7 +16,7 @@ This presentation examines how North Korean state-sponsored threat actors behind
 
 <div style="border-top: 3px solid var(--border-color, #555); margin: 2.5rem 0;"></div>
 
-<h2>A Security Professional's Guide to Malicious Packages</h2>
+<h2 id="malicious-packages-guide"><a href="#malicious-packages-guide" class="presentation-link">A Security Professional's Guide to Malicious Packages</a></h2>
 
 This presentation is designed for software developers, engineers, and DevOps/build teams managing dependencies and CI/CD; security professionals focused on AppSec and supply chain risk; technology managers and team leads; and threat analysts seeking practical ways to understand and mitigate risks in open source ecosystems and software supply chains.
 
@@ -27,7 +27,7 @@ This presentation is designed for software developers, engineers, and DevOps/bui
 
 <div style="border-top: 3px solid var(--border-color, #555); margin: 2.5rem 0;"></div>
 
-<h2>Turning the Backpage: Combating Human Trafficking with Threat Intelligence</h2>
+<h2 id="combating-human-trafficking"><a href="#combating-human-trafficking" class="presentation-link">Turning the Backpage: Combating Human Trafficking with Threat Intelligence</a></h2>
 
 This RSA session, co-presented with Hande Guven, shows that human trafficking occurs not only on the dark web. Public, open sources (such as classified-ad platforms) can yield actionable indicators. We share a proof-of-concept study demonstrating how first responders can monitor selected sources to generate threat leads, initiate investigations, build cases, and support survivors.
 
