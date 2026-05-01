@@ -179,15 +179,16 @@
 {% if page.url == '/presentations/' %}
 <style>
   /* Presentation titles are clickable links to their own anchors */
-  h2 > a.presentation-link {
-    display: inline !important;
+  h2 > span > a.presentation-link {
     color: inherit;
     text-decoration: none;
   }
-  h2 > a.presentation-link:hover {
+  h2 > span > a.presentation-link:hover {
     color: var(--link-color);
     text-decoration: none;
   }
+  /* Hide Chirpy's auto-injected heading anchor (#) — title link replaces it */
+  h2 > a.anchor { display: none !important; }
   /* Offset anchor target so heading isn't hidden under the topbar */
   h2[id] {
     scroll-margin-top: 5rem;
