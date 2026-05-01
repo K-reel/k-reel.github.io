@@ -139,6 +139,23 @@
     object-fit: cover;
     object-position: center center;
   }
+  /* Intercom logo hero/preview: contain + center with whitespace, applies on all pages */
+  .preview-img:has(img[src*="1539432578.png"]) {
+    background: #fff;
+    position: relative;
+  }
+  .preview-img img[src*="1539432578.png"] {
+    object-fit: contain !important;
+    object-position: center center !important;
+    width: auto !important;
+    height: auto !important;
+    max-width: 50% !important;
+    max-height: 70% !important;
+    position: absolute !important;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+  }
   /* Allow full title and description wrap on home page cards */
   #post-list .card-title,
   #post-list .card-text,
@@ -264,22 +281,6 @@
   }
   .preview-img img[src*="2443dca395c1276243c45c878b27348880dc1a1b"] {
     object-position: center 16%;
-  }
-  .preview-img:has(img[src*="1539432578.png"]) {
-    background: #fff;
-    position: relative;
-  }
-  .preview-img img[src*="1539432578.png"] {
-    object-fit: contain !important;
-    object-position: center center !important;
-    width: 200px !important;
-    height: 200px !important;
-    max-width: 25% !important;
-    max-height: 70% !important;
-    position: absolute !important;
-    top: 50% !important;
-    left: 50% !important;
-    transform: translate(-50%, -50%) !important;
   }
   .prose figure { text-align: center; }
   /* Hide heading anchor links */
