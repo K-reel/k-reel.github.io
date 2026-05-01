@@ -11,13 +11,13 @@
   type: presentation
 
 - title: "A Security Professional's Guide to Malicious Packages"
-  date: 2025-04-27
+  date: 2025-04-27 12:00:00 +0000
   slug: malicious-packages-guide
   conference: BSidesSF
   type: presentation
 
 - title: "Turning the Backpage: Combating Human Trafficking with Threat Intelligence"
-  date: 2023-04-27
+  date: 2023-04-27 12:00:00 +0000
   slug: combating-human-trafficking
   conference: RSA Conference
   type: presentation
