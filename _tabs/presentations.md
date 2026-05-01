@@ -12,7 +12,7 @@ In this talk, I discuss my work in cyber threat intelligence, malware analysis, 
 
 Drawing on real-world examples from open source ecosystems, I examine how software supply chain attacks are shifting from standalone malicious packages to the compromise of trusted developers, maintainer accounts, and the automation that ships code to production. I also outline what defenders need to understand to keep pace with threat actors increasingly targeting trust relationships and release infrastructure.
 
-> **Conference:** [SANS Technology Institute](https://www.sans.edu/) · [2026](https://youtu.be/xzjCpVbr2yo)
+> **Conference:** SANS Technology Institute · [2026](https://youtu.be/xzjCpVbr2yo)
 {: .prompt-info }
 
 <iframe width="100%" height="415" src="https://www.youtube.com/embed/xzjCpVbr2yo" title="Finding Malware in Open Source Every Day, but Trust Compromise Keeps Me Up at Night" frameborder="0" allowfullscreen></iframe>
