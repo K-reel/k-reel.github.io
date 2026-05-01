@@ -3,7 +3,7 @@ title: "Mini Shai-Hulud Spreads to Packagist: Malicious Intercom PHP Package Fol
 short_title: "Mini Shai-Hulud Spreads to Packagist via Intercom PHP"
 date: 2026-04-30 12:00:00 +0000
 categories: [Malware, Supply Chain]
-tags: [Mini Shai-Hulud, Packagist, PHP, Composer, Intercom, Bun, Infostealer, Obfuscation, Developer Compromise, npm, JavaScript, PyPI, Python]
+tags: [Shai-Hulud, TeamPCP, Packagist, PHP, Composer, Infostealer, Obfuscation, Developer Compromise, npm, JavaScript, PyPI, Python]
 author: socket_research_team
 canonical_url: https://socket.dev/blog/mini-shai-hulud-packagist-malicious-intercom-php-package-compromise
 source: Socket
