@@ -5,6 +5,18 @@ hide_title: true
 toc: false
 ---
 
+<h2 id="trust-compromise-keeps-me-up-at-night"><a href="#trust-compromise-keeps-me-up-at-night" class="presentation-link">Finding Malware in Open Source Every Day, but Trust Compromise Keeps Me Up at Night</a></h2>
+<p class="text-muted fst-italic" style="margin-top:-0.75rem;">From SANS.edu to the Front Lines of Cyber Threat Intelligence</p>
+
+This SANS Technology Institute talk traces a journey from SANS.edu into cyber threat intelligence, malware analysis, and software supply chain defense. Drawing on real-world examples, it examines how open source attacks are shifting from malicious packages to the compromise of trusted developers and the automation that ships code to production, and outlines what defenders need to understand to keep pace.
+
+> **Conference:** [SANS Technology Institute](https://www.sans.edu/) · [2026](https://youtu.be/xzjCpVbr2yo)
+{: .prompt-info }
+
+<iframe width="100%" height="415" src="https://www.youtube.com/embed/xzjCpVbr2yo" title="Finding Malware in Open Source Every Day, but Trust Compromise Keeps Me Up at Night" frameborder="0" allowfullscreen></iframe>
+
+<div style="border-top: 3px solid var(--border-color, #555); margin: 2.5rem 0;"></div>
+
 <h2 id="contagious-interview-hunting"><a href="#contagious-interview-hunting" class="presentation-link">Hunting North Korea's State-Sponsored "Contagious Interview" Operation</a></h2>
 
 This presentation examines how North Korean state-sponsored threat actors behind the "Contagious Interview" operation combine social engineering with malicious open source packages to compromise developers and tech job seekers. It analyzes hundreds of malicious npm packages that deliver multi-stage loaders and infostealers, including BeaverTail, InvisibleFerret, and OtterCookie, and shows how threat actors impersonate recruiters on LinkedIn, deliver "coding assignments" through GitHub and other platforms, and pressure targets to execute code locally.
