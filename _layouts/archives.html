@@ -36,7 +36,7 @@ layout: page
         <span class="date month small text-muted ms-1" data-ts="{{ ts }}" data-df="{{ df_dayjs_m }}">
           {{ item.date | date: df_strftime_m }}
         </span>
-        <a href="{{ '/presentations/' | relative_url }}#{{ item.slug }}">{{ item.short_title | default: item.title }}</a>
+        <a href="{{ '/presentations/' | relative_url }}#{{ item.slug }}">🎥 {{ item.short_title | default: item.title }}</a>
       </li>
     {% else %}
       <li>
