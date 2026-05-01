@@ -13,19 +13,7 @@ layout: page
 <style>
   #archives li.archive-talk a { color: #e67e22; }
   #archives li.archive-talk a:hover { color: #c2691c; }
-  #archives li.archive-talk .talk-badge {
-    display: inline-block;
-    margin-right: 0.45rem;
-    padding: 0.05rem 0.5rem;
-    font-size: 0.7rem;
-    font-weight: 600;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    border-radius: 999px;
-    background: rgba(230, 126, 34, 0.15);
-    color: #e67e22;
-    vertical-align: middle;
-  }
+  #archives li.archive-talk a::before { background-color: #e67e22; }
 </style>
 
 <div id="archives" class="pl-xl-3">
@@ -48,7 +36,7 @@ layout: page
         <span class="date month small text-muted ms-1" data-ts="{{ ts }}" data-df="{{ df_dayjs_m }}">
           {{ item.date | date: df_strftime_m }}
         </span>
-        <a href="{{ '/presentations/' | relative_url }}#{{ item.slug }}"><span class="talk-badge">Talk</span>{{ item.short_title | default: item.title }}</a>
+        <a href="{{ '/presentations/' | relative_url }}#{{ item.slug }}">{{ item.short_title | default: item.title }}</a>
       </li>
     {% else %}
       <li>
