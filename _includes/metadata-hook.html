@@ -195,14 +195,16 @@
 
 {% if page.url == '/presentations/' %}
 <style>
-  /* Presentation titles are clickable links to their own anchors */
-  h2 > span > a.presentation-link {
-    color: inherit;
-    text-decoration: none;
-  }
-  h2 > span > a.presentation-link:hover {
-    color: var(--link-color);
-    text-decoration: none;
+  /* Presentation titles are clickable but visually plain — no link styling */
+  h2 > span > a.presentation-link,
+  h2 > span > a.presentation-link:hover,
+  h2 > span > a.presentation-link:focus,
+  h2 > span > a.presentation-link:active,
+  h2 > span > a.presentation-link:visited {
+    color: inherit !important;
+    text-decoration: none !important;
+    border-bottom: none !important;
+    cursor: pointer;
   }
   /* Hide Chirpy's auto-injected heading anchor (#) — title link replaces it */
   h2 > a.anchor { display: none !important; }
