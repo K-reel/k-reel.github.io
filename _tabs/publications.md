@@ -307,7 +307,7 @@ hide_title: true
 </details>
 
 <details>
-<summary style="font-size:1.2rem"><span style="display:inline-block;vertical-align:top;max-width:calc(100% - 2em)">🕵️ <strong>Cybercrime, Underground Economy &amp; Influence Research</strong></span></summary>
+<summary style="font-size:1.2rem"><span style="display:inline-block;vertical-align:top;max-width:calc(100% - 2em)">🕵️ <strong>Cybercrime, Underground Economy &amp; Influence Operations Research</strong></span></summary>
 <ul class="content ps-0">
   <li class="px-md-3">
     <a href="/exploiting-npm-to-build-a-blockchain-powered-botnet/">Threat Actor Exposes Playbook for Exploiting npm to Build Blockchain-Powered Botnets</a>
