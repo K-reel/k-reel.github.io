@@ -94,17 +94,17 @@ toc: false
     font-weight: 600;
     letter-spacing: 0.04em;
     text-transform: uppercase;
-    padding: 0.12rem 0.55rem;
+    padding: 0.12rem 0.5rem;
     border-radius: 0.25rem;
-    background: rgba(13, 110, 253, 0.08);
-    color: var(--link-color, #0d6efd);
+    background: var(--btn-backtotop-bg, #f1f3f5);
+    color: var(--text-muted-color, #6c757d);
     text-decoration: none;
     transition: background 0.15s, color 0.15s;
   }
   .coverage-source:hover,
   .coverage-source:focus {
-    background: var(--link-color, #0d6efd);
-    color: #fff;
+    background: var(--main-border-color, #dee2e6);
+    color: var(--heading-color, #212529);
     text-decoration: none;
   }
   .coverage-topic {

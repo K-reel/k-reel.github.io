@@ -87,6 +87,7 @@
   date: 2021-02-24
   affiliation: Recorded Future
   topic: Disinformation
+  source_url: https://www.recordedfuture.com/research/disinformation-service-campaigns
 
 - outlet: Axios
   url: https://www.axios.com/2019/10/03/disinformation-misinformation-service-online
@@ -94,6 +95,7 @@
   date: 2019-10-03
   affiliation: Recorded Future
   topic: Disinformation
+  source_url: https://www.recordedfuture.com/research/disinformation-service-campaigns
 
 - outlet: Fortune
   url: https://fortune.com/2019/09/30/russian-disinformation-for-hire/
@@ -101,6 +103,7 @@
   date: 2019-09-30
   affiliation: Recorded Future
   topic: Disinformation
+  source_url: https://www.recordedfuture.com/research/disinformation-service-campaigns
 
 - outlet: CyberScoop
   url: https://cyberscoop.com/disinformation-research-recorded-future/
@@ -108,3 +111,4 @@
   date: 2019-09-30
   affiliation: Recorded Future
   topic: Disinformation
+  source_url: https://www.recordedfuture.com/research/disinformation-service-campaigns
