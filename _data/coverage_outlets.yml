@@ -1,0 +1,22 @@
+# Outlet metadata used by _tabs/coverage.md
+# Drop logo files into /assets/img/coverage/ matching the paths below.
+# Until a logo file exists, the page renders a letter-fallback badge.
+# Recommended logo size: ~80x80px PNG/SVG, transparent or white background.
+
+"BleepingComputer":
+  logo: /assets/img/coverage/bleepingcomputer.png
+
+"The Hacker News":
+  logo: /assets/img/coverage/hacker-news.png
+
+"Dark Reading":
+  logo: /assets/img/coverage/dark-reading.png
+
+"Forbes":
+  logo: /assets/img/coverage/forbes.png
+
+"TechCrunch":
+  logo: /assets/img/coverage/techcrunch.png
+
+"The Register":
+  logo: /assets/img/coverage/the-register.png
