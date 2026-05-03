@@ -130,3 +130,21 @@
   affiliation: Socket
   topic: Author Typosquatting
   source_url: /author-typosquatting-on-npm/
+
+- outlet: The Hacker News
+  url: https://thehackernews.com/2024/11/malicious-npm-packages-target-roblox.html
+  headline: "Malicious NPM Packages Target Roblox Users with Data-Stealing Malware"
+  date: 2024-11-08
+  quote: "This incident highlights the alarming ease with which threat actors can launch supply chain attacks by exploiting trust and human error within the open source ecosystem."
+  affiliation: Socket
+  topic: Infostealer
+  source_url: /roblox-developers-targeted-with-npm-packages-infected-with-infostealers/
+
+- outlet: Risky Biz
+  url: https://www.risky.biz/risky-biz-news-eu-warns-temu-to-respect-consumer-protection-laws/
+  headline: "Risky Biz News: EU warns Temu to respect consumer protection laws"
+  date: 2024-11-11
+  quote: "Socket Security has discovered five malicious npm packages designed to infect Roblox developers with malware."
+  affiliation: Socket
+  topic: Infostealer
+  source_url: /roblox-developers-targeted-with-npm-packages-infected-with-infostealers/
