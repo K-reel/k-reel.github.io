@@ -89,6 +89,24 @@ toc: false
     background: var(--btn-backtotop-bg, #f1f3f5);
     color: var(--text-muted-color, #6c757d);
   }
+  .coverage-source {
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    padding: 0.12rem 0.55rem;
+    border-radius: 0.25rem;
+    background: rgba(13, 110, 253, 0.08);
+    color: var(--link-color, #0d6efd);
+    text-decoration: none;
+    transition: background 0.15s, color 0.15s;
+  }
+  .coverage-source:hover,
+  .coverage-source:focus {
+    background: var(--link-color, #0d6efd);
+    color: #fff;
+    text-decoration: none;
+  }
   .coverage-topic {
     font-size: 0.78rem;
     color: var(--text-muted-color, #6c757d);
@@ -152,6 +170,7 @@ toc: false
       <div class="coverage-meta">
         <span class="coverage-date">{{ item.date | date: "%b %-d, %Y" }}</span>
         {% if item.affiliation %}<span class="coverage-affiliation">{{ item.affiliation }}</span>{% endif %}
+        {% if item.source_url %}<a class="coverage-source" href="{{ item.source_url }}">Source</a>{% endif %}
         {% if item.topic %}<span class="coverage-topic">{{ item.topic }}</span>{% endif %}
       </div>
       <a class="coverage-headline" href="{{ item.url }}" target="_blank" rel="noopener">{{ item.headline }}</a>

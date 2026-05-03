@@ -1,11 +1,12 @@
 # Media coverage entries — used by _tabs/coverage.md
 #
 # Required fields per entry: outlet, url, headline, date
-# Optional fields: quote, affiliation, topic, outlet_logo
+# Optional fields: quote, affiliation, topic, source_url
 #
 # Date format: YYYY-MM-DD (used for year grouping and sort)
 # affiliation: typically "Socket" or "Recorded Future"
-# outlet_logo: path under /assets/img/coverage/ (optional, used by logo strip)
+# source_url: link to the original research on this site, e.g. /sandworm-mode-npm-worm-ai-toolchain-poisoning/
+#             — when set, renders a clickable "Source" pill in the entry meta row.
 #
 # REPLACE PLACEHOLDER ENTRIES BELOW WITH ACTUAL DATA
 
@@ -16,6 +17,7 @@
   quote: "Boychenko said the operators have refined their loader chain to defeat static scanning, while keeping the same social-engineering playbook."
   affiliation: Socket
   topic: Contagious Interview
+  source_url: /contagious-interview-campaign-escalates-67-malicious-npm-packages/
 
 - outlet: The Hacker News
   url: https://thehackernews.com/
@@ -24,6 +26,7 @@
   quote: "The campaign blends into normal developer workflows and uses Solana memos as a dynamic dead drop, reducing the value of static indicators."
   affiliation: Socket
   topic: GlassWorm
+  source_url: /glassworm-loader-hits-open-vsx-via-suspected-developer-account-compromise/
 
 - outlet: Dark Reading
   url: https://www.darkreading.com/
@@ -32,6 +35,7 @@
   quote: "When an assistant reads a poisoned tool listing, the prompt injection tells the model to silently exfiltrate developer secrets — and to never mention it."
   affiliation: Socket
   topic: SANDWORM_MODE
+  source_url: /sandworm-mode-npm-worm-ai-toolchain-poisoning/
 
 - outlet: Forbes
   url: https://www.forbes.com/
@@ -40,6 +44,7 @@
   quote: "We're seeing the same operators, the same loaders, and the same social-engineering shape — at a meaningfully larger scale than last year."
   affiliation: Socket
   topic: Contagious Interview
+  source_url: /north-korea-contagious-interview-campaign-338-malicious-npm-packages/
 
 - outlet: TechCrunch
   url: https://techcrunch.com/
@@ -48,6 +53,7 @@
   quote: "Typosquatting against high-trust libraries continues to be one of the cheapest, highest-yield attacks on the JavaScript ecosystem."
   affiliation: Socket
   topic: Wallet Theft
+  source_url: /wallet-draining-npm-package-impersonates-nodemailer/
 
 - outlet: The Register
   url: https://www.theregister.com/
@@ -56,6 +62,7 @@
   quote: "The threat actor is rotating staging infrastructure while reusing the same loader pattern across multiple compromised publisher accounts."
   affiliation: Socket
   topic: Lazarus
+  source_url: /lazarus-expands-malicious-npm-campaign-11-new-packages-add-malware-loaders-and-bitbucket/
 
 - outlet: BleepingComputer
   url: https://www.bleepingcomputer.com/
@@ -64,6 +71,7 @@
   quote: "Keyloggers, webcam capture, and credential theft delivered as innocuous developer utilities — all running at install time."
   affiliation: Socket
   topic: Infostealer
+  source_url: /surveillance-malware-hidden-in-npm-and-pypi-packages/
 
 - outlet: Dark Reading
   url: https://www.darkreading.com/
