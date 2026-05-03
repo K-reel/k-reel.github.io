@@ -265,3 +265,12 @@
   affiliation: Socket
   topic: Typosquatting
   source_url: /malicious-package-exploits-go-module-proxy-caching-for-persistence/
+
+- outlet: Ars Technica
+  url: https://arstechnica.com/security/2025/02/backdoored-package-in-go-mirror-site-went-unnoticed-for-3-years/
+  headline: "Go Module Mirror served backdoor to devs for 3+ years"
+  date: 2025-02-05
+  quote: "Since November 2021, the Go Module Mirror has been hosting a backdoored version of a widely used module, security firm Socket said Monday."
+  affiliation: Socket
+  topic: Typosquatting
+  source_url: /malicious-package-exploits-go-module-proxy-caching-for-persistence/
