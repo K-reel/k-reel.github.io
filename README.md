@@ -1,4 +1,4 @@
-# Personal research portfolio and cyber threat intelligence blog
+# Personal site and cyber threat intelligence research blog
 
 This site collects my public research, writing, and presentations on cybersecurity, threat intelligence, software supply chain threats, malware analysis, adversary tradecraft, and detection engineering. My work spans cybercrime, APT activity, malicious packages, browser and developer extensions, adversary infrastructure, and supply chain intrusions across ecosystems such as npm, PyPI, Go Modules, RubyGems, Maven, Crates, NuGet, Packagist, Chrome, VS Code, and Open VSX.
 
