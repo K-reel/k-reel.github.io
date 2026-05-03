@@ -1,0 +1,74 @@
+# Media coverage entries — used by _tabs/coverage.md
+#
+# Required fields per entry: outlet, url, headline, date
+# Optional fields: quote, affiliation, topic, outlet_logo
+#
+# Date format: YYYY-MM-DD (used for year grouping and sort)
+# affiliation: typically "Socket" or "Recorded Future"
+# outlet_logo: path under /assets/img/coverage/ (optional, used by logo strip)
+#
+# REPLACE PLACEHOLDER ENTRIES BELOW WITH ACTUAL DATA
+
+- outlet: BleepingComputer
+  url: https://www.bleepingcomputer.com/
+  headline: "PLACEHOLDER — North Korea's Contagious Interview escalates npm targeting"
+  date: 2026-03-15
+  quote: "Boychenko said the operators have refined their loader chain to defeat static scanning, while keeping the same social-engineering playbook."
+  affiliation: Socket
+  topic: Contagious Interview
+
+- outlet: The Hacker News
+  url: https://thehackernews.com/
+  headline: "PLACEHOLDER — GlassWorm loader hits Open VSX via developer account compromise"
+  date: 2026-02-04
+  quote: "The campaign blends into normal developer workflows and uses Solana memos as a dynamic dead drop, reducing the value of static indicators."
+  affiliation: Socket
+  topic: GlassWorm
+
+- outlet: Dark Reading
+  url: https://www.darkreading.com/
+  headline: "PLACEHOLDER — Supply chain attackers turn AI toolchains into a delivery vector"
+  date: 2026-01-22
+  quote: "When an assistant reads a poisoned tool listing, the prompt injection tells the model to silently exfiltrate developer secrets — and to never mention it."
+  affiliation: Socket
+  topic: SANDWORM_MODE
+
+- outlet: Forbes
+  url: https://www.forbes.com/
+  headline: "PLACEHOLDER — Researchers track 338 malicious npm packages tied to North Korea"
+  date: 2025-10-10
+  quote: "We're seeing the same operators, the same loaders, and the same social-engineering shape — at a meaningfully larger scale than last year."
+  affiliation: Socket
+  topic: Contagious Interview
+
+- outlet: TechCrunch
+  url: https://techcrunch.com/
+  headline: "PLACEHOLDER — Wallet-draining npm package impersonates Nodemailer"
+  date: 2025-08-05
+  quote: "Typosquatting against high-trust libraries continues to be one of the cheapest, highest-yield attacks on the JavaScript ecosystem."
+  affiliation: Socket
+  topic: Wallet Theft
+
+- outlet: The Register
+  url: https://www.theregister.com/
+  headline: "PLACEHOLDER — Lazarus expands malicious npm campaign with new loaders"
+  date: 2025-04-04
+  quote: "The threat actor is rotating staging infrastructure while reusing the same loader pattern across multiple compromised publisher accounts."
+  affiliation: Socket
+  topic: Lazarus
+
+- outlet: BleepingComputer
+  url: https://www.bleepingcomputer.com/
+  headline: "PLACEHOLDER — Surveillance malware hidden in npm and PyPI packages"
+  date: 2025-07-23
+  quote: "Keyloggers, webcam capture, and credential theft delivered as innocuous developer utilities — all running at install time."
+  affiliation: Socket
+  topic: Infostealer
+
+- outlet: Dark Reading
+  url: https://www.darkreading.com/
+  headline: "PLACEHOLDER — Inside the cybercrime supply chain (Recorded Future research)"
+  date: 2024-06-12
+  quote: "Cybercrime increasingly mirrors legitimate SaaS economics — specialization, recurring access, and a brisk secondary market for fresh credentials."
+  affiliation: Recorded Future
+  topic: Cybercrime
