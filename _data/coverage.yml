@@ -72,3 +72,31 @@
   quote: "Cybercrime increasingly mirrors legitimate SaaS economics — specialization, recurring access, and a brisk secondary market for fresh credentials."
   affiliation: Recorded Future
   topic: Cybercrime
+
+- outlet: Rolling Stone
+  url: https://www.rollingstone.com/politics/politics-features/disinformation-conspiracy-theories-inoculation-edelman-corporate-america-1132325/
+  headline: "The Disinformation Vaccine: Is There a Cure for Conspiracy Theories?"
+  date: 2021-02-24
+  affiliation: Recorded Future
+  topic: Disinformation
+
+- outlet: Axios
+  url: https://www.axios.com/2019/10/03/disinformation-misinformation-service-online
+  headline: "From Russia to the Philippines, disinformation as a service crosses borders with ease"
+  date: 2019-10-03
+  affiliation: Recorded Future
+  topic: Disinformation
+
+- outlet: Fortune
+  url: https://fortune.com/2019/09/30/russian-disinformation-for-hire/
+  headline: "Disinformation for Hire: How Russian PR Firms Plant Stories for Companies in U.K. News Outlets, Social Media"
+  date: 2019-09-30
+  affiliation: Recorded Future
+  topic: Disinformation
+
+- outlet: CyberScoop
+  url: https://cyberscoop.com/disinformation-research-recorded-future/
+  headline: "Thriving 'disinformation-as-a-service' market could make smearing corporate rivals easy"
+  date: 2019-09-30
+  affiliation: Recorded Future
+  topic: Disinformation
