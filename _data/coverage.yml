@@ -175,3 +175,30 @@
   affiliation: Socket
   topic: RAT Malware
   source_url: /quasar-rat-disguised-as-an-npm-package/
+
+- outlet: Forbes
+  url: https://www.forbes.com/sites/daveywinder/2025/01/12/new-gmail-cyber-attack-warning-as-private-key-hackers-strike/
+  headline: "Gmail Cyber Attack Warning—Encryption Key Crypto Hack Confirmed"
+  date: 2025-01-12
+  quote: "They may guide even cautious users toward installing harmful dependencies, endangering individual projects and the broader software supply chain."
+  affiliation: Socket
+  topic: Wallet Theft
+  source_url: /gmail-for-exfiltration-malicious-npm-packages-target-solana-private-keys-and-drain-victim-s/
+
+- outlet: The Hacker News
+  url: https://thehackernews.com/2025/01/hackers-deploy-malicious-npm-packages.html
+  headline: "Hackers Deploy Malicious npm Packages to Steal Solana Wallet Keys via Gmail SMTP"
+  date: 2025-01-20
+  quote: "Because Gmail is a trusted email service, these exfiltration attempts are less likely to be flagged by firewalls or endpoint detection systems, which treat smtp.gmail.com as legitimate traffic."
+  affiliation: Socket
+  topic: Wallet Theft
+  source_url: /gmail-for-exfiltration-malicious-npm-packages-target-solana-private-keys-and-drain-victim-s/
+
+- outlet: Security Affairs
+  url: https://securityaffairs.com/173249/cyber-crime/malicious-npm-and-pypi-target-solana-private-keys.html
+  headline: "Malicious npm and PyPI target Solana Private keys to steal funds from victims' wallets"
+  date: 2025-01-20
+  quote: "The malicious packages do more than steal Solana private keys and exfiltrate them via Gmail. They take the attack further by programmatically draining the victim's wallet."
+  affiliation: Socket
+  topic: Wallet Theft
+  source_url: /gmail-for-exfiltration-malicious-npm-packages-target-solana-private-keys-and-drain-victim-s/
