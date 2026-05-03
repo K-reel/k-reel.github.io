@@ -164,7 +164,7 @@
   date: 2025-01-02
   quote: "Upon installation, it retrieves a malicious script from a remote server, executing it silently to deploy the RAT on Windows systems."
   affiliation: Socket
-  topic: RAT
+  topic: RAT Malware
   source_url: /quasar-rat-disguised-as-an-npm-package/
 
 - outlet: Vulnerable U
@@ -173,5 +173,5 @@
   date: 2025-01-03
   quote: "The package has been downloaded 66 times since December 18th and is still up on npm."
   affiliation: Socket
-  topic: RAT
+  topic: RAT Malware
   source_url: /quasar-rat-disguised-as-an-npm-package/
