@@ -137,7 +137,9 @@ toc: false
   <section class="coverage-outlet-section">
     <header class="coverage-outlet-header">
       {% if outlet_meta and outlet_meta.logo %}
-        <img src="{{ outlet_meta.logo }}" alt="{{ outlet }} logo" class="coverage-outlet-logo" />
+        <img src="{{ outlet_meta.logo }}" alt="{{ outlet }} logo" class="coverage-outlet-logo"
+             onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-flex';" />
+        <span class="coverage-outlet-fallback" style="display:none;">{{ outlet | slice: 0, 1 }}</span>
       {% else %}
         <span class="coverage-outlet-fallback">{{ outlet | slice: 0, 1 }}</span>
       {% endif %}
