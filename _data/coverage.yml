@@ -193,3 +193,30 @@
   affiliation: Socket
   topic: Wallet Theft
   source_url: /gmail-for-exfiltration-malicious-npm-packages-target-solana-private-keys-and-drain-victim-s/
+
+- outlet: Risky Biz
+  url: https://risky.biz/risky-bulletin-authorities-seize-cracked-and-nulled-cybercrime-forums/
+  headline: "Risky Bulletin: APTs, cyber-espionage, and info-ops"
+  date: 2025-01-31
+  quote: "On the same note, there's also a Socket Security report on a Lazarus campaign targeting devs with malicious npm packages."
+  affiliation: Socket
+  topic: Contagious Interview
+  source_url: /north-korean-apt-lazarus-targets-developers-with-malicious-npm-package/
+
+- outlet: The Hacker News
+  url: https://thehackernews.com/2025/02/north-korean-hackers-deploy-ferret.html
+  headline: "North Korean Hackers Deploy FERRET Malware via Fake Job Interviews on macOS"
+  date: 2025-02-04
+  quote: "By impersonating the legitimate postcss library, which has over 16 billion downloads, the threat actor aims to infect developers' systems with credential-stealing and data-exfiltration capabilities across Windows, macOS, and Linux systems."
+  affiliation: Socket
+  topic: Contagious Interview
+  source_url: /north-korean-apt-lazarus-targets-developers-with-malicious-npm-package/
+
+- outlet: ENISA
+  url: https://www.enisa.europa.eu/sites/default/files/2026-01/ENISA%20Threat%20Landscape%202025_v1.2.pdf
+  headline: "ENISA Threat Landscape 2025: Increasingly Targeted Cyber Dependencies"
+  date: 2025-10-01
+  quote: "Since 2022, and increasingly observed over the reporting period, DPRK-nexus Lazarus leveraged supply chain compromise, with its most recent activities pertaining to the deployment of malicious Node Package Manager (npm) packages in GitHub repositories, mimicking legitimate libraries to compromise developers' environments."
+  affiliation: Socket
+  topic: Contagious Interview
+  source_url: /north-korean-apt-lazarus-targets-developers-with-malicious-npm-package/
