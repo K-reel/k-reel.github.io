@@ -141,6 +141,15 @@
   source_url: /roblox-developers-targeted-with-npm-packages-infected-with-infostealers/
 
 - outlet: The Hacker News
+  url: https://thehackernews.com/2024/12/researchers-uncover-backdoor-in-solanas.html
+  headline: "Researchers Uncover Backdoor in Solana's Popular Web3.js npm Library"
+  date: 2024-12-04
+  quote: "These compromised versions contain injected malicious code that is designed to steal private keys from unsuspecting developers and users, potentially enabling attackers to drain cryptocurrency wallets."
+  affiliation: Socket
+  topic: Wallet Theft
+  source_url: /malicious-npm-packages-threaten-crypto-developers/
+
+- outlet: The Hacker News
   url: https://thehackernews.com/2025/01/russian-speaking-attackers-target.html
   headline: "Cybercriminals Target Ethereum Developers with Fake Hardhat npm Packages"
   date: 2025-01-06
