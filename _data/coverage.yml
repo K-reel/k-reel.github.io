@@ -121,3 +121,12 @@
   affiliation: Recorded Future
   topic: Human Trafficking
   source_url: /combating-human-trafficking-with-threat-intelligence-prosecution/
+
+- outlet: Risky Biz
+  url: https://www.risky.biz/risky-biz-news-us-removes-sandvine-from-sanctions-list-after-pinky-promise/
+  headline: "Risky Biz News: US removes Sandvine from sanctions list after pinky promise"
+  date: 2024-11-01
+  quote: "Besides domain name and package typosquatting, we now have author typosquatting—where threat actors register profiles similar to well-known and trusted developers."
+  affiliation: Socket
+  topic: Author Typosquatting
+  source_url: /author-typosquatting-on-npm/

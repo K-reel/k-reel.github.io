@@ -3,7 +3,6 @@ icon: fas fa-newspaper
 order: 3
 hide_title: true
 toc: false
-published: false  # remove this line to re-enable the Coverage tab
 ---
 
 <style>
