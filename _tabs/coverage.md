@@ -23,7 +23,7 @@ toc: false
     gap: 0.85rem;
     margin-bottom: 0.75rem;
     padding-bottom: 0.55rem;
-    border-bottom: 1px solid var(--main-border-color, #e9ecef);
+    border-bottom: 1px solid rgba(128, 128, 128, 0.28);
   }
 
   .coverage-outlet-logo {
@@ -53,6 +53,8 @@ toc: false
     font-weight: 700;
     margin: 0;
     color: var(--heading-color, #212529);
+    border: 0;
+    padding: 0;
   }
 
   .coverage-outlet-count {
