@@ -134,9 +134,9 @@ toc: false
 <div class="coverage-intro">
 <p>My work and contributions at Socket and Recorded Future have been cited, shared, and discussed across multiple security venues.</p>
 
-<p>I’m grateful to have my research surfaced by respected security newsletters and communities, including <a href="https://risky.biz/" target="_blank" rel="noopener">Risky Biz</a>, <a href="https://tldrsec.com/" target="_blank" rel="noopener">tl;dr sec</a>, and <a href="https://www.vulnu.com/" target="_blank" rel="noopener">VulnerableU</a>. This section collects public examples of that coverage and shows how the work reaches practitioners beyond the original publication.</p>
+<p>I’m grateful to have my research surfaced by respected security publications, newsletters, and communities, including <a href="https://thehackernews.com/" target="_blank" rel="noopener">The Hacker News</a>, <a href="https://risky.biz/" target="_blank" rel="noopener">Risky Biz</a>, <a href="https://www.detectionengineering.net/" target="_blank" rel="noopener">Detection Engineering Weekly</a>, <a href="https://tldrsec.com/" target="_blank" rel="noopener">tl;dr sec</a>, and <a href="https://www.vulnu.com/" target="_blank" rel="noopener">VulnerableU</a>. This section collects public examples of that coverage and shows how the work reaches practitioners beyond the original publication.</p>
 
-<p>For me, this kind of visibility matters because it helps confirm that the research is useful, read by defenders, and contributing to the broader effort to protect the software supply chain and open source ecosystem from threat actors who abuse trusted technology.</p>
+<p>This kind of visibility helps confirm that the research is useful, read by defenders, and contributing to the broader effort to protect our community from threat actors who seek to abuse the systems and technologies we trust.</p>
 </div>
 
 {% assign coverage = site.data.coverage | sort: 'date' | reverse %}
