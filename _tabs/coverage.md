@@ -124,6 +124,20 @@ toc: false
     line-height: 1.4;
     margin: 0.15rem 0 0.4rem;
   }
+  a.coverage-headline,
+  a.coverage-headline:link,
+  a.coverage-headline:visited {
+    color: var(--heading-color, #212529);
+    text-decoration: underline;
+    text-decoration-color: rgba(128, 128, 128, 0.45);
+    text-underline-offset: 0.18em;
+  }
+  a.coverage-headline:hover,
+  a.coverage-headline:focus,
+  a.coverage-headline:active {
+    color: var(--heading-color, #212529);
+    text-decoration-color: var(--heading-color, #212529);
+  }
 
   .coverage-quote {
     margin: 0.4rem 0 0;
