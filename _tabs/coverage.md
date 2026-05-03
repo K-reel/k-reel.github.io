@@ -7,9 +7,11 @@ toc: false
 
 <style>
   .coverage-intro {
-    margin-bottom: 1.5rem;
-    color: var(--text-muted-color, #6c757d);
+    margin-bottom: 2rem;
+    line-height: 1.65;
   }
+  .coverage-intro p { margin-bottom: 0.85rem; }
+  .coverage-intro p:last-child { margin-bottom: 0; }
 
   .coverage-year {
     font-size: 1.5rem;
@@ -74,9 +76,13 @@ toc: false
   }
 </style>
 
-<p class="coverage-intro">
-Selected media coverage of my research and commentary on software supply chain threats, malware analysis, and threat intelligence.
-</p>
+<div class="coverage-intro">
+<p>My work and contributions at Socket and Recorded Future have been cited, shared, and discussed across multiple security venues.</p>
+
+<p>I’m grateful to have my research surfaced by respected security newsletters and communities, including <a href="https://risky.biz/" target="_blank" rel="noopener">Risky Biz</a>, <a href="https://tldrsec.com/" target="_blank" rel="noopener">tl;dr sec</a>, and <a href="https://www.vulnu.com/" target="_blank" rel="noopener">VulnerableU</a>. This section collects public examples of that coverage and shows how the work reaches practitioners beyond the original publication.</p>
+
+<p>For me, this kind of visibility matters because it helps confirm that the research is useful, read by defenders, and contributing to the broader effort to protect the software supply chain and open source ecosystem from threat actors who abuse trusted technology.</p>
+</div>
 
 {% assign coverage = site.data.coverage | sort: 'date' | reverse %}
 {% assign by_year = coverage | group_by_exp: "item", "item.date | date: '%Y'" %}
