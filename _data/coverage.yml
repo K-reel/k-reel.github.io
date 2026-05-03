@@ -212,9 +212,9 @@
   topic: Contagious Interview
   source_url: /north-korean-apt-lazarus-targets-developers-with-malicious-npm-package/
 
-- outlet: ENISA
+- outlet: "ENISA (European Union Agency for Cybersecurity)"
   url: https://www.enisa.europa.eu/sites/default/files/2026-01/ENISA%20Threat%20Landscape%202025_v1.2.pdf
-  headline: "ENISA (European Union Agency for Cybersecurity) Threat Landscape 2025: Increasingly Targeted Cyber Dependencies"
+  headline: "ENISA Threat Landscape 2025: Increasingly Targeted Cyber Dependencies"
   date: 2025-10-01
   quote: "Since 2022, and increasingly observed over the reporting period, DPRK-nexus Lazarus leveraged supply chain compromise, with its most recent activities pertaining to the deployment of malicious Node Package Manager (npm) packages in GitHub repositories, mimicking legitimate libraries to compromise developers' environments."
   affiliation: Socket
