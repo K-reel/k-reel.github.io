@@ -112,3 +112,12 @@
   affiliation: Recorded Future
   topic: Disinformation
   source_url: /disinformation-service-campaigns/
+
+- outlet: BankInfoSecurity
+  url: https://www.bankinfosecurity.com/kirill-boychenko-rsa-a-21743
+  headline: "Combating Human Trafficking With Threat Intelligence"
+  date: 2023-05-01
+  quote: "We wanted to go beyond scare to actionable. We wanted to offer solutions that would help."
+  affiliation: Recorded Future
+  topic: Human Trafficking
+  source_url: /combating-human-trafficking-with-threat-intelligence-prosecution/
