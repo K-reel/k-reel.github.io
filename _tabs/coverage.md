@@ -89,7 +89,9 @@ toc: false
     background: var(--btn-backtotop-bg, #f1f3f5);
     color: var(--text-muted-color, #6c757d);
   }
-  .coverage-source {
+  a.coverage-source,
+  a.coverage-source:link,
+  a.coverage-source:visited {
     font-size: 0.7rem;
     font-weight: 600;
     letter-spacing: 0.04em;
@@ -101,8 +103,9 @@ toc: false
     text-decoration: none;
     transition: background 0.15s, color 0.15s;
   }
-  .coverage-source:hover,
-  .coverage-source:focus {
+  a.coverage-source:hover,
+  a.coverage-source:focus,
+  a.coverage-source:active {
     background: var(--main-border-color, #dee2e6);
     color: var(--heading-color, #212529);
     text-decoration: none;
