@@ -148,3 +148,12 @@
   affiliation: Socket
   topic: Infostealer
   source_url: /roblox-developers-targeted-with-npm-packages-infected-with-infostealers/
+
+- outlet: The Hacker News
+  url: https://thehackernews.com/2025/01/russian-speaking-attackers-target.html
+  headline: "Cybercriminals Target Ethereum Developers with Fake Hardhat npm Packages"
+  date: 2025-01-06
+  quote: "By exploiting trust in open source plugins, attackers have infiltrated these platforms through malicious npm packages, exfiltrating critical data such as private keys."
+  affiliation: Socket
+  topic: Hardhat
+  source_url: /exploiting-npm-to-build-a-blockchain-powered-botnet/
