@@ -157,3 +157,21 @@
   affiliation: Socket
   topic: Wallet Theft
   source_url: /exploiting-npm-to-build-a-blockchain-powered-botnet/
+
+- outlet: The Hacker News
+  url: https://thehackernews.com/2025/01/malicious-obfuscated-npm-package.html
+  headline: "Malicious Obfuscated NPM Package Disguised as an Ethereum Tool Deploys Quasar RAT"
+  date: 2025-01-02
+  quote: "Upon installation, it retrieves a malicious script from a remote server, executing it silently to deploy the RAT on Windows systems."
+  affiliation: Socket
+  topic: RAT
+  source_url: /quasar-rat-disguised-as-an-npm-package/
+
+- outlet: Vulnerable U
+  url: https://www.vulnu.com/p/vulnerable-u-097
+  headline: "Vulnerable U #097"
+  date: 2025-01-03
+  quote: "The package has been downloaded 66 times since December 18th and is still up on npm."
+  affiliation: Socket
+  topic: RAT
+  source_url: /quasar-rat-disguised-as-an-npm-package/
