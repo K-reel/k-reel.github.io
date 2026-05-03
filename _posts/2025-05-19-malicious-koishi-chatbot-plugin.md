@@ -19,7 +19,7 @@ _Socket's AI Scanner flags `koishi‑plugin‑pinhaofa` as "Known malware"._
 
 ## Chatbots Are on the Rise
 
-Chatbots have become a major channel for customer engagement. eMarketer [predicts](https://www.emarketer.com/learningcenter/guides/chatbot-market-stats-trends/?utm_source=chatgpt.com) that by 2026 one in three U.S. adults will rely on banking chatbots. Koishi [supports](https://koishi.chat/en-US/) this growth with a TypeScript framework that lets developers run the same bot on QQ, Telegram, Discord, and other platforms from a single codebase. Its marketplace offers more than one thousand community plugins. Each plugin runs inside the bot process, giving it unrestricted access to read or modify every message.
+Chatbots have become a major channel for customer engagement. eMarketer [predicts](https://www.emarketer.com/learningcenter/guides/chatbot-market-stats-trends/) that by 2026 one in three U.S. adults will rely on banking chatbots. Koishi [supports](https://koishi.chat/en-US/) this growth with a TypeScript framework that lets developers run the same bot on QQ, Telegram, Discord, and other platforms from a single codebase. Its marketplace offers more than one thousand community plugins. Each plugin runs inside the bot process, giving it unrestricted access to read or modify every message.
 
 ![Key e-commerce chatbot functions](https://cdn.sanity.io/images/cgdhsj6q/production/09ffe9d4970f2213e2b55c65e9c2cf717f1d60aa-2048x1077.png)
 _Examples of key e‑commerce chatbot functions (Source: [Botpress](https://botpress.com/blog/conversational-ai-for-e-commerce))._

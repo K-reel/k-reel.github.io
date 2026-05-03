@@ -29,7 +29,7 @@ _Socket AI Scanner's analysis of the malicious MEXC API Automator Chrome extensi
 
 MEXC is a large centralized cryptocurrency exchange that offers trading to users in more than 170 countries and territories. That global footprint, combined with an API that supports automated trading and withdrawals, makes MEXC an attractive target for cybercriminals who want to turn stolen API credentials into direct financial gain.
 
-Online reviews [estimate](https://www.bitdegree.org/crypto/tutorials/how-to-use-mexc?utm_source=chatgpt.com) that MEXC serves millions of users. At the same time, the exchange states that it does not provide services to users in the United States, Canada, the United Kingdom, Singapore, parts of China, and several sanctioned countries. Public guides still [encourage](https://veepn.com/blog/how-to-use-mexc-in-the-us/) users in some of these countries to access MEXC via VPNs, especially in the United States, which broadens the potential victim pool and complicates response and recovery.
+Online reviews [estimate](https://www.bitdegree.org/crypto/tutorials/how-to-use-mexc) that MEXC serves millions of users. At the same time, the exchange states that it does not provide services to users in the United States, Canada, the United Kingdom, Singapore, parts of China, and several sanctioned countries. Public guides still [encourage](https://veepn.com/blog/how-to-use-mexc-in-the-us/) users in some of these countries to access MEXC via VPNs, especially in the United States, which broadens the potential victim pool and complicates response and recovery.
 
 ![The MEXC website's Convert page, listing cryptocurrencies traded on the exchange.](https://cdn.sanity.io/images/cgdhsj6q/production/ea03e6b310a3a986b73aeb0ce27c8c7465751bf8-1694x1600.png)
 _This image shows the MEXC website's Convert page, listing a few of the more than 2,000 cryptocurrencies traded on the centralized exchange, such as BTC, XRP, MX, and ETH._
@@ -44,7 +44,7 @@ On the surface, `MEXC API Automator` simply automates API key creation for trade
 
 Once the threat actor obtains such a key, they can interact with the MEXC API as the victim, execute trades, and initiate withdrawals without needing the user's password or second factor authentication.
 
-In the Chrome Web Store [description](https://chromewebstore.google.com/detail/mexc-api-automator/pppdfgkfdemgfknfnhpkibbkabhghhfh?utm_source=chatgpt.com), the threat actor markets `MEXC API Automator` as a productivity extension that "automates API key creation on MEXC platform". The listing claims the extension will automatically generate API keys with the necessary permissions, "including access to trading and withdrawals", directly on the MEXC API management page.
+In the Chrome Web Store [description](https://chromewebstore.google.com/detail/mexc-api-automator/pppdfgkfdemgfknfnhpkibbkabhghhfh), the threat actor markets `MEXC API Automator` as a productivity extension that "automates API key creation on MEXC platform". The listing claims the extension will automatically generate API keys with the necessary permissions, "including access to trading and withdrawals", directly on the MEXC API management page.
 
 ![The Chrome Web Store listing for the MEXC API Automator extension.](https://cdn.sanity.io/images/cgdhsj6q/production/0c7d2f91457c722207931dac15920302bba2d4d6-2048x1445.png)
 _This image shows the Chrome Web Store listing for the MEXC API Automator extension, which promotes itself with a screenshot of MEXC's "API Management / Create New API Key" page._
