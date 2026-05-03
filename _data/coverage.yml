@@ -220,3 +220,48 @@
   affiliation: Socket
   topic: Contagious Interview
   source_url: /north-korean-apt-lazarus-targets-developers-with-malicious-npm-package/
+
+- outlet: The Hacker News
+  url: https://thehackernews.com/2025/02/malicious-go-package-exploits-module.html
+  headline: "Malicious Go Package Exploits Module Mirror Caching for Persistent Remote Access"
+  date: 2025-02-04
+  quote: "Once a module version is cached, it remains accessible through the Go Module Proxy, even if the original source is later modified."
+  affiliation: Socket
+  topic: Typosquatting
+  source_url: /malicious-package-exploits-go-module-proxy-caching-for-persistence/
+
+- outlet: The Register
+  url: https://www.theregister.com/2025/02/04/golang_supply_chain_attack/
+  headline: "Poisoned Go programming language package lay undetected for 3 years"
+  date: 2025-02-04
+  quote: "This attack is among the first documented instances of a malicious actor exploiting the Go Module Mirror's indefinite caching of modules."
+  affiliation: Socket
+  topic: Typosquatting
+  source_url: /malicious-package-exploits-go-module-proxy-caching-for-persistence/
+
+- outlet: Risky Biz
+  url: https://risky.biz/risky-bulletin-crypto-stealer-makes-it-on-the-ios-app-store/
+  headline: "Risky Bulletin: Arrests, cybercrime, and threat intel"
+  date: 2025-02-05
+  quote: "Security researchers have discovered a malicious Go module for the BoltDB database that contains a hidden backdoor. According to Socket Security, the module is cached in the Go Module Mirror."
+  affiliation: Socket
+  topic: Typosquatting
+  source_url: /malicious-package-exploits-go-module-proxy-caching-for-persistence/
+
+- outlet: TechRadar Pro
+  url: https://www.techradar.com/pro/security/a-cracked-malicious-version-of-a-go-package-lay-undetected-online-for-years
+  headline: "A cracked malicious version of a Go package lay undetected online for years"
+  date: 2025-02-05
+  quote: "The package grants the threat actor remote access to the infected system, allowing them to execute arbitrary commands."
+  affiliation: Socket
+  topic: Typosquatting
+  source_url: /malicious-package-exploits-go-module-proxy-caching-for-persistence/
+
+- outlet: tl;dr sec
+  url: https://tldrsec.com/p/tldr-sec-266
+  headline: "tl;dr sec #266: Supply Chain"
+  date: 2025-02-13
+  quote: "Socket's Kirill Boychenko describes finding a malicious typosquat Golang package. The interesting part is that after the malware was cached by the Go Module Mirror, which the Go CLI toolchain downloads from, the git tag was strategically altered on GitHub to point to a clean, legitimate version, hiding it from manual code review."
+  affiliation: Socket
+  topic: Typosquatting
+  source_url: /malicious-package-exploits-go-module-proxy-caching-for-persistence/
