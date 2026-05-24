@@ -35,7 +35,7 @@ The malicious publish activity tonight began around 01:56 UTC and continued unti
 
 Across the full Mini Shai-Hulud campaign we have tracked 1,055 versions across 502 unique packages. The campaign spans npm, PyPI, and Composer, with npm representing the overwhelming majority of the activity: 1,048 npm versions across 498 unique npm packages, plus 6 PyPI entries across 3 packages and 1 Composer package-version entry.
 
-<blockquote class="twitter-tweet" align="center">
+<blockquote class="twitter-tweet">
   <a href="https://x.com/adnanthekhan/status/2056570961030197485"></a>
 </blockquote>
 <script async src="//platform.twitter.com/widgets.js"></script>
