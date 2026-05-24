@@ -177,6 +177,23 @@
     left: 50% !important;
     transform: translate(-50%, -50%) !important;
   }
+  /* AntV logo hero/preview: contain + center with whitespace, applies on all pages */
+  .preview-img:has(img[src*="avatars.githubusercontent.com/u/19199542"]) {
+    background: #93c5fd;
+    position: relative;
+  }
+  .preview-img img[src*="avatars.githubusercontent.com/u/19199542"] {
+    object-fit: contain !important;
+    object-position: center center !important;
+    width: auto !important;
+    height: auto !important;
+    max-width: 50% !important;
+    max-height: 70% !important;
+    position: absolute !important;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+  }
   /* Allow full title and description wrap on home page cards */
   #post-list .card-title,
   #post-list .card-text,
