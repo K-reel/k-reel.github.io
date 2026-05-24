@@ -3,7 +3,7 @@ title: "Mini Shai-Hulud Hits @antv Ecosystem, 639 Compromised npm Package Versio
 short_title: "Mini Shai-Hulud Hits @antv Ecosystem"
 date: 2026-05-18 12:00:00 +0000
 categories: [Malware, Supply Chain]
-tags: [Shai-Hulud, Mini Shai-Hulud, AntV, atool, echarts-for-react, npm, JavaScript, Infostealer, Obfuscation, Developer Compromise, Bun, AES-256-GCM, RSA-OAEP, Worm, Composer, PyPI, Python]
+tags: [Shai-Hulud, npm, JavaScript, Infostealer, Obfuscation, Developer Compromise, Worm, Composer, Packagist, PHP, PyPI, Python]
 author: socket_research_team
 canonical_url: https://socket.dev/blog/antv-packages-compromised
 source: Socket
