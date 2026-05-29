@@ -3,7 +3,7 @@ title: "Malicious NuGet Package Impersonates Sicoob SDK to Exfiltrate Banking Ce
 short_title: "Malicious NuGet Impersonates Sicoob SDK"
 date: 2026-05-28 12:00:00 +0000
 categories: [Malware, NuGet]
-tags: [NuGet, .NET, C#, Sicoob, Brazil, Banking, Impersonation, mTLS, PFX, Sentry, T1195.002, T1204.005, T1036.005, T1552.001, T1005, T1041, T1071.001]
+tags: [NuGet, .NET, T1195.002, T1204.005, T1036.005, T1552.001, T1005, T1041, T1071.001]
 canonical_url: https://socket.dev/blog/malicious-nuget-package-impersonates-sicoob-sdk
 source: Socket
 image:
