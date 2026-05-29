@@ -253,6 +253,9 @@ hide_title: true
 <summary style="font-size:1.2rem"><span style="display:inline-block;vertical-align:top;max-width:calc(100% - 2em)">⚙️ <strong>NuGet / .NET</strong></span></summary>
 <ul class="content ps-0">
   <li class="px-md-3">
+    <a href="/malicious-nuget-package-impersonates-sicoob-sdk/">Malicious NuGet Package Impersonates Sicoob SDK to Exfiltrate Banking Certificates and Passwords</a>
+  </li>
+  <li class="px-md-3">
     <a href="/malicious-nuget-package-typosquats-popular-net-tracing-library/">Malicious NuGet Package Typosquats Popular .NET Tracing Library to Steal Wallet Passwords</a>
   </li>
   <li class="px-md-3">
