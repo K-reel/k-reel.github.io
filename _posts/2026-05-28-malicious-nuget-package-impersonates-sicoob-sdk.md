@@ -173,7 +173,7 @@ For financial integrations, organizations should apply stricter review to any SD
 
 ### Related NuGet package set
 
-1. [`Sicoob-Cooperativa.Sicoob.Auth`](https://socket.dev/nuget/package/Sicoob-Cooperativa.Sicoob.Auth)
+2. [`Sicoob-Cooperativa.Sicoob.Auth`](https://socket.dev/nuget/package/Sicoob-Cooperativa.Sicoob.Auth)
 1. [`Sicoob-Cooperativa.Sicoob.CobrancaV3`](https://socket.dev/nuget/package/Sicoob-Cooperativa.Sicoob.CobrancaV3)
 1. [`Sicoob-Cooperativa.Sicoob.ContaCorrente`](https://socket.dev/nuget/package/Sicoob-Cooperativa.Sicoob.ContaCorrente)
 1. [`Sicoob-Cooperativa.Sicoob.ConvenioPagamentos`](https://socket.dev/nuget/package/Sicoob-Cooperativa.Sicoob.ConvenioPagamentos)
