@@ -280,6 +280,9 @@ hide_title: true
 <summary style="font-size:1.2rem"><span style="display:inline-block;vertical-align:top;max-width:calc(100% - 2em)">🐘 <strong>Packagist / PHP</strong></span></summary>
 <ul class="content ps-0">
   <li class="px-md-3">
+    <a href="/famous-chollima-targets-php-developers-through-compromised-packagist-package/">Famous Chollima Targets PHP Developers Through Compromised Packagist Package</a>
+  </li>
+  <li class="px-md-3">
     <a href="/mini-shai-hulud-packagist-malicious-intercom-php-package-compromise/">Mini Shai-Hulud Spreads to Packagist: Malicious Intercom PHP Package Follows npm Compromise</a>
   </li>
 </ul>
