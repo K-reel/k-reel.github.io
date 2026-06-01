@@ -3,7 +3,7 @@ title: "Famous Chollima Targets PHP Developers Through Compromised Packagist Pac
 short_title: "Famous Chollima Targets PHP Developers via Packagist"
 date: 2026-05-31 12:00:00 +0000
 categories: [Malware, Supply Chain]
-tags: [Packagist, Composer, PHP, T1195.002, T1204.002, T1059.007, T1027, T1102.001, T1105]
+tags: [Famous Chollima, Contagious Interview, Packagist, Composer, PHP, T1195.002, T1204.002, T1059.007, T1027, T1102.001, T1105]
 canonical_url: https://socket.dev/blog/famous-chollima-targets-php-developers-through-compromised-packagist-package
 source: Socket
 image:
