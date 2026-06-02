@@ -3,7 +3,7 @@ title: "Mini Shai-Hulud Campaign Hits Red Hat Cloud Services npm Packages"
 short_title: "Mini Shai-Hulud Hits Red Hat Cloud Services npm"
 date: 2026-06-01 12:00:00 +0000
 categories: [Malware, Supply Chain]
-tags: [Shai-Hulud, TeamPCP, npm, JavaScript]
+tags: [Shai-Hulud, TeamPCP, Worm, Developer Compromise, GitHub Actions, Obfuscation, npm, JavaScript]
 author: socket_research_team
 canonical_url: https://socket.dev/blog/mini-shai-hulud-campaign-hits-red-hat-cloud-services-npm-packages
 source: Socket
