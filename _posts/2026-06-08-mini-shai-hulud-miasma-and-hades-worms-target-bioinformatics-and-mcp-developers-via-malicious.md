@@ -3,7 +3,7 @@ title: "Mini Shai-Hulud, Miasma, and Hades Worms Target Bioinformatics and MCP D
 short_title: "Mini Shai-Hulud, Miasma, Hades Hit PyPI Bioinformatics and MCP"
 date: 2026-06-08 12:00:00 +0000
 categories: [Malware, PyPI]
-tags: [Shai-Hulud, Worm, Typosquatting, Infostealer, Obfuscation, Developer Compromise, PyPI, Python]
+tags: [Shai-Hulud, TeamPCP, Worm, Typosquatting, Infostealer, Obfuscation, Developer Compromise, PyPI, Python]
 canonical_url: https://socket.dev/blog/mini-shai-hulud-miasma-and-hades-worms-target-bioinformatics-and-mcp-developers-via-malicious
 source: Socket
 image:
