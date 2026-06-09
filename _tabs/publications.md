@@ -190,6 +190,9 @@ hide_title: true
 <summary style="font-size:1.2rem"><span style="display:inline-block;vertical-align:top;max-width:calc(100% - 2em)">🐍 <strong>PyPI / Python</strong></span></summary>
 <ul class="content ps-0">
   <li class="px-md-3">
+    <a href="/mini-shai-hulud-miasma-and-hades-worms-target-bioinformatics-and-mcp-developers-via-malicious/">Mini Shai-Hulud, Miasma, and Hades Worms Target Bioinformatics and MCP Developers via Malicious PyPI Wheels</a>
+  </li>
+  <li class="px-md-3">
     <a href="/pypi-package-impersonates-sympy-to-deliver-cryptomining-malware/">PyPI Package Impersonates SymPy to Deliver Cryptomining Malware</a>
   </li>
   <li class="px-md-3">
