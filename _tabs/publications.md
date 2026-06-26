@@ -55,6 +55,9 @@ hide_title: true
 <summary style="font-size:1.2rem"><span style="display:inline-block;vertical-align:top;max-width:calc(100% - 2em)">🧯 <strong>Supply Chain Incidents</strong></span></summary>
 <ul class="content ps-0">
   <li class="px-md-3">
+    <a href="/miasma-mini-shai-hulud-hits-immobiliarelabs-npm-packages/">Miasma Mini Shai-Hulud Hits ImmobiliareLabs npm Packages</a>
+  </li>
+  <li class="px-md-3">
     <a href="/mini-shai-hulud-campaign-hits-red-hat-cloud-services-npm-packages/">Mini Shai-Hulud Campaign Hits Red Hat Cloud Services npm Packages</a>
   </li>
   <li class="px-md-3">
