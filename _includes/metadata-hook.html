@@ -321,12 +321,16 @@
   h1 > a[href^="#"], h2 > a[href^="#"], h3 > a[href^="#"],
   h4 > a[href^="#"], h5 > a[href^="#"], h6 > a[href^="#"],
   .anchor-link { display: none !important; }
-  /* Center Twitter/X embeds (pre- and post-widget render) */
+  /* Center and enlarge Twitter/X embeds (pre- and post-widget render) */
   .twitter-tweet,
   twitter-widget {
     margin-left: auto !important;
     margin-right: auto !important;
     display: block !important;
+  }
+  /* Scale the rendered widget up; zoom reflows layout so it stays centered */
+  twitter-widget {
+    zoom: 1.3;
   }
 </style>
 {% endif %}
