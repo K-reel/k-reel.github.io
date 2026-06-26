@@ -214,6 +214,9 @@ hide_title: true
 <summary style="font-size:1.2rem"><span style="display:inline-block;vertical-align:top;max-width:calc(100% - 2em)">🐹 <strong>Go Modules / Golang</strong></span></summary>
 <ul class="content ps-0">
   <li class="px-md-3">
+    <a href="/miasma-mini-shai-hulud-hits-leoplatform-npm-packages-go-ecosystem/">Miasma Mini Shai-Hulud Hits LeoPlatform npm Packages and GitHub Actions, Expands to the Go Ecosystem</a>
+  </li>
+  <li class="px-md-3">
     <a href="/malicious-go-crypto-module-steals-passwords/">Malicious Go "crypto" Module Steals Passwords and Deploys Rekoobe Backdoor</a>
   </li>
   <li class="px-md-3">
