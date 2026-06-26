@@ -321,15 +321,16 @@
   h1 > a[href^="#"], h2 > a[href^="#"], h3 > a[href^="#"],
   h4 > a[href^="#"], h5 > a[href^="#"], h6 > a[href^="#"],
   .anchor-link { display: none !important; }
-  /* Twitter/X embeds: center (works for both block and inline-block render) and enlarge */
+  /* Twitter/X embeds: center via flexbox (reliable regardless of the widget's
+     display type, float, or whether the zoomed width nears the column width) */
   .tweet-embed {
-    text-align: center !important;
+    display: flex !important;
+    justify-content: center !important;
     margin: 1.5rem 0;
   }
   .tweet-embed .twitter-tweet,
   .tweet-embed .twitter-tweet-rendered,
   .tweet-embed twitter-widget {
-    display: inline-block !important;
     float: none !important;
     margin-left: auto !important;
     margin-right: auto !important;
