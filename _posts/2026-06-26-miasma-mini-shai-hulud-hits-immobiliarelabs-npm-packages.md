@@ -99,9 +99,11 @@ We do not assess this as confirmed root cause without runner logs, token-use tel
 
 Security researcher Adnan Khan publicly [warned](https://x.com/adnanthekhan/status/2070532262475551181) that an unpatched GitHub Actions privilege-escalation issue could allow attackers to dump Actions secrets or abuse OIDC without the `workflow` OAuth scope, and recommended blocking the technique by restricting workflow execution on the `deployment` trigger.
 
-<blockquote class="twitter-tweet">
+<div class="tweet-embed">
+<blockquote class="twitter-tweet" data-width="550" data-align="center" data-dnt="true">
   <a href="https://x.com/adnanthekhan/status/2070532262475551181"></a>
 </blockquote>
+</div>
 <script async src="//platform.twitter.com/widgets.js"></script>
 
 Socket’s analysis of the Miasma activity aligns with the risk Khan described. GitHub’s `deployment` event is designed to run a workflow when a deployment is created in a repository. In the attack pattern referenced by Khan, an attacker does not need to make a straightforward commit that permanently modifies a workflow file on the default branch. Instead, the attacker can create temporary Git objects containing a workflow, make the commit reachable, create a deployment that targets that commit, and trigger workflow execution through the deployment event.

@@ -321,16 +321,26 @@
   h1 > a[href^="#"], h2 > a[href^="#"], h3 > a[href^="#"],
   h4 > a[href^="#"], h5 > a[href^="#"], h6 > a[href^="#"],
   .anchor-link { display: none !important; }
-  /* Center and enlarge Twitter/X embeds (pre- and post-widget render) */
-  .twitter-tweet,
-  twitter-widget {
+  /* Twitter/X embeds: center (works for both block and inline-block render) and enlarge */
+  .tweet-embed {
+    text-align: center !important;
+    margin: 1.5rem 0;
+  }
+  .tweet-embed .twitter-tweet,
+  .tweet-embed .twitter-tweet-rendered,
+  .tweet-embed twitter-widget {
+    display: inline-block !important;
+    float: none !important;
     margin-left: auto !important;
     margin-right: auto !important;
-    display: block !important;
   }
-  /* Scale the rendered widget up; zoom reflows layout so it stays centered */
-  twitter-widget {
-    zoom: 1.3;
+  /* Enlarge the rendered widget on wider screens; zoom reflows layout so spacing
+     and centering are preserved. Skipped on mobile to avoid horizontal overflow. */
+  @media (min-width: 768px) {
+    .tweet-embed .twitter-tweet-rendered,
+    .tweet-embed twitter-widget {
+      zoom: 1.4;
+    }
   }
 </style>
 {% endif %}
