@@ -7,7 +7,7 @@ author: socket_research_team
 canonical_url: https://socket.dev/blog/miasma-mini-shai-hulud-hits-immobiliarelabs-npm-packages
 source: Socket
 image:
-  path: https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fthfvnext.bing.com%2Fth%2Fid%2FOIP.X2ULfeKybQbzB3PVAAjJTAHaEK%3Fcb%3Dthfvnextfalcon3%26pid%3DApi&f=1&ipt=1c778015bf9f41470218b52a2ded5c1405fcbdb545d1b237b136709415c9dffe&ipo=images
+  path: /assets/img/posts/miasma-mini-shai-hulud-hits-immobiliarelabs-npm-packages/cover.png
   alt: "Miasma Mini Shai-Hulud Hits ImmobiliareLabs npm Packages"
 description: "Miasma Mini Shai-Hulud hits @immobiliarelabs Backstage plugins, targeting GitLab and LDAP auth packages on npm."
 ---
