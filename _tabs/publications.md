@@ -1,4 +1,5 @@
 ---
+title: Publications
 icon: fas fa-book-open
 order: 1
 hide_title: true

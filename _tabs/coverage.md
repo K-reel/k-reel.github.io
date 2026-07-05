@@ -1,4 +1,5 @@
 ---
+title: Coverage
 icon: fas fa-newspaper
 order: 3
 hide_title: true

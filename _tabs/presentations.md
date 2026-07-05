@@ -1,4 +1,5 @@
 ---
+title: Presentations
 icon: fas fa-chalkboard-teacher
 order: 2
 hide_title: true
