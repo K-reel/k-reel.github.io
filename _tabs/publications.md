@@ -73,10 +73,10 @@ hide_title: true
     <a href="/canisterworm-npm-publisher-compromise-deploys-backdoor-across-29-packages/">CanisterWorm: npm Publisher Compromise Deploys Backdoor Across 29+ Packages</a>
   </li>
   <li class="px-md-3">
-    <a href="/glassworm-loader-hits-open-vsx-via-suspected-developer-account-compromise/">GlassWorm Loader Hits Open VSX via Developer Account Compromise</a>
+    <a href="/sandworm-mode-npm-worm-ai-toolchain-poisoning/">SANDWORM_MODE: Shai-Hulud-Style npm Worm Hijacks CI Workflows and Poisons AI Toolchains</a>
   </li>
   <li class="px-md-3">
-    <a href="/sandworm-mode-npm-worm-ai-toolchain-poisoning/">SANDWORM_MODE: Shai-Hulud-Style npm Worm Hijacks CI Workflows and Poisons AI Toolchains</a>
+    <a href="/glassworm-loader-hits-open-vsx-via-suspected-developer-account-compromise/">GlassWorm Loader Hits Open VSX via Developer Account Compromise</a>
   </li>
   <li class="px-md-3">
     <a href="/shai-hulud-strikes-again-v2/">Shai Hulud Strikes Again (v2)</a>
@@ -127,10 +127,10 @@ hide_title: true
 <summary style="font-size:1.2rem"><span style="display:inline-block;vertical-align:top;max-width:calc(100% - 2em)">📊 <strong>Threat Landscape &amp; Cross-Ecosystem Research</strong></span></summary>
 <ul class="content ps-0">
   <li class="px-md-3">
-    <a href="/surveillance-malware-hidden-in-npm-and-pypi-packages/">Surveillance Malware Hidden in npm and PyPI Packages Targets Developers with Keyloggers, Webcam Capture, and Credential Theft</a>
+    <a href="/fraudulent-engineering-candidates-investigation/">Identifying and Preventing Fraudulent Engineering Candidates: An Investigation into 80 Confirmed Cases</a>
   </li>
   <li class="px-md-3">
-    <a href="/fraudulent-engineering-candidates-investigation/">Identifying and Preventing Fraudulent Engineering Candidates: An Investigation into 80 Confirmed Cases</a>
+    <a href="/surveillance-malware-hidden-in-npm-and-pypi-packages/">Surveillance Malware Hidden in npm and PyPI Packages Targets Developers with Keyloggers, Webcam Capture, and Credential Theft</a>
   </li>
   <li class="px-md-3">
     <a href="/2025-blockchain-and-cryptocurrency-threat-report/">2025 Blockchain and Cryptocurrency Threat Report: Malware in the Open Source Supply Chain</a>
@@ -172,13 +172,13 @@ hide_title: true
     <a href="/quasar-rat-disguised-as-an-npm-package/">Quasar RAT Disguised as an npm Package for Detecting Vulnerabilities in Ethereum Smart Contracts</a>
   </li>
   <li class="px-md-3">
+    <a href="/skuld-infostealer-returns-to-npm/">Skuld Infostealer Returns to npm with Fake Windows Utilities and Malicious Solara Development Packages</a>
+  </li>
+  <li class="px-md-3">
     <a href="/malicious-npm-packages-threaten-crypto-developers/">Typosquatting Cryptographic Libraries: Malicious npm Packages Threaten Crypto Developers with Keylogging and Wallet Theft</a>
   </li>
   <li class="px-md-3">
     <a href="/malicious-npm-packages-inject-ssh-backdoors-via-typosquatted-libraries/">Malicious npm Packages Inject SSH Backdoors via Typosquatted Libraries</a>
-  </li>
-  <li class="px-md-3">
-    <a href="/skuld-infostealer-returns-to-npm/">Skuld Infostealer Returns to npm with Fake Windows Utilities and Malicious Solara Development Packages</a>
   </li>
   <li class="px-md-3">
     <a href="/roblox-developers-targeted-with-npm-packages-infected-with-infostealers/">Roblox Developers Targeted with npm Packages Infected with Skuld Infostealer and Blank Grabber</a>
