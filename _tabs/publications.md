@@ -214,7 +214,7 @@ hide_title: true
 </details>
 
 <details>
-<summary style="font-size:1.2rem"><span style="display:inline-block;vertical-align:top;max-width:calc(100% - 2em)">🐹 <strong>Go Modules / Golang</strong></span></summary>
+<summary style="font-size:1.2rem"><span style="display:inline-block;vertical-align:top;max-width:calc(100% - 2em)">🐹 <strong>Go Modules / Go</strong></span></summary>
 <ul class="content ps-0">
   <li class="px-md-3">
     <a href="/miasma-mini-shai-hulud-hits-leoplatform-npm-packages-go-ecosystem/">Miasma Mini Shai-Hulud Hits LeoPlatform npm Packages and GitHub Actions, Expands to the Go Ecosystem</a>
@@ -277,7 +277,7 @@ hide_title: true
 </details>
 
 <details>
-<summary style="font-size:1.2rem"><span style="display:inline-block;vertical-align:top;max-width:calc(100% - 2em)">🦀 <strong>Rust / Crates</strong></span></summary>
+<summary style="font-size:1.2rem"><span style="display:inline-block;vertical-align:top;max-width:calc(100% - 2em)">🦀 <strong>Crates / Rust</strong></span></summary>
 <ul class="content ps-0">
   <li class="px-md-3">
     <a href="/5-malicious-rust-crates-posed-as-time-utilities-to-exfiltrate-env-files/">5 Malicious Rust Crates Posed as Time Utilities to Exfiltrate .env Files</a>
