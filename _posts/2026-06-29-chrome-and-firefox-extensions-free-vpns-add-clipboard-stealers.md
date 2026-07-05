@@ -178,7 +178,7 @@ Versions 1.1 and 1.2 use `178[.]236[.]252[.]133` for both clipboard exfiltration
 
 ![](https://cdn.sanity.io/images/cgdhsj6q/production/ffa6d196852f0d2c14e0a776fd288936cac35f5e-1244x1570.png?w=1600&q=95&fit=max&auto=format)
 
-_Socket AI Scanner flagged [`VPN Go: Free VPN`](https://socket.dev/chrome/package/jgpfgonjjolillilkjfkiddakagkkpoj/overview/1.3) (ID/version:`jgpfgonjjolillilkjfkiddakagkkpoj@1.3` as known malware, identifying [`scripts/version.js`](https://socket.dev/chrome/package/jgpfgonjjolillilkjfkiddakagkkpoj/files/1.3/scripts/version.js) as an obfuscated Chrome extension content script that harvests clipboard contents, chunks copied values, tags them with a session identifier, and forwards them through Chrome runtime messaging for downstream exfiltration._
+_Socket AI Scanner flagged [`VPN Go: Free VPN`](https://socket.dev/chrome/package/jgpfgonjjolillilkjfkiddakagkkpoj/overview/1.3) (ID/version: `jgpfgonjjolillilkjfkiddakagkkpoj@1.3`) as known malware, identifying [`scripts/version.js`](https://socket.dev/chrome/package/jgpfgonjjolillilkjfkiddakagkkpoj/files/1.3/scripts/version.js) as an obfuscated Chrome extension content script that harvests clipboard contents, chunks copied values, tags them with a session identifier, and forwards them through Chrome runtime messaging for downstream exfiltration._
 
 ## The Firefox Extension Moves Clipboard Theft Into the Background
 
