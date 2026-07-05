@@ -304,6 +304,9 @@ hide_title: true
 <summary style="font-size:1.2rem"><span style="display:inline-block;vertical-align:top;max-width:calc(100% - 2em)">🧩 <strong>Extensions / Chrome / VS Code / OpenVSX</strong></span></summary>
 <ul class="content ps-0">
   <li class="px-md-3">
+    <a href="/chrome-and-firefox-extensions-free-vpns-add-clipboard-stealers/">Chrome and Firefox Extensions Posing as Free VPNs Add Clipboard Stealers via Malicious Updates</a>
+  </li>
+  <li class="px-md-3">
     <a href="/73-open-vsx-sleeper-extensions-glassworm/">73 Open VSX Sleeper Extensions Linked to GlassWorm Show New Malware Activations</a>
   </li>
   <li class="px-md-3">
