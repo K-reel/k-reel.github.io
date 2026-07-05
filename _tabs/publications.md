@@ -301,7 +301,7 @@ hide_title: true
 </details>
 
 <details>
-<summary style="font-size:1.2rem"><span style="display:inline-block;vertical-align:top;max-width:calc(100% - 2em)">🧩 <strong>Extensions / Chrome / VS Code / OpenVSX</strong></span></summary>
+<summary style="font-size:1.2rem"><span style="display:inline-block;vertical-align:top;max-width:calc(100% - 2em)">🧩 <strong>Extensions / Chrome / Firefox / VS Code / OpenVSX</strong></span></summary>
 <ul class="content ps-0">
   <li class="px-md-3">
     <a href="/chrome-and-firefox-extensions-free-vpns-add-clipboard-stealers/">Chrome and Firefox Extensions Posing as Free VPNs Add Clipboard Stealers via Malicious Updates</a>

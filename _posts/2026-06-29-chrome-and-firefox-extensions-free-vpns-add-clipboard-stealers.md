@@ -26,11 +26,9 @@ The Firefox extension follows the same staged malicious-update pattern. Earlier 
 We have reported both extensions to Google and Mozilla for review and removal.
 
 ![](https://cdn.sanity.io/images/cgdhsj6q/production/706e72c9062288125064113068d408e6df7d759f-2048x1538.png?w=1600&q=95&fit=max&auto=format)
-
 _Chrome Web Store listing for the malicious [`VPN Go: Free VPN`](https://socket.dev/chrome/package/jgpfgonjjolillilkjfkiddakagkkpoj/overview/1.3) extension. At the time of writing, the extension showed 146 users and appeared under the Privacy & Security category, giving a privacy-focused presentation despite the identified clipboard exfiltration behavior._
 
 ![](https://cdn.sanity.io/images/cgdhsj6q/production/29981ccfd92eec3c773543fd90008204773440f4-2048x1684.png?w=1600&q=95&fit=max&auto=format)
-
 _Mozilla Firefox Add-ons listing for the malicious VPN Go extension. At the time of writing, the extension showed 3,499 users and a privacy-focused VPN presentation._
 
 ## Privacy on Paper, Clipboard Theft in Code
@@ -177,7 +175,6 @@ const API_TOKEN = "Bearer 7386252b9a86e5357e6aa884326720abf015465a2567e75717830b
 Versions 1.1 and 1.2 use `178[.]236[.]252[.]133` for both clipboard exfiltration and proxy-location retrieval. Version 1.3 moves both functions to `77[.]91[.]123[.]187`, the same IP observed in the malicious Firefox extension.
 
 ![](https://cdn.sanity.io/images/cgdhsj6q/production/ffa6d196852f0d2c14e0a776fd288936cac35f5e-1244x1570.png?w=1600&q=95&fit=max&auto=format)
-
 _Socket AI Scanner flagged [`VPN Go: Free VPN`](https://socket.dev/chrome/package/jgpfgonjjolillilkjfkiddakagkkpoj/overview/1.3) (ID/version: `jgpfgonjjolillilkjfkiddakagkkpoj@1.3`) as known malware, identifying [`scripts/version.js`](https://socket.dev/chrome/package/jgpfgonjjolillilkjfkiddakagkkpoj/files/1.3/scripts/version.js) as an obfuscated Chrome extension content script that harvests clipboard contents, chunks copied values, tags them with a session identifier, and forwards them through Chrome runtime messaging for downstream exfiltration._
 
 ## The Firefox Extension Moves Clipboard Theft Into the Background
@@ -298,7 +295,6 @@ In Chrome, the extension applies a fixed proxy configuration through `chrome.pro
 User feedback suggests that this visible VPN functionality was unreliable. The Firefox Add-ons listing showed a 2.7-star rating across 14 reviews, with seven one-star reviews. Some reviewers reported that the extension “doesn't work at all”, while another wrote that it “turns off every 10 seconds”. One user also reported that location selection did not work properly on Firefox for mobile.
 
 ![](https://cdn.sanity.io/images/cgdhsj6q/production/5c375530afef211513d8aac9f4a70ceb8fa0f09e-2048x1747.png?w=1600&q=95&fit=max&auto=format)
-
 _Google-translated Firefox Add-ons review page for the malicious `VPN Go` extension, showing a low 2.7-star rating and user reports of nonfunctional or unstable VPN behavior._
 
 The proxy-location endpoints track the campaign’s infrastructure changes. Chrome extension versions 1.1 and 1.2 retrieve proxy locations from `hxxp://178[.]236[.]252[.]133/locations`. Version 1.3 and Firefox version 1.3.4 use `hxxp://77[.]91[.]123[.]187/locations`. The Firefox extension version 1.3.3 uses `hxxp://178[.]236[.]252[.]161/locations`. These are the same infrastructure families used for clipboard exfiltration in the corresponding malicious versions.
