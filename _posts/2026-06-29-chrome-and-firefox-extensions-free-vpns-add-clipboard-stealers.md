@@ -3,7 +3,7 @@ title: "Chrome and Firefox Extensions Posing as Free VPNs Add Clipboard Stealers
 short_title: "Free VPN Extensions Add Clipboard Stealers via Updates"
 date: 2026-06-29 12:00:00 +0000
 categories: [Malware, Browser Extensions]
-tags: [Chrome, Firefox, VPN, Extensions, Clipper, Infostealer, Proxy, Obfuscation, T1176.001, T1195.002, T1204, T1059.007, T1115, T1027, T1071.001, T1041, T1036]
+tags: [Chrome, Firefox, Extensions, Infostealer, Obfuscation, T1176.001, T1195.002, T1204, T1059.007, T1115, T1027, T1071.001, T1041, T1036]
 author: kirill_and_kush
 canonical_url: https://socket.dev/blog/chrome-and-firefox-extensions-free-vpns-add-clipboard-stealers
 source: Socket
