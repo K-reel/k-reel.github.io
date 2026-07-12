@@ -274,3 +274,21 @@
   affiliation: Socket
   topic: Privacy
   source_url: /malicious-pypi-package-exploits-deezer-api-for-coordinated-music-piracy/
+
+- outlet: The Hacker News
+  url: https://thehackernews.com/2025/03/seven-malicious-go-packages-found.html
+  headline: "Seven Malicious Go Packages Found Deploying Malware on Linux and macOS Systems"
+  date: 2025-03-05
+  quote: "The threat actor has published at least seven packages impersonating widely used Go libraries, including one (github[.]com/shallowmulti/hypert) that appears to target financial-sector developers."
+  affiliation: Socket
+  topic: Malware Loader
+  source_url: /typosquatted-go-packages-deliver-malware-loader/
+
+- outlet: SC World
+  url: https://www.scworld.com/news/typosquatting-campaign-targets-financial-sector-linux-macos-systems
+  headline: "Typosquatting campaign targets financial sector Linux, macOS systems"
+  date: 2025-03-05
+  quote: "An ongoing campaign has infiltrated the Go ecosystem with at least seven typosquatted packages that install hidden loader malware that primarily target Linux and macOS systems in the financial sector."
+  affiliation: Socket
+  topic: Malware Loader
+  source_url: /typosquatted-go-packages-deliver-malware-loader/
