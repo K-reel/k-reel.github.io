@@ -91,16 +91,17 @@ toc: false
     text-transform: uppercase;
     padding: 0.12rem 0.5rem;
     border-radius: 0.25rem;
-    background: var(--btn-backtotop-bg, #f1f3f5);
-    color: var(--text-muted-color, #6c757d);
+    background: #121212;
+    color: #f76707;
+    border: 1px solid #f76707;
     text-decoration: none;
     transition: background 0.15s, color 0.15s;
   }
   a.coverage-source:hover,
   a.coverage-source:focus,
   a.coverage-source:active {
-    background: var(--main-border-color, #dee2e6);
-    color: var(--heading-color, #212529);
+    background: #ffffff;
+    color: #f76707;
     text-decoration: none;
   }
   .coverage-topic {
