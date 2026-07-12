@@ -142,6 +142,29 @@ toc: false
     font-size: 0.95rem;
     line-height: 1.55;
   }
+
+  /* Collapsible outlet sections */
+  details.coverage-outlet-section > summary {
+    list-style: none;
+    cursor: pointer;
+  }
+  details.coverage-outlet-section > summary::-webkit-details-marker {
+    display: none;
+  }
+  details.coverage-outlet-section > summary:hover .coverage-outlet-name {
+    color: var(--link-color, #1d6fbb);
+  }
+  .coverage-outlet-chevron {
+    margin-left: 0.85rem;
+    font-size: 1.15rem;
+    line-height: 1;
+    color: var(--text-muted-color, #6c757d);
+    transition: transform 0.2s ease;
+    flex-shrink: 0;
+  }
+  details.coverage-outlet-section[open] > summary .coverage-outlet-chevron {
+    transform: rotate(90deg);
+  }
 </style>
 
 <div class="coverage-intro">
@@ -165,8 +188,8 @@ toc: false
   {% assign outlet_meta = site.data.coverage_outlets[outlet] %}
   {% assign count = outlet_entries | size %}
 
-  <section class="coverage-outlet-section">
-    <header class="coverage-outlet-header">
+  <details class="coverage-outlet-section"{% if count <= 3 %} open{% endif %}>
+    <summary class="coverage-outlet-header">
       {% if outlet_meta and outlet_meta.logo %}
         <img src="{{ outlet_meta.logo }}" alt="{{ outlet }} logo" class="coverage-outlet-logo"
              onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-flex';" />
@@ -176,7 +199,8 @@ toc: false
       {% endif %}
       <h2 class="coverage-outlet-name">{{ outlet }}</h2>
       <span class="coverage-outlet-count">{{ count }} {% if count == 1 %}article{% else %}articles{% endif %}</span>
-    </header>
+      <span class="coverage-outlet-chevron" aria-hidden="true">&rsaquo;</span>
+    </summary>
 
     {% for item in outlet_entries %}
     <div class="coverage-entry">
@@ -192,5 +216,5 @@ toc: false
       {% endif %}
     </div>
     {% endfor %}
-  </section>
+  </details>
 {% endfor %}
