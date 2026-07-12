@@ -274,3 +274,30 @@
   affiliation: Socket
   topic: Backdoor
   source_url: /malicious-package-exploits-go-module-proxy-caching-for-persistence/
+
+- outlet: The Hacker News
+  url: https://thehackernews.com/2025/02/malicious-pypi-package-automslc-enables.html
+  headline: "Malicious PyPI Package \"automslc\" Enables 104K+ Unauthorized Deezer Music Downloads"
+  date: 2025-02-26
+  quote: "While automslc, which has been downloaded over 100,000 times, purports to offer music automation and metadata retrieval, it covertly bypasses Deezer's access restrictions by embedding hardcoded credentials."
+  affiliation: Socket
+  topic: Privacy
+  source_url: /malicious-pypi-package-exploits-deezer-api-for-coordinated-music-piracy/
+
+- outlet: BleepingComputer
+  url: https://www.bleepingcomputer.com/news/security/pypi-package-with-100k-installs-pirated-music-from-deezer-for-years/
+  headline: "PyPI package with 100K installs pirated music from Deezer for years"
+  date: 2025-02-26
+  quote: "A malicious PyPi package named 'automslc' has been downloaded over 100,000 times from the Python Package Index since 2019, abusing hard-coded credentials to pirate music from the Deezer streaming service."
+  affiliation: Socket
+  topic: Privacy
+  source_url: /malicious-pypi-package-exploits-deezer-api-for-coordinated-music-piracy/
+
+- outlet: Risky Biz
+  url: https://risky.biz/risky-bulletin-cellebrite-bans-bad-boy-serbia/
+  headline: "Risky Bulletin: Cybercrime, piracy, and threat intel"
+  date: 2025-02-28
+  quote: "The package was named automslc and was downloaded over 100,000 since its release in 2019."
+  affiliation: Socket
+  topic: Privacy
+  source_url: /malicious-pypi-package-exploits-deezer-api-for-coordinated-music-piracy/
