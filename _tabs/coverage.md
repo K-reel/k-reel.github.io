@@ -184,7 +184,7 @@ toc: false
         <span class="coverage-date">{{ item.date | date: "%b %-d, %Y" }}</span>
         {% if item.affiliation %}<span class="coverage-affiliation">{{ item.affiliation }}</span>{% endif %}
         {% if item.source_url %}<a class="coverage-source" href="{{ item.source_url }}">Source</a>{% endif %}
-        {% if item.topic %}<span class="coverage-topic">{{ item.topic }}</span>{% endif %}
+        {% if item.topic %}{% assign topic_list = item.topic | split: "," %}{% for topic in topic_list %}<span class="coverage-topic">{{ topic | strip }}</span>{% endfor %}{% endif %}
       </div>
       <a class="coverage-headline" href="{{ item.url }}" target="_blank" rel="noopener">{{ item.headline }}</a>
       {% if item.quote %}
