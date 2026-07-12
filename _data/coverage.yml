@@ -28,15 +28,6 @@
   topic: Wallet Theft
   source_url: /wallet-draining-npm-package-impersonates-nodemailer/
 
-- outlet: The Register
-  url: https://www.theregister.com/
-  headline: "PLACEHOLDER — Lazarus expands malicious npm campaign with new loaders"
-  date: 2025-04-04
-  quote: "The threat actor is rotating staging infrastructure while reusing the same loader pattern across multiple compromised publisher accounts."
-  affiliation: Socket
-  topic: Lazarus
-  source_url: /lazarus-expands-malicious-npm-campaign-11-new-packages-add-malware-loaders-and-bitbucket/
-
 - outlet: Dark Reading
   url: https://www.darkreading.com/
   headline: "PLACEHOLDER — Inside the cybercrime supply chain (Recorded Future research)"
