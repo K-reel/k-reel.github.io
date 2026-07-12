@@ -292,3 +292,12 @@
   affiliation: Socket
   topic: Malware Loader
   source_url: /typosquatted-go-packages-deliver-malware-loader/
+
+- outlet: Risky Biz
+  url: https://risky.biz/risky-bulletin-us-indicts-i-soon-and-apt27-hackers/
+  headline: "Risky Bulletin: Indictments, cybercrime, and threat intel"
+  date: 2025-03-07
+  quote: "Socket Security also discovered a malicious Go library that deploys malware on macOS and Linux systems."
+  affiliation: Socket
+  topic: Malware Loader
+  source_url: /typosquatted-go-packages-deliver-malware-loader/
