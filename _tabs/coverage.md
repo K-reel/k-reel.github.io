@@ -82,16 +82,6 @@ toc: false
   .coverage-date {
     color: var(--text-muted-color, #6c757d);
   }
-  .coverage-affiliation {
-    font-size: 0.7rem;
-    font-weight: 600;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    padding: 0.12rem 0.5rem;
-    border-radius: 0.25rem;
-    background: var(--btn-backtotop-bg, #f1f3f5);
-    color: var(--text-muted-color, #6c757d);
-  }
   a.coverage-source,
   a.coverage-source:link,
   a.coverage-source:visited {
@@ -206,7 +196,6 @@ toc: false
     <div class="coverage-entry">
       <div class="coverage-meta">
         <span class="coverage-date">{{ item.date | date: "%b %-d, %Y" }}</span>
-        {% if item.affiliation %}<span class="coverage-affiliation">{{ item.affiliation }}</span>{% endif %}
         {% if item.source_url %}<a class="coverage-source" href="{{ item.source_url }}">Source</a>{% endif %}
         {% if item.topic %}{% assign topic_list = item.topic | split: "," %}{% for topic in topic_list %}<span class="coverage-topic">{{ topic | strip }}</span>{% endfor %}{% endif %}
       </div>
