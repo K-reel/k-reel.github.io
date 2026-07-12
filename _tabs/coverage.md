@@ -92,8 +92,8 @@ toc: false
     padding: 0.12rem 0.5rem;
     border-radius: 0.25rem;
     background: #121212;
-    color: #f76707;
-    border: 1px solid #f76707;
+    color: #1971c2;
+    border: 1px solid #1971c2;
     text-decoration: none;
     transition: background 0.15s, color 0.15s;
   }
@@ -101,7 +101,7 @@ toc: false
   a.coverage-source:focus,
   a.coverage-source:active {
     background: #ffffff;
-    color: #f76707;
+    color: #1971c2;
     text-decoration: none;
   }
   .coverage-topic {
