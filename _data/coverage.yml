@@ -10,15 +10,6 @@
 #
 # REPLACE PLACEHOLDER ENTRIES BELOW WITH ACTUAL DATA
 
-- outlet: BleepingComputer
-  url: https://www.bleepingcomputer.com/
-  headline: "PLACEHOLDER — North Korea's Contagious Interview escalates npm targeting"
-  date: 2026-03-15
-  quote: "Boychenko said the operators have refined their loader chain to defeat static scanning, while keeping the same social-engineering playbook."
-  affiliation: Socket
-  topic: Contagious Interview
-  source_url: /contagious-interview-campaign-escalates-67-malicious-npm-packages/
-
 - outlet: Dark Reading
   url: https://www.darkreading.com/
   headline: "PLACEHOLDER — Supply chain attackers turn AI toolchains into a delivery vector"
@@ -45,15 +36,6 @@
   affiliation: Socket
   topic: Lazarus
   source_url: /lazarus-expands-malicious-npm-campaign-11-new-packages-add-malware-loaders-and-bitbucket/
-
-- outlet: BleepingComputer
-  url: https://www.bleepingcomputer.com/
-  headline: "PLACEHOLDER — Surveillance malware hidden in npm and PyPI packages"
-  date: 2025-07-23
-  quote: "Keyloggers, webcam capture, and credential theft delivered as innocuous developer utilities — all running at install time."
-  affiliation: Socket
-  topic: Infostealer
-  source_url: /surveillance-malware-hidden-in-npm-and-pypi-packages/
 
 - outlet: Dark Reading
   url: https://www.darkreading.com/
