@@ -110,7 +110,7 @@
   date: 2024-11-01
   quote: "Besides domain name and package typosquatting, we now have author typosquatting—where threat actors register profiles similar to well-known and trusted developers."
   affiliation: Socket
-  topic: Author Typosquatting
+  topic: Backdoor
   source_url: /author-typosquatting-on-npm/
 
 - outlet: The Hacker News
@@ -227,7 +227,7 @@
   date: 2025-02-04
   quote: "Once a module version is cached, it remains accessible through the Go Module Proxy, even if the original source is later modified."
   affiliation: Socket
-  topic: Typosquatting
+  topic: Backdoor
   source_url: /malicious-package-exploits-go-module-proxy-caching-for-persistence/
 
 - outlet: The Register
@@ -236,7 +236,7 @@
   date: 2025-02-04
   quote: "This attack is among the first documented instances of a malicious actor exploiting the Go Module Mirror's indefinite caching of modules."
   affiliation: Socket
-  topic: Typosquatting
+  topic: Backdoor
   source_url: /malicious-package-exploits-go-module-proxy-caching-for-persistence/
 
 - outlet: Risky Biz
@@ -245,7 +245,7 @@
   date: 2025-02-05
   quote: "Security researchers have discovered a malicious Go module for the BoltDB database that contains a hidden backdoor. According to Socket Security, the module is cached in the Go Module Mirror."
   affiliation: Socket
-  topic: Typosquatting
+  topic: Backdoor
   source_url: /malicious-package-exploits-go-module-proxy-caching-for-persistence/
 
 - outlet: TechRadar Pro
@@ -254,7 +254,7 @@
   date: 2025-02-05
   quote: "The package grants the threat actor remote access to the infected system, allowing them to execute arbitrary commands."
   affiliation: Socket
-  topic: Typosquatting
+  topic: Backdoor
   source_url: /malicious-package-exploits-go-module-proxy-caching-for-persistence/
 
 - outlet: tl;dr sec
@@ -263,7 +263,7 @@
   date: 2025-02-13
   quote: "Socket's Kirill Boychenko describes finding a malicious typosquat Golang package. The interesting part is that after the malware was cached by the Go Module Mirror, which the Go CLI toolchain downloads from, the git tag was strategically altered on GitHub to point to a clean, legitimate version, hiding it from manual code review."
   affiliation: Socket
-  topic: Typosquatting
+  topic: Backdoor
   source_url: /malicious-package-exploits-go-module-proxy-caching-for-persistence/
 
 - outlet: Ars Technica
@@ -272,5 +272,5 @@
   date: 2025-02-05
   quote: "Since November 2021, the Go Module Mirror has been hosting a backdoored version of a widely used module, security firm Socket said Monday."
   affiliation: Socket
-  topic: Typosquatting
+  topic: Backdoor
   source_url: /malicious-package-exploits-go-module-proxy-caching-for-persistence/
