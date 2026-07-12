@@ -179,7 +179,7 @@ toc: false
   {% assign outlet_meta = site.data.coverage_outlets[outlet] %}
   {% assign count = outlet_entries | size %}
 
-  <details class="coverage-outlet-section"{% if count <= 3 %} open{% endif %}>
+  <details class="coverage-outlet-section">
     <summary class="coverage-outlet-header">
       {% if outlet_meta and outlet_meta.logo %}
         <img src="{{ outlet_meta.logo }}" alt="{{ outlet }} logo" class="coverage-outlet-logo"
