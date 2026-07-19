@@ -328,3 +328,57 @@
   affiliation: Socket
   topic: Contagious Interview
   source_url: /lazarus-strikes-npm-again-with-a-new-wave-of-malicious-packages/
+
+- outlet: The Hacker News
+  url: https://thehackernews.com/2025/04/north-korean-hackers-deploy-beavertail.html
+  headline: "North Korean Hackers Deploy BeaverTail Malware via 11 Malicious npm Packages"
+  date: 2025-04-05
+  quote: "These latest samples employ hexadecimal string encoding to evade automated detection systems and manual code audits, signaling a variation in the threat actors' obfuscation techniques."
+  affiliation: Socket
+  topic: Contagious Interview
+  source_url: /lazarus-expands-malicious-npm-campaign-11-new-packages-add-malware-loaders-and-bitbucket/
+
+- outlet: BankInfoSecurity
+  url: https://www.bankinfosecurity.com/lazarus-expands-npm-campaign-trojan-loaders-a-27943
+  headline: "Lazarus Expands npm Campaign With Trojan Loaders"
+  date: 2025-04-07
+  quote: "North Korea's Lazarus Group expanded a cyberattack campaign of uploading malicious code to the JavaScript runtime environment npm repository, publishing 11 new packages embedded with Trojan loaders."
+  affiliation: Socket
+  topic: Contagious Interview
+  source_url: /lazarus-expands-malicious-npm-campaign-11-new-packages-add-malware-loaders-and-bitbucket/
+
+- outlet: SC World
+  url: https://www.scworld.com/brief/malicious-npm-packages-beavertail-malware-leveraged-in-new-north-korean-attacks
+  headline: "Malicious npm packages, BeaverTail malware leveraged in new North Korean attacks"
+  date: 2025-04-07
+  quote: "Eleven utility- and debugger-spoofing npm packages, which have amassed over 5,600 downloads before their removal, have been leveraged by Lazarus Group-linked hackers to facilitate the deployment of a remote access trojan loader."
+  affiliation: Socket
+  topic: Contagious Interview
+  source_url: /lazarus-expands-malicious-npm-campaign-11-new-packages-add-malware-loaders-and-bitbucket/
+
+- outlet: MITRE ATT&CK
+  url: https://attack.mitre.org/groups/G1052/
+  headline: "Contagious Interview (G1052)"
+  date: 2025-10-19
+  quote: "Contagious Interview is a North Korea–aligned threat group active since 2023 that conducts cyberespionage and financially motivated operations targeting software developers and cryptocurrency-related individuals across Windows, Linux, and macOS systems."
+  affiliation: Socket
+  topic: Contagious Interview
+  source_url: /lazarus-expands-malicious-npm-campaign-11-new-packages-add-malware-loaders-and-bitbucket/
+
+- outlet: MITRE ATT&CK
+  url: https://attack.mitre.org/software/S1249/
+  headline: "HexEval Loader (S1249)"
+  date: 2025-10-22
+  quote: "HexEval Loader is a hex-encoded malware loader that collects host data, decodes follow-on scripts, and downloads the BeaverTail malware. It has been distributed through npm package repositories using typosquatting tactics by North Korea-affiliated threat actors."
+  affiliation: Socket
+  topic: Contagious Interview
+  source_url: /lazarus-expands-malicious-npm-campaign-11-new-packages-add-malware-loaders-and-bitbucket/
+
+- outlet: MITRE ATT&CK
+  url: https://attack.mitre.org/software/S1248/
+  headline: "XORIndex Loader (S1248)"
+  date: 2025-10-22
+  quote: "XORIndex Loader is a malware loader that uses XOR encoding to collect host data, decode follow-on scripts, and download the BeaverTail malware. The threat has been deployed through typo-squatted npm packages by North Korea-affiliated group Contagious Interview since June 2025."
+  affiliation: Socket
+  topic: Contagious Interview
+  source_url: /lazarus-expands-malicious-npm-campaign-11-new-packages-add-malware-loaders-and-bitbucket/
