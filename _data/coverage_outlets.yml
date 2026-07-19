@@ -62,3 +62,5 @@
 
 "MITRE ATT&CK":
   logo: /assets/img/coverage/mitre-attack.png
+  link: https://attack.mitre.org/
+  hide_name: true  # logo already reads "MITRE ATT&CK" — avoid duplicate text
