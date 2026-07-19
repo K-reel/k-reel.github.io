@@ -301,3 +301,30 @@
   affiliation: Socket
   topic: Malware Loader
   source_url: /typosquatted-go-packages-deliver-malware-loader/
+
+- outlet: BleepingComputer
+  url: https://www.bleepingcomputer.com/news/security/north-korean-lazarus-hackers-infect-hundreds-via-npm-packages/
+  headline: "North Korean Lazarus hackers infect hundreds via npm packages"
+  date: 2025-03-11
+  quote: "Six malicious packages have been identified on npm (Node package manager) linked to the notorious North Korean hacking group Lazarus. The packages, which have been downloaded 330 times, are designed to steal account credentials, deploy backdoors on compromised systems, and extract sensitive cryptocurrency information."
+  affiliation: Socket
+  topic: Contagious Interview
+  source_url: /lazarus-strikes-npm-again-with-a-new-wave-of-malicious-packages/
+
+- outlet: CyberScoop
+  url: https://cyberscoop.com/lazarus-group-north-korea-malicious-npm-packages-socket/
+  headline: "Lazarus Group deceives developers with 6 new malicious npm packages"
+  date: 2025-03-12
+  quote: "The six new packages — collectively downloaded over 330 times — closely mimic the names of widely trusted libraries, employing a well-known typosquatting tactic used by Lazarus-linked threat actors to deceive developers."
+  affiliation: Socket
+  topic: Contagious Interview
+  source_url: /lazarus-strikes-npm-again-with-a-new-wave-of-malicious-packages/
+
+- outlet: Risky Biz
+  url: https://risky.biz/risky-bulletin-fbi-warns-of-online-file-converters-that-distribute-malware/
+  headline: "Risky Bulletin: FBI warns of online file converters that distribute malware"
+  date: 2025-03-14
+  quote: "Socket Security has spotted new malicious npm packages on the npm index linked to North Korean hacking group Lazarus. The company says the packages are part of the group's Contagious Interview campaign, where Lazarus hackers approach developers with job interviews and ask them to debug or work with the malicious packages."
+  affiliation: Socket
+  topic: Contagious Interview
+  source_url: /lazarus-strikes-npm-again-with-a-new-wave-of-malicious-packages/
