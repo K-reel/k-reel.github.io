@@ -156,6 +156,23 @@ toc: false
   details.coverage-outlet-section[open] > summary .coverage-outlet-chevron {
     transform: rotate(90deg);
   }
+
+  #toggle-all {
+    border: none;
+    background: #fff;
+    color: #000;
+    padding: 0.45rem 1.1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+    letter-spacing: 0.02em;
+    transition: opacity 0.2s;
+  }
+  #toggle-all:hover {
+    opacity: 0.85;
+  }
 </style>
 
 <div class="coverage-intro">
@@ -165,6 +182,13 @@ toc: false
 
 <p>This kind of visibility helps confirm that the research is useful, read by defenders, and contributing to the broader effort to protect our community from threat actors who seek to abuse the systems and technologies we trust.</p>
 </div>
+
+<button id="toggle-all" onclick="(function(){
+  var details = document.querySelectorAll('.content details');
+  var anyOpen = Array.from(details).some(function(d){ return d.open; });
+  details.forEach(function(d){ d.open = !anyOpen; });
+  document.getElementById('toggle-all').textContent = anyOpen ? 'Expand All' : 'Collapse All';
+})()">Expand All</button>
 
 {% assign coverage = site.data.coverage | sort: 'date' | reverse %}
 {% assign outlets = "" | split: "," %}
