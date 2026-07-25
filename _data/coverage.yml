@@ -10,6 +10,15 @@
 #
 # REPLACE PLACEHOLDER ENTRIES BELOW WITH ACTUAL DATA
 
+- outlet: The Hacker News
+  url: https://thehackernews.com/2025/05/malicious-npm-packages-infect-3200.html
+  headline: "Malicious npm Packages Infect 3,200+ Cursor Users With Backdoor, Steal Credentials"
+  date: 2025-05-09
+  quote: "Disguised as developer tools offering 'the cheapest Cursor API,' these packages steal user credentials, fetch an encrypted payload from threat actor-controlled infrastructure, overwrite Cursor's main.js file, and disable auto-updates to maintain persistence."
+  affiliation: Socket
+  topic: Backdoor
+  source_url: /malicious-npm-packages-hijack-cursor-editor-on-macos/
+
 - outlet: Dark Reading
   url: https://www.darkreading.com/
   headline: "PLACEHOLDER — Supply chain attackers turn AI toolchains into a delivery vector"
