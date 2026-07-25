@@ -173,9 +173,41 @@ toc: false
   #toggle-all:hover {
     opacity: 0.85;
   }
+
+  /* Coverage banner — full-width, sits tight above the intro text */
+  .coverage-banner {
+    margin: 0 0 0.9rem;
+  }
+  @media (min-width: 850px) {
+    /* bleed to the content-panel edges (reclaim the theme's side padding) */
+    .coverage-banner {
+      margin-left: -1.75rem;
+      margin-right: -1.75rem;
+    }
+  }
+  /* force full width even through the theme's lightbox wrapper */
+  .coverage-banner a.popup,
+  .coverage-banner .img-link,
+  .coverage-banner img {
+    display: block !important;
+    width: 100% !important;
+    max-width: none !important;
+    left: auto !important;
+    transform: none !important;
+    margin-inline: 0 !important;
+  }
+  .coverage-banner img {
+    height: auto !important;
+    aspect-ratio: auto !important;
+    object-fit: contain !important;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.30);
+  }
 </style>
 
-![Coverage banner](/assets/img/coverage/banner.png){: .rounded-3 .shadow .mb-4 w="2400" }
+<div class="coverage-banner" markdown="1">
+![Coverage banner](/assets/img/coverage/banner.png){: w="2400" }
+</div>
 
 <div class="coverage-intro">
 <p>My work and contributions at Socket and Recorded Future have been cited, shared, and discussed across multiple security venues. I’m grateful to have my research surfaced by respected security publications, newsletters, and communities, including The Hacker News, Risky Biz, Detection Engineering Weekly, tl;dr sec, and VulnerableU. It has also been cited in the MITRE ATT&amp;CK knowledge base. This section collects public examples of that coverage and shows how the work reaches practitioners beyond the original publication. This kind of visibility helps confirm that the research is useful, read by defenders, and contributing to the broader effort to protect our community from threat actors who seek to abuse the systems and technologies we trust.</p>
