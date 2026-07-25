@@ -10,6 +10,51 @@
 #
 # REPLACE PLACEHOLDER ENTRIES BELOW WITH ACTUAL DATA
 
+- outlet: BleepingComputer
+  url: https://www.bleepingcomputer.com/news/security/dozens-of-malicious-packages-on-npm-collect-host-and-network-data/
+  headline: "Dozens of malicious packages on NPM collect host and network data"
+  date: 2025-05-23
+  quote: "60 packages have been discovered in the NPM index that attempt to collect sensitive host and network data and send it to a Discord webhook controlled by the threat actor."
+  affiliation: Socket
+  topic: Reconnaissance malware
+  source_url: /60-malicious-npm-packages-leak-network-and-host-data/
+
+- outlet: BankInfoSecurity
+  url: https://www.bankinfosecurity.com/reconnaissance-campaign-active-on-npm-repository-a-28475
+  headline: "Reconnaissance Campaign Active on NPM Repository"
+  date: 2025-05-24
+  quote: "Whoever is behind the campaign has a growing map of developer and enterprise networks that can guide future intrusions."
+  affiliation: Socket
+  topic: Reconnaissance malware
+  source_url: /60-malicious-npm-packages-leak-network-and-host-data/
+
+- outlet: The Hacker News
+  url: https://thehackernews.com/2025/05/over-70-malicious-npm-and-vs-code.html
+  headline: "Over 70 Malicious npm and VS Code Packages Found Stealing Data and Crypto"
+  date: 2025-05-26
+  quote: "The npm packages harvest system information such as hostnames, IP addresses, and DNS servers via an install-time script triggered during npm install."
+  affiliation: Socket
+  topic: Reconnaissance malware
+  source_url: /60-malicious-npm-packages-leak-network-and-host-data/
+
+- outlet: TechRadar Pro
+  url: https://www.techradar.com/pro/security/npm-users-warned-dozens-of-malicious-packages-aim-to-steal-host-and-network-data
+  headline: "NPM users warned dozens of malicious packages aim to steal host and network data"
+  date: 2025-05-26
+  quote: "Socket identified 60 packages on NPM, uploaded from May 12 onward, carrying a post-install script that exfiltrates hostnames, internal IP addresses, usernames, and system DNS servers."
+  affiliation: Socket
+  topic: Reconnaissance malware
+  source_url: /60-malicious-npm-packages-leak-network-and-host-data/
+
+- outlet: SecurityWeek
+  url: https://www.securityweek.com/ongoing-campaign-uses-60-npm-packages-to-steal-data/
+  headline: "Ongoing Campaign Uses 60 NPM Packages to Steal Data"
+  date: 2025-05-27
+  quote: "Over the past two weeks, a threat actor has published 60 NPM packages containing a script that collects hostnames, IP addresses, DNS server lists, and directory paths to send to an attacker-controlled Discord webhook."
+  affiliation: Socket
+  topic: Reconnaissance malware
+  source_url: /60-malicious-npm-packages-leak-network-and-host-data/
+
 - outlet: The Hacker News
   url: https://thehackernews.com/2025/05/malicious-npm-packages-infect-3200.html
   headline: "Malicious npm Packages Infect 3,200+ Cursor Users With Backdoor, Steal Credentials"
