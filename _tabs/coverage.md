@@ -177,6 +177,10 @@ toc: false
   /* Coverage banner — full-width, sits tight above the intro text */
   .coverage-banner {
     margin: 0 0 0.9rem;
+    line-height: 0;
+  }
+  .coverage-banner p {
+    margin: 0 !important;
   }
   @media (min-width: 850px) {
     /* bleed to the content-panel edges (reclaim the theme's side padding) */
