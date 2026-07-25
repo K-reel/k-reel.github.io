@@ -47,6 +47,7 @@
 
 "SecurityWeek":
   logo: /assets/img/coverage/securityweek.png
+  hide_name: true  # logo already reads "SecurityWeek" — avoid duplicate text
 
 "ENISA (European Union Agency for Cybersecurity)":
   logo: /assets/img/coverage/enisa.png
