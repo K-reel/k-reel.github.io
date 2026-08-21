@@ -3,7 +3,7 @@ title: "77 Firefox Extensions Linked to Crypto Wallet and Credential Theft"
 short_title: "Firefox Extensions Linked to Wallet Theft"
 date: 2026-08-19 12:00:00 +0000
 categories: [Malware, Browser Extensions]
-tags: [Firefox, Extensions, Mozilla, Clipper, Infostealer, Clipboard, Cryptocurrency, T1176.001, T1204, T1059.007, T1036.005, T1056.002, T1005, T1115, T1102.001, T1071.001, T1020, T1030, T1041]
+tags: [Firefox, Extensions, Mozilla, Clipper, Infostealer, Cryptocurrency, T1176.001, T1204, T1059.007, T1036.005, T1056.002, T1005, T1115, T1102.001, T1071.001, T1020, T1030, T1041]
 canonical_url: https://socket.dev/blog/firefox-crypto-wallet-theft
 source: Socket
 image:
