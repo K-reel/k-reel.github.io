@@ -281,6 +281,9 @@ hide_title: true
 <summary style="font-size:1.2rem"><span style="display:inline-block;vertical-align:top;max-width:calc(100% - 2em)">🦀 <strong>Crates / Rust</strong></span></summary>
 <ul class="content ps-0">
   <li class="px-md-3">
+    <a href="/popular-rust-crates-compromised/">Popular Rust Crates Compromised in Build-Time Supply Chain Attack</a>
+  </li>
+  <li class="px-md-3">
     <a href="/5-malicious-rust-crates-posed-as-time-utilities-to-exfiltrate-env-files/">5 Malicious Rust Crates Posed as Time Utilities to Exfiltrate .env Files</a>
   </li>
   <li class="px-md-3">
