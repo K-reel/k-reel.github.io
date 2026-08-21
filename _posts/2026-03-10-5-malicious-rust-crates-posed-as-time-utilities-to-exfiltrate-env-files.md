@@ -3,7 +3,7 @@ title: "5 Malicious Rust Crates Posed as Time Utilities to Exfiltrate .env Files
 short_title: "5 Malicious Rust Crates Posed as Time Utilities"
 date: 2026-03-10 12:00:00 +0000
 categories: [Malware, Rust]
-tags: [Typosquatting, Infostealer, Brandjacking, crates.io, RustSec, T1195.002, T1204, T1036, T1552.001, T1005, T1583.001, T1071.001, T1041]
+tags: [Typosquatting, Infostealer, Brandjacking, crates.io, T1195.002, T1204, T1036, T1552.001, T1005, T1583.001, T1071.001, T1041]
 canonical_url: https://socket.dev/blog/5-malicious-rust-crates-posed-as-time-utilities-to-exfiltrate-env-files
 source: Socket
 image:

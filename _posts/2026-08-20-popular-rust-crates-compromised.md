@@ -3,7 +3,7 @@ title: "Popular Rust Crates Compromised in Build-Time Supply Chain Attack"
 short_title: "Rust Crates Compromised in Supply Chain Attack"
 date: 2026-08-20 12:00:00 +0000
 categories: [Malware, Rust]
-tags: [Rust, crates.io, Typosquatting, Backdoor, RustSec]
+tags: [Rust, crates.io, Typosquatting, Backdoor]
 author: socket_research_team
 canonical_url: https://socket.dev/blog/popular-rust-crates-compromised
 source: Socket
