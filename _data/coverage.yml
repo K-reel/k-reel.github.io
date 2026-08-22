@@ -472,3 +472,12 @@
   affiliation: Socket
   topic: Infostealer
   source_url: /malicious-ruby-gems-exfiltrate-telegram-tokens-and-messages-following-vietnam-ban/
+
+- outlet: OWASP
+  url: https://scs.owasp.org/sctop10/Web3-Attack-Vectors-Top15/
+  headline: "Alternate Top 15: Web3 Attack Vectors (Beyond Smart Contracts)"
+  date: 2026-02-09
+  quote: "Approximately 75% of blockchain-related malicious packages tracked by Socket in 2025 were on npm."
+  affiliation: Socket
+  topic: Threat Landscape
+  source_url: /2025-blockchain-and-cryptocurrency-threat-report/
