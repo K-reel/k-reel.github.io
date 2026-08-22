@@ -500,3 +500,57 @@
   affiliation: Socket
   topic: Contagious Interview
   source_url: /north-korean-contagious-interview-campaign-drops-35-new-malicious-npm-packages/
+
+- outlet: BleepingComputer
+  url: https://www.bleepingcomputer.com/news/security/north-korean-xorindex-malware-hidden-in-67-malicious-npm-packages/
+  headline: "North Korean XORIndex malware hidden in 67 malicious npm packages"
+  date: 2025-07-15
+  quote: "The packages collectively count more than 17,000 downloads and are connected to the ongoing Contagious Interview operation targeting developers."
+  affiliation: Socket
+  topic: Contagious Interview
+  source_url: /contagious-interview-campaign-escalates-67-malicious-npm-packages/
+
+- outlet: The Hacker News
+  url: https://thehackernews.com/2025/07/north-korean-hackers-flood-npm-registry.html
+  headline: "North Korean Hackers Flood npm Registry with XORIndex Malware in Ongoing Attack Campaign"
+  date: 2025-07-15
+  quote: "The Contagious Interview operation continues to follow a whack-a-mole dynamic, where defenders detect and report malicious packages, and North Korean threat actors quickly respond by uploading new variants using the same, similar, or slightly evolved playbooks."
+  affiliation: Socket
+  topic: Contagious Interview
+  source_url: /contagious-interview-campaign-escalates-67-malicious-npm-packages/
+
+- outlet: Security Affairs
+  url: https://securityaffairs.com/179950/hacking/north-korea-linked-actors-spread-xorindex-malware-via-67-malicious-npm-packages.html
+  headline: "North Korea-linked actors spread XORIndex malware via 67 malicious npm packages"
+  date: 2025-07-15
+  quote: "The Socket Threat Research Team has uncovered a new North Korean software supply chain attack involving a previously unreported malware loader we call XORIndex."
+  affiliation: Socket
+  topic: Contagious Interview
+  source_url: /contagious-interview-campaign-escalates-67-malicious-npm-packages/
+
+- outlet: SC World
+  url: https://www.scworld.com/news/67-malicious-npm-packages-novel-loader-spread-north-korean-malware
+  headline: "67 malicious npm packages, novel loader spread North Korean malware"
+  date: 2025-07-15
+  quote: "In the latest wave of npm packages, a new loader has emerged called XORIndex, which uses XOR encoding and index-based obfuscation to mask its malicious nature."
+  affiliation: Socket
+  topic: Contagious Interview
+  source_url: /contagious-interview-campaign-escalates-67-malicious-npm-packages/
+
+- outlet: TechRadar Pro
+  url: https://www.techradar.com/pro/security/north-korean-hackers-release-malware-ridden-packages-into-npm-registry
+  headline: "North Korean hackers release malware-ridden packages into npm registry"
+  date: 2025-07-15
+  quote: "The Contagious Interview operation continues to follow a whack-a-mole dynamic, where defenders detect and report malicious packages, and North Korean threat actors quickly respond by uploading new variants using the same, similar, or slightly evolved playbooks."
+  affiliation: Socket
+  topic: Contagious Interview
+  source_url: /contagious-interview-campaign-escalates-67-malicious-npm-packages/
+
+- outlet: Risky Biz
+  url: https://www.risky.biz/risky-bulletin-microsoft-blocks-filesystem-redirection-attacks-in-new-security-feature/
+  headline: "Risky Bulletin: Microsoft blocks filesystem redirection attacks in new security feature"
+  date: 2025-07-16
+  quote: "XORIndex Loader: Socket Security says the North Korean hackers behind the Contagious Interview campaign are now using a new malware strain they have named the XORIndex Loader. The malware is hidden inside npm packages sent to developers auditioning for various (fake) jobs advertised by the hackers."
+  affiliation: Socket
+  topic: Contagious Interview
+  source_url: /contagious-interview-campaign-escalates-67-malicious-npm-packages/
