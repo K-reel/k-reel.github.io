@@ -64,15 +64,6 @@
   topic: Backdoor
   source_url: /malicious-npm-packages-hijack-cursor-editor-on-macos/
 
-- outlet: Dark Reading
-  url: https://www.darkreading.com/
-  headline: "PLACEHOLDER — Supply chain attackers turn AI toolchains into a delivery vector"
-  date: 2026-01-22
-  quote: "When an assistant reads a poisoned tool listing, the prompt injection tells the model to silently exfiltrate developer secrets — and to never mention it."
-  affiliation: Socket
-  topic: SANDWORM_MODE
-  source_url: /sandworm-mode-npm-worm-ai-toolchain-poisoning/
-
 - outlet: TechCrunch
   url: https://techcrunch.com/
   headline: "PLACEHOLDER — Wallet-draining npm package impersonates Nodemailer"
@@ -81,14 +72,6 @@
   affiliation: Socket
   topic: Wallet Theft
   source_url: /wallet-draining-npm-package-impersonates-nodemailer/
-
-- outlet: Dark Reading
-  url: https://www.darkreading.com/
-  headline: "PLACEHOLDER — Inside the cybercrime supply chain (Recorded Future research)"
-  date: 2024-06-12
-  quote: "Cybercrime increasingly mirrors legitimate SaaS economics — specialization, recurring access, and a brisk secondary market for fresh credentials."
-  affiliation: Recorded Future
-  topic: Cybercrime
 
 - outlet: Rolling Stone
   url: https://www.rollingstone.com/politics/politics-features/disinformation-conspiracy-theories-inoculation-edelman-corporate-america-1132325/
