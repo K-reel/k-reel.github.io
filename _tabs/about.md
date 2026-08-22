@@ -27,7 +27,7 @@ I'm a cybersecurity and threat intelligence analyst focused on the intersection 
 
 ## Research, Writing, and Speaking
 
-I regularly publish research and speak about adversary tradecraft, cybercrime, malware, software supply chain attacks, and malicious packages. My work ranges from deep technical analysis to practical defensive guidance for security teams, developers, and the broader security community. Research I contributed to has been cited in MITRE ATT&CK entries including [Contagious Interview (G1052)](https://attack.mitre.org/groups/G1052/), [BeaverTail (S1246)](https://attack.mitre.org/software/S1246/), [HexEval Loader (S1249)](https://attack.mitre.org/software/S1249/), and [XORIndex Loader (S1248)](https://attack.mitre.org/software/S1248/). Selected work is available in my [Publications](/publications/) and [Presentations](/presentations/) sections.
+I regularly publish research and speak about adversary tradecraft, cybercrime, malware, software supply chain attacks, and malicious packages. My work ranges from deep technical analysis to practical defensive guidance for security teams, developers, and the broader security community. Research I contributed to has been cited in MITRE ATT&CK entries including [Supply Chain Compromise (T1195.001)](https://attack.mitre.org/techniques/T1195/001/), [Contagious Interview (G1052)](https://attack.mitre.org/groups/G1052/), [BeaverTail (S1246)](https://attack.mitre.org/software/S1246/), [HexEval Loader (S1249)](https://attack.mitre.org/software/S1249/), and [XORIndex Loader (S1248)](https://attack.mitre.org/software/S1248/). Selected work is available in my [Publications](/publications/) and [Presentations](/presentations/) sections.
 
 ---
 
