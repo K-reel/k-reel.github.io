@@ -554,3 +554,66 @@
   affiliation: Socket
   topic: Contagious Interview
   source_url: /contagious-interview-campaign-escalates-67-malicious-npm-packages/
+
+- outlet: BleepingComputer
+  url: https://www.bleepingcomputer.com/news/security/npm-package-is-with-28m-weekly-downloads-infected-devs-with-malware/
+  headline: "NPM package 'is' with 2.8M weekly downloads infected devs with malware"
+  date: 2025-07-23
+  quote: "Once active, it queries Node's os module to collect the hostname, operating system, and CPU details."
+  affiliation: Socket
+  topic: Developer Compromise
+  source_url: /npm-is-package-hijacked-in-expanding-supply-chain-attack/
+
+- outlet: The Register
+  url: https://www.theregister.com/security/2025/07/24/npm-phishing-attack-laces-popular-packages-with-malware/841273
+  headline: "Not pretty, not Windows-only: npm phishing attack laces popular packages with malware"
+  date: 2025-07-24
+  quote: "The 'is' package is used for JavaScript type testing and is downloaded around 2.7 million times a week. Version 3.3.1 includes an obfuscated JavaScript malware loader, as reported by the team at Socket."
+  affiliation: Socket
+  topic: Developer Compromise
+  source_url: /npm-is-package-hijacked-in-expanding-supply-chain-attack/
+
+- outlet: SecurityWeek
+  url: https://www.securityweek.com/high-value-npm-developers-compromised-in-new-phishing-campaign/
+  headline: "High-Value NPM Developers Compromised in New Phishing Campaign"
+  date: 2025-07-24
+  quote: "The maintainer confirmed their NPM token was compromised via the npnjs.com phishing email. The attackers used the stolen credentials to publish malicious versions of multiple packages."
+  affiliation: Socket
+  topic: Developer Compromise
+  source_url: /npm-is-package-hijacked-in-expanding-supply-chain-attack/
+
+- outlet: "heise online"
+  url: https://www.heise.de/en/news/Popular-JavaScript-package-is-Malware-through-supply-chain-attack-10499964.html
+  headline: "Popular JavaScript package is: Malware through supply chain attack"
+  date: 2025-07-25
+  quote: "This function then queries numerous details, such as the host name, operating system, CPU details, and environment variables from process.env. Finally, it uses the ws library to establish a WebSocket connection and transfer the data."
+  affiliation: Socket
+  topic: Developer Compromise
+  source_url: /npm-is-package-hijacked-in-expanding-supply-chain-attack/
+
+- outlet: The Hacker News
+  url: https://thehackernews.com/2025/07/malware-injected-into-6-npm-packages.html
+  headline: "Malware Injected into 7 npm Packages After Maintainer Tokens Stolen in Phishing Attack"
+  date: 2025-07-20
+  quote: "The injected code attempted to execute a DLL on Windows machines, potentially allowing remote code execution."
+  affiliation: Socket
+  topic: Developer Compromise
+  source_url: /npm-is-package-hijacked-in-expanding-supply-chain-attack/
+
+- outlet: TechRadar Pro
+  url: https://www.techradar.com/pro/security/npm-package-with-millions-of-downloads-is-at-risk-from-malware-hijacking
+  headline: "Npm package with millions of downloads is at risk from malware hijacking"
+  date: 2025-07-24
+  quote: "The malware deployed through these packages was a WebSocket-based backdoor that granted the attackers remote code execution capabilities on compromised endpoints."
+  affiliation: Socket
+  topic: Developer Compromise
+  source_url: /npm-is-package-hijacked-in-expanding-supply-chain-attack/
+
+- outlet: "CERT-FR"
+  url: https://www.cert.ssi.gouv.fr/actualite/CERTFR-2025-ACT-033/
+  headline: "Bulletin d'actualité CERTFR-2025-ACT-033"
+  date: 2025-08-11
+  quote: "Attaque par la chaîne d'approvisionnement de plusieurs paquets NPM via une campagne de hameçonnage visant leurs développeurs — le 18 juillet 2025, l'un des contributeurs a publié un message déclarant qu'un attaquant avait récupéré un jeton de connexion via une attaque par hameçonnage."
+  affiliation: Socket
+  topic: Developer Compromise
+  source_url: /npm-is-package-hijacked-in-expanding-supply-chain-attack/

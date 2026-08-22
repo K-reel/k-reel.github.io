@@ -73,3 +73,9 @@
 
 "OWASP":
   logo: /assets/img/coverage/owasp.png
+
+"heise online":
+  logo: /assets/img/coverage/heise.png
+
+"CERT-FR":
+  logo: /assets/img/coverage/cert-fr.png
