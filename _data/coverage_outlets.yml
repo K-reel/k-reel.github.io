@@ -67,3 +67,6 @@
 "MITRE ATT&CK":
   logo: /assets/img/coverage/mitre-attack.png
   hide_name: true  # logo already reads "MITRE ATT&CK" — avoid duplicate text
+
+"SecureWorld":
+  logo: /assets/img/coverage/secureworld.png

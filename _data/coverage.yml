@@ -436,3 +436,39 @@
   affiliation: Socket
   topic: Contagious Interview
   source_url: /lazarus-expands-malicious-npm-campaign-11-new-packages-add-malware-loaders-and-bitbucket/
+
+- outlet: BleepingComputer
+  url: https://www.bleepingcomputer.com/news/security/malicious-rubygems-pose-as-fastlane-to-steal-telegram-api-data/
+  headline: "Malicious RubyGems pose as Fastlane to steal Telegram API data"
+  date: 2025-06-03
+  quote: "The use of this proxy, combined with the typosquatting of a trusted Fastlane plugin, clearly indicates intent to exfiltrate tokens and message data under the guise of normal CI behavior."
+  affiliation: Socket
+  topic: Infostealer
+  source_url: /malicious-ruby-gems-exfiltrate-telegram-tokens-and-messages-following-vietnam-ban/
+
+- outlet: Dark Reading
+  url: https://www.darkreading.com/cyberattacks-data-breaches/attackers-impersonate-ruby-packages-telegram-data
+  headline: "Attackers Impersonate Ruby Packages to Steal Sensitive Telegram Data"
+  date: 2025-06-04
+  quote: "These gems silently exfiltrate all data sent to the Telegram API by redirecting traffic through a command and control (C2) server controlled by the threat actor."
+  affiliation: Socket
+  topic: Infostealer
+  source_url: /malicious-ruby-gems-exfiltrate-telegram-tokens-and-messages-following-vietnam-ban/
+
+- outlet: SecureWorld
+  url: https://www.secureworld.io/industry-news/malicious-open-source-packages
+  headline: "Malicious Open-Source Packages Target Crypto Wallets, Telegram Tokens, and Codebases"
+  date: 2025-06-04
+  quote: "These gems silently exfiltrate all data sent to the Telegram API. This includes bot tokens, chat IDs, message content, and attached files."
+  affiliation: Socket
+  topic: Infostealer
+  source_url: /malicious-ruby-gems-exfiltrate-telegram-tokens-and-messages-following-vietnam-ban/
+
+- outlet: The Hacker News
+  url: https://thehackernews.com/2025/06/malicious-pypi-npm-and-ruby-packages.html
+  headline: "Malicious PyPI, npm, and Ruby Packages Exposed in Ongoing Open-Source Supply Chain Attacks"
+  date: 2025-06-04
+  quote: "These gems silently exfiltrate all data sent to the Telegram API by redirecting traffic through a command-and-control (C2) server controlled by the threat actor."
+  affiliation: Socket
+  topic: Infostealer
+  source_url: /malicious-ruby-gems-exfiltrate-telegram-tokens-and-messages-following-vietnam-ban/
