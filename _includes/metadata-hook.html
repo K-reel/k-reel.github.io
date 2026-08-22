@@ -1,7 +1,7 @@
 <!--
   Custom metadata hooks for k-reel.github.io
   Author: Kirill Boychenko
-  Sets light mode default and favicon cache busting
+  Favicon cache busting and site customizations
 -->
 <style>
   /* Self-hosted fonts — eliminates FOUT from Google Fonts display:swap */
@@ -88,20 +88,6 @@
 </style>
 <script>
   (function() {
-    const modeKey = 'mode';
-    const lightMode = 'light';
-
-    try {
-      // Only set default if user has no preference stored
-      if (!localStorage.getItem(modeKey)) {
-        localStorage.setItem(modeKey, lightMode);
-        document.documentElement.setAttribute('data-mode', lightMode);
-      }
-    } catch (e) {
-      // If storage is unavailable, fall back to light via attribute only
-      document.documentElement.setAttribute('data-mode', lightMode);
-    }
-
     // Remove Google Fonts link to prevent display:swap FOUT (fonts are self-hosted)
     new MutationObserver(function(mutations, obs) {
       var link = document.querySelector('link[href*="fonts.googleapis.com"]');
