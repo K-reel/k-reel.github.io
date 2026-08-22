@@ -626,3 +626,12 @@
   affiliation: Socket
   topic: Developer Compromise
   source_url: /glassworm-loader-hits-open-vsx-via-suspected-developer-account-compromise/
+
+- outlet: Ars Technica
+  url: https://arstechnica.com/security/2025/07/open-source-repositories-are-seeing-a-rash-of-supply-chain-attacks/
+  headline: "Supply-chain attacks on open source software are getting out of hand"
+  date: 2025-07-25
+  quote: "The packages covertly integrate surveillance functionality into the developer's environment, enabling keylogging, screen capture, fingerprinting, webcam access, and credential theft."
+  affiliation: Socket
+  topic: Surveillance
+  source_url: /surveillance-malware-hidden-in-npm-and-pypi-packages/
