@@ -231,6 +231,7 @@ toc: false
     {% assign outlets = outlets | push: item.outlet %}
   {% endunless %}
 {% endfor %}
+{% assign outlets = outlets | sort_natural %}
 
 {% for outlet in outlets %}
   {% assign outlet_entries = coverage | where: "outlet", outlet %}
