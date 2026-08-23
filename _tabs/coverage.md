@@ -205,7 +205,7 @@ toc: false
     height: auto !important;
     aspect-ratio: auto !important;
     object-fit: contain !important;
-    border-radius: 12px;
+    border-radius: 0;
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.30);
   }
 </style>
