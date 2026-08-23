@@ -203,12 +203,8 @@ toc: false
   }
   .coverage-banner img {
     height: auto !important;
-    /* match the About page banner's aspect ratio (2400x300) so both
-       banners render at the same height instead of the source
-       image's native, flatter 2400x257 ratio */
-    aspect-ratio: 8 / 1 !important;
-    object-fit: cover !important;
-    object-position: center !important;
+    aspect-ratio: auto !important;
+    object-fit: contain !important;
     border-radius: 0;
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.30);
   }
