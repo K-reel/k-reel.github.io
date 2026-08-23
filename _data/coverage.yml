@@ -981,3 +981,30 @@
   affiliation: Socket
   topic: Spamware
   source_url: /131-spamware-extensions-targeting-whatsapp-flood-chrome-web-store/
+
+- outlet: The Hacker News
+  url: https://thehackernews.com/2025/10/fake-nethereum-nuget-package-used.html
+  headline: "Fake Nethereum NuGet Package Used Homoglyph Trick to Steal Crypto Wallet Keys"
+  date: 2025-10-22
+  quote: "The malicious package \"Netherеum.All\" swapped the letter \"e\" with a Cyrillic homoglyph to deceive developers, while containing functionality designed to exfiltrate cryptocurrency wallet data and private keys through a command-and-control server."
+  affiliation: Socket
+  topic: Wallet Theft
+  source_url: /malicious-nuget-packages-typosquat-nethereum-to-exfiltrate-wallet-keys/
+
+- outlet: SC World
+  url: https://www.scworld.com/brief/typosquatted-nethereum-package-seeks-to-pilfer-crypto-wallet-keys
+  headline: "Typosquatted Nethereum package seeks to pilfer crypto wallet keys"
+  date: 2025-10-23
+  quote: "Hidden within the package's EIP70221TransactionService.Shuffle function is the primary payload, which enables sensitive crypto wallet data theft, according to researchers."
+  affiliation: Socket
+  topic: Wallet Theft
+  source_url: /malicious-nuget-packages-typosquat-nethereum-to-exfiltrate-wallet-keys/
+
+- outlet: Risky Biz
+  url: https://news.risky.biz/risky-bulletin-ios-26-change-deletes-clues-of-old-spyware-infections/
+  headline: "Risky Bulletin: iOS 26 change deletes clues of old spyware infections"
+  date: 2025-10-24
+  quote: "NuGet malware: Socket Security has spotted a malicious package on the NuGet package repo for .NET libraries. The package is designed to steal crypto wallet keys."
+  affiliation: Socket
+  topic: Wallet Theft
+  source_url: /malicious-nuget-packages-typosquat-nethereum-to-exfiltrate-wallet-keys/
