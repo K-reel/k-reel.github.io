@@ -1179,3 +1179,21 @@
   affiliation: Socket
   topic: Contagious Interview
   source_url: /north-korea-contagious-interview-npm-attacks/
+
+- outlet: The Hacker News
+  url: https://thehackernews.com/2025/12/researchers-find-malicious-vs-code-go.html
+  headline: "Researchers Find Malicious VS Code, Go, npm, and Rust Packages Stealing Developer Data"
+  date: 2025-12-09
+  quote: "Go packages named \"github[.]com/bpoorman/uuid\" and \"github[.]com/bpoorman/uid\" that have been available since 2021 and typosquat trusted UUID libraries (\"github[.]com/google/uuid\" and \"github[.]com/pborman/uuid\") to exfiltrate data to a paste site called dpaste."
+  affiliation: Socket
+  topic: Backdoor
+  source_url: /malicious-go-packages-impersonate-googles-uuid-library-and-exfiltrate-data/
+
+- outlet: "Golang Weekly"
+  url: https://golangweekly.com/issues/582
+  headline: "Issue #582: Shhh.. Go's getting a 'secret mode'"
+  date: 2025-12-10
+  quote: "Malicious Go Packages Impersonate Google's UUID Library — Kirill Boychenko (Socket)"
+  affiliation: Socket
+  topic: Backdoor
+  source_url: /malicious-go-packages-impersonate-googles-uuid-library-and-exfiltrate-data/
