@@ -47,11 +47,11 @@ jobs:
 
       - name: Validate data files
         run: |
-          shopt -s globstar nullglob
           fail=0
-          for f in _data/**/*.yml _data/**/*.yaml; do
-            ruby -ryaml -e "YAML.load_file('$f')" 2>/tmp/err || { echo "::error file=$f::$(cat /tmp/err | tail -1)"; fail=1; }
-          done
+          while IFS= read -r f; do
+            ruby -ryaml -e "loader = YAML.respond_to?(:unsafe_load_file) ? :unsafe_load_file : :load_file; YAML.send(loader, '$f')" 2>/tmp/err \
+              || { echo "::error file=$f::$(tr '\n' ' ' < /tmp/err)"; fail=1; }
+          done < <(find _data -type f \( -name '*.yml' -o -name '*.yaml' \))
           exit $fail
 
       - name: Build site
