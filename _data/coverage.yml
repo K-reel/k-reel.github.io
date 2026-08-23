@@ -870,3 +870,12 @@
   affiliation: Socket
   topic: Supply Chain Worm
   source_url: /tinycolor-supply-chain-attack-affects-40-packages/
+
+- outlet: MITRE ATT&CK
+  url: https://attack.mitre.org/software/S9008/
+  headline: "Shai-Hulud (S9008)"
+  date: 2026-04-24
+  quote: "Shai-Hulud is a supply chain worm, first reported in September 2025, that spreads through code repositories, including GitHub and NPM packages. It exploits CI/CD pipeline dependencies to propagate to victims and poisons the supply chain by publishing malicious packages. — citing Socket Research Team, \"Popular Tinycolor npm Package Compromised in Supply Chain Attack Affecting 40+ Packages\" (Sep 15, 2025)."
+  affiliation: Socket
+  topic: Supply Chain Worm
+  source_url: /tinycolor-supply-chain-attack-affects-40-packages/
