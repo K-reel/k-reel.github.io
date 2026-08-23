@@ -92,3 +92,6 @@
 "Krebs on Security":
   logo: /assets/img/coverage/krebsonsecurity.png
   hide_name: true  # logo already reads "KrebsOnSecurity" — avoid duplicate text
+
+"Golang Weekly":
+  logo: /assets/img/coverage/golangweekly.png
