@@ -879,3 +879,39 @@
   affiliation: Socket
   topic: Supply Chain Worm
   source_url: /tinycolor-supply-chain-attack-affects-40-packages/
+
+- outlet: BleepingComputer
+  url: https://www.bleepingcomputer.com/news/security/malicious-rust-packages-on-cratesio-steal-crypto-wallet-keys/
+  headline: "Malicious Rust packages on Crates.io steal crypto wallet keys"
+  date: 2025-09-25
+  quote: "When the code found matches, it bundled it with the file path and line number and exfiltrated the data to a hardcoded Cloudflare Worker URL address."
+  affiliation: Socket
+  topic: Wallet Theft
+  source_url: /two-malicious-rust-crates-impersonate-popular-logger-to-steal-wallet-keys/
+
+- outlet: The Hacker News
+  url: https://thehackernews.com/2025/09/malicious-rust-crates-steal-solana-and.html
+  headline: "Malicious Rust Crates Steal Solana and Ethereum Keys — 8,424 Downloads Confirmed"
+  date: 2025-09-25
+  quote: "The crates include working logging code for cover and embed routines that scan source files for Solana and Ethereum private keys, then exfiltrate matches via HTTP POST."
+  affiliation: Socket
+  topic: Wallet Theft
+  source_url: /two-malicious-rust-crates-impersonate-popular-logger-to-steal-wallet-keys/
+
+- outlet: SC World
+  url: https://www.scworld.com/brief/nefarious-rust-crates-set-sights-on-crypto-wallet-keys
+  headline: "Nefarious Rust crates set sights on crypto wallet keys"
+  date: 2025-09-26
+  quote: "Injection of an illicit payload into the packages allowed the scanning of Hex and Base58 strings resembling Ethereum private keys and Solana keys."
+  affiliation: Socket
+  topic: Wallet Theft
+  source_url: /two-malicious-rust-crates-impersonate-popular-logger-to-steal-wallet-keys/
+
+- outlet: "Rust Blog"
+  url: https://blog.rust-lang.org/2025/09/24/crates.io-malicious-crates-fasterlog-and-asyncprintln/
+  headline: "crates.io: Malicious crates faster_log and async_println"
+  date: 2025-09-24
+  quote: "On September 24th, the crates.io team was notified by Kirill Boychenko from the Socket Threat Research Team of two malicious crates which were actively searching file contents for Ethereum private keys, Solana private keys, and arbitrary byte arrays for exfiltration."
+  affiliation: Socket
+  topic: Wallet Theft
+  source_url: /two-malicious-rust-crates-impersonate-popular-logger-to-steal-wallet-keys/
