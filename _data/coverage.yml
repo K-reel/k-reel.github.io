@@ -1094,7 +1094,7 @@
   url: https://thehackernews.com/2025/11/north-korean-hackers-deploy-197-npm.html
   headline: "North Korean Hackers Deploy 197 npm Packages to Spread Updated OtterCookie Malware"
   date: 2025-11-28
-  quote: "This sustained tempo makes Contagious Interview one of the most prolific campaigns exploiting npm," security researcher Kirill Boychenko said, noting the threat actors "have continued to flood the npm registry with 197 more malicious packages since last month."
+  quote: "This sustained tempo makes Contagious Interview one of the most prolific campaigns exploiting npm. The threat actors have continued to flood the npm registry with 197 more malicious packages since last month."
   affiliation: Socket
   topic: Contagious Interview
   source_url: /north-korea-contagious-interview-npm-attacks/
@@ -1103,7 +1103,7 @@
   url: https://www.darkreading.com/application-security/contagious-interview-malicious-npm-package-factory
   headline: "DPRK Attackers Spawn Malicious Npm Package Factory"
   date: 2025-12-02
-  quote: "This sustained tempo makes Contagious Interview one of the most prolific campaigns exploiting npm, and it shows how thoroughly North Korean threat actors have adapted their tooling to modern JavaScript and crypto-centric development workflows," Socket Threat Research's Kirill Boychenko wrote in the report.
+  quote: "This sustained tempo makes Contagious Interview one of the most prolific campaigns exploiting npm, and it shows how thoroughly North Korean threat actors have adapted their tooling to modern JavaScript and crypto-centric development workflows, Socket Threat Research's Kirill Boychenko wrote in the report."
   affiliation: Socket
   topic: Contagious Interview
   source_url: /north-korea-contagious-interview-npm-attacks/
