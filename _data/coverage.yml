@@ -555,6 +555,15 @@
   topic: Contagious Interview
   source_url: /contagious-interview-campaign-escalates-67-malicious-npm-packages/
 
+- outlet: Infosecurity Magazine
+  url: https://www.infosecurity-magazine.com/news/north-korean-contagious-interview/
+  headline: "North Korean Actors Expand Contagious Interview Campaign with New Malware Loader"
+  date: 2025-07-15
+  quote: "These packages have been collectively downloaded more than 17,000 times, with 27 remaining live on the npm registry, the researchers said."
+  affiliation: Socket
+  topic: Contagious Interview
+  source_url: /contagious-interview-campaign-escalates-67-malicious-npm-packages/
+
 - outlet: BleepingComputer
   url: https://www.bleepingcomputer.com/news/security/npm-package-is-with-28m-weekly-downloads-infected-devs-with-malware/
   headline: "NPM package 'is' with 2.8M weekly downloads infected devs with malware"
