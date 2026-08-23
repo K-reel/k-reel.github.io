@@ -1008,3 +1008,57 @@
   affiliation: Socket
   topic: Wallet Theft
   source_url: /malicious-nuget-packages-typosquat-nethereum-to-exfiltrate-wallet-keys/
+
+- outlet: The Hacker News
+  url: https://thehackernews.com/2025/11/fake-chrome-extension-safery-steals.html
+  headline: "Fake Chrome Extension \"Safery\" Steals Ethereum Wallet Seed Phrases Using Sui Blockchain"
+  date: 2025-11-13
+  quote: "The malware exfiltrates seed phrases by encoding them into Sui addresses and broadcasting microtransactions from a threat actor-controlled Sui wallet."
+  affiliation: Socket
+  topic: Wallet Theft
+  source_url: /malicious-chrome-extension-exfiltrates-seed-phrases/
+
+- outlet: Security Affairs
+  url: https://securityaffairs.com/184585/malware/chrome-extension-safery-steals-ethereum-wallet-seed-phrases.html
+  headline: "Chrome extension \"Safery\" steals Ethereum wallet seed phrases"
+  date: 2025-11-13
+  quote: "When a user creates or imports a wallet, Safery: Ethereum Wallet encodes the BIP-39 mnemonic into synthetic Sui style addresses, then sends 0.000001 SUI to those recipients using a hardcoded threat actor's mnemonic."
+  affiliation: Socket
+  topic: Wallet Theft
+  source_url: /malicious-chrome-extension-exfiltrates-seed-phrases/
+
+- outlet: CoinTelegraph
+  url: https://cointelegraph.com/news/malicious-crypto-wallet-google-extension-steals-seed-phrases
+  headline: "Security Researchers Uncovered Dubious 'Safery' Crypto Wallet Chrome Store"
+  date: 2025-11-14
+  quote: "Socket identified that the malicious extension encodes the BIP-39 mnemonic into synthetic Sui style addresses, then sends 0.000001 SUI to those recipients using a hardcoded threat actor's mnemonic."
+  affiliation: Socket
+  topic: Wallet Theft
+  source_url: /malicious-chrome-extension-exfiltrates-seed-phrases/
+
+- outlet: SC World
+  url: https://www.scworld.com/brief/chrome-extension-safery-ethereum-wallet-stealing-seed-phrases-poses-major-cybersecurity-threat
+  headline: "Chrome extension 'Safery' steals crypto wallet seed phrases"
+  date: 2025-11-14
+  quote: "A malicious Chrome extension named 'Safery: Ethereum Wallet' has been identified by Socket's Threat Research Team, deceiving users by posing as a legitimate crypto wallet while actually stealing their seed phrases."
+  affiliation: Socket
+  topic: Wallet Theft
+  source_url: /malicious-chrome-extension-exfiltrates-seed-phrases/
+
+- outlet: Risky Biz
+  url: https://risky.biz/risky-bulletin-europol-takes-down-elysium-venomrat-and-rhadamanthys-infrastructure/
+  headline: "Risky Bulletin: Europol takes down Elysium, VenomRAT, and Rhadamanthys infrastructure"
+  date: 2025-11-14
+  quote: "Malicious Chrome extension: Socket Security has spotted a malicious Chrome extension posing as an Ethereum wallet that was designed to steal seed phrases. The extension was still live."
+  affiliation: Socket
+  topic: Wallet Theft
+  source_url: /malicious-chrome-extension-exfiltrates-seed-phrases/
+
+- outlet: Vulnerable U
+  url: https://www.vulnu.com/p/vulnerable-u-142
+  headline: "Vulnerable U #142"
+  date: 2025-11-14
+  quote: "The extension store malware continues. Socket caught a nasty Chrome extension called 'Safery: Ethereum Wallet' that just steals your crypto."
+  affiliation: Socket
+  topic: Wallet Theft
+  source_url: /malicious-chrome-extension-exfiltrates-seed-phrases/
