@@ -1269,3 +1269,21 @@
   affiliation: Socket
   topic: Infostealer
   source_url: /malicious-chrome-extension-steals-mexc-api-keys/
+
+- outlet: The Hacker News
+  url: https://thehackernews.com/2026/01/malicious-pypi-package-impersonates.html
+  headline: "Malicious PyPI Package Impersonates SymPy, Deploys XMRig Miner on Linux Hosts"
+  date: 2026-01-22
+  quote: "The original library has been modified to act as a downloader for an XMRig cryptocurrency miner on compromised systems."
+  affiliation: Socket
+  topic: Cryptominer
+  source_url: /pypi-package-impersonates-sympy-to-deliver-cryptomining-malware/
+
+- outlet: Risky Biz
+  url: https://risky.biz/risky-bulletin-improperly-patched-bug-exploited-again-in-fortinet-firewalls/
+  headline: "Risky Bulletin: Improperly patched bug exploited again in Fortinet firewalls"
+  date: 2026-01-23
+  quote: "Malicious PyPI package deploys cryptominer: Socket Security has spotted a malicious PyPI package posing as SymPy to deploy crypto-miners on victim's systems."
+  affiliation: Socket
+  topic: Cryptominer
+  source_url: /pypi-package-impersonates-sympy-to-deliver-cryptomining-malware/
