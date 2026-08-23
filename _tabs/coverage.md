@@ -183,28 +183,22 @@ toc: false
   .coverage-banner p {
     margin: 0 !important;
   }
-  @media (min-width: 850px) {
-    /* bleed to the content-panel edges (reclaim the theme's side padding) */
-    .coverage-banner {
-      margin-left: -1.75rem;
-      margin-right: -1.75rem;
-    }
-  }
   /* force full width even through the theme's lightbox wrapper */
   .coverage-banner a.popup,
-  .coverage-banner .img-link,
-  .coverage-banner img {
+  .coverage-banner .img-link {
     display: block !important;
-    width: 100% !important;
-    max-width: none !important;
-    left: auto !important;
-    transform: none !important;
     margin-inline: 0 !important;
   }
   .coverage-banner img {
+    display: block !important;
+    width: 100vw !important;
+    max-width: none !important;
     height: auto !important;
     aspect-ratio: auto !important;
     object-fit: contain !important;
+    position: relative !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
     border-radius: 0;
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.30);
   }
