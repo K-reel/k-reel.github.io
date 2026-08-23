@@ -9,7 +9,8 @@ toc: false
 <style>
   .coverage-intro {
     margin-bottom: 2.25rem;
-    line-height: 1.65;
+    font-size: 1.1rem;
+    line-height: 1.75;
   }
   .coverage-intro p { margin-bottom: 0.85rem; }
   .coverage-intro p:last-child { margin-bottom: 0; }
