@@ -447,6 +447,15 @@
   topic: Infostealer
   source_url: /malicious-ruby-gems-exfiltrate-telegram-tokens-and-messages-following-vietnam-ban/
 
+- outlet: "CSO Online"
+  url: https://www.csoonline.com/article/4002437/supply-chain-attack-hits-rubygems-to-steal-telegram-api-data.html
+  headline: "Supply chain attack hits RubyGems to steal Telegram API data"
+  date: 2025-06-05
+  quote: "These gems silently exfiltrate all data sent to the Telegram API by redirecting traffic through a C2 server controlled by the threat actor."
+  affiliation: Socket
+  topic: Infostealer
+  source_url: /malicious-ruby-gems-exfiltrate-telegram-tokens-and-messages-following-vietnam-ban/
+
 - outlet: OWASP
   url: https://scs.owasp.org/sctop10/Web3-Attack-Vectors-Top15/
   headline: "Alternate Top 15: Web3 Attack Vectors (Beyond Smart Contracts)"
@@ -614,6 +623,15 @@
   headline: "Bulletin d'actualité CERTFR-2025-ACT-033"
   date: 2025-08-11
   quote: "Attaque par la chaîne d'approvisionnement de plusieurs paquets NPM via une campagne de hameçonnage visant leurs développeurs — le 18 juillet 2025, l'un des contributeurs a publié un message déclarant qu'un attaquant avait récupéré un jeton de connexion via une attaque par hameçonnage."
+  affiliation: Socket
+  topic: Developer Compromise
+  source_url: /npm-is-package-hijacked-in-expanding-supply-chain-attack/
+
+- outlet: "CSO Online"
+  url: https://www.csoonline.com/article/4028412/supply-chain-attack-compromises-npm-packages-to-spread-backdoor-malware.html
+  headline: "Supply chain attack compromises npm packages to spread backdoor malware"
+  date: 2025-07-24
+  quote: "The npm is package attack wasn't just about Windows-specific DLLs. It used a cross-platform JavaScript malware loader. This JavaScript runs entirely in JavaScript on Node.js 12+ across macOS, Linux, and Windows, and it keeps a live Command and Control (C2) channel open."
   affiliation: Socket
   topic: Developer Compromise
   source_url: /npm-is-package-hijacked-in-expanding-supply-chain-attack/
