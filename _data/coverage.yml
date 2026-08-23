@@ -936,3 +936,48 @@
   affiliation: Socket
   topic: Contagious Interview
   source_url: /north-korea-contagious-interview-campaign-338-malicious-npm-packages/
+
+- outlet: The Hacker News
+  url: https://thehackernews.com/2025/10/131-chrome-extensions-caught-hijacking.html
+  headline: "131 Chrome Extensions Caught Hijacking WhatsApp Web for Massive Spam Campaign"
+  date: 2025-10-20
+  quote: "They are not classic malware, but they function as high-risk spam automation that abuses platform rules."
+  affiliation: Socket
+  topic: Spamware
+  source_url: /131-spamware-extensions-targeting-whatsapp-flood-chrome-web-store/
+
+- outlet: Forbes
+  url: https://www.forbes.com/sites/zakdoffman/2025/10/21/if-you-use-whatsapp-delete-every-chrome-extension-on-this-list/
+  headline: "WhatsApp Users Targeted By Abusive Chrome Extensions"
+  date: 2025-10-21
+  quote: "This cluster of Chrome extensions comprises 131 rebrands of a single tool, all sharing the same codebase, design patterns, and infrastructure. The code injects directly into the WhatsApp Web page, running alongside WhatsApp's own scripts, automates bulk outreach and scheduling in ways that aim to bypass WhatsApp anti-spam enforcement."
+  affiliation: Socket
+  topic: Spamware
+  source_url: /131-spamware-extensions-targeting-whatsapp-flood-chrome-web-store/
+
+- outlet: SC World
+  url: https://www.scworld.com/brief/whatsapp-targeted-by-chrome-spamware-extensions
+  headline: "WhatsApp targeted by Chrome spamware extensions"
+  date: 2025-10-21
+  quote: "The cluster consists of near-identical copies spread across publisher accounts, is marketed for bulk unsolicited outreach, and automates message sending."
+  affiliation: Socket
+  topic: Spamware
+  source_url: /131-spamware-extensions-targeting-whatsapp-flood-chrome-web-store/
+
+- outlet: Risky Biz
+  url: https://news.risky.biz/risky-bulletin-clever-worm-hits-the-devops-scene/
+  headline: "Risky Bulletin: Clever worm hits the DevOps scene"
+  date: 2025-10-21
+  quote: "Malicious Chrome extensions behind WhatsApp spam: A cluster of malicious Chrome extensions is injecting code into the WhatsApp web client to send spam messages. The cluster includes 131 extensions with an install base of almost 21,000 users. The extensions are mainly targeting Brazilian users. Socket Security says it notified Google, but the extensions are still available on the official Chrome Web Store."
+  affiliation: Socket
+  topic: Spamware
+  source_url: /131-spamware-extensions-targeting-whatsapp-flood-chrome-web-store/
+
+- outlet: Malwarebytes
+  url: https://www.malwarebytes.com/blog/news/2025/10/over-100-chrome-extensions-break-whatsapps-anti-spam-rules
+  headline: "Over 100 Chrome extensions break WhatsApp's anti-spam rules"
+  date: 2025-10-22
+  quote: "The 131 spamware extensions inject code directly into the WhatsApp Web site to automate bulk messaging and circumvent built-in anti-spam protections."
+  affiliation: Socket
+  topic: Spamware
+  source_url: /131-spamware-extensions-targeting-whatsapp-flood-chrome-web-store/
