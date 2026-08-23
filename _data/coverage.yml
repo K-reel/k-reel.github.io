@@ -1062,3 +1062,30 @@
   affiliation: Socket
   topic: Wallet Theft
   source_url: /malicious-chrome-extension-exfiltrates-seed-phrases/
+
+- outlet: The Hacker News
+  url: https://thehackernews.com/2025/11/second-sha1-hulud-wave-affects-25000.html
+  headline: "Second Sha1-Hulud Wave Affects 25,000+ Repositories via npm Preinstall Credential Theft"
+  date: 2025-11-24
+  quote: "This makes the malware self-healing – if a victim deletes previous malicious repositories, the attacker can re-seed victims through GitHub search, the Socket Research Team said."
+  affiliation: Socket
+  topic: Supply Chain Worm
+  source_url: /shai-hulud-strikes-again-v2/
+
+- outlet: The Hacker News
+  url: https://thehackernews.com/2025/11/shai-hulud-v2-campaign-spreads-from-npm.html
+  headline: "Shai-Hulud v2 Spreads From npm to Maven, as Campaign Exposes Thousands of Secrets"
+  date: 2025-11-26
+  quote: "This means the PostHog project has compromised releases in both the JavaScript/npm and Java/Maven ecosystems, driven by the same Shai Hulud v2 payload, according to Socket Research Team's analysis."
+  affiliation: Socket
+  topic: Supply Chain Worm
+  source_url: /shai-hulud-strikes-again-v2/
+
+- outlet: Vulnerable U
+  url: https://www.vulnu.com/p/vulnerable-u-144
+  headline: "Vulnerable U #144"
+  date: 2025-11-28
+  quote: "Shai Hulud Strikes Again (v2) — The best named worm ever, Shai-Hulud, is back with a vengeance, hitting over 834 npm packages from major players like PostHog, Zapier, AsyncAPI, Postman, and ENS Domains."
+  affiliation: Socket
+  topic: Supply Chain Worm
+  source_url: /shai-hulud-strikes-again-v2/
