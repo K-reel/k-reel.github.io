@@ -64,15 +64,6 @@
   topic: Backdoor
   source_url: /malicious-npm-packages-hijack-cursor-editor-on-macos/
 
-- outlet: TechCrunch
-  url: https://techcrunch.com/
-  headline: "PLACEHOLDER — Wallet-draining npm package impersonates Nodemailer"
-  date: 2025-08-05
-  quote: "Typosquatting against high-trust libraries continues to be one of the cheapest, highest-yield attacks on the JavaScript ecosystem."
-  affiliation: Socket
-  topic: Wallet Theft
-  source_url: /wallet-draining-npm-package-impersonates-nodemailer/
-
 - outlet: Rolling Stone
   url: https://www.rollingstone.com/politics/politics-features/disinformation-conspiracy-theories-inoculation-edelman-corporate-america-1132325/
   headline: "The Disinformation Vaccine: Is There a Cure for Conspiracy Theories?"
@@ -734,3 +725,30 @@
   affiliation: Socket
   topic: Infostealer
   source_url: /malicious-go-module-disguised-as-ssh-brute-forcer-exfiltrates-credentials/
+
+- outlet: The Hacker News
+  url: https://thehackernews.com/2025/09/malicious-npm-package-nodejs-smtp.html
+  headline: "Malicious npm Package nodejs-smtp Mimics Nodemailer, Targets Atomic and Exodus Wallets"
+  date: 2025-09-02
+  quote: "On import, the package uses Electron tooling to unpack Atomic Wallet's app.asar, replace a vendor bundle with a malicious payload, repackage the application."
+  affiliation: Socket
+  topic: Wallet Theft
+  source_url: /wallet-draining-npm-package-impersonates-nodemailer/
+
+- outlet: Infosecurity Magazine
+  url: https://www.infosecurity-magazine.com/news/malicious-npm-package-email-library/
+  headline: "Malicious npm Package Masquerades as Popular Email Library"
+  date: 2025-09-02
+  quote: "A new malicious npm package impersonating the widely used nodemailer library has been uncovered by cybersecurity researchers."
+  affiliation: Socket
+  topic: Wallet Theft
+  source_url: /wallet-draining-npm-package-impersonates-nodemailer/
+
+- outlet: Risky Biz
+  url: https://risky.biz/risky-bulletin-youtubers-unmask-and-help-dismantle-giant-chinese-scam-ring/
+  headline: "Risky Bulletin: YouTubers unmask and help dismantle giant Chinese scam ring"
+  date: 2025-09-03
+  quote: "Malicious npm package: Socket Security has found a malicious npm package impersonating the more popular Nodemailer library, and which delivers an infostealer designed to steal crypto-wallet data."
+  affiliation: Socket
+  topic: Wallet Theft
+  source_url: /wallet-draining-npm-package-impersonates-nodemailer/
