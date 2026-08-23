@@ -1287,3 +1287,84 @@
   affiliation: Socket
   topic: Cryptominer
   source_url: /pypi-package-impersonates-sympy-to-deliver-cryptomining-malware/
+
+- outlet: The Hacker News
+  url: https://thehackernews.com/2026/02/open-vsx-supply-chain-attack-used.html
+  headline: "Open VSX Supply Chain Attack Used Compromised Dev Account to Spread GlassWorm"
+  date: 2026-02-02
+  quote: "On January 30, 2026, four established Open VSX extensions published by the oorzc author had malicious versions published to Open VSX that embed the GlassWorm malware loader."
+  affiliation: Socket
+  topic: Developer Compromise
+  source_url: /glassworm-loader-hits-open-vsx-via-suspected-developer-account-compromise/
+
+- outlet: BleepingComputer
+  url: https://www.bleepingcomputer.com/news/security/new-glassworm-attack-targets-macos-via-compromised-openvsx-extensions/
+  headline: "New GlassWorm attack targets macOS via compromised OpenVSX extensions"
+  date: 2026-02-02
+  quote: "The threat actor gained access to the account of a legitimate developer (oorzc) and pushed malicious updates with the GlassWorm payload to four extensions that had been downloaded 22,000 times."
+  affiliation: Socket
+  topic: Developer Compromise
+  source_url: /glassworm-loader-hits-open-vsx-via-suspected-developer-account-compromise/
+
+- outlet: SC World
+  url: https://www.scworld.com/news/glassworm-malware-targets-open-vsx-registry-in-supply-chain-attack
+  headline: "GlassWorm malware targets Open VSX Registry in supply chain attack"
+  date: 2026-02-02
+  quote: "The four malicious extensions collectively accumulated more than 22,000 Open VSX downloads prior to the malicious releases."
+  affiliation: Socket
+  topic: Developer Compromise
+  source_url: /glassworm-loader-hits-open-vsx-via-suspected-developer-account-compromise/
+
+- outlet: SecurityWeek
+  url: https://www.securityweek.com/open-vsx-publisher-account-hijacked-in-fresh-glassworm-attack/
+  headline: "Open VSX Publisher Account Hijacked in Fresh GlassWorm Attack"
+  date: 2026-02-02
+  quote: "This campaign shows a clear escalation in Open VSX supply chain abuse. The threat actor blends into normal developer workflows, hides execution behind encrypted, runtime-decrypted loaders, and uses Solana memos as a dynamic dead drop to rotate staging infrastructure without republishing extensions."
+  affiliation: Socket
+  topic: Developer Compromise
+  source_url: /glassworm-loader-hits-open-vsx-via-suspected-developer-account-compromise/
+
+- outlet: Dark Reading
+  url: https://www.darkreading.com/application-security/glassworm-malware-developer-ecosystems
+  headline: "GlassWorm Malware Returns to Shatter Developer Ecosystems"
+  date: 2026-02-03
+  quote: "Earlier waves largely relied on typosquatting and brandjacking, cloning or mimicking popular developer tools and attempting to appear trustworthy by artificially inflating download counts. By contrast, these four extensions were published under an established publisher account with a multi-extension history and meaningful adoption signals across ecosystems, Kirill Boychenko wrote."
+  affiliation: Socket
+  topic: Developer Compromise
+  source_url: /glassworm-loader-hits-open-vsx-via-suspected-developer-account-compromise/
+
+- outlet: Risky Biz
+  url: https://risky.biz/risky-bulletin-stopice-blames-hack-on-a-cbp-agent-here-in-socal/
+  headline: "Risky Bulletin: StopICE blames hack on \"a CBP agent here in SoCal\""
+  date: 2026-02-02
+  quote: "GlassWorm is back, again: Socket Security has spotted a new attempt to distribute the GlassWorm self-replicating VSCode worm on the OpenVSX extensions portal. This new push came after attackers compromised a developer's account and pushed the malware to their four extensions."
+  affiliation: Socket
+  topic: Developer Compromise
+  source_url: /glassworm-loader-hits-open-vsx-via-suspected-developer-account-compromise/
+
+- outlet: TechRadar Pro
+  url: https://www.techradar.com/pro/security/dangerous-new-malware-targets-macos-devices-via-openvsx-extensions-heres-how-to-stay-safe
+  headline: "Dangerous new malware targets macOS devices via OpenVSX extensions - here's how to stay safe"
+  date: 2026-02-03
+  quote: "Security researchers Socket said they discovered four extensions in Open VSX that started off as benign, but have been compromised at one point, and used to deliver an infostealer to macOS users in typical supply-chain attack style."
+  affiliation: Socket
+  topic: Developer Compromise
+  source_url: /glassworm-loader-hits-open-vsx-via-suspected-developer-account-compromise/
+
+- outlet: SANS
+  url: https://isc.sans.edu/podcastdetail/9794
+  headline: "SANS Stormcast Wednesday, February 4th, 2026: Detecting OpenClaw; Synology telnetd Patch; More GlassWorm"
+  date: 2026-02-04
+  quote: "We still have malicious Visual Studio Code extensions out there. The latest set was found by Socket.dev. They call it GlassWorm. You basically have an existing extension from a respected developer who is then getting hijacked. Basically, the account is getting compromised."
+  affiliation: Socket
+  topic: Developer Compromise
+  source_url: /glassworm-loader-hits-open-vsx-via-suspected-developer-account-compromise/
+
+- outlet: MITRE ATT&CK
+  url: https://attack.mitre.org/software/S9010/
+  headline: "GlassWorm (S9010)"
+  date: 2026-04-24
+  quote: "GlassWorm is a worm that propagated through supply chain attacks by compromising repository credentials from victim environments and having malicious payloads added to those compromised accounts for distribution to victims across the various development ecosystems. — citing Kirill Boychenko, \"GlassWorm Loader Hits Open VSX via Developer Account Compromise\" (Jan 31, 2026)."
+  affiliation: Socket
+  topic: Developer Compromise
+  source_url: /glassworm-loader-hits-open-vsx-via-suspected-developer-account-compromise/
