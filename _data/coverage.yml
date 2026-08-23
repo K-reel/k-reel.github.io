@@ -793,7 +793,7 @@
   url: https://www.theregister.com/special-features/2025/09/16/self-propagating-worm-fuels-latest-npm-supply-chain-attack/1437180
   headline: "Self-propagating worm fuels latest npm supply chain compromise"
   date: 2025-09-16
-  quote: "Socket and Step Security first reported the latest round of attacks on September 15, with 40 packages affected, but Eriksen has since seen 147 additional packages compromised through similar means, including those from security giant CrowdStrike."
+  quote: "Socket and Step Security first reported the latest round of attacks on September 15, with 40 packages affected. Socket's researchers recommended that users should uninstall any compromised versions and maintainers should pin versions that are confirmed to be unaffected."
   affiliation: Socket
   topic: Supply Chain Worm
   source_url: /tinycolor-supply-chain-attack-affects-40-packages/
