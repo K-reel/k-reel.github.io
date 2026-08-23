@@ -1206,3 +1206,12 @@
   affiliation: Socket
   topic: Wallet Theft
   source_url: /malicious-nuget-package-typosquats-popular-net-tracing-library/
+
+- outlet: Risky Biz
+  url: https://news.risky.biz/risky-bulletin-most-devices-run-outdated-web-browsers/
+  headline: "Risky Bulletin: Most smart devices run outdated web browsers"
+  date: 2025-12-17
+  quote: "NuGet malware: Socket Security has spotted a new malicious NuGet package that steals Stratis wallet passwords and uploads them to a Russian IP address."
+  affiliation: Socket
+  topic: Wallet Theft
+  source_url: /malicious-nuget-package-typosquats-popular-net-tracing-library/
