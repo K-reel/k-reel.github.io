@@ -1197,3 +1197,12 @@
   affiliation: Socket
   topic: Backdoor
   source_url: /malicious-go-packages-impersonate-googles-uuid-library-and-exfiltrate-data/
+
+- outlet: The Hacker News
+  url: https://thehackernews.com/2025/12/rogue-nuget-package-poses-as-tracerfody.html
+  headline: "Rogue NuGet Package Poses as Tracer.Fody, Steals Cryptocurrency Wallet Data"
+  date: 2025-12-16
+  quote: "It presents itself as a standard .NET tracing integration but in reality functions as a cryptocurrency wallet stealer. Inside the malicious package, the embedded Tracer.Fody.dll scans the default Stratis wallet directory, reads *.wallet.json files, extracts wallet data, and exfiltrates it together with the wallet password to threat actor-controlled infrastructure in Russia."
+  affiliation: Socket
+  topic: Wallet Theft
+  source_url: /malicious-nuget-package-typosquats-popular-net-tracing-library/
