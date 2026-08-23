@@ -1089,3 +1089,93 @@
   affiliation: Socket
   topic: Supply Chain Worm
   source_url: /shai-hulud-strikes-again-v2/
+
+- outlet: The Hacker News
+  url: https://thehackernews.com/2025/11/north-korean-hackers-deploy-197-npm.html
+  headline: "North Korean Hackers Deploy 197 npm Packages to Spread Updated OtterCookie Malware"
+  date: 2025-11-28
+  quote: "This sustained tempo makes Contagious Interview one of the most prolific campaigns exploiting npm," security researcher Kirill Boychenko said, noting the threat actors "have continued to flood the npm registry with 197 more malicious packages since last month."
+  affiliation: Socket
+  topic: Contagious Interview
+  source_url: /north-korea-contagious-interview-npm-attacks/
+
+- outlet: Dark Reading
+  url: https://www.darkreading.com/application-security/contagious-interview-malicious-npm-package-factory
+  headline: "DPRK Attackers Spawn Malicious Npm Package Factory"
+  date: 2025-12-02
+  quote: "This sustained tempo makes Contagious Interview one of the most prolific campaigns exploiting npm, and it shows how thoroughly North Korean threat actors have adapted their tooling to modern JavaScript and crypto-centric development workflows," Socket Threat Research's Kirill Boychenko wrote in the report.
+  affiliation: Socket
+  topic: Contagious Interview
+  source_url: /north-korea-contagious-interview-npm-attacks/
+
+- outlet: InfoWorld
+  url: https://www.infoworld.com/article/4098666/contagious-interview-attackers-go-full-stack-to-fool-you.html
+  headline: "Contagious Interview attackers go 'full stack' to fool you"
+  date: 2025-12-01
+  quote: "The originators of the Contagious Interview cyberattack campaign are stitching GitHub, Vercel, and NPM together into a development and delivery pipeline to drop malware."
+  affiliation: Socket
+  topic: Contagious Interview
+  source_url: /north-korea-contagious-interview-npm-attacks/
+
+- outlet: SC World
+  url: https://www.scworld.com/brief/illicit-npm-packages-deploy-new-ottercookie-malware-variant
+  headline: "Illicit npm packages deploy new OtterCookie malware variant"
+  date: 2025-12-01
+  quote: "This sustained tempo makes Contagious Interview one of the most prolific campaigns exploiting npm, and it shows how thoroughly North Korean threat actors have adapted their tooling to modern JavaScript and crypto-centric development workflows."
+  affiliation: Socket
+  topic: Contagious Interview
+  source_url: /north-korea-contagious-interview-npm-attacks/
+
+- outlet: Security Affairs
+  url: https://securityaffairs.com/185170/apt/contagious-interview-campaign-expands-with-197-npm-ppackages-spreading-new-ottercookie-malware.html
+  headline: "Contagious Interview campaign expands with 197 npm packages spreading new OtterCookie malware"
+  date: 2025-11-30
+  quote: "Since we last reported on this campaign, it has added at least 197 more malicious npm packages and over 31,000 additional downloads."
+  affiliation: Socket
+  topic: Contagious Interview
+  source_url: /north-korea-contagious-interview-npm-attacks/
+
+- outlet: Risky Biz
+  url: https://risky.biz/risky-bulletin-india-orders-im-apps-to-link-user-accounts-to-a-sim-card/
+  headline: "Risky Bulletin: India orders IM apps to link user accounts to a SIM card"
+  date: 2025-12-03
+  quote: "Contagious Interview npm attacks: Socket Security looks at a North Korean group's use of malicious npm libraries to deliver the OtterCookie infostealer. Since we last reported on this campaign, it has added at least 197 more malicious npm packages and over 31,000 additional downloads."
+  affiliation: Socket
+  topic: Contagious Interview
+  source_url: /north-korea-contagious-interview-npm-attacks/
+
+- outlet: Vulnerable U
+  url: https://www.vulnu.com/p/vulnerable-u-144
+  headline: "Vulnerable U #144"
+  date: 2025-11-28
+  quote: "Inside the GitHub Infrastructure Powering North Korea's Contagious Interview npm Attacks — These researchers mapped out the \"Contagious Interview\" crew's stack. Tracing a malicious npm package called \"tailwind-magic\" back to a Vercel staging server and a GitHub account with 18 repositories. Since October, they've pushed 197 more malicious packages targeting crypto and Web3 developers with fake job interviews."
+  affiliation: Socket
+  topic: Contagious Interview
+  source_url: /north-korea-contagious-interview-npm-attacks/
+
+- outlet: "tl;dr sec"
+  url: https://tldrsec.com/p/tldr-sec-307
+  headline: "[tl;dr sec] #307 - AI Bug Hunting Tools, Shai-Hulud 2.0, Keeping Secrets out of Logs"
+  date: 2025-12-04
+  quote: "Socket's Kirill Boychenko describes details from tracking North Korea's \"Contagious Interview\" operation, which has recently deployed 197+ malicious npm packages targeting blockchain and Web3 developers through fake job interviews."
+  affiliation: Socket
+  topic: Contagious Interview
+  source_url: /north-korea-contagious-interview-npm-attacks/
+
+- outlet: "CTO at NCSC"
+  url: https://ctoatncsc.substack.com/p/cto-at-ncsc-summary-week-ending-november-4ff
+  headline: "CTO at NCSC Summary: week ending November 30th"
+  date: 2025-11-29
+  quote: "Inside the GitHub Infrastructure Powering North Korea's Contagious Interview npm Attacks — Since we last reported on this campaign, it has added at least 197 more malicious npm packages and over 31,000 additional downloads, with state-sponsored threat actors targeting blockchain and Web3 developers through fake job interviews and 'test assignments.'"
+  affiliation: Socket
+  topic: Contagious Interview
+  source_url: /north-korea-contagious-interview-npm-attacks/
+
+- outlet: "Detection Engineering Weekly"
+  url: https://www.detectionengineering.net/p/dew-139-detection-surface-frontier
+  headline: "DEW #139 - Detection Surface, Frontier Models are good at SecOps & THREE YEAR ANNIVERSARY!"
+  date: 2025-12-03
+  quote: "Boychenko and the Socket Research team published their latest work on TTP updates to North Korea's 'Contagious Interview' campaign. It's an impressive operation, given the scale they try to employ, aiming to conduct as many malicious interviews as possible. In this campaign, they tracked 100s of malicious packages, each with over 31,000 downloads."
+  affiliation: Socket
+  topic: Contagious Interview
+  source_url: /north-korea-contagious-interview-npm-attacks/
