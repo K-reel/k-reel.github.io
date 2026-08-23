@@ -635,3 +635,39 @@
   affiliation: Socket
   topic: Surveillance
   source_url: /surveillance-malware-hidden-in-npm-and-pypi-packages/
+
+- outlet: BleepingComputer
+  url: https://www.bleepingcomputer.com/news/security/60-malicious-ruby-gems-downloaded-275-000-times-steal-credentials/
+  headline: "60 malicious Ruby gems downloaded 275,000 times steal credentials"
+  date: 2025-08-09
+  quote: "Sixty malicious Ruby gems containing credential-stealing code have been downloaded over 275,000 times since March 2023, targeting developer accounts."
+  affiliation: Socket
+  topic: Infostealer
+  source_url: /60-malicious-ruby-gems-used-in-targeted-credential-theft-campaign/
+
+- outlet: Dark Reading
+  url: https://www.darkreading.com/threat-intelligence/60-rubygems-packages-steal-spammers
+  headline: "60 RubyGems Packages Steal Data From Annoying Spammers"
+  date: 2025-08-08
+  quote: "In Korea and the Asia-Pacific (APAC), malicious packages often feature localized lures. In this case, [they feature] Korean-language graphical user interfaces (GUIs), prompts, and documentation, and integrate with region-specific platforms."
+  affiliation: Socket
+  topic: Infostealer
+  source_url: /60-malicious-ruby-gems-used-in-targeted-credential-theft-campaign/
+
+- outlet: The Hacker News
+  url: https://thehackernews.com/2025/08/rubygems-pypi-hit-by-malicious-packages.html
+  headline: "RubyGems, PyPI Hit by Malicious Packages Stealing Credentials, Crypto, Forcing Security Changes"
+  date: 2025-08-08
+  quote: "Since at least March 2023, a threat actor using the aliases zon, nowon, kwonsoonje, and soonje has published 60 malicious gems posing as automation tools for Instagram, Twitter/X, TikTok, WordPress, Telegram, Kakao, and Naver."
+  affiliation: Socket
+  topic: Infostealer
+  source_url: /60-malicious-ruby-gems-used-in-targeted-credential-theft-campaign/
+
+- outlet: Risky Biz
+  url: https://news.risky.biz/risky-bulletin-researcher-scores-250-000-for-chrome-bug/
+  headline: "Risky Bulletin: Researcher scores $250,000 for Chrome bug"
+  date: 2025-08-11
+  quote: "RubyGems campaigns steal creds: A threat actor uploaded more than 60 malicious packages to the RubyGems package repository. The libraries posed as automation tools but stole login credentials from social media and marketing tools. According to Socket Security, the packages were downloaded more than 275,000 times."
+  affiliation: Socket
+  topic: Infostealer
+  source_url: /60-malicious-ruby-gems-used-in-targeted-credential-theft-campaign/
