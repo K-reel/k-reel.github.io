@@ -671,3 +671,57 @@
   affiliation: Socket
   topic: Infostealer
   source_url: /60-malicious-ruby-gems-used-in-targeted-credential-theft-campaign/
+
+- outlet: The Hacker News
+  url: https://thehackernews.com/2025/08/malicious-go-module-poses-as-ssh-brute.html
+  headline: "Malicious Go Module Poses as SSH Brute-Force Tool, Steals Credentials via Telegram Bot"
+  date: 2025-08-24
+  quote: "On the first successful login, the package sends the target IP address, username, and password to a hard-coded Telegram bot controlled by the threat actor."
+  affiliation: Socket
+  topic: Infostealer
+  source_url: /malicious-go-module-disguised-as-ssh-brute-forcer-exfiltrates-credentials/
+
+- outlet: "heise online"
+  url: https://www.heise.de/news/Go-Modul-fuer-Brute-Force-Angriffe-auf-SSH-stiehlt-die-gefundenen-Zugaenge-10599723.html
+  headline: "Go-Modul für Brute-Force-Angriffe auf SSH stiehlt die gefundenen Zugänge"
+  date: 2025-08-25
+  quote: "Ein von der Sicherheitsfirma Socket entdecktes Go-Modul führt zufällige Angriffe auf SSH-Ports durch, meldet einen Erfolg aber nicht nur dem aktuellen Nutzer, sondern auch dem Autor des Tools per Telegram."
+  affiliation: Socket
+  topic: Infostealer
+  source_url: /malicious-go-module-disguised-as-ssh-brute-forcer-exfiltrates-credentials/
+
+- outlet: "SANS"
+  url: https://isc.sans.edu/podcastdetail/9584
+  headline: "SANS Stormcast Monday, August 25th, 2025: IP Cleanup; Linux Desktop Attacks; Malicious Go SSH Brute Forcer; Onmicrosoft Domain Restrictions"
+  date: 2025-08-25
+  quote: "Kirill Boychenko with socket.dev gives us another reminder as how careful you have to be when you're running malicious tools. The latest example is a Go module that claims to be an SSH bruteforcer... it's also exfiltrating the attacker's credentials to the creator of the tool."
+  affiliation: Socket
+  topic: Infostealer
+  source_url: /malicious-go-module-disguised-as-ssh-brute-forcer-exfiltrates-credentials/
+
+- outlet: "SANS"
+  url: https://www.sans.org/newsletters/newsbites/xxvii-62
+  headline: "SANS NewsBites Volume XXVII, Issue 62"
+  date: 2025-08-26
+  quote: "Malicious Go Module Disguised as SSH Brute Forcer Exfiltrates Credentials via Telegram — A go module advertising its ability to quickly brute force passwords against random IP addresses, has been used to exfiltrate credentials from the person running the module."
+  affiliation: Socket
+  topic: Infostealer
+  source_url: /malicious-go-module-disguised-as-ssh-brute-forcer-exfiltrates-credentials/
+
+- outlet: SC World
+  url: https://www.scworld.com/news/malicious-go-package-removed-from-github-but-credential-threat-persists
+  headline: "Malicious Go package removed from GitHub, but credential threat persists"
+  date: 2025-08-26
+  quote: "The Go package continuously scans random IPv4 addresses for exposed SSH services on TCP port 22, authenticates using a local username-password wordlist, and then exfiltrates any successful credentials via Telegram."
+  affiliation: Socket
+  topic: Infostealer
+  source_url: /malicious-go-module-disguised-as-ssh-brute-forcer-exfiltrates-credentials/
+
+- outlet: "Golang Weekly"
+  url: https://golangweekly.com/issues/567
+  headline: "Issue #567: Go experiments with SIMD"
+  date: 2025-08-27
+  quote: "Socket's Kirill Boychenko looks at how a malicious Go module was exfiltrating credentials via Telegram."
+  affiliation: Socket
+  topic: Infostealer
+  source_url: /malicious-go-module-disguised-as-ssh-brute-forcer-exfiltrates-credentials/
