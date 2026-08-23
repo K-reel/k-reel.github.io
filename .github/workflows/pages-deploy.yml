@@ -45,6 +45,15 @@ jobs:
           ruby-version: 3.3
           bundler-cache: true
 
+      - name: Validate data files
+        run: |
+          shopt -s globstar nullglob
+          fail=0
+          for f in _data/**/*.yml _data/**/*.yaml; do
+            ruby -ryaml -e "YAML.load_file('$f')" 2>/tmp/err || { echo "::error file=$f::$(cat /tmp/err | tail -1)"; fail=1; }
+          done
+          exit $fail
+
       - name: Build site
         run: bundle exec jekyll b -d "_site${{ steps.pages.outputs.base_path }}"
         env:
