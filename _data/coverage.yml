@@ -1242,3 +1242,30 @@
   affiliation: Socket
   topic: Spearphishing
   source_url: /spearphishing-campaign-abuses-npm-registry/
+
+- outlet: The Hacker News
+  url: https://thehackernews.com/2026/01/malicious-chrome-extension-steals-mexc.html
+  headline: "Malicious Chrome Extension Steals MEXC API Keys by Masquerading as Trading Tool"
+  date: 2026-01-13
+  quote: "The extension programmatically creates new MEXC API keys, enables withdrawal permissions, hides that permission in the user interface (UI), and exfiltrates the resulting API key and secret to a hardcoded Telegram bot controlled by the threat actor."
+  affiliation: Socket
+  topic: Infostealer
+  source_url: /malicious-chrome-extension-steals-mexc-api-keys/
+
+- outlet: SC World
+  url: https://www.scworld.com/brief/mexc-api-keys-targeted-by-illicit-chrome-extension
+  headline: "MEXC API keys targeted by illicit Chrome extension"
+  date: 2026-01-14
+  quote: "Multiple MEXC API keys created by the extension with appropriate permissions have enabled account takeovers for trade execution, automated withdrawal, and wallet draining activities."
+  affiliation: Socket
+  topic: Infostealer
+  source_url: /malicious-chrome-extension-steals-mexc-api-keys/
+
+- outlet: Risky Biz
+  url: https://news.risky.biz/risky-bulletin-voice-cloning-defenses-still-weak-can-be-bypassed/
+  headline: "Risky Bulletin: Voice cloning defenses still weak, can be bypassed"
+  date: 2026-01-14
+  quote: "Malicious Chrome extension: Socket Security has discovered a malicious Chrome extension that steals API keys for the MEXC cryptocurrency exchange. The extension is named the MEXC API Automator, was published in September last year, and is still active on the Chrome Web Store."
+  affiliation: Socket
+  topic: Infostealer
+  source_url: /malicious-chrome-extension-steals-mexc-api-keys/
