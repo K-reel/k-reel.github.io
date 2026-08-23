@@ -88,3 +88,7 @@
 
 "CSO Online":
   logo: /assets/img/coverage/csoonline.png
+
+"Krebs on Security":
+  logo: /assets/img/coverage/krebsonsecurity.png
+  hide_name: true  # logo already reads "KrebsOnSecurity" — avoid duplicate text
