@@ -1386,3 +1386,12 @@
   affiliation: Socket
   topic: Infostealer
   source_url: /malicious-chrome-extension-steals-meta-business-manager-exports-and-totp-2fa-seeds/
+
+- outlet: "UK's National Cyber Security Centre"
+  url: https://ctoatncsc.substack.com/p/cto-at-ncsc-summary-week-ending-february-e3f
+  headline: "CTO at NCSC Summary: week ending February 22nd"
+  date: 2026-02-21
+  quote: "Malicious Chrome Extension Steals Meta Business Manager Exports and TOTP 2FA Seeds — Kirill Boychenko details an example where grey capability is indeed malicious. Again demonstrates the value of being able to understand which Chrome extensions are deployed in your environment at institution level."
+  affiliation: Socket
+  topic: Infostealer
+  source_url: /malicious-chrome-extension-steals-meta-business-manager-exports-and-totp-2fa-seeds/
