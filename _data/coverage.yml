@@ -1215,3 +1215,30 @@
   affiliation: Socket
   topic: Wallet Theft
   source_url: /malicious-nuget-package-typosquats-popular-net-tracing-library/
+
+- outlet: Vulnerable U
+  url: https://www.vulnu.com/p/vulnerable-u-148
+  headline: "Vulnerable U #148"
+  date: 2025-12-26
+  quote: "Spearphishing Campaign Abuses npm Registry to Target U.S. and Allied Manufacturing and Healthcare Organizations — Socket's threat research team uncovered a spearphishing operation that's been abusing npm as a hosting platform for five months. The attackers published 27 malicious packages under six different aliases, turning the registry into durable phishing infrastructure that mimics secure document-sharing portals and Microsoft sign-ins."
+  affiliation: Socket
+  topic: Spearphishing
+  source_url: /spearphishing-campaign-abuses-npm-registry/
+
+- outlet: The Hacker News
+  url: https://thehackernews.com/2025/12/27-malicious-npm-packages-used-as.html
+  headline: "27 Malicious npm Packages Used as Phishing Infrastructure to Steal Login Credentials"
+  date: 2025-12-29
+  quote: "A five-month operation turned 27 npm packages into durable hosting for browser-run lures that mimic document-sharing portals and Microsoft sign-in, targeting 25 organizations."
+  affiliation: Socket
+  topic: Spearphishing
+  source_url: /spearphishing-campaign-abuses-npm-registry/
+
+- outlet: SC World
+  url: https://www.scworld.com/brief/over-two-dozen-illicit-npm-packages-power-targeted-spear-phishing-campaign
+  headline: "Over two dozen illicit npm packages power targeted spear-phishing campaign"
+  date: 2025-12-30
+  quote: "All of the nefarious packages, which were published under six various npm aliases, have been used as hosting infrastructure to distribute client-side HTML and JavaScript lures that redirect targets to fraudulent Microsoft sign-in pages."
+  affiliation: Socket
+  topic: Spearphishing
+  source_url: /spearphishing-campaign-abuses-npm-registry/
