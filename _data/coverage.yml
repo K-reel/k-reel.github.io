@@ -1368,3 +1368,21 @@
   affiliation: Socket
   topic: Developer Compromise
   source_url: /glassworm-loader-hits-open-vsx-via-suspected-developer-account-compromise/
+
+- outlet: The Hacker News
+  url: https://thehackernews.com/2026/02/malicious-chrome-extensions-caught.html
+  headline: "Malicious Chrome Extensions Caught Stealing Business Data, Emails, and Browsing History"
+  date: 2026-02-13
+  quote: "The extension requests broad access to meta.com and facebook.com and claims in its privacy policy that 2FA secrets and Business Manager data remain local, security researcher Kirill Boychenko said."
+  affiliation: Socket
+  topic: Infostealer
+  source_url: /malicious-chrome-extension-steals-meta-business-manager-exports-and-totp-2fa-seeds/
+
+- outlet: Risky Biz
+  url: https://risky.biz/risky-bulletin-cambodia-promises-to-dismantle-scam-networks-by-april/
+  headline: "Risky Bulletin: Cambodia promises to dismantle scam networks by April"
+  date: 2026-02-16
+  quote: "Malicious Chrome extension: Socket Security has discovered a malicious Chrome extension posing as a Facebook helper tool that steals Facebook and Meta Business Manager TOTP seeds and one time security codes. The extension also exports CSV contacts and steals Business Manager analytics data and uploads everything to a remote Telegram channel."
+  affiliation: Socket
+  topic: Infostealer
+  source_url: /malicious-chrome-extension-steals-meta-business-manager-exports-and-totp-2fa-seeds/
