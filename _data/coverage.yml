@@ -1459,7 +1459,7 @@
   topic: Software Supply Chain Worm
   source_url: /sandworm-mode-npm-worm-ai-toolchain-poisoning/
 
-- outlet: "Switzerland, Vaud Security Operations Center (SOC) - Centre opérationnel de sécurité"
+- outlet: "État de Vaud (SOC)"
   url: https://www.vd.ch/fileadmin/user_upload/organisation/dinf/dsi/fichiers_pdf/securite/SOC_-_Rapport_cybermenaces_-_F%C3%A9vrier_2026.pdf
   headline: "Revue mensuelle des cybermenaces – Février 2026"
   date: 2026-03-10
