@@ -1540,7 +1540,7 @@
   topic: Infostealer
   source_url: /5-malicious-rust-crates-posed-as-time-utilities-to-exfiltrate-env-files/
 
-- outlet: RustSec
+- outlet: "Rust Blog"
   url: https://rustsec.org/advisories/RUSTSEC-2026-0039
   headline: "RUSTSEC-2026-0039: chrono_anchor removed from crates.io due to malicious code"
   date: 2026-03-10
