@@ -1548,3 +1548,66 @@
   affiliation: Socket
   topic: Infostealer
   source_url: /5-malicious-rust-crates-posed-as-time-utilities-to-exfiltrate-env-files/
+
+- outlet: Dark Reading
+  url: https://www.darkreading.com/application-security/glassworm-malware-evolves-hide-dependencies
+  headline: "GlassWorm Malware Evolves to Hide in Dependencies"
+  date: 2026-03-16
+  quote: "In practice, this means a user can install an extension that appears non-malicious on its own, while still receiving GlassWorm through its declared extension relationship. This lowers the visibility of the malicious component, broadens the threat actor's reach, and complicates both manual review and registry-side triage, Socket's research team wrote."
+  affiliation: Socket
+  topic: Developer Compromise
+  source_url: /open-vsx-transitive-glassworm-campaign/
+
+- outlet: The Hacker News
+  url: https://thehackernews.com/2026/03/glassworm-supply-chain-attack-abuses-72.html
+  headline: "GlassWorm Supply-Chain Attack Abuses 72 Open VSX Extensions to Target Developers"
+  date: 2026-03-14
+  quote: "Instead of requiring every malicious listing to embed the loader directly, the threat actor is now abusing extensionPack and extensionDependencies to turn initially standalone-looking extensions into transitive delivery vehicles in later updates."
+  affiliation: Socket
+  topic: Developer Compromise
+  source_url: /open-vsx-transitive-glassworm-campaign/
+
+- outlet: InfoWorld
+  url: https://www.infoworld.com/article/4145589/open-vsx-extensions-hijacked-glassworm-malware-spreads-via-dependency-abuse-2.html
+  headline: "Open VSX extensions hijacked: GlassWorm malware spreads via dependency abuse"
+  date: 2026-03-16
+  quote: "Instead of requiring every malicious listing to embed the loader directly, the threat actor is now abusing 'extensionPack' and 'extensionDependencies' to turn initially standalone-looking extensions into transitive delivery vehicles."
+  affiliation: Socket
+  topic: Developer Compromise
+  source_url: /open-vsx-transitive-glassworm-campaign/
+
+- outlet: BleepingComputer
+  url: https://www.bleepingcomputer.com/news/security/glassworm-malware-hits-400-plus-code-repos-on-github-npm-vscode-openvsx/
+  headline: "GlassWorm malware hits 400+ code repos on GitHub, npm, VSCode, OpenVSX"
+  date: 2026-03-17
+  quote: "Researchers at Aikido, Socket, Step Security, and the OpenSourceMalware community have collectively identified 433 compromised components this month in attacks attributed to GlassWorm."
+  affiliation: Socket
+  topic: Developer Compromise
+  source_url: /open-vsx-transitive-glassworm-campaign/
+
+- outlet: SecurityWeek
+  url: https://www.securityweek.com/forcememo-python-repositories-compromised-in-glassworm-aftermath/
+  headline: "ForceMemo: Python Repositories Compromised in GlassWorm Aftermath"
+  date: 2026-03-16
+  quote: "Rather than embedding the GlassWorm loader in every malicious listing, the threat actor can publish an extension that appears benign and later cause the editor to install a separate GlassWorm-linked extension, according to Socket's analysis of how attackers abuse manifest fields to turn extensions into malware delivery vehicles."
+  affiliation: Socket
+  topic: Developer Compromise
+  source_url: /open-vsx-transitive-glassworm-campaign/
+
+- outlet: Risky Biz
+  url: https://news.risky.biz/risky-bulletin-meta-disrupts-mexican-cartels/
+  headline: "Risky Bulletin: Meta disrupts Mexican cartels"
+  date: 2026-03-16
+  quote: "Socket has spotted the GlassWorm self-replicating worm inside 72 new OpenVSX extensions since the end of January, confirming that the malware that appeared last year is still going strong despite efforts to limit its reach by Eclipse Foundation admins."
+  affiliation: Socket
+  topic: Developer Compromise
+  source_url: /open-vsx-transitive-glassworm-campaign/
+
+- outlet: "SANS"
+  url: https://www.sans.org/newsletters/newsbites/xxviii-20
+  headline: "SANS NewsBites Volume XXVIII, Issue 20"
+  date: 2026-03-16
+  quote: "The malware loader is also added as an extension dependency, rather than being included in the package."
+  affiliation: Socket
+  topic: Developer Compromise
+  source_url: /open-vsx-transitive-glassworm-campaign/
