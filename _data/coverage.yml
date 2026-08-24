@@ -1530,3 +1530,21 @@
   affiliation: Socket
   topic: Wallet Theft
   source_url: /fake-imtoken-chrome-extension-steals-seed-phrases-via-phishing-redirects/
+
+- outlet: The Hacker News
+  url: https://thehackernews.com/2026/03/five-malicious-rust-crates-and-ai-bot.html
+  headline: "Five Malicious Rust Crates and AI Bot Exploit CI/CD Pipelines to Steal Developer Secrets"
+  date: 2026-03-11
+  quote: "Although the crates pose as local time utilities, their core behavior is credential and secret theft, per Socket's analysis of packages including chrono_anchor, dnp3times, time_calibrator, time_calibrators, and time-sync that target .env files."
+  affiliation: Socket
+  topic: Infostealer
+  source_url: /5-malicious-rust-crates-posed-as-time-utilities-to-exfiltrate-env-files/
+
+- outlet: RustSec
+  url: https://rustsec.org/advisories/RUSTSEC-2026-0039
+  headline: "RUSTSEC-2026-0039: chrono_anchor removed from crates.io due to malicious code"
+  date: 2026-03-10
+  quote: "The crate attempted to exfiltrate .env files to a server that was in turn impersonating the legitimate timeapi.io service."
+  affiliation: Socket
+  topic: Infostealer
+  source_url: /5-malicious-rust-crates-posed-as-time-utilities-to-exfiltrate-env-files/
