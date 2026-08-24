@@ -1485,3 +1485,30 @@
   affiliation: Socket
   topic: Software Supply Chain Worm
   source_url: /sandworm-mode-npm-worm-ai-toolchain-poisoning/
+
+- outlet: The Hacker News
+  url: https://thehackernews.com/2026/02/malicious-go-crypto-module-steals.html
+  headline: "Malicious Go Crypto Module Steals Passwords, Deploys Rekoobe Backdoor"
+  date: 2026-02-27
+  quote: "This activity fits namespace confusion and impersonation of the legitimate golang.org/x/crypto subrepository, according to Socket security researcher Kirill Boychenko."
+  affiliation: Socket
+  topic: Infostealer
+  source_url: /malicious-go-crypto-module-steals-passwords/
+
+- outlet: SC World
+  url: https://www.scworld.com/brief/malicious-go-module-steals-passwords-deploys-rekoobe-backdoor
+  headline: "Malicious Go module steals passwords, deploys Rekoobe backdoor"
+  date: 2026-03-02
+  quote: "A malicious Go module, disguised as a legitimate crypto library, has been discovered by Socket researchers that harvests passwords and deploys the Rekoobe Linux backdoor."
+  affiliation: Socket
+  topic: Infostealer
+  source_url: /malicious-go-crypto-module-steals-passwords/
+
+- outlet: Risky Biz
+  url: https://news.risky.biz/risky-bulletin-llms-can-deanonymize-internet-users-based-on-their-comments/
+  headline: "Risky Bulletin: LLMs can deanonymize internet users based on their past comments"
+  date: 2026-03-02
+  quote: "Socket has found a malicious Go library on GitHub that poses as a popular cryptography package but steals user passwords and deploys the Rekoobe backdoor on infected hosts."
+  affiliation: Socket
+  topic: Infostealer
+  source_url: /malicious-go-crypto-module-steals-passwords/
