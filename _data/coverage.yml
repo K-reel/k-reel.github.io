@@ -1512,3 +1512,21 @@
   affiliation: Socket
   topic: Infostealer
   source_url: /malicious-go-crypto-module-steals-passwords/
+
+- outlet: The Hacker News
+  url: https://thehackernews.com/2026/03/chrome-extension-turns-malicious-after.html
+  headline: "Chrome Extension Turns Malicious After Ownership Transfer, Enabling Code Injection and Data Theft"
+  date: 2026-03-09
+  quote: "Instead of providing the harmless tool it promises, the extension automatically opens a threat actor-controlled phishing site as soon as it is installed, and again whenever the user clicks it."
+  affiliation: Socket
+  topic: Wallet Theft
+  source_url: /fake-imtoken-chrome-extension-steals-seed-phrases-via-phishing-redirects/
+
+- outlet: Risky Biz
+  url: https://news.risky.biz/risky-bulletin-new-white-house-eo-prioritizes-fight-against-scams-and-cybercrime/
+  headline: "Risky Bulletin: New White House EO prioritizes fight against scams and cybercrime"
+  date: 2026-03-09
+  quote: "Google has removed a malicious Chrome extension from the Web Store that posed as a hex color visualizer that actually stole users' crypto-wallet seed phrases."
+  affiliation: Socket
+  topic: Wallet Theft
+  source_url: /fake-imtoken-chrome-extension-steals-seed-phrases-via-phishing-redirects/
