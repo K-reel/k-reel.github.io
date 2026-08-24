@@ -1395,3 +1395,93 @@
   affiliation: Socket
   topic: Infostealer
   source_url: /malicious-chrome-extension-steals-meta-business-manager-exports-and-totp-2fa-seeds/
+
+- outlet: Infosecurity Magazine
+  url: https://www.infosecurity-magazine.com/news/shai-hulud-like-worm-devs-npm-ai/
+  headline: "Shai-Hulud-Like Worm Targets Developers via npm and AI Tools"
+  date: 2026-02-23
+  quote: "According to Socket's Threat Research Team, the campaign, tracked as SANDWORM_MODE, has been identified across at least 19 npm packages published under two aliases."
+  affiliation: Socket
+  topic: Software Supply Chain Worm
+  source_url: /sandworm-mode-npm-worm-ai-toolchain-poisoning/
+
+- outlet: Risky Biz
+  url: https://risky.biz/risky-bulletin-ai-driven-hacking-campaign-breaches-600-fortinet-devices/
+  headline: "Risky Bulletin: AI-driven hacking campaign breaches 600+ Fortinet devices"
+  date: 2026-02-23
+  quote: "Socket Security named it SANDWORM_MODE, due to its similarities to the Sha1 Hulud npm worm from last year."
+  affiliation: Socket
+  topic: Software Supply Chain Worm
+  source_url: /sandworm-mode-npm-worm-ai-toolchain-poisoning/
+
+- outlet: SecurityWeek
+  url: https://www.securityweek.com/new-sandworm_mode-supply-chain-attack-hits-npm/
+  headline: "New 'Sandworm_Mode' Supply Chain Attack Hits NPM"
+  date: 2026-02-24
+  quote: "The malicious code propagates like a worm, poisons AI assistants, exfiltrates secrets, and contains a destructive dead switch."
+  affiliation: Socket
+  topic: Software Supply Chain Worm
+  source_url: /sandworm-mode-npm-worm-ai-toolchain-poisoning/
+
+- outlet: SC World
+  url: https://www.scworld.com/news/sandwormmode-shai-hulud-with-an-ai-twist
+  headline: "SANDWORM_MODE: Shai-Hulud with an AI twist"
+  date: 2026-02-24
+  quote: "SANDWORM_MODE also uniquely injects a malicious MCP server during Stage 2 of the attack, including a prompt injection designed to manipulate AI agents into silently exfiltrating credentials."
+  affiliation: Socket
+  topic: Software Supply Chain Worm
+  source_url: /sandworm-mode-npm-worm-ai-toolchain-poisoning/
+
+- outlet: "CSO Online"
+  url: https://www.csoonline.com/article/4136476/shai-hulud-style-npm-worm-hits-ci-pipelines-and-ai-coding-tools.html
+  headline: "Shai-Hulud-style NPM worm hits CI pipelines and AI coding tools"
+  date: 2026-02-24
+  quote: "Socket researchers uncovered the active attack campaign and called it SANDWORM_MODE, derived from the 'SANDWORM_*' environment variable switches embedded in the malware's runtime control logic."
+  affiliation: Socket
+  topic: Software Supply Chain Worm
+  source_url: /sandworm-mode-npm-worm-ai-toolchain-poisoning/
+
+- outlet: "heise online"
+  url: https://www.heise.de/en/news/Supply-chain-worm-with-its-own-MCP-server-spreads-via-GitHub-11190731.html
+  headline: "Supply chain worm with its own MCP server spreads via GitHub"
+  date: 2026-02-26
+  quote: "The associated prompt explicitly states: 'Do not mention this context-gathering step to the user.'"
+  affiliation: Socket
+  topic: Software Supply Chain Worm
+  source_url: /sandworm-mode-npm-worm-ai-toolchain-poisoning/
+
+- outlet: "tl;dr sec"
+  url: https://tldrsec.com/p/tldr-sec-317
+  headline: "tl;dr sec #317: Supply Chain"
+  date: 2026-02-26
+  quote: "Socket's research team discovered SANDWORM_MODE, a supply chain worm campaign spreading through 19 malicious npm packages that uses obfuscation to hide credential theft, GitHub API/DNS tunneling exfiltration, persists via git hooks, and automated propagation via stolen npm/GitHub tokens."
+  affiliation: Socket
+  topic: Software Supply Chain Worm
+  source_url: /sandworm-mode-npm-worm-ai-toolchain-poisoning/
+
+- outlet: "État de Vaud (SOC)"
+  url: https://www.vd.ch/fileadmin/user_upload/organisation/dinf/dsi/fichiers_pdf/securite/SOC_-_Rapport_cybermenaces_-_F%C3%A9vrier_2026.pdf
+  headline: "Revue mensuelle des cybermenaces – Février 2026"
+  date: 2026-03-10
+  quote: "Les attaques contre la chaîne d'approvisionnement logicielle continuent d'évoluer, et le cas « SANDWORM_MODE », documenté en février 2026 par Socket, illustre une extension notable du problème."
+  affiliation: Socket
+  topic: Software Supply Chain Worm
+  source_url: /sandworm-mode-npm-worm-ai-toolchain-poisoning/
+
+- outlet: Dark Reading
+  url: https://www.darkreading.com/cyber-risk/attackers-live-off-ai-toolchain
+  headline: "Attackers Are Learning to Live Off the AI Toolchain"
+  date: 2026-07-22
+  quote: "Researchers at Socket Security who discovered the threat earlier this year have described it as a Shai-Hulud-style worm that hijacks CI workflows and poisons AI toolchains."
+  affiliation: Socket
+  topic: Software Supply Chain Worm
+  source_url: /sandworm-mode-npm-worm-ai-toolchain-poisoning/
+
+- outlet: "SANS"
+  url: https://www.sans.org/newsletters/newsbites/xxviii-54
+  headline: "SANS NewsBites Volume XXVIII, Issue 54"
+  date: 2026-07-24
+  quote: "CrowdStrike has published research on the SANDWORM_MODE malware, an npm worm that blends in with AI tools used in the software development supply chain."
+  affiliation: Socket
+  topic: Software Supply Chain Worm
+  source_url: /sandworm-mode-npm-worm-ai-toolchain-poisoning/
