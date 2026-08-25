@@ -1612,7 +1612,7 @@
   topic: Developer Compromise
   source_url: /open-vsx-transitive-glassworm-campaign/
 
-- outlet: RustSec Advisory Database
+- outlet: "Rust Blog"
   url: https://rustsec.org/advisories/RUSTSEC-2026-0081.html
   headline: "RUSTSEC-2026-0081: `logtrace` was removed from crates.io for malicious code"
   date: 2026-04-05
