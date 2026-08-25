@@ -1881,3 +1881,57 @@
   affiliation: Socket
   topic: Developer Compromise
   source_url: /checkmarx-supply-chain-compromise/
+
+- outlet: The Hacker News
+  url: https://thehackernews.com/2026/04/pytorch-lightning-compromised-in-pypi.html
+  headline: "PyTorch Lightning and Intercom-client Hit in Supply Chain Attacks to Steal Credentials"
+  date: 2026-04-30
+  quote: "The PHP payload mirrors the broader Mini Shai-Hulud tradecraft observed across recent npm and PyPI compromises, Socket said of the Intercom PHP Packagist compromise."
+  affiliation: Socket
+  topic: Developer Compromise
+  source_url: /mini-shai-hulud-packagist-malicious-intercom-php-package-compromise/
+
+- outlet: Developer-Tech
+  url: https://www.developer-tech.com/news/open-source-registries-mini-shai-hulud-supply-chain-attacks/
+  headline: "Open-source registries hit by 'Mini Shai-Hulud' supply chain attacks"
+  date: 2026-05-01
+  quote: "Security teams at Socket, Aikido Security, and OX Security recently spotted malicious versions of PyTorch Lightning in public registries."
+  affiliation: Socket
+  topic: Developer Compromise
+  source_url: /mini-shai-hulud-packagist-malicious-intercom-php-package-compromise/
+
+- outlet: SecurityWeek
+  url: https://www.securityweek.com/1800-hit-in-mini-shai-hulud-attack-on-sap-lightning-intercom/
+  headline: "1,800 Hit in Mini Shai-Hulud Attack on SAP, Lightning, Intercom"
+  date: 2026-05-01
+  quote: "The Intercom compromise was a direct result of the Lightning supply chain attack. A local package installation used the infected Lightning PyPi package as a dependency, Socket reports."
+  affiliation: Socket
+  topic: Developer Compromise
+  source_url: /mini-shai-hulud-packagist-malicious-intercom-php-package-compromise/
+
+- outlet: "SANS"
+  url: https://isc.sans.edu/diary/32950
+  headline: "TeamPCP Weekly Analysis: 2026-W18 (2026-04-27 through 2026-05-03)"
+  date: 2026-05-04
+  quote: "Socket reported that Mini Shai-Hulud also reached Packagist via intercom-php 5.0.2, with the payload using Composer's plugin system for execution rather than npm preinstall hooks."
+  affiliation: Socket
+  topic: Developer Compromise
+  source_url: /mini-shai-hulud-packagist-malicious-intercom-php-package-compromise/
+
+- outlet: Risky Biz
+  url: https://www.risky.biz/risky-bulletin-digicert-hacked-with-a-malicious-screensaver-file/
+  headline: "Risky Bulletin: Malware technical reports"
+  date: 2026-05-04
+  quote: "The Mini Shai-Hulud malware and supply chain attack has now spread to Packagist, one of the PHP package installers."
+  affiliation: Socket
+  topic: Developer Compromise
+  source_url: /mini-shai-hulud-packagist-malicious-intercom-php-package-compromise/
+
+- outlet: "SANS"
+  url: https://www.sans.org/newsletters/newsbites/xxviii-34
+  headline: "SANS NewsBites Volume XXVIII, Issue 34"
+  date: 2026-05-05
+  quote: "Mini Shai-Hulud Worm Spreads Through SAP, Lightning, Intercom Packages — On April 30, the worm spread from SAP into PyTorch Lightning PyPI packages, and in turn propagated from dependencies into intercom-client npm packages."
+  affiliation: Socket
+  topic: Developer Compromise
+  source_url: /mini-shai-hulud-packagist-malicious-intercom-php-package-compromise/
