@@ -2061,3 +2061,21 @@
   affiliation: Socket
   topic: Software Supply Chain Worm
   source_url: /antv-packages-compromised/
+
+- outlet: The Hacker News
+  url: https://thehackernews.com/2026/05/malicious-sicoob-nuget-steals-banking.html
+  headline: "Malicious Sicoob NuGet Steals Banking Credentials as npm Packages Target Cloud Secrets"
+  date: 2026-05-29
+  quote: "The package reads the PFX file from disk, Base64-encodes its contents, and sends the supplied client ID, PFX password, and encoded PFX data to a hardcoded third-party Sentry endpoint, according to Socket's security research."
+  affiliation: Socket
+  topic: Wallet Theft
+  source_url: /malicious-nuget-package-impersonates-sicoob-sdk/
+
+- outlet: "Scottish Cyber Coordination Centre (SC3)"
+  url: https://www.cyberscotland.com/wp-content/uploads/2026/06/SC3-Daily-Threat-Bulletin-1-June-2026.pdf
+  headline: "SC3 Daily Threat Bulletin: 1 June 2026"
+  date: 2026-06-01
+  quote: "Malicious Sicoob NuGet Steals Banking Credentials as npm Packages Target Cloud Secrets — Cybersecurity researchers have discovered a malicious NuGet package that masquerades as a C# software development kit for Sicoob, one of Brazil's largest cooperative financial systems, to siphon client IDs and PFX certificates."
+  affiliation: Socket
+  topic: Wallet Theft
+  source_url: /malicious-nuget-package-impersonates-sicoob-sdk/
