@@ -1755,3 +1755,75 @@
   affiliation: Socket
   topic: Software Supply Chain Worm
   source_url: /canisterworm-npm-publisher-compromise-deploys-backdoor-across-29-packages/
+
+- outlet: CSO Online
+  url: https://www.csoonline.com/article/4164524/more-fake-extensions-linked-to-glassworm-found-in-open-vsx-code-marketplace.html
+  headline: "More fake extensions linked to GlassWorm found in Open VSX code marketplace"
+  date: 2026-04-28
+  quote: "The extension itself acts as a thin loader. By shifting critical logic outside of what tools typically scan, and spreading it across multiple delivery mechanisms, the threat actor increases the likelihood of evading detection."
+  affiliation: Socket
+  topic: Developer Compromise
+  source_url: /73-open-vsx-sleeper-extensions-glassworm/
+
+- outlet: SC World
+  url: https://www.scworld.com/news/glassworm-attackers-activate-new-sleeper-extensions-on-open-vsx
+  headline: "GlassWorm attackers activate new 'sleeper' extensions on Open VSX"
+  date: 2026-04-28
+  quote: "The extension's source code alone no longer reflects the behavior it ultimately runs. By shifting critical logic outside of what tools typically scan, and spreading it across multiple delivery mechanisms, the threat actor increases the likelihood of evading detection, the Socket Research Team wrote."
+  affiliation: Socket
+  topic: Developer Compromise
+  source_url: /73-open-vsx-sleeper-extensions-glassworm/
+
+- outlet: BleepingComputer
+  url: https://www.bleepingcomputer.com/news/security/glassworm-malware-attacks-return-via-73-openvsx-sleeper-extensions/
+  headline: "GlassWorm malware attacks return via 73 OpenVSX 'sleeper' extensions"
+  date: 2026-04-27
+  quote: "This count may change as new updates continue to appear, but the pattern is consistent with earlier GlassWorm waves, say researchers at application security company Socket."
+  affiliation: Socket
+  topic: Developer Compromise
+  source_url: /73-open-vsx-sleeper-extensions-glassworm/
+
+- outlet: The Hacker News
+  url: https://thehackernews.com/2026/04/researchers-uncover-73-fake-vs-code.html
+  headline: "Researchers Uncover 73 Fake VS Code Extensions Delivering GlassWorm v2 Malware"
+  date: 2026-04-27
+  quote: "All the extensions were published at the start of the month, per application security company Socket, which is tracking the latest iteration under the moniker GlassWorm v2."
+  affiliation: Socket
+  topic: Developer Compromise
+  source_url: /73-open-vsx-sleeper-extensions-glassworm/
+
+- outlet: InfoWorld
+  url: https://www.infoworld.com/article/4164656/more-fake-extensions-linked-to-glassworm-found-in-open-vsx-code-marketplace-2.html
+  headline: "More fake extensions linked to GlassWorm found in Open VSX code marketplace"
+  date: 2026-04-28
+  quote: "The threat actor seeding the Open VSX code marketplace with fraudulent extensions that download the GlassWorm malware has uploaded 73 more impersonated links."
+  affiliation: Socket
+  topic: Developer Compromise
+  source_url: /73-open-vsx-sleeper-extensions-glassworm/
+
+- outlet: "SANS"
+  url: https://isc.sans.edu/podcastdetail/9908
+  headline: "SANS Stormcast Tuesday, April 28th, 2026: More TeamPCP; Citrix XenServer Unpatched Vulns; Phantom RPC"
+  date: 2026-04-28
+  quote: "We also have a new blog post by socket.dev and they're writing about 73 different OpenVSX extensions that they found that basically linked to GlassWorm, which is a typical credential exfiltration."
+  affiliation: Socket
+  topic: Developer Compromise
+  source_url: /73-open-vsx-sleeper-extensions-glassworm/
+
+- outlet: "SANS"
+  url: https://www.sans.org/newsletters/newsbites/xxviii-32
+  headline: "SANS NewsBites Volume XXVIII, Issue 32"
+  date: 2026-04-28
+  quote: "Socket's report was linked in the SANS Internet Storm Center Tech Corner roundup for April 28, 2026, alongside coverage of the TeamPCP supply chain campaign."
+  affiliation: Socket
+  topic: Developer Compromise
+  source_url: /73-open-vsx-sleeper-extensions-glassworm/
+
+- outlet: Vulnerable U
+  url: https://www.vulnu.com/p/vulnerable-u-166
+  headline: "Vulnerable U #166"
+  date: 2026-05-01
+  quote: "First of all I couldn't possible cover all the supply chain stuff that happened this week individually. Quick recap - Open VSX extensions are dealing with new variations and waves of GlassWorm, TeamPCP is still kicking around this time in SAP's repos, a bunch of npm Typo Squats are out there stealing secrets out of env variables, and popular PyPi packages tied to 'lightning' were compromised."
+  affiliation: Socket
+  topic: Developer Compromise
+  source_url: /73-open-vsx-sleeper-extensions-glassworm/
