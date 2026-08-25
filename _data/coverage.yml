@@ -1827,3 +1827,57 @@
   affiliation: Socket
   topic: Developer Compromise
   source_url: /73-open-vsx-sleeper-extensions-glassworm/
+
+- outlet: The Hacker News
+  url: https://thehackernews.com/2026/04/malicious-kics-docker-images-and-vs.html
+  headline: "Malicious KICS Docker Images and VS Code Extensions Hit Checkmarx Supply Chain"
+  date: 2026-04-22
+  quote: "Analysis of the poisoned image indicates that the bundled KICS binary was modified to include data collection and exfiltration capabilities not present in the legitimate version, Socket said."
+  affiliation: Socket
+  topic: Developer Compromise
+  source_url: /checkmarx-supply-chain-compromise/
+
+- outlet: BleepingComputer
+  url: https://www.bleepingcomputer.com/news/security/new-checkmarx-supply-chain-breach-affects-kics-analysis-tool/
+  headline: "New Checkmarx supply-chain breach affects KICS analysis tool"
+  date: 2026-04-23
+  quote: "Dependency security company Socket investigated the incident after receiving an alert from Docker about malicious images pushed to the official checkmarx/kics Docker Hub repository."
+  affiliation: Socket
+  topic: Developer Compromise
+  source_url: /checkmarx-supply-chain-compromise/
+
+- outlet: The Register
+  url: https://www.theregister.com/security/2026/04/28/ongoing-supply-chain-attack-targets-security-dev-tools/5226665
+  headline: "Ongoing supply-chain attack 'explicitly targeting' security, dev tools"
+  date: 2026-04-28
+  quote: "Analysis of the poisoned image indicates that the bundled KICS binary was modified to include data collection and exfiltration capabilities not present in the legitimate version, according to Socket's research team examining the Checkmarx compromise."
+  affiliation: Socket
+  topic: Developer Compromise
+  source_url: /checkmarx-supply-chain-compromise/
+
+- outlet: SC World
+  url: https://www.scworld.com/brief/checkmarx-docker-hub-repository-compromised-with-malicious-images
+  headline: "Checkmarx Docker Hub repository compromised with malicious images"
+  date: 2026-04-23
+  quote: "The compromised images, including tags like v2.1.20 and alpine, were found to contain a modified KICS binary designed to exfiltrate sensitive data from scan reports to an external endpoint, according to an alert from Socket."
+  affiliation: Socket
+  topic: Developer Compromise
+  source_url: /checkmarx-supply-chain-compromise/
+
+- outlet: Cybernews
+  url: https://cybernews.com/security/checkmarx-popular-tools-spread-credential-stealing-malware/
+  headline: "Checkmarx suffers second supply chain attack"
+  date: 2026-04-23
+  quote: "Malicious artifacts found in the official Checkmarx KICS Docker Hub repository and VS Code extension. This looks like a broader supply chain compromise affecting multiple Checkmarx distribution channels, warns Feross Aboukhadijeh, founder and CEO at Socket."
+  affiliation: Socket
+  topic: Developer Compromise
+  source_url: /checkmarx-supply-chain-compromise/
+
+- outlet: "SANS"
+  url: https://isc.sans.edu/diary/32926
+  headline: "TeamPCP Supply Chain Campaign: Update 008 - 26-Day Pause Ends with Three Concurrent Compromises (Checkmarx KICS, Bitwarden CLI Cascade, xinference PyPI), CanisterSprawl npm Worm Identified, and Tier 1 Coverage Returns"
+  date: 2026-04-27
+  quote: "A threat actor authenticated to Docker Hub using valid Checkmarx publisher credentials and pushed malicious images to the official checkmarx/kics repository. Five existing tags (latest, v2.1.20, v2.1.20-debian, alpine, debian) were overwritten to malicious digests, and two new tags (v2.1.21, v2.1.21-debian) were created. The poisoned KICS binary retained legitimate scanning behavior and added a covert telemetry path that exfiltrated infrastructure-as-code scan output to attacker-controlled infrastructure."
+  affiliation: Socket
+  topic: Developer Compromise
+  source_url: /checkmarx-supply-chain-compromise/
