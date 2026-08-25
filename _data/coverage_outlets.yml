@@ -127,3 +127,6 @@
   logo: /assets/img/coverage/developer.png
   link: https://www.developer-tech.com/
   hide_name: true  # logo already reads "Developer" — avoid duplicate text
+
+"Scottish Cyber Coordination Centre (SC3)":
+  logo: /assets/img/coverage/scottish-cyber-coordination-centre.png

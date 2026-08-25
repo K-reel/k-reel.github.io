@@ -1935,3 +1935,39 @@
   affiliation: Socket
   topic: Developer Compromise
   source_url: /mini-shai-hulud-packagist-malicious-intercom-php-package-compromise/
+
+- outlet: The Hacker News
+  url: https://thehackernews.com/2026/05/poisoned-ruby-gems-and-go-modules.html
+  headline: "Poisoned Ruby Gems and Go Modules Exploit CI Pipelines for Credential Theft"
+  date: 2026-05-01
+  quote: "The account is part of a software supply chain campaign targeting developers, CI runners, and build environments across two ecosystems, Socket security researcher Kirill Boychenko said."
+  affiliation: Socket
+  topic: Infostealer, Backdoor
+  source_url: /malicious-ruby-gems-and-go-modules-steal-secrets-poison-ci/
+
+- outlet: Risky Biz
+  url: https://news.risky.biz/risky-bulletin-digicert-hacked-with-a-malicious-screensaver-file/
+  headline: "Risky Bulletin: Malware technical reports"
+  date: 2026-05-04
+  quote: "Socket has discovered a threat actor that published a cluster of malicious Ruby gems and Go modules designed to steal developer credentials and poison their tools and CI/CD pipelines."
+  affiliation: Socket
+  topic: Infostealer, Backdoor
+  source_url: /malicious-ruby-gems-and-go-modules-steal-secrets-poison-ci/
+
+- outlet: "UK's National Cyber Security Centre"
+  url: https://ctoatncsc.substack.com/p/cto-at-ncsc-summary-week-ending-may-106
+  headline: "CTO at NCSC Summary: week ending May 10th"
+  date: 2026-05-09
+  quote: "Malicious Ruby Gems and Go Modules Impersonate Developer Tools to Steal Secrets and Poison CI — On the Ruby side, the analyzed gems automate secret theft. They harvest secret-bearing environment variables and read local credential material such as SSH keys, AWS credentials, .npmrc, .netrc, GitHub CLI configuration, and RubyGems credentials, then send the collected data to a hidden exfiltration endpoint."
+  affiliation: Socket
+  topic: Infostealer, Backdoor
+  source_url: /malicious-ruby-gems-and-go-modules-steal-secrets-poison-ci/
+
+- outlet: "Scottish Cyber Coordination Centre (SC3)"
+  url: https://www.cyberscotland.com/wp-content/uploads/2026/05/SC3-Daily-threat-bulletin-4-May-2026.pdf
+  headline: "SC3 Daily Threat Bulletin: 4 May 2026"
+  date: 2026-05-04
+  quote: "Poisoned Ruby Gems and Go Modules Exploit CI Pipelines for Credential Theft — A new software supply chain attack campaign has been observed using sleeper packages as a conduit to subsequently push malicious payloads that enabled credential theft, GitHub Actions tampering, and SSH persistence."
+  affiliation: Socket
+  topic: Infostealer, Backdoor
+  source_url: /malicious-ruby-gems-and-go-modules-steal-secrets-poison-ci/
