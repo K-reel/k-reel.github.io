@@ -1611,3 +1611,48 @@
   affiliation: Socket
   topic: Developer Compromise
   source_url: /open-vsx-transitive-glassworm-campaign/
+
+- outlet: RustSec Advisory Database
+  url: https://rustsec.org/advisories/RUSTSEC-2026-0081.html
+  headline: "RUSTSEC-2026-0081: `logtrace` was removed from crates.io for malicious code"
+  date: 2026-04-05
+  quote: "Thanks to Socket.dev for detecting and reporting this to the crates.io team!"
+  affiliation: Socket
+  topic: Contagious Interview
+  source_url: /contagious-interview-campaign-spreads-across-5-ecosystems/
+
+- outlet: The Hacker News
+  url: https://thehackernews.com/2026/04/n-korean-hackers-spread-1700-malicious.html
+  headline: "N. Korean Hackers Spread 1,700 Malicious Packages Across npm, PyPI, Go, Rust"
+  date: 2026-04-08
+  quote: "The threat actor's packages were designed to impersonate legitimate developer tooling, while quietly functioning as malware loaders."
+  affiliation: Socket
+  topic: Contagious Interview
+  source_url: /contagious-interview-campaign-spreads-across-5-ecosystems/
+
+- outlet: SC World
+  url: https://www.scworld.com/brief/contagious-interview-campaign-expands-further
+  headline: "Contagious Interview campaign expands further"
+  date: 2026-04-09
+  quote: "Installation of the malware-loading packages facilitates the retrieval of an information-stealing and remote access trojan payload that targets browser, password manager, and cryptocurrency wallet data, a report from Socket security researchers showed."
+  affiliation: Socket
+  topic: Contagious Interview
+  source_url: /contagious-interview-campaign-spreads-across-5-ecosystems/
+
+- outlet: Risky Biz
+  url: https://news.risky.biz/risky-bulletin-fbi-extracted-signal-chats-from-iphone-notifications-logs/
+  headline: "Risky Bulletin: FBI extracted Signal chats from iPhone notifications logs"
+  date: 2026-04-10
+  quote: "Socket Security has tracked North Korean-linked malware and malicious packages on five distinct package portals, on npm, PyPI, Rust Crates, Go Packages, and PHP's Packagist."
+  affiliation: Socket
+  topic: Contagious Interview
+  source_url: /contagious-interview-campaign-spreads-across-5-ecosystems/
+
+- outlet: "CERT-EU (Cybersecurity Service for the EU institutions, bodies and agencies)"
+  url: https://cert.europa.eu/publications/threat-intelligence/cb26-05/
+  headline: "Cyber Brief 26-05 - April 2026"
+  date: 2026-05-04
+  quote: "North Korea's Contagious Interview engaged in a supply-chain operation deploying malicious packages across npm, PyPI, Go Modules, crates.io, and Packagist. Over 1,700 malicious packages have been linked to the broader operation."
+  affiliation: Socket
+  topic: Contagious Interview
+  source_url: /contagious-interview-campaign-spreads-across-5-ecosystems/
