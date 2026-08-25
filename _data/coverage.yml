@@ -1868,7 +1868,7 @@
   url: https://cybernews.com/security/checkmarx-popular-tools-spread-credential-stealing-malware/
   headline: "Checkmarx suffers second supply chain attack"
   date: 2026-04-23
-  quote: "Malicious artifacts found in the official Checkmarx KICS Docker Hub repository and VS Code extension. This looks like a broader supply chain compromise affecting multiple Checkmarx distribution channels, warns Feross Aboukhadijeh, founder and CEO at Socket."
+  quote: "The malware harvests developer and cloud credentials, compresses and encrypts the results, and exfiltrates them both to an external endpoint and to threat actor-created public GitHub repositories under victim accounts, the Socket researchers said in a report."
   affiliation: Socket
   topic: Developer Compromise
   source_url: /checkmarx-supply-chain-compromise/
