@@ -1971,3 +1971,93 @@
   affiliation: Socket
   topic: Infostealer, Backdoor
   source_url: /malicious-ruby-gems-and-go-modules-steal-secrets-poison-ci/
+
+- outlet: BleepingComputer
+  url: https://www.bleepingcomputer.com/news/security/new-shai-hulud-malware-wave-compromises-600-npm-packages/
+  headline: "New Shai-Hulud malware wave compromises 600 npm packages"
+  date: 2026-05-19
+  quote: "According to application security company Socket, the hackers published 639 malicious versions across 323 unique packages in about one hour on May 19, between 01:56 UTC and 02:56 UTC."
+  affiliation: Socket
+  topic: Software Supply Chain Worm
+  source_url: /antv-packages-compromised/
+
+- outlet: The Hacker News
+  url: https://thehackernews.com/2026/05/mini-shai-hulud-pushes-malicious-antv.html
+  headline: "Mini Shai-Hulud Pushes Malicious AntV npm Packages via Compromised Maintainer Account"
+  date: 2026-05-19
+  quote: "The attack affects packages tied to the npm maintainer account atool, including echarts-for-react, a widely used React wrapper for Apache ECharts with roughly 1.1 million weekly downloads."
+  affiliation: Socket
+  topic: Software Supply Chain Worm
+  source_url: /antv-packages-compromised/
+
+- outlet: SecurityWeek
+  url: https://www.securityweek.com/over-320-npm-packages-hit-by-fresh-mini-shai-hulud-supply-chain-attack/
+  headline: "Over 320 NPM Packages Hit by Fresh Mini Shai-Hulud Supply Chain Attack"
+  date: 2026-05-20
+  quote: "Across the full Mini Shai-Hulud campaign we have tracked 1,055 versions across 502 unique packages, Socket said."
+  affiliation: Socket
+  topic: Software Supply Chain Worm
+  source_url: /antv-packages-compromised/
+
+- outlet: Infosecurity Magazine
+  url: https://www.infosecurity-magazine.com/news/antv-npm-mini-shai-hulud-largest/
+  headline: "Mini Shai-Hulud Hits Hundreds of npm Packages in AntV Ecosystem"
+  date: 2026-05-20
+  quote: "According to new analysis by Socket's Threat Research Team, the attack began around 01:56 UTC on May 19 and pushed 639 malicious versions across 323 unique packages before stopping roughly an hour later."
+  affiliation: Socket
+  topic: Software Supply Chain Worm
+  source_url: /antv-packages-compromised/
+
+- outlet: SC World
+  url: https://www.scworld.com/news/new-mini-shai-hulud-attack-targets-npm-ecosystem
+  headline: "New Mini Shai-Hulud attack targets npm ecosystem"
+  date: 2026-05-20
+  quote: "In a May 19 blog post, Socket researchers said all of the new observed activity was in the npm ecosystem, with the bulk of the activity concentrated in the @antv package."
+  affiliation: Socket
+  topic: Software Supply Chain Worm
+  source_url: /antv-packages-compromised/
+
+- outlet: Risky Biz
+  url: https://news.risky.biz/risky-bulletin-microsoft-takes-down-msaas-used-by-ransomware-gangs/
+  headline: "Risky Bulletin: Arrests, cybercrime, and threat intel"
+  date: 2026-05-20
+  quote: "More than 300 npm packages have been compromised in the most recent wave of the Shai-Hulud npm worm."
+  affiliation: Socket
+  topic: Software Supply Chain Worm
+  source_url: /antv-packages-compromised/
+
+- outlet: TechRadar Pro
+  url: https://www.techradar.com/pro/security/mini-shai-halud-hackers-publish-over-600-compromised-npm-packages-developers-warned-to-be-on-their-guard
+  headline: "Mini Shai-Halud hackers publish over 600 compromised npm packages — developers warned to be on their guard"
+  date: 2026-05-20
+  quote: "Multiple security organizations, including Socket, confirmed that on May 19 2026, in just one hour, malicious actors managed to publish 639 versions of 323 unique packages on npm, targeting software developers, open-source maintainers, organizations running CI/CD pipelines, and everyone else who downloaded, or depends, on the compromised npm packages."
+  affiliation: Socket
+  topic: Software Supply Chain Worm
+  source_url: /antv-packages-compromised/
+
+- outlet: Vulnerable U
+  url: https://www.vulnu.com/p/vulnerable-u-169
+  headline: "Vulnerable U #169"
+  date: 2026-05-22
+  quote: "GitHub Confirms Breach of 3,800 Repos Via Malicious VSCode Extension — BleepingComputer's report on the GitHub breach lines up almost perfectly with the same Team PCP playbook we keep seeing over and over again with these \"Mini Shai-Hulud\" worms. At this point there's nothing \"mini\" about it anymore."
+  affiliation: Socket
+  topic: Software Supply Chain Worm
+  source_url: /antv-packages-compromised/
+
+- outlet: "SANS"
+  url: https://isc.sans.edu/diary/TeamPCP+Supply+Chain+Campaign+Activity+Through+20260524/33016/
+  headline: "TeamPCP Supply Chain Campaign: Activity Through 2026-05-24"
+  date: 2026-05-25
+  quote: "Independent counts from StepSecurity, Snyk, and Socket agree on 639 malicious versions across 323 packages, which makes this the largest single-hour Shai-Hulud burst the campaign has produced."
+  affiliation: Socket
+  topic: Software Supply Chain Worm
+  source_url: /antv-packages-compromised/
+
+- outlet: "SANS"
+  url: https://www.sans.org/newsletters/at-risk/xxvi-21
+  headline: "SANS AtRisk Volume XXVI, Issue 21"
+  date: 2026-05-28
+  quote: "TeamPCP Supply Chain Campaign: Activity Through 2026-05-24 — The same operator poisoned the @antv npm ecosystem through a compromised maintainer account and dropped a trojanized build of Microsoft's own durabletask SDK on PyPI."
+  affiliation: Socket
+  topic: Software Supply Chain Worm
+  source_url: /antv-packages-compromised/
