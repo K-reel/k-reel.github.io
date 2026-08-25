@@ -36,6 +36,16 @@ toc: false
     flex-shrink: 0;
   }
 
+  .coverage-outlet-logo-link {
+    display: inline-flex;
+    align-items: center;
+    flex-shrink: 0;
+    cursor: pointer;
+  }
+  .coverage-outlet-logo-link:hover .coverage-outlet-logo {
+    opacity: 0.8;
+  }
+
   .coverage-outlet-fallback {
     display: inline-flex;
     align-items: center;
@@ -242,9 +252,19 @@ toc: false
   <details class="coverage-outlet-section">
     <summary class="coverage-outlet-header">
       {% if outlet_meta and outlet_meta.logo %}
+        {% if outlet_meta.link %}
+        <a class="coverage-outlet-logo-link" href="{{ outlet_meta.link }}" target="_blank" rel="noopener"
+           aria-label="{{ outlet }} — visit site"
+           onclick="event.preventDefault(); event.stopPropagation(); window.open('{{ outlet_meta.link }}', '_blank', 'noopener');">
+          <img src="{{ outlet_meta.logo }}" alt="{{ outlet }} logo" class="coverage-outlet-logo"
+               onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-flex';" />
+          <span class="coverage-outlet-fallback" style="display:none;">{{ outlet | slice: 0, 1 }}</span>
+        </a>
+        {% else %}
         <img src="{{ outlet_meta.logo }}" alt="{{ outlet }} logo" class="coverage-outlet-logo"
              onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-flex';" />
         <span class="coverage-outlet-fallback" style="display:none;">{{ outlet | slice: 0, 1 }}</span>
+        {% endif %}
       {% else %}
         <span class="coverage-outlet-fallback">{{ outlet | slice: 0, 1 }}</span>
       {% endif %}
