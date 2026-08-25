@@ -1895,7 +1895,7 @@
   url: https://www.developer-tech.com/news/open-source-registries-mini-shai-hulud-supply-chain-attacks/
   headline: "Open-source registries hit by 'Mini Shai-Hulud' supply chain attacks"
   date: 2026-05-01
-  quote: "Security teams at Socket, Aikido Security, and OX Security recently spotted malicious versions of PyTorch Lightning in public registries."
+  quote: "The malware immediately hunts for cloud provider credentials stored locally on the machine."
   affiliation: Socket
   topic: Developer Compromise
   source_url: /mini-shai-hulud-packagist-malicious-intercom-php-package-compromise/
