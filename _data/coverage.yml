@@ -2223,3 +2223,39 @@
   affiliation: Socket
   topic: Supply Chain Worm
   source_url: /mini-shai-hulud-miasma-and-hades-worms-target-bioinformatics-and-mcp-developers-via-malicious/
+
+- outlet: The Hacker News
+  url: https://thehackernews.com/2026/06/miasma-malware-targets-npm-packages-and.html
+  headline: "Miasma Malware Targets npm Packages and GitHub Actions in Supply Chain Attack"
+  date: 2026-06-26
+  quote: "The latest activity includes malicious npm releases affecting LeoPlatform and RStreams packages, GitHub Actions workflow abuse, and a related Go module compromise involving the Verana Blockchain project."
+  affiliation: Socket
+  topic: Developer Compromise
+  source_url: /miasma-mini-shai-hulud-hits-leoplatform-npm-packages-go-ecosystem/
+
+- outlet: "Golang Weekly"
+  url: https://golangweekly.com/issues/607
+  headline: "Issue #607: Socket reports on a Mini Shai-Hulud supply chain attack"
+  date: 2026-06-26
+  quote: "Socket reports on a Mini Shai-Hulud supply chain attack (as are plaguing the JS ecosystem lately) that has partly expanded into the Go ecosystem too."
+  affiliation: Socket
+  topic: Developer Compromise
+  source_url: /miasma-mini-shai-hulud-hits-leoplatform-npm-packages-go-ecosystem/
+
+- outlet: Risky Biz
+  url: https://risky.biz/risky-bulletin-law-enforcement-agencies-and-security-firms-take-down-amadey-and-stealerc/
+  headline: "Risky Bulletin: Arrests, cybercrime, and threat intel"
+  date: 2026-06-26
+  quote: "SafeDep, Socket Security, and Step Security reported on a mass npm supply chain attack affecting 20 LeoPlatform packages."
+  affiliation: Socket
+  topic: Developer Compromise
+  source_url: /miasma-mini-shai-hulud-hits-leoplatform-npm-packages-go-ecosystem/
+
+- outlet: "CERT.at (Austrian Computer Emergency Response Team)"
+  url: https://www.cert.at/de/tagesberichte/2026/6/tagesberichte-26062026
+  headline: "Tageszusammenfassung - 26.06.2026"
+  date: 2026-06-26
+  quote: "Miasma Mini Shai-Hulud Hits LeoPlatform npm Packages and GitHub Actions, Expands to the Go Ecosystem — the latest attack wave affects LeoPlatform/RStreams npm packages, three llxlr-published npm packages, the Verana Blockchain Go module, and GitHub Actions/developer-tool workflows."
+  affiliation: Socket
+  topic: Developer Compromise
+  source_url: /miasma-mini-shai-hulud-hits-leoplatform-npm-packages-go-ecosystem/
