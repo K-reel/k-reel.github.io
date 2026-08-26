@@ -2079,3 +2079,66 @@
   affiliation: Socket
   topic: Wallet Theft
   source_url: /malicious-nuget-package-impersonates-sicoob-sdk/
+
+- outlet: The Hacker News
+  url: https://thehackernews.com/2026/06/miasma-supply-chain-attack-compromises.html
+  headline: "Miasma Supply Chain Attack Compromises Red Hat npm Packages with Credential-Stealing Worm"
+  date: 2026-06-01
+  quote: "This is effectively a Mini Shai-Hulud campaign: it uses the same core tactics of install-time execution, credential harvesting, CI/CD targeting, encrypted exfiltration, and potential downstream propagation."
+  affiliation: Socket
+  topic: Developer Compromise
+  source_url: /mini-shai-hulud-campaign-hits-red-hat-cloud-services-npm-packages/
+
+- outlet: The Register
+  url: https://www.theregister.com/security/2026/06/01/shai-hulud-malware-infects-red-hat-npm-packages-downloaded-80k-times-weekly/5249803
+  headline: "Shai-Hulud malware worms Red Hat npm package versions downloaded 80K times a week"
+  date: 2026-06-01
+  quote: "Socket, meanwhile, counted 95 affected package versions as of 11:00:22 UTC."
+  affiliation: Socket
+  topic: Developer Compromise
+  source_url: /mini-shai-hulud-campaign-hits-red-hat-cloud-services-npm-packages/
+
+- outlet: Ars Technica
+  url: https://arstechnica.com/security/2026/06/dozens-of-red-hat-packages-backdoored-through-its-offical-npm-channel/
+  headline: "Dozens of Red Hat packages backdoored through its offical npm channel"
+  date: 2026-06-01
+  quote: "Security firm Socket said an analysis of the malware revealed that it's designed to collect sensitive credentials, including GitHub action secrets, npm tokens, Kubernetes and Vault material, and credentials for other cloud services."
+  affiliation: Socket
+  topic: Developer Compromise
+  source_url: /mini-shai-hulud-campaign-hits-red-hat-cloud-services-npm-packages/
+
+- outlet: SecurityWeek
+  url: https://www.securityweek.com/supply-chain-attack-hits-32-red-hat-npm-packages/
+  headline: "Supply Chain Attack Hits 32 Red Hat NPM Packages"
+  date: 2026-06-02
+  quote: "The malware was designed to harvest GitHub Actions secrets, npm tokens, cloud credentials, Kubernetes and Vault material, SSH keys, Git credentials, and other sensitive files, according to Socket."
+  affiliation: Socket
+  topic: Developer Compromise
+  source_url: /mini-shai-hulud-campaign-hits-red-hat-cloud-services-npm-packages/
+
+- outlet: TechRadar Pro
+  url: https://www.techradar.com/pro/security/compromised-red-hat-npm-packages-downloaded-over-80-000-times-in-one-week-supply-chain-attack-still-ongoing
+  headline: "Compromised Red Hat npm packages downloaded over 80,000 times in one week – supply chain attack still ongoing"
+  date: 2026-06-02
+  quote: "Socket claims to have identified 95 packages."
+  affiliation: Socket
+  topic: Developer Compromise
+  source_url: /mini-shai-hulud-campaign-hits-red-hat-cloud-services-npm-packages/
+
+- outlet: Risky Biz
+  url: https://risky.biz/risky-bulletin-a-tenth-of-all-new-domains-last-year-were-malicious/
+  headline: "Risky Bulletin: Arrests, cybercrime, and threat intel"
+  date: 2026-06-03
+  quote: "More than 30 Red Hat cloud-related npm packages have been compromised in a new supply chain attack on Monday."
+  affiliation: Socket
+  topic: Developer Compromise
+  source_url: /mini-shai-hulud-campaign-hits-red-hat-cloud-services-npm-packages/
+
+- outlet: "SANS"
+  url: https://www.sans.org/newsletters/newsbites/xxviii-42
+  headline: "SANS NewsBites Volume XXVIII, Issue 42"
+  date: 2026-06-05
+  quote: "Socket recommends users identify exposure, isolate affected systems, suspend CI/CD workflows, remove malicious versions, rebuild from clean environments, rotate secrets, audit activity, strengthen controls, and hunt for indicators of compromise."
+  affiliation: Socket
+  topic: Developer Compromise
+  source_url: /mini-shai-hulud-campaign-hits-red-hat-cloud-services-npm-packages/
