@@ -134,6 +134,5 @@
 "The CyberWire":
   logo: /assets/img/coverage/cyberwire.png
 
-"CERT.at (Austrian Computer Emergency Response Team)":
+"Austrian Computer Emergency Response Team":
   logo: /assets/img/coverage/cert-at.png
-  hide_name: true  # logo already reads "CERT.at" — avoid duplicate text

@@ -2251,7 +2251,7 @@
   topic: Developer Compromise
   source_url: /miasma-mini-shai-hulud-hits-leoplatform-npm-packages-go-ecosystem/
 
-- outlet: "CERT.at (Austrian Computer Emergency Response Team)"
+- outlet: "Austrian Computer Emergency Response Team"
   url: https://www.cert.at/de/tagesberichte/2026/6/tagesberichte-26062026
   headline: "Miasma Mini Shai-Hulud Hits LeoPlatform npm Packages and GitHub Actions, Expands to the Go Ecosystem"
   date: 2026-06-26
@@ -2269,7 +2269,7 @@
   topic: Developer Compromise
   source_url: /miasma-mini-shai-hulud-hits-immobiliarelabs-npm-packages/
 
-- outlet: "CERT.at (Austrian Computer Emergency Response Team)"
+- outlet: "Austrian Computer Emergency Response Team"
   url: https://www.cert.at/de/tagesberichte/2026/6/tagesberichte-29062026
   headline: "Miasma Mini Shai-Hulud Hits ImmobiliareLabs npm Packages"
   date: 2026-06-29
@@ -2305,7 +2305,7 @@
   topic: Infostealer
   source_url: /chrome-and-firefox-extensions-free-vpns-add-clipboard-stealers/
 
-- outlet: "CERT.at (Austrian Computer Emergency Response Team)"
+- outlet: "Austrian Computer Emergency Response Team"
   url: https://www.cert.at/de/tagesberichte/2026/6/tagesberichte-30062026
   headline: "Chrome and Firefox Extensions Posing as Free VPNs Add Clipboard Stealers via Malicious Updates"
   date: 2026-06-30
