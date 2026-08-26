@@ -136,3 +136,7 @@
 
 "Austrian Computer Emergency Response Team":
   logo: /assets/img/coverage/cert-at.png
+
+"LinuxSecurity":
+  logo: /assets/img/coverage/linuxsecurity.png
+  hide_name: true  # logo already reads "LinuxSecurity" — avoid duplicate text
