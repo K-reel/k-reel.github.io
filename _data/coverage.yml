@@ -2376,3 +2376,75 @@
   affiliation: Socket
   topic: Exploit
   source_url: /github-actions-abuse-powers-cpanel-and-whm-exploitation/
+
+- outlet: The Hacker News
+  url: https://thehackernews.com/2026/08/40-malicious-firefox-extensions-pose-as.html
+  headline: "40 Malicious Firefox Extensions Pose as Web3 Products to Steal Wallet Secrets"
+  date: 2026-08-20
+  quote: "According to the Socket Threat Research team, the extensions are part of a broader set of 77 browser add-ons that share source code and infrastructure overlaps."
+  affiliation: Socket
+  topic: Wallet Theft
+  source_url: /firefox-crypto-wallet-theft/
+
+- outlet: Risky Biz
+  url: https://news.risky.biz/risky-bulletin-academics-find-source-code-overlaps-between-geedge-and-chinas-great-firewall/
+  headline: "Risky Bulletin: Arrests, cybercrime, and threat intel"
+  date: 2026-08-21
+  quote: "Mozilla has removed 77 malicious Firefox extensions from its add-ons store that stole crypto-wallet seed phrases and browser credentials."
+  affiliation: Socket
+  topic: Wallet Theft
+  source_url: /firefox-crypto-wallet-theft/
+
+- outlet: SC World
+  url: https://www.scworld.com/brief/network-of-77-firefox-extensions-linked-to-crypto-theft-uncovered
+  headline: "Network of 77 Firefox extensions linked to crypto theft uncovered"
+  date: 2026-08-20
+  quote: "Socket has linked 77 Firefox extension identities to a campaign it calls the Offside Wallet Theft Factory, confirming 40 as malicious."
+  affiliation: Socket
+  topic: Wallet Theft
+  source_url: /firefox-crypto-wallet-theft/
+
+- outlet: CyberInsider
+  url: https://cyberinsider.com/40-malicious-firefox-extensions-caught-stealing-crypto-wallet-data/
+  headline: "40 malicious Firefox extensions caught stealing crypto wallet data"
+  date: 2026-08-20
+  quote: "Socket researchers have uncovered a network of 77 Firefox extensions tied to cryptocurrency wallet theft, credential harvesting, and deceptive software distribution."
+  affiliation: Socket
+  topic: Wallet Theft
+  source_url: /firefox-crypto-wallet-theft/
+
+- outlet: Cybernews
+  url: https://cybernews.com/security/malicious-firefox-extensions-crypto-wallets/
+  headline: "Malicious Firefox extensions are stealing crypto login data"
+  date: 2026-08-25
+  quote: "Socket Threat Research tracked the campaign provisionally as the Offside Wallet Theft Factory, saying it has operated since at least March 2026."
+  affiliation: Socket
+  topic: Wallet Theft
+  source_url: /firefox-crypto-wallet-theft/
+
+- outlet: Bitdefender
+  url: https://www.bitdefender.com/en-au/blog/hotforsecurity/malicious-firefox-add-ons-stealing-cryptowallet-seed-phrases-browser-credentials
+  headline: "Malicious Firefox add-ons caught stealing cryptowallet seed phrases and browser credentials"
+  date: 2026-08-24
+  quote: "Security researchers at Socket have identified scores of malicious linked Firefox add-ons designed to steal cryptocurrency wallet seed phrases or password details."
+  affiliation: Socket
+  topic: Wallet Theft
+  source_url: /firefox-crypto-wallet-theft/
+
+- outlet: Decrypt
+  url: https://decrypt.co/376432/dozens-of-fake-firefox-wallet-extensions-linked-to-crypto-stealing-malware
+  headline: "Dozens of Fake Firefox Wallet Extensions Linked to Crypto-Stealing Malware"
+  date: 2026-08-25
+  quote: "Socket's threat research team published its findings last week, linking 77 extension identities through shared code, infrastructure and publishing patterns, and confirming 40 as malicious."
+  affiliation: Socket
+  topic: Wallet Theft
+  source_url: /firefox-crypto-wallet-theft/
+
+- outlet: Yahoo
+  url: https://tech.yahoo.com/cybersecurity/articles/dozens-fake-firefox-wallet-extensions-141005805.html
+  headline: "Dozens of Fake Firefox Wallet Extensions Linked to Crypto-Stealing Malware"
+  date: 2026-08-25
+  quote: "Socket Threat Research uncovered a 77-extension Firefox campaign: 40 steal wallet secrets and credentials."
+  affiliation: Socket
+  topic: Wallet Theft
+  source_url: /firefox-crypto-wallet-theft/
