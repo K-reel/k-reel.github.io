@@ -2259,3 +2259,21 @@
   affiliation: Socket
   topic: Developer Compromise
   source_url: /miasma-mini-shai-hulud-hits-leoplatform-npm-packages-go-ecosystem/
+
+- outlet: The Hacker News
+  url: https://thehackernews.com/2026/06/miasma-malware-targets-npm-packages-and.html
+  headline: "Miasma Malware Targets npm Packages and GitHub Actions in Supply Chain Attack"
+  date: 2026-06-30
+  quote: "The new ImmobiliareLabs activity follows the same broader campaign pattern: compromise trusted developer infrastructure, publish malicious package versions, stage JavaScript malware through Bun, steal developer and CI/CD secrets, and use the stolen access to propagate further."
+  affiliation: Socket
+  topic: Developer Compromise
+  source_url: /miasma-mini-shai-hulud-hits-immobiliarelabs-npm-packages/
+
+- outlet: "CERT.at (Austrian Computer Emergency Response Team)"
+  url: https://www.cert.at/de/tagesberichte/2026/6/tagesberichte-29062026
+  headline: "Tageszusammenfassung - 29.06.2026"
+  date: 2026-06-29
+  quote: "Latest wave affects legitimate @immobiliarelabs Backstage packages, with malicious npm releases published across GitLab and LDAP authentication plugin families on June 26, 2026."
+  affiliation: Socket
+  topic: Developer Compromise
+  source_url: /miasma-mini-shai-hulud-hits-immobiliarelabs-npm-packages/
