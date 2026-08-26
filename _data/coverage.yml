@@ -2253,9 +2253,9 @@
 
 - outlet: "CERT.at (Austrian Computer Emergency Response Team)"
   url: https://www.cert.at/de/tagesberichte/2026/6/tagesberichte-26062026
-  headline: "Tageszusammenfassung - 26.06.2026"
+  headline: "Miasma Mini Shai-Hulud Hits LeoPlatform npm Packages and GitHub Actions, Expands to the Go Ecosystem"
   date: 2026-06-26
-  quote: "Miasma Mini Shai-Hulud Hits LeoPlatform npm Packages and GitHub Actions, Expands to the Go Ecosystem — the latest attack wave affects LeoPlatform/RStreams npm packages, three llxlr-published npm packages, the Verana Blockchain Go module, and GitHub Actions/developer-tool workflows."
+  quote: "Latest wave affects LeoPlatform/RStreams npm packages, three llxlr-published npm packages, the Verana Blockchain Go module, and GitHub Actions/developer-tool workflows."
   affiliation: Socket
   topic: Developer Compromise
   source_url: /miasma-mini-shai-hulud-hits-leoplatform-npm-packages-go-ecosystem/
@@ -2271,7 +2271,7 @@
 
 - outlet: "CERT.at (Austrian Computer Emergency Response Team)"
   url: https://www.cert.at/de/tagesberichte/2026/6/tagesberichte-29062026
-  headline: "Tageszusammenfassung - 29.06.2026"
+  headline: "Miasma Mini Shai-Hulud Hits ImmobiliareLabs npm Packages"
   date: 2026-06-29
   quote: "Latest wave affects legitimate @immobiliarelabs Backstage packages, with malicious npm releases published across GitLab and LDAP authentication plugin families on June 26, 2026."
   affiliation: Socket
@@ -2307,9 +2307,9 @@
 
 - outlet: "CERT.at (Austrian Computer Emergency Response Team)"
   url: https://www.cert.at/de/tagesberichte/2026/6/tagesberichte-30062026
-  headline: "Tageszusammenfassung - 30.06.2026"
+  headline: "Chrome and Firefox Extensions Posing as Free VPNs Add Clipboard Stealers via Malicious Updates"
   date: 2026-06-30
-  quote: "Chrome and Firefox Extensions Posing as Free VPNs Add Clipboard Stealers via Malicious Updates."
+  quote: "Malicious Chrome and Firefox extensions posed as free VPNs while stealing clipboard data through later extension updates."
   affiliation: Socket
   topic: Infostealer
   source_url: /chrome-and-firefox-extensions-free-vpns-add-clipboard-stealers/
