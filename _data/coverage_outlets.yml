@@ -140,3 +140,15 @@
 "LinuxSecurity":
   logo: /assets/img/coverage/linuxsecurity.png
   hide_name: true  # logo already reads "LinuxSecurity" — avoid duplicate text
+
+"CyberInsider":
+  logo: /assets/img/coverage/cyberinsider.png
+
+"Bitdefender":
+  logo: /assets/img/coverage/bitdefender.png
+
+"Decrypt":
+  logo: /assets/img/coverage/decrypt.png
+
+"Yahoo":
+  logo: /assets/img/coverage/yahoo.png
