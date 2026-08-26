@@ -2142,3 +2142,84 @@
   affiliation: Socket
   topic: Developer Compromise
   source_url: /mini-shai-hulud-campaign-hits-red-hat-cloud-services-npm-packages/
+
+- outlet: The Hacker News
+  url: https://thehackernews.com/2026/06/microsoft-restores-some-github-repos.html
+  headline: "Microsoft Restores Some GitHub Repos, Keeps Others Offline as Miasma Probe Continues"
+  date: 2026-06-09
+  quote: "Compromised legitimate packages give them trust and reach, but those paths depend on stolen credentials or CI/CD access that can be revoked quickly."
+  affiliation: Socket
+  topic: Supply Chain Worm
+  source_url: /mini-shai-hulud-miasma-and-hades-worms-target-bioinformatics-and-mcp-developers-via-malicious/
+
+- outlet: SecurityWeek
+  url: https://www.securityweek.com/over-100-npm-pypi-packages-hit-in-new-shai-hulud-supply-chain-attacks/
+  headline: "Over 100 NPM, PyPI Packages Hit in New Shai-Hulud Supply Chain Attacks"
+  date: 2026-06-09
+  quote: "The malware was seen in an initial wave of 19 packages containing a *-setup.pth file designed to execute at Python startup, fetch the Bun JavaScript runtime, and execute JavaScript code, Socket reports."
+  affiliation: Socket
+  topic: Supply Chain Worm
+  source_url: /mini-shai-hulud-miasma-and-hades-worms-target-bioinformatics-and-mcp-developers-via-malicious/
+
+- outlet: SC World
+  url: https://www.scworld.com/news/mini-shai-hulud-hades-variant-affects-23-pypi-package-versions
+  headline: "Mini Shai-Hulud 'Hades' variant affects 23 PyPI package versions"
+  date: 2026-06-10
+  quote: "Socket continues to track the latest Mini Shai-Hulud-related attacks, which have affected a total of 473 package artifacts across npm and PyPI since June 1, 2026."
+  affiliation: Socket
+  topic: Supply Chain Worm
+  source_url: /mini-shai-hulud-miasma-and-hades-worms-target-bioinformatics-and-mcp-developers-via-malicious/
+
+- outlet: Risky Biz
+  url: https://risky.biz/risky-bulletin-meta-says-nso-violated-court-order-with-new-campaign-targeting-whatsapp/
+  headline: "Risky Bulletin: Arrests, cybercrime, and threat intel"
+  date: 2026-06-10
+  quote: "DevSecOps companies are tracking a Shai-Hulud worm variant called Hades that is hitting PyPI 'bioinformatics' libraries."
+  affiliation: Socket
+  topic: Supply Chain Worm
+  source_url: /mini-shai-hulud-miasma-and-hades-worms-target-bioinformatics-and-mcp-developers-via-malicious/
+
+- outlet: The CyberWire
+  url: https://thecyberwire.com/podcasts/daily-podcast/2571/notes
+  headline: "The CyberWire Daily Podcast, Ep. 2571"
+  date: 2026-06-11
+  quote: "Mini Shai-Hulud, Miasma, and Hades Worms Target Bioinformatics and MCP Developers via Malicious PyPI Wheels"
+  affiliation: Socket
+  topic: Supply Chain Worm
+  source_url: /mini-shai-hulud-miasma-and-hades-worms-target-bioinformatics-and-mcp-developers-via-malicious/
+
+- outlet: Vulnerable U
+  url: https://www.vulnu.com/p/vulnerable-u-172
+  headline: "Vulnerable U #172"
+  date: 2026-06-12
+  quote: "Socket's threat research team caught the campaign evolving again, this time with 23 new malicious PyPI packages targeting bioinformatics and MCP developers."
+  affiliation: Socket
+  topic: Supply Chain Worm
+  source_url: /mini-shai-hulud-miasma-and-hades-worms-target-bioinformatics-and-mcp-developers-via-malicious/
+
+- outlet: The Register
+  url: https://www.theregister.com/ai-and-ml/2026/06/14/ai-is-code-and-cant-be-prompted-into-being-smarter/5254141
+  headline: "AI is code – and can't be prompted into being smarter"
+  date: 2026-06-14
+  quote: "The comment contains fake instructions to an LLM, instructing the bot to stop what it's doing, go into a special 'UNRESTRICTED mode,' and then ordering it to provide step-by-step instructions to create weapons for a terrorist attack."
+  affiliation: Socket
+  topic: Supply Chain Worm
+  source_url: /mini-shai-hulud-miasma-and-hades-worms-target-bioinformatics-and-mcp-developers-via-malicious/
+
+- outlet: Ars Technica
+  url: https://arstechnica.com/security/2026/07/now-defenders-are-embracing-the-prompt-injection-too/
+  headline: "Now, defenders are embracing the prompt injection, too"
+  date: 2026-07-13
+  quote: "Researchers from security firm Socket last month unearthed an LLM agent that directed target LLMs to provide instructions for building a nuclear bomb or biological weapons."
+  affiliation: Socket
+  topic: Supply Chain Worm
+  source_url: /mini-shai-hulud-miasma-and-hades-worms-target-bioinformatics-and-mcp-developers-via-malicious/
+
+- outlet: "SANS"
+  url: https://www.sans.org/newsletters/newsbites/xxviii-51
+  headline: "SANS NewsBites Volume XXVIII, Issue 51"
+  date: 2026-07-14
+  quote: "Socket has previously observed guardrail-tripping prompt injection hidden inside malware to deter defenders' AI-assisted analysis; Tracebit believes their research is the first known use of defensive context bombing."
+  affiliation: Socket
+  topic: Supply Chain Worm
+  source_url: /mini-shai-hulud-miasma-and-hades-worms-target-bioinformatics-and-mcp-developers-via-malicious/
