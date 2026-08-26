@@ -2277,3 +2277,39 @@
   affiliation: Socket
   topic: Developer Compromise
   source_url: /miasma-mini-shai-hulud-hits-immobiliarelabs-npm-packages/
+
+- outlet: The Hacker News
+  url: https://thehackernews.com/2026/06/silent-swap-crypto-clipper-uses-fake.html
+  headline: "Silent Swap Crypto Clipper Uses Fake Google Notes Extension to Replace Wallet Addresses"
+  date: 2026-06-30
+  quote: "Both extensions present themselves as free VPN tools and include visible proxy functionality."
+  affiliation: Socket
+  topic: Infostealer
+  source_url: /chrome-and-firefox-extensions-free-vpns-add-clipboard-stealers/
+
+- outlet: TechRadar Pro
+  url: https://www.techradar.com/vpn/vpn-privacy-security/that-free-vpn-chrome-and-firefox-extension-may-be-reading-your-clipboard-every-half-a-second-researchers-warn
+  headline: "That free VPN Chrome and Firefox extension may be reading your clipboard every half a second, researchers warn"
+  date: 2026-07-01
+  quote: "The Chrome content script checks the clipboard roughly every half a second, according to Socket's analysis, while the Firefox build polls every 1.5 seconds."
+  affiliation: Socket
+  topic: Infostealer
+  source_url: /chrome-and-firefox-extensions-free-vpns-add-clipboard-stealers/
+
+- outlet: Risky Biz
+  url: https://news.risky.biz/risky-bulletin-researcher-drops-giant-cache-of-zero-day-exploits/
+  headline: "Risky Bulletin: Arrests, cybercrime, and threat intel"
+  date: 2026-07-01
+  quote: "There's a Chrome and Firefox extensions mimicking the 'VPN Go: Free VPN' service to deploy a clipboard stealer on users' devices."
+  affiliation: Socket
+  topic: Infostealer
+  source_url: /chrome-and-firefox-extensions-free-vpns-add-clipboard-stealers/
+
+- outlet: "CERT.at (Austrian Computer Emergency Response Team)"
+  url: https://www.cert.at/de/tagesberichte/2026/6/tagesberichte-30062026
+  headline: "Tageszusammenfassung - 30.06.2026"
+  date: 2026-06-30
+  quote: "Chrome and Firefox Extensions Posing as Free VPNs Add Clipboard Stealers via Malicious Updates."
+  affiliation: Socket
+  topic: Infostealer
+  source_url: /chrome-and-firefox-extensions-free-vpns-add-clipboard-stealers/
