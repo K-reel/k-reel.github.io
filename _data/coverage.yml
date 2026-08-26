@@ -2313,3 +2313,48 @@
   affiliation: Socket
   topic: Infostealer
   source_url: /chrome-and-firefox-extensions-free-vpns-add-clipboard-stealers/
+
+- outlet: SecurityWeek
+  url: https://www.securityweek.com/network-of-200-github-repositories-used-for-malware-infection/
+  headline: "Network of 200 GitHub Repositories Used for Malware Infection"
+  date: 2026-07-10
+  quote: "Dubbed Operation Muck and Load, the campaign involves 222 lure repositories across 190 accounts that contain a Go module designed to trigger the infection chain."
+  affiliation: Socket
+  topic: Infostealer
+  source_url: /malicious-go-module-exposes-github-malware-lure-network/
+
+- outlet: Security Affairs
+  url: https://securityaffairs.com/195101/security/222-github-repositories-linked-to-fake-go-package-malware-operation.html
+  headline: "222 GitHub Repositories Linked to Fake Go Package Malware Operation"
+  date: 2026-07-10
+  quote: "Socket's security research team started with the investigation of a single malicious Go module: github[.]com/kaleidora/dnsub-scanning-tool, which presented itself as a DNS and subdomain scanning utility."
+  affiliation: Socket
+  topic: Infostealer
+  source_url: /malicious-go-module-exposes-github-malware-lure-network/
+
+- outlet: Risky Biz
+  url: https://news.risky.biz/risky-bulletin-india-bans-app-used-to-hack-e-rickshaws-in-viral-videos/
+  headline: "Risky Bulletin: Arrests, cybercrime, and threat intel"
+  date: 2026-07-10
+  quote: "Researchers pivoted from a malicious Go module to discover a network of 222 GitHub repositories hosting various software tools laced with malware."
+  affiliation: Socket
+  topic: Infostealer
+  source_url: /malicious-go-module-exposes-github-malware-lure-network/
+
+- outlet: "Golang Weekly"
+  url: https://golangweekly.com/issues/610
+  headline: "Go Weekly #610: How a Malicious Go Module Exposed a Network of GitHub Malware Lures"
+  date: 2026-07-17
+  quote: "How a Malicious Go Module Exposed a Network of GitHub Malware Lures, by Kirill Boychenko."
+  affiliation: Socket
+  topic: Infostealer
+  source_url: /malicious-go-module-exposes-github-malware-lure-network/
+
+- outlet: LinuxSecurity
+  url: https://linuxsecurity.com/news/security-vulnerabilities/go-module-supply-chain-attacks
+  headline: "Securing Your Linux Build Pipeline Against Malicious Go Modules"
+  date: 2026-07-10
+  quote: "A GitHub-based lure network of 222 confirmed repositories across 190 accounts was built to make malicious or deceptive software projects look active, plausible, and recently maintained."
+  affiliation: Socket
+  topic: Infostealer
+  source_url: /malicious-go-module-exposes-github-malware-lure-network/
