@@ -2358,3 +2358,21 @@
   affiliation: Socket
   topic: Infostealer
   source_url: /malicious-go-module-exposes-github-malware-lure-network/
+
+- outlet: The Hacker News
+  url: https://thehackernews.com/2026/07/attackers-weaponize-github-actions.html
+  headline: "Attackers Weaponize GitHub Actions Runners to Target cPanel and WHM Servers"
+  date: 2026-07-23
+  quote: "The PHP libraries were not the execution path. Attackers had added dozens of malicious GitHub Actions workflows to the compromised maintainer's source repositories."
+  affiliation: Socket
+  topic: Exploit
+  source_url: /github-actions-abuse-powers-cpanel-and-whm-exploitation/
+
+- outlet: Developer
+  url: https://www.developer-tech.com/news/github-actions-abuse-packagist-repositories-into-scanners/
+  headline: "GitHub Actions abuse turned Packagist repositories into scanners"
+  date: 2026-07-23
+  quote: "GitHub Actions abuse in Packagist repos ran cPanel scanning from temporary cloud runners, according to Socket."
+  affiliation: Socket
+  topic: Exploit
+  source_url: /github-actions-abuse-powers-cpanel-and-whm-exploitation/
