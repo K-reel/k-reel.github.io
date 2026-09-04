@@ -19,6 +19,7 @@ I track threat actors, infrastructure, and campaign shifts, analyze malware and 
 - <span style="font-size: 1.75rem; vertical-align: middle;">🛡️</span>&nbsp;&nbsp;&nbsp; **Detections** — Turning investigations into hunting logic, detections, mitigations, and practical defensive guidance
 - <span style="font-size: 1.75rem; vertical-align: middle;">📦</span>&nbsp;&nbsp;&nbsp; **Software supply chain and open source security** — Investigating malicious packages, typosquatting, dependency confusion, extension abuse, developer compromise, and supply chain intrusions across npm, PyPI, Go Modules, GitHub, RubyGems, Maven Central, crates.io, NuGet, Packagist, Chrome, Firefox, Edge, VS Code, Open VSX, and related ecosystems
 - <span style="font-size: 1.75rem; vertical-align: middle;">🧪</span>&nbsp;&nbsp;&nbsp; **Emerging abuse patterns** — Tracking how threat actors exploit automation, CI/CD workflows, AI-adjacent environments, and other evolving technologies
+{: .list-unstyled }
 
 ## Journey
 
