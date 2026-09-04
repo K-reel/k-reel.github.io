@@ -7,14 +7,18 @@ hide_title: true
 
 ![About banner](/assets/img/about/banner.jpg){: .rounded-3 .shadow .mb-4 w="2400" }
 
-I'm a cybersecurity and threat intelligence analyst focused on the intersection of malware analysis, reverse engineering, adversary tradecraft, and open source security. My work spans cybercrime, APT activity, software supply chain threats, and adversary infrastructure, including malicious packages, browser and developer extensions, and supply chain intrusions across ecosystems such as npm, PyPI, Go Modules, RubyGems, Maven, Crates, NuGet, Packagist, Chrome, VS Code, and Open VSX. I track infrastructure and campaign shifts, develop detection logic for threat hunting, and turn technical investigations into high-signal detections, actionable intelligence, research, and tooling that defenders can actually use.
+I'm a cybersecurity and threat intelligence analyst focused on cybercrime, malware analysis, reverse engineering, adversary tradecraft, and APT activity. My work spans threat actor and infrastructure tracking, malware and code analysis, software supply chain threats, and emerging attacker techniques.
 
-## What I Work On
+I track threat actors, infrastructure, and campaign shifts, analyze malware and intrusion chains, develop detection logic for threat hunting, and turn technical investigations into high-signal detections, actionable intelligence, research, and tooling that defenders can actually use.
 
-- <span style="font-size: 1.75rem; vertical-align: middle;">📦</span>&nbsp;&nbsp;&nbsp; **Software supply chain threats** — Malicious packages, typosquatting, extension abuse, developer compromise, supply chain intrusions, and adversary infrastructure
-- <span style="font-size: 1.75rem; vertical-align: middle;">🔬</span>&nbsp;&nbsp;&nbsp; **Malware and code analysis** — Reverse engineering suspicious code, tracing payload behavior, and understanding how campaigns operate at scale
-- <span style="font-size: 1.75rem; vertical-align: middle;">🛡️</span>&nbsp;&nbsp;&nbsp; **Detection and operationalization** — Turning investigations into hunting logic, detections, mitigations, and practical defensive guidance
-- <span style="font-size: 1.75rem; vertical-align: middle;">🧪</span>&nbsp;&nbsp;&nbsp; **Emerging abuse patterns** — Tracking how threat actors exploit automation, CI/CD workflows, and AI-adjacent environments
+## Focus Areas
+
+- <span style="font-size: 1.75rem; vertical-align: middle;">🕵️</span>&nbsp;&nbsp;&nbsp; **Cybercrime research** — Tracking financially motivated threat activity, criminal ecosystems, infrastructure, tooling, campaigns, and evolving tradecraft
+- <span style="font-size: 1.75rem; vertical-align: middle;">🎯</span>&nbsp;&nbsp;&nbsp; **APT activity** — Tracking state-linked threat groups, targeting priorities, operational patterns, campaign evolution, and shifts in adversary behavior
+- <span style="font-size: 1.75rem; vertical-align: middle;">🔬</span>&nbsp;&nbsp;&nbsp; **Malware and code analysis** — Reverse engineering malicious code, tracing payload behavior and intrusion chains, and understanding how campaigns operate at scale
+- <span style="font-size: 1.75rem; vertical-align: middle;">🛡️</span>&nbsp;&nbsp;&nbsp; **Detections** — Turning investigations into hunting logic, detections, mitigations, and practical defensive guidance
+- <span style="font-size: 1.75rem; vertical-align: middle;">📦</span>&nbsp;&nbsp;&nbsp; **Software supply chain and open source security** — Investigating malicious packages, typosquatting, dependency confusion, extension abuse, developer compromise, and supply chain intrusions across npm, PyPI, Go Modules, GitHub, RubyGems, Maven Central, crates.io, NuGet, Packagist, Chrome, Firefox, Edge, VS Code, Open VSX, and related ecosystems
+- <span style="font-size: 1.75rem; vertical-align: middle;">🧪</span>&nbsp;&nbsp;&nbsp; **Emerging abuse patterns** — Tracking how threat actors exploit automation, CI/CD workflows, AI-adjacent environments, and other evolving technologies
 
 ## Journey
 
