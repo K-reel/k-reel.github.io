@@ -225,7 +225,8 @@ toc: false
 </div>
 
 <div class="coverage-intro">
-<p>My work and contributions at Socket and Recorded Future have been cited, shared, and discussed across multiple security venues. I’m grateful to have my research surfaced by respected security publications, newsletters, and communities, including The Hacker News, Risky Biz, Detection Engineering Weekly, tl;dr sec, and VulnerableU. It has also been cited in the MITRE ATT&amp;CK knowledge base. This section collects public examples of that coverage and shows how the work reaches practitioners beyond the original publication. This kind of visibility helps confirm that the research is useful, read by defenders, and contributing to the broader effort to protect our community from threat actors who seek to abuse the systems and technologies we trust.</p>
+<p>Research and investigative work I’ve authored or contributed to has been cited, shared, and discussed across security publications, mainstream media, practitioner newsletters, and cybersecurity organizations. I’m grateful to see the work regularly covered by outlets including The Hacker News, Risky Biz, BleepingComputer, and SANS, as well as referenced by government cybersecurity agencies and CERTs, and cited in the MITRE ATT&amp;CK knowledge base.</p>
+<p>This section collects public examples of that coverage and those citations. I value them not simply as visibility, but because they show that the research is reaching practitioners, helping inform defensive work, and contributing to the broader effort to understand and counter real-world threats.</p>
 </div>
 
 <button id="toggle-all" onclick="(function(){
