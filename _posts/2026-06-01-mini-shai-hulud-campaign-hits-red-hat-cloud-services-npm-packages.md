@@ -8,7 +8,7 @@ author: socket_research_team
 canonical_url: https://socket.dev/blog/mini-shai-hulud-campaign-hits-red-hat-cloud-services-npm-packages
 source: Socket
 image:
-  path: https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fthfvnext.bing.com%2Fth%2Fid%2FOIP.1GU0WwbCJTRIHKiCCLnqDgHaE3%3Fcb%3Dthfvnextfalcon%26pid%3DApi&f=1&ipt=fa63ac74d984e4c58c956a4cec9181f6fcc2451d620a8bd1fc8089ee0d26989f&ipo=images
+  path: /assets/img/posts/mini-shai-hulud-campaign-hits-red-hat-cloud-services-npm-packages/cover.jpg
   alt: "Mini Shai-Hulud Campaign Hits Red Hat Cloud Services npm Packages"
 description: "A mini Shai-Hulud campaign compromised Red Hat Cloud Services npm packages to steal developer and CI/CD secrets during installation."
 ---

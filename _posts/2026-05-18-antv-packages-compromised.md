@@ -8,7 +8,7 @@ author: socket_research_team
 canonical_url: https://socket.dev/blog/antv-packages-compromised
 source: Socket
 image:
-  path: https://miro.medium.com/v2/resize:fit:1358/1*SisrybOjmFigMw9lg5r3NA.jpeg
+  path: /assets/img/posts/antv-packages-compromised/cover.jpg
   alt: "Mini Shai-Hulud Hits @antv Ecosystem, 639 Compromised npm Package Versions"
 description: "Active npm supply chain attack compromises @antv packages in a fast-moving malicious publish wave tied to Mini Shai-Hulud."
 ---

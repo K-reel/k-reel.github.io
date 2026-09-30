@@ -7,7 +7,7 @@ tags: [Shai-Hulud, TeamPCP, Worm, Typosquatting, Infostealer, Obfuscation, Devel
 canonical_url: https://socket.dev/blog/mini-shai-hulud-miasma-and-hades-worms-target-bioinformatics-and-mcp-developers-via-malicious
 source: Socket
 image:
-  path: https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt56977f533b95c270/6a26ea099f6a67dda8a1f32c/hades-rudall30-Getty-1188397160.jpg?width=1280&auto=webp&quality=80&format=jpg&disable=upscale
+  path: /assets/img/posts/mini-shai-hulud-miasma-and-hades-worms-target-bioinformatics-and-mcp-developers-via-malicious/cover.jpg
   alt: "Mini Shai-Hulud, Miasma, and Hades Worms Target Bioinformatics and MCP Developers via Malicious PyPI Wheels"
 description: "Newer packages in this compromise use native extensions and .pth loaders to execute JavaScript stealers in developer environments."
 ---
