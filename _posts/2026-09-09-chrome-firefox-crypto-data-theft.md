@@ -67,7 +67,7 @@ window.open(
 );
 ```
 
-Using browser navigation this way allows the malware to transmit data without declaring the threat actorcontrolled Vercel hosts as ordinary extension host permissions, making the true network destination less obvious from a manifest-only review.
+Using browser navigation this way allows the malware to transmit data without declaring the threat actor-controlled Vercel hosts as ordinary extension host permissions, making the true network destination less obvious from a manifest-only review.
 
 Several weeks later, `Orbit Tracker` appeared on Mozilla Add-ons under a newly created Mozilla Add-ons publisher profile with only one extension.
 
@@ -119,7 +119,7 @@ Defenders should:
 - `hxxps://dcfdc-eight[.]vercel[.]app/api/collect?d=`
 - `snipex-iota[.]vercel[.]app`
 - `hxxps://snipex-iota[.]vercel[.]app/api/code/`
-- `z1417699@gmail[.]com`— VREO Chrome Web Store developer email
+- `z1417699@gmail[.]com` — VREO Chrome Web Store developer email
 
 ### Orbit Tracker
 
