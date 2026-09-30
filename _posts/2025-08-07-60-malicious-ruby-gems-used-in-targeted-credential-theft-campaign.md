@@ -6,7 +6,7 @@ tags: [RubyGems, Ruby, Infostealer, South Korea, Spam, T1195.002, T1608.001, T12
 canonical_url: https://socket.dev/blog/60-malicious-ruby-gems-used-in-targeted-credential-theft-campaign
 source: Socket
 image:
-  path: https://cdn.sanity.io/images/cgdhsj6q/production/86b95cad5f9b483f702c5406dc9d819a860e61e7-1024x1024.png
+  path: /assets/img/posts/60-malicious-ruby-gems-used-in-targeted-credential-theft-campaign/cover.png
   alt: "60 Malicious Ruby Gems Used in Targeted Credential Theft Campaign"
 description: "A RubyGems malware campaign used 60 malicious packages posing as automation tools to steal credentials from social media and marketing tool users."
 ---
@@ -25,7 +25,7 @@ Collectively, the gems have been downloaded over 275,000 times. However, this fi
 
 The malicious gems published by the threat actor exhibit consistent credential theft behavior across a continuously evolving campaign. Each gem includes a lightweight graphical interface [written](https://socket.dev/rubygems/package/iuz-64bit/files/0.0.7/lib/iuz-64bit.rb?platform=ruby#L766) in Korean using [Glimmer-DSL-LibUI](https://socket.dev/rubygems/package/iuz-64bit/files/0.0.7/lib/iuz-64bit.rb?platform=ruby#L1645), prompting the operator to enter credentials for social media, blogging, or messaging platforms. Instead of storing the input locally or using it for legitimate API authentication, the credentials are immediately exfiltrated via `HTTP POST` requests to threat actor-controlled servers, including `programzon[.]com`, `appspace[.]kr`, and `marketingduo[.]co[.]kr`. These domains host PHP bulletin board endpoints (e.g., `/auth/program/signin`, `/bbs/login_check.php`) that function as rudimentary credential collection panels.
 
-![Socket AI Scanner analysis of iuz-64bit](https://cdn.sanity.io/images/cgdhsj6q/production/d146999dd813291f38a4f15525970992ee44a380-709x750.png)
+![Socket AI Scanner analysis of iuz-64bit](/assets/img/posts/60-malicious-ruby-gems-used-in-targeted-credential-theft-campaign/d146999dd813291f38a4f15525970992ee44a380-709x750.png)
 _Socket AI Scanner's analysis of the malicious [`iuz-64bit`](https://socket.dev/rubygems/package/iuz-64bit) gem confirms its infostealer functionality._
 
 The annotated and defanged [code](https://socket.dev/rubygems/package/iuz-64bit/files/0.0.7/lib/iuz-64bit.rb?platform=ruby#L766) from [`iuz-64bit`](https://socket.dev/rubygems/package/iuz-64bit) below shows how the gem exfiltrates user credentials and host information to a command and control (C2) server:
@@ -60,7 +60,7 @@ Gems published under the threat actor's `zon` alias are often yanked within a sh
 
 Artifacts from the malicious gems map directly to the previously mentioned C2 endpoints and to tools promoted on `programzon[.]com`, `appspace[.]kr`, `marketingduo[.]co[.]kr`, and `seven1.iwinv[.]net` — grey-hat marketing sites that advertise automation products using the same names and descriptions found in the malicious gems.
 
-![marketingduo screenshot](https://cdn.sanity.io/images/cgdhsj6q/production/37fa431f0d648178acdf6414d8994f974bf3f067-1238x1019.png)
+![marketingduo screenshot](/assets/img/posts/60-malicious-ruby-gems-used-in-targeted-credential-theft-campaign/37fa431f0d648178acdf6414d8994f974bf3f067-1238x1019.png)
 _Screenshot from `marketingduo[.]co[.]kr`, a Korean-language platform offering bulk messaging, phone number scraping, and automated social media tools. The site promotes Instagram, Telegram, and blogging automation products, targeting grey-hat marketers seeking mass engagement and large-scale posting capabilities. Identical interfaces are also hosted on related domains operated by the threat actor, including `programzon[.]com`, `appspace[.]kr`, and `seven1.iwinv[.]net`._
 
 ## Targeting South Korean Users
@@ -73,7 +73,7 @@ Infostealer logs from compromised systems tied to registered users of `marketing
 
 Logs advertised and sold on dark web marketplaces such as Russian Market show that infected systems interacted with `marketingduo[.]co[.]kr` while logged in, confirming the victims were active customers of the service.
 
-![Russian Market infostealer logs](https://cdn.sanity.io/images/cgdhsj6q/production/c2816c13edfea389c801f93a7a95dc92faf2e9f1-935x508.png)
+![Russian Market infostealer logs](/assets/img/posts/60-malicious-ruby-gems-used-in-targeted-credential-theft-campaign/c2816c13edfea389c801f93a7a95dc92faf2e9f1-935x508.png)
 _Screenshot from the Russian Market dark web shop showing infostealer logs from compromised systems in South Korea. Multiple logs contain evidence of victims accessing `marketingduo[.]co[.]kr` as logged-in users, indicating they are registered customers of the service. These systems also show activity on platforms used to acquire fake accounts, followers, views, and related spam infrastructure._
 
 The same systems also accessed tools commonly used to scale synthetic engagement and evade detection:
@@ -84,7 +84,7 @@ The same systems also accessed tools commonly used to scale synthetic engagement
 - **Disposable SMS gateways** like `smshub[.]org`, which provide OTP-bypass infrastructure for mass registration.
 - **Automation and proxy tooling** from `bablosoft[.]com` and `proxylink[.]pro`, which support browser scripting, scraping, and proxy rotation at scale.
 
-![smmdoge SMM panel](https://cdn.sanity.io/images/cgdhsj6q/production/05ec011e33e9b4bf9e302aa3981ea8ac50a3fe91-1338x956.png)
+![smmdoge SMM panel](/assets/img/posts/60-malicious-ruby-gems-used-in-targeted-credential-theft-campaign/05ec011e33e9b4bf9e302aa3981ea8ac50a3fe91-1338x956.png)
 _Screenshot from `smmdoge[.]com`, an SMM panel offering bulk account and engagement services across Instagram, TikTok, YouTube, and more. Listings include aged and farmed accounts with posts, 2FA credentials, cookies, and follower counts ranging from 10 to 50,000+. These offerings enable mass automation, spam, fake engagements, and synthetic identity operations._
 
 The malware campaign is engineered to exploit this environment. Grey-hat operators frequently rely on disposable accounts and automation tools. When credentials are compromised, they rarely report the breach; they simply abandon the account and create a new one. This disposability, combined with their appetite for low-effort automation, has allowed the malicious RubyGems packages to persist undetected, stealing credentials at scale.
@@ -99,7 +99,7 @@ Among the malicious gems in this campaign, several stand out for their explicit 
 
 This behavior fits a dual-use model. The gems empower grey-hat marketers to execute financial influence campaigns, while also providing the threat actor with persistent access to their accounts. Given the high concentration of disposable or farmed accounts in this space, victims may not detect the compromise at all. The result is a stealthy, self-sustaining campaign that exploits both the operators and their infrastructure.
 
-![Socket AI Scanner analysis of njongto_duo](https://cdn.sanity.io/images/cgdhsj6q/production/ae12c1d66742994db5b44ef4afdeeddc2784ff8f-707x772.png)
+![Socket AI Scanner analysis of njongto_duo](/assets/img/posts/60-malicious-ruby-gems-used-in-targeted-credential-theft-campaign/ae12c1d66742994db5b44ef4afdeeddc2784ff8f-707x772.png)
 _Socket AI Scanner's analysis of the malicious [`njongto_duo`](https://socket.dev/rubygems/package/njongto_duo) RubyGem reveals its dual function as both a stock forum autoposter and an infostealer. While it advertises bulk-posting automation for stock discussion boards, the gem covertly exfiltrates plaintext credentials and MAC addresses to a C2 endpoint (`appspace[.]kr/bbs/login_check.php`) controlled by the threat actor._
 
 ## Outlook and Recommendations

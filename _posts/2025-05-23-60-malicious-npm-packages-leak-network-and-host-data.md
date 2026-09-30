@@ -7,7 +7,7 @@ tags: [npm, JavaScript, T1195.002, T1059.007, T1567.004, T1590, T1590.002, T1590
 canonical_url: https://socket.dev/blog/60-malicious-npm-packages-leak-network-and-host-data
 source: Socket
 image:
-  path: https://cdn.sanity.io/images/cgdhsj6q/production/c4a967be54f79f8bc54b5f52abed0d3aec391421-745x746.png
+  path: /assets/img/posts/60-malicious-npm-packages-leak-network-and-host-data/cover.png
   alt: "60 Malicious npm Packages Leak Network and Host Data in Active Malware Campaign"
 description: "Socket's Threat Research Team has uncovered 60 npm packages using post-install scripts to silently exfiltrate hostnames, IP addresses, DNS servers, and user directories to a Discord webhook."
 ---
@@ -16,11 +16,11 @@ Socket's Threat Research Team has uncovered an active campaign in the npm ecosys
 
 The first package emerged eleven days ago and the most recent appeared only hours before this publication, confirming the operation is still under way. The script targets Windows, macOS or Linux systems, and includes basic sandbox‑evasion checks, making every infected workstation or continuous‑integration node a potential source of valuable reconnaissance. Combined downloads now exceed 3,000, giving the threat actor a growing map of developer and enterprise networks that can guide future intrusions. As of this writing, all packages remain live on npm. We have petitioned for their removal.
 
-![First malicious packages under bbbb335656](https://cdn.sanity.io/images/cgdhsj6q/production/38e8b37f4afe773c9e3958ac485b5dd64ab9ab9c-913x377.png)
+![First malicious packages under bbbb335656](/assets/img/posts/60-malicious-npm-packages-leak-network-and-host-data/38e8b37f4afe773c9e3958ac485b5dd64ab9ab9c-913x377.png)
 
-![First malicious packages under cdsfdfafd1232436437](https://cdn.sanity.io/images/cgdhsj6q/production/0eb5533241bdf0169132368365d5767673c27b5a-915x361.png)
+![First malicious packages under cdsfdfafd1232436437](/assets/img/posts/60-malicious-npm-packages-leak-network-and-host-data/0eb5533241bdf0169132368365d5767673c27b5a-915x361.png)
 
-![First malicious packages under sdsds656565](https://cdn.sanity.io/images/cgdhsj6q/production/910f9215ef0d201e243cc0ede1fc4a0f8653b8b7-921x374.png)
+![First malicious packages under sdsds656565](/assets/img/posts/60-malicious-npm-packages-leak-network-and-host-data/910f9215ef0d201e243cc0ede1fc4a0f8653b8b7-921x374.png)
 
 *First three malicious packages released under the npm accounts **`bbbb335656`**, **`cdsfdfafd1232436437`**, and **`sdsds656565`**. Each account went on to publish twenty malicious packages in total.*
 
@@ -82,7 +82,7 @@ On continuous‑integration servers, the leak can reveal internal package regist
 
 The accounts `bbbb335656` (registration email `npm9960+1@gmail[.]com`), `sdsds656565` (registration email `npm9960+2@gmail[.]com`), and `cdsfdfafd1232436437` (registration email `npm9960+3@gmail[.]com`), each show twenty packages published within an eleven‑day span. All 60 packages carry the same host‑fingerprinting code that exfiltrates data to the same Discord webhook. For instance, [`seatable`](https://socket.dev/npm/package/seatable/overview/11.8.1) (from `bbbb335656`), [`datamart`](https://socket.dev/npm/package/datamart) (from `sdsds656565`), and [`seamless-sppmy`](https://socket.dev/npm/package/seamless-sppmy/overview/10.6.9) (from `cdsfdfafd1232436437`) embed the identical malicious payload shown below.
 
-![Socket AI Scanner analysis of seatable](https://cdn.sanity.io/images/cgdhsj6q/production/45a850a83a3c4d2220a84380b713a05d15004ca0-621x788.png)
+![Socket AI Scanner analysis of seatable](/assets/img/posts/60-malicious-npm-packages-leak-network-and-host-data/45a850a83a3c4d2220a84380b713a05d15004ca0-621x788.png)
 _Socket AI Scanner's analysis, including contextual details about the malicious [`seatable`](https://socket.dev/npm/package/seatable/overview/11.8.1) package._
 
 ## Outlook and Recommendations

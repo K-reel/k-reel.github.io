@@ -9,7 +9,7 @@ toc: true
 canonical_url: https://socket.dev/blog/malicious-chrome-extension-exfiltrates-seed-phrases
 source: Socket
 image:
-  path: https://cdn.sanity.io/images/cgdhsj6q/production/4926c75ec99ae90a3b762843ab94b52ebb6093a2-1024x1024.png?w=1000&q=95&fit=max&auto=format
+  path: /assets/img/posts/malicious-chrome-extension-exfiltrates-seed-phrases/cover.png
   alt: Malicious Chrome extension exfiltrates seed phrases artwork
 ---
 
@@ -19,21 +19,21 @@ When a user creates or imports a wallet, `Safery: Ethereum Wallet` encodes the `
 
 The extension is [live](https://chromewebstore.google.com/detail/safery-ethereum-wallet/fibemlnkopkeenmmgcfohhcdbkhgbolo) on the Chrome Web Store at the time of writing. We submitted a takedown request to Google's Chrome Web Store security team and asked to suspend the associated publisher account registered with `kifagusertyna@gmail[.]com` email address.
 
-![](https://cdn.sanity.io/images/cgdhsj6q/production/4b1b1f049df9fca8b25bae14bf35a3d3deaa8c3d-624x674.png?w=1600&q=95&fit=max&auto=format)
+![](/assets/img/posts/malicious-chrome-extension-exfiltrates-seed-phrases/4b1b1f049df9fca8b25bae14bf35a3d3deaa8c3d-624x674.png)
 _Socket AI Scanner's analysis of the malicious [`Safery: Ethereum Wallet`](https://socket.dev/chrome/package/fibemlnkopkeenmmgcfohhcdbkhgbolo) (`fibemlnkopkeenmmgcfohhcdbkhgbolo`) extension highlights its behavior of decoding a hardcoded Base64 wallet seed, silently sending `0.000001` SUI via `https://sui-rpc.publicnode.com` to addresses derived from the victim mnemonic, and globally exposing `window.logInWallet({ address, privateKeyHex, mnemonic })`, enabling seed theft and on chain exfiltration._
 
 ## A Wallet That Looks Safe
 
 The Chrome Web Store [listing](https://chromewebstore.google.com/detail/safery-ethereum-wallet/fibemlnkopkeenmmgcfohhcdbkhgbolo) markets `Safery: Ethereum Wallet` as a standard, user-friendly wallet. Promotional images promise "Easy, Fast And Secure Extension" and "Send Ethereum ETH Coin In 2 Clicks Easy And Safe". The description emphasizes reliability, privacy, and simple balance and transaction views, and the privacy disclosure claims the developer collects no user data and keeps private keys on the device.
 
-![](https://cdn.sanity.io/images/cgdhsj6q/production/a670ced168467068143b1b4248cc8d7a641744d0-1112x717.png?w=1600&q=95&fit=max&auto=format)
+![](/assets/img/posts/malicious-chrome-extension-exfiltrates-seed-phrases/a670ced168467068143b1b4248cc8d7a641744d0-1112x717.png)
 _The Chrome Web Store [page](https://chromewebstore.google.com/detail/safery-ethereum-wallet/fibemlnkopkeenmmgcfohhcdbkhgbolo) for `Safery: Ethereum Wallet` markets the extension as a simple, secure ETH wallet that offers quick two click transfers and easy balance management._
 
 At first glance, the extension operates as a standard Ethereum wallet. It creates accounts, imports wallets from a seed phrase, queries balances through a public Ethereum RPC endpoint, shows recent activity via Etherscan or Ethplorer, and sends ETH with a conventional transfer form. For many users, that behavior and the reassuring marketing would be enough to entrust it with their seed phrase.
 
 When searching "Ethereum Wallet" in the Chrome Web Store, the malicious `Safery: Ethereum Wallet` extension appears as the fourth result, positioned alongside legitimate wallets like `MetaMask` and `Enkrypt`. This placement gives it immediate visibility and a veneer of legitimacy to unsuspecting users, increasing the risk of installation before any security review or takedown occurs.
 
-![](https://cdn.sanity.io/images/cgdhsj6q/production/6bc53c1e2aed80b3a4497d45983ab23c4ceaf61a-1593x931.png?w=1600&q=95&fit=max&auto=format)
+![](/assets/img/posts/malicious-chrome-extension-exfiltrates-seed-phrases/6bc53c1e2aed80b3a4497d45983ab23c4ceaf61a-1593x931.png)
 _Search results for "Ethereum Wallet" on the Chrome Web Store place `Safery: Ethereum Wallet` high in the list, appearing legitimate among trusted MetaMask and Enkrypt wallets._
 
 ## A Covert Sui Exfiltration Channel
@@ -95,7 +95,7 @@ Socket can turn these findings into actionable detections with security policy c
 
 Fold Socket into existing guardrails. Enforce allowlists in Chrome Enterprise, restrict installs to approved extension IDs, and track permission creep over time. Pair Socket's visibility with network policy for egress control, then watch for lookalike domains as operators rotate infrastructure.
 
-![](https://cdn.sanity.io/images/cgdhsj6q/production/6f5e7bd9eaf4ad64570e10c006e3a5bcc9c42249-1438x861.png?w=1600&q=95&fit=max&auto=format)
+![](/assets/img/posts/malicious-chrome-extension-exfiltrates-seed-phrases/6f5e7bd9eaf4ad64570e10c006e3a5bcc9c42249-1438x861.png)
 _Socket AI Scanner's analysis of the malicious [`Safery: Ethereum Wallet`](https://socket.dev/chrome/package/fibemlnkopkeenmmgcfohhcdbkhgbolo) extension flags known malware status and risky behaviors, including elevated Chrome permission requests, dynamic code execution via `eval`, outbound network access, and shell access._
 
 ## MITRE ATT&CK

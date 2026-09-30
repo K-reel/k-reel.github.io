@@ -7,7 +7,7 @@ tags: [Ransomware, Dependency Confusion, npm, JavaScript, PyPI, Python, Typosqua
 canonical_url: https://socket.dev/blog/black-basta-dependency-confusion-ambitions-and-ransomware-in-open-source-ecosystems
 source: Socket
 image:
-  path: https://cdn.sanity.io/images/cgdhsj6q/production/9cd3e88a305899be204926f04d4996e1f62ea57a-1024x1024.webp
+  path: /assets/img/posts/black-basta-dependency-confusion-ambitions-and-ransomware-in-open-source-ecosystems/cover.jpg
   alt: "Black Basta's Dependency Confusion Ambitions and Ransomware in Open Source Ecosystems"
 description: "Research uncovers Black Basta's plans to exploit package registries for ransomware delivery alongside evidence of similar attacks already targeting open source ecosystems."
 ---
@@ -24,7 +24,7 @@ In addition to exploring Black Basta's plans to deploy ransomware through open s
 1. Wiper-like malware that irreversibly overwrites local files with a randomly generated AES key, exhibiting ransomware behavior without a decryption option.
 1. Extortionware that silently exfiltrates host environment data, enabling blackmail, offensive reconnaissance, or further attacks.
 
-![Example of a Black Basta ransomware note](https://cdn.sanity.io/images/cgdhsj6q/production/26adcc4fbfb218eeadc29085dc4221446bec3c05-700x434.png)
+![Example of a Black Basta ransomware note](/assets/img/posts/black-basta-dependency-confusion-ambitions-and-ransomware-in-open-source-ecosystems/26adcc4fbfb218eeadc29085dc4221446bec3c05-700x434.png)
 _Example of a Black Basta ransomware note, typically set as a victim's desktop wallpaper (Source: [Fortra](https://www.tripwire.com/state-of-security/black-basta-ransomware-what-you-need-to-know))._
 
 ## Black Basta's Intent to Infiltrate Open Source
@@ -33,7 +33,7 @@ In February 2025, an extensive [leak](https://github.com/D4RK-R4BB1T/BlackBasta-
 
 Despite citing notable real-world proofs of concept, including Alex Birsan's 2021 [research](https://socket.dev/blog/the-risks-of-misguided-research-in-supply-chain-security), and the [article](https://observationsinsecurity.com/2024/04/25/how-i-hacked-into-googles-internal-corporate-assets/) on Observations Insecurity, the Black Basta chat logs do not confirm any known exploitation. However, the conversations indicate that gang members planned to test the attack by uploading malicious packages to npm and PyPI for ransomware delivery. One participant was assigned to "try out" the attack vector in a local environment to determine whether modern Integrated Development Environments (IDEs) would automatically detect or remove suspicious packages.
 
-![Recreated representation of Black Basta's internal chat logs](https://cdn.sanity.io/images/cgdhsj6q/production/fcfb3d7aaee17977ed824c9172a404410e908a99-750x1460.png)
+![Recreated representation of Black Basta's internal chat logs](/assets/img/posts/black-basta-dependency-confusion-ambitions-and-ransomware-in-open-source-ecosystems/fcfb3d7aaee17977ed824c9172a404410e908a99-750x1460.png)
 _Recreated representation of translated text snippets from Black Basta's internal chat logs (originally in Russian, translated to English). The text content is authentic and accurately reflects the original conversations._
 
 While Black Basta's plans remained in the exploratory phase, our independent threat research has uncovered multiple instances where other threat actors have successfully deployed ransomware through open source packages. These cases demonstrate that the attack vector Black Basta was considering is already being actively exploited through different technical approaches and by different actors.
@@ -98,7 +98,7 @@ Once the key is obtained, the script scans and encrypts files using the `find` c
 
 To reinforce its extortion scheme, the script downloads and displays a ransom note from `hxxp://dgfgr.free.beeceptor[.]com/g3yz0a54x.txt`. This file is written to disk as `whathappenedbroreadme.txt` and then displayed to the victim, informing them that their files have been encrypted and providing instructions for potential decryption — likely in exchange for payment.
 
-![Socket AI Scanner flags socket.oi package](https://cdn.sanity.io/images/cgdhsj6q/production/1f9a8d2ef51b05c81914af8ecc8fd53dacc2c098-1479x601.png)
+![Socket AI Scanner flags socket.oi package](/assets/img/posts/black-basta-dependency-confusion-ambitions-and-ransomware-in-open-source-ecosystems/1f9a8d2ef51b05c81914af8ecc8fd53dacc2c098-1479x601.png)
 _Socket AI Scanner flags `socket.oi` package as known malware and part of a potential typosquatting attack._
 
 ## Wiper-Like Ransomware
@@ -139,7 +139,7 @@ Once executed, the script systematically overwrites every file in the current di
 
 It lacks the extortion component of conventional ransomware but directly impacts data integrity by rendering files permanently inaccessible. The intent is to disrupt systems and cause irreversible damage rather than steal data or demand a ransom. This distinction underscores its destructive nature, making it a particularly harmful strain of malware despite its absence of direct financial motivation.
 
-![Malicious packages published by scorpionhantu](https://cdn.sanity.io/images/cgdhsj6q/production/377dc46d2c25838e4c590e6db56027384aa81890-1817x1324.png)
+![Malicious packages published by scorpionhantu](/assets/img/posts/black-basta-dependency-confusion-ambitions-and-ransomware-in-open-source-ecosystems/377dc46d2c25838e4c590e6db56027384aa81890-1817x1324.png)
 _Screenshot of malicious packages published by "scorpionhantu" prior to removal from the npm registry._
 
 ## Extortionware

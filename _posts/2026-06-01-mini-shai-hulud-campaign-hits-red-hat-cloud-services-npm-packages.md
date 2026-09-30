@@ -19,7 +19,7 @@ The affected package versions execute an obfuscated payload through a `preinstal
 
 Socket’s threat research team is continuing to analyze the malware and its potential impact. We are also tracking affected packages, versions, and detection details on our public campaign page: [Red Hat Cloud Services Package Compromise](https://socket.dev/supply-chain-attacks/red-hat-cloud-services-package-compromise).
 
-![](https://cdn.sanity.io/images/cgdhsj6q/production/ec74027ff302106376dc9c93f1459a1a6e4b44cc-1242x1384.png?w=1600&q=95&fit=max&auto=format)
+![](/assets/img/posts/mini-shai-hulud-campaign-hits-red-hat-cloud-services-npm-packages/ec74027ff302106376dc9c93f1459a1a6e4b44cc-1242x1384.png)
 _Socket AI Scanner’s analysis of @redhat-cloud-services/chrome@2.3.1 highlights the package’s install/import-time JavaScript loader, which reconstructs hidden source through runtime decoding, decrypts embedded payload blobs with AES-128-GCM, and dynamically executes the resulting code from index.js. This behavior confirms that the malicious functionality is intentionally concealed from static review and staged for second-stage credential theft, environment inspection, and outbound communication._
 
 ## Technical Analysis

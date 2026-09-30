@@ -22,7 +22,7 @@ The payload itself follows the Hades pattern: a heavily obfuscated JavaScript st
 
 These 23 newer PyPI artifacts have been added to the dedicated Mini Shai-Hulud/Miasma campaign tracking page. Our campaign tracker now includes 471 affected artifacts across npm and PyPI, comprising 411 npm artifacts across 106 packages and 60 PyPI artifacts across 37 packages. The page will continue to be updated as additional affected artifacts are identified: [https://socket.dev/supply-chain-attacks/miasma-mini-shai-hulud-supply-chain-attack](https://socket.dev/supply-chain-attacks/miasma-mini-shai-hulud-supply-chain-attack)
 
-![](https://cdn.sanity.io/images/cgdhsj6q/production/cfeba14bdc7ec279a2ba181bc5eac1615079eae3-2048x855.png?w=1600&q=95&fit=max&auto=format)
+![](/assets/img/posts/mini-shai-hulud-miasma-and-hades-worms-target-bioinformatics-and-mcp-developers-via-malicious/cfeba14bdc7ec279a2ba181bc5eac1615079eae3-2048x855.png)
 _We are tracking the full campaign on a dedicated page, with all affected artifacts added as they are identified: [https://socket.dev/supply-chain-attacks/miasma-mini-shai-hulud-supply-chain-attack](https://socket.dev/supply-chain-attacks/miasma-mini-shai-hulud-supply-chain-attack)_
 
 ## A Campaign That Keeps Changing Shape
@@ -106,7 +106,7 @@ There are three plausible interpretations. The threat actors may have fixed a re
 
 Regardless of which interpretation is correct, the behavior is malicious. A legitimate Python package should not silently install a startup hook, download Bun into a temp directory, search broad import paths for a JavaScript file, and execute it.
 
-![](https://cdn.sanity.io/images/cgdhsj6q/production/8f38d4ba979fcf22c78994d67a56e8bcc81fa277-1242x1252.png?w=1600&q=95&fit=max&auto=format)
+![](/assets/img/posts/mini-shai-hulud-miasma-and-hades-worms-target-bioinformatics-and-mcp-developers-via-malicious/8f38d4ba979fcf22c78994d67a56e8bcc81fa277-1242x1252.png)
 _Socket AI Scanner’s analysis of the malicious `langchain-core-mcp@1.4.2` wheel highlights a covert Python startup hook in `langchain_core-setup.pth`. The hook abuses `.pth` execution to bootstrap Bun from GitHub into a temporary directory, then searches Python’s `sys.path` for a separate `_index.js` payload and attempts to run it with the downloaded runtime. This design separates the Python loader from the JavaScript payload, allowing the wheel to function as a staged supply chain loader even when `_index.js` is not bundled directly inside the package. The use of a temporary run marker also suggests an attempt to reduce repeated execution and make the behavior less obvious during later inspection._
 
 ## The Bioinformatics Subcluster: Malicious Code Hidden in Native Extensions
@@ -125,7 +125,7 @@ This header appears designed for AI-mediated analysis, not for Node, Bun, or Pyt
 
 This is not a magical bypass against static detection. YARA rules, entropy checks, AST parsing, string extraction, deobfuscation, and behavioral rules still work. But it is a practical anti-analysis trick against naive LLM-first triage systems.
 
-![](https://cdn.sanity.io/images/cgdhsj6q/production/4b248374847548f3eb8309a1f321fb71eda17f15-690x390.png?w=1600&q=95&fit=max&auto=format)
+![](/assets/img/posts/mini-shai-hulud-miasma-and-hades-worms-target-bioinformatics-and-mcp-developers-via-malicious/4b248374847548f3eb8309a1f321fb71eda17f15-690x390.png)
 _The malicious `_index.js` begins with a non-executing JavaScript comment designed to trigger LLM safety refusals and disrupt AI-assisted malware triage before the scanner reaches the obfuscated Hades payload._
 
 ## Impact and Defensive Guidance

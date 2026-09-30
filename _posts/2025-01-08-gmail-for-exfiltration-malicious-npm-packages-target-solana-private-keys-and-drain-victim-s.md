@@ -7,7 +7,7 @@ tags: [npm, JavaScript, Typosquatting, Infostealer, Gmail, Crypto Drainer, T1195
 canonical_url: https://socket.dev/blog/gmail-for-exfiltration-malicious-npm-packages-target-solana-private-keys-and-drain-victim-s
 source: Socket
 image:
-  path: https://cdn.sanity.io/images/cgdhsj6q/production/324fa16cf8553db08873dff3955c43d1855f3c72-1024x1024.webp
+  path: /assets/img/posts/gmail-for-exfiltration-malicious-npm-packages-target-solana-private-keys-and-drain-victim-s/cover.jpg
   alt: "Gmail For Exfiltration: Malicious npm Packages Target Solana Private Keys and Drain Victims' Wallets"
 description: "Socket researchers have discovered multiple malicious npm packages targeting Solana private keys, abusing Gmail to exfiltrate the data and drain Solana wallets."
 ---
@@ -24,12 +24,12 @@ The malicious packages [`@async-mutex/mutex`](https://socket.dev/npm/package/@as
 
 [`@async-mutex/mutex`](https://socket.dev/npm/package/@async-mutex/mutex/overview/0.1.0) is a typosquat of the popular npm package [`async-mutex`](https://socket.dev/npm/package/async-mutex), which provides a mutual exclusion mechanism (mutex) for asynchronous JavaScript operations. While the legitimate `async-mutex` has garnered over 93 million downloads, the malicious variant – downloaded 240 times – seeks to exploit brand confusion and the likelihood of unintentional errors when selecting packages.
 
-![Download comparison between legitimate and malicious async-mutex packages](https://cdn.sanity.io/images/cgdhsj6q/production/073390ec7d815d2c9c570ed3ff660d57cfa62d33-1182x373.png)
+![Download comparison between legitimate and malicious async-mutex packages](/assets/img/posts/gmail-for-exfiltration-malicious-npm-packages-target-solana-private-keys-and-drain-victim-s/073390ec7d815d2c9c570ed3ff660d57cfa62d33-1182x373.png)
 _Socket reports around one million weekly downloads for the legitimate `async-mutex` package, compared to zero weekly downloads for the malicious `@async-mutex/mutex`. This discrepancy is a clear red flag: the typosquatting package is not widely used yet closely mimics the legitimate one._
 
 As a side and cautionary note: AI-generated package summaries in search results can land developers and users in hot water and may inadvertently lend credibility and legitimacy to malicious software. In the case of Google's AI-powered summary for the malicious package [`@async-mutex/mutex`](https://socket.dev/npm/package/@async-mutex/mutex/overview/0.1.0), the friendly-sounding preview obscures hidden malware, exposing developers to serious risks. When AI-driven summaries overlook embedded threats, they may guide even cautious users toward installing harmful dependencies, endangering individual projects and the broader software supply chain.
 
-![Google AI-generated search results for malicious package](https://cdn.sanity.io/images/cgdhsj6q/production/e594454731c7475ab088051ef134b57342368930-2048x1601.png)
+![Google AI-generated search results for malicious package](/assets/img/posts/gmail-for-exfiltration-malicious-npm-packages-target-solana-private-keys-and-drain-victim-s/e594454731c7475ab088051ef134b57342368930-2048x1601.png)
 _A screenshot of Google's AI-generated search results for the malicious `@async-mutex/mutex` package._
 
 The [`dexscreener`](https://socket.dev/npm/package/dexscreener/overview/1.3.0) package masquerades as a library for accessing liquidity pool data from decentralized exchanges (DEXs) and interacting with the DEX Screener platform. However, it exhibits the same malicious functionality and threat actor identifiers (specifically, Gmail addresses used for exfiltration) as the `@async-mutex/mutex` package, despite being published under different npm registry aliases.
@@ -66,7 +66,7 @@ This script exfiltrates sensitive user data (private keys) through the hardcoded
 
 The malicious packages [`solana-transaction-toolkit`](https://socket.dev/npm/package/solana-transaction-toolkit/overview/1.0.0) and [`solana-stable-web-huks`](https://socket.dev/npm/package/solana-stable-web-huks), published by a threat actor using the npm registry alias "solana-web-stable-huks", do more than steal Solana private keys and exfiltrate them via Gmail. They take the attack further by programmatically draining the victim's wallet, automatically transferring up to 98% of its contents to an attacker-controlled Solana address `3RbBjhVRi8qYoGB5NLiKEszq2ci559so4nPqv2iNjs8Q`. The remaining 2% is likely left behind to reduce suspicion or prevent transaction failures due to fees. The ultimate goal is clear: funneling the victim's funds directly into the attacker's control.
 
-![Packages published by threat actor solana-web-stable-huks](https://cdn.sanity.io/images/cgdhsj6q/production/ce0c9c228dbe9c5ddeb1799066078a50bad649a0-1095x447.png)
+![Packages published by threat actor solana-web-stable-huks](/assets/img/posts/gmail-for-exfiltration-malicious-npm-packages-target-solana-private-keys-and-drain-victim-s/ce0c9c228dbe9c5ddeb1799066078a50bad649a0-1095x447.png)
 _Socket displays packages published by the threat actor under the npm registry alias "solana-web-stable-huks"._
 
 These packages claim to offer Solana-specific functionality, such as handling transactions, building tooling scripts, or interacting with the blockchain, and have been downloaded more than 130 times. Their code references `nodemailer` for sending private keys via Gmail, as well as functions that automate Solana transactions to drain wallets.
@@ -112,7 +112,7 @@ const sendEmail = (p1, p2, p3, p4, p5) => {
 
 Any discovered private keys (represented by `p1, p2, p3, p4, p5`) are exfiltrated to attacker-controlled Gmail addresses: `qadeerkhanr5@gmail.com` and `czhanood@gmail.com`. The code can handle multiple private keys simultaneously, allowing the attacker to compromise multiple user accounts or environments at once.
 
-![Socket AI Scanner analysis of solana-stable-web-huks](https://cdn.sanity.io/images/cgdhsj6q/production/8216c4e7d3f01faccdb577507a0d7ecd48cf86f6-624x596.png)
+![Socket AI Scanner analysis of solana-stable-web-huks](/assets/img/posts/gmail-for-exfiltration-malicious-npm-packages-target-solana-private-keys-and-drain-victim-s/8216c4e7d3f01faccdb577507a0d7ecd48cf86f6-624x596.png)
 _Socket AI Scanner's analysis, including contextual details about the malicious package `solana-stable-web-huks`, which has the same malicious functionality as `solana-transaction-toolkit` package but includes different email addresses: `khansaleem789700@gmail.com` and `mujeerasghar7700@gmail.com`._
 
 The following malicious [code](https://socket.dev/npm/package/solana-transaction-toolkit/files/1.0.0/index.js) snippets have been annotated with comments to provide insights into the threat actor's techniques.
@@ -146,7 +146,7 @@ const transaction = async (keypair) => {
 
 We identified two GitHub repositories published by the same threat actor behind the malicious npm packages `solana-transaction-toolkit` and `solana-stable-web-huks`. Operating under the aliases "[moonshot-wif-hwan](https://github.com/moonshot-wif-hwan)" and "[Diveinprogramming](https://github.com/Diveinprogramming)", these repositories appear to offer helpful Solana development tools or scripts for automating common DeFi workflows. In reality, however, they import the threat actor's malicious npm packages.
 
-![Threat actor-controlled GitHub repositories](https://cdn.sanity.io/images/cgdhsj6q/production/591aa0f4e9fefb9fb99b1e6943a17e506205592c-730x757.png)
+![Threat actor-controlled GitHub repositories](/assets/img/posts/gmail-for-exfiltration-malicious-npm-packages-target-solana-private-keys-and-drain-victim-s/591aa0f4e9fefb9fb99b1e6943a17e506205592c-730x757.png)
 _Images of the threat actor-controlled GitHub repositories. Notably, in the image on the right, the threat actor provided the same email address – `qadeerkhanr5@gmail.com` – that was used in the `solana-transaction-toolkit` package for exfiltration._
 
 A script in the threat actor's GitHub repository, [`moonshot-wif-hwan/pumpfun-bump-script-bot`](https://github.com/moonshot-wif-hwan/pumpfun-bump-script-bot/blob/main/index.js), is promoted as a bot for trading on Raydium, a popular Solana-based DEX, but instead it imports malicious code from `solana-stable-web-huks` package. This script is forked from the [`Diveinprogramming/raydium-pumpfun-fastest-sniper-bot`](https://github.com/Diveinprogramming/raydium-pumpfun-fastest-sniper-bot) repository, which references the attacker-controlled email address `qadeerkhanr5@gmail.com`.

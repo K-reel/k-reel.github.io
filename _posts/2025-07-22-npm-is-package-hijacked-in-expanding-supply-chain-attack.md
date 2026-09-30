@@ -7,7 +7,7 @@ author: kirill_and_sarah
 canonical_url: https://socket.dev/blog/npm-is-package-hijacked-in-expanding-supply-chain-attack
 source: Socket
 image:
-  path: https://cdn.sanity.io/images/cgdhsj6q/production/cd105b9ae939bbfd9bdacb9c5591c95dba403c21-1024x1024.png
+  path: /assets/img/posts/npm-is-package-hijacked-in-expanding-supply-chain-attack/cover.png
   alt: "npm 'is' Package Hijacked in Expanding Supply Chain Attack"
 description: "The ongoing npm phishing campaign escalates as attackers hijack the popular 'is' package, embedding malware in multiple versions."
 ---
@@ -28,7 +28,7 @@ The threat actor that planted a Windows‑only DLL in `eslint‑config‑prettie
 
 The malicious `is` package is fully cross-platform, executing under Node 12+ on macOS, Linux, and Windows. In contrast, Scavenger DLL runs only on Windows, suggesting the campaign is deploying multiple payload families to maximize reach. The `is` variant drops no DLL; instead, it remains entirely in JavaScript, and maintains a live command and control (C2) channel.
 
-![Socket AI Scanner identifies a heavily obfuscated JavaScript loader embedded in the is package version 5.0.0](https://cdn.sanity.io/images/cgdhsj6q/production/08f06df393d9daabdf9d3e600eb14d1c918eb42d-1553x705.png)
+![Socket AI Scanner identifies a heavily obfuscated JavaScript loader embedded in the is package version 5.0.0](/assets/img/posts/npm-is-package-hijacked-in-expanding-supply-chain-attack/08f06df393d9daabdf9d3e600eb14d1c918eb42d-1553x705.png)
 _Socket AI Scanner identifies a heavily‑obfuscated JavaScript loader embedded in the is package version 5.0.0._
 
 The loader reconstructs its hidden payload entirely in memory using a custom decoder built around a 94-character alphabet. It immediately executes the decoded script via `new Function`, leaving no readable artifacts on disk. Once active, it queries Node's `os` module to collect the hostname, operating system, and CPU details, and captures all environment variables from `process.env`. It then dynamically imports the `ws` library to exfiltrate this data over a WebSocket connection. Every message received over the socket is treated as executable JavaScript, giving the threat actor an instant, interactive remote shell.
@@ -75,7 +75,7 @@ Socket's automated threat detection also flagged malicious releases of `got-fetc
 
 [**got-fetch v5.1.11**](https://socket.dev/npm/package/got-fetch/overview/5.1.11)
 
-![Socket threat detection flagging got-fetch](https://cdn.sanity.io/images/cgdhsj6q/production/7bd188f66c2eaea25653b247b6f81fa15562ed85-1271x756.png)
+![Socket threat detection flagging got-fetch](/assets/img/posts/npm-is-package-hijacked-in-expanding-supply-chain-attack/7bd188f66c2eaea25653b247b6f81fa15562ed85-1271x756.png)
 
 ## Impact of the npm Phishing Attacks
 
@@ -83,7 +83,7 @@ The Scavenger malware is proving to be especially nasty for anyone who got hit. 
 
 In some cases, simply rolling back package versions isn't enough if the malware has already exfiltrated credentials or tampered with the system.
 
-![Hacker News discussion from affected users](https://cdn.sanity.io/images/cgdhsj6q/production/3db03a8d2f16c2421961852366d31bbd9ebec1d1-1255x309.png)
+![Hacker News discussion from affected users](/assets/img/posts/npm-is-package-hijacked-in-expanding-supply-chain-attack/3db03a8d2f16c2421961852366d31bbd9ebec1d1-1255x309.png)
 _Hacker News [discussion](https://news.ycombinator.com/item?id=44621747) from affected users confirms impact of the `node-gyp.dll` malware. One user reported Chrome security flagging, potential SSH key compromise, and full system reinstallation, which is consistent with the malware's scraping of browser credentials and credential config files like `.npmrc` and `.netrc` observed during our analysis._
 
 This isn't the time to be performing blind updates. Socket protects your code by detecting malicious packages before they're added to your code base. Install the free [Socket GitHub App](https://socket.dev/features/github) or secure your projects using our [Safe npm CLI](https://socket.dev/features/cli) tool. These tools scan every dependency and update in real time to protect you from 70+ indicators of supply chain risk.

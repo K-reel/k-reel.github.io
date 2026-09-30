@@ -7,7 +7,7 @@ tags: [Typosquatting, Obfuscation, Backdoor, JavaScript, npm]
 canonical_url: https://socket.dev/blog/author-typosquatting-on-npm
 source: Socket
 image:
-  path: https://cdn.sanity.io/images/cgdhsj6q/production/8bf374505d023b19c6e651bdc1618f7fbc77c62c-745x443.png
+  path: /assets/img/posts/author-typosquatting-on-npm/cover.png
   alt: "Author typosquatting on npm impersonating Sindre Sorhus with malicious chalk-node package"
 description: "Attackers are impersonating Sindre Sorhus on npm with a fake 'chalk-node' package containing a malicious backdoor to compromise developers' projects."
 ---
@@ -24,7 +24,7 @@ Our analysis identified that the `index.esm.js` file included in the malicious p
 
 By registering an npm account as **sindresrohus** (note the reversed "o" and "r" letters) and copying the real **sindresorhus'** profile picture, the threat actor aims to exploit the trust placed in the legitimate maintainer. The threat actor published a malicious package named `chalk-node`, typosquatting the real `chalk` package. The attacker even replicated the legitimate package's `README` to further masquerade the malicious package as authentic.
 
-![](https://cdn.sanity.io/images/cgdhsj6q/production/8bf374505d023b19c6e651bdc1618f7fbc77c62c-745x443.png)
+![](/assets/img/posts/author-typosquatting-on-npm/cover.png)
 
 ## Chalking up malicious intent.
 
@@ -32,7 +32,7 @@ The typosquatted package `chalk-node` has 692 [total](https://npm-stat.com/chart
 
 In addition to legitimate `chalk` package style, files and code, the copycat `chalk-node` package buried additional files, such as `[index.esm.js](http://index.esm.js/)`, which Socket's AI Scanner flagged for accessing the file system, and potentially reading sensitive data. We further analyzed `index.esm.js` and assess that it functions as a backdoor, reading files from the user's system and sending sensitive content to an external service without authorization.
 
-![](https://cdn.sanity.io/images/cgdhsj6q/production/b0510852956e81cfd780a242a40bad1cbd1c64d8-732x501.png)
+![](/assets/img/posts/author-typosquatting-on-npm/b0510852956e81cfd780a242a40bad1cbd1c64d8-732x501.png)
 
 The threat actor obfuscated the `index.esm.js` file, making it difficult to read and understand; however, by analyzing the code's structure and patterns, we can infer its functionality. The code performs actions that compromise data confidentiality. It accesses sensitive information and makes it accessible beyond its intended scope. Specifically, it uses `fs` module functions like `readFileSync`, `existsSync`, and `readdirSync` to access the file system. It constructs file paths dynamically, targeting directories relative to the module's location. The code reads all files in the `data` directory, capturing stored credentials, configuration files, and data dumps. It overrides `console.log` to intercept any output containing a colon (`:`), directly targeting developers who may log sensitive information during debugging or normal operation. The exfiltrated data includes logged objects or messages containing credentials, tokens, URLs, or other sensitive information.
 

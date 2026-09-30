@@ -9,7 +9,7 @@ toc: true
 canonical_url: https://socket.dev/blog/north-korea-contagious-interview-campaign-338-malicious-npm-packages
 source: Socket
 image:
-  path: https://cdn.sanity.io/images/cgdhsj6q/production/7791bdcb706d78978712fb9044735a3825057a24-1024x1024.jpg?w=1000&q=95&fit=max&auto=format
+  path: /assets/img/posts/north-korea-contagious-interview-campaign-338-malicious-npm-packages/cover.jpg
   alt: North Korea Contagious Interview 338 malicious npm packages artwork
 ---
 
@@ -24,7 +24,7 @@ The pattern is wave-based and iterative. The threat actors ship typosquatted pac
 Targets include Web3, cryptocurrency, and blockchain developers, as well as technical job seekers approached with recruiting lures, leading to multi-stage compromise and financial loss.
 
 
-![](https://cdn.sanity.io/images/cgdhsj6q/production/eed740a4fa8f318bc3d070c511cdaac4599daa84-1444x1814.png?w=1600&q=95&fit=max&auto=format)
+![](/assets/img/posts/north-korea-contagious-interview-campaign-338-malicious-npm-packages/eed740a4fa8f318bc3d070c511cdaac4599daa84-1444x1814.png)
 _Lockheed Martin Cyber Kill Chain framework mapped to the current Contagious Interview campaign. Reconnaissance on LinkedIn, weaponization with published malicious packages, delivery via recruiter lures, exploitation by malware loaders that execute in memory, installation of BeaverTail and the InvisibleFerret backdoor, C2 over web protocols, then actions on objectives that establish initial access, and steal sensitive credentials and wallet keys._
 
 ## Stage 1: Reconnaissance
@@ -33,10 +33,10 @@ The campaign opens with focused reconnaissance. Threat actors approach targets o
 A recent victim account on LinkedIn illustrates this stage. A software engineer received a “job opportunity” message, was given a repository for a quick assignment, and found an innocuous dependency named [`eslint-detector`](https://socket.dev/npm/package/eslint-detector/overview/2.12.1) that contained an encrypted, obfuscated payload. The lure targeted a Web3 and crypto profile, relied on routine dependency installation, and used a polished company persona. What looked like a part of the recruitment assignment was a staged malware delivery.
 
 
-![](https://cdn.sanity.io/images/cgdhsj6q/production/5879b4dde5d0bb1d744ae8bb1a793be619be1c59-598x652.png?w=1600&q=95&fit=max&auto=format)
+![](/assets/img/posts/north-korea-contagious-interview-campaign-338-malicious-npm-packages/5879b4dde5d0bb1d744ae8bb1a793be619be1c59-598x652.png)
 _LinkedIn victim report of a job-offer lure that delivered a malicious npm package, eslint-detector, which silently fetched an encrypted payload, illustrating Contagious Interview reconnaissance and supply chain delivery tactics._
 
-![](https://cdn.sanity.io/images/cgdhsj6q/production/cfcd336363667262bd44931608afc69eb5aa5b1e-620x734.png?w=1600&q=95&fit=max&auto=format)
+![](/assets/img/posts/north-korea-contagious-interview-campaign-338-malicious-npm-packages/cfcd336363667262bd44931608afc69eb5aa5b1e-620x734.png)
 _Socket AI Scanner’s analysis of the malicious eslint-detector package highlights install-time execution of a multi-stage infostealer/loader, theft of browser credentials and crypto-wallet data, macOS Keychain access, clipboard monitoring and Windows keylogging with screen capture, remote command execution, BeaverTail download with Python-based persistence (i.e. InvisibleFerret staging), and HTTP exfiltration to hardcoded C2 endpoints._
 
 ## Stage 2: Weaponization
@@ -55,7 +55,7 @@ When it comes to crypto hiring, the Web3 kits are also targeted: [`ethers.js`](h
 Targets often receive a series of interview messages followed by a link to a code repository. Cloning and running the project executes an initialization script on first use, which starts the malware chain. Some victims also receive links to documents or forms on common productivity platforms (e.g. Google Docs), setting up a “take home” task that delivers the payload.
 
 
-![](https://cdn.sanity.io/images/cgdhsj6q/production/569cc4852deedaca6e8c773c485fd11f1a2519c0-1576x1380.png?w=1600&q=95&fit=max&auto=format)
+![](/assets/img/posts/north-korea-contagious-interview-campaign-338-malicious-npm-packages/569cc4852deedaca6e8c773c485fd11f1a2519c0-1576x1380.png)
 _LinkedIn DM lure directing the target to a Google Docs link, a stage-one tactic that establishes a hiring pretext, pivots off-platform, and sets up delivery of a coding test with malicious dependency._
 Additionally, we found that threat actors registered email addresses to look like recruiter/HR or “tech” personas that would resonate with developers and job-seekers. We see (1) recruiting/business veneer, e.g. `bob.berg.business@gmail[.]com`, `soft.business0987@gmail[.]com`, `astroglobal.work@gmail[.]com`, `jiayingzhang.contact@gmail[.]com`; (2) developer/engineering cues, e.g. `goldenrhynodev@gmail[.]com`, `luis.fernando.dev1214@gmail[.]com`, `sean_tech208@hotmail[.]com`, `stromdev712418@gmail[.]com`, `ryon_dev_3@outlook[.]com`; and (3) crypto/Web3 flavor, e.g. `jackson.tf7.eth@gmail[.]com`. These match how threat actors in Contagious Interview campaigns build plausible recruiting identities while keeping infrastructure disposable.
 
@@ -66,17 +66,17 @@ Exploitation begins the moment threat actor code executes on the target machine.
 A note on the exploitation of npm registry mechanisms by Contagious Interview threat actors. In the current wave of the npm ecosystem infiltrations, we found cases highlighting some gaps in account-level enforcement on the npm registry that threat actors are targeting for abuse. For example, the threat actors’ alias [`anarenhsaihan`](https://socket.dev/npm/user/anarenhsaihan) published two malicious packages: [`jito-components`](https://socket.dev/npm/package/jito-components/overview/0.0.1-security), which has since been removed and replaced by a security holding page, and [`components-flexibility`](https://socket.dev/npm/package/components-flexibility/overview/6.1.25), which remains live at the time of writing. Both packages serve as loaders for the BeaverTail malware.
 
 
-![](https://cdn.sanity.io/images/cgdhsj6q/production/f9e8e9fa4c6ba6f2a03ef4e63d584d36d7a54e69-1396x702.png?w=1600&q=95&fit=max&auto=format)
+![](/assets/img/posts/north-korea-contagious-interview-campaign-338-malicious-npm-packages/f9e8e9fa4c6ba6f2a03ef4e63d584d36d7a54e69-1396x702.png)
 _The npm registry marks jito-components as a security holding package after detecting malicious code, replacing the original with placeholder version 0.0.1-security to block installs and protect users._
 Despite the `jito-components` package being flagged and removed by the npm security team, the threat actor’s account was not suspended. This allowed the same alias to publish a second malicious package under the guise of a legitimate UI styling utility.
 
 
-![](https://cdn.sanity.io/images/cgdhsj6q/production/ead47b46effa4465d46334d30fdd3c429a435ecc-1018x520.png?w=1600&q=95&fit=max&auto=format)
+![](/assets/img/posts/north-korea-contagious-interview-campaign-338-malicious-npm-packages/ead47b46effa4465d46334d30fdd3c429a435ecc-1018x520.png)
 _npm account anarenhsaihan with a live package, components-flexibility, indicating the alias remains active and able to publish after the jito-components takedown._
 Cleaning up the ecosystem is not a trivial task, especially against advanced persistent threat (APT) actors. Contagious Interview is not a cybercrime hobby, it operates like an assembly line or a factory-model supply chain threat. It is a state-directed, quota-driven operation with durable resourcing, not a weekend crew, and removing a malicious package is insufficient if the associated publisher account remains active.
 
 
-![](https://cdn.sanity.io/images/cgdhsj6q/production/613a2a1f650cd70212f02971821042415f6fc3b9-1105x547.png?w=1600&q=95&fit=max&auto=format)
+![](/assets/img/posts/north-korea-contagious-interview-campaign-338-malicious-npm-packages/613a2a1f650cd70212f02971821042415f6fc3b9-1105x547.png)
 _Socket AI Scanner’s view of the npm alias anarenhsaihan shows jito-components replaced with a security holding package while components-flexibility remains live. Our analysis of components-flexibility highlights install-time loader behavior, in-memory execution via eval, and delivery of BeaverTail malware._
 
 ## Stage 5: Installation
@@ -85,12 +85,12 @@ Contagious Interview packages install like nesting dolls, a small loader runs fi
 Recent wave added encrypted loaders. The goal is obfuscation versus cryptographic safety. The malicious packages with encrypted loaders ship a small module that imports Node’s `crypto`, fixes the algorithm to AES-256-CBC, and hardcodes both the key and the initialization vector (IV). The ciphertext, a large hex blob, is stashed elsewhere in the package, sometimes in a file named `LICENSE`. At install or import, the module reads that blob, decrypts it, converts it to UTF-8, and evaluates the plaintext in process.
 
 
-![](https://cdn.sanity.io/images/cgdhsj6q/production/d08f9c21d4c3554602ac3d2d11852d63f3f2ac4d-1911x901.png?w=1600&q=95&fit=max&auto=format)
+![](/assets/img/posts/north-korea-contagious-interview-campaign-338-malicious-npm-packages/d08f9c21d4c3554602ac3d2d11852d63f3f2ac4d-1911x901.png)
 _Socket AI Scanner’s analysis of the malicious redux-saga-sentinel package highlights an encrypted loader split across two files. The top file, lib/utils/smtp-connection/parse.js, imports Node crypto and hardcodes an AES-256-CBC key and IV. The bottom file, LICENSE, stores the large hex ciphertext. At runtime, parse.js decrypts the LICENSE blob to plaintext JavaScript and executes it, enabling in-memory loader execution within the same package._
 The below CyberChef panel shows how defenders can reproduce decryption: convert the hex ciphertext to raw bytes, apply AES-256-CBC with the embedded key and IV, and recover the stage-two JavaScript. The recovered body remains obfuscated, but deobfuscation confirms BeaverTail, based on its file and wallet targeting, control-flow patterns, and the handoff logic for launching the InvisibleFerret backdoor.
 
 
-![](https://cdn.sanity.io/images/cgdhsj6q/production/1e638ad52386bafc0457b187107808063bb2660e-2048x1175.png?w=1600&q=95&fit=max&auto=format)
+![](/assets/img/posts/north-korea-contagious-interview-campaign-338-malicious-npm-packages/1e638ad52386bafc0457b187107808063bb2660e-2048x1175.png)
 _CyberChef reproduces the decrypt of the package’s encrypted loader. Converting the hex ciphertext and applying AES-256-CBC with the embedded key and IV recovers BeaverTail stage-two JavaScript in the Output pane, still obfuscated but ready for deobfuscation and behavior analysis._
 Operationally, installation means a long-running foothold rather than a guaranteed autorun. The loader starts BeaverTail, which fetches and launches InvisibleFerret. With BeaverTail active and InvisibleFerret staged, the malware is ready to register the host and begin tasking, which leads directly into Stage 6.
 

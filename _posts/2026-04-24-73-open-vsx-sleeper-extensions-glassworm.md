@@ -8,7 +8,7 @@ author: socket_research_team
 canonical_url: https://socket.dev/blog/73-open-vsx-sleeper-extensions-glassworm
 source: Socket
 image:
-  path: https://cdn.sanity.io/images/cgdhsj6q/production/892a8fb356a67d4293885b15928c1e5b8376c2ee-1254x1254.png?w=1000&q=95&fit=max&auto=format
+  path: /assets/img/posts/73-open-vsx-sleeper-extensions-glassworm/cover.png
   alt: GlassWorm Open VSX sleeper extensions campaign artwork
 description: "Socket is tracking cloned Open VSX extensions tied to GlassWorm, with several updated from benign-looking sleepers into malware delivery vehicles."
 ---
@@ -75,11 +75,11 @@ The fact that the threat actor pushed activations referencing an extension two d
 
 The impersonation pattern is visible in the way these extensions present themselves on Open VSX. One example is `Emotionkyoseparate.turkish-language-pack`, which closely mirrors the legitimate `MS-CEINTL.vscode-language-pack-tr` listing for the Turkish Language Pack for Visual Studio Code. The clone uses the same globe icon, similar naming, the same description, and copied Turkish-language README content, while swapping in a new publisher and unique identifier.
 
-![Side-by-side comparison of cloned and legitimate Turkish Language Pack listings on Open VSX](https://cdn.sanity.io/images/cgdhsj6q/production/5b8d3d6c1d2817e53d228f3ea92cd2ec098a9d1d-2048x905.png?w=1600&q=95&fit=max&auto=format)
+![Side-by-side comparison of cloned and legitimate Turkish Language Pack listings on Open VSX](/assets/img/posts/73-open-vsx-sleeper-extensions-glassworm/5b8d3d6c1d2817e53d228f3ea92cd2ec098a9d1d-2048x905.png)
 
 The difference is subtle enough that a developer browsing quickly could miss it. The legitimate extension is published under the expected `MS-CEINTL` namespace and shows 150K downloads, while the impersonation appears under a newly created publisher with far fewer downloads but otherwise familiar branding. This is the core social engineering pattern behind the latest GlassWorm cluster: cloned listings create enough visual trust to attract installs before any malware is introduced.
 
-![Closer comparison of the impersonating publisher and the legitimate MS-CEINTL publisher](https://cdn.sanity.io/images/cgdhsj6q/production/e05ecd446f62da44e2cf50359befa52118b2510a-2048x1068.png?w=1600&q=95&fit=max&auto=format)
+![Closer comparison of the impersonating publisher and the legitimate MS-CEINTL publisher](/assets/img/posts/73-open-vsx-sleeper-extensions-glassworm/e05ecd446f62da44e2cf50359befa52118b2510a-2048x1068.png)
 
 ### Delivery Moving Beyond the Extension Source
 

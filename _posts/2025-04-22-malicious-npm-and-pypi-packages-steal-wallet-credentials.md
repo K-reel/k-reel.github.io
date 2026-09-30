@@ -7,7 +7,7 @@ tags: [npm, JavaScript, Python, PyPI, Infostealer, Cryptocurrency, T1195.002, T1
 canonical_url: https://socket.dev/blog/malicious-npm-and-pypi-packages-steal-wallet-credentials
 source: Socket
 image:
-  path: https://cdn.sanity.io/images/cgdhsj6q/production/48797cb10213996c8083abc98dbe3dc1b0c4bb5c-1024x1024.webp
+  path: /assets/img/posts/malicious-npm-and-pypi-packages-steal-wallet-credentials/cover.jpg
   alt: "The Bad Seeds: Malicious npm and PyPI Packages Pose as Developer Tools to Steal Wallet Credentials"
 description: "Socket researchers uncovered malicious npm and PyPI packages that steal crypto wallet credentials using Google Analytics and Telegram for exfiltration."
 ---
@@ -26,7 +26,7 @@ The key take-away advice for developers is simple but critical: your mnemonic se
 
 The `react-native-scrollpageviewtest` package poses as a simple "scroll-page-view" helper, but behind the minimal UI code, it dynamically loads the host React Native wallet engine, extracts every available private key and mnemonic seed phrase, encodes the data in Base64, and exfiltrates it to the threat actor. The threat actor, operating under the npm alias `twoplus` (registration email address `twoplusten@163[.]com`), uses multiple techniques to evade detection and ensure reliable exfiltration of sensitive wallet data.
 
-![Socket AI Scanner analysis of react-native-scrollpageviewtest](https://cdn.sanity.io/images/cgdhsj6q/production/0e71338c92b977b16ffb88a7bb38befd42534d53-567x579.png)
+![Socket AI Scanner analysis of react-native-scrollpageviewtest](/assets/img/posts/malicious-npm-and-pypi-packages-steal-wallet-credentials/0e71338c92b977b16ffb88a7bb38befd42534d53-567x579.png)
 _Socket AI Scanner's analysis, including contextual details about the malicious `react‑native‑scrollpageviewtest` package._
 
 Rather than referencing sensitive libraries directly, the code splits letters in strings to defeat basic string-matching detection. For instance, it constructs the word `buffer` dynamically like [this](https://socket.dev/npm/package/react-native-scrollpageviewtest/files/1.5.5/GestureCommon/CommonLottieScroller.js#L71):
@@ -103,7 +103,7 @@ Taken together, the techniques used in `react-native-scrollpageviewtest` illustr
 
 The `web3x` package presents itself as a simple Ethereum wallet utility, but it operates as credential-harvesting malware designed to drain cryptocurrency wallets. The script tricks users into supplying their mnemonic seed phrase, then silently sends it — along with wallet balances — to a hardcoded Telegram bot. With that information, the threat actor behind the PyPI account `tonymevbots` (registration email address `xeallmail@mitico[.]org`) can import the wallet and take full control of its assets. Written in Python and dependent only on common libraries, the malware runs on any platform where Python is installed, making it broadly effective and easy to deploy.
 
-![Socket AI Scanner analysis of web3x](https://cdn.sanity.io/images/cgdhsj6q/production/d7b64ae7f4dc3119408d6b693e0f53d24cf8f9ba-564x531.png)
+![Socket AI Scanner analysis of web3x](/assets/img/posts/malicious-npm-and-pypi-packages-steal-wallet-credentials/d7b64ae7f4dc3119408d6b693e0f53d24cf8f9ba-564x531.png)
 _Socket AI Scanner's analysis, including contextual details about the malicious `web3x` package._
 
 Below are the annotated [code](https://socket.dev/pypi/package/web3x/files/0.3/py3-none-any-whl/web3x/web3x.py) snippets for the malicious `web3x` package.
@@ -147,7 +147,7 @@ The threat actor can immediately import the wallet and transfer out all ETH and 
 
 The `herewalletbot` package functions as a headless (i.e. without graphical user interface) Telegram automation tool that guides victims through a login flow and tricks them into submitting their wallet seed phrase to a Telegram bot `@herewalletbot`. While the package poses as a wallet automation utility, the only real functionality it provides is automating browser clicks the user could perform themselves in Telegram Web.
 
-![Socket AI Scanner analysis of herewalletbot](https://cdn.sanity.io/images/cgdhsj6q/production/12d909ab945d471e0650c87a1e26f1ab7703481b-566x479.png)
+![Socket AI Scanner analysis of herewalletbot](/assets/img/posts/malicious-npm-and-pypi-packages-steal-wallet-credentials/12d909ab945d471e0650c87a1e26f1ab7703481b-566x479.png)
 _Socket AI Scanner's analysis, including contextual details about the malicious `herewalletbot` package._
 
 The threat actor operating under the PyPI alias `vannszs` (registration email address `bevansatria@gmail[.]com`) designed the script to prompt the user for the secret that controls all their crypto assets, exfiltrating it to threat actor-controlled infrastructure (Telegram bot), and suppressing logs and audio to avoid detection. This is a fully scripted social engineering credential-harvesting package disguised as convenience.
@@ -183,12 +183,12 @@ while True:
 
 There is no legitimate reason for any automating browser clicks tool to request a user's mnemonic — a wallet already has access to its own keys. The moment the tool asks for a seed phrase, it crosses the line from automation to credential theft.
 
-![Threat actor's README with crossed out seed handling](https://cdn.sanity.io/images/cgdhsj6q/production/78e7b59dbc825b44de19c2c21cd01f6eca3cb1af-884x876.png)
+![Threat actor's README with crossed out seed handling](/assets/img/posts/malicious-npm-and-pypi-packages-steal-wallet-credentials/78e7b59dbc825b44de19c2c21cd01f6eca3cb1af-884x876.png)
 _The threat actor crossed out the seed-handling feature in the README of the now-suspended GitHub repository `https://github.com/vannszs/HotWalletBot/` to downplay its presence while retaining the functionality in code. This deception tactic was likely intended to reduce scrutiny from users and GitHub moderators while continuing to exfiltrate mnemonic seed phrases via the `herewalletbot` Telegram bot._
 
 The script automates navigation and clicks through a sequence of dialog elements, guiding the victim through the Telegram interface. It eventually reaches an embedded iframe (i.e. an inline frame used to load another webpage inside the current page) where it prompts the user to manually enter their mnemonic seed phrase. Once entered, the script captures the phrase and pastes it into the bot chat, handing full control of the wallet to the threat actor.
 
-![Reddit user reports fund loss after using herewalletbot](https://cdn.sanity.io/images/cgdhsj6q/production/cac8dc07dca797eff6777bc5aaf6611ab9b5b3cd-1366x320.png)
+![Reddit user reports fund loss after using herewalletbot](/assets/img/posts/malicious-npm-and-pypi-packages-steal-wallet-credentials/cac8dc07dca797eff6777bc5aaf6611ab9b5b3cd-1366x320.png)
 _A Reddit user [reports](https://www.reddit.com/r/nearprotocol/comments/1b1d3ho/comment/kykhwcb/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button) that after using `herewalletbot`, all wallet funds disappeared despite re-entering their seed phrase, indicating a likely credential theft and irreversible asset loss._
 
 The malware does not stop after a single interaction. It loops indefinitely, monitoring on-screen elements such as countdown timers `waktu_text` to determine when another claim cycle — a recurring opportunity for users to receive free tokens or rewards from the bot — might begin. This persistence ensures the script stays active.

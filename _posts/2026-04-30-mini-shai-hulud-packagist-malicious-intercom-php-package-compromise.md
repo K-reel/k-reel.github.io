@@ -19,20 +19,20 @@ A malicious [`intercom/intercom-php`](https://socket.dev/composer/package/interc
 
 **Update** (April 30**,** 19:46:2)**:** Intercom has confirmed to Socket that the root cause of the compromise was a local install of `pyannote-audio`, which introduced the compromised `lightning` package as a transitive dependency. That finding connects the attack chain across three ecosystems: the PyPI `lightning` compromise led to the npm `intercom-client` compromise, which was then followed by the malicious Packagist artifact for `intercom/intercom-php`. Intercom confirmed the `pyannote-audio` package was installed directly by a user locally and was not related to other repositories.
 
-![](https://cdn.sanity.io/images/cgdhsj6q/production/8b4b6c513a115c801adb11e7c226a5d15ccc73ca-620x650.png?w=1600&q=95&fit=max&auto=format)
+![](/assets/img/posts/mini-shai-hulud-packagist-malicious-intercom-php-package-compromise/8b4b6c513a115c801adb11e7c226a5d15ccc73ca-620x650.png)
 _Socket AI Scanner flags [`intercom/intercom-php@5.0.2`](https://socket.dev/composer/package/intercom/intercom-php/overview?version=5.0.2) as known malware, identifying [`router_runtime.js`](https://socket.dev/composer/package/intercom/intercom-php/files?version=5.0.2&path=intercom-intercom-php-e69bf4b%2Frouter_runtime.js) as a credential theft and supply chain propagation payload that harvests CI/CD and cloud secrets, abuses GitHub repositories for staged exfiltration, and uses daemonized execution to evade normal process visibility._
 
 We identified a malicious Packagist package artifact for `intercom/intercom-php@5.0.2`, indicating that the Mini Shai-Hulud supply chain attack affecting Intercom has expanded beyond npm and into the PHP ecosystem. The threat actor first changed `intercom/intercom-php@5.0.2` to point to commit `e8a812c5ea7d8c7ed642b0d82754ced6a99025b0` at 2026-04-30 20:51:09 UTC, then changed it again at 20:53:12 UTC to point to commit `e69bf4b3e84e7951a7b4ded8fee8822c57630cf8`. Socket’s AI scanner detected the malicious code 14 minutes after release.
 
 This is possible because Packagist versions are not inherently immutable. Packagist mirrors tags from upstream Git repositories, and Git tags can be force-updated to point to a different commit. As a result, an attacker who can modify the repository can effectively replace the contents of an existing version without changing its version number.
 
-![](https://cdn.sanity.io/images/cgdhsj6q/production/89ee5dc2dbf41851d32c1d0102d53812a3ddebf7-1190x993.png?w=1600&q=95&fit=max&auto=format)
+![](/assets/img/posts/mini-shai-hulud-packagist-malicious-intercom-php-package-compromise/89ee5dc2dbf41851d32c1d0102d53812a3ddebf7-1190x993.png)
 
 This follows Socket’s [report](https://socket.dev/blog/intercom-s-npm-package-compromised-in-supply-chain-attack) earlier today that `intercom-client@7.0.4`, Intercom’s npm package for its Node.js client, was compromised with a malicious `preinstall` hook, a Bun downloader, and an obfuscated `router_runtime.js` payload designed to steal developer and CI/CD secrets. The npm compromise affected systems at install time, even if the package was never imported in application code.
 
 The newly analyzed PHP package shows the same operational pattern, adapted for Packagist. The package presents itself as `intercom/intercom-php`, but its `composer.json` changes the package type to `composer-plugin`, adds `composer-plugin-api`, and registers `Intercom\\\\ComposerPlugin` as the plugin entry point. Packagist currently lists `intercom/intercom-php@5.0.2` with `composer-plugin-api` as a requirement, while the upstream GitHub `composer.json` on `master` does not declare the package as a Packagist plugin and does not include the malicious plugin execution path.
 
-![](https://cdn.sanity.io/images/cgdhsj6q/production/fc602bd9a349a456659bb0360c2cbcd42a72053e-1178x928.png?w=1600&q=95&fit=max&auto=format)
+![](/assets/img/posts/mini-shai-hulud-packagist-malicious-intercom-php-package-compromise/fc602bd9a349a456659bb0360c2cbcd42a72053e-1178x928.png)
 _Packagist metadata for `intercom/intercom-php@5.0.2` shows an anomalous `composer-plugin-api` requirement, indicating the PHP client was converted into a Composer plugin capable of install/update-time execution._
 
 ## Composer Plugin Abuse Enables Install-Time Execution

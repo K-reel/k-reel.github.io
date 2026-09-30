@@ -8,7 +8,7 @@ author: socket_research_team
 canonical_url: https://socket.dev/blog/namastex-npm-packages-compromised-canisterworm
 source: Socket
 image:
-  path: https://cdn.sanity.io/images/cgdhsj6q/production/7cc63050a1e0903e1a66f9d34a45b3d740bd6779-1254x1254.png?w=1000&q=95&fit=max&auto=format
+  path: /assets/img/posts/namastex-npm-packages-compromised-canisterworm/cover.png
 description: "Malicious Namastex.ai npm packages appear to replicate TeamPCP-style Canister Worm tradecraft, including exfiltration and self-propagation."
 ---
 
@@ -26,7 +26,7 @@ We are tracking the incident on Socket's dedicated CanisterSprawl supply chain a
 
 The currently observed canister in the Namastex-related packages is not the same exact canister previously [documented](https://socket.dev/blog/canisterworm-npm-publisher-compromise-deploys-backdoor-across-29-packages) in CanisterWorm, and the upstream cause remains unresolved. There is a strong overlap in technique, code lineage, and threat actor tradecraft. As of this writing, this remains a developing story: additional malicious versions are still being published and identified, and the full scope of affected releases, maintainers, or release-path compromise is still under investigation.
 
-![Socket AI Scanner flagged @automagik/genie@4.260421.36 as malicious](https://cdn.sanity.io/images/cgdhsj6q/production/66b5dc8af923d6f92ead09f1383372305e2a539f-1302x621.png?w=1600&q=95&fit=max&auto=format)
+![Socket AI Scanner flagged @automagik/genie@4.260421.36 as malicious](/assets/img/posts/namastex-npm-packages-compromised-canisterworm/66b5dc8af923d6f92ead09f1383372305e2a539f-1302x621.png)
 _Socket AI Scanner flagged `@automagik/genie@4.260421.36` as malicious, with the package still showing meaningful weekly download volume at the time of analysis._
 
 These packages appear to target specialized developer workflows rather than broad consumer npm usage. At the time of review, `@automagik/genie` showed 6,744 weekly downloads and `pgserve` showed about 1,300 weekly downloads. In context, `@automagik/genie` is positioned as an AI coding and agent-orchestration CLI, while `pgserve` is an embedded PostgreSQL server for development and testing. The other affected packages span distinct usage contexts, from WebSocket and LoopBack-to-Elasticsearch integration to design-token and theming components used in Open WebConcept's design-system stack.
@@ -98,7 +98,7 @@ It also contains PyPI propagation logic. The script generates a Python `.pth`-ba
 
 In other words, this is not just a credential stealer. It is designed to turn one compromised developer environment into additional package compromises.
 
-![Socket AI Scanner summary of the malware](https://cdn.sanity.io/images/cgdhsj6q/production/105032abcda2cd42ace6ec5e02599f2f4447d643-562x576.png?w=1600&q=95&fit=max&auto=format)
+![Socket AI Scanner summary of the malware](/assets/img/posts/namastex-npm-packages-compromised-canisterworm/105032abcda2cd42ace6ec5e02599f2f4447d643-562x576.png)
 _Socket AI Scanner summarized the install-time malware as a credential stealer with canister-backed exfiltration and worm-like propagation behavior._
 
 ## Why this looks like a compromise, not just a malicious new package

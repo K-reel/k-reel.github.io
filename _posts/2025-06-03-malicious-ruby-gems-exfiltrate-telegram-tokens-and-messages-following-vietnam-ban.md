@@ -6,7 +6,7 @@ tags: [Typosquatting, RubyGems, Ruby, Vietnam, T1195.002, T1036.005, T1041, T107
 canonical_url: https://socket.dev/blog/malicious-ruby-gems-exfiltrate-telegram-tokens-and-messages-following-vietnam-ban
 source: Socket
 image:
-  path: https://cdn.sanity.io/images/cgdhsj6q/production/03ff0f25906b94f34c2dd85dc9967514614a090b-1024x1024.webp
+  path: /assets/img/posts/malicious-ruby-gems-exfiltrate-telegram-tokens-and-messages-following-vietnam-ban/cover.jpg
   alt: "Malicious Ruby Gems Exfiltrate Telegram Tokens and Messages Following Vietnam Ban"
 description: "Malicious Ruby gems typosquat Fastlane plugins to steal Telegram bot tokens, messages, and files, exploiting demand after Vietnam's Telegram ban."
 ---
@@ -47,14 +47,14 @@ By rerouting traffic through a proxy, the threat actor automatically captures:
 - Any uploaded files, including potentially sensitive build artifacts or logs.
 - Optional proxy credentials, if the user passes them to the plugin.
 
-![Socket AI Scanner analysis of fastlane-plugin-telegram-proxy](https://cdn.sanity.io/images/cgdhsj6q/production/bcde961c907cda2642dcd422168d736ee97294d2-616x597.png)
+![Socket AI Scanner analysis of fastlane-plugin-telegram-proxy](/assets/img/posts/malicious-ruby-gems-exfiltrate-telegram-tokens-and-messages-following-vietnam-ban/bcde961c907cda2642dcd422168d736ee97294d2-616x597.png)
 _Socket AI Scanner's analysis of the malicious `fastlane-plugin-telegram-proxy` gem, including contextual details about its behavior and risks. The same level of analysis applies to the threat actor's other gem, `fastlane-plugin-proxy_teleram`._
 
 ## C2 Endpoint
 
 The threat actor's C2 endpoint (`rough-breeze-0c37[.]buidanhnam95[.]workers[.]dev`) is hardcoded into both malicious Ruby gems as a substitute for the legitimate Telegram Bot API. All messages, bot tokens, chat IDs, and uploaded files are routed through this proxy without user consent or disclosure. Although the landing page claims the proxy "does not store or modify your bot tokens", this statement is both unverifiable and misleading. Cloudflare Worker scripts are not publicly visible, and the threat actor retains full ability to log, inspect, or alter any data in transit. The use of this proxy, combined with the typosquatting of a trusted Fastlane plugin, clearly indicates intent to exfiltrate tokens and message data under the guise of normal CI behavior. Moreover, the threat actor has not published the Worker's source code, leaving its implementation entirely opaque. In the context of credential-stealing behavior, this lack of transparency further reinforces the assessment that the proxy was deployed for malicious purposes.
 
-![Threat actor's Cloudflare Worker endpoint](https://cdn.sanity.io/images/cgdhsj6q/production/5755a837dd9d561aa02cf72596a30c07aabd9b8c-1392x934.png)
+![Threat actor's Cloudflare Worker endpoint](/assets/img/posts/malicious-ruby-gems-exfiltrate-telegram-tokens-and-messages-following-vietnam-ban/5755a837dd9d561aa02cf72596a30c07aabd9b8c-1392x934.png)
 _The threat actor's Cloudflare Worker endpoint (`rough-breeze-0c37[.]buidanhnam95[.]workers[.]dev`) presents itself as a benign Telegram Bot API proxy, claiming not to store or modify bot tokens. In reality, the proxy is embedded/hardcoded in malicious RubyGems and silently intercepts sensitive data passed through CI/CD pipelines._
 
 ## How a Legitimate Telegram Proxy Differs
@@ -77,7 +77,7 @@ The impersonated, legitimate gem `fastlane-plugin-telegram` has over 600,000 dow
 
 To strengthen the deception, the threat actor forked the official repository hosted at `github.com/sergpetrov/fastlane-plugin-telegram` and linked their fork (`github[.]com/buidanhnam/fastlane‑plugin‑telegram`) as the homepage for the malicious `fastlane-plugin-telegram-proxy` gem.
 
-![Search results showing malicious gems alongside legitimate plugins](https://cdn.sanity.io/images/cgdhsj6q/production/812f751b9d3d0f641b97f013aea6d44d4beb94be-948x888.png)
+![Search results showing malicious gems alongside legitimate plugins](/assets/img/posts/malicious-ruby-gems-exfiltrate-telegram-tokens-and-messages-following-vietnam-ban/812f751b9d3d0f641b97f013aea6d44d4beb94be-948x888.png)
 _Search results for `fastlane-plugin-telegram` on RubyGems show the malicious typosquatted gem `fastlane-plugin-telegram-proxy` ranked alongside legitimate plugins. Another malicious gem, `fastlane-plugin-proxy_teleram`, appears when searching with a similarly mistyped query. Both gems impersonate trusted Fastlane gems and redirect Telegram API traffic through a threat actor-controlled proxy to steal sensitive data._
 
 ## Vietnam Context and Attribution Assessment
@@ -86,7 +86,7 @@ The threat actor operates on RubyGems under the name `Bùi nam`, a Vietnamese-fo
 
 On May 24 and May 30, 2025, just days after the ban, the threat actor released two malicious Ruby gems, marketing them as "Telegram proxy" helpers. This positioning directly targeted the surge in demand from developers affected by the block, especially those seeking ways to restore Telegram-based build notifications or CI workflows.
 
-![RubyGems profile for Bùi nam](https://cdn.sanity.io/images/cgdhsj6q/production/357d94cf03bf539b1fb40c17aeada0e0ac3c64b0-877x448.png)
+![RubyGems profile for Bùi nam](/assets/img/posts/malicious-ruby-gems-exfiltrate-telegram-tokens-and-messages-following-vietnam-ban/357d94cf03bf539b1fb40c17aeada0e0ac3c64b0-877x448.png)
 _The RubyGems profile for `Bùi nam` (`si_mobile`) shows authorship of two malicious Fastlane plugins: `fastlane-plugin-telegram-proxy` and `fastlane-plugin-proxy_teleram`, both designed to exfiltrate Telegram tokens and message data via a threat actor-controlled proxy endpoint. The gems were published on May 24 and May 30, 2025, shortly after Vietnam's nationwide Telegram ban._
 
 The available evidence suggests that the threat actor deliberately aligned the campaign with geopolitical events in Vietnam. The use of a Vietnamese-formatted identity and the release of "Telegram proxy" gems shortly after the nationwide ban indicate awareness of local conditions and a strategic effort to exploit them. The timing and thematic alignment strongly support the likelihood that the campaign was designed to opportunistically target Vietnam-based developers seeking Telegram workarounds.

@@ -8,7 +8,7 @@ author: socket_research_team
 canonical_url: https://socket.dev/blog/canisterworm-npm-publisher-compromise-deploys-backdoor-across-29-packages
 source: Socket
 image:
-  path: https://cdn.sanity.io/images/cgdhsj6q/production/da6d60559014afb322830e20836c380518eaa6dd-1024x1024.png?w=1000&q=95&fit=max&auto=format
+  path: /assets/img/posts/canisterworm-npm-publisher-compromise-deploys-backdoor-across-29-packages/cover.png
   alt: "CanisterWorm: npm Publisher Compromise Deploys Backdoor Across 29+ Packages"
 description: "The worm-enabled campaign hit @emilgroup and @teale.io, then used an ICP canister to deliver follow-on payloads."
 ---
@@ -28,7 +28,7 @@ Our investigation shows that the attack evolved in phases. In the earliest obser
 
 At this stage, we assess with high confidence that this was a compromise of legitimate npm publisher space involving worm-like propagation and Linux-focused host persistence. We are not making a firm threat actor attribution at this time. Our current analysis independently supports the malware mechanics, victim scope, and propagation model, but not a conclusive threat actor attribution.
 
-![CanisterWorm attack workflow diagram](https://cdn.sanity.io/images/cgdhsj6q/production/9023a8c246eac3a7459d4f61ee21e4171330edaa-1800x1050.png?w=1600&q=95&fit=max&auto=format)
+![CanisterWorm attack workflow diagram](/assets/img/posts/canisterworm-npm-publisher-compromise-deploys-backdoor-across-29-packages/9023a8c246eac3a7459d4f61ee21e4171330edaa-1800x1050.png)
 _CanisterWorm chains dependency installation, user-level Linux persistence, and remote payload delivery into a single workflow. After a compromised npm release triggers `postinstall`, the loader persists through `systemd --user` and hands execution to a Python implant that treats the ICP canister as a rotatable dead drop, allowing the threat actor to change second-stage payloads without republishing the package._
 
 ## Worm-Enabled npm Supply Chain Attack
@@ -41,7 +41,7 @@ The propagation logic is what elevates this beyond a typical package compromise.
 
 The likely victims are developers, CI runners, and build systems that installed the compromised releases, especially Linux hosts where `systemd --user` is available. The likely publisher-side victims are Emil Group through `cover42devs`, and possibly the maintainer associated with `@teale.io/eslint-config`, although the exact relationship between those namespaces still needs to be confirmed. The evidence currently supports a broad `@emilgroup` compromise and a related `@teale.io` compromise consistent with the same malware family and propagation chain.
 
-![Socket AI Scanner analysis](https://cdn.sanity.io/images/cgdhsj6q/production/33c3c96d0a876054816c483f3ffabb4b3425643e-567x492.png?w=1600&q=95&fit=max&auto=format)
+![Socket AI Scanner analysis](/assets/img/posts/canisterworm-npm-publisher-compromise-deploys-backdoor-across-29-packages/33c3c96d0a876054816c483f3ffabb4b3425643e-567x492.png)
 _Socket AI Scanner's analysis of the malicious `@emilgroup/account-sdk@1.41.2` package identifies `index.js` as the install-time execution point for a persistent user-level implant that decodes an embedded payload and then functions as a repeatable remote downloader, allowing attacker-controlled code to run after installation and on subsequent fetch cycles._
 
 ## How the Attack Works

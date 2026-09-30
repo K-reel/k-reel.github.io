@@ -8,7 +8,7 @@ author: socket_research_team
 canonical_url: https://socket.dev/blog/tinycolor-supply-chain-attack-affects-40-packages
 source: Socket
 image:
-  path: https://cdn.sanity.io/images/cgdhsj6q/production/49d370604c6ce2c65dce27fb2c22b9f388e30251-1022x558.png
+  path: /assets/img/posts/tinycolor-supply-chain-attack-affects-40-packages/cover.png
   alt: "Tinycolor npm supply chain attack"
 description: "Malicious update to @ctrl/tinycolor on npm is part of a supply-chain attack hitting 40+ packages across maintainers"
 ---
@@ -21,7 +21,7 @@ The compromised versions include a function (`NpmModule.updatePackage`) that dow
 
 The issue was first noticed by [Daniel dos Santos Pereira](https://www.linkedin.com/in/daniel-pereira-b17a27160/), who flagged suspicious behavior in the latest release. Socket's automated malware detection also surfaced the threat in 40+ additional packages, and our research team continues to analyze the payload and its distribution method. While tinycolor is the most visible package, with 2.2 million weekly downloads on npm, it did not originate these compromises, but is one package among dozens trojanized in this active campaign.
 
-![Socket alert for compromised tinycolor package](https://cdn.sanity.io/images/cgdhsj6q/production/cd7bd69598078022c0cd3f02f507826a53350721-619x785.png)
+![Socket alert for compromised tinycolor package](/assets/img/posts/tinycolor-supply-chain-attack-affects-40-packages/cd7bd69598078022c0cd3f02f507826a53350721-619x785.png)
 
 ### Compromised Packages and Versions
 
@@ -72,7 +72,7 @@ The `bundle.js` script downloads and executes TruffleHog, a legitimate secret sc
 
 The script runs automatically when the package is installed.
 
-![bundle.js install hook](https://cdn.sanity.io/images/cgdhsj6q/production/e00e84d58ab56de42809905f86cc8b4c2a7a8648-996x90.png)
+![bundle.js install hook](/assets/img/posts/tinycolor-supply-chain-attack-affects-40-packages/e00e84d58ab56de42809905f86cc8b4c2a7a8648-996x90.png)
 
 The referenced `bundle.js` is a large, minified file that functions as a controller. It profiles the platform, fetches a matching TruffleHog binary, and searches for known credential patterns across the filesystem and repositories.
 

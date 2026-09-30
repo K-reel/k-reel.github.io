@@ -7,7 +7,7 @@ tags: [RAT, Obfuscation, npm, JavaScript, T1195.002, T1059.007, T1036.005, T1027
 canonical_url: https://socket.dev/blog/quasar-rat-disguised-as-an-npm-package
 source: Socket
 image:
-  path: https://cdn.sanity.io/images/cgdhsj6q/production/961d431fdd53c410d9d320bccdf279bdf6066d4a-1024x1024.webp
+  path: /assets/img/posts/quasar-rat-disguised-as-an-npm-package/cover.jpg
   alt: "Quasar RAT Disguised as an npm Package for Detecting Vulnerabilities in Ethereum Smart Contracts"
 description: "Socket researchers uncover a malicious npm package posing as a tool for detecting vulnerabilities in Etherium smart contracts."
 ---
@@ -24,7 +24,7 @@ The malicious package, published on December 18, 2024, by a threat actor using t
 
 Quasar RAT has circulated in cybercrime and APT campaigns for nearly a [decade](https://www.cisa.gov/news-events/analysis-reports/ar18-352a). Beyond providing remote access, it offers a robust suite of capabilities, including keystroke logging, screenshot capturing, credential harvesting, and file exfiltration. For both individual developers and large organizations, the presence of Quasar RAT in a trusted environment can have catastrophic consequences. Ethereum developers, in particular, face the risk of exposing private keys and credentials linked to significant financial assets. On a larger scale, development systems compromised with Quasar RAT can pave the way for enterprise-wide breaches.
 
-![Quasar RAT remote desktop functionality](https://cdn.sanity.io/images/cgdhsj6q/production/9ef4fd4dd5a97f2e660aa7be4fc8a07f9c23b8f2-946x650.png)
+![Quasar RAT remote desktop functionality](/assets/img/posts/quasar-rat-disguised-as-an-npm-package/9ef4fd4dd5a97f2e660aa7be4fc8a07f9c23b8f2-946x650.png)
 _Quasar RAT remote desktop functionality in [action](https://github.com/quasar/Quasar/tree/master)_
 
 ## Threat Actor's Strategy
@@ -35,7 +35,7 @@ _Quasar RAT remote desktop functionality in [action](https://github.com/quasar/Q
 
 The threat actor used a variety of techniques to ensure their malware remained hidden and resilient. solidit-dev-416 wrapped their code in multiple layers of obfuscation, employing Base64 and XOR encoding, function wrapping, and minification to complicate analysis and evade detection. Furthermore, the malicious code conducted system resource checks, such as verifying available memory, to avoid execution in automated analysis sandboxes. The delivery mechanism was equally disguised: the initial npm package acted as a loader, retrieving and executing Quasar RAT from a remote server.
 
-![Threat actor's deceptive package description](https://cdn.sanity.io/images/cgdhsj6q/production/9704786045cd0aa7ad726e83f3190988ed121255-1433x821.png)
+![Threat actor's deceptive package description](/assets/img/posts/quasar-rat-disguised-as-an-npm-package/9704786045cd0aa7ad726e83f3190988ed121255-1433x821.png)
 _The threat actor's deceptive description of the malicious package claiming that it helps Ethereum developers detect vulnerabilities with AI_
 
 The following malicious [code](https://socket.dev/npm/package/ethereumvulncontracthandler/files/1.3.0/index.js) snippets, deobfuscated, defanged, and annotated with comments, offer insight into the threat actor's methods.

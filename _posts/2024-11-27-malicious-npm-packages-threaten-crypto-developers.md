@@ -7,7 +7,7 @@ tags: [npm, JavaScript, Typosquatting, Infostealer, Keylogger, T1195.002, T1036.
 canonical_url: https://socket.dev/blog/malicious-npm-packages-threaten-crypto-developers
 source: Socket
 image:
-  path: https://cdn.sanity.io/images/cgdhsj6q/production/f18bd305ba6a83c1b3b702cf557b8a20cf53a49a-1024x1024.webp
+  path: /assets/img/posts/malicious-npm-packages-threaten-crypto-developers/cover.jpg
   alt: "Typosquatting Cryptographic Libraries"
 description: "Socket researchers have discovered malicious npm packages targeting crypto developers, stealing credentials and wallet data using spyware delivered through typosquats of popular cryptographic libraries."
 ---
@@ -22,7 +22,7 @@ The open source ecosystem is built on trust, but this trust can be easily exploi
 
 The malicious packages were embedded with a legitimate-looking executable `Microsoft Store.exe` (SHA256: [d29370fa6fbf4f5a02c262f0be43bb083cfb61f46c75405d297493420ddf1508](https://www.virustotal.com/gui/file/d29370fa6fbf4f5a02c262f0be43bb083cfb61f46c75405d297493420ddf1508)), which contained a spyware-infostealer malware.
 
-![Socket's AI scanner flagging the malicious packages](https://cdn.sanity.io/images/cgdhsj6q/production/1f13a76ffa8fc4f444aed3cf742188cca2bfef88-1449x676.png)
+![Socket's AI scanner flagging the malicious packages](/assets/img/posts/malicious-npm-packages-threaten-crypto-developers/1f13a76ffa8fc4f444aed3cf742188cca2bfef88-1449x676.png)
 _Socket's AI scanner flagged all packages as malicious, providing the following context: The code contains a suspicious behavior by attempting to run an executable file `Microsoft Store.exe` on Windows platforms. This could potentially be malicious if the executable is not verified as safe. The rest of the code appears to be a standard cryptographic implementation._
 
 ## The malware in npm packages
@@ -53,7 +53,7 @@ if (platform === 'win32') {
 
 The malware exfiltrates sensitive files and user data through HTTP POST requests to a command and control (C2) server at 209.151.151[.]172. The C2 server alternates between two main paths for data exfiltration: `209.151.151[.]172/media/` and `209.151.151[.]172/timetrack/`. The C2's varied endpoint paths (i.e., `timetrack/add` and `/media/itemmedia`) indicate a modular system for handling data exfiltration, telemetry, tasking, and malware updates.
 
-![PCAP analysis for Microsoft Store.exe](https://cdn.sanity.io/images/cgdhsj6q/production/e74b8d87197861796cfa61f656aa69e8c660ac22-2048x815.png)
+![PCAP analysis for Microsoft Store.exe](/assets/img/posts/malicious-npm-packages-threaten-crypto-developers/e74b8d87197861796cfa61f656aa69e8c660ac22-2048x815.png)
 _PCAP analysis for the `Microsoft Store.exe` malicious network activity_
 
 The malware uses `curl` to send HTTP POST requests containing unique identifiers (`user_id`, `client_id`) and status updates (`timetrack_text`, `"App Started!!!"`). This likely functions as a heartbeat mechanism, confirming successful execution and identifying infected systems for further exploitation.
@@ -62,7 +62,7 @@ The malware uses `curl` to send HTTP POST requests containing unique identifiers
 
 To lend an appearance of legitimacy, the threat actor added links to authentic GitHub libraries in two of their malicious packages. However, their third package, `crypto-bignumber`, deviated by linking directly to a GitHub repository owned by their alias, "cryptoleadgen". This repository hosted a malicious executable, bigNumber.exe (SHA256: [5a733c20d5b00006428ca3c4f82505bebc2d2300c709f490d3dea4fab497effb](https://www.virustotal.com/gui/file/5a733c20d5b00006428ca3c4f82505bebc2d2300c709f490d3dea4fab497effb/detection)), which mirrored the spyware-infostealer functionality of Microsoft Store.exe but introduced a separate C2 infrastructure at 69.164.209[.]197.
 
-![Threat actor's GitHub repository](https://cdn.sanity.io/images/cgdhsj6q/production/89b46535258c6565d97b1475902ae559073c729a-1653x710.png)
+![Threat actor's GitHub repository](/assets/img/posts/malicious-npm-packages-threaten-crypto-developers/89b46535258c6565d97b1475902ae559073c729a-1653x710.png)
 _Threat actor's GitHub repository [https://github.com/cryptoleadgen/crypto-bignumber](https://github.com/cryptoleadgen/crypto-bignumber) hosting malicious code_
 
 The C2 endpoints use the following paths: hxxps://indiefire[.]io:3306/media/itemmedia, hxxps://indiefire[.]io:3306/media/itemmediacurl, and hxxps://indiefire[.]io:3306/timetrack/add. The presence of `/media/itemmedia` and `/timetrack/add` in both malware samples indicates their essential role in the malware's operations. This secondary C2 server demonstrates the threat actor's emphasis on redundancy, ensuring the malware can continue operating even if the primary infrastructure becomes inaccessible.

@@ -7,7 +7,7 @@ tags: [Typosquatting, NuGet, .NET, Homoglyphs, Russian Link, T1585, T1587.001, T
 canonical_url: https://socket.dev/blog/malicious-nuget-package-typosquats-popular-net-tracing-library
 source: Socket
 image:
-  path: https://cdn.sanity.io/images/cgdhsj6q/production/060d679ce11fe53982f15f69b68710ba9d08ff80-1024x1024.png?w=1000&q=95&fit=max&auto=format
+  path: /assets/img/posts/malicious-nuget-package-typosquats-popular-net-tracing-library/cover.png
   alt: Malicious NuGet Package Typosquats Popular .NET Tracing Library
 description: "Impostor NuGet package Tracer.Fody.NLog typosquats Tracer.Fody and its author, using homoglyph tricks, and exfiltrates Stratis wallet JSON/passwords to a Russian IP address."
 toc: true
@@ -21,7 +21,7 @@ Once a project references the malicious package, it wires itself into the generi
 
 `Tracer.Fody.NLog` was published in 2020 and has remained on the NuGet Gallery for more than five years, with roughly 2,000 downloads to date. This long dwell time, combined with its typosquatting and impersonation of the legitimate `Tracer.Fody` library and maintainer, increases the likelihood that it is already embedded in private Stratis related tools, developer workstations, or CI pipelines. At the time of writing, the malicious package remains live on the NuGet Gallery. We have reported it to the NuGet security team and requested the removal of the package and the suspension of the publisher's account.
 
-![Socket AI Scanner analysis comparing Tracer.Fody.NLog and Tracer.Fody](https://cdn.sanity.io/images/cgdhsj6q/production/05f405a06b398c1478702ea963e66027e779c616-1429x820.png?w=1600&q=95&fit=max&auto=format)
+![Socket AI Scanner analysis comparing Tracer.Fody.NLog and Tracer.Fody](/assets/img/posts/malicious-nuget-package-typosquats-popular-net-tracing-library/05f405a06b398c1478702ea963e66027e779c616-1429x820.png)
 _Socket AI Scanner's analysis flags the top package, [`Tracer.Fody.NLog`](https://socket.dev/nuget/package/tracer.fody.nlog), as known malware, while the bottom package, the legitimate [`Tracer.Fody`](https://socket.dev/nuget/package/tracer.fody), shows no malicious indicators and maintains strong supply chain security and other ratings._
 
 ## Typosquatting, Impersonation, and Homoglyphs
@@ -32,7 +32,7 @@ Logging frameworks and IL weaving tools such as `Fody` are deeply trusted in the
 
 `Tracer.Fody.NLog` takes advantage of that familiarity. Its name fits the existing `Tracer.*.Fody` pattern and its NuGet metadata mirrors the legitimate project, including a maintainer handle that differs from the real `csnemes` by only a single character (`csnemess`) and a package description that copies the original `Tracer.Fody` text verbatim. For someone quickly reviewing dependencies in a `.csproj` file or browsing the package page on NuGet, it looks like another officially-styled tracing extension rather than a suspicious package.
 
-![NuGet search results showing Tracer.Fody family including malicious package](https://cdn.sanity.io/images/cgdhsj6q/production/b5d3ee0d3d63a09b3feb66400498aa5ac8229742-1233x702.png?w=1600&q=95&fit=max&auto=format)
+![NuGet search results showing Tracer.Fody family including malicious package](/assets/img/posts/malicious-nuget-package-typosquats-popular-net-tracing-library/b5d3ee0d3d63a09b3feb66400498aa5ac8229742-1233x702.png)
 _NuGet search results for the `Tracer.Fody` family show three legitimate tracing adapters published by `csnemes` and, at the bottom, the malicious typosquatted package `Tracer.Fody.NLog` published under the look-alike `csnemess` account, which reuses the same description to masquerade as a normal logging integration._
 
 In the compiled `Tracer.Fody.dll` library, the threat actor adds another layer of disguise with homoglyphs. For example, the `AssemblyCompany` attribute is set to `Тrасer.Fоdy`, where several characters are Cyrillic lookalikes:
@@ -46,7 +46,7 @@ The helper name `Guаrd` uses the same trick by hiding a Cyrillic `а` (U+0430) 
 
 **Cautionary note:** AI-generated summaries in search results can unintentionally legitimize malicious software. When we searched for the malicious `Tracer.Fody.NLog` package, Google's AI Overview described it as a helpful NuGet adapter that integrates `Tracer.Fody` with `NLog` and improves logging performance. Do not take AI overviews at face value, and always verify the package name, maintainer, and code before adding a dependency.
 
-![Google AI Overview describing Tracer.Fody.NLog as legitimate](https://cdn.sanity.io/images/cgdhsj6q/production/1845b21697f0146b0e929ae24462e0a795c96b2b-1015x731.png?w=1600&q=95&fit=max&auto=format)
+![Google AI Overview describing Tracer.Fody.NLog as legitimate](/assets/img/posts/malicious-nuget-package-typosquats-popular-net-tracing-library/1845b21697f0146b0e929ae24462e0a795c96b2b-1015x731.png)
 _Google's AI Overview for `Tracer.Fody.NLog` describes the package as a standard `Tracer.Fody` / `NLog` integration that injects automatic method tracing and optimized logging, reinforcing the appearance of a legitimate logging adapter._
 
 ## Inside the Wallet Stealing Code
@@ -153,10 +153,10 @@ The `WalletPassword` property, retrieved via reflection from the object passed i
 
 The Stratis wallet stealer in `Tracer.Fody.NLog` is not the first time this infrastructure has targeted .NET developers. In December 2023, Stephen Cleary, maintainer of the `AsyncEx` libraries on NuGet (for example [`Nito.AsyncEx`](https://socket.dev/nuget/package/nito.asyncex/)), [warned](https://x.com/aSteveCleary/status/1730994352132911613) that a NuGet package named [`Cleary.AsyncExtensions`](https://socket.dev/nuget/package/cleary.asyncextensions) published under the `stevencleary` alias was not his.
 
-![Steve Cleary warning post about impersonating NuGet package](https://cdn.sanity.io/images/cgdhsj6q/production/258aad67ea6000bdd0b3937ff128b929ad797c3f-1478x708.png?w=1600&q=95&fit=max&auto=format)
+![Steve Cleary warning post about impersonating NuGet package](/assets/img/posts/malicious-nuget-package-typosquats-popular-net-tracing-library/258aad67ea6000bdd0b3937ff128b929ad797c3f-1478x708.png)
 _Steve Cleary [posts](https://x.com/aSteveCleary/status/1730994352132911613) about an impersonating NuGet package, [`Cleary.AsyncExtensions`](https://socket.dev/nuget/package/cleary.asyncextensions) published under `stevencleary`, which adds `NotNull` / `NotEmpty` argument validation helpers that capture parameters named `mnemonic` or `passphrase` and send them to `176[.]113[.]82[.]163:4444`, the same IP and port hardcoded in `Tracer.Fody.NLog` for Stratis wallet exfiltration._
 
-![Socket AI Scanner analysis of Cleary.AsyncExtensions](https://cdn.sanity.io/images/cgdhsj6q/production/b9e4a885753ecf1328cf687a0fb01606c6d02b6b-624x629.png?w=1600&q=95&fit=max&auto=format)
+![Socket AI Scanner analysis of Cleary.AsyncExtensions](/assets/img/posts/malicious-nuget-package-typosquats-popular-net-tracing-library/b9e4a885753ecf1328cf687a0fb01606c6d02b6b-624x629.png)
 _Socket AI Scanner's analysis of the malicious [`Cleary.AsyncExtensions`](https://socket.dev/nuget/package/cleary.asyncextensions) package shows a Stratis wallet `Guard` helper that siphons mnemonic and passphrase values from `NotNull` / `NotEmpty` checks into a background task, then quietly exfiltrates them to `176[.]113[.]82[.]163:4444` while suppressing exceptions and hiding behind homoglyph-based identifiers._
 
 The IP `176[.]113[.]82[.]163` remains reachable and routable. It belongs to AS 48347 (MTW-AS), with WHOIS records attributing it to MT Finance LLC in Moscow, Russia. Recent scan data identifies a Windows host exposing several remote access services. Certificate telemetry shows an RDP service presenting the hostname `WIN-FTDPCG4548K`, with observations continuing into December 2025, which indicates the system is online and in active use.

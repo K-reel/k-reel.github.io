@@ -8,7 +8,7 @@ author: socket_research_team
 canonical_url: https://socket.dev/blog/miasma-mini-shai-hulud-hits-leoplatform-npm-packages-go-ecosystem
 source: Socket
 image:
-  path: https://cdn.sanity.io/images/cgdhsj6q/production/c303a0cf9338a36fbaf0b3187ca5c5cb0d294fba-1672x941.png?w=1600&q=95&fit=max&auto=format
+  path: /assets/img/posts/miasma-mini-shai-hulud-hits-leoplatform-npm-packages-go-ecosystem/cover.png
   alt: "Miasma Mini Shai-Hulud Hits LeoPlatform npm Packages and GitHub Actions, Expands to the Go Ecosystem"
 description: "Mini Shai-Hulud expands into the Go ecosystem after hitting LeoPlatform npm packages and targeting GitHub Actions workflows."
 ---
@@ -23,7 +23,7 @@ The campaign continues the pattern seen across recent Mini Shai-Hulud, Miasma, a
 
 Socket has been tracking this broader Mini Shai-Hulud, Miasma, and Hades activity across prior campaigns, including earlier coverage "[Shai-Hulud Descends to Hades: Miasma Worm Campaign Spreads with New PyPI Wave](https://socket.dev/blog/shai-hulud-descends-to-hades-miasma-pypi-wave)" and "[Mini Shai-Hulud, Miasma, and Hades Worms Target Bioinformatics and MCP Developers via Malicious PyPI Wheels](https://socket.dev/blog/mini-shai-hulud-miasma-and-hades-worms-target-bioinformatics-and-mcp-developers-via-malicious)".
 
-![](https://cdn.sanity.io/images/cgdhsj6q/production/57012bf227474a29b9922afbaafc6c8390ddf177-2048x687.png?w=1600&q=95&fit=max&auto=format)
+![](/assets/img/posts/miasma-mini-shai-hulud-hits-leoplatform-npm-packages-go-ecosystem/57012bf227474a29b9922afbaafc6c8390ddf177-2048x687.png)
 _Socket AI Scanner’s analysis of `leo-aws@2.0.4`, one of the malicious packages identified in the current Miasma Mini Shai-Hulud wave, flags the compromised release as confirmed malware with multiple detections across the package contents._
 
 The Go security team acted quickly after we notified them, promptly reviewing the report and coordinating remediation. Socket notified Verana maintainers on GitHub to alert them to the compromise.
@@ -85,7 +85,7 @@ The high-level execution chain is:
 1. the main Miasma payload runs under Bun
 1. the malware steals secrets, stages exfiltration, and attempts propagation
 
-![](https://cdn.sanity.io/images/cgdhsj6q/production/e50a64399590361695407bfd4c5257a9cb3c9d70-1462x602.png?w=1600&q=95&fit=max&auto=format)
+![](/assets/img/posts/miasma-mini-shai-hulud-hits-leoplatform-npm-packages-go-ecosystem/e50a64399590361695407bfd4c5257a9cb3c9d70-1462x602.png)
 _Execution flow based on one malicious package from the latest Miasma Mini Shai-Hulud wave, showing the shared payload pattern: `binding.gyp` install-time execution, Bun-staged malware, developer and CI/CD secret theft, GitHub Actions abuse, IDE and AI-agent persistence, and encrypted GitHub API exfiltration._
 
 
@@ -124,7 +124,7 @@ The same broader tradecraft appears again: Bun runtime staging, GitHub token the
 
 One additional investigative lead is the project’s workflow hardening after the compromise. A merged fix changed a validation workflow away from `pull_request_target`, while the prior workflow combined `pull_request_target` with checkout of the pull request head SHA. That pattern is a known “pwn request” risk because it can execute untrusted pull request code in a privileged base-repository context.
 
-![](https://cdn.sanity.io/images/cgdhsj6q/production/be3a4af854af7dfcd6824e3f316e4e3a12197fe3-469x447.png?w=1600&q=95&fit=max&auto=format)
+![](/assets/img/posts/miasma-mini-shai-hulud-hits-leoplatform-npm-packages-go-ecosystem/be3a4af854af7dfcd6824e3f316e4e3a12197fe3-469x447.png)
 _Commit that fixes the “pwn request” vulnerability in `validate.yml` workflow from the codfish/semantic-release-action._
 
 Compromise of this action has a potential to cause additional cascading infections of the dependent GitHub repositories. Official GitHub numbers state that 1,442 repositories depend on this action, which should be a reason to monitor this campaign in the upcoming days.
@@ -149,7 +149,7 @@ The payload follows the same Miasma execution pattern observed in malicious npm 
 
 Unlike the npm packages, this sample does not rely on `binding.gyp`. The risk is source-repository execution: a developer who clones or opens the repository in a trusted IDE or AI coding assistant environment may trigger the payload through project configuration. This reinforces the larger campaign theme: Miasma is moving across package ecosystems by targeting developer workflows, not just package-manager install hooks.
 
-![](https://cdn.sanity.io/images/cgdhsj6q/production/5e419db398d876fcc6f1c2dc98ebc76a35fa8090-1230x1128.png?w=1600&q=95&fit=max&auto=format)
+![](/assets/img/posts/miasma-mini-shai-hulud-hits-leoplatform-npm-packages-go-ecosystem/5e419db398d876fcc6f1c2dc98ebc76a35fa8090-1230x1128.png)
 _Socket AI Scanner flags `github.com/verana-labs/verana-blockchain@v0.10.1-dev.20` as known malware, identifying `.claude/index.js` as a high-confidence decode-and-eval JavaScript loader staged through source-repository configuration and a VS Code folder-open execution path._
 
 

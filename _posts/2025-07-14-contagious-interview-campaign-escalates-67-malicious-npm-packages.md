@@ -7,7 +7,7 @@ tags: [Contagious Interview, XORIndex, HexEval, BeaverTail, InvisibleFerret, npm
 canonical_url: https://socket.dev/blog/contagious-interview-campaign-escalates-67-malicious-npm-packages
 source: Socket
 image:
-  path: https://cdn.sanity.io/images/cgdhsj6q/production/9338d37b53b8b0cd642a9cdcca19d95d542230e1-1024x1024.png
+  path: /assets/img/posts/contagious-interview-campaign-escalates-67-malicious-npm-packages/cover.png
   alt: "Contagious Interview Campaign Escalates With 67 Malicious npm Packages and New Malware Loader"
 description: "North Korean threat actors deploy 67 malicious npm packages using the newly discovered XORIndex malware loader."
 ---
@@ -24,7 +24,7 @@ The two campaigns now operate in parallel. XORIndex has accumulated over 9,000 d
 
 We expect the North Korean threat actors to reuse existing loaders like HexEval and XORIndex, while introducing new obfuscation techniques and loader variants. Their focus remains on infiltrating software supply chains and targeting developers, job seekers, and individuals they believe possess cryptocurrency or sensitive credentials. As our previous [reporting](https://socket.dev/blog/north-korean-contagious-interview-campaign-drops-35-new-malicious-npm-packages) shows, these well-resourced, financially-motivated, and state-backed threat actors do not hesitate to target smaller organizations and individuals.
 
-![Timeline of HexEval and XORIndex Loader campaigns](https://cdn.sanity.io/images/cgdhsj6q/production/229be48d621d13ed4efef3e3ffb41e542add2cf9-1802x1220.png)
+![Timeline of HexEval and XORIndex Loader campaigns](/assets/img/posts/contagious-interview-campaign-escalates-67-malicious-npm-packages/229be48d621d13ed4efef3e3ffb41e542add2cf9-1802x1220.png)
 _Timeline of HexEval and XORIndex Loader campaigns showing parallel waves of malicious npm package deployments by North Korean threat actors from April to July 2025. This latest wave includes 67 previously unreported packages: 39 new HexEval Loader and 28 XORIndex Loader packages. Earlier waves: 4 packages in [April 2025](https://socket.dev/blog/lazarus-expands-malicious-npm-campaign-11-new-packages-add-malware-loaders-and-bitbucket) and 35 in [June 2025](https://socket.dev/blog/north-korean-contagious-interview-campaign-drops-35-new-malicious-npm-packages) were detailed in our prior research._
 
 ## XORIndex Loader
@@ -303,10 +303,10 @@ The XORIndex Loader exhibits a deliberate and rapid evolution from proof-of-conc
 
 This progression reflects the North Korean Contagious Interview threat actors' ongoing investment in stealthier, more resilient software supply chain malware; moving from simple prototypes to modular loaders capable of full system compromise.
 
-![Socket AI Scanner analysis of cronek package](https://cdn.sanity.io/images/cgdhsj6q/production/b4266bda836634dd81f28885dd5b02df99682372-709x691.png)
+![Socket AI Scanner analysis of cronek package](/assets/img/posts/contagious-interview-campaign-escalates-67-malicious-npm-packages/b4266bda836634dd81f28885dd5b02df99682372-709x691.png)
 _Socket's AI scanner includes contextual analysis of the latest XORIndex Loader variant found in the malicious `cronek` package._
 
-![Obfuscated code in the cronek package](https://cdn.sanity.io/images/cgdhsj6q/production/c7ec5d82a12f6c6ad45dd91a19a8c338bc698a74-1563x521.png)
+![Obfuscated code in the cronek package](/assets/img/posts/contagious-interview-campaign-escalates-67-malicious-npm-packages/c7ec5d82a12f6c6ad45dd91a19a8c338bc698a74-1563x521.png)
 _Socket's view of the obfuscated code in the `cronek` package._
 
 ## Outlook and Recommendations

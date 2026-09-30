@@ -9,7 +9,7 @@ toc: true
 canonical_url: https://socket.dev/blog/131-spamware-extensions-targeting-whatsapp-flood-chrome-web-store
 source: Socket
 image:
-  path: https://cdn.sanity.io/images/cgdhsj6q/production/c394305b7a4adb7bd3e8f475e9b37e94f63c697d-1024x1024.png?w=1000&q=95&fit=max&auto=format
+  path: /assets/img/posts/131-spamware-extensions-targeting-whatsapp-flood-chrome-web-store/cover.png
   alt: 131 spamware Chrome extensions targeting WhatsApp artwork
 ---
 
@@ -19,18 +19,18 @@ The code injects directly into the WhatsApp Web page, running alongside WhatsApp
 
 All 131 extensions were live in the Chrome Web Store at the time of writing. We have filed takedown requests with the Chrome security team and requested suspension of the related publisher accounts for [policy](https://developer.chrome.com/docs/webstore/program-policies/policies#spam_and_abuse) violating spamware.
 
-![](https://cdn.sanity.io/images/cgdhsj6q/production/5c4b07e1fb1314f0c34e66c33bc1284029e9d8b9-620x564.png?w=1600&q=95&fit=max&auto=format)
+![](/assets/img/posts/131-spamware-extensions-targeting-whatsapp-flood-chrome-web-store/5c4b07e1fb1314f0c34e66c33bc1284029e9d8b9-620x564.png)
 _Socket AI Scanner flags the Chrome extension [mnbdaobmkdglnmiagimcniebbgebabek](https://socket.dev/chrome/package/mnbdaobmkdglnmiagimcniebbgebabek) (Organize-C) as malware due to spamware behavior: it injects code into the WhatsApp Web page to automate bulk messaging and scheduling, violates Chrome Web Store and WhatsApp policies._
 
 ## Gaming the Store
 
 Based on Chrome Web Store timestamps and our captures of the 131 unique listings (see IOCs), the operation has run for at least nine months. Rebrands and updates landed in regular waves throughout 2025, with new uploads and version bumps observed as recently as October 14, 2025.
 
-![](https://cdn.sanity.io/images/cgdhsj6q/production/83178b504c86f85bdf55a3f8e5e1f56ffc4708f4-1226x901.png?w=1600&q=95&fit=max&auto=format)
+![](/assets/img/posts/131-spamware-extensions-targeting-whatsapp-flood-chrome-web-store/83178b504c86f85bdf55a3f8e5e1f56ffc4708f4-1226x901.png)
 
-![](https://cdn.sanity.io/images/cgdhsj6q/production/316994ef1695f6f3cb0e3c0cf1a7105e5dac2d86-1226x904.png?w=1600&q=95&fit=max&auto=format)
+![](/assets/img/posts/131-spamware-extensions-targeting-whatsapp-flood-chrome-web-store/316994ef1695f6f3cb0e3c0cf1a7105e5dac2d86-1226x904.png)
 
-![](https://cdn.sanity.io/images/cgdhsj6q/production/fac14345d4fbf69ebf88f67e48c1426c43ee5d92-1227x905.png?w=1600&q=95&fit=max&auto=format)
+![](/assets/img/posts/131-spamware-extensions-targeting-whatsapp-flood-chrome-web-store/fac14345d4fbf69ebf88f67e48c1426c43ee5d92-1227x905.png)
 
 > *Chrome Web Store listings, top to bottom: [`YouSeller`](https://socket.dev/chrome/package/mkbjflhgpickfellipdmpcnhkmmdcojl) (10,000 users), [`performancemais`](https://socket.dev/chrome/package/mppgfleddoodfifpkjjjdbngnkcfcnde) (239 users), and [`Botflow`](https://socket.dev/chrome/package/ehdekncpobdjejklgpgnjgddjdnblmei) (38 users). Each shows the same WhatsApp Web automation interface, consistent with a spamware clone cluster that reuses design, imagery, descriptions, and codebase. Note: the "users" metric reflects active users, not total installs.*
 
@@ -42,12 +42,12 @@ It is akin to a franchise model: the operator and affiliated sellers publish doz
 
 For clarity, screenshots in this post include translations from Portuguese to English.
 
-![](https://cdn.sanity.io/images/cgdhsj6q/production/e18e19125ef914c138dca28bf40094d4caf14bdc-971x456.png?w=1600&q=95&fit=max&auto=format)
+![](/assets/img/posts/131-spamware-extensions-targeting-whatsapp-flood-chrome-web-store/e18e19125ef914c138dca28bf40094d4caf14bdc-971x456.png)
 _[ZapVende](https://socket.dev/chrome/package/oohihogmmfbinbkgaiglgeabloiehlkk), one of the extensions in this cluster, is marketed at zapvende[.]com, which asserts the extension is safe simply because it is listed in the Chrome Web Store._
 
 `DBX Tecnologia` (DBX Technology Group), the operator of the original extension that spawned 131 clones, markets a reseller program. `DBX Tecnologia` and `Grupo OPT`, which operates the `grupoopt.com[.]br` domain, are effectively two arms of the same business under the same founder, not unrelated companies. Both [describe](https://blog.optbot.com.br/conheca-o-grupo-opt/#:~:text=Atualmente%2C%20trabalhamos%20com%203%20solu%C3%A7%C3%B5es%2C,s%C3%A3o%20elas) their work as an ecosystem that builds WhatsApp-based solutions, among other products.
 
-![](https://cdn.sanity.io/images/cgdhsj6q/production/0a0b9a0cfedfa8ad6c1225803ea5fc87a7af213a-933x411.png?w=1600&q=95&fit=max&auto=format)
+![](/assets/img/posts/131-spamware-extensions-targeting-whatsapp-flood-chrome-web-store/0a0b9a0cfedfa8ad6c1225803ea5fc87a7af213a-933x411.png)
 _DBX Tecnologia reseller white-label program: invest R$12,000 (~USD $2,180) to rebrand and sell its WhatsApp Web extension under your own name, with promised 30 to 70 percent margins and R$30,000 to R$84,000 (~USD $5,450 to ~USD $15,270) in recurring revenue, illustrating the "franchise model" behind the 131 clone flood._
 
 Based on the `DBX Tecnologia` YouTube [pitch](https://youtu.be/rw4HWAb-LSM?list=TLGG_oDyN6rAb7UxNzEwMjAyNQ), a "white-label partnership" means that:
@@ -65,28 +65,28 @@ Practical caveats: if listed as a publisher, the partner carries policy and repu
 
 The pitch centers on aggressive outreach at scale on WhatsApp, with automation, templates, and scheduling that maximize reach. This reseller strategy multiplies distribution, and it steers customers toward conduct that violates Chrome Web Store rules on duplicate and spammy extensions and WhatsApp's requirement for recipient opt-in. The impact lands on ordinary users, who receive unsolicited promotional messages at volume, and the burden of defense shifts to recipients who must block numbers and report abuse after the fact.
 
-![](https://cdn.sanity.io/images/cgdhsj6q/production/b074b441f4f89018ddf88b23294a5169eb1ad5e8-1217x932.png?w=1600&q=95&fit=max&auto=format)
+![](/assets/img/posts/131-spamware-extensions-targeting-whatsapp-flood-chrome-web-store/b074b441f4f89018ddf88b23294a5169eb1ad5e8-1217x932.png)
 _Lobo Vendedor marketing page (lobovendedor[.]com[.]br) promotes a rebranded clone of the WhatsApp Web automation extension, resold to agencies and SMBs for bulk outreach. The site illustrates the reseller model driving this clone cluster and pushes mass messaging that conflicts with WhatsApp's opt-in rules._
 
 ## Chrome Web Store Policy in Context
 
 Google's Chrome Web Store Spam and Abuse [policy](https://developer.chrome.com/docs/webstore/program-policies/spam-and-abuse) bans developers and their affiliates from submitting multiple extensions that provide duplicate experiences. It also prohibits manipulating placement through ratings or installs, blocks extensions that send spam or unwanted messages, and forbids sending messages on a user's behalf without giving the user a chance to confirm the content and recipients. These rules map directly to our findings: the cluster consists of near identical copies spread across publisher accounts, is marketed for bulk unsolicited outreach, and automates message sending inside `web.whatsapp.com` without user confirmation.
 
-![](https://cdn.sanity.io/images/cgdhsj6q/production/349b506596bbbfeab1aaaa96a039b31d15501b80-2048x1178.png?w=1600&q=95&fit=max&auto=format)
+![](/assets/img/posts/131-spamware-extensions-targeting-whatsapp-flood-chrome-web-store/349b506596bbbfeab1aaaa96a039b31d15501b80-2048x1178.png)
 _Chrome Web Store Spam and Abuse [policy](https://developer.chrome.com/docs/webstore/program-policies/spam-and-abuse), which the clone cluster violates by publishing duplicate experiences and by enabling spam and automated messaging on a user's behalf._
 
 ## WhatsApp Business Policy in Context
 
 WhatsApp's Business Messaging [policy](https://business.whatsapp.com/policy) requires explicit opt-in before a business contacts a person, places the burden of proving that opt-in on the sender, and mandates fast honoring of block and opt-out requests. It also instructs businesses not to deceive, mislead, or spam and to comply with applicable laws. The extensions in this cluster are marketed for bulk outreach and ban evasion, not consent-driven conversations.
 
-![](https://cdn.sanity.io/images/cgdhsj6q/production/990357219dcd718f4652184158701f38cd788e0b-2048x806.png?w=1600&q=95&fit=max&auto=format)
+![](/assets/img/posts/131-spamware-extensions-targeting-whatsapp-flood-chrome-web-store/990357219dcd718f4652184158701f38cd788e0b-2048x806.png)
 _WhatsApp Business Messaging policy requires opt-in and forbids spam or surprise messaging._
 
 Contrary to WhatsApp's Business Messaging policy, the operators publish tutorials that teach circumvention rather than consent-based use. In a YouTube [video](https://youtu.be/eIkNI6oFAhU?si=5i4sGrYXQ1QNLqMr) by `DBX Tecnologia`, the author describes how to avoid bans by shaping traffic, for example tuning send intervals, pauses, and batch sizes, and by using templates that vary message text to reduce detection.
 
 The goal is to keep bulk campaigns running while evading anti-spam systems. This marketing aligns with what we verified in code: document-start injection into WhatsApp Web, use of `window.WPP.*` helpers for message dispatch, and scheduled send logic via a Manifest V3 service worker. Together, the video and extension UI corroborate our assessment that the product is built to automate bulk messaging and to tune sending patterns in ways that aim to avoid WhatsApp anti-spam enforcement.
 
-![](https://cdn.sanity.io/images/cgdhsj6q/production/7ee434a7e667e3d0cbe3b2b679d874ee00db8e97-1920x1080.png?w=1600&q=95&fit=max&auto=format)
+![](/assets/img/posts/131-spamware-extensions-targeting-whatsapp-flood-chrome-web-store/7ee434a7e667e3d0cbe3b2b679d874ee00db8e97-1920x1080.png)
 _In a YouTube [tutorial](https://youtu.be/eIkNI6oFAhU?si=5i4sGrYXQ1QNLqMr), the author demonstrates the extension's bulk-send screen, showing controls for send intervals, pauses, and batch size, and explicitly explains how to use it to bypass WhatsApp's anti-spam algorithms._
 
 ## Outlook and Recommendations

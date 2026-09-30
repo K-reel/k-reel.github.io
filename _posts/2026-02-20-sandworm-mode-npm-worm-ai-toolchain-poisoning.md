@@ -11,7 +11,7 @@ short_title: "SANDWORM_MODE: Shai-Hulud-Style npm Worm"
 author: socket_research_team
 source: Socket
 image:
-  path: https://cdn.sanity.io/images/cgdhsj6q/production/bdba7e9a185cb90fa70b22e7e711349a5d55f659-1024x1024.png?w=1600&q=95&fit=max&auto=format
+  path: /assets/img/posts/sandworm-mode-npm-worm-ai-toolchain-poisoning/cover.png
   alt: SANDWORM_MODE npm worm artwork
 ---
 
@@ -105,7 +105,7 @@ The sample uses a three-layer decode/decrypt chain to push meaningful logic into
 
 Additionally, Stage 1 writes decrypted Stage 2 to a transient `.node_<hex>.js` file under `/dev/shm` (when available) or the OS temp directory, `require()`s it, and deletes it — reducing on-disk artifacts.
 
-![Socket AI Scanner's analysis of the malicious suport-color package](https://cdn.sanity.io/images/cgdhsj6q/production/fd107c8c2e071a63dec10b8bcf3197faf900dd60-1295x483.png?w=1600&q=95&fit=max&auto=format)
+![Socket AI Scanner's analysis of the malicious suport-color package](/assets/img/posts/sandworm-mode-npm-worm-ai-toolchain-poisoning/fd107c8c2e071a63dec10b8bcf3197faf900dd60-1295x483.png)
 *Socket AI Scanner's analysis of the malicious `suport-color` package highlights an obfuscated import-time loader in `lib/color-support-engine.min.js`, where a large embedded base64 blob is decompressed with `zlib.inflateSync()` and executed via `eval()`, indicating a staged payload designed to hide follow-on behavior behind minified, runtime-decoded code.*
 
 We have observed a few different loader techniques in the worm across the package set, all converging on the same three-layer execution chain. In the `suport-color` variant, the loader is an inline IIFE: a ~167 KB base64 blob is zlib-inflated, XOR-decrypted with a static 32-byte key, and executed via indirect `eval()` (`(0,eval)(_p)`). The `scan-store` variant uses a less common approach that is better suited to evading static analysis and file-based detections. The payload is split across 45 base64 chunks stored as properties of a config-style object (`_cfg_000` through `_cfg_044`). At runtime, the chunks are sorted, concatenated, base64-decoded, and zlib-inflated, then executed entirely in memory via Node's internal `Module._compile()` API:
@@ -274,13 +274,13 @@ The `DeadSwitch` module evaluates whether propagation and exfiltration succeeded
 // Spawned detached — fire and forget
 ```
 
-![ ](https://cdn.sanity.io/images/cgdhsj6q/production/48f468bbfbd0541ab245137538a582d189a16152-1120x783.png?w=1600&q=95&fit=max&auto=format)
+![ ](/assets/img/posts/sandworm-mode-npm-worm-ai-toolchain-poisoning/48f468bbfbd0541ab245137538a582d189a16152-1120x783.png)
 
 ## Public GitHub Action: ci-quality/code-quality-check
 
 In parallel with the npm packages, Socket identified a public GitHub repository, `ci-quality/code-quality-check`, published under the same operator identity, created on February 17, 2026. The repository is presented as a lightweight "code quality and security scanning" GitHub Action for Node.js projects. However, its bundled JavaScript entrypoint (`dist/index.js`, an 809-line build artifact) implements CI secret harvesting, multi-channel exfiltration (HTTPS with DNS fallback), and automated GitHub-based propagation using the workflow's available tokens.
 
-![ ](https://cdn.sanity.io/images/cgdhsj6q/production/e26693cc48d10d8b687546befc38be1595cbdf78-783x680.png?w=1600&q=95&fit=max&auto=format)
+![ ](/assets/img/posts/sandworm-mode-npm-worm-ai-toolchain-poisoning/e26693cc48d10d8b687546befc38be1595cbdf78-783x680.png)
 
 The Action presents itself as a routine "Code Quality Check," writes a clean results table into the GitHub Actions job summary, and reports `issues-found=0`:
 
@@ -311,7 +311,7 @@ npm install → worm → injects workflow → CI runs Action → harvests secret
 injects carrier dependency → npm install → worm → ...
 ```
 
-![ ](https://cdn.sanity.io/images/cgdhsj6q/production/e641ad452e7d19d4d49b7073fc085a607cea9c50-726x695.png?w=1600&q=95&fit=max&auto=format)
+![ ](/assets/img/posts/sandworm-mode-npm-worm-ai-toolchain-poisoning/e641ad452e7d19d4d49b7073fc085a607cea9c50-726x695.png)
 
 The Action's `dist/propagate-core.js` is the unminified, Japanese-commented source of the npm payload's Stage 2 webpack module 217. A side-by-side comparison confirms identical logic across every exported function and constant: the same 20-entry `MONO_DIRS` array for monorepo traversal, the same 7 `COMMIT_MESSAGES`, the same 4 `PR_TITLES`, the same 5 `VERSION_SPECS`, and identical implementations of `scorePackages()`, `patchNpmLockfile()`, `patchYarnLockfile()`, `patchPnpmLockfile()`, `findPackageJsons()`, and `mergePr()`. The most telling comment describes the package scoring algorithm: *"パッケージを乗っ取りスコアでソート — スコア = DL数 × min(放置年数, 5)"* ("Sort packages by takeover score — score = downloads × min(years abandoned, 5)"). This is the same formula found in the npm payload's `scorePackages()` function.
 

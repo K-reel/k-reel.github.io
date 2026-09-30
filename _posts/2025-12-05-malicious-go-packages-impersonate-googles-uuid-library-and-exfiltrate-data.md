@@ -9,7 +9,7 @@ toc: true
 canonical_url: https://socket.dev/blog/malicious-go-packages-impersonate-googles-uuid-library-and-exfiltrate-data
 source: Socket
 image:
-  path: https://cdn.sanity.io/images/cgdhsj6q/production/d9207a9fb6698a84ccf0c9820058d67324f380e4-1024x1024.png?w=1600&q=95&fit=max&auto=format
+  path: /assets/img/posts/malicious-go-packages-impersonate-googles-uuid-library-and-exfiltrate-data/cover.png
   alt: Malicious Go Packages Impersonate Google's UUID Library and Exfiltrate Data
 ---
 
@@ -19,7 +19,7 @@ The threat actor behind the GitHub alias `bpoorman` imitates the long-standing `
 
 At the time of writing, the malicious `github[.]com/bpoorman/uuid` package is still listed on the Go package discovery site `pkg.go.dev` and is accessible via the public Go module mirror at `proxy.golang.org`. The malicious `github[.]com/bpoorman/uid` package is no longer listed on `pkg.go.dev` but remains accessible from the public module mirror, where it has also been cached since 2021. We have reported both packages to the Go security team and requested their removal, as well as suspension of the publisher's GitHub account.
 
-![Socket AI Scanner analysis of the malicious bpoorman/uuid package](https://cdn.sanity.io/images/cgdhsj6q/production/590b81d1886113450043d4faeaf5a951f2ffabb7-622x604.png?w=1600&q=95&fit=max&auto=format)
+![Socket AI Scanner analysis of the malicious bpoorman/uuid package](/assets/img/posts/malicious-go-packages-impersonate-googles-uuid-library-and-exfiltrate-data/590b81d1886113450043d4faeaf5a951f2ffabb7-622x604.png)
 _Socket AI Scanner's analysis of the malicious `github[.]com/bpoorman/uuid` package shows that a hidden `Valid` function behaves as a backdoor, aggregating caller-supplied data, encrypting it, and sending the resulting payload to hxxps://dpaste[.]com/api/v2/ over HTTPS using a hardcoded bearer token for covert data exfiltration._
 
 ## UUID Utilities as the Wiring of Modern Go
@@ -30,10 +30,10 @@ The malicious package `github[.]com/bpoorman/uuid` typosquats the maintainer nam
 
 In this case, the malicious Go package closely imitates the real libraries: it looks legitimate on a quick scan of the README and API and appears to preserve expected UUID behavior, so most developers would not notice anything unusual. The only visible addition is a helper function named `Valid`, which acts as an exfiltration primitive that encrypts its arguments and sends them to `dpaste.com` using a hardcoded bearer token.
 
-![pkg.go.dev page for google/uuid](https://cdn.sanity.io/images/cgdhsj6q/production/f0e7fa6d1b3a7aca3e4268a0b051e00304beab89-1696x754.png?w=1600&q=95&fit=max&auto=format)
+![pkg.go.dev page for google/uuid](/assets/img/posts/malicious-go-packages-impersonate-googles-uuid-library-and-exfiltrate-data/f0e7fa6d1b3a7aca3e4268a0b051e00304beab89-1696x754.png)
 _`pkg.go.dev` page for the legitimate `github.com/google/uuid` Go package, a widely-used UUID library imported by over 100,000 Go packages that generates and inspects UUIDs based on RFC 4122 and DCE 1.1._
 
-![pkg.go.dev page for bpoorman/uuid](https://cdn.sanity.io/images/cgdhsj6q/production/fa3953d01ebd69556b6cabcf0ad1209d40667ee3-1692x756.png?w=1600&q=95&fit=max&auto=format)
+![pkg.go.dev page for bpoorman/uuid](/assets/img/posts/malicious-go-packages-impersonate-googles-uuid-library-and-exfiltrate-data/fa3953d01ebd69556b6cabcf0ad1209d40667ee3-1692x756.png)
 _`pkg.go.dev` page for the malicious `github[.]com/bpoorman/uuid` Go package, a typosquat of the legitimate UUID libraries that reuses the Google style README and matches the expected UUID API so it behaves correctly for normal operations while quietly adding a hidden `Valid` function that exfiltrates supplied data._
 
 ## Imported by: 0 and What it Means
@@ -121,12 +121,12 @@ We traced the malicious Go package to a small, low-profile GitHub account at `gi
 
 Historically, this repository backed a separate malicious Go package, `github[.]com/bpoorman/uid`. Although `pkg.go.dev` no longer exposes documentation for `github[.]com/bpoorman/uid`, the Go module mirror at `proxy.golang.org` still serves the package at `v0.0.0-20210528062104-e068190dd06b`. In other words, this malicious package remains accessible with default Go module mirror settings, even after its `pkg.go.dev` page was removed. The `uid` and `uuid` packages share the same exfiltration helper code and `dpaste`-based data theft behavior.
 
-![bpoorman/uid repository exfiltration code](https://cdn.sanity.io/images/cgdhsj6q/production/2de33f729d751f278ac28f11dd2499867c8e0d74-1584x897.png?w=1600&q=95&fit=max&auto=format)
+![bpoorman/uid repository exfiltration code](/assets/img/posts/malicious-go-packages-impersonate-googles-uuid-library-and-exfiltrate-data/2de33f729d751f278ac28f11dd2499867c8e0d74-1584x897.png)
 _Excerpt from the threat actor's `github[.]com/bpoorman/uid` repository showing the `uid.go` exfiltration code that issues an HTTP POST to hxxps://dpaste[.]com/api/v2/ and sets a hardcoded header `Authorization: Bearer 5bd4e8cb8165d4d2`._
 
 For exfiltration, the threat actor chose `dpaste`, a legitimate paste service with a documented API that supports bearer tokens and programmatic paste creation. Using a public paste site as a collection point offers several advantages: it blends malicious traffic with normal developer usage, removes the need to register and maintain threat actor-controlled infrastructure, and shifts storage to a third-party service that enterprise defenders may not monitor closely.
 
-![dpaste.com create interface](https://cdn.sanity.io/images/cgdhsj6q/production/f5c619f38fa4f11fb88ee7c540f88a0994b08a3c-912x670.png?w=1600&q=95&fit=max&auto=format)
+![dpaste.com create interface](/assets/img/posts/malicious-go-packages-impersonate-googles-uuid-library-and-exfiltrate-data/f5c619f38fa4f11fb88ee7c540f88a0994b08a3c-912x670.png)
 _"Create a new item" `dpaste.com` interface, the same paste service whose API the malicious `github[.]com/bpoorman/uuid` and `github[.]com/bpoorman/uid` packages abuse to upload encrypted exfiltrated data using a hardcoded bearer token._
 
 ## Outlook and Recommendations

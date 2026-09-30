@@ -7,7 +7,7 @@ tags: [NuGet, .NET, T1195.002, T1204.005, T1036.005, T1552.001, T1005, T1041, T1
 canonical_url: https://socket.dev/blog/malicious-nuget-package-impersonates-sicoob-sdk
 source: Socket
 image:
-  path: https://cdn.sanity.io/images/cgdhsj6q/production/23f6d30639c8e627a28e4eaa375d2027a298d847-1672x941.png?w=1600&q=95&fit=max&auto=format
+  path: /assets/img/posts/malicious-nuget-package-impersonates-sicoob-sdk/cover.png
   alt: "Malicious NuGet Package Impersonates Sicoob SDK to Exfiltrate Banking Certificates and Passwords"
 description: "A malicious NuGet package impersonating Sicoob exfiltrated client IDs, PFX passwords, and banking certificates through Sentry telemetry."
 ---
@@ -28,7 +28,7 @@ We reported the malicious `Sicoob.Sdk` package to the Sicoob Security Team, the 
 
 The other 11 packages published by the `sicoob` NuGet owner appear to be generated API client modules and did not independently contain the same Sentry-based PFX exfiltration logic. However, they remain untrusted by association because the same malicious publishing identity distributed them, and the confirmed-malicious `Sicoob.Sdk` wrapper package pulled them in as dependencies.
 
-![Socket AI Scanner flags Sicoob.Sdk as malware](https://cdn.sanity.io/images/cgdhsj6q/production/f1157f7992366c641d38b133ef202564154d1b2e-1236x1296.png?w=1600&q=95&fit=max&auto=format)
+![Socket AI Scanner flags Sicoob.Sdk as malware](/assets/img/posts/malicious-nuget-package-impersonates-sicoob-sdk/f1157f7992366c641d38b133ef202564154d1b2e-1236x1296.png)
 _Socket AI Scanner flagged `sicoob.sdk` versions 2.0.0 through 2.0.4 as known malware after identifying credential and certificate exfiltration in `lib/net8.0/Sicoob.Sdk.dll`. The detection shows that malicious builds abused Sentry telemetry to transmit banking authentication material, including the supplied client ID, plaintext PFX password, full base64-encoded PFX certificate archive contents, and raw boleto responses, which are Brazilian payment slip or invoice records that may expose transaction details, payment status, amounts, due dates, and payer or payee data._
 
 ## SDK as the Secret Thief
@@ -39,7 +39,7 @@ The risk in `Sicoob.Sdk` comes from its position in the authentication flow. The
 
 The package page described `Sicoob.Sdk` as an official C# SDK for Sicoob financial and non-financial APIs. It stated that the SDK manages authentication and mTLS certificates natively in .NET, and its usage example instructed developers to instantiate `SicoobClient` with a client ID, a `.pfx` certificate, and the PFX password. That workflow is expected for a banking SDK that uses mutual TLS. What is not expected is for the SDK to silently read the certificate file, encode its contents, and send the certificate data and password to a third-party telemetry service.
 
-![NuGet listing for Sicoob.Sdk](https://cdn.sanity.io/images/cgdhsj6q/production/24109572df8d90d8491e1d28b6e9a023217a1154-1200x924.png?w=1600&q=95&fit=max&auto=format)
+![NuGet listing for Sicoob.Sdk](/assets/img/posts/malicious-nuget-package-impersonates-sicoob-sdk/24109572df8d90d8491e1d28b6e9a023217a1154-1200x924.png)
 _NuGet listing for `Sicoob.Sdk` captured during the investigation showed 484 total downloads across six versions, including malicious releases `2.0.0` through `2.0.4` published under the `sicoob` owner account. As of publication, NuGet has blocked the package following our abuse report, and we thank the NuGet Security Team for their prompt response._
 
 ## Technical Analysis
@@ -97,7 +97,7 @@ A PFX file commonly contains a client certificate and private key, and the PFX p
 
 A legitimate SDK could report that a certificate loaded successfully or log sanitized certificate metadata, such as a thumbprint, expiration date, subject, or issuer. It should not transmit the certificate archive or the password needed to use it.
 
-![Sicoob services overview](https://cdn.sanity.io/images/cgdhsj6q/production/c5cf9221cf5d88341ca98da3127ee8fb5d36d555-2048x802.png?w=1600&q=95&fit=max&auto=format)
+![Sicoob services overview](/assets/img/posts/malicious-nuget-package-impersonates-sicoob-sdk/c5cf9221cf5d88341ca98da3127ee8fb5d36d555-2048x802.png)
 _Sicoob's website highlights consumer, business, credit, payment, and digital banking services across Brazil. The malicious `Sicoob.Sdk` package abused this trusted financial-services context by presenting itself as an official SDK for Sicoob API integrations._
 
 ## Sicoob Impersonation and Source-to-Package Mismatch
@@ -106,14 +106,14 @@ The malicious behavior in `Sicoob.Sdk` is not an isolated implementation issue. 
 
 The impersonation also extended into developer discovery paths: during the investigation, Google's AI search experience surfaced `Sicoob.Sdk` as the NuGet package for .NET-based Sicoob API integration, increasing the likelihood that developers could land on the malicious package through routine search.
 
-![Google AI summary surfacing Sicoob.Sdk](https://cdn.sanity.io/images/cgdhsj6q/production/1dbfbf1fa7f02354afa5910b8195c2ef379be086-780x307.png?w=1600&q=95&fit=max&auto=format)
+![Google AI summary surfacing Sicoob.Sdk](/assets/img/posts/malicious-nuget-package-impersonates-sicoob-sdk/1dbfbf1fa7f02354afa5910b8195c2ef379be086-780x307.png)
 _Search amplified the impersonation: Google's AI summary presented `Sicoob.Sdk` as the .NET path for Sicoob API integration, making a malicious NuGet package look like an ordinary developer dependency._
 
 The unified `Sicoob.Sdk` wrapper package linked to the GitHub organization `Sicoob-Cooperativa` (`https://github[.]com/Sicoob-Cooperativa`), whose public repository also claims "SDK Oficial" status and instructs developers to instantiate `SicoobClient` with a client ID, `.pfx` certificate path, and PFX password.
 
 We assess with high confidence that `github[.]com/Sicoob-Cooperativa` should not be treated as an official Sicoob source. The organization is not GitHub-verified, was created on May 4, 2026, has zero followers, and exposes only a self-declared link to the Sicoob developer portal. Its apparent associated contributor account, `joaobcdev` (`https://github[.]com/joaobcdev`), was created roughly two minutes earlier on May 4, 2026, has no public employer, bio, location, verified domain, or followers, and has an adjacent GitHub numeric ID. The organization's public members endpoint returns an empty list, meaning GitHub does not publicly show any Sicoob-affiliated maintainer behind the organization.
 
-![Sicoob-Cooperativa GitHub repository](https://cdn.sanity.io/images/cgdhsj6q/production/0676657e563867af0532553efb1a1ff3f077a7a1-2048x712.png?w=1600&q=95&fit=max&auto=format)
+![Sicoob-Cooperativa GitHub repository](/assets/img/posts/malicious-nuget-package-impersonates-sicoob-sdk/0676657e563867af0532553efb1a1ff3f077a7a1-2048x712.png)
 _The suspicious C# SDK repository presents itself as an official Sicoob integration library, but its public GitHub signals show no established trust: zero stars, forks, or watchers, no releases or tags, compressed recent activity, and commits attributed to a newly observed account._
 
 That identity posture contrasts sharply with the older public `github.com/Sicoob` account, which was created in 2017, identifies itself as "Confederação Nacional das Cooperativas do Sicoob", lists Brasília-DF, and links to `www.sicoob.com.br`. We did not find a Sicoob-controlled reverse reference confirming that `Sicoob-Cooperativa`, the NuGet owner `sicoob`, or the published NuGet packages are authorized official Sicoob SDKs.

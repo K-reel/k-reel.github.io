@@ -7,7 +7,7 @@ tags: [VS Code, Open VSX, Developer Compromise, GlassWorm, Russian Link, Extensi
 canonical_url: https://socket.dev/blog/glassworm-loader-hits-open-vsx-via-suspected-developer-account-compromise
 source: Socket
 image:
-  path: https://cdn.sanity.io/images/cgdhsj6q/production/7425d0fe3788ee2c9a20b402de736d326c0da724-1024x1024.png?w=1600&q=95&fit=max&auto=format
+  path: /assets/img/posts/glassworm-loader-hits-open-vsx-via-suspected-developer-account-compromise/cover.png
   alt: GlassWorm Open VSX loader artwork
 description: "Threat actors compromised four oorzc Open VSX extensions with more than 22,000 downloads, pushing malicious versions that install a staged loader, evade Russian-locale systems, pull C2 from Solana memos, and steal macOS credentials and wallets."
 ---
@@ -23,7 +23,7 @@ The four impacted extensions are:
 3. vscode mindmap ([`oorzc.mind-map`](https://socket.dev/openvsx/package/oorzc.mind-map/overview/1.0.61) — v1.0.61)
 4. scss to css ([`oorzc.scss-to-css-compile`](https://socket.dev/openvsx/package/oorzc.scss-to-css-compile/overview/1.3.4) — v1.3.4)
 
-![Screenshot of Open VSX Registry showing the oorzc namespace with four published extensions.](https://cdn.sanity.io/images/cgdhsj6q/production/825ddc03ed108cb065daeb925e724df4b227d692-1356x539.png?w=1600&q=95&fit=max&auto=format)
+![Screenshot of Open VSX Registry showing the oorzc namespace with four published extensions.](/assets/img/posts/glassworm-loader-hits-open-vsx-via-suspected-developer-account-compromise/825ddc03ed108cb065daeb925e724df4b227d692-1356x539.png)
 _Screenshot of Open VSX Registry showing the `oorzc` namespace with four published extensions: `FTP/SFTP/SSH Sync Tool` (17K downloads), `I18n Tools` (3.6K), `vscode mindmap` (3.2K), and `scss to css` (1.3K). Open VSX rounds the download counts on the UI (the "K" figures), so the totals can look higher in screenshots. When we sum the actual download numbers, the combined total is over 22K._
 
 We reached out to the `oorzc` maintainer to flag that recent Open VSX releases of these extensions were compromised and set to distribute a GlassWorm loader, consistent with a developer publishing-credential compromise, such as a leaked publishing token or other unauthorized access to the release path.
@@ -38,7 +38,7 @@ This incident also differs materially from GlassWorm activity previously documen
 
 By contrast, these four extensions were published under an established publisher account with a multi-extension history and meaningful adoption signals across ecosystems. The same publisher also maintains Visual Studio Marketplace listings with substantial install counts (as displayed on the listings at the time of review): `vscode mindmap` (7,696 installs), `scss to css` (3,810 installs), `FTP/SFTP/SSH Sync Tool` (4,948 installs), and `I18n Tools` (1,570 installs). This observation is provided to illustrate the publisher's apparent legitimacy and reach, not to suggest the Visual Studio Marketplace listings were compromised. Our findings in this report concern the Open VSX extensions.
 
-![Publisher profile for oorzc on Visual Studio Marketplace listing four extensions.](https://cdn.sanity.io/images/cgdhsj6q/production/04adda57955f3bc4229931f773d23162fad25cd3-780x543.png?w=1600&q=95&fit=max&auto=format)
+![Publisher profile for oorzc on Visual Studio Marketplace listing four extensions.](/assets/img/posts/glassworm-loader-hits-open-vsx-via-suspected-developer-account-compromise/04adda57955f3bc4229931f773d23162fad25cd3-780x543.png)
 _Publisher profile for `oorzc` on Visual Studio Marketplace (Visual Studio Code) listing four extensions: `vscode mindmap`, `FTP/SFTP/SSH Sync Tool`, `scss to css`, and `I18n Tools`._
 
 Following our January 30, 2026 report, the Eclipse Foundation / Open VSX Registry security team reviewed the affected extensions, concluded the activity was consistent with leaked tokens or other unauthorized publishing access, and deactivated the publisher's two Open VSX tokens. They removed the malicious releases and, because multiple recent `oorzc.ssh-tools` versions scanned as malware and many versions were published, they removed all `oorzc.ssh-tools` versions and added it to the Open VSX malware list, while leaving earlier clean versions available for the other three extensions. Based on our prior reporting of 13 earlier malicious Open VSX extensions associated with the recent GlassWorm cluster, we have consistently seen the Open VSX security team respond quickly and take decisive action to protect the community, and we appreciate their rapid engagement and clear coordination; security is a team sport.
@@ -51,7 +51,7 @@ The name is also increasingly misleading. The "glass" aspect originally pointed 
 
 On January 30, 2026, this escalation became clear. The threat actor published poisoned updates through an established publisher identity, and the Open VSX security team assessed the incident as consistent with leaked tokens or other unauthorized publishing access.
 
-![Socket AI Scanner flags oorzc.ssh-tools@0.5.1 as malware.](https://cdn.sanity.io/images/cgdhsj6q/production/d9c14c5d41c6816f96d5b6269436df566fbd1d96-624x673.png?w=1600&q=95&fit=max&auto=format)
+![Socket AI Scanner flags oorzc.ssh-tools@0.5.1 as malware.](/assets/img/posts/glassworm-loader-hits-open-vsx-via-suspected-developer-account-compromise/d9c14c5d41c6816f96d5b6269436df566fbd1d96-624x673.png)
 _Socket AI Scanner flags `oorzc.ssh-tools@0.5.1` as malware, describing a staged loader that decrypts and runs an embedded blob at activation time (hardcoded AES material and `eval()`), suppresses execution on Russian-language or Russia-adjacent systems, uses Solana transaction memos as a dead drop for next-stage configuration, and then fetches and executes a follow-on payload in memory._
 
 ## Staged Execution Chain

@@ -9,7 +9,7 @@ toc: true
 canonical_url: https://socket.dev/blog/malicious-nuget-packages-typosquat-nethereum-to-exfiltrate-wallet-keys
 source: Socket
 image:
-  path: https://cdn.sanity.io/images/cgdhsj6q/production/1a522c37e553b5718b3c0f8303376eaa975d783c-1024x1024.png?w=1000&q=95&fit=max&auto=format
+  path: /assets/img/posts/malicious-nuget-packages-typosquat-nethereum-to-exfiltrate-wallet-keys/cover.png
   alt: Malicious NuGet packages typosquatting Nethereum artwork
 ---
 
@@ -21,7 +21,7 @@ Socket's Threat Research Team identified a live homoglyph typosquat on NuGet tha
 
 During the investigation we linked this sample to an earlier typosquat, [`NethereumNet`](https://socket.dev/nuget/package/nethereumnet/overview/5.3.3), that used the same exfiltration codebase and had already been taken down by NuGet. Both packages were published by the same threat actor using two NuGet aliases, `nethereumgroup` and `NethereumCsharp`.
 
-![](https://cdn.sanity.io/images/cgdhsj6q/production/634b6336ece06a2aa32e523c18a3fdbf6bf52c34-621x719.png?w=1600&q=95&fit=max&auto=format)
+![](/assets/img/posts/malicious-nuget-packages-typosquat-nethereum-to-exfiltrate-wallet-keys/634b6336ece06a2aa32e523c18a3fdbf6bf52c34-621x719.png)
 
 > *Socket AI Scanner's analysis of the malicious [`NethereumNet`](https://socket.dev/nuget/package/nethereumnet/overview/5.3.3) package highlights an XOR-decoded runtime C2, which sends a form field `message` via HTTPS POST and exfiltrates private keys, mnemonics, and other key material. The report notes `Shuffle` is invoked across key constructors, wallet and account initialization, and signing helpers, indicating a supply chain backdoor.*
 
@@ -31,14 +31,14 @@ During the investigation we linked this sample to an earlier typosquat, [`Nether
 
 Homoglyph abuse varies across registries. NuGet's identifier rules prohibit spaces and unsafe URL characters but do not restrict names to ASCII, which leaves room for Unicode lookalikes. In 2024, Karlo Zanki of ReversingLabs [documented](https://www.reversinglabs.com/blog/malicious-nuget-campaign-uses-homoglyphs-and-il-weaving-to-fool-devs) threat actors abusing homoglyphs on NuGet to impersonate trusted packages. By contrast, most other registries constrain identifiers to ASCII: npm requires lowercase, URL-safe names; PyPI enforces PEP 503 normalization to [`a–z0–9_.-`]; Maven Central limits artifactId to lowercase letters, digits, and hyphens; Crates allows only ASCII in crate names; Go Module paths keep the leading element to lowercase ASCII letters, digits, dots, and dashes; RubyGems accepts letters, numbers, dashes, underscores, and dots.
 
-![](https://cdn.sanity.io/images/cgdhsj6q/production/51ca52be4e3454e777a4fdb990b9a748e6a0d4f4-1172x934.png?w=1600&q=95&fit=max&auto=format)
+![](/assets/img/posts/malicious-nuget-packages-typosquat-nethereum-to-exfiltrate-wallet-keys/51ca52be4e3454e777a4fdb990b9a748e6a0d4f4-1172x934.png)
 _Now removed, the NuGet page for Netherеum.All uses a Cyrillic "e" (U+0435) to impersonate Nethereum, a homograph typosquat that looked identical in the title and in the copyable install commands._
 
 Note the package's download counter, which exploded within days of publication, a pattern that is not credible for a new library with no downstream dependents. This strongly indicates automated download inflation.
 
 A threat actor can publish many versions, then script downloads of each `.nupkg` through the v3 flat-container or loop `nuget.exe install` and `dotnet restore` with no-cache options from cloud hosts. Rotating IPs and user agents and parallelizing requests boosts volume while avoiding client caches. Not every request will bypass CDN caching, but pulling many versions at least once inflates the aggregate total. The result is a package that appears "popular", which boosts placement for searches sorted by relevance and lends false sense of proof when developers glance at the numbers.
 
-![](https://cdn.sanity.io/images/cgdhsj6q/production/1f62976862efbe76a2730106b6ff62a39a618783-1159x623.png?w=1600&q=95&fit=max&auto=format)
+![](/assets/img/posts/malicious-nuget-packages-typosquat-nethereum-to-exfiltrate-wallet-keys/1f62976862efbe76a2730106b6ff62a39a618783-1159x623.png)
 _NuGet search results show the malicious `Netherеum.All` with 11.6 million total downloads, just days after publication, a hallmark of scripted download inflation._
 
 ## Dissecting the Payload

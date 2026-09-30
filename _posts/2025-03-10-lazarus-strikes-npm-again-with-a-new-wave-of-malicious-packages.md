@@ -6,7 +6,7 @@ tags: [Contagious Interview, npm, JavaScript, BeaverTail, InvisibleFerret, Typos
 canonical_url: https://socket.dev/blog/lazarus-strikes-npm-again-with-a-new-wave-of-malicious-packages
 source: Socket
 image:
-  path: https://cdn.sanity.io/images/cgdhsj6q/production/13e5bd24361b0a34101062e617aab7cd1fdc2384-1024x1024.webp
+  path: /assets/img/posts/lazarus-strikes-npm-again-with-a-new-wave-of-malicious-packages/cover.jpg
   alt: "Lazarus Strikes npm Again with New Wave of Malicious Packages"
 description: "The Socket Research Team has discovered six new malicious npm packages linked to North Korea's Lazarus Group, designed to steal credentials and deploy backdoors."
 ---
@@ -40,22 +40,22 @@ The following is a detailed breakdown of the malicious packages, including their
 1. [`react-event-dependency`](https://socket.dev/npm/package/react-event-dependency): Published under the npm alias "elondavid" (email: elondavid888@gmail.com), this package has 57 downloads. Its GitHub repository is available at [github.com/elondavid888/react-event-dependency](https://github.com/elondavid888/react-event-dependency), linked to the elondavid888 account.
 1. [`auth-validator`](https://socket.dev/npm/package/auth-validator): Published under the npm alias "kevin_tr" (email: robustplutus@gmail.com), this package has 54 downloads. While its original GitHub repository ([github.com/kevin-tra/auth-validator](https://github.com/kevin-tra/auth-validator)) has since been removed, historical records tie it to the kevin-tra GitHub account.
 
-![Socket AI Scanner identified is-buffer-validator as malicious](https://cdn.sanity.io/images/cgdhsj6q/production/87b9b4b2bc66e65382fa6d00e64fb13f7d1cf0cb-936x171.png)
+![Socket AI Scanner identified is-buffer-validator as malicious](/assets/img/posts/lazarus-strikes-npm-again-with-a-new-wave-of-malicious-packages/87b9b4b2bc66e65382fa6d00e64fb13f7d1cf0cb-936x171.png)
 
-![Socket AI Scanner identified yoojae-validator as malicious](https://cdn.sanity.io/images/cgdhsj6q/production/a1927ddaac1953e6b36142d12e658fed361609f8-942x176.png)
+![Socket AI Scanner identified yoojae-validator as malicious](/assets/img/posts/lazarus-strikes-npm-again-with-a-new-wave-of-malicious-packages/a1927ddaac1953e6b36142d12e658fed361609f8-942x176.png)
 
-![Socket AI Scanner identified event-handle-package as malicious](https://cdn.sanity.io/images/cgdhsj6q/production/cccb8b070f1dabbf1048a3a2138a95486c7f7cf2-938x175.png)
+![Socket AI Scanner identified event-handle-package as malicious](/assets/img/posts/lazarus-strikes-npm-again-with-a-new-wave-of-malicious-packages/cccb8b070f1dabbf1048a3a2138a95486c7f7cf2-938x175.png)
 
-![Socket AI Scanner identified array-empty-validator as malicious](https://cdn.sanity.io/images/cgdhsj6q/production/fe4c08d39342313fbf7c4a098599ef1839546a9c-942x177.png)
+![Socket AI Scanner identified array-empty-validator as malicious](/assets/img/posts/lazarus-strikes-npm-again-with-a-new-wave-of-malicious-packages/fe4c08d39342313fbf7c4a098599ef1839546a9c-942x177.png)
 
-![Socket AI Scanner identified react-event-dependency as malicious](https://cdn.sanity.io/images/cgdhsj6q/production/c9e83b3fe852d3d7bc0f3bc05b59d05e86ff1839-947x172.png)
+![Socket AI Scanner identified react-event-dependency as malicious](/assets/img/posts/lazarus-strikes-npm-again-with-a-new-wave-of-malicious-packages/c9e83b3fe852d3d7bc0f3bc05b59d05e86ff1839-947x172.png)
 
-![Socket AI Scanner identified auth-validator as malicious](https://cdn.sanity.io/images/cgdhsj6q/production/5e8d894ea7a78fcaecce07343e6f0c5fe185bc11-940x166.png)
+![Socket AI Scanner identified auth-validator as malicious](/assets/img/posts/lazarus-strikes-npm-again-with-a-new-wave-of-malicious-packages/5e8d894ea7a78fcaecce07343e6f0c5fe185bc11-940x166.png)
 _Socket AI Scanner's identified all six packages as malicious._
 
 Across these packages, Lazarus uses names that closely mimic legitimate and widely trusted libraries, a hallmark of typosquatting tactics. For example, [`is-buffer-validator`](https://socket.dev/npm/package/is-buffer-validator) closely resembles the widely used [`is-buffer`](https://socket.dev/npm/package/is-buffer) module authored by Socket CEO Feross Aboukhadijeh. Notably, the Socket Threat Research Team had previously documented Lazarus' malicious npm activities in its January 2025 [report](https://socket.dev/blog/north-korean-apt-lazarus-targets-developers-with-malicious-npm-package). This resemblance may suggest the threat actor's awareness of Socket's research or a strategic attempt to exploit the established trust and widespread adoption of a legitimate library through typosquatting. What a coincidence.
 
-![The legitimate is-buffer package on npm](https://cdn.sanity.io/images/cgdhsj6q/production/1d85a702b8c60f6e264b71680e2acb1f39437dce-951x475.png)
+![The legitimate is-buffer package on npm](/assets/img/posts/lazarus-strikes-npm-again-with-a-new-wave-of-malicious-packages/1d85a702b8c60f6e264b71680e2acb1f39437dce-951x475.png)
 _The legitimate `is-buffer` package, authored by Feross Aboukhadijeh and maintained for over a decade, has 33 million weekly downloads and has been downloaded over 134 million times overall, highlighting its widespread adoption._
 
 ### Technical Analysis
@@ -127,7 +127,7 @@ To mitigate these threats, organizations should implement a multi-layered approa
 
 Despite extensive obfuscation techniques — including variable renaming, string encoding, and control flow flattening — Socket's static and behavioral analysis effectively identified all six packages as malware. The [Socket GitHub app](https://socket.dev/features/github) enables real-time scanning of pull requests, alerting developers to suspicious or malicious dependencies before integration. Additionally, incorporating the [Socket CLI](https://socket.dev/features/cli) into npm installation workflows helps detect anomalies before they reach production, while the [Socket browser extension](https://chromewebstore.google.com/detail/socket-security/jbcobpbfgkhmjfpjjepkcocalmpkiaop?pli=1) proactively warns users of potential threats upon download or viewing. By embedding these security measures into existing development workflows, organizations can significantly mitigate the risk of supply chain attacks.
 
-![Socket AI Scanner analysis of is-buffer-validator](https://cdn.sanity.io/images/cgdhsj6q/production/ff8ed54dd67c61b735bca5f0bca49a3ab047cd24-623x500.png)
+![Socket AI Scanner analysis of is-buffer-validator](/assets/img/posts/lazarus-strikes-npm-again-with-a-new-wave-of-malicious-packages/ff8ed54dd67c61b735bca5f0bca49a3ab047cd24-623x500.png)
 _Socket AI Scanner's analysis, including contextual details about the malicious [`is-buffer-validator`](https://socket.dev/npm/package/is-buffer-validator) package._
 
 ## Indicators of Compromise (IOCs)

@@ -8,7 +8,7 @@ author: kirill_and_philipp
 canonical_url: https://socket.dev/blog/malicious-open-source-packages-2025-mid-year-threat-report
 source: Socket
 image:
-  path: https://cdn.sanity.io/images/cgdhsj6q/production/9f8580110e3f17a1137499279d45f87b7d13e0fe-1024x1024.png
+  path: /assets/img/posts/malicious-open-source-packages-2025-mid-year-threat-report/cover.png
   alt: "The Landscape of Malicious Open Source Packages: 2025 Mid‑Year Threat Report"
 description: "A look at the top trends in how threat actors are weaponizing open source packages to deliver malware and persist across the software supply chain."
 ---
@@ -19,12 +19,12 @@ In the first half of 2025, the Socket Threat Research Team documented how threat
 
 Open source software now underpins modern development. With ecosystems like npm for Node.js, PyPI for Python, Go Module, Maven Central, RubyGems, and many other registries, developers can build complete features in hours instead of weeks. But this speed comes at a cost. [70–90%](https://www.linuxfoundation.org/blog/blog/a-summary-of-census-ii-open-source-software-application-libraries-the-world-depends-on) of a typical codebase consists of third-party packages, each one introducing an implicit trust relationship that threat actors are eager to exploit.
 
-![Dependency graph for the express package](https://cdn.sanity.io/images/cgdhsj6q/production/71358a82f87999839f0cdd41e9dc71d4e65b2514-1308x935.png)
+![Dependency graph for the express package](/assets/img/posts/malicious-open-source-packages-2025-mid-year-threat-report/71358a82f87999839f0cdd41e9dc71d4e65b2514-1308x935.png)
 _This image shows a live dependency graph for the popular [`express`](https://socket.dev/npm/package/express) package, generated using `npmgraph.js.org`. Each node represents a direct or transitive dependency. The graph highlights the complexity of modern package ecosystems, where a single package like `express` pulls in dozens of nested dependencies — each introducing its own security and maintenance risks._
 
 Ten years ago, shipping a new feature meant writing custom code and manually optimizing core routines. Today, the value lies in integration — developers assemble prebuilt modules while AI assistants autocomplete code and suggest libraries to import. GitHub now hosts over 400 million repositories, and both npm and PyPI serve billions of downloads each week. Developers almost never inspect every transitive dependency, and, without proper dependency management, automated CI pipelines may end up blindly installing the latest versions of packages.
 
-![Growth of open source ecosystems](https://cdn.sanity.io/images/cgdhsj6q/production/efbb70583095f07d9665b037af66f5556db7e10f-1378x442.png)
+![Growth of open source ecosystems](/assets/img/posts/malicious-open-source-packages-2025-mid-year-threat-report/efbb70583095f07d9665b037af66f5556db7e10f-1378x442.png)
 
 However, threat actors have also adapted to the rise of AI. The same tools that accelerate legitimate development now enable attackers to mass-generate look-alike package names, obfuscate payloads, and repeatedly publish modified versions that bypass signature-based scanners. As a result, the attack surface has become both vast and is constantly shifting.
 
@@ -38,7 +38,7 @@ Threat actors register packages with names that closely resemble popular librari
 
 > **Defensive Recommendations:** Typosquatting affects every major ecosystem — including npm, PyPI, Go, Maven, RubyGems, and NuGet — because it exploits naming similarity rather than ecosystem-specific flaws. A single mistyped import can compromise thousands of downstream builds. To defend against this, automate checks for lookalike package names and maintain an allowlist of approved dependencies for critical systems and production environments.
 
-![Typosquatting campaign in the Go ecosystem](https://cdn.sanity.io/images/cgdhsj6q/production/a2fcd8ccc9e6019106a53843dc3a14687123e47f-1088x853.png)
+![Typosquatting campaign in the Go ecosystem](/assets/img/posts/malicious-open-source-packages-2025-mid-year-threat-report/a2fcd8ccc9e6019106a53843dc3a14687123e47f-1088x853.png)
 _This screenshot from the Go ecosystem highlights a real-world [typosquatting campaign](https://socket.dev/blog/typosquatted-go-packages-deliver-malware-loader). Multiple malicious packages — each impersonating the legitimate `hypert` module — appear nearly identical in name and description. Go (pun intended) figure which one is the right one. "You've gotta ask yourself a question: Do I feel lucky?" Identifying the real package in a list like this isn't as easy as it looks._
 
 ## 2. Repository and Caching Abuse — When the Mirror Lies
@@ -51,7 +51,7 @@ The Go Module Mirror was built for efficiency and reliability, but its long-term
 
 Threat actors use obfuscation to hide malicious behavior and evade detection. They replace meaningful variable names with random identifiers, strip formatting to compress the code, and insert junk operations to confuse static analysis tools. They often encode logic using Base64, hexadecimal, or numeric transpositions to conceal network destinations or payloads. While these techniques can bypass basic scanners, they still leave behind detectable clues — like long encoded strings or suspicious `eval()` calls — that defenders can flag.
 
-![Obfuscated vs deobfuscated JavaScript code](https://cdn.sanity.io/images/cgdhsj6q/production/58102b2faa6b81a441143c0357609627c1e57ac9-2048x1090.png)
+![Obfuscated vs deobfuscated JavaScript code](/assets/img/posts/malicious-open-source-packages-2025-mid-year-threat-report/58102b2faa6b81a441143c0357609627c1e57ac9-2048x1090.png)
 
 This image displays heavily obfuscated JavaScript code on the left and its deobfuscated version on the right. The original script uses randomized variable names and dense formatting to make analysis difficult — a common tactic in malicious packages. Threat actors often [rely on online JavaScript obfuscators](https://socket.dev/blog/exploiting-npm-to-build-a-blockchain-powered-botnet) to achieve this, while defenders can use free automated deobfuscators to uncover embedded URLs, commands, or payloads.
 
@@ -116,7 +116,7 @@ AI's role goes beyond creation. It also introduces risk through hallucinated rec
 
 Search engines can amplify this risk. In one case, Google's AI Overview [praised](https://socket.dev/blog/gmail-for-exfiltration-malicious-npm-packages-target-solana-private-keys-and-drain-victim-s) a malicious package by echoing content from the README of a legitimate one, giving the malicious package an undeserved appearance of credibility.
 
-![Google AI search results for malicious package](https://cdn.sanity.io/images/cgdhsj6q/production/040fdad9ee24e47170d8c048ad60358474486409-1600x1250.png)
+![Google AI search results for malicious package](/assets/img/posts/malicious-open-source-packages-2025-mid-year-threat-report/040fdad9ee24e47170d8c048ad60358474486409-1600x1250.png)
 _This [screenshot](https://socket.dev/blog/gmail-for-exfiltration-malicious-npm-packages-target-solana-private-keys-and-drain-victim-s) shows Google's AI-generated search results at the time we discovered the malicious `@async-mutex/mutex` package._
 
 From these examples we can see that automation and AI are not just defender tools — they are deeply embedded in the modern threat actor's toolkit.

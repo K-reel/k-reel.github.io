@@ -70,7 +70,7 @@ Public GitHub search results for the reversed phrase `niaga og ew ereh :duluh-ia
 
 One observed repository, `Zaynex/sayyadina-stillsuit-852`, contains a `results` directory and a README containing the same reversed marker. This matches the payload's GitHub repository exfiltration logic and suggests the GitHub fallback path is operational.
 
-![GitHub search reveals a rapidly updating cluster of threat actor-created repositories using a reversed Shai-Hulud campaign marker and Dune-themed naming.](https://cdn.sanity.io/images/cgdhsj6q/production/167eb3610681dfc0d26046cc933afa9dac0c7304-2048x1596.png?w=1600&q=95&fit=max&auto=format)
+![GitHub search reveals a rapidly updating cluster of threat actor-created repositories using a reversed Shai-Hulud campaign marker and Dune-themed naming.](/assets/img/posts/antv-packages-compromised/167eb3610681dfc0d26046cc933afa9dac0c7304-2048x1596.png)
 _GitHub search reveals a rapidly updating cluster of threat actor-created repositories using a reversed Shai-Hulud campaign marker and Dune-themed naming, supporting the assessment that the malware's GitHub fallback exfiltration path is active at scale._
 
 ### npm Propagation Logic

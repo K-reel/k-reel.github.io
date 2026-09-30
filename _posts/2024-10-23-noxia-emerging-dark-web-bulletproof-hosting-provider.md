@@ -7,7 +7,7 @@ tags: [Bulletproof Hosting, Dark Web, Python, PyPI, JavaScript, npm, Go, Go Modu
 canonical_url: https://socket.dev/blog/noxia-emerging-dark-web-bulletproof-hosting-provider
 source: Socket
 image:
-  path: https://cdn.sanity.io/images/cgdhsj6q/production/0faa917baac40dc71419103945832f2ef1041ae7-1024x1024.webp
+  path: /assets/img/posts/noxia-emerging-dark-web-bulletproof-hosting-provider/cover.jpg
   alt: "Noxia dark web bulletproof hosting provider advertisement on BreachForums"
 description: "Noxia, a new dark web bulletproof host, offers dirt cheap servers for Python, Node.js, Go, and Rust, enabling cybercriminals to distribute malware and conduct supply chain attacks."
 ---
@@ -18,7 +18,7 @@ On October 10, 2024, "noxia", a member of the dark web forum "BreachForums", pos
 
 While bulletproof hosting advertisements are common among the criminal underground, and bulletproof hosting provides a range of services, Noxia claims the ability to host Python, Node.js, Go, and Rust applications. By acting as a platform for these applications, Noxia may be used as a malware distribution vector as it relates to software supply chains. Socket actively monitors, detects, and blocks supply chain attacks. When coupled with our Threat Research Team's analysis, we are able to identify emergent threats like Noxia's bulletproof hosting.
 
-![](https://cdn.sanity.io/images/cgdhsj6q/production/d69e2dceda853fb20dcccb49598abd3f35b8bf41-1698x651.png)
+![](/assets/img/posts/noxia-emerging-dark-web-bulletproof-hosting-provider/d69e2dceda853fb20dcccb49598abd3f35b8bf41-1698x651.png)
 
 _**Figure 1**: Noxia advertisement on BreachForums_
 
@@ -28,7 +28,7 @@ Bulletproof hosting providers, as evidence suggests Noxia is, specifically adver
 
 Noxia is renting servers configured for Python, Node.js, and Go for as little as £0.25 GBP ($0.32 USD) per month for the "basic" configuration. This low-cost subscription offers disposable infrastructure to threat actors who can cheaply create and discard multiple servers, making it harder for law enforcement and researchers to track their activities. Noxia's website (noxia[.]cloud) has a seemingly legitimate appearance, and its service has not been widely reported on by the security community, which may allow traffic from their servers to bypass organizations' security filters.
 
-![](https://cdn.sanity.io/images/cgdhsj6q/production/0b84cc6421f724ec611967510d1761b3268c34f3-1054x745.png)
+![](/assets/img/posts/noxia-emerging-dark-web-bulletproof-hosting-provider/0b84cc6421f724ec611967510d1761b3268c34f3-1054x745.png)
 
 _**Figure 2**: Noxia's configurable server options for Python, Node.js, and Go_
 
@@ -42,7 +42,7 @@ An additional analysis of these malware samples [indicates](https://search.censy
 
 Both octane.exe files contain a URL string pointing to octane[.]lol, which serves dozens of malicious files, [according](https://www.virustotal.com/gui/domain/octane.lol/relations) to VirusTotal. The octane[.]lol site is designed similarly to noxia[.]cloud and features an advertisement banner for Noxia.
 
-![](https://cdn.sanity.io/images/cgdhsj6q/production/22dbfbb7fea612e45c0091f4fab796c17fc2501a-462x58.png)
+![](/assets/img/posts/noxia-emerging-dark-web-bulletproof-hosting-provider/22dbfbb7fea612e45c0091f4fab796c17fc2501a-462x58.png)
 
 _**Figure 3**: Noxia's banner on octane[.]lol_
 

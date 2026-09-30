@@ -20,7 +20,7 @@ The important development is not a new malware family or a materially different 
 
 This remains an ongoing investigation. Socket will continue updating the campaign [tracker](https://socket.dev/supply-chain-attacks/miasma-mini-shai-hulud-supply-chain-attack) as additional affected artifacts, repository indicators, and exfiltration infrastructure are confirmed.
 
-![](https://cdn.sanity.io/images/cgdhsj6q/production/6a48e7d4fe921df17479f6d6692b4f979848d31b-2048x654.png?w=1600&q=95&fit=max&auto=format)
+![](/assets/img/posts/miasma-mini-shai-hulud-hits-immobiliarelabs-npm-packages/6a48e7d4fe921df17479f6d6692b4f979848d31b-2048x654.png)
 _Socket flags [`@immobiliarelabs/backstage-plugin-gitlab-backend@7.0.2`](https://socket.dev/npm/package/@immobiliarelabs/backstage-plugin-gitlab-backend/overview/7.0.2) as part of the Miasma Mini Shai-Hulud campaign, showing that the latest release and multiple historical versions were compromised rather than a single isolated artifact._
 
 
@@ -121,7 +121,7 @@ This campaign shows why CI/CD event surfaces need to be reviewed as execution bo
 
 Socket also observed a surge in exfiltration repositories occurring alongside the compromise of packages in the `@immobiliarelabs` scope. Miasma is designed to turn one compromise into many. Package installation can expose npm tokens, GitHub tokens, cloud credentials, and CI/CD secrets. GitHub tokens can then be used to create repositories, upload encrypted data, modify workflows, poison source repositories, or prepare additional propagation paths.
 
-![](https://cdn.sanity.io/images/cgdhsj6q/production/111ae58e29f73a0cf97932c631dbdf7be7a3b5d0-2048x959.png?w=1600&q=95&fit=max&auto=format)
+![](/assets/img/posts/miasma-mini-shai-hulud-hits-immobiliarelabs-npm-packages/111ae58e29f73a0cf97932c631dbdf7be7a3b5d0-2048x959.png)
 _GitHub repository activity from services-admin-pearhealthlabs shows hundreds of public repositories with randomized names and repeated campaign markers, consistent with automated repository creation used for Miasma dead-drop or exfiltration staging during the ImmobiliareLabs compromise window._
 
 At this stage, the safest interpretation is that the ImmobiliareLabs package compromise is part of an active propagation wave, not an isolated malicious publish event. Teams should assume that any environment that installed the affected versions may have exposed credentials, even if the package’s normal Backstage functionality appears to work.

@@ -9,7 +9,7 @@ toc: true
 canonical_url: https://socket.dev/blog/north-korea-contagious-interview-npm-attacks
 source: Socket
 image:
-  path: https://cdn.sanity.io/images/cgdhsj6q/production/6ebe122c6237ac481b6d5d8f61544d160d503868-1024x1024.png?w=1600&q=95&fit=max&auto=format
+  path: /assets/img/posts/north-korea-contagious-interview-npm-attacks/cover.png
   alt: North Korea Contagious Interview npm attacks artwork
 ---
 
@@ -17,19 +17,19 @@ The Socket Threat Research Team continues to track North Korea's Contagious Inte
 
 Within this recent wave of malicious npm packages, we documented a rare inside view of the GitHub infrastructure that underpins part of this activity. Tracing the malicious npm package [`tailwind-magic`](https://socket.dev/npm/package/tailwind-magic/overview/3.3.1) led us to a Vercel-hosted staging endpoint, `tetrismic[.]vercel[.]app`, and from there to a threat actor-controlled GitHub account, `stardev0914`, which contained 18 repositories. We credit Kieran Miyamoto of the DPRK Research blog ([https://dprk-research.kmsec.uk/](https://dprk-research.kmsec.uk/)), whose observation about a related GitHub repository helped confirm and refine our pivot to this account.
 
-![](https://cdn.sanity.io/images/cgdhsj6q/production/5e87e8cae262b1f87fc6cefa7d71bb1ea5ce6754-1104x588.png?w=1600&q=95&fit=max&auto=format)
+![](/assets/img/posts/north-korea-contagious-interview-npm-attacks/5e87e8cae262b1f87fc6cefa7d71bb1ea5ce6754-1104x588.png)
 _Socket AI Scanner's analysis of the malicious `tailwind-magic` npm package highlights security issues, including inconsistent metadata, and a hardcoded link to the GitHub repository `https://github[.]com/stardev0914/tailwind-magic.git`._
 
 The repositories in the `stardev0914` GitHub account form a coherent adversarial delivery stack: malware-serving code lives on GitHub, the latest payload is fetched from Vercel, and a separate command and control (C2) server handles data collection and tasking. At least five malicious npm packages, including [`tailwind-magic`](https://socket.dev/npm/package/tailwind-magic/overview/3.3.1), [`tailwind-node`](https://socket.dev/npm/package/tailwind-node/overview/0.0.1-security), [`node-tailwind`](https://socket.dev/npm/package/node-tailwind/overview/2.1.3), [`node-tailwind-magic`](https://socket.dev/npm/package/node-tailwind-magic), and [`react-modal-select`](https://socket.dev/npm/package/react-modal-select/overview/1.0.0), rely on this infrastructure to deliver a second-stage payload.
 
-![](https://cdn.sanity.io/images/cgdhsj6q/production/be956d43589e1adc8c3e206715557ed453e53e68-1724x268.png?w=1600&q=95&fit=max&auto=format)
+![](/assets/img/posts/north-korea-contagious-interview-npm-attacks/be956d43589e1adc8c3e206715557ed453e53e68-1724x268.png)
 _Diagram of the analyzed Contagious Interview attack chain: a victim installs a malicious npm package that fetches a payload from a hardcoded Vercel URL, which in turn pulls code from a threat actor-controlled GitHub repository and executes the OtterCookie malware, establishing bidirectional C2 with the threat actor's server for data theft and remote tasking._
 
 The payload itself is a recent OtterCookie malware variant that blurs earlier distinctions between OtterCookie and [BeaverTail](https://socket.dev/blog/north-korean-apt-lazarus-targets-developers-with-malicious-npm-package). Once delivered, it performs VM and sandbox detection, fingerprints the host, and then establishes a long-lived C2 channel. From there it provides the threat actors with a remote shell, continuous clipboard theft, global keylogging, multi-monitor screenshot capture, and recursive filesystem scanning designed to harvest credentials, seed phrases, wallet data, and sensitive documents. It also targets Chrome and Brave profile data and a broad set of popular crypto-wallet browser extensions across Windows, macOS, and Linux, making it a combined infostealer and remote access tool tuned for draining digital assets and exfiltrating high-value secrets from developer systems.
 
 Our analysis of the `stardev0914` account also uncovered a constellation of repositories that act as delivery vehicles and lures. A repository named `tailwind-magic` mirrors the malicious npm [package](https://socket.dev/npm/package/tailwind-magic/overview/3.3.1) and serves as a typosquatted fork of the legitimate [`tailwind-merge`](https://socket.dev/npm/package/tailwind-merge) library, modified to act as a loader for the payload staged at `tetrismic[.]vercel[.]app`. In addition, we analyzed repositories named after crypto-themed projects, including a cloned Knightsbridge DEX front-end (`dexproject`) wired to the malicious [`node-tailwind`](https://socket.dev/npm/package/node-tailwind/overview/2.1.3) package, as well as numerous token- and DeFi-branded repositories used as lures.
 
-![](https://cdn.sanity.io/images/cgdhsj6q/production/26994d7c37c9538db0efa80dc3c06aee14346840-954x965.png?w=1600&q=95&fit=max&auto=format)
+![](/assets/img/posts/north-korea-contagious-interview-npm-attacks/26994d7c37c9538db0efa80dc3c06aee14346840-954x965.png)
 _Annotated GitHub view of the threat actor-controlled account `stardev0914`, highlighting some of the repositories: `dexproject` (cloned Knightsbridge DEX with malicious npm dependency), `tetrismic` (malware server delivering OtterCookie), several fake token lure sites (`safutoken`, `laifubnb`, `spurdomeme`), and `tailwind-magic`, a malware loader._
 
 GitHub hosts polished but malicious or deceptive crypto projects, npm delivers loader packages that appear to be harmless utilities, Vercel stages the latest payload, and a separate C2 server quietly runs OtterCookie malware against compromised hosts. In this most recent wave of 197 packages since [October 10, 2025](https://socket.dev/blog/north-korea-contagious-interview-campaign-338-malicious-npm-packages), we confirmed that 15 malicious npm packages remain live at the time of writing and have reported them to the npm security team for blocking. Even though the `stardev0914` account has been removed, the Contagious Interview campaign's techniques persist and continue to evolve, with new npm infiltrations appearing weekly as North Korean operators bombard developers and tech job seekers with supply chain malware such as the OtterCookie family analyzed in this report.
@@ -38,7 +38,7 @@ GitHub hosts polished but malicious or deceptive crypto projects, npm delivers l
 
 [`tailwind-magic`](https://socket.dev/npm/package/tailwind-magic/overview/3.3.1) is a typosquatted and backdoored clone of the legitimate [`tailwind-merge`](https://socket.dev/npm/package/tailwind-merge/overview/3.4.0) library. The code exported from `dist/` behaves like a normal Tailwind class-merging utility, but a `postinstall` script executes [`src/lib/index.js`](https://socket.dev/npm/package/tailwind-magic/files/3.3.1/src/lib/index.js), which uses `axios` to call the threat actor-controlled endpoint `https://tetrismic[.]vercel[.]app/api/ipcheck` and `eval` the returned JavaScript. This behavior turns the package into a remote loader that runs threat actor-supplied code at install time.
 
-![](https://cdn.sanity.io/images/cgdhsj6q/production/9d86d3e762e13d84f54307fa385654e87e0f013e-620x649.png?w=1600&q=95&fit=max&auto=format)
+![](/assets/img/posts/north-korea-contagious-interview-npm-attacks/9d86d3e762e13d84f54307fa385654e87e0f013e-620x649.png)
 _Socket AI Scanner's analysis of the malicious `tailwind-magic` package highlights a backdoor that, on import, POSTs the local package version to the threat-actor endpoint `https://tetrismic[.]vercel[.]app/api/ipcheck` and `eval`s the response, granting the threat actor arbitrary code execution with full Node.js process privileges._
 
 ## Staging Server
@@ -47,7 +47,7 @@ The threat actors maintain a small staging server, developed in the GitHub repos
 
 The threat actors split this infrastructure into three components. GitHub hosts the development repository. Vercel serves the current payload on demand. A separate C2 server receives data and issues tasks once the loader runs, which isolates operations. The npm package is the delivery vehicle that bridges developer environments and this backend. This separation lets the threat actors rotate payloads across multiple packages, customize responses per target, and keep their C2 infrastructure relatively quiet until the second stage is active.
 
-![](https://cdn.sanity.io/images/cgdhsj6q/production/bc3581bba00a3f721861f156612aac92d075cd3f-1109x921.png?w=1600&q=95&fit=max&auto=format)
+![](/assets/img/posts/north-korea-contagious-interview-npm-attacks/bc3581bba00a3f721861f156612aac92d075cd3f-1109x921.png)
 _GitHub Deployments view for the threat actor repository `stardev0914/tetrismic` (when it was live), showing 38 Vercel "Production" deployments used to continuously update the OtterCookie staging server that malicious npm loaders such as `tailwind-magic` query for their current JavaScript payload._
 
 ## OtterCookie Malware Payload
@@ -507,7 +507,7 @@ The module performs continuous keylogging, multi-monitor screenshot capture, and
 
 Contagious Interview threat actors used the `dexproject` repository in their `stardev0914` GitHub account as a carrier for the malicious npm package [`node-tailwind`](https://socket.dev/npm/package/node-tailwind/overview/2.1.3). The repository presents as a standard DEX front-end template: the application code looks normal, but installing its dependencies pulls in a malicious package.
 
-![](https://cdn.sanity.io/images/cgdhsj6q/production/b0d476b37ba9c53fcf4a81f934b12b0240b0efaa-1426x458.png?w=1600&q=95&fit=max&auto=format)
+![](/assets/img/posts/north-korea-contagious-interview-npm-attacks/b0d476b37ba9c53fcf4a81f934b12b0240b0efaa-1426x458.png)
 _Socket AI Scanner's analysis of the malicious `node-tailwind` package highlights its supply-chain risk, flagging it as known malware with 0% supply chain security and unstable ownership (a new collaborator publishing versions). At the time of writing, this package remains live on npm, but we have reported it to the npm security team for blocking._
 
 `dexproject` is a cloned Knightsbridge site and effectively a Knightsbridge/KXCO-branded DEX front-end wired to `node-tailwind`, so it looks like a legitimate Knightsbridge DEX while acting as a supply chain delivery vehicle. The branding and metadata masquarade as "Knightsbridge DEX / KXCO", with clear copy-paste artifacts and deployment to `knightsbridge-dex[.]vercel[.]app`, but the UI is purely presentational: buttons do not invoke contracts, and the source contains no router or factory addresses.
@@ -527,7 +527,7 @@ export function cn(...inputs: ClassValue[]) {
 }
 ```
 
-![](https://cdn.sanity.io/images/cgdhsj6q/production/76fa33ea23ad769494668e34b7101319bd25ae89-1600x1200.png?w=1600&q=95&fit=max&auto=format)
+![](/assets/img/posts/north-korea-contagious-interview-npm-attacks/76fa33ea23ad769494668e34b7101319bd25ae89-1600x1200.png)
 _Screenshot of the Knightsbridge/KXCO-branded DEX front end hosted at `knightsbridge-dex[.]vercel[.]app`, which Contagious Interview threat actors cloned and used as a presentational lure while wiring the underlying template to the malicious `node-tailwind` npm dependency._
 
 ### Repository `tailwind-magic`

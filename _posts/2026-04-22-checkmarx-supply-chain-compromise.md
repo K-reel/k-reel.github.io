@@ -8,7 +8,7 @@ author: socket_research_team
 canonical_url: https://socket.dev/blog/checkmarx-supply-chain-compromise
 source: Socket
 image:
-  path: https://cdn.sanity.io/images/cgdhsj6q/production/b26ca7fb74dd477037706d53ace64b2860e8273a-1254x1254.png?w=1000&q=95&fit=max&auto=format
+  path: /assets/img/posts/checkmarx-supply-chain-compromise/cover.png
   alt: "Malicious Checkmarx Artifacts Found in Official KICS Docker Repository and Code Extensions"
 description: "Docker and Socket have uncovered malicious Checkmarx KICS images and suspicious code extension releases in a broader supply chain compromise."
 ---
@@ -37,9 +37,9 @@ The malware harvests developer and cloud credentials, compresses and encrypts th
 
 TeamPCP appears to be [taking credit for the Checkmarx compromise](https://x.com/pcpcats/status/2047018766689599974). On April 22, the `@pcpcats` account reposted coverage of the incident and published taunting messages after the story broke, including: "Thank you OSS distribution for another very successful day at PCP inc." These posts do not by themselves prove attribution, but they add to the evidence linking the campaign to TeamPCP.
 
-![](https://cdn.sanity.io/images/cgdhsj6q/production/eb4ffbc6d3a0a1af87022b7f3d13ed7dcbafe24c-600x497.png?w=1600&q=95&fit=max&auto=format)
+![](/assets/img/posts/checkmarx-supply-chain-compromise/eb4ffbc6d3a0a1af87022b7f3d13ed7dcbafe24c-600x497.png)
 
-![](https://cdn.sanity.io/images/cgdhsj6q/production/915bbf7f3872118d94659fe06c6e3a9b63a35820-642x575.png?w=1600&q=95&fit=max&auto=format)
+![](/assets/img/posts/checkmarx-supply-chain-compromise/915bbf7f3872118d94659fe06c6e3a9b63a35820-642x575.png)
 
 In March 2026, the group compromised Checkmarx GitHub Actions and OpenVSX plugins in a broader supply chain attack that also hit Trivy and LiteLLM, using malicious code to steal CI/CD secrets and environment variables.
 
@@ -47,7 +47,7 @@ In March 2026, the group compromised Checkmarx GitHub Actions and OpenVSX plugin
 
 A central element of this attack was the use of Git history manipulation to quietly stage a malicious payload and later retrieve it at runtime from a trusted source. The attacker began by injecting a backdated commit (`68ed490b`) into the `Checkmarx/ast-vscode-extension` repository. This commit was deliberately crafted to appear legitimate: it was spoofed to look like it was authored in 2022, attached to a real commit as its parent, and given a benign-looking change. However, it introduced a large (~10MB) file, `modules/mcpAddon.js`. This allowed the threat actor to embed a full second-stage payload while also making manual and automated analysis more difficult. This way, the attacker was attempting to evade both human review and automated scanning, as loading a remote file from the official GitHub repository at runtime would not raise immediate red flags.
 
-![](https://cdn.sanity.io/images/cgdhsj6q/production/63ba29fa1bf91111fe414dc2184b9b57f084f029-2048x920.png?w=1600&q=95&fit=max&auto=format)
+![](/assets/img/posts/checkmarx-supply-chain-compromise/63ba29fa1bf91111fe414dc2184b9b57f084f029-2048x920.png)
 _GitHub file view showing the oversized **`mcpAddon.js`** payload tied to an orphaned commit outside the repository's active branch history. The missing branch association, innocuous commit message, and ~10MB single-file JavaScript blob all point to a suspicious, nonstandard insertion._
 
 ## Technical Analysis
@@ -192,7 +192,7 @@ class Cy extends MH {
 }
 ```
 
-![](https://cdn.sanity.io/images/cgdhsj6q/production/3d7401ccdf5493506f122fa76d53d8c9400e49ae-1449x920.png?w=1600&q=95&fit=max&auto=format)
+![](/assets/img/posts/checkmarx-supply-chain-compromise/3d7401ccdf5493506f122fa76d53d8c9400e49ae-1449x920.png)
 _GitHub repository search showing a cluster of threat actor-created public staging repositories tied to the Checkmarx incident._
 
 What stands out from the live GitHub search is that the repo names are not random gibberish. They follow a very consistent pattern:
@@ -223,7 +223,7 @@ That is a strong pattern, and the vocabulary is highly suggestive. A large porti
 - `atreides`
 - `sayyadina`
 
-![](https://cdn.sanity.io/images/cgdhsj6q/production/f9f72895fdb5ed92e99b4b810ff3f430833e4d5b-1901x518.png?w=1600&q=95&fit=max&auto=format)
+![](/assets/img/posts/checkmarx-supply-chain-compromise/f9f72895fdb5ed92e99b4b810ff3f430833e4d5b-1901x518.png)
 _GitHub file view of a threat actor-created exfiltration repository. The **`results`** JSON stores an encrypted payload plus a wrapped key and token field. The commit message also carries an encoded token-like value, indicating the operator reused repository metadata as an additional covert data channel._
 
 These are not normal "configuration storage" files. This is a tiny public repository with the description and README both set to "Checkmarx Configuration Storage", a results/ folder, and only 3 commits total. Two of those commits on April 22, 2026 use the message pattern `LongLiveTheResistanceAgainstMachines:<encoded string>`.

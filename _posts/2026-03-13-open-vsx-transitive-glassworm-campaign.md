@@ -8,7 +8,7 @@ author: socket_research_team
 canonical_url: https://socket.dev/blog/open-vsx-transitive-glassworm-campaign
 source: Socket
 image:
-  path: https://cdn.sanity.io/images/cgdhsj6q/production/fca6ee0282eb63d1b533c29331ff4456f1d9672a-1024x1024.png?w=1000&q=95&fit=max&auto=format
+  path: /assets/img/posts/open-vsx-transitive-glassworm-campaign/cover.png
   alt: GlassWorm transitive dependency campaign artwork
 description: "Since January 31, 2026, we identified at least 72 additional malicious Open VSX extensions, including transitive GlassWorm loader extensions targeting developers through extensionPack and extensionDependencies manifest abuse."
 ---
@@ -45,7 +45,7 @@ Among confirmed examples are [`otoboss.autoimport-extension@1.5.7`](https://sock
 
 This behavior is not limited to a single package. Several of the extensions targeting end users displayed download counts inflated into the thousands, lending them a veneer of popularity with the goal of luring unsuspecting developers into installing them.
 
-![Screenshot of the malicious twilkbilk.color-highlight-css Open VSX extension](https://cdn.sanity.io/images/cgdhsj6q/production/5d688ef11013e22e800748242c59d68b6645a66b-2048x1141.png)
+![Screenshot of the malicious twilkbilk.color-highlight-css Open VSX extension](/assets/img/posts/open-vsx-transitive-glassworm-campaign/5d688ef11013e22e800748242c59d68b6645a66b-2048x1141.png)
 _Screenshot of the malicious [`twilkbilk.color-highlight-css`](https://socket.dev/openvsx/package/twilkbilk.color-highlight-css) Open VSX extension, a GlassWorm-linked impersonator that mimics the legitimate [`color-highlight`](https://socket.dev/openvsx/package/naumovs.color-highlight) extension while using a namespace/publisher mismatch to appear trustworthy. The listing was still live at the time of writing and showed 3.5K reported downloads, which are likely inflated or otherwise manipulated by the threat actor to make the extension appear more established and credible._
 
 As of March 13, Open VSX has removed the majority of the transitively malicious extensions, which is a positive operational sign. However, at the time of writing, we also identified live examples including `twilkbilk/color-highlight-css` and `crotoapp/vscode-xml-extension`, indicating that takedowns were ongoing but incomplete.
@@ -58,7 +58,7 @@ A key operational detail is that these packages do not begin as obviously transi
 
 Recent analysis shows that GlassWorm has continued to evolve since our January 31, 2026 [report](/glassworm-loader-hits-open-vsx-via-suspected-developer-account-compromise/). Newer variants, including `aadarkcode.one-dark-material@3.20.1`, preserve the campaign's core tradecraft while updating the components most vulnerable to exposure. The loader still uses staged JavaScript execution, Russian geofencing, Solana transaction memos as dead drops, and in-memory follow-on code execution, all of which remain strong continuity markers with the January 31, 2026 cluster. At the same time, the threat actor has rotated Solana infrastructure from `BjVeAjPrSKFiingBn4vZvghsGj9KCE8AJVtbc9S8o8SC` to `6YGcuyFRJKZtcaYCCFba9fScNUvPkGXodXE1mJiSzqDJ`, introduced additional C2 IPs such as `70[.]34[.]242[.]255` and `45[.]32[.]151[.]157`, expanded RPC redundancy, replaced the earlier static AES-wrapped loader with heavier RC4/base64/string-array obfuscation, and shifted decryption material from the extension itself to operator-controlled HTTP response headers. Despite these adaptations, overlapping infrastructure, including reuse of `45[.]32[.]150[.]251`, and the continued use of the same underlying execution model strongly support attribution to GlassWorm.
 
-![Socket AI Scanner analysis of the malicious aadarkcode.one-dark-material Open VSX extension](https://cdn.sanity.io/images/cgdhsj6q/production/32b75c340b671f3e2f1227339ec95962b7d04392-567x611.png)
+![Socket AI Scanner analysis of the malicious aadarkcode.one-dark-material Open VSX extension](/assets/img/posts/open-vsx-transitive-glassworm-campaign/32b75c340b671f3e2f1227339ec95962b7d04392-567x611.png)
 _Socket AI Scanner's analysis of the malicious [`aadarkcode.one-dark-material`](https://socket.dev/openvsx/package/aadarkcode.one-dark-material/overview/3.20.1?platform=universal) Open VSX extension flags a staged GlassWorm-style loader in [`extension/out/extension.js`](https://socket.dev/openvsx/package/aadarkcode.one-dark-material/files/3.20.1/extension/out/extension.js?platform=universal), highlighting heavy obfuscation, runtime retrieval and decoding of follow-on code, execution via **`eval`** and **`vm.Script`** with full Node.js primitives exposed, and locale/time-based gating consistent with selective execution and anti-analysis behavior._
 
 ## Outlook and Recommendations

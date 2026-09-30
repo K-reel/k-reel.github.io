@@ -7,7 +7,7 @@ tags: [Typosquatting, Infostealer, Brandjacking, crates.io, T1195.002, T1204, T1
 canonical_url: https://socket.dev/blog/5-malicious-rust-crates-posed-as-time-utilities-to-exfiltrate-env-files
 source: Socket
 image:
-  path: https://cdn.sanity.io/images/cgdhsj6q/production/323c0768cae5d50cf080947d4858ecac21ba8cec-1024x1024.png?w=1000&q=95&fit=max&auto=format
+  path: /assets/img/posts/5-malicious-rust-crates-posed-as-time-utilities-to-exfiltrate-env-files/cover.png
   alt: "5 malicious Rust crates posed as time utilities to exfiltrate .env files"
 description: "Published late February to early March 2026, these crates impersonate timeapi.io and POST .env secrets to a threat actor-controlled lookalike domain."
 ---
@@ -26,7 +26,7 @@ Adam Harvey from the crates.io team confirmed the removal and emphasized the ong
 
 > "The crates.io team is grateful that Socket continues to report malware as it is detected, and we look forward to continuing to work with Socket's Threat Research Team to keep our ecosystem safe."
 
-![Socket AI Scanner flags chrono_anchor as malware](https://cdn.sanity.io/images/cgdhsj6q/production/0f24997a8b07c82fdf66c60e7f6a975f8e26ef01-1132x1300.png?w=1600&q=95&fit=max&auto=format)
+![Socket AI Scanner flags chrono_anchor as malware](/assets/img/posts/5-malicious-rust-crates-posed-as-time-utilities-to-exfiltrate-env-files/0f24997a8b07c82fdf66c60e7f6a975f8e26ef01-1132x1300.png)
 _Socket AI Scanner flags `chrono_anchor` as malware after finding covert exfiltration embedded in `AnchorParams` validation code. The crate constructs two different hostnames from the same `REF_HOST` constant, uses a decoy HTTPS GET to `timeapi[.]io`, then downgrades to an HTTP POST to the lookalike `timeapis[.]io` and uploads a local file via `curl -F file=@{ENV_FILE_PATH}`. Because the trigger is unconditional inside `check_params()`, any code path that validates parameters, including tests, can cause silent outbound traffic and secret leakage._
 
 ## The Crate Cluster and the Response Window
@@ -40,14 +40,14 @@ RustSec, the security advisory database for the Rust ecosystem, documents a shor
 
 In addition to the RustSec-tracked crates above, `chrono_anchor` implements the same exfiltration logic and is owned on [crates.io](http://crates.io) by the user `dictorudin`.
 
-![crates.io publisher profile for dictorudin](https://cdn.sanity.io/images/cgdhsj6q/production/a5cbbe38e64f037a715c7acb62300893a56e4035-939x448.png?w=1600&q=95&fit=max&auto=format)
+![crates.io publisher profile for dictorudin](/assets/img/posts/5-malicious-rust-crates-posed-as-time-utilities-to-exfiltrate-env-files/a5cbbe38e64f037a715c7acb62300893a56e4035-939x448.png)
 _The [crates.io](http://crates.io) publisher profile for `dictorudin` shows a single published crate, `chrono_anchor`, with 66 total downloads at the time of capture. The one crate footprint, small uptake, and recent update activity are consistent with a short-lived supply chain publishing identity rather than an established maintainer account._
 
 ## Threat Actor Strategy and Publisher Pivots
 
 The threat actor framed each crate as a practical time utility tailored to real developer needs. Promises like "local time calibration without NTP" read as credible in restricted networks and CI environments where outbound time sync is unavailable or undesirable, and where teams still need a stable reference point for telemetry and scheduling.
 
-![Socket AI Scanner English-language view of chrono_anchor](https://cdn.sanity.io/images/cgdhsj6q/production/20b3041653e4ebfd3d94224308c78a25abcbb392-2048x1149.png?w=1600&q=95&fit=max&auto=format)
+![Socket AI Scanner English-language view of chrono_anchor](/assets/img/posts/5-malicious-rust-crates-posed-as-time-utilities-to-exfiltrate-env-files/20b3041653e4ebfd3d94224308c78a25abcbb392-2048x1149.png)
 _Socket AI Scanner's English-language view of `chrono_anchor` shows how the threat actor sells the crate as a legitimate "no NTP, local time alignment" utility for constrained networks and CI workflows, a plausible use case that lowers reviewer skepticism. That positioning helps the crate look like a benign telemetry and scheduling aid even though the underlying code triggers covert outbound requests to exfiltrate `.env` secrets._
 
 The threat actor also relied on name selection that blends into common Rust naming conventions. `dnp3times` typosquats the legitimate [`dnp3time`](https://socket.dev/cargo/package/dnp3time) crate, increasing the chance of accidental installs. `chrono_anchor` fits a brandjacking pattern instead: it borrows the recognition of the widely-used `chrono` ecosystem and appends a plausible extension term `anchor`, to look like a legitimate companion crate. The remaining packages, `time_calibrator`, `time_calibrators`, and `time-sync`, imitate harmless-sounding calibration utilities, which makes their network activity easier to rationalize during casual review.

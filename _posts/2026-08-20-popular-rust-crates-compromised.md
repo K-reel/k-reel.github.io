@@ -29,7 +29,7 @@ The Rust Security Response Team promptly [removed](https://blog.rust-lang.org/20
 
 We recommend treating any system that built one of these malicious versions as potentially compromised.
 
-![](https://cdn.sanity.io/images/cgdhsj6q/production/e8f17d0836ad5ad15a060edcabfa6a57ede3ac6d-1128x1196.png?w=1600&q=95&fit=max&auto=format)
+![](/assets/img/posts/popular-rust-crates-compromised/e8f17d0836ad5ad15a060edcabfa6a57ede3ac6d-1128x1196.png)
 
 ## The Attack
 
@@ -53,7 +53,7 @@ The loader:
 
 RustSec [documented](https://github.com/rustsec/advisory-db/issues/3161) the malicious dependency and build script behavior.
 
-![](https://cdn.sanity.io/images/cgdhsj6q/production/d42126bc8f03fad62ae09af1d4908ecefe9138d8-1720x2414.png?w=1600&q=95&fit=max&auto=format)
+![](/assets/img/posts/popular-rust-crates-compromised/d42126bc8f03fad62ae09af1d4908ecefe9138d8-1720x2414.png)
 
 ## Cross-Platform Execution
 
@@ -96,7 +96,7 @@ Our analysis additionally identified a weakness in the backdoor's command-authen
 
 Socket confirmed that the malicious versions of all three legitimate crates introduced the same [`proc-macro1`](https://socket.dev/cargo/package/proc-macro1/overview/1.0.107) dependency:
 
-![](https://cdn.sanity.io/images/cgdhsj6q/production/d8b74ca823dae1b5ecd4d64baf539820aebbc62c-411x161.png?w=1600&q=95&fit=max&auto=format)
+![](/assets/img/posts/popular-rust-crates-compromised/d8b74ca823dae1b5ecd4d64baf539820aebbc62c-411x161.png)
 
 All were published within minutes of one another on August 20, 2026, shortly after `proc-macro1` appeared.
 

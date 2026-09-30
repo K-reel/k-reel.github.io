@@ -7,7 +7,7 @@ tags: [npm, JavaScript, Typosquatting, Backdoor, T1195.002, T1036.005, T1059.007
 canonical_url: https://socket.dev/blog/malicious-npm-packages-inject-ssh-backdoors-via-typosquatted-libraries
 source: Socket
 image:
-  path: https://cdn.sanity.io/images/cgdhsj6q/production/cd5004ed1822afaf64bc3085be7a1fa104740fb0-1024x1024.webp
+  path: /assets/img/posts/malicious-npm-packages-inject-ssh-backdoors-via-typosquatted-libraries/cover.jpg
   alt: "Malicious npm Packages Inject SSH Backdoors via Typosquatted Libraries"
 description: "Socket's threat research team has detected six malicious npm packages typosquatting popular libraries to insert SSH backdoors."
 ---
@@ -16,7 +16,7 @@ Socket's threat research team has detected six malicious npm packages published 
 
 The malicious packages [`babelcl`](https://socket.dev/npm/package/babelcl/overview/0.0.6), [`chokader`](https://socket.dev/npm/package/chokader/overview/0.0.6), [`streamserch`](https://socket.dev/npm/package/streamserch/overview/0.0.6), [`sss2h`](https://socket.dev/npm/package/sss2h/overview/0.0.6), [`npmrunnall`](https://socket.dev/npm/package/npmrunnall/overview/0.0.6), and [`node-pyt`](https://socket.dev/npm/package/node-pyt/overview/0.0.6) pose a significant risk by injecting a backdoor into Linux systems, granting the threat actor unauthorized SSH access. At the time of writing, these malicious packages are live on the npm registry and have been downloaded over 700 times. We petitioned the npm registry to remove them.
 
-![Socket AI Scanner detected typosquatted and malicious streamserch package](https://cdn.sanity.io/images/cgdhsj6q/production/5aac95a90bb7cd7bcc719e10656d1bdc05b5f61a-1431x550.png)
+![Socket AI Scanner detected typosquatted and malicious streamserch package](/assets/img/posts/malicious-npm-packages-inject-ssh-backdoors-via-typosquatted-libraries/5aac95a90bb7cd7bcc719e10656d1bdc05b5f61a-1431x550.png)
 _Socket AI Scanner detected typosquatted and malicious "streamserch" package_
 
 The threat actor exploits common typing errors and abuses the `postinstall` script to distribute malicious code aimed to compromise developers and organizations. The `postinstall` script is automatically executed after the package is installed. It runs `node app.js` followed by a legitimate package installation, e.g. `npm install streamsearch`. The latter installs the legitimate `streamsearch` package to provide expected functionality, reducing the chance of immediate detection.
@@ -25,10 +25,10 @@ The threat actor exploits common typing errors and abuses the `postinstall` scri
 
 Unauthorized and unmonitored SSH access to a system or network is like a secret gate hidden within a fortified castle's walls. Attackers can slip inside undetected, bypass security measures, move throughout, gather intelligence, and potentially compromise the entire network. SSH access credentials are actively traded on the dark web, where threat actors buy and sell them to launch cyberattacks and commit fraud. Security researchers have documented attackers using SSH access for espionage, illegal cryptocurrency mining, and as a gateway for [ransomware](https://www.bitdefender.com/en-us/blog/businessinsights/cactus-analyzing-a-coordinated-ransomware-attack-on-corporate-networks) attacks. A network of brokers and dark web marketplaces exists solely to trade these access points. An unauthorized SSH key does not just open a door — it creates a hidden pathway for attackers to infiltrate and threaten the very foundation of the organization's digital fortress.
 
-![Threat actor selling SSH access on the underground forum Exploit](https://cdn.sanity.io/images/cgdhsj6q/production/f5a0b74a2583a74ea317d784bf36a81a33349c4d-1839x525.png)
+![Threat actor selling SSH access on the underground forum Exploit](/assets/img/posts/malicious-npm-packages-inject-ssh-backdoors-via-typosquatted-libraries/f5a0b74a2583a74ea317d784bf36a81a33349c4d-1839x525.png)
 _Threat actor is selling an SSH access on the underground forum Exploit_
 
-![Dark web shop dedicated to selling SSH accesses](https://cdn.sanity.io/images/cgdhsj6q/production/ed3f2c9662e1b237d00b8fed51813cd78f3ebd7c-1349x876.png)
+![Dark web shop dedicated to selling SSH accesses](/assets/img/posts/malicious-npm-packages-inject-ssh-backdoors-via-typosquatted-libraries/ed3f2c9662e1b237d00b8fed51813cd78f3ebd7c-1349x876.png)
 _Dark web shop dedicated to selling SSH accesses_
 
 ## SSH Backdoor Code
@@ -117,7 +117,7 @@ addSSHKey();
 
 The malicious script adds the threat actor's SSH public key to the user's `authorized_keys` file, grants unauthorized access, and performs data exfiltration by sending the victim's username and public IP address to a remote server. It operates silently to avoid detection, executing upon installation of the package.
 
-![Socket AI Scanner description for the malicious sss2h package](https://cdn.sanity.io/images/cgdhsj6q/production/7a5ef5176b65d2b844b6a498a84bee5d496ab1c7-620x535.png)
+![Socket AI Scanner description for the malicious sss2h package](/assets/img/posts/malicious-npm-packages-inject-ssh-backdoors-via-typosquatted-libraries/7a5ef5176b65d2b844b6a498a84bee5d496ab1c7-620x535.png)
 _Socket AI Scanner's description with additional context for the malicious "sss2h" package_
 
 ## Command and Control (C2)

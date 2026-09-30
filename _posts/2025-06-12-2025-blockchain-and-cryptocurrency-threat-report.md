@@ -7,7 +7,7 @@ tags: [Infostealer, Crypto Drainer, Cryptojacker, Clipper, Cryptocurrency, npm, 
 canonical_url: https://socket.dev/blog/2025-blockchain-and-cryptocurrency-threat-report
 source: Socket
 image:
-  path: https://cdn.sanity.io/images/cgdhsj6q/production/d5eeee442b3b411a6926a1ca1815bee969ca3fe1-1024x1024.webp
+  path: /assets/img/posts/2025-blockchain-and-cryptocurrency-threat-report/cover.jpg
   alt: "2025 Blockchain and Cryptocurrency Threat Report"
 description: "An in-depth analysis of credential stealers, crypto drainers, cryptojackers, and clipboard hijackers abusing open source package registries to compromise blockchain and cryptocurrency development environments."
 ---
@@ -32,7 +32,7 @@ Our investigation has identified four threat classes that are consistently recur
 
 This list is neither exhaustive nor ranked by prevalence or impact, but rather highlights the patterns our team has repeatedly tracked, reverse-engineered, and documented across major open source registries. We report all confirmed malicious packages to the appropriate registry maintainers to support broader ecosystem defense and transparency.
 
-![Credential Stealers icon](https://cdn.sanity.io/images/cgdhsj6q/production/0ed59564506b0738a5b2849c3f53a3996de47de9-165x164.png)
+![Credential Stealers icon](/assets/img/posts/2025-blockchain-and-cryptocurrency-threat-report/0ed59564506b0738a5b2849c3f53a3996de47de9-165x164.png)
 
 ## Cryptowallet-Credential Stealers
 
@@ -60,7 +60,7 @@ We [track](https://socket.dev/blog/lazarus-expands-malicious-npm-campaign-11-new
 
 The malware payloads (BeaverTail and InvisibleFerret) run on Windows, macOS, and Linux. BeaverTail scans for Solana `id.json`, browser profiles (Chrome, Brave, Firefox), and crypto extension folders (MetaMask, Phantom, Binance Wallet, Coinbase Wallet), exfiltrating credentials via silent HTTP POST. The malware also establishes persistence and enables long-term access. In one [high-profile breach](https://socket.dev/blog/bybit-hack-crypto-losses), North Korean threat actors used this approach to extract private keys and steal millions in cryptocurrency from Bybit within hours.
 
-![Contagious Interview attack chain diagram](https://cdn.sanity.io/images/cgdhsj6q/production/bc2843a41579d71893f9e3531dc2bd0e40709740-2048x1333.png)
+![Contagious Interview attack chain diagram](/assets/img/posts/2025-blockchain-and-cryptocurrency-threat-report/bc2843a41579d71893f9e3531dc2bd0e40709740-2048x1333.png)
 _Diagram that visually depicts the Contagious Interview attack chain for infiltrating Web3 development environments through malicious open source packages._
 
 The attack begins with **reconnaissance and target** phase, where threat actors identify widely used developer tools in Web3 environments as high-trust injection points. As part of the lure, they impersonate recruiters and initiate staged interview processes to socially engineer targets into installing a malicious npm package disguised as a coding challenge or evaluation task.
@@ -73,7 +73,7 @@ The malware silently **exfiltrates** data via HTTP POST to C2 infrastructure. **
 
 **Defensive Recommendations:** Monitor for suspicious package behavior, enforce dependency pinning and provenance verification, and inspect developer tooling dependencies for signs of credential access. Avoid installing low-reputation packages, especially those mimicking popular tooling. Deploy runtime monitoring for unauthorized keystore access and track outbound traffic to unusual endpoints.
 
-![Crypto Drainers icon](https://cdn.sanity.io/images/cgdhsj6q/production/d9a9f1335e678f8158d3f48142060921d1863153-164x163.png)
+![Crypto Drainers icon](/assets/img/posts/2025-blockchain-and-cryptocurrency-threat-report/d9a9f1335e678f8158d3f48142060921d1863153-164x163.png)
 
 ## Crypto Drainers
 
@@ -87,7 +87,7 @@ Crypto drainers trigger immediate and irreversible fund loss by executing on-cha
 
 Obfuscated code typically queries the wallet balance, multiplies it by a fixed ratio (e.g., 0.85), and crafts a `sendTransaction` or Solana SPL `transfer`. This partial-drain strategy reduces suspicion by leaving a small balance.
 
-![Balance probing and fixed-percentage drains example](https://cdn.sanity.io/images/cgdhsj6q/production/9a7a872cad81edced52338d618e4c88a7d991de7-615x629.png)
+![Balance probing and fixed-percentage drains example](/assets/img/posts/2025-blockchain-and-cryptocurrency-threat-report/9a7a872cad81edced52338d618e4c88a7d991de7-615x629.png)
 _In June 2025, we [uncovered](https://socket.dev/blog/malicious-npm-packages-target-bsc-and-ethereum) a campaign involving [`env-process`](https://socket.dev/npm/package/env-process/overview/1.0.2) and related packages ([`ethereum-smart-contract`](https://socket.dev/npm/package/ethereum-smart-contract), [`pancake_uniswap_validators_utils_snipe`](https://socket.dev/npm/package/pancake_uniswap_validators_utils_snipe/overview/1.0.0), and [`pancakeswap-oracle-prediction`](https://socket.dev/npm/package/pancakeswap-oracle-prediction)) that siphoned 85% of ETH or BSC wallet balances. Obfuscated JavaScript retrieved balances via public RPC (`bsc-dataseed1.defibit.io`) and transferred funds to the threat actor-controlled addresses._
 
 ### Transfer Manipulation and Fund Diversion
@@ -102,7 +102,7 @@ The malware uses public RPC endpoints (e.g., `api.devnet.solana.com`) and requir
 
 **Defensive Recommendations:** Audit dependencies, particularly those accessing private keys or invoking on-chain transactions, for obfuscated code, probabilistic triggers, or unauthorized transfer routines. Prefer widely adopted, community-vetted packages with transparent maintainers. Integrate telemetry and auto-quarantine features to prevent known drainers from entering build pipelines or production deployments.
 
-![Cryptojackers icon](https://cdn.sanity.io/images/cgdhsj6q/production/6bbc151ae421559a179ed0a1a54b4c7c74b4d444-163x160.png)
+![Cryptojackers icon](/assets/img/posts/2025-blockchain-and-cryptocurrency-threat-report/6bbc151ae421559a179ed0a1a54b4c7c74b4d444-163x160.png)
 
 ## Cryptojackers
 
@@ -112,25 +112,25 @@ Among the most impactful cases was the temporary compromise of [`@rspack/core`](
 
 Other examples include the [`klow`](https://socket.dev/npm/package/klow/overview/0.7.29) package, which geofences execution by resolving the host's IP address and conditionally downloading XMRig from a suspicious CDN if the machine is outside specific countries, an evasion tactic designed to limit detection and maintain operational longevity.
 
-![Socket AI Scanner analysis of klow package](https://cdn.sanity.io/images/cgdhsj6q/production/9b5d4f256b45e84f6113c3da004a01dad8a838af-621x669.png)
+![Socket AI Scanner analysis of klow package](/assets/img/posts/2025-blockchain-and-cryptocurrency-threat-report/9b5d4f256b45e84f6113c3da004a01dad8a838af-621x669.png)
 _Socket AI Scanner's analysis of [`klow@0.7.29`](https://socket.dev/npm/package/klow/overview/0.7.29), a known cryptojacking package that uses geolocation checks to geofence execution, downloads an XMRig binary from a remote server, and mines Monero in the background without user consent._
 
 Multiple versions of the [`ultralytics`](https://socket.dev/pypi/package/ultralytics/overview/8.3.41) package (v8.3.41, 8.3.42, 8.3.45, 8.3.46) were temporary [compromised](https://socket.dev/blog/ultralytics-pypi-package-compromised-through-github-actions-cache-poisoning) via GitHub Actions [cache poisoning](https://socket.dev/blog/pypi-on-ultralytics-breach-no-security-flaws-in-pypi-exploited), resulting in cryptomining payloads being shipped under the guise of machine learning enhancements. The maintainers have since remediated the issue and restored integrity to the package. Similarly, the [`kersa`](https://socket.dev/pypi/package/kersa/overview/0.1/tar-gz) package on PyPI fetched and launched a cryptominer headlessly via shell commands.
 
-![Cryptojacking malware execution flow](https://cdn.sanity.io/images/cgdhsj6q/production/783067842886a4cc51c8f3124a84c8c24e71982b-2048x1095.png)
+![Cryptojacking malware execution flow](/assets/img/posts/2025-blockchain-and-cryptocurrency-threat-report/783067842886a4cc51c8f3124a84c8c24e71982b-2048x1095.png)
 _Execution flow of cryptojacking malware in open source packages, illustrating four distinct stages: obfuscated installation, remote cryptominer retrieval, covert background execution, and conditional evasion logic such as geofencing or log cleanup._
 
 Cryptojackers may not steal credentials or wallet keys, but they exploit infrastructure for profit, and often as a smokescreen for deeper intrusions. They burden cloud runners with inflated compute costs and slow local development environments. If shipped in production, they can also damage user trust and project credibility. Any illicit cryptominer should be treated as a high-confidence indicator of a software supply chain compromise.
 
 **Defensive Recommendations:** Enforce dependency controls and monitor infrastructure behavior. Disable lifecycle scripts like `postinstall` and `setup.py` by default in CI/CD pipelines to block common infection paths, while monitoring for abnormal CPU/GPU usage during builds to detect stealthy cryptominers. Inspect outbound traffic for signs of cryptominer downloads or connections to mining pools, and enforce dependency hash pinning with provenance checks to catch unauthorized changes — such as those seen in the compromised `@rspack/core` package.
 
-![Clipboard Hijackers icon](https://cdn.sanity.io/images/cgdhsj6q/production/0d681b3b5b732d3990cdfcf0e9c0a06fc8c79e11-165x163.png)
+![Clipboard Hijackers icon](/assets/img/posts/2025-blockchain-and-cryptocurrency-threat-report/0d681b3b5b732d3990cdfcf0e9c0a06fc8c79e11-165x163.png)
 
 ## Clipboard Hijackers ("Clippers")
 
 Clipboard hijackers, or "clippers", are lightweight malware modules that monitor the system clipboard for cryptocurrency wallet strings, replace them with threat actor-controlled addresses, and silently wait for the victim to authorize the payment. We identified a steady flow of these clippers in npm and PyPI ecosystems tuned for developer workstations and CI runners.
 
-![Socket AI Scanner analysis of raydium-sdk-liquidity-init](https://cdn.sanity.io/images/cgdhsj6q/production/68ae8fe0ec033b5b1585a1f1404d8b501f9e18e5-1436x578.png)
+![Socket AI Scanner analysis of raydium-sdk-liquidity-init](/assets/img/posts/2025-blockchain-and-cryptocurrency-threat-report/68ae8fe0ec033b5b1585a1f1404d8b501f9e18e5-1436x578.png)
 _Socket AI Scanner providing context for the malicious npm package [`raydium-sdk-liquidity-init@1.0.2`](https://socket.dev/npm/package/raydium-sdk-liquidity-init/overview/1.0.2) contains obfuscated JavaScript flagged as known malware. It continuously monitors the system clipboard for Solana private keys, validates them, and exfiltrates the data to a remote Redis server using hardcoded credentials._
 
 ### How Clippers Work

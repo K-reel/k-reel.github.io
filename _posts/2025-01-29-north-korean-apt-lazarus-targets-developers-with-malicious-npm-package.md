@@ -8,7 +8,7 @@ author: kirill_and_peter
 canonical_url: https://socket.dev/blog/north-korean-apt-lazarus-targets-developers-with-malicious-npm-package
 source: Socket
 image:
-  path: https://cdn.sanity.io/images/cgdhsj6q/production/9d1fe8e14a823fd9c46b00dea79cfa6d7d26e0ae-1024x1024.webp
+  path: /assets/img/posts/north-korean-apt-lazarus-targets-developers-with-malicious-npm-package/cover.jpg
   alt: "North Korean APT Lazarus Targets Developers with Malicious npm Package"
 description: "Malicious npm package postcss-optimizer delivers BeaverTail malware, targeting developer systems; similarities to past campaigns suggest a North Korean connection."
 ---
@@ -23,10 +23,10 @@ By impersonating the legitimate [`postcss`](https://socket.dev/npm/package/postc
 
 The malicious package `postcss-optimizer`, published by a threat actor using the npm registry alias "yolorabbit", is designed to closely mimic the legitimate `postcss` library. The high degree of similarity increases the likelihood that a target may mistakenly install it, believing it to be the authentic package.
 
-![The legitimate postcss package on npm](https://cdn.sanity.io/images/cgdhsj6q/production/4a610f4946635d4050d69b5561a7a389e29e7a57-2048x1383.png)
+![The legitimate postcss package on npm](/assets/img/posts/north-korean-apt-lazarus-targets-developers-with-malicious-npm-package/4a610f4946635d4050d69b5561a7a389e29e7a57-2048x1383.png)
 _A screenshot of the legitimate `postcss` package on the npm registry._
 
-![The malicious postcss-optimizer package on npm](https://cdn.sanity.io/images/cgdhsj6q/production/0909bfd7438d9c725b712683802ebbedac380bf0-2048x1396.png)
+![The malicious postcss-optimizer package on npm](/assets/img/posts/north-korean-apt-lazarus-targets-developers-with-malicious-npm-package/0909bfd7438d9c725b712683802ebbedac380bf0-2048x1396.png)
 _A screenshot of the malicious `postcss-optimizer` package on the npm registry._
 
 According to Palo Alto Networks Unit 42 researchers, who originally [identified](https://unit42.paloaltonetworks.com/two-campaigns-by-north-korea-bad-actors-target-job-hunters/) Contagious Interview-style attacks in 2022, the threat actor engages victims in a staged interview process to persuade them to download and install an npm-based package. The package is likely presented as software for review or analysis, but in reality, it contains malicious JavaScript designed to infect the victim's system with BeaverTail malware.
@@ -41,7 +41,7 @@ Despite the threat actor's use of a JavaScript obfuscation tool to conceal the m
 
 Socket's static and behavioral analysis also detected suspicious execution patterns, including shell command execution, file system manipulation, and covert network communication. These indicators, combined with the package's resemblance to previously documented Lazarus-affiliated campaigns, led to its further classification as a high-risk threat.
 
-![Socket AI Scanner analysis of postcss-optimizer](https://cdn.sanity.io/images/cgdhsj6q/production/4808116f6816a40d4787716f97316b01e02d265d-1246x1416.png)
+![Socket AI Scanner analysis of postcss-optimizer](/assets/img/posts/north-korean-apt-lazarus-targets-developers-with-malicious-npm-package/4808116f6816a40d4787716f97316b01e02d265d-1246x1416.png)
 _Socket AI Scanner's analysis, including contextual details about the malicious `postcss-optimizer` package._
 
 The following deobfuscated and redacted [code](https://socket.dev/npm/package/postcss-optimizer/files/3.2.5/lib/config.js) snippets have been annotated to highlight the threat actor's techniques, including data exfiltration methods, and mechanisms for retrieving additional payloads.

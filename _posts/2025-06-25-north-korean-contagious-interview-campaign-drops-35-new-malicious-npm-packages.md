@@ -7,7 +7,7 @@ tags: [Contagious Interview, HexEval, BeaverTail, InvisibleFerret, npm, Typosqua
 canonical_url: https://socket.dev/blog/north-korean-contagious-interview-campaign-drops-35-new-malicious-npm-packages
 source: Socket
 image:
-  path: https://cdn.sanity.io/images/cgdhsj6q/production/ab83d11cce4f0ca0e4fa4c251c9f02876900bb3b-1024x1024.webp
+  path: /assets/img/posts/north-korean-contagious-interview-campaign-drops-35-new-malicious-npm-packages/cover.jpg
   alt: "North Korean Contagious Interview Campaign Drops 35 New Malicious npm Packages"
 description: "North Korean threat actors linked to the Contagious Interview campaign return with 35 new malicious npm packages using a stealthy multi-stage malware loader."
 ---
@@ -20,7 +20,7 @@ Posing as recruiters on LinkedIn, the North Korean threat actors send coding "as
 
 Earlier [campaigns](https://socket.dev/blog/lazarus-strikes-npm-again-with-a-new-wave-of-malicious-packages) embedded obfuscated BeaverTail directly in packages. Once security researchers [exposed](https://socket.dev/blog/north-korean-apt-lazarus-targets-developers-with-malicious-npm-package) that tactic, the threat group pivoted to HexEval Loader, which fetches BeaverTail on demand and leaves minimal evidence in the registry. We first [documented](https://socket.dev/blog/lazarus-expands-malicious-npm-campaign-11-new-packages-add-malware-loaders-and-bitbucket) this shift in April 2025, when the npm account `crouch626` published four malicious modules ([`cln-logger`](https://socket.dev/npm/package/cln-logger), [`node-clog`](https://socket.dev/npm/package/node-clog), [`consolidate-log`](https://socket.dev/npm/package/consolidate-log), and [`consolidate-logger`](https://socket.dev/npm/package/consolidate-logger)). The first two carried a HexEval Loader, whereas the others concealed an obfuscated copy of BeaverTail malware. Since then we have tracked dozens more packages, and believe the true count is higher because npm removed several shortly after publication. The campaign is still active, and we expect additional malicious packages to surface.
 
-![Diamond model of intrusion analysis overview of the HexEval Loader campaign](https://cdn.sanity.io/images/cgdhsj6q/production/d3ac57ea4a82afd69f049867eed5951c3c5f3796-2048x1357.png)
+![Diamond model of intrusion analysis overview of the HexEval Loader campaign](/assets/img/posts/north-korean-contagious-interview-campaign-drops-35-new-malicious-npm-packages/d3ac57ea4a82afd69f049867eed5951c3c5f3796-2048x1357.png)
 _Diamond model of intrusion analysis overview of the HexEval Loader campaign, linking North Korean Contagious Interview threat actors (**Adversary**) to their C2 servers, npm accounts, and fake recruiter profiles (**Infrastructure**), the HexEval Loader, BeaverTail, InvisibleFerret, and a keylogger (**Capabilities**), and the targeted job-seekers and developers approached on LinkedIn (**Victim**)._
 
 ## Anatomy of a HexEval Loader
@@ -86,11 +86,11 @@ The system allows arbitrary handlers (listeners) to receive keystroke data, enab
 
 The [`loveryon`](https://socket.dev/npm/user/loveryon) cluster (an npm alias that published [`serverlog-dispatch`](https://socket.dev/npm/package/serverlog-dispatch/overview/1.0.0), [`mongo-errorlog`](https://socket.dev/npm/package/mongo-errorlog/overview/1.0.0), [`next-log-patcher`](https://socket.dev/npm/package/next-log-patcher/overview/1.0.0), and [`vite-plugin-tools`](https://www.notion.so/Malicious-NPM-Package-naderabdi-merchant-advcash-Executes-Reverse-Shell-and-Abuses-Payment-Workflow-1bc4cb3adfeb8085b8b4d7340f5921d3?pvs=21)) exposes a well-orchestrated social-engineering routine that begins on LinkedIn. The threat actors posed as recruiters and approached software engineers with attractive job offers. After a brief exchange they sent coding tasks that instructed the candidates to clone test repositories and make minor changes. Buried in those projects was one of the [`loveryon`](https://socket.dev/npm/user/loveryon) cluster malicious dependencies carrying the HexEval Loader (or an inline `eval()` snippet) that triggered the moment the code ran.
 
-![Reddit user describes uncovering malicious npm packages](https://cdn.sanity.io/images/cgdhsj6q/production/11e0bda6186d03a4cdaf8e5669f58d640f8dd569-910x361.png)
+![Reddit user describes uncovering malicious npm packages](/assets/img/posts/north-korean-contagious-interview-campaign-drops-35-new-malicious-npm-packages/11e0bda6186d03a4cdaf8e5669f58d640f8dd569-910x361.png)
 
-![Reddit user continues describing the attack](https://cdn.sanity.io/images/cgdhsj6q/production/e3de05ed5fe07cde44b5dff0a42c2879b8a3dbde-990x273.png)
+![Reddit user continues describing the attack](/assets/img/posts/north-korean-contagious-interview-campaign-drops-35-new-malicious-npm-packages/e3de05ed5fe07cde44b5dff0a42c2879b8a3dbde-990x273.png)
 
-![Reddit user shares details of the captured payload](https://cdn.sanity.io/images/cgdhsj6q/production/b041cf4279dbcb49c89328b7b84f0c725230daf2-953x257.png)
+![Reddit user shares details of the captured payload](/assets/img/posts/north-korean-contagious-interview-campaign-drops-35-new-malicious-npm-packages/b041cf4279dbcb49c89328b7b84f0c725230daf2-953x257.png)
 _A Reddit user [describes](https://www.reddit.com/r/CryptoScams/comments/1k37az4/comment/moflugs/) uncovering four malicious npm packages tied to the North Korean Contagious Interview operation. The threat actors posed as a recruiter on LinkedIn, lured the user into executing code locally, and attempted to exfiltrate data. Running the assignment in a containerized environment, the user [captured](https://gist.github.com/saurabhnemade/cf377389d34e8800b48afd505c7834fe) the second-stage payload delivered by the packages (`next-log-patcher`, `vite-plugin-tools`, `mongo-errorlog`, and `serverlog-dispatch`) and linked infrastructure._
 
 ## Second-Stage Payload: BeaverTail Malware
@@ -107,22 +107,22 @@ The threat actors used 19 distinct email addresses to register the npm accounts 
 
 After initial communication, the threat actors send victims a technical assessment or coding assignment under the guise of a hiring process. In several cases, once the malicious code is delivered, the fake recruiters delete their LinkedIn profiles or block the victim, cutting off contact to cover tracks. Victim [reports](https://www.reddit.com/r/programming/comments/1i84akt/recruiter_tried_to_hack_me_full_story_on_comments/) on Reddit consistently describe the same pattern, noting similar job descriptions and identical communication scripts across different recruiter personas.
 
-![Reddit users report coordinated social engineering](https://cdn.sanity.io/images/cgdhsj6q/production/d75c7df4e2fed7ff1fc1f382c961ddc2990f47ce-982x514.png)
+![Reddit users report coordinated social engineering](/assets/img/posts/north-korean-contagious-interview-campaign-drops-35-new-malicious-npm-packages/d75c7df4e2fed7ff1fc1f382c961ddc2990f47ce-982x514.png)
 _Reddit users [report](https://www.reddit.com/r/programming/comments/1i84akt/recruiter_tried_to_hack_me_full_story_on_comments/) coordinated social engineering involving a fake recruiter who directed targets to clone and run a Bitbucket-hosted project locally. After execution, the recruiter deleted their account._
 
 The assignments direct victims to clone code repositories or install specific npm packages (both of which deliver malicious JavaScript payloads). In this campaign, the payload is the HexEval Loader, designed to fingerprint the host and retrieve second-stage malware. Once a victim submits the completed assignment, the threat actors often escalate their tactics. They may request a live video call with a "project manager", during which they pressure the victim to disable Docker or other container environments and run the code natively on their machine while screen sharing — an attempt to bypass container isolation and ensure full infection.
 
-![Threat actor pressures target to bypass containerized environments](https://cdn.sanity.io/images/cgdhsj6q/production/db5aca759efb61e7976fc3986c1a05af0aaabc04-1000x1150.png)
+![Threat actor pressures target to bypass containerized environments](/assets/img/posts/north-korean-contagious-interview-campaign-drops-35-new-malicious-npm-packages/db5aca759efb61e7976fc3986c1a05af0aaabc04-1000x1150.png)
 _A threat actor, posing as a recruiter on LinkedIn, [pressures](https://www.reddit.com/r/CryptoScams/comments/1k37az4/comment/moflugs/) the target to bypass containerized environments and execute code directly on the host system._
 
 Multiple victims [report](https://www.reddit.com/r/programming/comments/1i84akt/recruiter_tried_to_hack_me_full_story_on_comments/) this exact sequence. On Reddit, one developer [described](https://www.reddit.com/r/programming/comments/1i84akt/recruiter_tried_to_hack_me_full_story_on_comments/) being asked to "clone it again for a new update and run the app without Docker on a real machine while sharing my screen". This tactic reflects a deliberate effort to ensure execution in a vulnerable context.
 
 Victims are approached with lucrative job offers, often advertising remote roles with salaries ranging from $16,000 to $25,000 per month ($192,000 to $300,000 per year). The job descriptions are shared via [Google Docs](https://www.reddit.com/r/programming/comments/1i84akt/comment/mdedtiy/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button) or PDFs and are crafted to resemble legitimate listings for positions such as developers, designers, engineers, or project managers.
 
-![Fraudulent Google Doc job description](https://cdn.sanity.io/images/cgdhsj6q/production/81f456f7d07a29a49ad1077b4df45b47361cd526-1586x872.png)
+![Fraudulent Google Doc job description](/assets/img/posts/north-korean-contagious-interview-campaign-drops-35-new-malicious-npm-packages/81f456f7d07a29a49ad1077b4df45b47361cd526-1586x872.png)
 _Screenshot of a fraudulent Google Doc job description used by threat actors to lure blockchain developers with fake remote positions; part of a broader social engineering campaign targeting software engineers._
 
-![Fraudulent coding assignment on Google Docs](https://cdn.sanity.io/images/cgdhsj6q/production/c9e906afb7460c8a9183f9b2bc02850be24ccb0e-1597x922.png)
+![Fraudulent coding assignment on Google Docs](/assets/img/posts/north-korean-contagious-interview-campaign-drops-35-new-malicious-npm-packages/c9e906afb7460c8a9183f9b2bc02850be24ccb0e-1597x922.png)
 _Screenshot of a fraudulent coding assignment hosted on Google Docs, instructing blockchain developers to interact with a Bitbucket repository (`notion-dex/ultrax`) as part of a fake recruitment process._
 
 The targeting appears to follow prior open source intelligence (OSINT) collection. In several cases, the fake recruiters reference specific GitHub projects, past experience, and personal details, suggesting a deliberate effort to personalize the outreach and boost credibility. Once the victim engages, malicious npm packages are discreetly introduced, either embedded in the assignment codebase or added as hidden dependencies. This initiates host reconnaissance and sets the stage for follow-on intrusions and malware execution.

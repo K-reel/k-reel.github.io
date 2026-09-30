@@ -7,7 +7,7 @@ tags: [Typosquatting, Infostealer, JavaScript, npm, Obfuscation, T1195.002, T103
 canonical_url: https://socket.dev/blog/roblox-developers-targeted-with-npm-packages-infected-with-infostealers
 source: Socket
 image:
-  path: https://cdn.sanity.io/images/cgdhsj6q/production/2d8eee592db2ba48c3d658420f1fc5c962f157fa-1024x1024.webp
+  path: /assets/img/posts/roblox-developers-targeted-with-npm-packages-infected-with-infostealers/cover.jpg
   alt: "Roblox developers targeted with malicious npm packages deploying Skuld infostealer and Blank Grabber"
 description: "Socket's threat research team has detected five malicious npm packages targeting Roblox developers, deploying malware to steal credentials and personal data."
 ---
@@ -34,7 +34,7 @@ Skuld infostealer, written in Go, is designed to extract sensitive data from Win
 
 Blank Grabber is a Python-based malware that steals sensitive information from infected Windows systems. Featuring a user-friendly GUI builder, it allows threat actors to customize the malware's behavior, such as disabling Windows Defender or bypassing User Account Control (UAC). Blank Grabber is capable of extracting data like Discord tokens, browser passwords, cookies, cryptocurrency wallet details, as well as capture screenshots and webcam images. In the beginning of 2024, Socket identified an [uptick](https://socket.dev/blog/blank-grabber-python-package-steals-info-from-discord-and-telegram) in code packages that distributed Blank Grabber.
 
-![](https://cdn.sanity.io/images/cgdhsj6q/production/daf113902ac4908f0888505c5b37b45f40f13bad-1460x936.png)
+![](/assets/img/posts/roblox-developers-targeted-with-npm-packages-infected-with-infostealers/daf113902ac4908f0888505c5b37b45f40f13bad-1460x936.png)
 
 _**Skuld infostealer on the left and Blank Grabber malware on the right showing credential-stealing capability**_
 
@@ -50,7 +50,7 @@ _"**The code is highly obfuscated and designed to download and execute files fro
 
 The malicious packages contained obfuscated JavaScript code, a common tactic used by threat actors to conceal the true intent of their code and evade detection. The code defined URLs pointing to malicious executables hosted on a GitHub repository controlled by the threat actor. By leveraging GitHub, a trusted platform among developers, the threat actor increased the likelihood of bypassing security filters and deceiving victims.
 
-![](https://cdn.sanity.io/images/cgdhsj6q/production/0e9f982d0f4d58add90f629da6208cc0a3fc0631-2048x826.png)
+![](/assets/img/posts/roblox-developers-targeted-with-npm-packages-infected-with-infostealers/0e9f982d0f4d58add90f629da6208cc0a3fc0631-2048x826.png)
 
 _**Currently defunct GitHub repository that was used by the threat actor to host malware**_
 

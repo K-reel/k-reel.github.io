@@ -7,7 +7,7 @@ tags: [Typosquatting, Python, PyPI, Monkey Patching, Infostealer, T1195.002, T10
 canonical_url: https://socket.dev/blog/monkey-patched-pypi-packages-steal-solana-private-keys
 source: Socket
 image:
-  path: https://cdn.sanity.io/images/cgdhsj6q/production/e68447aacff373f037186e1cfbbaa0a060582ea0-1024x1024.webp
+  path: /assets/img/posts/monkey-patched-pypi-packages-steal-solana-private-keys/cover.jpg
   alt: "Monkey-Patched PyPI Packages Use Transitive Dependencies to Steal Solana Private Keys"
 description: "Malicious PyPI package semantic-types steals Solana private keys via transitive dependency installs using monkey patching and blockchain exfiltration."
 ---
@@ -22,7 +22,7 @@ The threat actor created polished README files and linked the malicious packages
 
 When any of the five packages declare `install_requires = ["semantic-types>=0.1.2"]` (or a comparable requirement) in their setup metadata, `pip` will silently download and import `semantic‑types` whenever someone installs, upgrades, or runs those packages. That transitive pull guarantees the threat actor's code executes even if the victim never imports `semantic‑types` directly. The moment a developer types e.g. `pip install solana-keypair`, the resolver fetches `semantic‑types`, its malicious `__init__.py` runs, and every subsequent Solana `keypair` created on the infected system is exfiltrated.
 
-![Dependency graph showing semantic-types as transitive dependency](https://cdn.sanity.io/images/cgdhsj6q/production/bce9f6d7c1c07d5240ec67ecf93f5f8249214c94-1514x864.png)
+![Dependency graph showing semantic-types as transitive dependency](/assets/img/posts/monkey-patched-pypi-packages-steal-solana-private-keys/bce9f6d7c1c07d5240ec67ecf93f5f8249214c94-1514x864.png)
 _semantic-types is the core malicious package. The five other packages (solana-keypair, solana-publickey, solana-mev-agent-py, solana-trading-bot, and soltrade) all depend directly on semantic-types. This makes them transitive carriers of the payload. Installing any of these packages causes semantic-types to be installed and executed automatically._
 
 ## Monkey Patching in Action
@@ -108,7 +108,7 @@ Exfiltration is performed via a legitimate Solana RPC endpoint `api.devnet.solan
 
 Each time a project calls `Keypair.from_seed` or related methods, the monkey-patched wrapper silently spawns a background thread that transmits the 64-byte raw private key to the blockchain. Because the data is encrypted and wrapped in a memo transaction, it appears indistinguishable from routine wallet activity, making the attack both stealthy and operationally resilient.
 
-![Socket AI Scanner analysis of semantic-types](https://cdn.sanity.io/images/cgdhsj6q/production/77ce2db15eb7bd08e7a3422aa0f8c39a21c60e30-619x669.png)
+![Socket AI Scanner analysis of semantic-types](/assets/img/posts/monkey-patched-pypi-packages-steal-solana-private-keys/77ce2db15eb7bd08e7a3422aa0f8c39a21c60e30-619x669.png)
 _Socket AI Scanner's analysis, including contextual details about the malicious semantic‑types package._
 
 ## Malicious Campaign Timeline
@@ -129,14 +129,14 @@ Their focus on Solana-related tooling suggests deliberate targeting of developer
 
 Each malicious package included a professionally structured README designed to mimic trusted open-source projects. These documents featured clear usage instructions, working code examples, and language aligned with best practices—conveying a sense of legitimacy to casual reviewers or automated scanners.
 
-![solana-mev-agent-py project page](https://cdn.sanity.io/images/cgdhsj6q/production/e96547807229be3af6b036ee8d2a7916129853a5-1109x859.png)
+![solana-mev-agent-py project page](/assets/img/posts/monkey-patched-pypi-packages-steal-solana-private-keys/e96547807229be3af6b036ee8d2a7916129853a5-1109x859.png)
 _The solana-mev-agent-py malicious package features a polished project page and README, mimicking legitimate open source tools with structured descriptions, external links, and stylized visuals; tactics used by the threat actor to build credibility._
 
 **2. Strategic Linking to Legitimate Resources**
 
 The threat actor enriched package metadata with links to real Stack Overflow discussions, GitHub repositories, and official Solana documentation. For example, the `solana-keypair` package linked to a genuine Stack Overflow thread about import errors—an issue familiar to developers. This tactic reinforced the appearance of authenticity by embedding the malicious tools within realistic developer workflows.
 
-![solana-keypair Stack Overflow link](https://cdn.sanity.io/images/cgdhsj6q/production/381609ca900665c8b294b3ab3212ff01308a80c6-739x860.png)
+![solana-keypair Stack Overflow link](/assets/img/posts/monkey-patched-pypi-packages-steal-solana-private-keys/381609ca900665c8b294b3ab3212ff01308a80c6-739x860.png)
 _The solana-keypair malicious package linked to this legitimate Stack Overflow post about a common import error, leveraging real developer pain points to enhance trust and disguise malicious intent._
 
 **3. Imitation of Popular Tools**

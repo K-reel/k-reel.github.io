@@ -8,7 +8,7 @@ author: kirill_and_nicholas
 canonical_url: https://socket.dev/blog/spearphishing-campaign-abuses-npm-registry
 source: Socket
 image:
-  path: https://cdn.sanity.io/images/cgdhsj6q/production/d02135698302a9cf8b8d154c0bd5a0641305dbc6-1024x1024.png?w=1000&q=95&fit=max&auto=format
+  path: /assets/img/posts/spearphishing-campaign-abuses-npm-registry/cover.png
   alt: Spearphishing Campaign Abuses npm Registry
 description: "A five-month operation turned 27 npm packages into durable hosting for browser-run lures that mimic document-sharing portals and Microsoft sign-in, targeting sales personnel at critical infrastructure organizations."
 ---
@@ -23,7 +23,7 @@ Several of the domains embedded in these packages overlap with publicly document
 
 We reported this campaign and the remaining live package to the npm security team and requested suspension of the publisher's account. We also notified 25 targeted organizations and shared relevant indicators to support triage.
 
-![Socket AI Scanner's analysis of the malicious adril7123 package.](https://cdn.sanity.io/images/cgdhsj6q/production/15ce8764e0e79d81947220c4d31590bf2ef47d45-623x606.png)
+![Socket AI Scanner's analysis of the malicious adril7123 package.](/assets/img/posts/spearphishing-campaign-abuses-npm-registry/15ce8764e0e79d81947220c4d31590bf2ef47d45-623x606.png)
 _Socket AI Scanner's analysis of the malicious [adril7123](https://socket.dev/npm/package/adril7123) package flags [assets/refinered.bundles.js](https://socket.dev/npm/package/adril7123/files/14.0.0/assets/refinered.bundles.js) as a phishing component that fabricates a Microsoft login flow, uses client-side bot and honeypot checks to evade automated analysis, and redirects users to threat actor-controlled infrastructure while carrying a hardcoded target email._
 
 ## Threat Actor Strategy and Attack Chain
@@ -40,7 +40,7 @@ The phishing page embedded in the packages masquerades as a "MicroSecure" docume
 
 Interaction is gated behind basic anti-analysis controls. The "Verify and Continue" button remains disabled until human input is detected. Right-click and clipboard actions are [blocked](https://socket.dev/npm/package/adril7123/files/14.0.0/assets/refinered.bundles.js#L98) to hinder inspection and automated analysis.
 
-![The phishing flow presenting a fake MicroSecure document-sharing page then a Microsoft sign-in prompt.](https://cdn.sanity.io/images/cgdhsj6q/production/2f4d54017438e14ca4c606e9a3a64432b4a13420-1693x882.png)
+![The phishing flow presenting a fake MicroSecure document-sharing page then a Microsoft sign-in prompt.](/assets/img/posts/spearphishing-campaign-abuses-npm-registry/2f4d54017438e14ca4c606e9a3a64432b4a13420-1693x882.png)
 _The phishing flow first presents a fake "MicroSecure" document-sharing verification page that references RFQ-style content, then switches to a Microsoft-branded sign-in prompt that pre-fills the targeted email address and directs the user to re-authenticate ("Session timed out") to drive credential capture. The Socket Threat Research Team replaced the original targeted email addresses with redacted placeholders._
 
 ## Anti-Analysis Logic: Bot and Sandbox Evasion
@@ -166,12 +166,12 @@ The targeted organizations concentrate in critical infrastructure-adjacent secto
 
 Geographically, targets span the United States and multiple international locations across North America, Europe, and East Asia. In several cases, target locations differ from corporate headquarters, which is consistent with threat actor's focus on regional sales staff, country managers, and local commercial teams rather than only corporate IT.
 
-![Map visualization highlighting targeted countries in the npm-hosted spearphishing operation.](https://cdn.sanity.io/images/cgdhsj6q/production/9da2ef4c582775f9db308672a73ca6c72535568e-1830x933.png)
+![Map visualization highlighting targeted countries in the npm-hosted spearphishing operation.](/assets/img/posts/spearphishing-campaign-abuses-npm-registry/9da2ef4c582775f9db308672a73ca6c72535568e-1830x933.png)
 _Map visualization highlighting the countries targeted in this npm-hosted spearphishing operation: Austria, Belgium, Canada, France, Germany, Italy, Portugal, Spain, Sweden, Taiwan, Turkey, the United Kingdom, and the United States, spanning North America, Europe, and East Asia region. Most of the highlighted countries are U.S. allies or close partners._
 
 We cannot verify how the threat actor obtained email addresses. However, many targeted companies operate in industrial sectors that repeatedly converge at major international trade shows, including [Interpack](https://www.interpack.com/) and [K-Fair](https://www.k-online.com/). Company participation at these events is publicly documented, and exhibitor directories often surface business contact details. A plausible hypothesis is that the threat actor used these sources to identify sales contacts, then tailored RFQ-themed lures around a workflow where sales teams routinely expect unsolicited outreach.
 
-![Promotional banners for K-Fair and Interpack trade conferences.](https://cdn.sanity.io/images/cgdhsj6q/production/c681be42b668908d9be5d03698793246ddeaf303-984x364.png)
+![Promotional banners for K-Fair and Interpack trade conferences.](/assets/img/posts/spearphishing-campaign-abuses-npm-registry/c681be42b668908d9be5d03698793246ddeaf303-984x364.png)
 _Promotional banners for K-Fair and Interpack, two major industry conferences where at least eight of the targeted companies appear as exhibitors, supporting the hypothesis that event ecosystems may help the threat actor identify and profile commercial contacts for RFQ-themed lures._
 
 Open-web reconnaissance likely complements this process. Commercial staff frequently publish role, territory, and employer information on LinkedIn and other public pages, which can help a threat actor identify the right individuals and then derive or validate email formats using corporate naming conventions and publicly indexed contact pages.

@@ -7,7 +7,7 @@ tags: [Go, Go Modules, Russian Link, Infostealer, T1195.002, T1608.001, T1204.00
 canonical_url: https://socket.dev/blog/malicious-go-module-disguised-as-ssh-brute-forcer-exfiltrates-credentials
 source: Socket
 image:
-  path: https://cdn.sanity.io/images/cgdhsj6q/production/2443dca395c1276243c45c878b27348880dc1a1b-1024x1024.png
+  path: /assets/img/posts/malicious-go-module-disguised-as-ssh-brute-forcer-exfiltrates-credentials/cover.png
   alt: "Malicious Go Module Disguised as SSH Brute Forcer"
 description: "A malicious Go module posing as an SSH brute forcer exfiltrates stolen credentials to a Telegram bot controlled by a Russian-speaking threat actor."
 ---
@@ -18,7 +18,7 @@ The package is designed to continuously scan random IPv4 addresses for exposed S
 
 At the time of writing, the malicious package remains live on Go Module and GitHub. We petitioned for its removal and the suspension of the publisher's accounts.
 
-![Socket AI scanner detection](https://cdn.sanity.io/images/cgdhsj6q/production/9ef51718a184ad522c84de581b51a0a08a479874-1569x793.png)
+![Socket AI scanner detection](/assets/img/posts/malicious-go-module-disguised-as-ssh-brute-forcer-exfiltrates-credentials/9ef51718a184ad522c84de581b51a0a08a479874-1569x793.png)
 _Socket's AI scanner detected a malicious package `golang-random-ip-ssh-bruteforce`. It was originally published on June 24, 2022, more than three years ago._
 
 ## Inside the Malicious Package
@@ -55,7 +55,7 @@ close(succ) // Signal success and exit.
 
 The Telegram API returns `"ok": true` with a valid `message_id` for chat `1159678884`, confirming end to end delivery. The hardcoded exfiltration endpoint is `https://api.telegram[.]org/bot5479006055:AAHaTwYmEhu4YlQQxriW00a6CIZhCfPQQcY/sendMessage?chat_id=1159678884`. At the time of writing, the bot token `5479006055:AAHaTwYmEhu4YlQQxriW00a6CIZhCfPQQcY` is live, and Telegram identifies the bot as `ssh_bot` with username `@sshZXC_bot`. The destination chat `1159678884` is a private chat with `@io_ping` (alias `Gett`). With both token and chat active, any first successful login will be sent as `ip:user:pass` to `@io_ping` via `@sshZXC_bot`.
 
-![Telegram bot and user info](https://cdn.sanity.io/images/cgdhsj6q/production/ad84648be5ba724180d29353006980ac1910d601-1394x868.png)
+![Telegram bot and user info](/assets/img/posts/malicious-go-module-disguised-as-ssh-brute-forcer-exfiltrates-credentials/ad84648be5ba724180d29353006980ac1910d601-1394x868.png)
 _Left: Telegram Bot Info confirms the exfiltration bot is active: name `ssh_bot`, username `@sshZXC_bot`. Right: Telegram User Info confirms active destination account: user `Gett`, username `@io_ping`, which maps to `chat_id` `1159678884`._
 
 ## Local Wordlist
@@ -66,7 +66,7 @@ The file pairs only two usernames, `root` and `admin`, with weak or default pass
 
 Items like `raspberry` and `dietpi` map to common Pi and minimal OS images, `toor` is a historical default in security distributions, and `alpine` aligns with lightweight appliance builds. Overall, the list favors breadth over depth, matching the code's exit-on-first-success behavior and immediate credential exfiltration.
 
-![Embedded SSH brute force wordlist](https://cdn.sanity.io/images/cgdhsj6q/production/ff99cfa3a276db413e09f47e1c3d64977d7daa31-1161x930.png)
+![Embedded SSH brute force wordlist](/assets/img/posts/malicious-go-module-disguised-as-ssh-brute-forcer-exfiltrates-credentials/ff99cfa3a276db413e09f47e1c3d64977d7daa31-1161x930.png)
 _Socket AI Scanner's view of the malicious `golang-random-ip-ssh-bruteforce` package shows an embedded SSH brute force wordlist (`wl.txt`). It pairs `root` and `admin` with weak defaults like `root`, `toor`, `raspberry`, `dietpi`, `alpine`, `123456`, `webadmin`, and `webmaster`, confirming credential-guessing intent._
 
 ## Threat Actor's Strategy
@@ -75,7 +75,7 @@ The strategy is straightforward and effective. Release a "fast" offensive utilit
 
 The threat actor's GitHub [account](https://github.com/IllDieAnyway) hosts the brute forcer and other offensive utilities, including fast port scanners, a phpMyAdmin brute forcer, Selica-C2, and a crawler based DDoS tool. Several of `IllDieAnyway`'s repositories advertise Telegram callbacks or include bot tooling, which follows the same operational pattern. In particular, the [`phpMyAdmin-Bruteforce-Fast`](https://github.com/IllDieAnyway/PhpMyAdmin-Bruteforce-Fast) repository explicitly claims multithreaded bruteforce with Telegram callback. That mirrors `golang-random-ip-ssh-bruteforce`, which hardcodes a Telegram endpoint and exfiltrates credentials on success.
 
-![Threat actor GitHub profile](https://cdn.sanity.io/images/cgdhsj6q/production/60f0d7bc3818e7ab0184728005908d5220753b14-1041x933.png)
+![Threat actor GitHub profile](/assets/img/posts/malicious-go-module-disguised-as-ssh-brute-forcer-exfiltrates-credentials/60f0d7bc3818e7ab0184728005908d5220753b14-1041x933.png)
 
 > *Threat actor's GitHub [profile](https://github.com/IllDieAnyway), under the username `IllDieAnyway` (alias `G3TT`) hosts an offensive toolkit: `Telegram Bot Client`, `Fortnite AI Hack`, `PhpMyAdmin-Bruteforce-Fast` with Telegram callback, `crawler-ddos`, `Fast-Portscanner`, `random-ip-port-scanner`, `Selica-C2`, and `golang-random-ip-ssh-bruteforce`. We confirmed `golang-random-ip-ssh-bruteforce` is malicious with hardcoded Telegram exfiltration; based on our current review, we have not identified comparable operator-focused backdoors in the other repositories.*
 

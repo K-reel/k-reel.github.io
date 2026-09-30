@@ -8,7 +8,7 @@ toc: true
 canonical_url: https://socket.dev/blog/two-malicious-rust-crates-impersonate-popular-logger-to-steal-wallet-keys
 source: Socket
 image:
-  path: https://cdn.sanity.io/images/cgdhsj6q/production/18f2f740a3f3d3e5ccf1fd2f92445678a95e0543-1024x1024.webp?w=1000&q=95&fit=max&auto=format
+  path: /assets/img/posts/two-malicious-rust-crates-impersonate-popular-logger-to-steal-wallet-keys/cover.jpg
   alt: Two malicious Rust crates impersonate popular logger artwork
 ---
 
@@ -17,7 +17,7 @@ Socket’s Threat Research Team identified two malicious Rust crates, [`faster_l
 Following our report requesting removal of the crates and suspension of the associated publisher accounts, the Crates security team acted immediately. Within an hour, we received a response from Carlos Euros at [crates.io](http://crates.io). Shortly thereafter, the Crates security team (1) preserved all `faster_log` and `async_println` files for analysis while removing the listings from the Rust package registry to prevent further downloads, (2) locked the `dumbnbased` and `rustguruman` accounts to block any actions on the registry, and (3) published an official security [advisory](https://blog.rust-lang.org/2025/09/24/crates.io-malicious-crates-fasterlog-and-asyncprintln/) detailing their actions and investigation. We thank the Crates security team, the Rust Security Response WG, and the Rust Foundation (h/t Carol Nichols, Pietro Albini, Walter Pearce, and Carlos Euros) for their prompt, decisive action to help keep the Rust ecosystem safe.
 
 
-![](https://cdn.sanity.io/images/cgdhsj6q/production/be6df913f8c0893711e1598ff914c6b6e772761f-2828x1268.png?w=1600&q=95&fit=max&auto=format)
+![](/assets/img/posts/two-malicious-rust-crates-impersonate-popular-logger-to-steal-wallet-keys/be6df913f8c0893711e1598ff914c6b6e772761f-2828x1268.png)
 _Socket AI Scanner flags faster_log as known malware. The crate typosquats the legitimate fast_log, reuses its README and repository link, and impersonates the project to mislead developers._
 
 ## Malicious Crates
@@ -188,7 +188,7 @@ The inline threat actor’s comment “[Hardcoded endpoint as requested](https:/
 The crates are pure Rust and depend only on standard libraries plus `reqwest`, so behavior is identical on Linux, macOS, and Windows. Any environment with a Rust toolchain and outbound network access is affected. The crates had [no downstream dependents](https://blog.rust-lang.org/2025/09/24/crates.io-malicious-crates-fasterlog-and-asyncprintln/) on [crates.io](http://crates.io).
 
 
-![](https://cdn.sanity.io/images/cgdhsj6q/production/70008ad481ee731cf7c0cd4822ea555f59ca15bf-1242x1248.png?w=1600&q=95&fit=max&auto=format)
+![](/assets/img/posts/two-malicious-rust-crates-impersonate-popular-logger-to-steal-wallet-keys/70008ad481ee731cf7c0cd4822ea555f59ca15bf-1242x1248.png)
 _Socket AI Scanner’s analysis of the malicious faster_log package shows covert key exfiltration: a “packer” scans local source files for Ethereum and Solana private keys and POSTs matches to hxxps://mainnet[.]solana-rpc-pool[.]workers[.]dev. The crate typosquats fast_log, reuses its README and repository metadata, and adds macros that trigger the theft._
 Both crates send POSTs to the same C2 (`https://mainnet[.]solana-rpc-pool[.]workers[.]dev`). This host is a Cloudflare Workers subdomain that Cloudflare assigns to individual accounts, not to the Solana Foundation. Solana’s official mainnet beta RPC is [`https://api.mainnet-beta.solana.com`](https://api.mainnet-beta.solana.com/). During a controlled test, we confirmed that the C2 endpoint was live and processing POST requests.
 
@@ -197,10 +197,10 @@ Both crates send POSTs to the same C2 (`https://mainnet[.]solana-rpc-pool[.]work
 The threat actor created two [crates.io](http://crates.io) publisher accounts, [`rustguruman`](https://crates.io/users/rustguruman) and [`dumbnbased`](https://crates.io/users/dumbnbased), linked to `https://github[.]com/rustguruman` and `https://github[.]com/dumbnbased` (we have petitioned GitHub to suspend both accounts). The threat actor then published two crates that mimic the legitimate `fast_log` logger, copied its README, and set the repository field to the real project. The logging code remains functional to pass cursory checks. The C2 endpoint host address is styled to resemble a blockchain RPC service (`https://mainnet[.]solana-rpc-pool[.]workers[.]dev`), which helps it blend with normal developer traffic. The Crates security team has since [locked](https://blog.rust-lang.org/2025/09/24/crates.io-malicious-crates-fasterlog-and-asyncprintln/) both publisher accounts.
 
 
-![](https://cdn.sanity.io/images/cgdhsj6q/production/e769a68e36ee4b4ad2c84987e5af8c79f61e3d52-1500x470.png?w=1600&q=95&fit=max&auto=format)
+![](/assets/img/posts/two-malicious-rust-crates-impersonate-popular-logger-to-steal-wallet-keys/e769a68e36ee4b4ad2c84987e5af8c79f61e3d52-1500x470.png)
 _Crates comparison: center shows the legitimate fast_log, while left (faster_log) and right (async_println) are malicious. The impostors mimic the name and page design, copy the README, and set the repository to github.com/rbatis/fast_log, which helps them pass casual review and mislead developers._
 
-![](https://cdn.sanity.io/images/cgdhsj6q/production/e62981d447ac77a2ea5401fed2f82bd0b068c9d7-950x773.png?w=1600&q=95&fit=max&auto=format)
+![](/assets/img/posts/two-malicious-rust-crates-impersonate-popular-logger-to-steal-wallet-keys/e62981d447ac77a2ea5401fed2f82bd0b068c9d7-950x773.png)
 _Crates.io search for fast_log showed the legitimate fast_log alongside two imposters, faster_log and async_println. The malicious crates mimic the real project and show download counts: faster_log 7,181 and async_println 1,243, versus legitimate fast_log 295,680 downloads. All three listed an update four months ago, which helped the malicious crates blend in._
 
 ## Outlook and Recommendations

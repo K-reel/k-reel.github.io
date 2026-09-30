@@ -9,7 +9,7 @@ toc: true
 canonical_url: https://socket.dev/blog/fake-imtoken-chrome-extension-steals-seed-phrases-via-phishing-redirects
 source: Socket
 image:
-  path: https://cdn.sanity.io/images/cgdhsj6q/production/e287bd2970e97281c6ff1f4549daf475cf3470f8-1024x1024.png?w=1600&q=95&fit=max&auto=format
+  path: /assets/img/posts/fake-imtoken-chrome-extension-steals-seed-phrases-via-phishing-redirects/cover.png
   alt: Fake imToken Chrome extension phishing artwork
 ---
 
@@ -21,7 +21,7 @@ imToken is an established non-custodial wallet brand that started in 2016, has s
 
 The extension was published on February 2, 2026, has 39 weekly active users, and remains live on the Chrome Web Store at the time of writing. It also shows 5-star ratings and links to a privacy policy that claims no data collection, which can make the listing appear legitimate while concealing its connection to threat actor-controlled phishing infrastructure. We have reported the extension and the associated publisher account registered with `liomassi19855@gmail[.]com` to Google for removal.
 
-![](https://cdn.sanity.io/images/cgdhsj6q/production/889406b46c0f366533d2f371ae0b33accad4f782-564x490.png?w=1600&q=95&fit=max&auto=format)
+![](/assets/img/posts/fake-imtoken-chrome-extension-steals-seed-phrases-via-phishing-redirects/889406b46c0f366533d2f371ae0b33accad4f782-564x490.png)
 _Socket AI Scanner's verdict on [`bbhaganppipihlhjgaaeeeefbaoihcgi`](https://socket.dev/chrome/package/bbhaganppipihlhjgaaeeeefbaoihcgi/overview) reflects the extension's true role in the attack chain, a lightweight Chrome redirector that leads victims from a deceptive Chrome Web Store listing to phishing pages designed to capture wallet recovery secrets._
 
 ## This Chrome Extension Was Never About Color
@@ -30,10 +30,10 @@ The threat actor tried to make the extension look official before a victim ever 
 
 The threat actor used familiar branding cues to make the malicious extension feel consistent with the real imToken product, which likely increased the chances that users would install it and follow the later phishing flow.
 
-![](https://cdn.sanity.io/images/cgdhsj6q/production/ada14ecd61b4e0ff1545c9268fb9b37e6d7dcc4a-1176x589.png?w=1600&q=95&fit=max&auto=format)
+![](/assets/img/posts/fake-imtoken-chrome-extension-steals-seed-phrases-via-phishing-redirects/ada14ecd61b4e0ff1545c9268fb9b37e6d7dcc4a-1176x589.png)
 _imToken's official site highlights a well-established wallet brand identity, which the malicious [`lmΤoken Chromophore`](https://socket.dev/chrome/package/bbhaganppipihlhjgaaeeeefbaoihcgi/overview) extension mimicked to appear affiliated._
 
-![](https://cdn.sanity.io/images/cgdhsj6q/production/acd6195a82e36c42a3ac7e9ea450622ff8d74d1a-1476x833.png?w=1600&q=95&fit=max&auto=format)
+![](/assets/img/posts/fake-imtoken-chrome-extension-steals-seed-phrases-via-phishing-redirects/acd6195a82e36c42a3ac7e9ea450622ff8d74d1a-1476x833.png)
 _The malicious Chrome Web Store listing adopts imToken branding and wallet-focused imagery, masking its real role as a phishing redirector that sends users to threat actor-controlled pages instead of delivering a legitimate wallet tool._
 
 ## How the Phishing Workflow Unfolds
@@ -79,34 +79,34 @@ chrome.action.onClicked.addListener(() => {
 
 `background.js` shows that the extension's real function is redirection, not utility. It pulls a destination from a hardcoded [JSONKeeper](https://socket.dev/chrome/package/bbhaganppipihlhjgaaeeeefbaoihcgi/files/4.9.5/background.js#L1) endpoint and opens it in a new tab, giving the threat actor off-box control over where victims land. Because the redirect fires automatically on install and again on click, the phishing workflow begins without any legitimate wallet or color-tool behavior ever taking place.
 
-![](https://cdn.sanity.io/images/cgdhsj6q/production/8b56cfcdc34318b83c33f40ff6afacb446c9d35e-1699x1102.png?w=1600&q=95&fit=max&auto=format)
+![](/assets/img/posts/fake-imtoken-chrome-extension-steals-seed-phrases-via-phishing-redirects/8b56cfcdc34318b83c33f40ff6afacb446c9d35e-1699x1102.png)
 _The extension opens a threat actor-controlled wallet import page on a lookalike phishing domain that uses mixed-script homoglyphs to impersonate imToken._
 
 If the victim selects the mnemonic path, the site asks for a 12 or 24 word seed phrase as though it were part of a standard wallet recovery process. The recovered seed page makes the goal explicit, prompting the user to enter wallet recovery words directly into the threat actor-controlled site. The underlying HTML also references several external JavaScript files hosted on `compute-fonts-appconnect.pages[.]dev`, including `sjcl-bip39.js`, `wordlist_english.js`, `jsbip39.js`, and `formScript.js`, along with a local `../media/bundle.js`. Based on their names and placement in the page, these scripts likely support mnemonic validation, wordlist handling, and form processing.
 
-![](https://cdn.sanity.io/images/cgdhsj6q/production/9ad3469c69b85d7fa78a672ffc1e9eb19863faa1-1756x1278.png?w=1600&q=95&fit=max&auto=format)
+![](/assets/img/posts/fake-imtoken-chrome-extension-steals-seed-phrases-via-phishing-redirects/9ad3469c69b85d7fa78a672ffc1e9eb19863faa1-1756x1278.png)
 _The mnemonic path asks the victim to enter a 12 or 24 word seed phrase directly into threat actor-controlled infrastructure._
 
 The same landing page also offers a private key import path. That branch asks the victim to enter the wallet's plaintext private key, giving the threat actor a second route to the same result. Whether the victim chooses mnemonic or private key, the objective is identical: capture the secret material required for wallet takeover. The private key path is technically simpler than the mnemonic flow, but from a threat actor's perspective it is just as valuable, since a valid private key can provide immediate control over the associated assets.
 
-![](https://cdn.sanity.io/images/cgdhsj6q/production/c49b5fdf6175b20eaa0f9fd808845fcbdeb15025-1750x1266.png?w=1600&q=95&fit=max&auto=format)
+![](/assets/img/posts/fake-imtoken-chrome-extension-steals-seed-phrases-via-phishing-redirects/c49b5fdf6175b20eaa0f9fd808845fcbdeb15025-1750x1266.png)
 _The alternate path requests a plaintext private key, giving the threat actor another direct route to wallet access._
 
 Once the victim submits either secret, the workflow advances to a password setup screen. This step is important because it makes the phishing sequence feel authentic. In a legitimate wallet import flow, asking the user to set a local password would be expected behavior. Here, the same prompt serves to preserve the illusion that the wallet is being imported normally, even though the critical secret has already been disclosed. It may also collect an additional credential that the victim associates with the imported wallet, further extending the value of the theft.
 
-![](https://cdn.sanity.io/images/cgdhsj6q/production/79e8934f308794ea0138fdbafc6521c12bd4af11-1759x1309.png?w=1600&q=95&fit=max&auto=format)
+![](/assets/img/posts/fake-imtoken-chrome-extension-steals-seed-phrases-via-phishing-redirects/79e8934f308794ea0138fdbafc6521c12bd4af11-1759x1309.png)
 _After collecting the wallet secret, the phishing flow continues with a fake password setup step to maintain legitimacy._
 
 From there, the site moves into a closing sequence designed to reduce suspicion after the theft has already occurred. A loading screen appears, followed by a benign status message claiming the wallet is being upgraded. This creates the impression that the process is still underway and that the delay is operational rather than suspicious. By the time the victim sees this screen, the most sensitive information has already been entered into threat actor-controlled pages.
 
-![](https://cdn.sanity.io/images/cgdhsj6q/production/c7373b349cbd97e9c2f525acdfe70659608627f4-1706x1170.png?w=1600&q=95&fit=max&auto=format)
+![](/assets/img/posts/fake-imtoken-chrome-extension-steals-seed-phrases-via-phishing-redirects/c7373b349cbd97e9c2f525acdfe70659608627f4-1706x1170.png)
 _A status screen keeps the victim engaged after submission and makes the fake workflow appear routine._
 
 The final step is subtle but effective. The phishing workflow opens the legitimate `token.im` site in a separate tab while the threat actor-controlled page remains open with its upgrade notice. That handoff uses the real brand as cover after the victim has already disclosed the wallet secret. Seeing the legitimate site may reassure the victim that the earlier steps were connected to a real imToken process, when in fact the threat actor-controlled flow has already served its purpose.
 
 In practical terms, the chain is straightforward: install the fake extension, get redirected to a fake imToken import page, choose mnemonic or private key, enter the wallet secret, continue through a convincing setup flow, and then land on the legitimate site only after the threat actor has captured the data needed for wallet takeover.
 
-![](https://cdn.sanity.io/images/cgdhsj6q/production/31331ba5d7fea3c6ff13691bf8edd987a7167742-2250x1481.png?w=1600&q=95&fit=max&auto=format)
+![](/assets/img/posts/fake-imtoken-chrome-extension-steals-seed-phrases-via-phishing-redirects/31331ba5d7fea3c6ff13691bf8edd987a7167742-2250x1481.png)
 _The final step opens the real `token.im` site as a decoy after the wallet secret has already been collected._
 
 ## Outlook and Recommendations

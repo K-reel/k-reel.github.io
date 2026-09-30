@@ -7,7 +7,7 @@ tags: [Chrome, Extensions, T1195.002, T1176.001, T1204, T1059.007, T1552.004, T1
 canonical_url: https://socket.dev/blog/malicious-chrome-extension-steals-mexc-api-keys
 source: Socket
 image:
-  path: https://cdn.sanity.io/images/cgdhsj6q/production/0239d3761d9d46ec2d0528ccafc675cc3384a023-1024x1024.png?w=1000&q=95&fit=max&auto=format
+  path: /assets/img/posts/malicious-chrome-extension-steals-mexc-api-keys/cover.png
   alt: Malicious Chrome Extension Steals MEXC API Keys for Account Takeover
 description: "A malicious Chrome extension steals newly created MEXC API keys, exfiltrates them to Telegram, and enables full account takeover with trading and withdrawal permissions."
 ---
@@ -22,7 +22,7 @@ Once installed, any MEXC account accessed from the infected browser is exposed t
 
 At the time of writing, the extension remains live on the Chrome Web Store. We have notified Google and flagged this extension.
 
-![Socket AI Scanner's analysis of the malicious MEXC API Automator Chrome extension flags it as malware.](https://cdn.sanity.io/images/cgdhsj6q/production/5f756d90367d65faaf9e52f1e7e61ec6131fa02e-2048x746.png)
+![Socket AI Scanner's analysis of the malicious MEXC API Automator Chrome extension flags it as malware.](/assets/img/posts/malicious-chrome-extension-steals-mexc-api-keys/5f756d90367d65faaf9e52f1e7e61ec6131fa02e-2048x746.png)
 _Socket AI Scanner's analysis of the malicious MEXC API Automator Chrome extension flags it as malware._
 
 ## MEXC as a High-Value Target
@@ -31,7 +31,7 @@ MEXC is a large centralized cryptocurrency exchange that offers trading to users
 
 Online reviews [estimate](https://www.bitdegree.org/crypto/tutorials/how-to-use-mexc) that MEXC serves millions of users. At the same time, the exchange states that it does not provide services to users in the United States, Canada, the United Kingdom, Singapore, parts of China, and several sanctioned countries. Public guides still [encourage](https://veepn.com/blog/how-to-use-mexc-in-the-us/) users in some of these countries to access MEXC via VPNs, especially in the United States, which broadens the potential victim pool and complicates response and recovery.
 
-![The MEXC website's Convert page, listing cryptocurrencies traded on the exchange.](https://cdn.sanity.io/images/cgdhsj6q/production/ea03e6b310a3a986b73aeb0ce27c8c7465751bf8-1694x1600.png)
+![The MEXC website's Convert page, listing cryptocurrencies traded on the exchange.](/assets/img/posts/malicious-chrome-extension-steals-mexc-api-keys/ea03e6b310a3a986b73aeb0ce27c8c7465751bf8-1694x1600.png)
 _This image shows the MEXC website's Convert page, listing a few of the more than 2,000 cryptocurrencies traded on the centralized exchange, such as BTC, XRP, MX, and ETH._
 
 ## API Level Financial Compromise
@@ -46,7 +46,7 @@ Once the threat actor obtains such a key, they can interact with the MEXC API as
 
 In the Chrome Web Store [description](https://chromewebstore.google.com/detail/mexc-api-automator/pppdfgkfdemgfknfnhpkibbkabhghhfh), the threat actor markets `MEXC API Automator` as a productivity extension that "automates API key creation on MEXC platform". The listing claims the extension will automatically generate API keys with the necessary permissions, "including access to trading and withdrawals", directly on the MEXC API management page.
 
-![The Chrome Web Store listing for the MEXC API Automator extension.](https://cdn.sanity.io/images/cgdhsj6q/production/0c7d2f91457c722207931dac15920302bba2d4d6-2048x1445.png)
+![The Chrome Web Store listing for the MEXC API Automator extension.](/assets/img/posts/malicious-chrome-extension-steals-mexc-api-keys/0c7d2f91457c722207931dac15920302bba2d4d6-2048x1445.png)
 _This image shows the Chrome Web Store listing for the MEXC API Automator extension, which promotes itself with a screenshot of MEXC's "API Management / Create New API Key" page._
 
 In practice, as soon as the user navigates to MEXC's API management page, the extension injects a single content script, [`script.js`](https://socket.dev/chrome/package/pppdfgkfdemgfknfnhpkibbkabhghhfh/files/1.0/script.js), and begins operating inside the already authenticated MEXC session.
@@ -173,7 +173,7 @@ The exfiltration channel is straightforward. The extension issues HTTPS POST req
 
 Once the bot receives the message, the threat actor can load the key into custom tooling, feed it into automated drainer scripts, or sell it to other cybercriminals. The risk persists as long as the key remains valid and unrevoked, even if the victim later removes the extension.
 
-![Socket AI Scanner flags MEXC API Automator as known malware.](https://cdn.sanity.io/images/cgdhsj6q/production/18cc8f2da968989e9e7d0f4843599d157c4867f8-1244x1378.png)
+![Socket AI Scanner flags MEXC API Automator as known malware.](/assets/img/posts/malicious-chrome-extension-steals-mexc-api-keys/18cc8f2da968989e9e7d0f4843599d157c4867f8-1244x1378.png)
 _Socket AI Scanner flags MEXC API Automator as known malware and shows that its JavaScript runs on MEXC's /user/openapi page to auto create API keys, manipulate permission checkboxes, harvest the resulting credentials, and exfiltrate them to a Telegram bot._
 
 ## Threat Actor Footprint
@@ -182,7 +182,7 @@ The Chrome Web Store lists `MEXC API Automator` as version 1.0, last updated in 
 
 Outside the Chrome Web Store, the same handle appears on X (formerly Twitter) as `@jorjortan142` with the display name "sushi.crypto". That profile describes the user as "CEO Telegram Crypto Wallet SwapSushi" and links to a Telegram bot at `t[.]me/swapsushibot`, which advertises swapping and earning crypto.
 
-![X profile for sushi.crypto (@jorjortan142), a December-2023 account that brands itself as SwapSushi.](https://cdn.sanity.io/images/cgdhsj6q/production/ae5d3eeddcf914b6b4e2d24286aaa5f1a122423f-980x966.png)
+![X profile for sushi.crypto (@jorjortan142), a December-2023 account that brands itself as SwapSushi.](/assets/img/posts/malicious-chrome-extension-steals-mexc-api-keys/ae5d3eeddcf914b6b4e2d24286aaa5f1a122423f-980x966.png)
 _X profile for sushi.crypto (@jorjortan142), a December-2023 account that brands itself as SwapSushi and directs users to the Telegram bot t[.]me/swapsushibot._
 
 A YouTube channel named "SwapSushi" (`@SwapSushiBot`) promotes the same bot and brand, again pointing users to `t[.]me/swapsushibot`. Open source blocklists maintained by anti-scam communities list `swapsushi[.]net` among crypto-related scam domains, which indicates that at least some SwapSushi-branded infrastructure has already been flagged as suspicious.

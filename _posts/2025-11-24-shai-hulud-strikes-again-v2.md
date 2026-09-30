@@ -9,7 +9,7 @@ toc: true
 canonical_url: https://socket.dev/blog/shai-hulud-strikes-again-v2
 source: Socket
 image:
-  path: https://cdn.sanity.io/images/cgdhsj6q/production/ccef9de0616864d38380c35d26a0d9c76bdd0b5d-2796x1750.png?w=1600&q=95&fit=max&auto=format
+  path: /assets/img/posts/shai-hulud-strikes-again-v2/cover.png
   alt: Shai Hulud Strikes Again v2 artwork
 ---
 
@@ -323,7 +323,7 @@ In the first Shai-Hulud Supply Chain compromise, the threat actor originally gai
 
 **Immediate Actions:** If you have any of the packages listed above installed, remove them immediately and delete your **`node_modules`** folder. If these packages were installed in environments with access to secrets or credentials, rotate all API keys, tokens, and passwords immediately as the malicious code may have exfiltrated sensitive information. Follow [OpenJS](https://openjsf.org/blog/publishing-securely-on-npm)' guidance and understand the pros and cons to the different approaches to publishing to npm. Check GitHub for strange repos like those pictured below with the description, “Sha1-Hulud: The Second Coming.”
 
-![](https://cdn.sanity.io/images/cgdhsj6q/production/26bb615512723b3b4029e11155773e53453e707c-1590x762.png?w=1600&q=95&fit=max&auto=format)
+![](/assets/img/posts/shai-hulud-strikes-again-v2/26bb615512723b3b4029e11155773e53453e707c-1590x762.png)
 
 **Prevention:**
 

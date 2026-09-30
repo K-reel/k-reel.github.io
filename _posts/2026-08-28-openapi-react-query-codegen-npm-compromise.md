@@ -64,7 +64,7 @@ The two `0.0.0-*` prereleases use different execution paths.
 
 The threat actor staged these paths across separate commit chains in the fork. One chain adds `is_it_this_simple.js` before introducing the Bun-based `preinstall`; the other adds `nu.js` before introducing and subsequently modifying the corresponding `preinstall`.
 
-![](https://cdn.sanity.io/images/cgdhsj6q/production/f89515c4cf115765f856576d91f3c9981759176d-1342x815.png?w=1600&q=95&fit=max&auto=format)
+![](/assets/img/posts/openapi-react-query-codegen-npm-compromise/f89515c4cf115765f856576d91f3c9981759176d-1342x815.png)
 
 ## Provenance Does Not Help Here
 

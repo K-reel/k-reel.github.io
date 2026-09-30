@@ -7,7 +7,7 @@ tags: [Backdoor, Maven Central, Java, Typosquatting, T1195.002, T1036.005, T1105
 canonical_url: https://socket.dev/blog/malicious-maven-package-impersonating-xz-for-java-library
 source: Socket
 image:
-  path: https://cdn.sanity.io/images/cgdhsj6q/production/8454ef42103fdd448bb7e2402c340b2a9484ec0b-1024x1024.webp
+  path: /assets/img/posts/malicious-maven-package-impersonating-xz-for-java-library/cover.jpg
   alt: "Malicious Maven Package Impersonating XZ for Java Library"
 description: "Socket researchers found a malicious Maven package impersonating the legitimate 'XZ for Java' library, introducing a backdoor for remote code execution."
 ---
@@ -24,15 +24,15 @@ Comments found in the malicious code suggest the threat actor likely used AI-gen
 
 On May 12, 2024, the threat actor published a malicious Java package to Maven Central. The threat actor created an almost identical package name and linked it to a [forked](https://github.com/xz-java/xz-java/tree/master) version of the legitimate package's GitHub repository to trick developers into installing it. According to Maven Central, the legitimate XZ library is used in [365](https://central.sonatype.com/artifact/org.tukaani/xz) components. MVN Repository [reports](https://mvnrepository.com/artifact/org.tukaani/xz) that it ranks among the top 1,000 artifacts in overall popularity, currently holding the #636 position and the #3 spot among compression libraries. Widely integrated by hundreds of other artifacts, it enjoys significant presence in the Java community, making it a prime candidate for impersonation.
 
-![Malicious io.github.xz-java:xz-java package](https://cdn.sanity.io/images/cgdhsj6q/production/e4e6587c1e190389b6a87c32046a719d52336649-796x367.png)
+![Malicious io.github.xz-java:xz-java package](/assets/img/posts/malicious-maven-package-impersonating-xz-for-java-library/e4e6587c1e190389b6a87c32046a719d52336649-796x367.png)
 _Malicious `io.github.xz-java:xz-java` package_
 
-![Legitimate XZ for Java library org.tukaani:xz by the Tukaani Project](https://cdn.sanity.io/images/cgdhsj6q/production/e6d3a23618342022e9050a400e672785152cfa35-712x251.png)
+![Legitimate XZ for Java library org.tukaani:xz by the Tukaani Project](/assets/img/posts/malicious-maven-package-impersonating-xz-for-java-library/e6d3a23618342022e9050a400e672785152cfa35-712x251.png)
 _Legitimate XZ for Java library `org.tukaani:xz` by the [Tukaani Project](https://tukaani.org/xz/java.html)_
 
 The threat actor initially published two benign versions to Maven Central to establish credibility before introducing malicious code in version 1.9. This strategy aimed to lower the guard of users and Maven Central maintainers. Starting with version 1.9, the library contained obfuscated code with a backdoor. We petitioned Maven Central and MVN Repository to remove the malicious `io.github.xz-java:xz-java` package (As of December 9, 2024, the Maven Central team has promptly and efficiently reviewed and removed the package from their official repository. However, MVN Repository remains unresponsive and continues to allow users to access the malicious package).
 
-![Malicious io.github.xz-java:xz-java package on MVN Repository](https://cdn.sanity.io/images/cgdhsj6q/production/9cf3335b4a198b949d9038689886bb5bc41a2b0c-1591x582.png)
+![Malicious io.github.xz-java:xz-java package on MVN Repository](/assets/img/posts/malicious-maven-package-impersonating-xz-for-java-library/9cf3335b4a198b949d9038689886bb5bc41a2b0c-1591x582.png)
 _Malicious `io.github.xz-java:xz-java` package on MVN Repository_
 
 ## The Malicious Code
@@ -109,7 +109,7 @@ End users rarely review source code JARs. They usually rely on the compiled bina
 
 ## AI Versus AI
 
-![Socket AI Scanner's context on the io.github.xz-java:xz-java package](https://cdn.sanity.io/images/cgdhsj6q/production/79dbe8236dd13345f688b1125e732b7a861cb1f7-708x775.png)
+![Socket AI Scanner's context on the io.github.xz-java:xz-java package](/assets/img/posts/malicious-maven-package-impersonating-xz-for-java-library/79dbe8236dd13345f688b1125e732b7a861cb1f7-708x775.png)
 _Socket AI Scanner's context on the `io.github.xz-java:xz-java` package_
 
 Socket identifies the `io.github.xz-java:xz-java` package as malicious because it analyzes every file in the package, including the compiled binary JAR (`xz-java-1.9.2.jar`), the source code JAR (`xz-java-1.9.2-sources.jar`), and any accompanying metadata.

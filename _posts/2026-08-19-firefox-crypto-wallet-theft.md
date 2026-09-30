@@ -7,7 +7,7 @@ tags: [Firefox, Extensions, Mozilla, Clipper, Infostealer, Cryptocurrency, T1176
 canonical_url: https://socket.dev/blog/firefox-crypto-wallet-theft
 source: Socket
 image:
-  path: https://cdn.sanity.io/images/cgdhsj6q/production/242e6c8ab27819ec1feaa5a0244f5589c7be93a0-1672x940.png?w=1600&q=95&fit=max&auto=format
+  path: /assets/img/posts/firefox-crypto-wallet-theft/cover.png
   alt: "77 Firefox Extensions Linked to Crypto Wallet and Credential Theft"
 description: "Socket uncovered 77 linked Firefox extensions, including 40 that steal wallet secrets or credentials and 37 deceptive sports-score shells."
 ---
@@ -26,7 +26,7 @@ We are provisionally tracking this campaign as "Offside Wallet Theft Factory", r
 
 We reported extensions that remained live during the investigation to Mozilla's security team. We appreciate the vigilance and responsiveness of Mozilla's Add-ons Operations team as threat actors continue adapting their methods to evade detection. Even short-lived cryptocurrency wallet extensions can cause immediate and irreversible financial harm once victims expose recovery phrases or private keys. Our Firefox ecosystem coverage complements Mozilla's [protections](https://blog.mozilla.org/addons/2025/05/30/crypto-wallet-scams-thwarting-a-new-threat/) by identifying related extensions, infrastructure, code reuse, version repurposing, and publishing patterns across the broader campaign.
 
-![](https://cdn.sanity.io/images/cgdhsj6q/production/04be6b20f13135f3c945289a392bdb5344e8e72d-2048x1117.png?w=1600&q=95&fit=max&auto=format)
+![](/assets/img/posts/firefox-crypto-wallet-theft/04be6b20f13135f3c945289a392bdb5344e8e72d-2048x1117.png)
 _Representative attack flow for the confirmed malicious extensions. Threat actors capture wallet secrets through remotely delivered phishing interfaces or code embedded directly in the extension, enabling wallet takeover and cryptocurrency theft._
 
 ## Supabase-Controlled Firefox Extensions Deliver Wallet-Phishing Pages
@@ -35,7 +35,7 @@ Our investigation begins with `0KX WEB3`, a Firefox extension that presents itse
 
 Its Firefox Add-ons listing used `OKX`-style branding and screenshots, described the extension as a universal Web3 wallet, and claimed that it collected no data. The name substitutes a zero for the letter "O" in `OKX`, helping it resemble the legitimate product. At the time of review, the listing identified the publisher only as `dev` and showed seven users.
 
-![](https://cdn.sanity.io/images/cgdhsj6q/production/3a7fb23fc94d7db1db0cfa46dcef2f573de84526-2048x1590.png?w=1600&q=95&fit=max&auto=format)
+![](/assets/img/posts/firefox-crypto-wallet-theft/3a7fb23fc94d7db1db0cfa46dcef2f573de84526-2048x1590.png)
 _The 0KX WEB3 listing was live during our analysis and presented the extension as a cryptocurrency wallet for managing assets, connecting to Web3 applications, and swapping tokens. Mozilla's security team removed the extension before publication._
 
 The packaged extension contains no code for creating wallets, managing keys, signing transactions, connecting to blockchain providers, displaying balances, or transferring cryptocurrency. Instead, it combines:
@@ -55,7 +55,7 @@ During analysis, the record points to `hxxps://portal-web3-extension-welcome[.]p
 
 The extension loads this URL inside its popup and also opens it in a separate window after installation or update. The destination, hosted through the legitimate Cloudflare Pages service, presents a polished Web3 interface with `Create wallet` and `Import wallet` options.
 
-![](https://cdn.sanity.io/images/cgdhsj6q/production/873640fa90994d9c42b9b5fa64efa3ab40e143aa-2048x1717.png?w=1600&q=95&fit=max&auto=format)
+![](/assets/img/posts/firefox-crypto-wallet-theft/873640fa90994d9c42b9b5fa64efa3ab40e143aa-2048x1717.png)
 _The remote page loaded by 0KX WEB3 presents a Web3 wallet interface and directs users toward wallet creation or import workflows._
 
 The import workflow requests a recovery phrase or private key, including recovery phrases of up to 24 words. A victim who submits either secret gives the threat actors everything needed to restore the wallet elsewhere and transfer its assets.
@@ -115,7 +115,7 @@ The theft occurs during normal wallet creation or import. Much of the underlying
 
 A recovery phrase can regenerate the wallet's private keys on another device. Once exposed, removing the extension does not revoke it, and the threat actors can independently access and transfer the wallet's assets.
 
-![](https://cdn.sanity.io/images/cgdhsj6q/production/6eb4ca8952093074744d539e6121690453a08bbd-2048x1186.png?w=1600&q=95&fit=max&auto=format)
+![](/assets/img/posts/firefox-crypto-wallet-theft/6eb4ca8952093074744d539e6121690453a08bbd-2048x1186.png)
 _Socket AI Scanner flags the malicious [3ABBY- Browser Extension](https://socket.dev/firefox/package/chiro-di-red@tools.com/overview/8.12.13) and surfaces its broad browser and wildcard host permissions. Our analysis identified modified Rabby-derived code that captures 12- or 24-word recovery phrases and exfiltrates them to threat actor-controlled Cloudflare Worker infrastructure._
 
 ## Counterfeit Wallets Collect Secrets Directly
@@ -191,7 +191,7 @@ Three identified extensions contain the same malicious `exrb` implementation as 
 
 `trl` also appeared under names including `TrooonLink`, `TrLink`, and `owjdbfjfoof`, illustrating the campaign's use of mutable display names around a stable extension identity.
 
-![](https://cdn.sanity.io/images/cgdhsj6q/production/70f56742e340581247a67e69240fc5a0f48eef31-1128x1072.png?w=1600&q=95&fit=max&auto=format)
+![](/assets/img/posts/firefox-crypto-wallet-theft/70f56742e340581247a67e69240fc5a0f48eef31-1128x1072.png)
 
 ## Shared Development Artifacts
 

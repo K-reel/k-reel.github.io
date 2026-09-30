@@ -7,7 +7,7 @@ tags: [npm, JavaScript, Cursor, Backdoor, T1195.002, T1059.007, T1608.001, T1204
 canonical_url: https://socket.dev/blog/malicious-npm-packages-hijack-cursor-editor-on-macos
 source: Socket
 image:
-  path: https://cdn.sanity.io/images/cgdhsj6q/production/6ed8aa3b7af41a504cc1e7ad0897d8a03b6c109f-1024x1024.webp
+  path: /assets/img/posts/malicious-npm-packages-hijack-cursor-editor-on-macos/cover.jpg
   alt: "Backdooring the IDE: Malicious npm Packages Hijack Cursor Editor on macOS"
 description: "Malicious npm packages posing as developer tools target macOS Cursor IDE users, stealing credentials and modifying files to gain persistent backdoor access."
 ---
@@ -16,7 +16,7 @@ The Socket Threat Research Team has identified three malicious npm packages — 
 
 Published by a threat actor using the npm aliases `gtr2018` and `aiide` (registered under the email addresses `404228858@qq[.]com` and `touzi_xiansheng@outlook[.]com`), the packages function as backdoors, and by the time of discovery, they had already been downloaded more than 3,200 times. As of this writing, these packages remain live on the npm registry. We have formally petitioned for their removal.
 
-![Malicious npm packages sw-cur and sw-cur1](https://cdn.sanity.io/images/cgdhsj6q/production/346734c40e9513da5bbdf086bd09a01681cf265f-385x423.png)
+![Malicious npm packages sw-cur and sw-cur1](/assets/img/posts/malicious-npm-packages-hijack-cursor-editor-on-macos/346734c40e9513da5bbdf086bd09a01681cf265f-385x423.png)
 _Malicious npm packages `sw‑cur` and `sw‑cur1` [published](https://socket.dev/npm/user/gtr2018) by `gtr2018`. The summary under the `sw-cur` package "提供全网最便宜的Cursor接口服务-升维科技" translates from Chinese to: "Providing the cheapest Cursor API service on the entire internet – Shengwei Technology"_
 
 This campaign highlights a growing supply chain threat, with threat actors increasingly using malicious patches to compromise trusted local software. Our findings align with research by ReversingLabs' Lucija Valentić, who documented npm-based attacks where malicious packages [infected](https://www.reversinglabs.com/blog/malicious-npm-patch-delivers-reverse-shell) [other](https://www.reversinglabs.com/blog/atomic-and-exodus-crypto-wallets-targeted-in-malicious-npm-campaign) locally-installed legitimate packages. Together, these investigations reinforce a clear and expanding pattern — stealthy, patch-based compromises delivered through widely used package managers like npm.
@@ -27,10 +27,10 @@ Building on that trend, we are now seeing a new vector emerge: the use of npm ma
 
 When executed, the malicious script in the `sw‑cur`, `sw‑cur1`, and `aiide-cur` packages harvests user-supplied credentials, retrieves an encrypted secondary payload from threat actor-controlled infrastructure, decrypts and decompresses it, and replaces critical Cursor-specific code with attacker-controlled logic. The `sw‑cur` package also disables Cursor's auto-update mechanism; and all packages restart the application, granting the threat actor persistent, remote-controlled execution within the user's IDE.
 
-![Execution flow diagram of sw-cur](https://cdn.sanity.io/images/cgdhsj6q/production/6eba6c2290bcd4122c82c2fab90ed874d8e31f20-449x445.png)
+![Execution flow diagram of sw-cur](/assets/img/posts/malicious-npm-packages-hijack-cursor-editor-on-macos/6eba6c2290bcd4122c82c2fab90ed874d8e31f20-449x445.png)
 _Execution flow diagram of the malicious `sw-cur` package._
 
-![Cursor AI code editor homepage](https://cdn.sanity.io/images/cgdhsj6q/production/a19052c547fc0196a48bfc23ff6bf81c26ff3673-1619x496.png)
+![Cursor AI code editor homepage](/assets/img/posts/malicious-npm-packages-hijack-cursor-editor-on-macos/a19052c547fc0196a48bfc23ff6bf81c26ff3673-1619x496.png)
 _Official [homepage](https://www.cursor.com/en) of the Cursor AI code editor. The attack specifically targets macOS installations of this application by modifying internal files such as `main.js` under the `/Applications/Cursor.app/...` path. The malware uses the editor's trusted runtime to execute threat actor-controlled code and maintain persistence._
 
 Below are defanged and annotated code snippets that illustrate the core backdoor logic common to all three variants — [`sw‑cur`](https://socket.dev/npm/package/sw-cur/files/2.6.0/index.js), [`sw‑cur1`](https://socket.dev/npm/package/sw-cur1/files/1.4.0/index.js), and [`aiide‑cur`](https://socket.dev/npm/package/aiide-cur/files/1.9.2/index.js). Only the hardcoded domains and (in the case of `sw‑cur1` and `aiide‑cur`) the final `disableAutoUpdate()` call differ; the credential exfiltration, encrypted loader retrieval, decryption routine, and file‑patch sequence are otherwise identical.
@@ -59,14 +59,14 @@ Next, the script downloads an AES‑encrypted, gzip‑compressed JavaScript load
 
 Persistence logic differs slightly: `sw‑cur` disables Cursor's auto‑update mechanism and kills [`chrome_crashpad_handler`](https://socket.dev/npm/package/sw-cur/files/2.6.0/index.js#L187) and all Cursor processes so the patched binary loads on the next launch. `sw‑cur1` and `aiide‑cur` omit the auto‑update tweak and process‑kill step but still instructs the user to restart Cursor, which activates the backdoored `main.js`.
 
-![Socket AI Scanner analysis of sw-cur](https://cdn.sanity.io/images/cgdhsj6q/production/eb117fe82846bb7c31409ee5c272db6cc6442357-565x579.png)
+![Socket AI Scanner analysis of sw-cur](/assets/img/posts/malicious-npm-packages-hijack-cursor-editor-on-macos/eb117fe82846bb7c31409ee5c272db6cc6442357-565x579.png)
 _Socket AI Scanner's analysis, including contextual details about the malicious `sw‑cur` package._
 
 ## Abusing the "Cheapest API" Bait
 
 The malicious packages `sw-cur`, `sw-cur1`, and `aiide‑cur` appear to exploit developers' interest in avoiding Cursor's AI usage fees. As an AI-first IDE, Cursor offers tiered access to large language models — such as Claude, Gemini, and GPT-4 — with premium model invocations priced per request (e.g., $0.30 each for OpenAI's latest reasoning model, o3). While users can bring their own API keys, some may seek cheaper or unofficial integrations to reduce costs. The threat actor's use of the tagline "the cheapest Cursor API" likely targets this group, luring users with the promise of discounted access while quietly deploying a backdoor.
 
-![Cursor AI agent interface](https://cdn.sanity.io/images/cgdhsj6q/production/1741373bb8aeb877b848507f91f5963273091f52-672x822.png)
+![Cursor AI agent interface](/assets/img/posts/malicious-npm-packages-hijack-cursor-editor-on-macos/1741373bb8aeb877b848507f91f5963273091f52-672x822.png)
 _This screenshot shows Cursor's built-in AI agent [interface](https://docs.cursor.com/settings/models#max), where users can choose from premium language models. The malicious npm packages `sw-cur`, `sw-cur1`, and `aiide‑cur` advertise "the cheapest Cursor API", likely to lure developers looking to avoid these costs._
 
 ## Impact Assessment

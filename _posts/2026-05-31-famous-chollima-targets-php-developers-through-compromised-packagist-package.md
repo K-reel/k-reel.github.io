@@ -7,14 +7,14 @@ tags: [Famous Chollima, Contagious Interview, Developer Compromise, Packagist, C
 canonical_url: https://socket.dev/blog/famous-chollima-targets-php-developers-through-compromised-packagist-package
 source: Socket
 image:
-  path: https://cdn.sanity.io/images/cgdhsj6q/production/9c9f4529da2ec05ccce30e3b294d2485de9a666a-1672x941.png?w=1600&q=95&fit=max&auto=format
+  path: /assets/img/posts/famous-chollima-targets-php-developers-through-compromised-packagist-package/cover.png
   alt: "Famous Chollima Targets PHP Developers Through Compromised Packagist Package"
 description: "The North Korean malware loader hides in a Packagist-listed package and its GitHub branch to fetch and execute remote code in a likely Contagious Interview-style lure."
 ---
 
 We identified malicious obfuscated JavaScript appended to [`tailwind.js`](https://socket.dev/composer/package/roberts/leads/files?version=dev-drewroberts%2Ffeature%2Ftest-case&path=roberts-leads-6c5c3c7%2Ftailwind.js) in the Packagist development version [`dev-drewroberts/feature/test-case`](https://socket.dev/composer/package/roberts/leads/overview?version=dev-drewroberts%2Ffeature%2Ftest-case) of the PHP package `roberts/leads`. The package itself is a legitimate Laravel package associated with a maintainer, [Drew Roberts](https://github.com/drewroberts). The malicious code appears isolated to a specific development branch, `drewroberts/feature/test-case`, exposed through Packagist as an installable dev version.
 
-![](https://cdn.sanity.io/images/cgdhsj6q/production/123c88ecae299e119909029164267cc49dc03888-1248x1166.png?w=1600&q=95&fit=max&auto=format)
+![](/assets/img/posts/famous-chollima-targets-php-developers-through-compromised-packagist-package/123c88ecae299e119909029164267cc49dc03888-1248x1166.png)
 _Socket AI Scanner flagged [`dev-drewroberts/feature/test-case`](https://socket.dev/composer/package/roberts/leads/overview?version=dev-drewroberts%2Ffeature%2Ftest-case) as known malware after identifying obfuscated JavaScript hidden in [`tailwind.js`](https://socket.dev/composer/package/roberts/leads/files?version=dev-drewroberts%2Ffeature%2Ftest-case&path=roberts-leads-6c5c3c7%2Ftailwind.js), including runtime exposure of Node.js internals and immediate execution of a decoded staging payload rather than legitimate Tailwind configuration logic._
 
 The payload is hidden after an otherwise normal Tailwind configuration. Once deobfuscated, it behaves as a JavaScript malware loader. It reaches out to blockchain and public RPC infrastructure, including TRON, Aptos, and BNB Smart Chain services, retrieves encrypted payload material, decrypts it with embedded XOR keys, executes the result with `eval()`, and can launch a detached hidden Node.js child process.
@@ -23,7 +23,7 @@ We assess this as a likely developer or repository compromise, or a poisoned-bra
 
 Given the branch name, the malware family, identified indicators of compromise, and the delivery path through trusted developer infrastructure, this package version may have been intended for a fake job interview or developer-task lure, consistent with a Contagious Interview-like scenario.
 
-![](https://cdn.sanity.io/images/cgdhsj6q/production/88fcab5de68317c8a2db19daa44fb83cd585ea78-2048x2027.png?w=1600&q=95&fit=max&auto=format)
+![](/assets/img/posts/famous-chollima-targets-php-developers-through-compromised-packagist-package/88fcab5de68317c8a2db19daa44fb83cd585ea78-2048x2027.png)
 _Packagist listed the affected `roberts/leads` dev branch as an installable version. We reported it to the Packagist security team, who promptly reviewed the issue and removed the malicious version. We appreciate their quick response in this case and their continued action on PHP ecosystem abuse reports._
 
 In addition to reporting the affected version to Packagist’s security team, we also notified the project maintainer, Drew Roberts, both through GitHub and through the email address listed for reporting security incidents. In parallel, we flagged the malicious `tailwind.js` file in the affected GitHub repository branch to GitHub Security for review.
@@ -163,7 +163,7 @@ git checkout drewroberts/feature/test-case
 
 In a fake job interview or developer task, those commands would look routine. The attacker does not need high package adoption. They only need one target to trust and run the poisoned branch.
 
-![](https://cdn.sanity.io/images/cgdhsj6q/production/36802e02dd7931de29b2311df96972b90ada3ea5-2048x1106.png?w=1600&q=95&fit=max&auto=format)
+![](/assets/img/posts/famous-chollima-targets-php-developers-through-compromised-packagist-package/36802e02dd7931de29b2311df96972b90ada3ea5-2048x1106.png)
 _The malicious loader is visible only after horizontal scrolling in the `tailwind.js` file on the affected GitHub branch, reinforcing how a targeted victim could clone a legitimate-looking repository branch and miss the hidden payload during routine review._
 
 The affected `roberts/leads` dev version was published on May 30, 2026, the same day our automated AI scanner identified it as malicious. We are publishing this research within hours of detection, and at the time of writing, we did not identify public victim communications instructing developers to install this exact version or evidence of broad organic exposure. Those instructions, if used, would likely appear in private recruiter chats, email, or direct messages. However, the same wallet addresses, Aptos fallback identifiers, XOR keys, and config-file injection pattern appear in public victim reports, including [development-team compromise](https://usmandev.medium.com/how-two-sophisticated-crypto-stealing-malware-attacks-hit-our-development-team-a-complete-supply-3db4be232491) and [OpenClaw malware](https://www.tylerhenkel.com/blog/openclaw-malware-attack) write-ups, as well as [GitHub Community](https://github.com/orgs/community/discussions/188732) and [Reddit](https://www.reddit.com/r/github/comments/1sw76n6/obfuscated_code_appeared_only_in_a_git_merge/) help requests and research on [Contagious Interview-style](https://www.microsoft.com/en-us/security/blog/2026/03/11/contagious-interview-malware-delivered-through-fake-developer-job-interviews/) developer compromise activity.

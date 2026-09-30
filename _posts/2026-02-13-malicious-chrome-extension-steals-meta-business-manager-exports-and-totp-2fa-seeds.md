@@ -7,7 +7,7 @@ tags: [Chrome, Meta, Facebook, Google, Infostealer, T1195.002, T1176.001, T1204,
 canonical_url: https://socket.dev/blog/malicious-chrome-extension-steals-meta-business-manager-exports-and-totp-2fa-seeds
 source: Socket
 image:
-  path: https://cdn.sanity.io/images/cgdhsj6q/production/fbd6967f5da678c95170fdd4aea6664f72c6e892-1024x1024.png?w=1600&q=95&fit=max&auto=format
+  path: /assets/img/posts/malicious-chrome-extension-steals-meta-business-manager-exports-and-totp-2fa-seeds/cover.png
   alt: Malicious Chrome extension CL Suite artwork
 description: "Chrome extension CL Suite by @CLMasters neutralizes 2FA for Facebook and Meta Business accounts while exfiltrating Business Manager contact and analytics data."
 ---
@@ -20,17 +20,17 @@ By stealing TOTP seeds and codes for Facebook and Meta Business accounts, the ex
 
 At the time of writing, the extension remains [live](https://chromewebstore.google.com/detail/cl-suite-by-clmasters/jkphinfhmfkckkcnifhjiplhfoiefffl) on the Chrome Web Store. We have notified Google and flagged this extension for removal.
 
-![Socket AI Scanner's analysis of the malicious CL Suite by @CLMasters Chrome extension.](https://cdn.sanity.io/images/cgdhsj6q/production/7bc4f614fdee4c9cc3d78bbe9258451eab2521de-623x716.png?w=1600&q=95&fit=max&auto=format)
+![Socket AI Scanner's analysis of the malicious CL Suite by @CLMasters Chrome extension.](/assets/img/posts/malicious-chrome-extension-steals-meta-business-manager-exports-and-totp-2fa-seeds/7bc4f614fdee4c9cc3d78bbe9258451eab2521de-623x716.png)
 _Socket AI Scanner's analysis of the malicious [CL Suite by @CLMasters](https://socket.dev/chrome/package/jkphinfhmfkckkcnifhjiplhfoiefffl/overview/1.0.1) Chrome extension highlights that its background [script](https://socket.dev/chrome/package/jkphinfhmfkckkcnifhjiplhfoiefffl/files/1.0.1/js/background.js) collects Facebook account identifiers, 2FA seeds and codes, CSV exports, tab URL, public IP, and user agent, then exfiltrates this data with a hardcoded API key to getauth[.]pro telemetry and validation endpoints and forwards formatted dumps to a Telegram notification API, confirming deliberate credential and 2FA harvesting._
 
-![Chrome Web Store listing for CL Suite by @CLMasters.](https://cdn.sanity.io/images/cgdhsj6q/production/f09092bd92606bb68f9f1a08ed72108ec76a5e39-1311x910.png?w=1600&q=95&fit=max&auto=format)
+![Chrome Web Store listing for CL Suite by @CLMasters.](/assets/img/posts/malicious-chrome-extension-steals-meta-business-manager-exports-and-totp-2fa-seeds/f09092bd92606bb68f9f1a08ed72108ec76a5e39-1311x910.png)
 _Chrome Web Store listing for the `CL Suite by @CLMasters` extension openly advertises the ability to "extract people data, analyze Business Managers, remove verification popups, and generate 2FA codes" for Meta accounts, while the underlying code also harvests TOTP seeds, 2FA codes, and Business Manager contact and analytics data and exfiltrates it to threat actor-controlled infrastructure._
 
 ## From "Meta Business Suite Tools" to Silent Infostealer
 
 Meta Business Suite and Facebook Business Manager are the administrative consoles organizations use to run their Facebook and Instagram presence at scale. From these panels, admins manage pages, ad accounts, pixels, catalogs, and user permissions for employees and agencies, and they can spend budget, change payment settings, add or remove staff, and control brand facing pages. In this context, any extension that sees those pages and their 2FA flows has direct exposure to high-value business data and authentication secrets.
 
-![Official Meta landing page for its business tools ecosystem.](https://cdn.sanity.io/images/cgdhsj6q/production/375a0a2fc8ff33cc51c6efad82daa1ae5d6d0471-1974x1756.png?w=1600&q=95&fit=max&auto=format)
+![Official Meta landing page for its business tools ecosystem.](/assets/img/posts/malicious-chrome-extension-steals-meta-business-manager-exports-and-totp-2fa-seeds/375a0a2fc8ff33cc51c6efad82daa1ae5d6d0471-1974x1756.png)
 _Official Meta landing page for its business tools ecosystem, showing how Meta Business Suite, Business Manager, and Ads Manager provide a single admin surface for managing Facebook and Instagram pages, ads, and customer interactions, which highlights why any Chrome extension with access to these consoles, like `CL Suite by @CLMasters`, has direct reach into high-value business assets._
 
 `CL Suite by @CLMasters` is published in the Chrome Web Store under the developer alias `CLMasters`, with the registration email `info@clmasters[.]pro`. The extension first appeared in the store on March 1, 2025 and was last updated on March 6, 2025. The listing shows a small user base of 28 users at the time of writing, but any victim who installs it while managing corporate assets risks losing control of those assets and exposing internal contact data.
@@ -43,7 +43,7 @@ The same developer hosts a privacy policy titled "Meta Business Suite Tools" tha
 
 The code tells a different story. Across multiple modules, the extension packages sensitive data, including TOTP seeds, current one time codes, Facebook usernames and emails, and full CSV exports of Meta Business "People" and Business Manager analytics, and sends it to a telemetry API at `getauth[.]pro`. Many of these telemetry events are tagged with `sendTelegram: true`, which instructs the backend to forward the same payload to a Telegram channel controlled by the threat actor. In other words, the extension systematically performs the exact data collection and exfiltration that its own privacy policy says will not happen.
 
-![Privacy policy page for Meta Business Suite Tools on clmasters[.]pro.](https://cdn.sanity.io/images/cgdhsj6q/production/f995312af4e572be733bd50f38ce35a32e02ed2c-2048x1540.png?w=1600&q=95&fit=max&auto=format)
+![Privacy policy page for Meta Business Suite Tools on clmasters[.]pro.](/assets/img/posts/malicious-chrome-extension-steals-meta-business-manager-exports-and-totp-2fa-seeds/f995312af4e572be733bd50f38ce35a32e02ed2c-2048x1540.png)
 _Privacy policy page for Meta Business Suite Tools on `clmasters[.]pro`, where the developer assures users that Meta Business Suite data and 2FA secrets are processed and stored locally in the browser, a claim that directly contradicts the extension's actual behavior of transmitting the same data to the threat actor-controlled `getauth[.]pro` backend._
 
 ## Key Malicious Flows

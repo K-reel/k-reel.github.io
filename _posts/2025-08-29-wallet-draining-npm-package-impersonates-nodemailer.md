@@ -7,7 +7,7 @@ tags: [npm, Typosquatting, T1195.002, T1036.005, T1059.007, T1608.001, T1204.002
 canonical_url: https://socket.dev/blog/wallet-draining-npm-package-impersonates-nodemailer
 source: Socket
 image:
-  path: https://cdn.sanity.io/images/cgdhsj6q/production/962f8c28e11dbdbbe57e6dd50714e64112d8722d-1024x1024.png
+  path: /assets/img/posts/wallet-draining-npm-package-impersonates-nodemailer/cover.png
   alt: "Wallet-Draining npm Package Impersonates Nodemailer"
 description: "Malicious npm package impersonates Nodemailer and drains wallets by hijacking crypto transactions across multiple blockchains."
 ---
@@ -22,12 +22,12 @@ The threat actor using the npm alias `nikotimon` (registration email: `darkhorse
 
 At the time of writing, the malicious package remains live on npm. We have petitioned the npm security team for its removal and for the suspension of the threat actor's account.
 
-![Socket AI Scanner metadata comparison](https://cdn.sanity.io/images/cgdhsj6q/production/b6c322703ce947135a8c1ddb8e109dd567364aae-720x221.png)
+![Socket AI Scanner metadata comparison](/assets/img/posts/wallet-draining-npm-package-impersonates-nodemailer/b6c322703ce947135a8c1ddb8e109dd567364aae-720x221.png)
 _Socket AI Scanner's metadata comparison shows the malicious `nodejs-smtp` package (left) with 342 total downloads, while the legitimate `nodemailer` package (right) is widely adopted, with millions of weekly downloads._
 
-![nodejs-smtp flagged as malware](https://cdn.sanity.io/images/cgdhsj6q/production/ebcf747958afbb036b5a0b16da267eebdc6d2d46-1546x415.png)
+![nodejs-smtp flagged as malware](/assets/img/posts/wallet-draining-npm-package-impersonates-nodemailer/ebcf747958afbb036b5a0b16da267eebdc6d2d46-1546x415.png)
 
-![nodemailer legitimate package](https://cdn.sanity.io/images/cgdhsj6q/production/4960ce7f0d3f4ef8897bfbd86c23950551bcaad9-1543x363.png)
+![nodemailer legitimate package](/assets/img/posts/wallet-draining-npm-package-impersonates-nodemailer/4960ce7f0d3f4ef8897bfbd86c23950551bcaad9-1543x363.png)
 _Socket AI Scanner flags `nodejs-smtp` (top image) as known malware. The package copies the `nodemailer` (bottom image) tagline, page styling, and README, impersonating the legitimate project to evade casual inspection and mislead developers._
 
 `nodejs-smtp` is not a simple typosquat of `nodemailer`, yet it can still land in projects because its name, README, and API look right to a hurried developer. When engineers search the web or ask an AI assistant for "nodejs smtp example" or "simple smtp for nodejs", they may grab the first snippet or package name that seems plausible. Faced with similar-sounding names, some users pick the result that matches their query verbatim. LLMs further increase risk, since code assistants can hallucinate package names that look correct for a task.
@@ -111,7 +111,7 @@ async sendCoins() {
 
 This is manipulation of transaction parameters. The wallet UI appears normal, the victim clicks `Send`, and funds route to the threat actor's wallet address.
 
-![Socket AI Scanner analysis of nodejs-smtp](https://cdn.sanity.io/images/cgdhsj6q/production/aad1d1f09dfa8602f40c8b631cf9d942f9b5c98f-706x771.png)
+![Socket AI Scanner analysis of nodejs-smtp](/assets/img/posts/wallet-draining-npm-package-impersonates-nodemailer/aad1d1f09dfa8602f40c8b631cf9d942f9b5c98f-706x771.png)
 _Socket AI Scanner's analysis of the malicious `nodejs-smtp` package highlights unauthorized modification of Electron wallets. The package unpacks Atomic and Exodus `app.asar` archives, injects payloads, repacks the archives, and deletes temporary files, enabling silent code execution and persistence._
 
 ## Outlook and Recommendations

@@ -9,7 +9,7 @@ toc: true
 canonical_url: https://socket.dev/blog/malicious-go-crypto-module-steals-passwords-and-deploys-rekoobe-backdoor
 source: Socket
 image:
-  path: https://cdn.sanity.io/images/cgdhsj6q/production/702aa7d59c6b5180ea40426b82959dfa00e6c476-1024x1024.png?w=1600&q=95&fit=max&auto=format
+  path: /assets/img/posts/malicious-go-crypto-module-steals-passwords/cover.png
   alt: Malicious Go crypto module artwork
 ---
 
@@ -23,14 +23,14 @@ This activity fits namespace confusion and impersonation of the legitimate `gola
 
 As of this writing, the module remains listed on `pkg.go.dev`, which currently shows `github[.]com/xinfeisoft/crypto` at `v0.15.0` with a February 20, 2025 publication date. Socket was still able to fetch the malicious module from the public Go module mirror as of December 16, 2025. After we reported the package, the Go security team confirmed that the public Go module proxy now blocks it as malicious and returns a `403 SECURITY ERROR` response instead of serving it. That mitigation reduces exposure through Go's default module resolution path, but it does not lessen the severity of a package that impersonated a foundational Go dependency, harvested passwords, and deployed a Linux backdoor chain. We appreciate the Go security team's prompt response in this case and in prior cases where we reported malicious modules, and we are grateful for their continued work to keep the Go ecosystem safe. We also filed an abuse report requesting action on the publisher's GitHub account, which remains live as of this writing.
 
-![Socket AI Scanner flagging the malicious module](https://cdn.sanity.io/images/cgdhsj6q/production/06e935cec3b320ccfd12748ba428983afa757c80-1132x1222.png?w=1600&q=95&fit=max&auto=format)
+![Socket AI Scanner flagging the malicious module](/assets/img/posts/malicious-go-crypto-module-steals-passwords/06e935cec3b320ccfd12748ba428983afa757c80-1132x1222.png)
 _Socket AI Scanner flags [`github[.]com/xinfeisoft/crypto`](https://socket.dev/go/package/github.com/xinfeisoft/crypto) as known malware after detecting a backdoored [`ReadPassword`](https://socket.dev/go/package/github.com/xinfeisoft/crypto?section=files&version=v0.15.0&path=ssh%2Fterminal%2Fterminal.go#L52) path in [`ssh/terminal/terminal.go`](https://socket.dev/go/package/github.com/xinfeisoft/crypto?section=files&version=v0.15.0&path=ssh%2Fterminal%2Fterminal.go) that harvests entered credentials, writes them for persistence to [`/usr/share/nano/.lock`](https://socket.dev/go/package/github.com/xinfeisoft/crypto?section=files&version=v0.15.0&path=ssh%2Fterminal%2Fterminal.go#L54), uses a GitHub-hosted "update" page (`raw[.]githubusercontent[.]com/xinfeisoft/vue-element-admin/refs/heads/main/public/update[.]html`) as a staging indirection to fetch a secondary endpoint, exfiltrates passwords via HTTP POST, then pulls and executes threat actor-supplied shell commands via [`/bin/sh`](https://socket.dev/go/package/github.com/xinfeisoft/crypto?section=files&version=v0.15.0&path=ssh%2Fterminal%2Fterminal.go#L60)._
 
 ## Malicious Module: A Backdoored Clone
 
 The module [`github[.]com/xinfeisoft/crypto`](https://socket.dev/go/package/github.com/xinfeisoft/crypto?version=v0.15.0) mirrors the structure and package layout of the legitimate [`golang.org/x/crypto`](https://socket.dev/go/package/golang.org/x/crypto) repository, but it adds a telltale dependency: [`github.com/bitfield/script`](https://socket.dev/go/package/github.com/bitfield/script) (plus supporting libraries). [`bitfield/script`](https://socket.dev/go/package/github.com/bitfield/script) is a legitimate Go module that simplifies HTTP requests and shell style pipelines, which makes it a convenient tool for embedding outbound network activity and command execution into otherwise ordinary-looking code.
 
-![pkg.go.dev listing of the malicious module](https://cdn.sanity.io/images/cgdhsj6q/production/b8d7defcd038cbeeeb99eca969c0d2a3dfa8e21e-1883x927.png?w=1600&q=95&fit=max&auto=format)
+![pkg.go.dev listing of the malicious module](/assets/img/posts/malicious-go-crypto-module-steals-passwords/b8d7defcd038cbeeeb99eca969c0d2a3dfa8e21e-1883x927.png)
 _On `pkg.go.dev`, `github[.]com/xinfeisoft/crypto` presents as a routine cryptography library with familiar subpackages (`acme`, `argon2`, `bcrypt`, `blake2`, and others). That lookalike surface helps the malicious module blend into dependency graphs and evade quick visual triage. By copying `x/crypto` and changing little else, the threat actor reduces obvious anomalies while preserving expected functionality._
 
 The threat actor placed the backdoor in [`ssh/terminal/terminal.go`](https://socket.dev/go/package/github.com/xinfeisoft/crypto?section=files&version=v0.15.0&path=ssh%2Fterminal%2Fterminal.go), inside the [`ReadPassword`](https://socket.dev/go/package/github.com/xinfeisoft/crypto?section=files&version=v0.15.0&path=ssh%2Fterminal%2Fterminal.go#L52) helper. That choice is deliberate: many command line tools use terminal password prompts for SSH passphrases, database logins, API keys entered interactively, and other high-value secrets that should never leave the host.
@@ -71,19 +71,19 @@ The GitHub account `xinfeisoft` hosts four public repositories: `crypto`, `vue-e
 
 Repository history shows that the threat actor continued maintaining the GitHub-hosted staging pointer after publication. The `vue-element-admin` repository first added `public/update.html` on February 19, 2025, and a later commit on July 12, 2025 changed it from `img.spoolsv[.]net/seed.php` to `img.spoolsv[.]cc/seed.php`. That update indicates either infrastructure rotation or correction of an earlier staging value. In either case, it shows that the `vue-element-admin` repository remained operationally relevant months after the malicious module was published.
 
-![Commit history for update.html](https://cdn.sanity.io/images/cgdhsj6q/production/d31d2a264de9048ce3bc2d10f4eee11431bd1537-405x202.png?w=1600&q=95&fit=max&auto=format)
+![Commit history for update.html](/assets/img/posts/malicious-go-crypto-module-steals-passwords/d31d2a264de9048ce3bc2d10f4eee11431bd1537-405x202.png)
 _Commit history for `vue-element-admin/public/update.html` shows that the threat actor updated the GitHub-hosted staging pointer from `img.spoolsv[.]net/seed.php` to `img.spoolsv[.]cc/seed.php`, indicating continued maintenance of the delivery chain months after the malicious module was published._
 
 The remaining repositories appear to serve supporting roles. `demo` includes content consistent with developer-side execution via repository artifacts (for example Git hooks), while `feisoft` contains minimal material and does not materially affect the delivery chain based on what we analyzed.
 
-![GitHub profile of xinfeisoft](https://cdn.sanity.io/images/cgdhsj6q/production/d6f8cfc143b4c196f9b19ca46d7e002c08de6bae-2048x1203.png?w=1600&q=95&fit=max&auto=format)
+![GitHub profile of xinfeisoft](/assets/img/posts/malicious-go-crypto-module-steals-passwords/d6f8cfc143b4c196f9b19ca46d7e002c08de6bae-2048x1203.png)
 _GitHub profile view of the `xinfeisoft` account highlights the small set of public repositories used in the campaign, including the backdoored Go module (`crypto`) and the staging repository (`vue-element-admin`) that hosts the GitHub Raw pointer file leveraged to redirect infected hosts to threat actor-controlled infrastructure._
 
 ## Linux Stager and Backdoor Delivery Chain
 
 The infrastructure and script content behind `github[.]com/xinfeisoft/crypto` show a multi-stage Linux dropper chain that matches the Go backdoor's runtime flow. The backdoored `ReadPassword` function fetches a GitHub hosted pointer (`update.html`), resolves the next hop (`seed.php`), then executes the response via `/bin/sh`. That response launches a `curl | sh` stager (`snn50.txt`) that prepares the host and delivers follow-on payloads.
 
-![Execution chain diagram](https://cdn.sanity.io/images/cgdhsj6q/production/b3b7cc49d26e19a435bfd8441d523443d6f68a77-907x692.png?w=1600&q=95&fit=max&auto=format)
+![Execution chain diagram](/assets/img/posts/malicious-go-crypto-module-steals-passwords/b3b7cc49d26e19a435bfd8441d523443d6f68a77-907x692.png)
 _Execution chain from the backdoored Go `ReadPassword` hook to Linux compromise: the module captures an interactive password prompt, pulls a GitHub Raw pointer that redirects to `img[.]spoolsv[.]cc`, executes a `curl | sh` stager that installs SSH key persistence and sets `iptables` default policies to `ACCEPT`, then downloads and runs staged payloads, including the confirmed Rekoobe Linux backdoor._
 
 At a high level, the five-stage chain includes three network hops after the `ReadPassword` trigger: `update.html` returns `seed.php`, `seed.php` returns a `curl | sh` launcher, and the launcher pulls `snn50.txt`. The `snn50.txt` stager then appends an SSH key for persistence, sets `iptables` default policies to `ACCEPT`, downloads and executes two `.mp5`-disguised payloads, and deletes the dropped files to reduce on disk artifacts.

@@ -7,7 +7,7 @@ tags: [Typosquatting, Infostealer, Python, PyPI, T1195.002, T1036.005, T1546.016
 canonical_url: https://socket.dev/blog/typosquatting-on-pypi-malicious-package-mimics-popular-browser-cookie-library
 source: Socket
 image:
-  path: https://cdn.sanity.io/images/cgdhsj6q/production/d36d7daa8f61ca108eb3e0da29e5fe5d96f1779a-1024x1024.webp
+  path: /assets/img/posts/typosquatting-on-pypi-malicious-package-mimics-popular-browser-cookie-library/cover.jpg
   alt: "Typosquatting on PyPI with malicious browser-cookies3 package"
 description: "Socket detected a malicious Python package impersonating a popular browser cookie library to steal passwords, screenshots, webcam images, and Discord tokens."
 ---
@@ -18,7 +18,7 @@ The Socket Threat Research Team has identified a malicious PyPI package, "[brows
 
 The legitimate Python package [browser-cookie3](https://socket.dev/pypi/package/browser-cookie3) loads cookies from various web browsers into a `cookiejar` object, enabling HTTP requests originating from Python to include the browser's cookies and access web content without requiring additional login steps. This package has been [downloaded](https://www.piwheels.org/project/browser-cookie3/) over 3 million times, and has been [used](https://github.com/borisbabic/browser_cookie3) by thousands of developers since [2015](https://github.com/borisbabic/browser_cookie3/commit/ae91e91eeadb775db9d536e7dcea5365664cff00).
 
-![](https://cdn.sanity.io/images/cgdhsj6q/production/7b1b8d943338e6fdbc57b604799017806b99d6ef-1320x548.png)
+![](/assets/img/posts/typosquatting-on-pypi-malicious-package-mimics-popular-browser-cookie-library/7b1b8d943338e6fdbc57b604799017806b99d6ef-1320x548.png)
 
 Socket's AI scanner flagged the malicious code package as malware, providing the following context:
 
@@ -87,7 +87,7 @@ The threat actor's `setup.py` script included in the browser_cookies3 package is
 
 The custom install command calls the standard `Setuptools` installation and then uses `subprocess.run()` to execute `main.py`, which contains the malicious payload whose capabilities were covered earlier.
 
-![](https://cdn.sanity.io/images/cgdhsj6q/production/b3407ee3e7be4d5bd8d7a7edb47f2c60a828476f-1541x284.png)
+![](/assets/img/posts/typosquatting-on-pypi-malicious-package-mimics-popular-browser-cookie-library/b3407ee3e7be4d5bd8d7a7edb47f2c60a828476f-1541x284.png)
 
 ```python
 from setuptools import setup, find_packages
