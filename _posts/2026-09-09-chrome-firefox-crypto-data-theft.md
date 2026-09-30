@@ -3,7 +3,7 @@ title: "Malicious Chrome and Firefox Extensions Steal Crypto Traders’ Session 
 short_title: "Chrome and Firefox Extensions Steal Crypto Trader Data"
 date: 2026-09-09 12:00:00 +0000
 categories: [Malware, Browser Extensions]
-tags: [Chrome, Firefox, Extensions, Infostealer, Axiom Trade, Padre, Brandjacking, Session Hijacking, T1176.001, T1036, T1204, T1059.007, T1005, T1528, T1539, T1132.001, T1020, T1071.001, T1041, T1102]
+tags: [Chrome, Firefox, Extensions, Infostealer, Session Hijacking, T1176.001, T1036, T1204, T1059.007, T1005, T1528, T1539, T1132.001, T1020, T1071.001, T1041, T1102]
 canonical_url: https://socket.dev/blog/chrome-firefox-crypto-data-theft
 source: Socket
 image:
