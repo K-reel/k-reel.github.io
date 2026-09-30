@@ -8,7 +8,7 @@ author: socket_research_team
 canonical_url: https://socket.dev/blog/popular-rust-crates-compromised
 source: Socket
 image:
-  path: https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgshVe5DUMbByJkLQGRgak37eOf3HddCtrF6KCJfISPdm7l2ZwLFlnjQM3pN2mxPDpc9lWwSoH2fYfucYKBKk3vpuGAKdR5U685IZh8EFbMxWcyVenuRMyqIgvbFUa0_5Sx9pVl9Imu5omju6i7eRE0sKKxiCSKYEV1Say1LLhQHEufY10dgovzX0Nt7as/s1700-e365/rust.jpg
+  path: https://www.bleepstatic.com/content/hl-images/2024/04/09/Rust-headpic-red.jpg
   alt: "Popular Rust Crates Compromised in Build-Time Supply Chain Attack"
 description: "Three compromised Rust crates pulled in a malicious dependency that downloaded and executed cross-platform malware during Cargo builds."
 ---
