@@ -3,7 +3,7 @@ title: "OpenAPI React Query Codegen Compromised in Mini Shai-Hulud npm Supply Ch
 short_title: "OpenAPI React Query Codegen Hit by Mini Shai-Hulud"
 date: 2026-08-28 12:00:00 +0000
 categories: [Malware, npm]
-tags: [Shai-Hulud, npm, JavaScript, GitHub Actions, Trusted Publishing, npm Provenance, Obfuscation, Infostealer, Worm, AI Agents]
+tags: [Shai-Hulud, npm, JavaScript, GitHub Actions, Obfuscation, Infostealer, Worm]
 author: socket_research_team
 canonical_url: https://socket.dev/blog/openapi-react-query-codegen-npm-compromise
 source: Socket
