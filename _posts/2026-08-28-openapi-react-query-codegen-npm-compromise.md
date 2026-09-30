@@ -8,7 +8,7 @@ author: socket_research_team
 canonical_url: https://socket.dev/blog/openapi-react-query-codegen-npm-compromise
 source: Socket
 image:
-  path: https://maples.design/wp-content/uploads/2026/01/shai-hulud-npm-worm-supply-chain-attack.jpg
+  path: /assets/img/posts/openapi-react-query-codegen-npm-compromise/cover.jpg
   alt: "OpenAPI React Query Codegen Compromised in Mini Shai-Hulud npm Supply Chain Attack"
 description: "Ten malicious OpenAPI React Query Codegen versions were published to npm in the Mini Shai-Hulud attack, all with valid provenance."
 ---
