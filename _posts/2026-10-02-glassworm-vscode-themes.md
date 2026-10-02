@@ -155,7 +155,7 @@ The older project has a long release history and a conventional declarative them
 ![](/assets/img/posts/glassworm-vscode-themes/ec18b7ecf27d0bf1ffbfdb82241a4da2910935df-2048x1754.png)
 _Visual Studio Marketplace listing for the live `Aurora Borealis Studio Theme`, showing the `lohsebhipolg2s` publisher identity and linked GitHub repository that provide a direct provenance pivot into the broader extension cluster._
 
-`Coca-Cola Christmas Theme`, meanwhile, uses the branding of one of the world’s most recognizable commercial brands. This branding choice makes an unfamiliar extension look familiar before a user has examined who actually published it.
+`Coca-Cola Christmas`, meanwhile, uses the branding of one of the world’s most recognizable commercial brands. This branding choice makes an unfamiliar extension look familiar before a user has examined who actually published it.
 
 ![](/assets/img/posts/glassworm-vscode-themes/cbc5349000e1111429fd4145103ecf42f1b6e1f5-2048x1753.png)
 _Visual Studio Marketplace listing for the live `Coca-Cola Christmas` theme, showing the `holiday-themes` publisher and linked `hakhangthu7558-sys/Coca-Cola-Christmas` repository that connect the extension to the broader development cluster._
